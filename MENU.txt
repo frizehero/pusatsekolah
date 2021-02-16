@@ -1,6 +1,6 @@
 Branda.html
 *Menu
-- Branda - dhinda
+- Beranda - dhinda
 - Jenjang sekolah - faza
 - Postingan publik - rois
 - Event publik - rois
@@ -8,6 +8,7 @@ Branda.html
 - PPDB - faza
 - Daftar sekolah - dhinda
 - Daftar alumni - yulia
+- (Login, Register, Lupa Password) - Rois
 
 Khusus Tampilan
 - Sekolah
