@@ -1,0 +1,21 @@
+Branda.html
+*Menu
+- Branda - dhinda
+- Jenjang sekolah - faza
+- Postingan publik - rois
+- Event publik - rois
+- Produk sekolah yulia
+- PPDB - faza
+- Daftar sekolah - dhinda
+- Daftar alumni - yulia
+
+Khusus Tampilan
+- Sekolah
+	- profil pengajar
+	- prestasi
+	- produk sekolah
+	- event
+	- postingan
+	- ppdb
+	- alumni
+	- kerjasama
