@@ -1793,42 +1793,260 @@
                         </div>
                         <div class="form-wizard-content">
                             <div id="step-2">
-                                <div class="card-body">
-                                    <div class="position-relative form-group">
-                                        <label for="exampleEmail5">Input without validation</label>
-                                        <input type="text" class="form-control">
-                                        <div class="invalid-feedback">You will not be able to see this</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-                                    </div>
-                                    <div class="position-relative form-group">
-                                        <label for="exampleEmail6">Valid  input</label>
-                                        <input type="text" class="is-valid form-control">
-                                        <div class="valid-feedback">Sweet! that name is available</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-                                    </div>
-                                    <div class="position-relative form-group">
-                                        <label for="examplePassword">Invalid input</label>
-                                        <input type="text" class="is-invalid form-control">
-                                        <div class="invalid-feedback">Oh noes! that name is already taken</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-                                    </div>
-                                    <div class="position-relative form-group">
-                                        <label for="exampleEmail7">Input without validation</label>
-                                        <input type="text" class="form-control">
-                                        <div class="invalid-tooltip">You will not be able to see this</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-                                    </div>
-                                    <div class="position-relative form-group">
-                                        <label for="exampleEmail">Valid input</label>
-                                        <input type="text" class="is-valid form-control">
-                                        <div class="valid-tooltip">Sweet! that name is available</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-                                    </div>
-                                    <div class="position-relative form-group">
-                                        <label for="examplePassword">Invalid input</label>
-                                        <input type="text" class="is-invalid form-control">
-                                        <div class="invalid-tooltip">Oh noes! that name is already taken</div>
-                                        <small class="form-text text-muted">Example help text that remains unchanged.</small>
+                                <div id="accordion" class="accordion-wrapper mb-3">
+                                    <div class="card">
+                                        <div id="headingTwo" class="b-radius-0 card-header">
+                                            <button type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                                class="text-left m-0 p-0 btn btn-link btn-block">
+                                                <span class="form-heading">Isi Form Data Sekolah di Bawah ini</span>
+                                            </button>
+                                        </div>
+                                        <br>
+                                        <div class="col-md-12">
+                                            <div class="position-relative form-group">
+                                                <h3>MEDIA SEKOLAH</h3>
+                                                <br>
+                                                <h4 class="card-title">UPLOAD MEDIA SEKOLAH</h4>
+                                                <input name="file" id="exampleFile" type="file" class="form-control-file">
+                                                <small class="form-text text-muted">Upload media sekolah di sini</small>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">JUDUL</h4>
+                                                            <input name="email" id="exampleEmail4" placeholder=". . . . . . . ." type="email" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">TANGGAL</h4>
+                                                            <input name="date" id="exampleDate" placeholder="mm/dd/year" type="date" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <h4 class="card-title">KETERANGAN</h4>
+                                                    <input name="email" id="exampleEmail4" placeholder=". . . . . . . ." type="email" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="position-relative form-group">
+                                                <h3>JAM OPERASIONAL SEKOLAH</h3>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">SENIN</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU BUKA</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">SELASA</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">RABU</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">KAMIS</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">JUM'AT</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">SABTU</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div data-parent="#accordion" id="collapseTwo" class="collapse show">
+                                                <div class="row">
+                                                    <div class="col-md-5">
+                                                    <h4 class="card-shadow">MINGGU</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">WAKTU TUTUP</h4>
+                                                            <input name="time" id="exampleTime" type="time" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="position-relative form-group">
+                                                            <h4 class="card-title">KETERANGAN</h4>
+                                                            <input placeholder="Buka / Libur" type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1853,6 +2071,39 @@
                         </div>
                     </div>
                     <!--
+                        <div class="card-body">
+                                                <div class="position-relative form-group">
+                                                    <h4 class="card-title">JUDUL</h4>
+                                                    <input name="email" id="exampleEmail4" placeholder=". . . . . . . ." type="email" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="examplePassword">Password</label>
+                                                    <input name="password" id="examplePassword" placeholder="password placeholder" type="password" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleUrl">Url</label>
+                                                    <input name="url" id="exampleUrl" placeholder="url placeholder" type="url" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleNumber">Number</label>
+                                                    <input name="number" id="exampleNumber" placeholder="number placeholder" type="number" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleDatetime">Datetime</label>
+                                                    <input name="datetime" id="exampleDatetime" placeholder="datetime placeholder" type="datetime" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleDate">Date</label>
+                                                    <input name="date" id="exampleDate" placeholder="date placeholder" type="date" class="form-control">
+                                                </div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleTime">Time</label>
+                                                    <input name="time" id="exampleTime" placeholder="time placeholder" type="time" class="form-control"></div>
+                                                <div class="position-relative form-group">
+                                                    <label for="exampleColor">Color</label>
+                                                    <input name="color" id="exampleColor" placeholder="color placeholder" type="color" class="form-control">
+                                                </div>
+                                            </div>
                     <!--<div class="tab-content">
                         <div class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav"></div>
                         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
