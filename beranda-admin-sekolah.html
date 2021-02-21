@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Pusat Sekolah</title>
+    <title>Admin Sekolah</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
@@ -403,18 +403,18 @@
                                     <span class="mr-3 opacity-8 flag large US"></span> USA
                                 </button>
                                 <button type="button" tabindex="0" class="dropdown-item">
-                                    <span class="mr-3 opacity-8 flag large CH"></span> Switzerland
+                                    <span class="mr-3 opacity-8 flag large ID"></span> Indonesia
                                 </button>
                                 <button type="button" tabindex="0" class="dropdown-item">
-                                    <span class="mr-3 opacity-8 flag large FR"></span> France
+                                    <span class="mr-3 opacity-8 flag large JP"></span> Japan
                                 </button>
                                 <button type="button" tabindex="0" class="dropdown-item">
-                                    <span class="mr-3 opacity-8 flag large ES"></span>Spain
+                                    <span class="mr-3 opacity-8 flag large TH"></span>Thailand
                                 </button>
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <h6 tabindex="-1" class="dropdown-header">Lainnya</h6>
                                 <button type="button" tabindex="0" class="dropdown-item active">
-                                    <span class="mr-3 opacity-8 flag large DE"></span> Germany
+                                    <span class="mr-3 opacity-8 flag large RU"></span> Rusian
                                 </button>
                                 <button type="button" tabindex="0" class="dropdown-item">
                                     <span class="mr-3 opacity-8 flag large IT"></span> Italy
@@ -958,13 +958,31 @@
                         <div class="col-mb-12">
                             <div class="card-shadow-primary card-border text-white mb-3 card bg-secondary">
                                 <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner bg-dark">
+                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/originals/smkn1p.jpg');">
                                         <div class="menu-header-btn-pane pt-5">
                                             <div class="pt-5">
                                                 <div class="pt-5">
                                                     <div class="widget-content p-1">
                                                         <div class="text-right d-block">
-                                                            <button class="btn-shadow-dark btn-wider btn btn-secondary">Edit</button>
+                                                            <div class="btn-group dropdown">
+                                                                <button type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                                                    <b class="btn-shadow-dark btn-wider btn btn-secondary">Edit Sampul</b>
+                                                                </button>
+                                                                <div tabindex="-1" role="menu" aria-hidden="true"
+                                                                    class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
+                                                                    <button type="button" tabindex="0" class="dropdown-item">
+                                                                        <i class="dropdown-icon pe-7s-copy-file"> </i><span>Pilih Foto</span>
+                                                                    </button>
+                                                                    <button type="button" tabindex="0" class="dropdown-item">
+                                                                        <i class="dropdown-icon pe-7s-expand1"> </i><span>Ubah Posisi</span>
+                                                                    </button>
+                                                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                                                    <button type="button" tabindex="0" class="dropdown-item">
+                                                                        <i class="dropdown-icon pe-7s-trash"> </i><span>Hapus</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -979,6 +997,13 @@
                                     <div class="widget-content-left">
                                         <div class="widget-heading">Harper Rose</div>
                                         <div class="widget-subheading">Markets Planner</div>
+                                        <select id="css-stars">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="text-right d-block card-footer">
