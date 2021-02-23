@@ -2,17 +2,17 @@
 <html lang="en">
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/apps-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/forms-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:16 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Chat - ArchitectUI HTML Bootstrap 4 Dashboard Template</title>
+    <title>Kerjasama</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="ArchitectUI HTML Bootstrap 4 Dashboard Template">
+    <meta name="description" content="Inline validation is very easy to implement using the Architect Framework.">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -1257,13 +1257,13 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li   class="mm-active" 
+                            <li  
                                    >
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-plugin"></i>Applications
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
-                                <ul   class="mm-show" 
+                                <ul  
                                     >
                                     <li>
                                         <a href="apps-mailbox.html" >
@@ -1271,7 +1271,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="apps-chat.html"  class="mm-active" >
+                                        <a href="apps-chat.html" >
                                             <i class="metismenu-icon"></i>Chat
                                         </a>
                                     </li>
@@ -1547,13 +1547,13 @@
                             </li>
                             <li class="app-sidebar__heading">Forms</li>
                             <li  
-                                 >
+                                 class="mm-active"  >
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-light"></i> Elements
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul  
-                                     >
+                                     class="mm-show"  >
                                     <li>
                                         <a href="forms-controls.html" >
                                             <i class="metismenu-icon"></i>Controls
@@ -1565,7 +1565,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="forms-validation.html" >
+                                        <a href="forms-validation.html"  class="mm-active" >
                                             <i class="metismenu-icon"></i>Validation
                                         </a>
                                     </li>
@@ -1647,512 +1647,108 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="app-main__outer">
-                <div class="app-main__inner p-0">
-                    <div class="app-inner-layout chat-layout">
-                        <div class="app-inner-layout__header text-white bg-premium-dark">
-                            <div class="app-page-title">
-                                <div class="page-title-wrapper">
-                                    <div class="page-title-heading">
-                                        <div class="page-title-icon">
-                                            <i class="pe-7s-umbrella icon-gradient bg-sunny-morning"></i>
-                                        </div>
-                                        <div>
-                                            Chat
-                                            <div class="page-title-subheading">ArchitectUI HTML Bootstrap 4 Dashboard Template</div>
-                                        </div>
-                                    </div>
-                                    <div class="page-title-actions">
-                                        <button type="button" data-toggle="tooltip" title="" data-placement="bottom"
-                                            class="btn-shadow mr-3 btn btn-dark" data-original-title="Example Tooltip">
-                                            <i class="fa fa-star"></i>
-                                        </button>
-                                        <div class="d-inline-block dropdown">
-                                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                class="btn-shadow dropdown-toggle btn btn-info">
-                                                <span class="btn-icon-wrapper pr-2 opacity-7">
-                                                    <i class="fa fa-business-time fa-w-20"></i>
-                                                </span>
-                                                Buttons
-                                            </button>
-                                            <div tabindex="-1" role="menu" aria-hidden="true"
-                                                class="dropdown-menu dropdown-menu-right">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a href="javascript:void(0);" class="nav-link">
-                                                            <i class="nav-link-icon lnr-inbox"></i>
-                                                            <span>
-                                                                Inbox
-                                                            </span>
-                                                            <div class="ml-auto badge badge-pill badge-secondary">86</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="javascript:void(0);" class="nav-link">
-                                                            <i class="nav-link-icon lnr-book"></i>
-                                                            <span>
-                                                                Book
-                                                            </span>
-                                                            <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a href="javascript:void(0);" class="nav-link">
-                                                            <i class="nav-link-icon lnr-picture"></i>
-                                                            <span>
-                                                                Picture
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a disabled="" href="javascript:void(0);" class="nav-link disabled">
-                                                            <i class="nav-link-icon lnr-file-empty"></i>
-                                                            <span>
-                                                                File Disabled
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+            </div><div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon">
+                                    <i class="pe-7s-network text-danger"></i>
+                                </div>
+                                <div>Kerjasama Perusahaan
+                                    <div class="page-title-subheading"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="app-inner-layout__wrapper">
-                            <div class="app-inner-layout__content card">
-                                <div class="table-responsive">
-                                    <div class="app-inner-layout__top-pane">
-                                        <div class="pane-left">
-                                            <div class="mobile-app-menu-btn">
-                                                <button type="button" class="hamburger hamburger--elastic">
-                                                    <span class="hamburger-box">
-                                                        <span class="hamburger-inner"></span>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                            <div class="avatar-icon-wrapper mr-2">
-                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon avatar-icon-xl rounded">
-                                                    <img width="82" src="assets/images/avatars/1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                            <h4 class="mb-0 text-nowrap">Chad Evans
-                                                <div class="opacity-7">Last Seen Online:
-                                                    <span class="opacity-8">10 minutes ago</span>
-                                                </div>
-                                            </h4>
-                                        </div>
-                                        <div class="pane-right">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false" class="ml-2 dropdown-toggle btn btn-primary">
-                                                    <span class="opacity-7 mr-1">
-                                                        <i class="fa fa-cog"></i>
-                                                    </span>
-                                                    Actions
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true"
-                                                    class="dropdown-menu dropdown-menu-right">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item-header nav-item">Activity</li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Chat
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Recover Password</a>
-                                                        </li>
-                                                        <li class="nav-item-header nav-item">My Account</li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Settings
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Messages
-                                                                <div class="ml-auto badge badge-warning">512</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Logs</a>
-                                                        </li>
-                                                        <li class="nav-item-divider nav-item"></li>
-                                                        <li class="nav-item-btn nav-item">
-                                                            <button class="btn-wide btn-shadow btn btn-danger btn-sm">Cancel</button>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="page-title-actions">
+                                <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom"
+                                    class="btn-shadow mr-3 btn btn-dark">
+                                    <i class="fa fa-star"></i>
+                                </button>
+                                <div class="d-inline-block dropdown">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                                            <i class="fa fa-business-time fa-w-20"></i>
+                                        </span>
+                                        Buttons
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-inbox"></i>
+                                                    <span> Inbox</span>
+                                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-book"></i>
+                                                    <span> Book</span>
+                                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-picture"></i>
+                                                    <span> Picture</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a disabled class="nav-link disabled">
+                                                    <i class="nav-link-icon lnr-file-empty"></i>
+                                                    <span> File Disabled</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <div class="chat-wrapper">
-                                        <div class="chat-box-wrapper">
-                                            <div>
-                                                <div class="avatar-icon-wrapper mr-1">
-                                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                    </div>
-                                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                                        <img src="assets/images/avatars/2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="chat-box">But I must explain to you how all this mistaken idea of
-                                                    denouncing pleasure and praising pain was born and I will give you a complete
-                                                    account of the system.</div>
-                                                <small class="opacity-6">
-                                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                                    11:01 AM | Yesterday
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="chat-box-wrapper chat-box-wrapper-right">
-                                                <div>
-                                                    <div class="chat-box">Expound the actual teachings of the great explorer of the
-                                                        truth, the master-builder of human happiness.</div>
-                                                    <small class="opacity-6">
-                                                        <i class="fa fa-calendar-alt mr-1"></i>
-                                                        11:01 AM | Yesterday
-                                                    </small>
-                                                </div>
-                                                <div>
-                                                    <div class="avatar-icon-wrapper ml-1">
-                                                        <div
-                                                            class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                        </div>
-                                                        <div class="avatar-icon avatar-icon-lg rounded">
-                                                            <img src="assets/images/avatars/2.jpg" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="chat-box-wrapper">
-                                            <div>
-                                                <div class="avatar-icon-wrapper mr-1">
-                                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                    </div>
-                                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                                        <img src="assets/images/avatars/2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="chat-box">But I must explain to you how all this mistaken idea of
-                                                    denouncing pleasure and praising pain was born and I will give you a complete
-                                                    account of the system.</div>
-                                                <small class="opacity-6">
-                                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                                    11:01 AM | Yesterday
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="chat-box-wrapper chat-box-wrapper-right">
-                                                <div>
-                                                    <div class="chat-box">Denouncing pleasure and praising pain was born and I will
-                                                        give you a complete account.</div>
-                                                    <small class="opacity-6">
-                                                        <i class="fa fa-calendar-alt mr-1"></i>
-                                                        11:01 AM | Yesterday
-                                                    </small>
-                                                </div>
-                                                <div>
-                                                    <div class="avatar-icon-wrapper ml-1">
-                                                        <div
-                                                            class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                        </div>
-                                                        <div class="avatar-icon avatar-icon-lg rounded">
-                                                            <img src="assets/images/avatars/3.jpg" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="chat-box-wrapper">
-                                            <div>
-                                                <div class="avatar-icon-wrapper mr-1">
-                                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                                    </div>
-                                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                                        <img src="assets/images/avatars/2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="chat-box">Born and I will give you a complete account of the system.
-                                                </div>
-                                                <small class="opacity-6">
-                                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                                    11:01 AM | Yesterday
-                                                </small>
-                                            </div>
-                                        </div>
-                                        <div class="float-right">
-                                            <div class="chat-box-wrapper chat-box-wrapper-right">
-                                                <div>
-                                                    <div class="chat-box">The master-builder of human happiness.</div>
-                                                    <small class="opacity-6">
-                                                        <i class="fa fa-calendar-alt mr-1"></i>
-                                                        11:01 AM | Yesterday
-                                                    </small>
-                                                </div>
-                                                <div>
-                                                    <div class="avatar-icon-wrapper ml-1">
-                                                        <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                                        <div class="avatar-icon avatar-icon-lg rounded">
-                                                            <img src="assets/images/avatars/3.jpg" alt="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="chat-box-wrapper">
-                                            <div>
-                                                <div class="avatar-icon-wrapper mr-1">
-                                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                                        <img src="assets/images/avatars/2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div class="chat-box">Mistaken idea of denouncing pleasure and praising pain was
-                                                    born and I will give you</div>
-                                                <small class="opacity-6">
-                                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                                    11:01 AM | Yesterday
-                                                </small>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>    </div>
+                    </div>        <div class="main-card mb-3 card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerjasama Perusahaan</h5>
+                            <form id="signupForm" class="col-md-10 mx-auto" method="post" action="#">
+                                <div class="form-group">
+                                    <label for="nama_kerjasama">Nama Kerjasama</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="nama_kerjasama" name="nama_kerjasama" placeholder="Nama kerjasama" />
                                     </div>
-                                    <div class="app-inner-layout__bottom-pane d-block text-center">
-                                        <div class="mb-0 position-relative row form-group">
-                                            <div class="col-sm-12">
-                                                <input placeholder="Write here and hit enter to send..." type="text"
-                                                    class="form-control-lg form-control">
-                                            </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nama_perusahaan">Nama Perusahaan</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="nama_perusahaan" name="nama_perusahaan" placeholder="Nama Perusahaan" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="alamat_perusahaan">Alamat Perusahaan</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="alamat_perusahaan" name="alamat_perusahaan" placeholder="Alamat Perusahaan" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tanggal_kerjasama">Tanggal Kerjasama</label>
+                                    <div>
+                                        <input type="date" class="form-control" id="tanggal_kerjasama" name="tanggal_kerjasama" placeholder="Tanggal Kerjasama" />
+                                    </div>
+                                </div>
+                                <div class="position-relative form-group">
+                                    <label for="exampleFile" class="">Logo Perusahaan</label>
+                                    <input name="file" id="exampleFile" type="file" class="form-control-file">
+                                    <small class="form-text text-muted"> Upload Logo Mitra Perusahaan Anda Disini
+                                    </small>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <div class="form-check">
+                                            <input type="checkbox" id="agree" name="agree" value="agree" class="form-check-input" />
+                                            <label class="form-check-label">Terima Syarat dan Ketentuan</label>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="app-inner-layout__sidebar card">
-                                <div class="app-inner-layout__sidebar-header">
-                                    <ul class="nav flex-column">
-                                        <li class="pt-4 pl-3 pr-3 pb-3 nav-item">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <div class="input-group-text">
-                                                        <i class="fa fa-search"></i>
-                                                    </div>
-                                                </div>
-                                                <input placeholder="Search..." type="text" class="form-control">
-                                            </div>
-                                        </li>
-                                        <li class="nav-item-header nav-item">Friends Online</li>
-                                    </ul>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
                                 </div>
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Alina Mcloughlin</div>
-                                                        <div class="widget-subheading">Aenean vulputate eleifend tellus.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item active">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Chad Evans</div>
-                                                        <div class="widget-subheading">Vivamus elementum semper nisi.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Ella-Rose Henry</div>
-                                                        <div class="widget-subheading">Etiam sit amet orci eget eros faucibus</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Ruben Tillman</div>
-                                                        <div class="widget-subheading">Lorem ipsum dolor sit amet, consectetuer
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Ella-Rose Henry</div>
-                                                        <div class="widget-subheading">Etiam sit amet orci eget eros faucibus</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                    <li class="nav-item">
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <div class="widget-content p-0">
-                                                <div class="widget-content-wrapper">
-                                                    <div class="widget-content-left mr-3">
-                                                        <div class="avatar-icon-wrapper">
-                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                            </div>
-                                                            <div class="avatar-icon">
-                                                                <img src="assets/images/avatars/2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="widget-content-left">
-                                                        <div class="widget-heading">Ruben Tillman</div>
-                                                        <div class="widget-subheading">Lorem ipsum dolor sit amet, consectetuer
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-                                </ul>
-                                <div class="app-inner-layout__sidebar-footer pb-3">
-                                    <ul class="nav flex-column">
-                                        <li class="nav-item-divider nav-item"></li>
-                                        <li class="nav-item-header nav-item">Offline Friends</li>
-                                        <li class="text-center p-2 nav-item">
-                                            <div class="avatar-wrapper avatar-wrapper-overlap">
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/5.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/10.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/7.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/8.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper">
-                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
-                                                    <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/4.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="avatar-icon-wrapper avatar-icon-add">
-                                                    <div class="avatar-icon rounded"><i>+</i></div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item-btn text-center nav-item">
-                                            <button class="btn-wide btn-pill btn btn-success btn-sm">Offline Group
-                                                Conversation</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -3121,5 +2717,5 @@
     <div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script></body>
 
 
-<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/apps-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/forms-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:16 GMT -->
 </html>
