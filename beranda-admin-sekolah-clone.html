@@ -999,10 +999,10 @@
                                                     <option value="5">5</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="text-right d-block card-footer">
-                                            <button class="btn-shadow-dark btn-wider btn btn-dark">Pesan</button>
-                                            <button class="btn-shadow-dark btn-wider btn btn-dark">Bagikan Sekolah</button>
+                                            <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                                                <button class="btn-shadow-dark btn-wider btn btn-dark">Pesan</button>
+                                                <button class="btn-shadow-dark btn-wider btn btn-dark">Bagikan Sekolah</button>
+                                            </div>
                                         </div>
                             </div>
                         </div>
@@ -1011,17 +1011,17 @@
                     <div class="app-inner-layout__wrapper row-fluid no-gutters">
                         <ul class="body-tabs body-tabs-layout tabs-animated body-tabs-animated nav">
                             <li class="nav-item">
-                                <a role="tab" class="nav-link active" id="tab-0" href="beranda-admin-sekolah.html">
+                                <a role="tab" class="nav-link active" id="tab-0" href="beranda-admin-sekolah-clone.html">
                                     <span>Beranda</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a role="tab" class="nav-link" id="tab-1" href="#tab-content-1">
+                                <a role="tab" class="nav-link" id="tab-1" href="daftar-profil-guru.html">
                                     <span>Data Guru</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a role="tab" class="nav-link" id="tab-2" href="data-alumni.html">
+                                <a role="tab" class="nav-link" id="tab-2" href="daftar-profil-guru.html">
                                     <span>Data Alumni</span>
                                 </a>
                             </li>
@@ -1035,10 +1035,26 @@
                                     <span>Event</span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a role="tab" class="nav-link" id="tab-4" href="form-event.html">
+                                    <span>Media</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a role="tab" class="mb-2 mr-2 dropdown-toggle nav-link" id="tab-4" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" href="form-event.html">
+                                    <span>Lainnya</span>
+                                </a>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                    <button type="button" tabindex="0" class="dropdown-item">Menus</button>
+                                    <button type="button" tabindex="0" class="dropdown-item">Menus</button>
+                                    <button type="button" tabindex="0" class="dropdown-item">Menus</button>
+                                    <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                </div>
+                            </li>
                         </ul>
                         <div class="row">
                             <div class="col-sm-12 col-lg-8">
-                                <div class="card mb-4">
+                                <div class="card mb-2">
                                     <div class="card-header">
                                         <div class="media flex-wrap w-100 align-items-center">
                                             <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg"
@@ -1065,7 +1081,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card mb-4">
+                                <div class="card mb-2">
                                     <div class="card-header">
                                         <div class="media flex-wrap w-100 align-items-center">
                                             <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg"
@@ -1101,7 +1117,7 @@
                                             iaculis nisi.
                                         </p>
                                     </div>
-                                    <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
+                                    <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
                                         <div class="px-4 pt-3">
                                             <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">
                                                 <i class="ion ion-ios-heart text-danger fsize-3"></i>&nbsp;
@@ -1117,11 +1133,74 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <div tabindex="-1" class="dropdown-divider"></div>
+                                    <div class="card-body">
+                                        <div id="exampleAccordion" data-children=".item">
+                                            <div class="item">
+                                                <button type="button" aria-expanded="true" aria-controls="exampleAccordion1"
+                                                    data-toggle="collapse" href="#collapseExample"
+                                                    class="m-0 p-0 btn btn-link">Tampilkan Komentar</button>
+                                                <div data-parent="#exampleAccordion" id="collapseExample" class="collapse show">
+                                                    <div class="widget-content card-body">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="avatar-icon-wrapper">
+                                                                    <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                                    </div>
+                                                                    <div class="avatar-icon">
+                                                                        <img src="assets/images/avatars/2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-body p-0">
+                                                                <input name="komen" id="komen" placeholder="Tulis komentar..." type="text" class="form-control">
+                                                                <span class="subsubtitle">Tekan Enter untuk mengirim.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content card-body">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="avatar-icon-wrapper">
+                                                                    <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                                    </div>
+                                                                    <div class="avatar-icon">
+                                                                        <img src="assets/images/avatars/2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left">
+                                                                <div class="widget-heading">Alina Mcloughlin</div>
+                                                                <div>Aenean vulputate eleifend tellus.</div>
+                                                                <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
+                                                                <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
+                                                                <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
+                                                            </div>
+                                                            <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                                                                <div class="btn-group dropdown">
+                                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" 
+                                                                        aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                                                        <i class="fa fa-fw"></i>
+                                                                    </button>
+                                                                    <div tabindex="-1" role="menu" aria-hidden="true"
+                                                                        class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
+                                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                                            <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div> 
 
                             <div class="col-sm-12 col-lg-4">
-                                <div class="card-hover-shadow card-border mb-3 card">
+                                <div class="card-hover-shadow card-border mb-2 card">
                                     <div class="card-header">KEPALA SEKOLAH</div>
                                     <div class="card-body">
                                         <div class="dropdown-menu-header">
@@ -1147,7 +1226,7 @@
                                         <button class="btn-shadow-primary btn btn-primary btn-lg">Edit</button>
                                     </div>
                                 </div>
-                                <div class="card-hover-shadow card-border mb-3 card">
+                                <div class="card-hover-shadow card-border mb-2 card">
                                     <div class="card-header">Tentang Sekolah</div>
                                     <div class="card-body">
                                         <p><b>Selesaikan Sekolah Anda Untuk Meraih Keberhasilan</b></p>
@@ -1163,7 +1242,7 @@
                                         <p>Isi Kopetensi keahlian</p>
                                     </div>
                                 </div>
-                                <div class="card-hover-shadow card-border mb-3 card">
+                                <div class="card-hover-shadow card-border mb-2 card">
                                     <div class="card-header">Tentang Sekolah</div>
                                     <div class="card-body">
                                         <a href="javascript:void(0)">Sejarah</a>
@@ -1172,7 +1251,7 @@
                                         <button class="btn-shadow-primary btn btn-primary btn-lg">Edit</button>
                                     </div>
                                 </div>
-                                <div class="card-hover-shadow card-border mb-3 card">
+                                <div class="card-hover-shadow card-border mb-2 card">
                                     <div class="card-header">Kopetensi Keahlian</div>
                                     <div class="card-body">
                                         <p>1. Rekayasa Perangkat Lunak</p>
@@ -1759,7 +1838,12 @@
                                 </a>
                                 <ul      >
                                     <li>
-                                        <a href="index-2.html"  class="mm-active" >
+                                        <a href="index-2.html">
+                                            <i class="metismenu-icon"></i>Umum
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-2.html">
                                             <i class="metismenu-icon"></i>Keamanan
                                         </a>
                                     </li>
