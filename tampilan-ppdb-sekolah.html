@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PPDB</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="Create easy and beautiful slideshows with these React components.">
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+<link href="main.d810cf0ae7f39f28f336.css" rel="stylesheet"></head>
+
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
+        <div class="app-header header-shadow">
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    
+            <div class="app-header__content">
+                <div>
+                    <a href="tampilan-beranda-admin-sekolah.html">
+                        <img src="assets/images/logoatas.png" style="width: 150px;">
+                    </a>
+                </div>
+                <div class="header-btn-lg pr-0"></div>
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>       
+                </div>
+                <div class="app-header-right">
+                    <div class="header-dots">
+                        <div class="dropdown">
+                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
+                                class="p-0 mr-2 btn btn-link">
+                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
+                                    <span class="icon-wrapper-bg bg-danger"></span>
+                                    <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
+                                    <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
+                                </span>
+                            </button>
+                            <div tabindex="-1" role="menu" aria-hidden="true"
+                                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                                <div class="dropdown-menu-header mb-0">
+                                    <div class="dropdown-menu-header-inner bg-deep-blue">
+                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                        <div class="menu-header-content text-dark">
+                                            <h5 class="menu-header-title">Notifikasi</h5>
+                                            <h6 class="menu-header-subtitle">Anda memiliki <b>21</b> pesan yang belum dibaca</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
+                                    <li class="nav-item">
+                                        <a role="tab" class="nav-link active" data-toggle="tab" href="#tab-messages-header">
+                                            <span>Chat</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
+                                            <span>Agenda</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
+                                            <span>Laporan</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="tab-messages-header" role="tabpanel">
+                                        <div class="scroll-area-sm">
+                                            <div class="scrollbar-container">
+                                                <div class="p-3">
+                                                    <div class="notifications-box">
+                                                        <div class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
+                                                            <div class="vertical-timeline-item dot-danger vertical-timeline-element">
+                                                                <div><span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Rapat rutin</h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-warning vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Bertemu pimpinan, pukul  <span class="text-success">15:00 WIB</span></p>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-success vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Laporan project baru
+                                                                            <span class="badge badge-danger ml-2">NEW</span>
+                                                                        </h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-primary vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Kontak anggota
+                                                                            <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/1.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/2.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/3.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/4.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/5.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/9.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/7.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm">
+                                                                                    <div class="avatar-icon">
+                                                                                        <img src="assets/images/avatars/8.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
+                                                                                    <div class="avatar-icon"><i>+</i></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-info vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">This dot has an info state</h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-danger vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Rapat Rutin</h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-warning vertical-timeline-element">
+                                                                <div>
+                                                                    <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <p>Bertemu pimpinan, pukul <span class="text-success">15:00 WIB</span>
+                                                                        </p><span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-success vertical-timeline-element">
+                                                                <div><span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">Laporan Project Baru
+                                                                            <span class="badge badge-danger ml-2">NEW</span>
+                                                                        </h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="vertical-timeline-item dot-dark vertical-timeline-element">
+                                                                <div><span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                        <h4 class="timeline-title">This dot has a dark state</h4>
+                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-events-header" role="tabpanel">
+                                        <div class="scroll-area-sm">
+                                            <div class="scrollbar-container">
+                                                <div class="p-3">
+                                                    <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-success"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Rapat rutin</h4>
+                                                                    <p>today at 
+                                                                        <a href="javascript:void(0);">12:00 WIB</a>
+                                                                    </p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <p>Bertemu Bu Eva, pukul <b class="text-danger">12:00 WIB</b></p>
+                                                                    <p>Bertemu Pak Gun, pukul <span class="text-success">15:00 PM</span></p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Build the production release</h4>
+                                                                    <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut
+                                                                        labore et dolore magna elit enim at minim veniam quis nostrud
+                                                                    </p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title text-success">Something not important</h4>
+                                                                    <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-success"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">All Hands Meeting</h4>
+                                                                    <p>Lorem ipsum dolor sic amet, today at 
+                                                                        <a href="javascript:void(0);">12:00 PM</a>
+                                                                    </p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <p>Another meeting today, at <b class="text-danger">12:00 PM</b></p>
+                                                                    <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-danger"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title">Build the production release</h4>
+                                                                    <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut
+                                                                        labore et dolore magna elit enim at minim veniam quis nostrud
+                                                                    </p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
+                                                            <div>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-primary"> </i>
+                                                                </span>
+                                                                <div class="vertical-timeline-element-content bounce-in">
+                                                                    <h4 class="timeline-title text-success">Something not important</h4>
+                                                                    <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p>
+                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tab-errors-header" role="tabpanel">
+                                        <div class="scroll-area-sm">
+                                            <div class="scrollbar-container">
+                                                <div class="no-results pt-3 pb-0">
+                                                    <div class="swal2-icon swal2-success swal2-animate-success-icon">
+                                                        <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                                                        <span class="swal2-success-line-tip"></span>
+                                                        <span class="swal2-success-line-long"></span>
+                                                        <div class="swal2-success-ring"></div>
+                                                        <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                                                        <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                                                    </div>
+                                                    <div class="results-subtitle">Hari ini tidak ada laporan!</div>
+                                                    <div class="results-title">Eror tidak terdeteksi!</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
+                                            <div class="dropdown-menu-header">
+                                                <div class="dropdown-menu-header-inner bg-info">
+                                                    <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                                    <div class="menu-header-content text-left">
+                                                        <div class="widget-content p-0">
+                                                            <div class="widget-content-wrapper">
+                                                                <div class="widget-content-left mr-3">
+                                                                    <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                                </div>
+                                                                <div class="widget-content-left">
+                                                                    <div class="widget-heading">Dhinda Rek</div>
+                                                                    <div class="widget-subheading opacity-8">Admin Pusat Sekolah</div>
+                                                                </div>
+                                                                <div class="widget-content-right mr-2">
+                                                                    <a href="login-admin.html">
+                                                                    <button class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</button>
+                                                                        </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="scroll-area-xs" style="height: 150px;">
+                                                <div class="scrollbar-container ps">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item">Akun</li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Profil Saya
+                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
+                                                            </a>
+                                                        </li>
+                                                        <!--<li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link"></a>
+                                                        </li>
+                                                        <li class="nav-item-header nav-item">My Account
+                                                        </li>-->
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Daftar Tindakan
+                                                                <div class="ml-auto badge badge-success">New</div>
+                                                            </a>
+                                                        </li>
+                                                        <!--<li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Messages
+                                                                <div class="ml-auto badge badge-warning">512</div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Logs</a>
+                                                        </li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item-divider mb-0 nav-item"></li>
+                                            </ul>
+                                            <!--<div class="grid-menu grid-menu-2col">
+                                                <div class="no-gutters row">
+                                                    <div class="col-sm-6">
+                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
+                                                            <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Message Inbox
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
+                                                            <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
+                                                            <b>Support Tickets</b>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item-divider nav-item">
+                                                </li>
+                                                <li class="nav-item-btn text-center nav-item">
+                                                    <button class="btn-wide btn btn-primary btn-sm"> Open Messages </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading"> Alina Mclourd </div>
+                                    <div class="widget-subheading"> Admin Sekolah </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-btn-lg">
+                        <button type="button" class="hamburger hamburger--elastic open-right-drawer">
+                            <span class="fa fa-cog fa-w-16 fa-2x"></span>
+                        </button>
+                    </div>        
+                </div>
+            </div>
+        </div>        
+        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                <i class="fa fa-fw fsize-2"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="main-card mb-3 card">
+                    <div class="card-header">Tanyakan ke Pusat Sekolah</div>
+                    <div class="scroll-area-lg">
+                        <div class="scrollbar-container">
+                            <div class="chat-wrapper p-1">
+                                <div class="chat-box-wrapper">
+                                    <div>
+                                        <div class="avatar-icon-wrapper mr-1">
+                                            <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
+                                            <div class="avatar-icon avatar-icon-lg rounded">
+                                                <img src="assets/images/avatars/13.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="chat-box">Halo, ada yang bisa kami bantu?</div>
+                                        <small class="opacity-6">
+                                            11:01 AM
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="chat-box-wrapper chat-box-wrapper-right">
+                                        <div>
+                                            <div class="chat-box">Halo admin, bagaimana cara mendaftar menjadi alumni sekolah?</div>
+                                            <small class="opacity-6">
+                                                11:01 AM
+                                            </small>
+                                        </div>
+                                        <div>
+                                            <div class="avatar-icon-wrapper ml-1">
+                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
+                                                <div class="avatar-icon avatar-icon-lg rounded">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-box-wrapper">
+                                    <div>
+                                        <div class="avatar-icon-wrapper mr-1">
+                                            <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
+                                            <div class="avatar-icon avatar-icon-lg rounded">
+                                                <img src="assets/images/avatars/13.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="chat-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, pariatur numquam soluta, est eveniet consequuntur, mollitia ratione nulla officia quas iusto quam. Repudiandae temporibus soluta quae debitis dicta. Blanditiis, natus!
+                                        </div>
+                                        
+                                        <small class="opacity-6">
+                                            11:01 AM
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="chat-box-wrapper chat-box-wrapper-right">
+                                        <div>
+                                            <div class="chat-box">Denouncing pleasure and praising pain was born and I will give you a complete account.</div>
+                                            <small class="opacity-6">
+                                                11:01 AM
+                                            </small>
+                                        </div>
+                                        <div>
+                                            <div class="avatar-icon-wrapper ml-1">
+                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
+                                                <div class="avatar-icon avatar-icon-lg rounded">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="float-right">
+                                    <div class="chat-box-wrapper chat-box-wrapper-right">
+                                        <div>
+                                            <div class="chat-box">The master-builder of human happiness.</div>
+                                            <small class="opacity-6">
+                                                11:01 AM
+                                            </small>
+                                        </div>
+                                        <div>
+                                            <div class="avatar-icon-wrapper ml-1">
+                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
+                                                <div class="avatar-icon avatar-icon-lg rounded">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input placeholder="Ketik Pesan..." type="text" class="form-control-lg form-control">
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="app-main">
+            <div class="app-sidebar sidebar-shadow">
+                <div class="app-header__logo">
+                    <div class="logo-src"></div>
+                    <div class="header__pane ml-auto">
+                        <div>
+                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-header__mobile-menu">
+                    <div>
+                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="app-header__menu">
+                    <span>
+                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                            <span class="btn-icon-wrapper">
+                                <i class="fa fa-ellipsis-v fa-w-6"></i>
+                            </span>
+                        </button>
+                    </span>
+                </div>    
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading">Menu</li>
+                            <li class="mm-active">
+                                <a href="tampilan-beranda-admin-sekolah.html">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Beranda
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-data-guru.html">
+                                    <i class="metismenu-icon pe-7s-science"></i>Data Guru
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-data-alumni.html">
+                                    <i class="metismenu-icon pe-7s-users"></i>Data Alumni
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-medal"></i>Prestasi
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-pesan.html">
+                                    <i class="metismenu-icon pe-7s-chat"></i>Pesan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-event.html">
+                                    <i class="metismenu-icon pe-7s-world"></i>Event
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-produk-sekolah.html">
+                                    <i class="metismenu-icon pe-7s-diamond"></i>Produk
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-ppdb-sekolah.html">
+                                    <i class="metismenu-icon pe-7s-id"></i>PPDB
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tampilan-media.html">
+                                    <i class="metismenu-icon pe-7s-folder"></i>Media
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><div class="app-main__outer">
+                <div class="app-main__inner">
+                    <div class="app-page-title">
+                        <div class="page-title-wrapper">
+                            <div class="page-title-heading">
+                                <div class="page-title-icon bg-ripe-malin">
+                                    <i class="pe-7s-ribbon icon-gradient bg-premium-dark"></i>
+                                </div>
+                                <div>PPDB
+                                    <div class="page-title-subheading">Dapatkan Informasi Tentang PPDB Disini!</div>
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom"
+                                    class="btn-shadow mr-3 btn btn-dark">
+                                    <i class="fa fa-star"></i>
+                                </button>
+                                <div class="d-inline-block dropdown">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                                            <i class="fa fa-business-time fa-w-20"></i>
+                                        </span>
+                                        Buttons
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-inbox"></i>
+                                                    <span> Inbox</span>
+                                                    <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-book"></i>
+                                                    <span> Book</span>
+                                                    <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link">
+                                                    <i class="nav-link-icon lnr-picture"></i>
+                                                    <span> Picture</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a disabled class="nav-link disabled">
+                                                    <i class="nav-link-icon lnr-file-empty"></i>
+                                                    <span> File Disabled</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div> 
+                    <div class="tab-content">
+                        <div class="tab-pane tabs-animation fade" id="tab-content-0" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Full width Slider</h5>
+                                            <div class="slick-slider slick-initialized slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide00" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide02" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide03" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide04" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide05" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide06" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide07" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide08" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide09" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 10" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 10" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 10" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 10" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 10" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 10" tabindex="-1">6</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control06" aria-controls="slick-slide06" aria-label="7 of 10" tabindex="-1">7</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control07" aria-controls="slick-slide07" aria-label="8 of 10" tabindex="-1">8</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control08" aria-controls="slick-slide08" aria-label="9 of 10" tabindex="-1">9</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control09" aria-controls="slick-slide09" aria-label="10 of 10" tabindex="-1">10</button></li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Multiple Items</h5>
+                                            <div class="slick-slider slick-initialized slick-dotted" data-slick="{&quot;slidesToShow&quot;: 3, &quot;slidesToScroll&quot;: 3}"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide10" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" role="tabpanel" id="slick-slide11" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide12" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide13" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide14" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide15" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide16" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide17" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide18" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide19" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide13" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide16" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control13" aria-controls="slick-slide19" aria-label="4 of 4" tabindex="-1">4</button></li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Center Mode</h5>
+                                            <div class="slick-slider-2 slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="padding: 0px 60px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(120px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide20" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" role="tabpanel" id="slick-slide21" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" role="tabpanel" id="slick-slide22" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide23" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide24" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide25" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide26" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide27" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide28" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide29" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide slick-cloned slick-center" data-slick-index="16" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="18" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="19" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control20" aria-controls="slick-slide20" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control21" aria-controls="slick-slide21" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control22" aria-controls="slick-slide22" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control23" aria-controls="slick-slide23" aria-label="4 of 4" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control24" aria-controls="slick-slide24" aria-label="5 of 4" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control25" aria-controls="slick-slide25" aria-label="6 of 4" tabindex="-1">6</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control26" aria-controls="slick-slide26" aria-label="7 of 4" tabindex="-1">7</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control27" aria-controls="slick-slide27" aria-label="8 of 4" tabindex="-1">8</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control28" aria-controls="slick-slide28" aria-label="9 of 4" tabindex="-1">9</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control29" aria-controls="slick-slide29" aria-label="10 of 4" tabindex="-1">10</button></li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Variable Width</h5>
+                                            <div class="slick-slider-variable slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(-50px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 225px">
+                                                        <p>225</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 175px">
+                                                        <p>175</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide30"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 100px">
+                                                        <p>100</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide31"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 200px">
+                                                        <p>200</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide32"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 75px">
+                                                        <p>75</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide33"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 300px">
+                                                        <p>300</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide34"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 225px">
+                                                        <p>225</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide35"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 175px">
+                                                        <p>175</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 100px">
+                                                        <p>100</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 200px">
+                                                        <p>200</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 75px">
+                                                        <p>75</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 300px">
+                                                        <p>300</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned slick-center" data-slick-index="10" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 225px">
+                                                        <p>225</p>
+                                                    </div>
+                                                </div></div></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item" style="width: 175px">
+                                                        <p>175</p>
+                                                    </div>
+                                                </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control30" aria-controls="slick-slide30" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control31" aria-controls="slick-slide31" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control32" aria-controls="slick-slide32" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control33" aria-controls="slick-slide33" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control34" aria-controls="slick-slide34" aria-label="5 of 6" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control35" aria-controls="slick-slide35" aria-label="6 of 6" tabindex="-1">6</button></li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Responsive</h5>
+                                            <div class="slick-slider-responsive slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide40" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">1</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" role="tabpanel" id="slick-slide41" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">2</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide42" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">3</div>
+                                                </div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" role="tabpanel" id="slick-slide43" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">4</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide44" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">5</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide45" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">6</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide46" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">7</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide47" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">8</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide48" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">9</div>
+                                                </div></div></div><div class="slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide49" style="width: 0px;"><div><div style="width: 100%; display: inline-block;">
+                                                    <div class="slider-item">10</div>
+                                                </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control40" aria-controls="slick-slide40" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control41" aria-controls="slick-slide44" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control42" aria-controls="slick-slide48" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Inverted + Images</h5>
+                                            <div class="slider-light">
+                                                <div class="slick-slider-inverted slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button><div class="slick-list draggable" style="height: 0px;"><div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div class="p-5 bg-sunny-morning" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Complex, but lightweight</h3>
+                                                            <p>
+                                                                We've included a lot of components that cover almost all use cases
+                                                                for
+                                                                any type of application.
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" role="tabpanel" id="slick-slide50" style="width: 0px;"><div><div class="p-5 bg-plum-plate" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Perfect Balance</h3>
+                                                            <p>
+                                                                ArchitectUI is like a dream. Some think it's too good to be true!
+                                                                Extensive collection of unified React Boostrap Components and
+                                                                Elements.
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide51" style="width: 0px;"><div><div class="p-5 bg-premium-dark" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Scalable, Modular, Consistent</h3>
+                                                            <p>
+                                                                Easily exclude the components you don't require. Lightweight,
+                                                                consistent
+                                                                Bootstrap based styles across all elements and components
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide52" style="width: 0px;"><div><div class="p-5 bg-sunny-morning" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Complex, but lightweight</h3>
+                                                            <p>
+                                                                We've included a lot of components that cover almost all use cases
+                                                                for
+                                                                any type of application.
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div class="p-5 bg-plum-plate" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Perfect Balance</h3>
+                                                            <p>
+                                                                ArchitectUI is like a dream. Some think it's too good to be true!
+                                                                Extensive collection of unified React Boostrap Components and
+                                                                Elements.
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div class="p-5 bg-premium-dark" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Scalable, Modular, Consistent</h3>
+                                                            <p>
+                                                                Easily exclude the components you don't require. Lightweight,
+                                                                consistent
+                                                                Bootstrap based styles across all elements and components
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 0px;"><div><div class="p-5 bg-sunny-morning" style="width: 100%; display: inline-block;">
+                                                        <div class="slider-content">
+                                                            <h3>Complex, but lightweight</h3>
+                                                            <p>
+                                                                We've included a lot of components that cover almost all use cases
+                                                                for
+                                                                any type of application.
+                                                            </p>
+                                                        </div>
+                                                    </div></div></div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control50" aria-controls="slick-slide50" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control51" aria-controls="slick-slide51" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control52" aria-controls="slick-slide52" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane tabs-animation fade active show" id="tab-content-1" role="tabpanel">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title"> </h5>
+                                            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <div class="p-5 bg-plum-plate">
+                                                            <div class="slider-content">
+                                                                <br><br>
+                                                                <center>
+                                                                    <h3>Perfect Balance</h3>
+                                                                    <p>
+                                                                    ArchitectUI is like a dream. Some think it's too good to be true!
+                                                                    Extensive collection of unified React Boostrap Components and
+                                                                    Elements.
+                                                                    </p>
+                                                                </center>
+                                                                <br><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="p-5 bg-mixed-hopes">
+                                                        <div class="slider-content">
+                                                            <br><br>
+                                                            <center>
+                                                                <h3>Scalable, Modular, Consistent</h3>
+                                                                <p>
+                                                                Easily exclude the components you don't require. Lightweight,
+                                                                consistent
+                                                                Bootstrap based styles across all elements and components
+                                                                </p>
+                                                            </center>
+                                                            <br><br>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="p-5 bg-sunny-morning">
+                                                        <div class="slider-content">
+                                                            <br><br>
+                                                            <center>
+                                                                <h3>Complex, but lightweight</h3>
+                                                                <p>
+                                                                We've included a lot of components that cover almost all use cases
+                                                                for
+                                                                any type of application.
+                                                                </p>
+                                                            </center>
+                                                            <br><br>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                                    <div class="main-card mb-3 card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Timeline</h5>
+                                            <div class="vertical-time-icons vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                    <div>
+                                                        <div class="vertical-timeline-element-icon bounce-in">
+                                                            <div class="timeline-icon border-primary">
+                                                                <i class="lnr-license icon-gradient bg-night-fade"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link"><h4 class="timeline-title">Syarat dan Ketentuan</h4>
+                                                            </button>
+                                                            <h4 class="timeline-title"></h4>
+                                                            <p>
+                                                                <a href="javascript:void(0);"> </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                    <div>
+                                                        <div class="vertical-timeline-element-icon bounce-in">
+                                                            <div class="timeline-icon border-warning">
+                                                                <i class="lnr-cog fa-spin icon-gradient bg-happy-itmeo"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link"><h4 class="timeline-title">Alur Pendaftaran</h4>
+                                                            </button>
+                                                            <h4 class="timeline-title"></h4>
+                                                            <p> <b class="text-danger"> </b></p>
+                                                            <p> <span class="text-success"> </span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                    <div>
+                                                        <div class="vertical-timeline-element-icon bounce-in">
+                                                            <div class="timeline-icon border-success">
+                                                                <i class="lnr-cloud-upload icon-gradient bg-plum-plate"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link"><h4 class="timeline-title">Jadwal PPDB</h4>
+                                                            </button>
+                                                            <h4 class="timeline-title"></h4>
+                                                            <p>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                    <div>
+                                                        <div class="vertical-timeline-element-icon bounce-in">
+                                                            <div class="timeline-icon border-primary">
+                                                                <i class="lnr-license text-primary"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link"><h4 class="timeline-title">Informasi Lainnya</h4>
+                                                            </button>
+                                                            <h4 class="timeline-title"></h4>
+                                                            <p>
+                                                                <a href="javascript:void(0);"> </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                    <div>
+                                                        <div class="vertical-timeline-element-icon bounce-in">
+                                                            <div class="timeline-icon border-primary">
+                                                                <i class="pe-7s-mail-open-file text-primary"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link"><h4 class="timeline-title">Inbox</h4>
+                                                            </button>
+                                                            <h4 class="timeline-title"></h4>
+                                                            <p>
+                                                                <a href="javascript:void(0);"> </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="app-inner-layout__sidebar card">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-3">
+                                                        <div class="avatar-icon-wrapper">
+                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                            </div>
+                                                            <div class="avatar-icon">
+                                                                <img src="assets/images/avatars/2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Alina Mcloughlin</div>
+                                                        <div class="widget-subheading">Aenean vulputate eleifend tellus.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" tabindex="0" class="dropdown-item active">
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-3">
+                                                        <div class="avatar-icon-wrapper">
+                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                            </div>
+                                                            <div class="avatar-icon">
+                                                                <img src="assets/images/avatars/3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Chad Evans</div>
+                                                        <div class="widget-subheading">Vivamus elementum semper nisi.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-3">
+                                                        <div class="avatar-icon-wrapper">
+                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                            </div>
+                                                            <div class="avatar-icon">
+                                                                <img src="assets/images/avatars/2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Ruben Tillman</div>
+                                                        <div class="widget-subheading">Lorem ipsum dolor sit amet, consectetuer
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-3">
+                                                        <div class="avatar-icon-wrapper">
+                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                            </div>
+                                                            <div class="avatar-icon">
+                                                                <img src="assets/images/avatars/3.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Ella-Rose Henry</div>
+                                                        <div class="widget-subheading">Etiam sit amet orci eget eros faucibus</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item">
+                                        <button type="button" tabindex="0" class="dropdown-item">
+                                            <div class="widget-content p-0">
+                                                <div class="widget-content-wrapper">
+                                                    <div class="widget-content-left mr-3">
+                                                        <div class="avatar-icon-wrapper">
+                                                            <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                            </div>
+                                                            <div class="avatar-icon">
+                                                                <img src="assets/images/avatars/2.jpg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="widget-content-left">
+                                                        <div class="widget-heading">Ruben Tillman</div>
+                                                        <div class="widget-subheading">Lorem ipsum dolor sit amet, consectetuer
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="app-inner-layout__sidebar-footer pb-3">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item-divider nav-item"></li>
+                                        <li class="nav-item-header nav-item">Komentar Lainnya Untuk PPDB</li>
+                                        <li class="text-center p-2 nav-item">
+                                            <div class="avatar-wrapper avatar-wrapper-overlap">
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/5.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/10.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/7.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/8.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-danger badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon rounded">
+                                                        <img src="assets/images/avatars/4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="avatar-icon-wrapper avatar-icon-add">
+                                                    <div class="avatar-icon rounded"><i>+</i></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-drawer-wrapper">
+        <div class="drawer-nav-btn">
+            <button type="button" class="hamburger hamburger--elastic is-active">
+                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+            </button>
+        </div>
+        <div class="drawer-content-wrapper">
+            <div class="scrollbar-container">
+                <h3 class="drawer-heading">Pengaturan</h3>
+                <div class="scrollbar-sidebar">
+                    <div class="app-sidebar__inner">
+                        <ul class="vertical-nav-menu">
+                            <li  class="mm-active" >
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul      >
+                                    <li>
+                                        <a href="tampilan-edit-sekolah.html">
+                                            <i class="metismenu-icon"></i>Sekolah
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="Statistik-sekolah.html" >
+                                            <i class="metismenu-icon"></i>Log Aktifitas
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li  
+                                   >
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul  
+                                      
+                                    >
+                                    <li>
+                                        <a href="pages-login.html" >
+                                            <i class="metismenu-icon"></i>Pusat Bantuan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-login-boxed.html" >
+                                            <i class="metismenu-icon"></i>Kotak Masuk Dukungan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-register.html" >
+                                            <i class="metismenu-icon"></i>Laporkan Masalah
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li  
+                                   >
+                                <a href="#">
+                                    <i class="metismenu-icon pe-7s-plugin"></i>Beri Dukungan
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                                <ul  
+                                    >
+                                    <li>
+                                        <a href="apps-mailbox.html" >
+                                            <i class="metismenu-icon"></i>Bantu Kami Menyempurnakan Pusat Sekolah
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="apps-chat.html" >
+                                            <i class="metismenu-icon"></i>Laporkan BUG/Fitur yang tidak berfungsi
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script></body>
+
+
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/components-carousel.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:04:09 GMT -->
+</html>
