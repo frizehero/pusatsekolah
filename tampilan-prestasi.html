@@ -673,19 +673,58 @@
             </div
             ><div class="app-main__outer">
                 <div class="app-main__inner">
-                    <div class="d-flex flex-wrap justify-content-between">
-                        <div class="col-12 col-md-3 p-0 mb-3">
-                            <input type="text" class="form-control" placeholder="Cari...">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="mb-2 mr-2 btn-group">
+                                    <button type="button" aria-haspopup="true" aria-expanded="false"
+                                        data-toggle="dropdown" class="dropdown-toggle btn btn-primary">Filter
+                                    </button>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                        <h6 tabindex="-1" class="dropdown-header">Filter</h6>
+                                        <div class="nav-item-divider nav-item"></div>
+                                        <div class="form-check">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input"> Semua
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="nav-item-divider nav-item"></div>
+                                        <div class="form-check">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input"> Akademi
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input"> Non Akademi
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="tampilan-tambah-prestasi.html">
-                            <button type="button" class="btn btn-shadow btn-wide btn-primary">
-                                <span class="btn-icon-wrapper pr-2 opacity-7">
-                                    <i class="fa fa-plus fa-w-20"></i>
-                                </span>
-                                Upload Prestasi
-                            </button>
-                            </a>
+                        <div class="col-md-12">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="col-12 col-md-3 p-0 mb-3">
+                                    <input type="text" class="form-control" placeholder="Cari...">
+                                </div>
+                                <div>
+                                    <a href="tampilan-tambah-prestasi.html">
+                                    <button type="button" class="btn btn-shadow btn-wide btn-primary">
+                                        <span class="btn-icon-wrapper pr-2 opacity-7">
+                                            <i class="fa fa-plus fa-w-20"></i>
+                                        </span>
+                                        Upload Prestasi
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -709,70 +748,82 @@
                                     <li class="list-group-item">
                                         <div class="widget-content p-0">
                                             <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                                </div>
                                                 <div class="widget-content-left">
-                                                    <div class="widget-heading">Nama : Rolf Jacob Sartorius</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Jenis : lomba</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tingkat : Sejawa Timur</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Juara : 1</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tanggal : 12 - 10 - 2003</div>
+                                                    <div><h5><b>Lomba Makan Kerupuk</b></h5></div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-ribbon text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Jenis</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Non Akademi</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-world text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tingkat</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Nasional</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-medal text-muted fsize-3"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Juara</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 1 (Satu)</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-date text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tanggal</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 12-12-2012</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
+                                <div class="text-center d-block card-footer">
+                                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Prestasi</button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <div class="card-shadow-primary card-border text-dark mb-3 card bg-primary">
                                 <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/dropdown-header/city1.jpg');">
                                         <div class="menu-header-btn-pane pt-5">
                                             <div class="pt-5">
                                                 <div class="pt-5">
@@ -789,70 +840,82 @@
                                     <li class="list-group-item">
                                         <div class="widget-content p-0">
                                             <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                                </div>
                                                 <div class="widget-content-left">
-                                                    <div class="widget-heading">Nama : Rolf Jacob Sartorius</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Jenis : lomba</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tingkat : Sejawa Timur</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Juara : 1</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tanggal : 12 - 10 - 2003</div>
+                                                    <div><h5><b>Lomba Matematika</b></h5></div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-ribbon text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Jenis</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Akademi</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-world text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tingkat</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Internasional</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-medal text-muted fsize-3"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Juara</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 1 (Satu)</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-date text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tanggal</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 12-12-2012</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
+                                <div class="text-center d-block card-footer">
+                                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Prestasi</button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <div class="card-shadow-primary card-border text-dark mb-3 card bg-primary">
                                 <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/dropdown-header/city3.jpg');">
+                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/dropdown-header/city2.jpg');">
                                         <div class="menu-header-btn-pane pt-5">
                                             <div class="pt-5">
                                                 <div class="pt-5">
@@ -869,64 +932,76 @@
                                     <li class="list-group-item">
                                         <div class="widget-content p-0">
                                             <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                                </div>
                                                 <div class="widget-content-left">
-                                                    <div class="widget-heading">Nama : Rolf Jacob Sartorius</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Jenis : lomba</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tingkat : Sejawa Timur</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Juara : 1</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="widget-content p-0">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left center-elem mr-2">
-                                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                                </div>
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Tanggal : 12 - 10 - 2003</div>
+                                                    <div><h5><b>Lomba Menggambar</b></h5></div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-ribbon text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Jenis</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Non Akademi</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-world text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tingkat</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: Nasional</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-medal text-muted fsize-3"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Juara</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 1 (Satu)</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="col-sm-1">
+                                                                        <i class="pe-7s-date text-muted fsize-2"></i>
+                                                                    </div>
+                                                                    <div class="col-sm-3">
+                                                                        <label class="col-form-label"><b>Tanggal</b></label>
+                                                                    </div>
+                                                                    <div class="col-sm-8">
+                                                                        <label class="col-form-label">: 12-12-2012</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
+                                <div class="text-center d-block card-footer">
+                                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Prestasi</button>
+                                </div>
                             </div>
                         </div>
                     </div>
