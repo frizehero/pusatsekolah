@@ -672,10 +672,6 @@
                 </div>
             </div>
             <div class="app-main__outer">
-                <div class="app-main__inner">                        
-                    <div class="card no-shadow rm-border bg-transparent widget-chart widget-chart-content">
-                        <div class="widget-numbers"><span>PRODUK - PRODUK SEKOLAH</span></div>
-                    </div>
                     <!--<div class="container">
                         <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-rounded-lg">
                             <li class="nav-item">
@@ -702,7 +698,62 @@
                     </div>-->
                     <div class="tab-content">
                         <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
+                            <div class="main-card mb-3 card">
+                                <div class="card no-shadow rm-border bg-transparent widget-chart widget-chart-content">
+                                    <div class="widget-numbers"><span>PRODUK - PRODUK SEKOLAH</span></div>
+                                </div>
+                            </div>
                             <div class="card-body">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="col-12 col-md-3 p-0 mb-3">
+                                        <input type="text" class="form-control" placeholder="Cari...">
+                                    </div>
+                                    <div>
+                                        <div>
+                                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="btn btn-shadow btn-wide btn-primary">Filter
+                                        </button>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu" style="">
+                                            <div class="form-check">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"> Semua
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="nav-item-divider nav-item"></div>
+                                            <div class="form-check">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"> Makanan
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"> Minuman
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"> Pakaian
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input type="checkbox" class="form-check-input"> Daur Ulang
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-shadow btn-wide btn-primary" data-toggle="modal" data-target="#exampleModal7"><span class="btn-icon-wrapper pr-2 opacity-7"><i class="fa fa-plus fa-w-20"></i></span>Tambah Produk
+                                        </button>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="card mb-3 widget-chart">
@@ -726,7 +777,8 @@
                                                     12.600</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal1">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -753,7 +805,8 @@
                                                     15.500</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal2">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -780,7 +833,8 @@
                                                     23.600</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal3">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -809,7 +863,8 @@
                                                     30.000</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal4">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -836,7 +891,8 @@
                                                     19.900</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal5">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -863,12 +919,18 @@
                                                     69.000</h3>
                                                 </div>
                                                 <div class="col-md-5">
-                                                    <button class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">Edit</button>
+                                                    <button type="button" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block" data-toggle="modal" data-target="#exampleModal6">
+                                                    Edit</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn-shadow btn-wide btn-pill btn btn-primary">
+                                    Lihat Lainnya
+                                </button>
                             </div>
                         </div>
                         <!--<div class="tab-pane" id="tab-eg8-1" role="tabpanel">
@@ -1331,7 +1393,7 @@
                             </div>
                         </div>-->
                     </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -1422,3 +1484,269 @@
 
 <!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/apps-chat.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
 </html>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Sereal Sehat Olahan Sayur Bayam" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Mie Sehat Olahan Kentang" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Naget Ikan Krispi" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Kain Batik Tulis Jawa" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Pot Daur Ulang" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Tas Cantik Batok Kelapa" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Tas Cantik Batok Kelapa" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div> 
+                    <br>
+                    <div class="position-relative form-group">
+                        <label for="exampleFile" class="">Upload Foto</label>
+                        <input name="file" id="exampleFile" type="file" class="form-control-file">
+                        <small class="form-text text-muted">Sizi file max. 2 Mb
+                        </small>
+                    </div>               
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
