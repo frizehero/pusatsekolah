@@ -750,14 +750,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="">
-                                        <button type="button" class="btn btn-shadow btn-wide btn-primary">
-                                            <span class="btn-icon-wrapper pr-2 opacity-7">
-                                                <i class="fa fa-plus fa-w-20"></i>
-                                            </span>
-                                            Tambah Produk
+                                        <button type="button" class="btn btn-shadow btn-wide btn-primary" data-toggle="modal" data-target="#exampleModal7"><span class="btn-icon-wrapper pr-2 opacity-7"><i class="fa fa-plus fa-w-20"></i></span>Tambah Produk
                                         </button>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -1702,6 +1696,50 @@
                         </div>
                         <input type="number" class="form-control">
                     </div>                
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-primary">Simpan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">EDIT PRODUK SEKOLAH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="">
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Nama Produk</label>
+                        <input name="text" id="exampleEmail" placeholder="Tas Cantik Batok Kelapa" type="text" class="form-control">
+                    </div>
+                    <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Deskripsi Produk</label>
+                        <input name="text" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                    </div>
+                    <label for="exampleEmail" class="">Harga Produk</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp.</span>
+                        </div>
+                        <input type="number" class="form-control">
+                    </div> 
+                    <br>
+                    <div class="position-relative form-group">
+                        <label for="exampleFile" class="">Upload Foto</label>
+                        <input name="file" id="exampleFile" type="file" class="form-control-file">
+                        <small class="form-text text-muted">Sizi file max. 2 Mb
+                        </small>
+                    </div>               
                 </form>
             </div>
             <div class="modal-footer">
