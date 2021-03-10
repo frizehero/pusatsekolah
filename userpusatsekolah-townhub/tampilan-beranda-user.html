@@ -143,7 +143,7 @@
                             <!-- header-search-input --> 
                             <div class="header-search-input">
                                 <label><i class="fal fa-keyboard"></i></label>
-                                <input type="text" placeholder="What are you looking for ?"   value=""/>  
+                                <input type="text" placeholder="Apa yang sedang kamu cari ?"   value=""/>  
                             </div>
                             <!-- header-search-input end -->  
                             <!-- header-search-input --> 
@@ -156,17 +156,18 @@
                             <!-- header-search-input --> 
                             <div class="header-search-input header-search_selectinpt ">
                                 <select data-placeholder="Category" class="chosen-select no-radius" >
-                                    <option>All Categories</option>
-                                    <option>All Categories</option>
-                                    <option>Shops</option>
-                                    <option>Hotels</option>
-                                    <option>Restaurants</option>
-                                    <option>Fitness</option>
-                                    <option>Events</option>
+                                    <option>Semua kategori</option>
+                                    <option>Semua kategori</option>
+                                    <option>PAUD</option>
+                                    <option>TK</option>
+                                    <option>SD</option>
+                                    <option>SMP</option>
+                                    <option>SMA</option>
+                                    <option>SMK</option>
                                 </select>
                             </div>
                             <!-- header-search-input end --> 
-                            <button class="header-search-button green-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Search </button>
+                            <button class="header-search-button green-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Cari </button>
                         </div>
                         <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
                     </div>
@@ -287,14 +288,7 @@
                                 <h3>Pilih sekolah berdasarkan tempat, jenjang, dan kriteriamu.</h3>
                             </div>
                             <!-- main-search-input-tabs-->
-                            <div class="main-search-input-tabs  tabs-act fl-wrap">
-                                <ul class="tabs-menu  no-list-style">
-                                    <li class="current"><a href="#tab-inpt1"> Places</a></li>
-                                    <li><a href="#tab-inpt2"> Events</a></li>
-                                    <li><a href="#tab-inpt3"> Restaurants</a></li>
-                                    <li><a href="#tab-inpt4"> Hotels</a></li>
-                                </ul>
-                                <!--tabs -->                       
+                            <div class="main-search-input-tabs  tabs-act fl-wrap">                      
                                 <div class="tabs-container fl-wrap  ">
                                     <!--tab -->
                                     <div class="tab">
@@ -303,116 +297,35 @@
                                                 <div class="main-search-input fl-wrap">
                                                     <div class="main-search-input-item">
                                                         <label><i class="fal fa-keyboard"></i></label>
-                                                        <input type="text" placeholder="What are you looking for?" value=""/>
+                                                        <input type="text" placeholder="Apa yang sedang kamu cari ?" value=""/>
                                                     </div>
                                                     <div class="main-search-input-item location autocomplete-container">
                                                         <label><i class="fal fa-map-marker-check"></i></label>
-                                                        <input type="text" placeholder="Location" class="autocomplete-input" id="autocompleteid" value=""/>
+                                                        <input type="text" placeholder="Kota / Provinsi" class="autocomplete-input" id="autocompleteid" value=""/>
                                                         <a href="#"><i class="fa fa-dot-circle-o"></i></a>
                                                     </div>
                                                     <div class="main-search-input-item">
-                                                        <select data-placeholder="All Categories"  class="chosen-select" >
-                                                            <option>All Categories</option>
-                                                            <option>Shops</option>
-                                                            <option>Hotels</option>
-                                                            <option>Restaurants</option>
-                                                            <option>Fitness</option>
-                                                            <option>Events</option>
+                                                        <select data-placeholder="Semua kategori" class="chosen-select" >
+                                                            <option>Semua kategori</option>
+                                                            <option>PAUD</option>
+                                                            <option>TK</option>
+                                                            <option>SD</option>
+                                                            <option>SMP</option>
+                                                            <option>SMA</option>
+                                                            <option>SMK</option>
                                                         </select>
                                                     </div>
-                                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
+                                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Cari <i class="far fa-search"></i></button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!--tab end-->
-                                    <!--tab -->
-                                    <div class="tab">
-                                        <div id="tab-inpt2" class="tab-content">
-                                            <div class="main-search-input-wrap fl-wrap">
-                                                <div class="main-search-input fl-wrap">
-                                                    <div class="main-search-input-item">
-                                                        <label><i class="fal fa-handshake-alt"></i></label>
-                                                        <input type="text" placeholder="Event Name or Place" value=""/>
-                                                    </div>
-                                                    <div class="main-search-input-item">
-                                                        <select data-placeholder="Loaction" class="chosen-select on-radius" >
-                                                            <option>All Cities</option>
-                                                            <option>New York</option>
-                                                            <option>London</option>
-                                                            <option>Paris</option>
-                                                            <option>Kiev</option>
-                                                            <option>Moscow</option>
-                                                            <option>Dubai</option>
-                                                            <option>Rome</option>
-                                                            <option>Beijing</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="main-search-input-item clact date-container">
-                                                        <span class="iconn-dec"><i class="fal fa-calendar"></i></span>
-                                                        <input type="text" placeholder="Event Date"     name="datepicker-here"   value=""/>
-                                                        <span class="clear-singleinput"><i class="fal fa-times"></i></span>
-                                                    </div>
-                                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--tab end-->                                
-                                    <!--tab -->
-                                    <div class="tab">
-                                        <div id="tab-inpt3" class="tab-content">
-                                            <div class="main-search-input-wrap fl-wrap">
-                                                <div class="main-search-input fl-wrap">
-                                                    <div class="main-search-input-item">
-                                                        <label><i class="fal fa-cheeseburger"></i></label>
-                                                        <input type="text" placeholder="Restaurant Name" value=""/>
-                                                    </div>
-                                                    <div class="main-search-input-item clact date-container">
-                                                        <span class="iconn-dec"><i class="fal fa-calendar"></i></span>
-                                                        <input type="text" placeholder="Date and Time"     name="datepicker-here-time"   value=""/>
-                                                        <span class="clear-singleinput"><i class="fal fa-times"></i></span>
-                                                    </div>
-                                                    <div class="main-search-input-item">
-                                                        <label><i class="fal fa-user-friends"></i></label>
-                                                        <input type="number" placeholder="Persons" value=""/>
-                                                    </div>
-                                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--tab end-->                                 
-                                    <!--tab -->
-                                    <div class="tab">
-                                        <div id="tab-inpt4" class="tab-content">
-                                            <div class="main-search-input-wrap fl-wrap">
-                                                <div class="main-search-input fl-wrap">
-                                                    <div class="main-search-input-item">
-                                                        <label><i class="fal fa-cheeseburger"></i></label>
-                                                        <input type="text" placeholder="Hotel Name" value=""/>
-                                                    </div>
-                                                    <div class="main-search-input-item">
-                                                        <label><i class="fal fa-user-friends"></i></label>
-                                                        <input type="number" placeholder="Persons" value=""/>
-                                                    </div>
-                                                    <div class="main-search-input-item clact date-container3 daterangepicker_big">
-                                                        <span class="iconn-dec"><i class="fal fa-calendar"></i></span>
-                                                        <input type="text" placeholder="Date In Out"     name="dates"   value=""/>
-                                                        <span class="clear-singleinput"><i class="fal fa-times"></i></span>
-                                                    </div>
-                                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Search <i class="far fa-search"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--tab end-->                                  
+                                    </div>                                  
                                 </div>
                                 <!--tabs end-->
                             </div>
                             <!-- main-search-input-tabs end-->
                             <div class="hero-categories fl-wrap">
-                                <h4 class="hero-categories_title">Just looking around ? Use quick search by category :</h4>
+                                <h4 class="hero-categories_title">Sedang mencari sesuatu? Temukan dengan mudah menggunakan kategori :</h4>
                                 <ul class="no-list-style">
                                     <li><a href="listing.html"><i class="far fa-user"></i><span>PAUD</span></a></li>
                                     <li><a href="listing.html"><i class="far fa-user-friends"></i><span>TK</span></a></li>
@@ -555,161 +468,23 @@
                         </div>
                         <div class="col-md-4"></div>
                     </div>
-                    <!--section -->
-                    <section   class="gray-bg hidden-section particles-wrapper">
-                        <div class="container">
-                            <div class="section-title">
-                                <h2>Explore Best Cities</h2>
-                                <div class="section-subtitle">Catalog of Categories</div>
-                                <span class="section-separator"></span>
-                                <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus.</p>
-                            </div>
-                            <div class="listing-item-grid_container fl-wrap">
-                                <div class="row">
-                                    <!--  listing-item-grid  -->
-                                    <div class="col-sm-4">
-                                        <div class="listing-item-grid">
-                                            <div class="bg"  data-bg="images/all/56.jpg"></div>
-                                            <div class="d-gr-sec"></div>
-                                            <div class="listing-counter color2-bg"><span>16 </span> Locations</div>
-                                            <div class="listing-item-grid_title">
-                                                <h3><a href="listing.html">New York</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  listing-item-grid end  -->
-                                    <!--  listing-item-grid  -->
-                                    <div class="col-sm-4">
-                                        <div class="listing-item-grid">
-                                            <div class="bg"  data-bg="images/all/57.jpg"></div>
-                                            <div class="d-gr-sec"></div>
-                                            <div class="listing-counter color2-bg"><span>22 </span> Locations</div>
-                                            <div class="listing-item-grid_title">
-                                                <h3><a href="listing.html">Paris</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  listing-item-grid end  -->                                
-                                    <!--  listing-item-grid  -->
-                                    <div class="col-sm-4">
-                                        <div class="listing-item-grid">
-                                            <div class="bg"  data-bg="images/all/58.jpg"></div>
-                                            <div class="d-gr-sec"></div>
-                                            <div class="listing-counter color2-bg"><span>9 </span> Locations</div>
-                                            <div class="listing-item-grid_title">
-                                                <h3><a href="listing.html">Moscow</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  listing-item-grid end  -->
-                                    <!--  listing-item-grid  -->
-                                    <div class="col-sm-4">
-                                        <div class="listing-item-grid">
-                                            <div class="bg"  data-bg="images/all/60.jpg"></div>
-                                            <div class="d-gr-sec"></div>
-                                            <div class="listing-counter color2-bg"><span>12 </span> Locations</div>
-                                            <div class="listing-item-grid_title">
-                                                <h3><a href="listing.html">Rome</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  listing-item-grid end  -->
-                                    <!--  listing-item-grid  -->
-                                    <div class="col-sm-8">
-                                        <div class="listing-item-grid">
-                                            <div class="bg"  data-bg="images/all/59.jpg"></div>
-                                            <div class="d-gr-sec"></div>
-                                            <div class="listing-counter color2-bg"><span>33 </span> Locations</div>
-                                            <div class="listing-item-grid_title">
-                                                <h3><a href="listing.html">London</a></h3>
-                                                <p>Constant care and attention to the patients makes good record</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--  listing-item-grid end  -->                                                                                               
-                                </div>
-                            </div>
-                            <a href="listing.html" class="btn dec_btn   color2-bg">View All Cities<i class="fal fa-arrow-alt-right"></i></a>
-                        </div>
-                    </section>
-                    <!--  section  -->
-                    <!--section end-->
-                    <section class="parallax-section small-par" data-scrollax-parent="true">
-                        <div class="bg par-elem "  data-bg="images/bg/22.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
-                        <div class="overlay  op7"></div>
-                        <div class="container">
-                            <div class=" single-facts single-facts_2 fl-wrap">
-                                <!-- inline-facts -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="1254">1254</div>
-                                            </div>
-                                        </div>
-                                        <h6>New Visiters Every Week</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                                <!-- inline-facts  -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="12168">12168</div>
-                                            </div>
-                                        </div>
-                                        <h6>Happy customers every year</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                                <!-- inline-facts  -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="2172">2172</div>
-                                            </div>
-                                        </div>
-                                        <h6>Won Amazing Awards</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                                <!-- inline-facts  -->
-                                <div class="inline-facts-wrap">
-                                    <div class="inline-facts">
-                                        <div class="milestone-counter">
-                                            <div class="stats animaper">
-                                                <div class="num" data-content="0" data-num="732">732</div>
-                                            </div>
-                                        </div>
-                                        <h6>New Listing Every Week</h6>
-                                    </div>
-                                </div>
-                                <!-- inline-facts end -->
-                            </div>
-                        </div>
-                    </section>
-                    <!--section end--> 
-                    <!--section  -->
+
                     <section>
                         <div class="container big-container">
                             <div class="section-title">
-                                <h2><span>Most Popular Palces</span></h2>
-                                <div class="section-subtitle">Best Listings</div>
+                                <h2><span>Sekolah Terpopuler</span></h2>
+                                <div class="section-subtitle">PALING POPULER</div>
                                 <span class="section-separator"></span>
-                                <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus tellus ut, convallis eros sollicitudin turpis.</p>
+                                <p>Sekolah populer pilihan kami ini mungkin cocok untuk kamu</p>
                             </div>
                             <div class="listing-filters gallery-filters fl-wrap">
-                                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All Categories</a>
-                                <a href="#" class="gallery-filter" data-filter=".restaurant">Restaurants </a>
-                                <a href="#" class="gallery-filter" data-filter=".hotels">Hotels</a>
-                                <a href="#" class="gallery-filter" data-filter=".events">Events</a>
-                                <a href="#" class="gallery-filter" data-filter=".fitness">Fitness</a>
+                                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">Semua Jenjang</a>
+                                <a href="#" class="gallery-filter" data-filter=".restaurant">PAUD</a>
+                                <a href="#" class="gallery-filter" data-filter=".hotels">TK</a>
+                                <a href="#" class="gallery-filter" data-filter=".events">SD</a>
+                                <a href="#" class="gallery-filter" data-filter=".fitness">SMP</a>
+                                <a href="#" class="gallery-filter" data-filter=".restaurant">SMA</a>
+                                <a href="#" class="gallery-filter" data-filter=".fitness">SMK</a>
                             </div>
                             <div class="grid-item-holder gallery-items fl-wrap">
                                 <!--  gallery-item-->
@@ -720,7 +495,7 @@
                                             <div class="geodir-category-img">
                                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/all/1.jpg" alt=""> 
+                                                <img src="images/sekolah/paud1.jpg" alt="" style="height: 185px;"> 
                                                 </a>
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
@@ -738,13 +513,14 @@
                                             <div class="geodir-category-content fl-wrap title-sin_item">
                                                 <div class="geodir-category-content-title fl-wrap">
                                                     <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">Luxary Resaturant</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#" ><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a></div>
+                                                        <br>
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Ananda 5</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#" ><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
                                                     </div>
                                                 </div>
                                                 <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
+                                                    <p class="small-text">PAUD Ananda 5 adalah sekolah yang baik untuk anak - anak bunda.</p>
+                                                    <!--<div class="facilities-list fl-wrap">
                                                         <div class="facilities-list-title">Facilities : </div>
                                                         <ul class="no-list-style">
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
@@ -752,9 +528,9 @@
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
                                                         </ul>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
-                                                <div class="geodir-category-footer fl-wrap">
+                                                <!--<div class="geodir-category-footer fl-wrap">
                                                     <a class="listing-item-category-wrap">
                                                         <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
                                                         <span>Restaurants</span>
@@ -779,7 +555,7 @@
                                                             <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
                                                         </ul>
                                                     </div>
-                                                </div>
+                                                </div>-->
                                             </div>
                                         </article>
                                     </div>
@@ -1090,7 +866,7 @@
                                             <div class="geodir-category-img">
                                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/all/18.jpg" alt=""> 
+                                                <img src="images/sekolah/paud2.jpg" alt="" style="height: 185px;"> 
                                                 </a>
                                                 <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
                                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
@@ -1108,13 +884,14 @@
                                             <div class="geodir-category-content fl-wrap title-sin_item">
                                                 <div class="geodir-category-content-title fl-wrap">
                                                     <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">Iconic Cafe in Manhattan</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ,  USA</a></div>
+                                                        <br>
+                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Bhayangkara 205</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Lebak Bulus, Jakarta, Indonesia</a></div>
                                                     </div>
                                                 </div>
                                                 <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
+                                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
+                                                    <!--<div class="facilities-list fl-wrap">
                                                         <div class="facilities-list-title">Facilities : </div>
                                                         <ul class="no-list-style">
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
@@ -1122,33 +899,7 @@
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
                                                             <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
                                                         </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Restaurants</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.76221766" data-newlongitude="-73.96511769"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>6</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicPath="[{'src': 'images/all/18.jpg'},{'src': 'images/all/21.jpg'}, {'src': 'images/all/22.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="price-level geodir-category_price">
-                                                        <span class="price-level-item" data-pricerating="2"></span>
-                                                        <span class="price-name-tooltip">Moderate</span>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
                                             </div>
                                         </article>
@@ -1306,6 +1057,144 @@
                                 <!-- gallery-item  end-->                                                                                                                        
                             </div>
                             <a href="listing.html" class="btn  dec_btn  color2-bg">Check Out All Listings<i class="fal fa-arrow-alt-right"></i></a>
+                        </div>
+                    </section>
+
+                    <section class="parallax-section small-par" data-scrollax-parent="true">
+                        <div class="bg par-elem "  data-bg="images/bg/22.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="overlay  op7"></div>
+                        <div class="container">
+                            <div class=" single-facts single-facts_2 fl-wrap">
+                                <!-- inline-facts -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="1254">1254</div>
+                                            </div>
+                                        </div>
+                                        <h6>New Visiters Every Week</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="12168">12168</div>
+                                            </div>
+                                        </div>
+                                        <h6>Happy customers every year</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="2172">2172</div>
+                                            </div>
+                                        </div>
+                                        <h6>Won Amazing Awards</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                                <!-- inline-facts  -->
+                                <div class="inline-facts-wrap">
+                                    <div class="inline-facts">
+                                        <div class="milestone-counter">
+                                            <div class="stats animaper">
+                                                <div class="num" data-content="0" data-num="732">732</div>
+                                            </div>
+                                        </div>
+                                        <h6>New Listing Every Week</h6>
+                                    </div>
+                                </div>
+                                <!-- inline-facts end -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section   class="gray-bg hidden-section particles-wrapper">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2>Explore Best Cities</h2>
+                                <div class="section-subtitle">Catalog of Categories</div>
+                                <span class="section-separator"></span>
+                                <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus.</p>
+                            </div>
+                            <div class="listing-item-grid_container fl-wrap">
+                                <div class="row">
+                                    <!--  listing-item-grid  -->
+                                    <div class="col-sm-4">
+                                        <div class="listing-item-grid">
+                                            <div class="bg"  data-bg="images/all/56.jpg"></div>
+                                            <div class="d-gr-sec"></div>
+                                            <div class="listing-counter color2-bg"><span>16 </span> Locations</div>
+                                            <div class="listing-item-grid_title">
+                                                <h3><a href="listing.html">New York</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  listing-item-grid end  -->
+                                    <!--  listing-item-grid  -->
+                                    <div class="col-sm-4">
+                                        <div class="listing-item-grid">
+                                            <div class="bg"  data-bg="images/all/57.jpg"></div>
+                                            <div class="d-gr-sec"></div>
+                                            <div class="listing-counter color2-bg"><span>22 </span> Locations</div>
+                                            <div class="listing-item-grid_title">
+                                                <h3><a href="listing.html">Paris</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  listing-item-grid end  -->                                
+                                    <!--  listing-item-grid  -->
+                                    <div class="col-sm-4">
+                                        <div class="listing-item-grid">
+                                            <div class="bg"  data-bg="images/all/58.jpg"></div>
+                                            <div class="d-gr-sec"></div>
+                                            <div class="listing-counter color2-bg"><span>9 </span> Locations</div>
+                                            <div class="listing-item-grid_title">
+                                                <h3><a href="listing.html">Moscow</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  listing-item-grid end  -->
+                                    <!--  listing-item-grid  -->
+                                    <div class="col-sm-4">
+                                        <div class="listing-item-grid">
+                                            <div class="bg"  data-bg="images/all/60.jpg"></div>
+                                            <div class="d-gr-sec"></div>
+                                            <div class="listing-counter color2-bg"><span>12 </span> Locations</div>
+                                            <div class="listing-item-grid_title">
+                                                <h3><a href="listing.html">Rome</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  listing-item-grid end  -->
+                                    <!--  listing-item-grid  -->
+                                    <div class="col-sm-8">
+                                        <div class="listing-item-grid">
+                                            <div class="bg"  data-bg="images/all/59.jpg"></div>
+                                            <div class="d-gr-sec"></div>
+                                            <div class="listing-counter color2-bg"><span>33 </span> Locations</div>
+                                            <div class="listing-item-grid_title">
+                                                <h3><a href="listing.html">London</a></h3>
+                                                <p>Constant care and attention to the patients makes good record</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  listing-item-grid end  -->                                                                                               
+                                </div>
+                            </div>
+                            <a href="listing.html" class="btn dec_btn   color2-bg">View All Cities<i class="fal fa-arrow-alt-right"></i></a>
                         </div>
                     </section>
                     <!--section end--> 
