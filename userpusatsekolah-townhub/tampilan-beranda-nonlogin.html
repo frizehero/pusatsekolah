@@ -39,15 +39,16 @@
                 <!-- header opt --> 
                 <a href="dashboard-add-listing.html" class="add-list color-bg">Daftarkan Sekolahmu<span><i class="fal fa-layer-plus"></i></span></a>
                 <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter green-bg"></span> </div>
-                <div class="header-user-menu">
-                    <div class="header-user-name">
-                        <span><img src="images/avatar/4.jpg" alt=""></span>
-                        Hello , Alisa
-                    </div>
-                    <ul>
-                        <li><a href="dashboard-myprofile.html"> Edit profile</a></li>
-                        <li><a href="dashboard-review.html"> Reviews </a></li>
-                        <li><a href="#">Log Out</a></li>
+                <div class="show-reg-form modal-open avatar-img" data-srcav="images/avatar/3.jpg"><i class="fal fa-user"></i>Sign In</div>
+                <!-- header opt end--> 
+                <!-- lang-wrap-->
+                <div class="lang-wrap">
+                    <div class="show-lang"><span><i class="fal fa-globe-europe"></i><strong>En</strong></span><i class="fa fa-caret-down arrlan"></i></div>
+                    <ul class="lang-tooltip lang-action no-list-style">
+                        <li><a href="#" class="current-lan" data-lantext="En">English</a></li>
+                        <li><a href="#" data-lantext="Fr">Franais</a></li>
+                        <li><a href="#" data-lantext="Es">Espaol</a></li>
+                        <li><a href="#" data-lantext="De">Deutsch</a></li>
                     </ul>
                 </div>
                 <!-- lang-wrap end-->                                 
@@ -63,12 +64,21 @@
                     <nav>
                         <ul class="no-list-style">
                             <li>
-                                <a href="#" class="act-link">Home</a>
+                                <a href="#" class="act-link">Home <i class="fa fa-caret-down"></i></a>
+                                <!--second level -->   
+                                <ul>
+                                    <li><a href="index.html">Parallax Image</a></li>
+                                    <li><a href="index2.html">Slider</a></li>
+                                    <li><a href="index3.html">Slideshow</a></li>
+                                    <li><a href="index4.html">Video</a></li>
+                                    <li><a href="index5.html">Map</a></li>
+									<li><a href="rtl/index.html" target="_blank">RTL Version</a></li>
+                                </ul>
                                 <!--second level end-->
                             </li>
-                            <!--<li>
+                            <li>
                                 <a href="#">Listings <i class="fa fa-caret-down"></i></a>
-                                second level
+                                <!--second level -->
                                 <ul>
                                     <li><a href="listing.html">Column map</a></li>
                                     <li><a href="listing2.html">Column map 2</a></li>
@@ -78,28 +88,47 @@
                                     <li><a href="listing6.html">Without Map 2</a></li>
                                     <li>
                                         <a href="#">Single <i class="fa fa-caret-down"></i></a>
-                                        third  level
+                                        <!--third  level  -->
                                         <ul>
                                             <li><a href="listing-single.html">Style 1</a></li>
                                             <li><a href="listing-single2.html">Style 2</a></li>
                                             <li><a href="listing-single3.html">Style 3</a></li>
                                             <li><a href="listing-single4.html">Style 4</a></li>
                                         </ul>
-                                        third  level end
+                                        <!--third  level end-->
                                     </li>
                                 </ul>
-                                second level end
-                            </li>-->
-                            <li>
-                                <a href="blog.html">Event</a>
+                                <!--second level end-->
                             </li>
                             <li>
-                                <a href="#">Kami <i class="fa fa-caret-down"></i></a>
+                                <a href="blog.html">News</a>
+                            </li>
+                            <li>
+                                <a href="#">Pages <i class="fa fa-caret-down"></i></a>
                                 <!--second level -->   
                                 <ul>
-                                    <li><a href="about.html">Tentang Kami</a></li>
-                                    <li><a href="contacts.html">Kontak</a></li>
-                                    <li><a href="help.html">Apa Itu Pusat Sekolah?</a></li>
+                                    <li>
+                                        <a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                                        <!--third  level  -->
+                                        <ul>
+                                            <li><a href="shop.html">Products</a></li>
+                                            <li><a href="product-single.html">Product single</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                        </ul>
+                                        <!--third  level end-->
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contacts.html">Contacts</a></li>
+                                    <li><a href="author-single.html">User single</a></li>
+                                    <li><a href="help.html">How it Works</a></li>
+                                    <li><a href="booking.html">Booking</a></li>
+                                    <li><a href="pricing-tables.html">Pricing</a></li>
+                                    <li><a href="dashboard.html">User Dasboard</a></li>
+                                    <li><a href="blog-single.html">Blog Single</a></li>
+                                    <li><a href="dashboard-add-listing.html">Add Listing</a></li>
+                                    <li><a href="invoice.html">Invoice</a></li>
+									<li><a href="login-sign.html">login Sign</a></li>
+                                    <li><a href="404.html">404</a></li>
                                 </ul>
                                 <!--second level end-->                                
                             </li>
@@ -152,45 +181,45 @@
                         <div class="widget-posts  fl-wrap">
                             <ul class="no-list-style">
                                 <li>
-                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/sd1.jpg" alt=""></a>  
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>  
                                     </div>
                                     <div class="widget-posts-descr">
-                                        <h4><a href="listing-single.html">SDN Ardimulyo 1</a></h4>
-                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                        <div class="widget-posts-descr-link"><a href="listing.html" >Sekolah Dasar </a></div>
+                                        <h4><a href="listing-single.html">Iconic Cafe</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 40 Journal Square Plaza, NJ, USA</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Restaurants </a>   <a href="listing.html">Cafe</a></div>
                                         <div class="widget-posts-descr-score">4.1</div>
                                         <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/tk1.jpg" alt=""></a>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/2.png" alt=""></a>
                                     </div>
                                     <div class="widget-posts-descr">
-                                        <h4><a href="listing-single.html">TK Barnadian Uta</a></h4>
-                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur, Indonesia </a></div>
-                                        <div class="widget-posts-descr-link"><a href="listing.html" >Taman Kanak-Kanak </a>  </div>
+                                        <h4><a href="listing-single.html">MontePlaza Hotel</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> 70 Bright St New York, USA </a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Hotels </a>  </div>
                                         <div class="widget-posts-descr-score">5.0</div>
                                         <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/paud2.jpg" alt=""></a>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/3.png" alt=""></a>
                                     </div>
                                     <div class="widget-posts-descr">
-                                        <h4><a href="listing-single.html">PAUD Bhayangkara 205</a></h4>
-                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>Lebak Bulus, Jakarta, Indonesia</a></div>
-                                        <div class="widget-posts-descr-link"><a href="listing.html" >Pendidikan Anak Usia Dini</a> </div>
+                                        <h4><a href="listing-single.html">Rocko Band in Marquee Club</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>75 Prince St, NY, USA</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Events</a> </div>
                                         <div class="widget-posts-descr-score">4.2</div>
                                         <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/smk1.jpg" alt=""></a>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/4.png" alt=""></a>
                                     </div>
                                     <div class="widget-posts-descr">
-                                        <h4><a href="listing-single.html">SMK Negeri 1 Probolinggo</a></h4>
-                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
-                                        <div class="widget-posts-descr-link"><a href="listing.html" >Sekolah Menengah Kejuruan</a> <a href="listing.html" >Gym</a> </div>
+                                        <h4><a href="listing-single.html">Premium Fitness Gym</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> W 85th St, New York, USA</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Fitness</a> <a href="listing.html" >Gym</a> </div>
                                         <div class="widget-posts-descr-score">5.0</div>
                                         <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                                     </div>
@@ -201,7 +230,7 @@
                     </div>
                     <!-- header-modal-container end--> 
                     <div class="header-modal-top fl-wrap">
-                        <h4>Sekolah Disukai : <span><strong></strong> Sekolah</span></h4>
+                        <h4>Your Wishlist : <span><strong></strong> Locations</span></h4>
                         <div class="close-header-modal"><i class="far fa-times"></i></div>
                     </div>
                 </div>
