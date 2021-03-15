@@ -295,9 +295,9 @@
                                             <ul  class="no-list-style">
                                                 <li><a href="dashboard-listing-table.html"><i class="fal fa-th-list"></i> Pusat Bantuan  </a></li>
                                                 <li><a href="dashboard-bookings.html"> <i class="fal fa-calendar-check"></i> Kebijakan Pusat Sekolah <span>2</span></a></li>
-                                                <li><a href="tampilan-nilaips-user.html"><i class="fal fa-comments-alt"></i> Suka Pusat Sekolah? Nilai Kami! </a></li>
-                                                <li><a href="tampilan-hapusakun-user.html" class="user-profile-act"><i class="fal fa-edit"></i> Ajukan Penghapusan Akun</a></li>
-                                                <li><a href="dashboard-messages.html"><i class="fal fa-envelope"></i> Chat Dengan Pusat Sekolah <span>3</span></a></li>
+                                                <li><a href="tampilan-nilaips-user.html" class="user-profile-act"><i class="fal fa-comments-alt"></i> Suka Pusat Sekolah? Nilai Kami! </a></li>
+                                                <li><a href="tampilan-hapusakun-user.html"><i class="fal fa-edit"></i> Ajukan Penghapusan Akun</a></li>
+                                                <li><a href="tampilan-chatps-user.html"><i class="fal fa-envelope"></i> Chat Dengan Pusat Sekolah <span>3</span></a></li>
                                             </ul>
                                         </div>
                                         <!-- user-profile-menu end-->
@@ -311,19 +311,87 @@
                             <!-- dashboard content-->
                             <div class="col-md-9">
                                 <!-- profile-edit-container-->
-                                <div class="profile-edit-container fl-wrap block_box">
-                                    <div class="custom-form">
-                                        <div class="pass-input-wrap fl-wrap">
-                                            <div class="dashboard-title   fl-wrap">
-                                                <h3>Penghapusan Akun</h3>
-                                            </div>
-                                            <label>Mohon perhatikan, bahwa setelah akun Anda dihapus, Anda tidak dapat memulihkannya kembali termasuk data - data yang sebelumnya telah diinputkan ke dalam Pusat Sekolah.</label>
-
-                                            <label>Yakin ingin menghapus akun?</label>
-                                            
-                                        </div>
-                                        <button class="btn    color2-bg  float-btn">HAPUS<i class="fal fa-times-circle"></i></button>
+                                <div class="list-single-main-item fl-wrap block_box" id="sec6">
+                                    <div class="list-single-main-item-title fl-wrap">
+                                        <h3>Nilai Pusat Sekolah</h3>
                                     </div>
+                                    <!-- Add Review Box -->
+                                    <div id="add-review" class="add-review-box">
+                                        <!-- Review Comment -->
+                                        <form id="add-comment" class="add-comment  custom-form" name="rangeCalc">
+                                            <fieldset>
+                                                <div class="review-score-form fl-wrap">
+                                                    <div class="review-range-container">
+                                                        <!-- review-range-item-->
+                                                        <div class="review-range-item">
+                                                            <div class="range-slider-title">Membantu User</div>
+                                                            <div class="range-slider-wrap ">
+                                                                <span class="irs js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 76.6667%;">4</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 1.94805%; width: 76.8831%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 76.8831%;"></span></span><input type="text" class="rate-range irs-hidden-input" data-min="0" data-max="5" name="rgcl" data-step="1" value="4" tabindex="-1" readonly="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- review-range-item end -->
+                                                        <!-- review-range-item-->
+                                                        <div class="review-range-item">
+                                                            <div class="range-slider-title">Informatif</div>
+                                                            <div class="range-slider-wrap ">
+                                                                <span class="irs js-irs-1"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: hidden;">1</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 95.8874%;">5</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 1.94805%; width: 96.1039%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 96.1039%;"></span></span><input type="text" class="rate-range irs-hidden-input" data-min="0" data-max="5" name="rgcl" data-step="1" value="1" tabindex="-1" readonly="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- review-range-item end -->
+                                                        <!-- review-range-item-->
+                                                        <div class="review-range-item">
+                                                            <div class="range-slider-title">Kecepatan Pelayanan</div>
+                                                            <div class="range-slider-wrap ">
+                                                                <span class="irs js-irs-2"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: hidden;">1</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 95.8874%;">5</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 1.94805%; width: 96.1039%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 96.1039%;"></span></span><input type="text" class="rate-range irs-hidden-input" data-min="0" data-max="5" name="rgcl" data-step="1" value="5" tabindex="-1" readonly="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- review-range-item end -->
+                                                        <!-- review-range-item-->
+                                                        <div class="review-range-item">
+                                                            <div class="range-slider-title">Kelengkapan Fitur</div>
+                                                            <div class="range-slider-wrap">
+                                                                <span class="irs js-irs-3"><span class="irs"><span class="irs-line" tabindex="0"><span class="irs-line-left"></span><span class="irs-line-mid"></span><span class="irs-line-right"></span></span><span class="irs-min" style="display: none; visibility: visible;">0</span><span class="irs-max" style="display: none; visibility: visible;">1</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 57.4459%;">3</span></span><span class="irs-grid"></span><span class="irs-bar" style="left: 1.94805%; width: 57.6623%;"></span><span class="irs-bar-edge"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-slider single" style="left: 57.6623%;"></span></span><input type="text" class="rate-range irs-hidden-input" data-min="0" data-max="5" name="rgcl" data-step="1" value="3" tabindex="-1" readonly="">
+                                                            </div>
+                                                        </div>
+                                                        <!-- review-range-item end -->
+                                                    </div>
+                                                    <div class="review-total">
+                                                        <span><input type="text" name="rg_total" data-form="AVG({rgcl})" value="0" readonly="readonly" _jac="_jac"></span>
+                                                        <strong>Total Nilai</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="list-single-main-item_content fl-wrap">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <label><i class="fal fa-user"></i></label>
+                                                            <input type="text" placeholder="Your Name *" value="">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label><i class="fal fa-envelope"></i>  </label>
+                                                            <input type="text" placeholder="Email Address*" value="">
+                                                        </div>
+                                                    </div>
+                                                    <textarea cols="40" rows="3" placeholder="Your Review:"></textarea>
+                                                    <div class="clearfix"></div>
+                                                    <div class="listsearch-input-item fl-wrap">
+                                                        <div class="fuzone">
+                                                            
+                                                                <div class="fu-text">
+                                                                    <span><i class="fal fa-images"></i> Klik untuk upload foto</span>
+                                                                    <div class="photoUpload-files fl-wrap"></div>
+                                                                </div>
+                                                                <input type="file" class="upload" multiple="">
+                                                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <button class="btn  color2-bg  float-btn">Kirim Reviev <i class="fal fa-paper-plane"></i></button>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                                
+                                    </div>
+                                    <!-- Add Review Box / End -->
                                 </div>
                                 <!-- profile-edit-container end-->
                             </div>
