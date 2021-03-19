@@ -1,0 +1,783 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    
+<!-- Mirrored from townhub.kwst.net/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 07:55:11 GMT -->
+<head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Pusat Sekolah - Event Sekolah</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============--> 
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/logo.ico">
+    </head>
+    <body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <div class="loader-inner-cirle"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main start  -->
+        <div id="main">
+            <!-- header -->
+            <header class="main-header">
+                <!-- logo-->
+                <a href="index.html" class="logo-holder"><img src="images/logoatas.png" alt=""></a>
+                <!-- logo end-->
+                <!-- header-search_btn-->         
+                <div class="header-search_btn show-search-button"><i class="fal fa-search"></i><span>Search</span></div>
+                <!-- header-search_btn end-->
+                <!-- header opt --> 
+                <a href="pusatsekolah/signup-adminsekolah.html" class="add-list color-bg">Daftarkan Sekolahmu<span><i class="fal fa-layer-plus"></i></span></a>
+                <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter green-bg"></span> </div>
+                <div class="header-user-menu">
+                    <div class="header-user-name">
+                        <span><img src="images/avatar/4.jpg" alt=""></span>
+                        Hai, Emak
+                    </div>
+                    <ul>
+                        <li><a href="tampilan-edit-profiluser.html"> Edit profile</a></li>
+                        <li><a href="dashboard-review.html"> Reviews </a></li>
+                        <li><a href="tampilan-beranda-nonlogin.html">Log Out</a></li>
+                    </ul>
+                </div>
+                <!-- lang-wrap end-->                                 
+                <!-- nav-button-wrap--> 
+                <div class="nav-button-wrap color-bg">
+                    <div class="nav-button">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <!-- nav-button-wrap end-->
+                <!--  navigation --> 
+                <div class="nav-holder main-menu">
+                    <nav>
+                        <ul class="no-list-style">
+                            <li>
+                                <a href="tampilan-beranda-user.html">Home</a>
+                                <!--second level end-->
+                            </li>
+                            <!--<li>
+                                <a href="#">Listings <i class="fa fa-caret-down"></i></a>
+                                second level
+                                <ul>
+                                    <li><a href="listing.html">Column map</a></li>
+                                    <li><a href="listing2.html">Column map 2</a></li>
+                                    <li><a href="listing3.html">Fullwidth Map</a></li>
+                                    <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                                    <li><a href="listing5.html">Without Map</a></li>
+                                    <li><a href="listing6.html">Without Map 2</a></li>
+                                    <li>
+                                        <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                        third  level
+                                        <ul>
+                                            <li><a href="listing-single.html">Style 1</a></li>
+                                            <li><a href="listing-single2.html">Style 2</a></li>
+                                            <li><a href="listing-single3.html">Style 3</a></li>
+                                            <li><a href="listing-single4.html">Style 4</a></li>
+                                        </ul>
+                                        third  level end
+                                    </li>
+                                </ul>
+                                second level end
+                            </li>-->
+                            <li>
+                                <a href="blog.html">Event</a>
+                            </li>
+                            <li>
+                                <a href="#">Kami <i class="fa fa-caret-down"></i></a>
+                                <!--second level -->   
+                                <ul style="width: 180px;">
+                                    <li><a href="about.html">Tentang Kami</a></li>
+                                    <li><a href="contacts.html">Kontak</a></li>
+                                    <li><a href="help.html">Apa Itu Pusat Sekolah?</a></li>
+                                    <li><a href="help.html">Syarat & Ketentuan</a></li>
+                                </ul>
+                                <!--second level end-->                                
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- navigation  end -->
+                <!-- header-search_container -->                     
+                <div class="header-search_container header-search vis-search">
+                    <div class="container small-container">
+                        <div class="header-search-input-wrap fl-wrap">
+                            <!-- header-search-input --> 
+                            <div class="header-search-input">
+                                <label><i class="fal fa-keyboard"></i></label>
+                                <input type="text" placeholder="Apa yang sedang kamu cari ?"   value=""/>  
+                            </div>
+                            <!-- header-search-input end -->  
+                            <!-- header-search-input --> 
+                            <div class="header-search-input location autocomplete-container">
+                                <label><i class="fal fa-map-marker"></i></label>
+                                <input type="text" placeholder="Location..." class="autocomplete-input" id="autocompleteid2" value=""/>
+                                <a href="#"><i class="fal fa-dot-circle"></i></a>
+                            </div>
+                            <!-- header-search-input end -->                                        
+                            <!-- header-search-input --> 
+                            <div class="header-search-input header-search_selectinpt ">
+                                <select data-placeholder="Category" class="chosen-select no-radius" >
+                                    <option>Semua kategori</option>
+                                    <option>Semua kategori</option>
+                                    <option>PAUD</option>
+                                    <option>TK</option>
+                                    <option>SD</option>
+                                    <option>SMP</option>
+                                    <option>SMA</option>
+                                    <option>SMK</option>
+                                </select>
+                            </div>
+                            <!-- header-search-input end --> 
+                            <button class="header-search-button green-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i> Cari </button>
+                        </div>
+                        <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
+                    </div>
+                </div>
+                <!-- header-search_container  end --> 
+                <!-- wishlist-wrap--> 
+                <div class="header-modal novis_wishlist">
+                    <!-- header-modal-container--> 
+                    <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                        <!--widget-posts-->
+                        <div class="widget-posts  fl-wrap">
+                            <ul class="no-list-style">
+                                <li>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/sd1.jpg" alt=""></a>  
+                                    </div>
+                                    <div class="widget-posts-descr">
+                                        <h4><a href="listing-single.html">SDN Ardimulyo 1</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Sekolah Dasar </a></div>
+                                        <div class="widget-posts-descr-score">4.1</div>
+                                        <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/tk1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="widget-posts-descr">
+                                        <h4><a href="listing-single.html">TK Barnadian Uta</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur, Indonesia </a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Taman Kanak-Kanak </a>  </div>
+                                        <div class="widget-posts-descr-score">5.0</div>
+                                        <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/paud2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="widget-posts-descr">
+                                        <h4><a href="listing-single.html">PAUD Bhayangkara 205</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>Lebak Bulus, Jakarta, Indonesia</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Pendidikan Anak Usia Dini</a> </div>
+                                        <div class="widget-posts-descr-score">4.2</div>
+                                        <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="widget-posts-img"><a href="listing-single.html"><img src="images/sekolah/smk1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="widget-posts-descr">
+                                        <h4><a href="listing-single.html">SMK Negeri 1 Probolinggo</a></h4>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
+                                        <div class="widget-posts-descr-link"><a href="listing.html" >Sekolah Menengah Kejuruan</a> <a href="listing.html" >Gym</a> </div>
+                                        <div class="widget-posts-descr-score">5.0</div>
+                                        <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- widget-posts end-->
+                    </div>
+                    <!-- header-modal-container end--> 
+                    <div class="header-modal-top fl-wrap">
+                        <h4>Sekolah Disukai : <span><strong></strong> Sekolah</span></h4>
+                        <div class="close-header-modal"><i class="far fa-times"></i></div>
+                    </div>
+                </div>
+                <!--wishlist-wrap end --> 
+            </header>
+            <!-- header end-->
+            <!-- wrapper-->
+            <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                    <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
+                        <div class="bg-parallax-wrap">
+                            <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="container">
+                            <div class="list-single-header-item  fl-wrap">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h1>SMK Negeri 1 Kota Probolinggo<span class="verified-badge"><i class="fal fa-check"></i></span></h1>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="tampilan-inbox-user.html">
+                                            <div class="listing-rating-count-wrap single-list-count">
+                                                <div class="review-score">4.1</div>
+                                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                <br>
+                                                <div class="reviews-count">2 Rating</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-single-header_bottom fl-wrap">
+                                <a class="listing-item-category-wrap" href="#">
+                                    <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
+                                    <span>Negeri</span>
+                                </a>
+                                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                                <div class="geodir_status_date gsd_open">Online</div>
+                                <div class="list-single-stats">
+                                    <ul class="no-list-style">
+                                        <li><span class="viewed-counter"><i class="fas fa-eye"></i> Di lihat -  156 </span></li>
+                                        <li><span class="bookmark-counter"><i class="fas fa-heart"></i> Pengikut 24 </span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- scroll-nav-wrapper-->
+                    <div class="scroll-nav-wrapper fl-wrap">
+                        <div class="container">
+                            <nav class="scroll-nav">
+                                <ul class="no-list-style">
+                                    <li><a href="tampilan-beranda-sekolah.html"><i class="fal fa-images"></i>Beranda</a></li>
+                                    <li><a href="tampilan-data-guru.html"><i class="fal fa-info"></i>Guru</a></li>
+                                    <li><a href="tampilan-data-alumni.html"><i class="fal fa-image"></i>Alumni</a></li>
+                                    <li><a class="act-scrlink" href="tampilan-beranda-event-sekolah.html"><i class="fal fa-utensils"></i>Event</a></li>
+                                    <li><a href="tampilan-produk-sekolah.html"><i class="fal fa-comments-alt"></i>Produk</a></li>
+                                    <li><a href="tampilan-media-sekolah.html"><i class="fal fa-images"></i>Media</a></li>
+                                </ul>
+                            </nav>
+                            <div class="scroll-nav-wrapper-opt">
+                                <a href="#" class="scroll-nav-wrapper-opt-btn"> <i class="fas fa-heart"></i> Ikuti </a>
+                                <a href="#" class="scroll-nav-wrapper-opt-btn showshare"> <i class="fas fa-share"></i> Bagikan </a>
+                                <div class="share-holder hid-share">
+                                    <div class="share-container  isShare"></div>
+                                </div>
+                                <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                <div class="show-more-snopt-tooltip">
+                                    <a href="#"> <i class="fas fa-comment-alt"></i> Write a review</a>
+                                    <a href="#"> <i class="fas fa-flag-alt"></i> Report </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- scroll-nav-wrapper end-->
+                    <section class="gray-bg no-top-padding-sec" id="sec1">
+                        <div class="container" style="padding-top: 30px;">
+                            <div class="share-holder hid-share sing-page-share top_sing-page-share">
+                                <div class="share-container  isShare"></div>
+                            </div>
+                            <div class="post-container fl-wrap">
+                                <div class="row">
+                                    <!-- blog content-->
+                                    <div class="col-md-8">
+                                        <!-- article> --> 
+                                        <div class="list-single-main-item fl-wrap block_box" id="sec4">
+                                            <div class="list-single-main-item-title">
+                                                <h3>Event Sekolah Terdekat</h3>
+                                            </div>
+                                            <div class="list-single-main-item_content fl-wrap">
+                                                <!--   rooms-container -->
+                                                <div class="rooms-container fl-wrap">
+                                                    <!--  rooms-item -->
+                                                    <div class="rooms-item fl-wrap">
+                                                        <div class="rooms-media">
+                                                            <img src="images/Sekolah/sd1.jpg" alt="">
+                                                        </div>
+                                                        <div class="rooms-details">
+                                                            <div class="rooms-details-header fl-wrap">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="tampilan-beranda-sekolah.html">
+                                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                                        <div class="show-more-snopt-tooltip">
+                                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rooms-item fl-wrap">
+                                                        <div class="rooms-media">
+                                                            <img src="images/Sekolah/sd1.jpg" alt="">
+                                                        </div>
+                                                        <div class="rooms-details">
+                                                            <div class="rooms-details-header fl-wrap">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="tampilan-beranda-sekolah.html">
+                                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                                        <div class="show-more-snopt-tooltip">
+                                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rooms-item fl-wrap">
+                                                        <div class="rooms-media">
+                                                            <img src="images/Sekolah/sd1.jpg" alt="">
+                                                        </div>
+                                                        <div class="rooms-details">
+                                                            <div class="rooms-details-header fl-wrap">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="tampilan-beranda-sekolah.html">
+                                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                                        <div class="show-more-snopt-tooltip">
+                                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rooms-item fl-wrap">
+                                                        <div class="rooms-media">
+                                                            <img src="images/Sekolah/sd1.jpg" alt="">
+                                                        </div>
+                                                        <div class="rooms-details">
+                                                            <div class="rooms-details-header fl-wrap">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="tampilan-beranda-sekolah.html">
+                                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                                        <div class="show-more-snopt-tooltip">
+                                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rooms-item fl-wrap">
+                                                        <div class="rooms-media">
+                                                            <img src="images/Sekolah/sd1.jpg" alt="">
+                                                        </div>
+                                                        <div class="rooms-details">
+                                                            <div class="rooms-details-header fl-wrap">
+                                                                <div class="row">
+                                                                    <div class="col-md-10">
+                                                                        <a href="tampilan-beranda-sekolah.html">
+                                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                                        <div class="show-more-snopt-tooltip">
+                                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
+                                                        </div>
+                                                    </div>
+                                                    <!--  rooms-item end -->
+                                                </div>
+                                                <!--   rooms-container end -->
+                                            </div>
+                                        </div>
+                                        <!-- article end -->                                         
+                                        <div class="pagination">
+                                            <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
+                                            <a href="#">1</a>
+                                            <a href="#" class="current-page">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">...</a>
+                                            <a href="#">7</a>
+                                            <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
+                                        </div>
+                                    </div>
+                                    <!-- blog conten end-->
+                                    <!-- blog sidebar -->
+                                    <div class="col-md-4">
+                                        <div class="box-widget-wrap fl-wrap fixed-bar">
+                                            <!--box-widget-item -->
+                                            <div class="box-widget-item fl-wrap block_box">
+                                                <div class="box-widget-item-header">
+                                                    <h3>Cari Event</h3>
+                                                </div>
+                                                <div class="box-widget fl-wrap">
+                                                    <div class="box-widget-content">
+                                                        <div class="search-widget">
+                                                            <form action="#" class="fl-wrap">
+                                                                <input name="se" id="se" type="text" class="search" placeholder="Cari ..." value="" />
+                                                                <button class="search-submit color2-bg" id="submit_btn"><i class="fal fa-search"></i> </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--box-widget-item end -->                                    
+                                            <!--box-widget-item -->
+                                            <div class="box-widget-item fl-wrap block_box">
+                                                <div class="box-widget-item-header">
+                                                    <h3>Paling Ditunggu</h3>
+                                                </div>
+                                                <div class="box-widget  fl-wrap">
+                                                    <div class="box-widget-content">
+                                                        <!--widget-posts-->
+                                                        <div class="widget-posts  fl-wrap">
+                                                            <ul class="no-list-style">
+                                                                <li>
+                                                                    <div class="widget-posts-img"><a href="blog-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a></div>
+                                                                    <div class="widget-posts-descr">
+                                                                        <h4><a href="listing-single.html">SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</a></h4>
+                                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fal fa-calendar"></i> 22 Des 2020</a></div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="widget-posts-img"><a href="blog-single.html"><img src="images/gallery/thumbnail/2.png" alt=""></a></div>
+                                                                    <div class="widget-posts-descr">
+                                                                        <h4><a href="listing-single.html">Pusat Sekolah Berkunjung ke Istana Presiden</a></h4>
+                                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fal fa-calendar"></i> 12 May 2018</a></div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="widget-posts-img"><a href="blog-single.html"><img src="images/gallery/thumbnail/3.png" alt=""></a> </div>
+                                                                    <div class="widget-posts-descr">
+                                                                        <h4><a href="listing-single.html">SMPN 10 Karanganyar Mulai Buka PPDB 2021</a></h4>
+                                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fal fa-calendar"></i>22 Feb  2018</a></div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- widget-posts end-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--box-widget-item end -->                                        
+                                            <!--box-widget-item -->
+                                            <div class="box-widget-item fl-wrap block_box">
+                                                <div class="box-widget-item-header">
+                                                    <h3>Tagar</h3>
+                                                </div>
+                                                <div class="box-widget fl-wrap">
+                                                    <div class="box-widget-content">
+                                                        <div class="list-single-tags tags-stylwrap">
+                                                            <a href="#">#SMK</a>
+                                                            <a href="#">#LKS2020</a>
+                                                            <a href="#">#OSN2021</a>
+                                                            <a href="#">#JalanSantai</a>                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--box-widget-item end -->                                     
+                                            <!--box-widget-item -->
+                                            <div class="box-widget-item fl-wrap block_box">
+                                                <div class="box-widget-item-header">
+                                                    <h3>Kategoris</h3>
+                                                </div>
+                                                <div class="box-widget fl-wrap">
+                                                    <div class="box-widget-content">
+                                                        <ul class="cat-item no-list-style">
+                                                            <li><a href="#">Terbaru</a> <span>3</span></li>
+                                                            <li><a href="#">Paling Disukai</a> <span>6 </span></li>
+                                                            <li><a href="#">Paling Disukai</a> <span>12 </span></li>
+                                                            <li><a href="#">Terdekat</a> <span>4</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--box-widget-item end -->                                   
+                                        </div>
+                                    </div>
+                                    <!-- blog sidebar end -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="limit-box fl-wrap"></div>
+                </div>
+                <!--content end-->
+            </div>
+            <!-- wrapper end-->
+            <!--footer -->
+            <footer class="main-footer fl-wrap">
+                <!-- footer-header-->
+                <div class="footer-header fl-wrap grad ient-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div  class="subscribe-header">
+                                    <h3>Subscribe Pusat Sekolah untuk <span>notifikasi terbaru</span></h3>
+                                    <p>Kamu hanya perlu menuliskan alamat emailmu</p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="subscribe-widget">
+                                    <div class="subcribe-form">
+                                        <form id="subscribe">
+                                            <input class="enteremail fl-wrap" name="email" id="subscribe-email" placeholder="Tulis Email Anda ..." spellcheck="false" type="text">
+                                            <button type="submit" id="subscribe-button" class="subscribe-button"><i class="fal fa-envelope"></i></button>
+                                            <label for="subscribe-email" class="subscribe-message"></label>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-header end-->
+                <!--footer-inner-->
+                <div class="footer-inner   fl-wrap">
+                    <div class="container">
+                        <div class="row">
+                            <!-- footer-widget-->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap">
+                                    <div class="footer-logo"><a href="index.html"><img src="images/logoatas.png" alt=""></a></div>
+                                    <div class="footer-contacts-widget fl-wrap">
+                                        <p>Pusat Sekolah hadir sebagai salah satu sara mudah bagi sekolah - sekolah di selurh Indonesia agar saling terhubung dan mudah dalam menyampaikan informasi tentang sekolah mereka.   </p>
+                                        <ul  class="footer-contacts fl-wrap no-list-style">
+                                            <li><span><i class="fal fa-envelope"></i> Mail :</span><a href="#" target="_blank">cp@pusatsekolah.com</a></li>
+                                            <li> <span><i class="fal fa-map-marker"></i> Adress :</span><a href="#" target="_blank">Ngijo, Malang, Jawa Timur, Indonesia</a></li>
+                                            <li><span><i class="fal fa-phone"></i> Phone :</span><a href="#">(+62)8213567331</a></li>
+                                        </ul>
+                                        <div class="footer-social">
+                                            <span>Find  us on: </span>
+                                            <ul class="no-list-style">
+                                                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- footer-widget end-->
+                            <!-- footer-widget-->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap">
+                                    <h3>Event Terbaru</h3>
+                                    <div class="footer-widget-posts fl-wrap">
+                                        <ul class="no-list-style">
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/4.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title="">SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</a>
+                                                    <span class="widget-posts-date"><i class="fal fa-calendar"></i> 21 Mar 09.05 </span> 
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title="">Pusat Sekolah Berkunjung ke Istana Presiden</a>
+                                                    <span class="widget-posts-date"><i class="fal fa-calendar"></i> 7 Mar 18.21 </span> 
+                                                </div>
+                                            </li>
+                                            <li class="clearfix">
+                                                <a href="#"  class="widget-posts-img"><img src="images/all/7.jpg" class="respimg" alt=""></a>
+                                                <div class="widget-posts-descr">
+                                                    <a href="#" title="">SMPN 10 Karanganyar Mulai Buka PPDB 2021</a>
+                                                    <span class="widget-posts-date"><i class="fal fa-calendar"></i> 7 Mar 16.42 </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a href="blog.html" class="footer-link">Baca lebih banyak <i class="fal fa-long-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- footer-widget end-->
+                            <!-- footer-widget  -->
+                            <div class="col-md-4">
+                                <div class="footer-widget fl-wrap ">
+                                    <h3>Pusat Sekolah</h3>
+                                    <div>
+                                        <ul  class="footer-contacts no-list-style">
+                                            <li><a href="#" target="_blank">Daftarkan Sekolahmu</a></li>
+                                            <li><a href="#" target="_blank">Job Pusat Sekolah</a></li>
+                                            <li><a href="tampilan-pusatbantuan.html" target="_blank">Layanan Bantuan</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- footer-widget end-->
+                        </div>
+                    </div>
+                    <!-- footer bg-->
+                    <div class="footer-bg" data-ran="4"></div>
+                    <div class="footer-wave">
+                        <svg viewbox="0 0 100 25">
+                            <path fill="#fff" d="M0 30 V12 Q30 17 55 12 T100 11 V30z" />
+                        </svg>
+                    </div>
+                    <!-- footer bg  end-->
+                </div>
+                <!--footer-inner end -->
+                <!--sub-footer-->
+                <div class="sub-footer  fl-wrap">
+                    <div class="container">
+                        <div style="align-items: center; color: #ffffff"> &#169; Pusat Sekolah 2021 .  All rights reserved.</div>
+                    </div>
+                </div>
+                <!--sub-footer end -->
+            </footer>
+            <!--footer end -->  
+            <!--map-modal -->
+            <div class="map-modal-wrap">
+                <div class="map-modal-wrap-overlay"></div>
+                <div class="map-modal-item">
+                    <div class="map-modal-container fl-wrap">
+                        <div class="map-modal fl-wrap">
+                            <div id="singleMap" data-latitude="40.7" data-longitude="-73.1"></div>
+                        </div>
+                        <h3><span>Location for : </span><a href="#">Listing Title</a></h3>
+                        <div class="map-modal-close"><i class="fal fa-times"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!--map-modal end -->                
+            <!--register form -->
+            <div class="main-register-wrap modal">
+                <div class="reg-overlay"></div>
+                <div class="main-register-holder tabs-act">
+                    <div class="main-register fl-wrap  modal_main">
+                        <div class="main-register_title">Welcome to <span><strong>Town</strong>Hub<strong>.</strong></span></div>
+                        <div class="close-reg"><i class="fal fa-times"></i></div>
+                        <ul class="tabs-menu fl-wrap no-list-style">
+                            <li class="current"><a href="#tab-1"><i class="fal fa-sign-in-alt"></i> Login</a></li>
+                            <li><a href="#tab-2"><i class="fal fa-user-plus"></i> Register</a></li>
+                        </ul>
+                        <!--tabs -->                       
+                        <div class="tabs-container">
+                            <div class="tab">
+                                <!--tab -->
+                                <div id="tab-1" class="tab-content first-tab">
+                                    <div class="custom-form">
+                                        <form method="post"  name="registerform">
+                                            <label>Username or Email Address <span>*</span> </label>
+                                            <input name="email" type="text"   onClick="this.select()" value="">
+                                            <label >Password <span>*</span> </label>
+                                            <input name="password" type="password"   onClick="this.select()" value="" >
+                                            <button type="submit"  class="btn float-btn color2-bg"> Log In <i class="fas fa-caret-right"></i></button>
+                                            <div class="clearfix"></div>
+                                            <div class="filter-tags">
+                                                <input id="check-a3" type="checkbox" name="check">
+                                                <label for="check-a3">Remember me</label>
+                                            </div>
+                                        </form>
+                                        <div class="lost_password">
+                                            <a href="#">Lost Your Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                                <!--tab -->
+                                <div class="tab">
+                                    <div id="tab-2" class="tab-content">
+                                        <div class="custom-form">
+                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                                <label >Full Name <span>*</span> </label>
+                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <label>Email Address <span>*</span></label>
+                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <label >Password <span>*</span></label>
+                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <div class="filter-tags ft-list">
+                                                    <input id="check-a2" type="checkbox" name="check">
+                                                    <label for="check-a2">I agree to the <a href="#">Privacy Policy</a></label>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="filter-tags ft-list">
+                                                    <input id="check-a" type="checkbox" name="check">
+                                                    <label for="check-a">I agree to the <a href="#">Terms and Conditions</a></label>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <button type="submit"     class="btn float-btn color2-bg"> Register  <i class="fas fa-caret-right"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--tab end -->
+                            </div>
+                            <!--tabs end -->
+                            <div class="log-separator fl-wrap"><span>or</span></div>
+                            <div class="soc-log fl-wrap">
+                                <p>For faster login or register use your social account.</p>
+                                <a href="#" class="facebook-log"> Facebook</a>
+                            </div>
+                            <div class="wave-bg">
+                                <div class='wave -one'></div>
+                                <div class='wave -two'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--register form end -->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>     
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+
+<!-- Mirrored from townhub.kwst.net/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 07:55:12 GMT -->
+</html>
