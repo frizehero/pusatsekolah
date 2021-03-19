@@ -222,18 +222,55 @@
                                 <span class="section-separator"></span>
                                 <p>Sekolah populer pilihan kami ini mungkin cocok untuk kamu</p>
                             </div>
-                            <div class="listing-filters gallery-filters fl-wrap">
-                                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">Semua Jenjang</a>
-                                <a href="#" class="gallery-filter" data-filter=".paud">PAUD</a>
-                                <a href="#" class="gallery-filter" data-filter=".tk">TK</a>
-                                <a href="#" class="gallery-filter" data-filter=".sd">SD</a>
-                                <a href="#" class="gallery-filter" data-filter=".smp">SMP</a>
-                                <a href="#" class="gallery-filter" data-filter=".sma">SMA</a>
-                                <a href="#" class="gallery-filter" data-filter=".smk">SMK</a>
-                            </div>
-                            <div class="grid-item-holder gallery-items fl-wrap">
-                                <!--  gallery-item-->
-                                <div class="gallery-item paud">
+                            <!--tab -->
+                            <div id="filters-search" class="tab-content  first-tab ">
+                                <div class="fl-wrap">
+                                    <div class="row">
+                                        <!-- listsearch-input-item-->
+                                        <div class="col-md-4">
+                                            <div class="listsearch-input-item">
+                                                <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                                <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                            </div>
+                                        </div>
+                                        <!-- listsearch-input-item end-->
+                                        <!-- listsearch-input-item-->
+                                        <div class="col-md-3">
+                                            <div class="listsearch-input-item">
+                                                <select data-placeholder="Location" class="chosen-select no-search-select" >
+                                                    <option>Semua Kategori</option>
+                                                    <option>PAUD</option>
+                                                    <option>TK</option>
+                                                    <option>SD</option>
+                                                    <option>SMP</option>
+                                                    <option>SMA</option>
+                                                    <option>SMK</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- listsearch-input-item end-->
+                                        <!-- listsearch-input-item-->
+                                        <div class="col-md-3">
+                                            <div class="listsearch-input-item">
+                                                <select data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                                    <option>Paling Populer</option>
+                                                    <option>Terbaru</option>
+                                                    <option>Telama</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- listsearch-input-item end-->  
+                                        <!-- listsearch-input-item-->
+                                        <div class="col-md-2">
+                                            <div class="listsearch-input-item">
+                                                <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
+                                            </div>
+                                        </div>
+                                        <!-- listsearch-input-item end-->                                         
+                                    </div>
+                                </div>
+                        <div class="limit-box fl-wrap"></div>
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -305,9 +342,7 @@
                                     </div>
                                     <!-- listing-item end -->                              
                                 </div>
-                                <!-- gallery-item  end-->
-                                <!--  gallery-item-->
-                                <div class="gallery-item sd">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -353,9 +388,7 @@
                                     </div>
                                     <!-- listing-item end -->  
                                 </div>
-                                <!-- gallery-item  end-->         
-                                <!-- gallery-item  -->
-                                <div class="gallery-item sd">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -401,9 +434,7 @@
                                     </div>
                                     <!-- listing-item end -->                                   
                                 </div>
-                                <!-- gallery-item  end-->  
-                                <!-- gallery-item  -->
-                                <div class="gallery-item tk">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -449,9 +480,7 @@
                                     </div>
                                     <!-- listing-item end -->                                                            
                                 </div>
-                                <!-- gallery-item  end-->                                 
-                                <!-- gallery-item  -->
-                                <div class="gallery-item paud">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -497,8 +526,7 @@
                                     </div>
                                     <!-- listing-item end -->                                                        
                                 </div>
-
-                                <div class="gallery-item smk">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -544,9 +572,7 @@
                                     </div>
                                     <!-- listing-item end -->                                                        
                                 </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item tk">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -592,9 +618,7 @@
                                     </div>
                                     <!-- listing-item end -->                                   
                                 </div>
-                                <!-- gallery-item  end--> 
-                                <!-- gallery-item  -->
-                                <div class="gallery-item smp">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="listing-item">
                                         <article class="geodir-category-listing fl-wrap">
@@ -639,195 +663,19 @@
                                     </div>
                                     <!-- listing-item end -->                                           
                                 </div>
-
-                                <div class="gallery-item smp">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.7</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
-                                                        <br>
-                                                        <div class="reviews-count">9 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SMP Negeri 34 Sidoarjo</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Jakarta utara, Jakarta, Indoneisa</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <!--<div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>-->
-                                                </div>
-                                        </article>
+                                <!-- listing-item-container -->
+                                <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid">                                                      
+                                    <div class="pagination fwmpag">
+                                        <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
+                                        <a href="#">1</a>
+                                        <a href="#" class="current-page">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">...</a>
+                                        <a href="#">7</a>
+                                        <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
                                     </div>
-                                    <!-- listing-item end -->                                           
                                 </div>
-
-                                <div class="gallery-item sma">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.2</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
-                                                        <br>                                                
-                                                        <div class="reviews-count">6 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap ">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SMA Negeri 8 Jakarta</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Jakarta Pusat, Jakarta, Indonesia</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <!--<div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>-->
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->  
-                                </div>
-
-                                <div class="gallery-item smk">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/sekolah/smk2.jpg" alt="" style="height: 185px;"> 
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.1</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
-                                                        <br>
-                                                        <div class="reviews-count">26 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SMK Negeri 12 Malang</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jakarta selatan, Jakarta, Indonesia</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
-                                                    <!--<div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>-->
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->                                                        
-                                </div> 
-
-                                <div class="gallery-item sma">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                <img src="images/sekolah/sma2.jpg" alt="" style="height: 185px;"> 
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.2</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
-                                                        <br>                                                
-                                                        <div class="reviews-count">6 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap ">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SMA Negeri 2 Bangkalan</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Jakarta Pusat, Jakarta, Indonesia</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <!--<div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>-->
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->  
-                                </div>                                                                                                                  
-                            </div>
-                            <a href="listing.html" class="btn  dec_btn  color2-bg">Lihat Seluruh Peringkat<i class="fal fa-arrow-alt-right"></i></a>
+                                <!-- listing-item-container end -->
                         </div>
                     </section>
                     <!--section end-->
