@@ -130,7 +130,6 @@
                             <div class="header-search-input header-search_selectinpt ">
                                 <select data-placeholder="Category" class="chosen-select no-radius" >
                                     <option>Semua kategori</option>
-                                    <option>Semua kategori</option>
                                     <option>PAUD</option>
                                     <option>TK</option>
                                     <option>SD</option>
@@ -285,15 +284,53 @@
                     <!--section  -->
                     <section style="margin-top: -65px;">
                         <div class="container big-container">
-                            <div class="listing-filters gallery-filters fl-wrap">
-                                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">Semua Media</a>
-                                <a href="#" class="gallery-filter" data-filter=".fotosekolah">Foto Sekolah</a>
-                                <a href="#" class="gallery-filter" data-filter=".fotofasilitas">Foto Fasilitas Sekolah</a>
-                                <a href="#" class="gallery-filter" data-filter=".video">Video</a>
-                            </div>
-                            <div class="grid-item-holder gallery-items fl-wrap">
+                            <!--tab -->
+                                <div id="filters-search" class="tab-content  first-tab ">
+                                    <div class="fl-wrap">
+                                        <div class="row">
+                                            <!-- listsearch-input-item-->
+                                            <div class="col-md-4">
+                                                <div class="listsearch-input-item">
+                                                    <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                                    <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                                </div>
+                                            </div>
+                                            <!-- listsearch-input-item end-->
+                                            <!-- listsearch-input-item-->
+                                            <div class="col-md-3">
+                                                <div class="listsearch-input-item">
+                                                    <select data-placeholder="Location" class="chosen-select no-search-select" >
+                                                        <option>Semua Kategori</option>
+                                                        <option>Fasilitas Sekolah</option>
+                                                        <option>Foto</option>
+                                                        <option>Video</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- listsearch-input-item end-->
+                                            <!-- listsearch-input-item-->
+                                            <div class="col-md-3">
+                                                <div class="listsearch-input-item">
+                                                    <select data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                                        <option>Terbaru</option>
+                                                        <option>Terlama</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!-- listsearch-input-item end-->  
+                                            <!-- listsearch-input-item-->
+                                            <div class="col-md-2">
+                                                <div class="listsearch-input-item">
+                                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
+                                                </div>
+                                            </div>
+                                            <!-- listsearch-input-item end-->                                         
+                                        </div>
+                                    </div>
+                            <div class="limit-box fl-wrap"></div>
+                            <!--tab end-->
                                 <!--  gallery-item-->
-                                <div class="gallery-item fotosekolah events">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -314,7 +351,7 @@
                                 </div>
                                 <!-- gallery-item  end-->
                                 <!--  gallery-item-->
-                                <div class="gallery-item video">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -335,7 +372,7 @@
                                 </div>
                                 <!-- gallery-item  end-->         
                                 <!-- gallery-item  -->
-                                <div class="gallery-item fotofasilitas">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -356,7 +393,7 @@
                                 </div>
                                 <!-- gallery-item  end-->  
                                 <!-- gallery-item  -->
-                                <div class="gallery-item fotosekolah">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -377,7 +414,7 @@
                                 </div>
                                 <!-- gallery-item  end-->                                  
                                 <!-- gallery-item  -->
-                                <div class="gallery-item video">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -398,7 +435,7 @@
                                 </div>
                                 <!-- gallery-item  end-->                                 
                                 <!-- gallery-item  -->
-                                <div class="gallery-item fotofasilitas">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -419,7 +456,7 @@
                                 </div>
                                 <!-- gallery-item  end-->
                                 <!-- gallery-item  -->
-                                <div class="gallery-item fotosekolah">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -440,7 +477,7 @@
                                 </div>
                                 <!-- gallery-item  end--> 
                                 <!-- gallery-item  -->
-                                <div class="gallery-item video">
+                                <div class="gallery-item">
                                     <!-- listing-item  -->
                                     <div class="lightgallery">
                                         <div class="full-height">
@@ -459,9 +496,20 @@
                                     </div>
                                     <!-- listing-item end -->                                           
                                 </div>
-                                <!-- gallery-item  end-->                                                                                                                        
-                            </div>
-                            <a class="btn  dec_btn  color2-bg">Lihat Selengkapnya<i class="fal fa-arrow-alt-right"></i></a>
+                                <!-- gallery-item  end-->
+                                <!-- listing-item-container -->
+                                <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid">                                                      
+                                    <div class="pagination fwmpag">
+                                        <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
+                                        <a href="#">1</a>
+                                        <a href="#" class="current-page">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">...</a>
+                                        <a href="#">7</a>
+                                        <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                                <!-- listing-item-container end -->
                         </div>
                     </section>
                     <!--section end-->
