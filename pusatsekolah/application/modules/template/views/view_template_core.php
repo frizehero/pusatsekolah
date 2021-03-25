@@ -57,18 +57,6 @@ $menu = $uri_segments[2];
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
         <div class="app-header header-shadow">
-            <div class="app-header__logo">
-                <div class="logo-src"></div>
-                <div class="header__pane ml-auto">
-                    <div>
-                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-            </div>
             <div class="app-header__mobile-menu">
                 <div>
                     <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
@@ -88,6 +76,12 @@ $menu = $uri_segments[2];
                 </span>
             </div>    
             <div class="app-header__content">
+            <div>
+                    <a href="tampilan-beranda-admin-sekolah.html">
+                        <img src="assets/images/logoatas.png" style="width: 150px;">
+                    </a>
+                </div>
+                <div class="header-btn-lg pr-0"></div>
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
@@ -249,58 +243,46 @@ $menu = $uri_segments[2];
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="grid-menu grid-menu-2col">
-                                                <div class="no-gutters row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-success">
-                                                            <i class="pe-7s-user icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Profil User
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-link">
-                                                            <i class="pe-7s-unlock icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Change Password</b>
-                                                        </button>
-                                                    </div>
+                                                <div class="scroll-area-xs" style="height: 150px;">
+                                                <div class="scrollbar-container ps">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item-header nav-item">Akun</li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Profil Saya
+                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="javascript:void(0);" class="nav-link">Daftar Tindakan
+                                                                <div class="ml-auto badge badge-success">New</div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
+                                            </div>
                                             </div>
                                             <ul class="nav flex-column">
-                                                <li class="nav-item-divider mb-0 nav-item"></li>
+                                                <li class="nav-item-divider nav-item">
+                                                </li>
+                                                <li class="nav-item-btn text-center nav-item">
+                                                    <button class="btn-wide btn btn-primary btn-sm"> Open Messages </button>
+                                                </li>
                                             </ul>
-                                            <div class="grid-menu grid-menu-2col">
-                                                <div class="no-gutters row">
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-warning">
-                                                            <i class="pe-7s-chat icon-gradient bg-amy-crisp btn-icon-wrapper mb-2"></i> Message Inbox
-                                                        </button>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                        <button class="btn-icon-vertical btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger">
-                                                            <i class="pe-7s-ticket icon-gradient bg-love-kiss btn-icon-wrapper mb-2"></i>
-                                                            <b>Log User</b>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                           
                                         </div>
                                     </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
-                                    <div class="widget-heading"> Daus McLaren </div>
-                                    <div class="widget-subheading"> Administrator </div>
+                                    <div class="widget-heading"> Alina Mclourd </div>
+                                    <div class="widget-subheading"> Admin Sekolah </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="header-btn-lg">
                         <button type="button" class="hamburger hamburger--elastic open-right-drawer">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
+                            <span class="fa fa-cog fa-w-16 fa-2x"></span>
                         </button>
-                    </div>        
+                    </div>      
                 </div>
             </div>
         </div>       
