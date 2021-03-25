@@ -1,94 +1,133 @@
-<!doctype html>
-<html>
-<head>
-    <title>424 Failed Dependency</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <style>
-        body {
-            background-color: #f1f4f5;
-            color: #37474f;
-            line-height: 1.4;
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            }
-        .error_code {
-            display: block;
-            font-size: 92px;
-            font-weight: 700;
-            margin-top: -25px;
-            }
-        .error_brief {
-            display: block;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            }
-        .help_button, .fix_button {
-            background-color: #399bff;
-            color: #fff;
-            margin-top: 15px;
-            font-size: 14px;
-            padding: 7px 20px 7px 20px;
-            border: none;
-            border-radius: 3px;
-            vertical-align: middle;
-            cursor: pointer;
-            }
-        .fix_button {
-            background-color: #38ad41;
-            }
-        #fix_details {
-            margin-top: 40px;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0.3s, opacity 0.3s linear;
-            }
-    </style>
-
-    <script language="JavaScript">
-        function toggleHelp() {
-            var e = document.getElementById("fix_details");
-            if (e.style.visibility == 'visible') {
-                e.style.visibility = 'hidden';
-                e.style.opacity = 0;
-            } else {
-                e.style.visibility = 'visible';
-                e.style.opacity = 1;
-            }
-        }
-    </script>
-</head>
-<body>
-
-<div style="display: table; position: absolute; height: 100%; width: 100%;">
-    <div style="display: table-cell; vertical-align: middle; padding: 0 40px;">
-        <div style="margin-left: auto; margin-right: auto; width: 520px;">
-            <div style="float:left; width:200px; text-align: center; padding-right: 20px;">
-                <span class="error_code">424</span>
-                <span class="error_description">Failed Dependency</span>
-            </div>
-            <div style="float:left; width:300px;">
-                <span class="error_brief">Заблокировано правилами безопасности</span>
-                <span class="error_detail">Запрос содержит признаки попытки использования уязвимости на сайте</span>
-                <br>
-                <input type="button" value="Как это исправить?" class="help_button" onclick="toggleHelp()">
-            </div>
-            <div style="clear:both"></div>
-            <div id="fix_details">
-                Если Вы администратор сайта, самый быстрый способ исправить эту ошибку &mdash; воспользоваться
-                Технической проверкой сайта в панели управления хостингом.
-                
-                <br>
-                <input type="button" value="Техническая проверка сайта" class="fix_button" onclick="location.href = 'https://adm.tools/troubleshooting/?host=citybook.kwst.net&error=424&request=YEcjq26cdIdAiSNK2hARfwAAAQc&time=2021-03-09%2009:28:43'">
-                <br><br>
-                <a href="https://www.ukraine.com.ua/faq/error-424.html">Подробнее о возможных причинах ошибки...</a>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from townhub.kwst.net/invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 07:55:24 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--=============== basic  ===============-->
+        
+        <title>Townhub - Directory Listing Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <!--=============== css  ===============-->
+        <link type="text/css" rel="stylesheet" href="css/invoice.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <div class="invoice-box">
+            <table>
+                <tbody><tr class="top">
+                    <td colspan="2">
+                        <table>
+                            <tbody><tr>
+                                <td class="title">
+                                    <img src="images/logo2.png" style="width:150px; height:auto" alt="">
+                                </td>
+                                <td>
+                                    Invoice #: 25<br>
+                                    Created: January 21, 2020<br>
+                                    Due: February 1, 2020
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr class="information">
+                    <td colspan="2">
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    Townhub , Inc.<br>
+                                    USA 27TH Brooklyn NY<br>
+                                    <a href="#" style="color:#666; text-decoration:none">JessieManrty@domain.com</a>
+                                    <br>
+                                    <a href="#" style="color:#666; text-decoration:none">+4(333)123456</a>                                
+                                </td>
+                                <td>
+                                    Jessie Manrty<br>
+                                    <a href="#" style="color:#666; text-decoration:none">yourmail@domain.com</a>
+                                    <br>
+                                    <a href="#" style="color:#666; text-decoration:none">+7(123)987654</a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+                <tr class="heading">
+                    <td>
+                        Payment Method
+                    </td>
+                    <td>
+                        Check #
+                    </td>
+                </tr>
+                <tr class="details">
+                    <td>
+                        Visa ending **** 4242
+                    </td>
+                    <td>
+                        Check
+                    </td>
+                </tr>
+                <tr class="heading">
+                    <td>
+                        Option
+                    </td>
+                    <td>
+                        Details
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        Hotel
+                    </td>
+                    <td>
+                        Premium Plaza Hotel
+                    </td>
+                </tr>
+                <tr class="item">
+                    <td>
+                        Room Type
+                    </td>
+                    <td>
+                        Standard Family Room $81
+                    </td>
+                </tr>
+                <tr class="item ">
+                    <td>
+                        Days 
+                    </td>
+                    <td>
+                        3
+                    </td>
+                </tr>
+                <tr class="item ">
+                    <td>
+                        Persons
+                    </td>
+                    <td>
+                        3
+                    </td>
+                </tr>
+                <tr class="item last">
+                    <td>
+                        Taxes
+                    </td>
+                    <td>
+                        $12
+                    </td>
+                </tr>
+                <tr class="total">
+                    <td></td>
+                    <td style="padding-top:50px;"> 
+                        Total: $690.00
+                    </td>
+                </tr>
+            </tbody></table>
         </div>
-    </div>
-</div>
-
+        <a href="javascript:window.print()" class="print-button">Print this invoice</a> 
+    
 </body>
+<!-- Mirrored from townhub.kwst.net/invoice.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Mar 2021 07:55:24 GMT -->
 </html>
