@@ -79,7 +79,7 @@ $menu = $uri_segments[2];
             </div>    
             <div class="app-header__content">
             <div>
-                <a href="tampilan-beranda-admin-sekolah.html">
+                <a href="<?php echo base_url('beranda'); ?>">
                     <img src="assets/images/logoatas.png" style="width: 150px;">
                 </a>
             </div>
