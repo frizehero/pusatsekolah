@@ -439,6 +439,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-rocket"></i>Beranda
                                     </a>
                                 </li>
+
                             <?php if ($menu=="data_guru"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -446,6 +447,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-science"></i>Data Guru
                                     </a>
                                 </li>
+
                             <?php if ($menu=="data_alumni"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -453,6 +455,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-users"></i>Data Alumni
                                     </a>
                                 </li>
+
                             <?php if ($menu=="prestasi"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -460,6 +463,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-medal"></i>Prestasi
                                     </a>
                                 </li>
+
                             <?php if ($menu=="pesan"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -467,6 +471,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-chat"></i>Pesan
                                     </a>
                                 </li>
+
                             <?php if ($menu=="event_sekolah"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -474,6 +479,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-world"></i>Event
                                     </a>
                                 </li>
+
                             <?php if ($menu=="produk"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -481,6 +487,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-diamond"></i>Produk
                                     </a>
                                 </li>
+
                             <?php if ($menu=="ppdb"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -488,6 +495,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-id"></i>PPDB
                                     </a>
                                 </li>
+
                             <?php if ($menu=="media"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
@@ -495,6 +503,7 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-folder"></i>Media
                                     </a>
                                 </li>
+                                
                         </ul>
                     </div>
                 </div>
