@@ -439,59 +439,59 @@ $menu = $uri_segments[2];
                                         <i class="metismenu-icon pe-7s-rocket"></i>Beranda
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="data_guru"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('data_guru'); ?>">
                                         <i class="metismenu-icon pe-7s-science"></i>Data Guru
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="data_alumni"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('data_alumni'); ?>">
                                         <i class="metismenu-icon pe-7s-users"></i>Data Alumni
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="prestasi"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('prestasi'); ?>">
                                         <i class="metismenu-icon pe-7s-medal"></i>Prestasi
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="pesan"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <i class="metismenu-icon pe-7s-chat"></i>Pesan
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="event_sekolah"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('event_sekolah'); ?>">
                                         <i class="metismenu-icon pe-7s-world"></i>Event
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="produk"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('produk'); ?>">
                                         <i class="metismenu-icon pe-7s-diamond"></i>Produk
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="ppdb"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('ppdb'); ?>">
                                         <i class="metismenu-icon pe-7s-id"></i>PPDB
                                     </a>
                                 </li>
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <?php if ($menu=="media"){?><li class="mm-active"><?php }else{?>
                                 <li>
                                     <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
+                                    <a href="<?php echo base_url('media'); ?>">
                                         <i class="metismenu-icon pe-7s-folder"></i>Media
                                     </a>
                                 </li>
