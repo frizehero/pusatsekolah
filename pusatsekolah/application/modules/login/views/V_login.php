@@ -22,82 +22,64 @@
 <body>
     <div class="app-container app-theme-white body-tabs-shadow">
         <div class="app-container">
-            <div class="h-100">
-                <div class="h-100 no-gutters row">
-                    <div class="d-none d-lg-block col-lg-4">
-                        <div class="slider-light">
-                            <div class="slick-slider">
-                                <div>
-                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-plum-plate" tabindex="-1">
-                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/city.jpg');"></div>
-                                        <div class="slider-content">
-                                            <h3>Pendataan Inventory</h3>
-                                            <p>ArchitectUI is like a dream. Some think it's too good to be true! Extensive
-                                                collection of unified React Boostrap Components and Elements.
-                                            </p>
-                                        </div>
+            <div class="h-100 bg-plum-plate bg-animation">
+                <div class="d-flex h-100 justify-content-center align-items-center">
+                    <div class="mx-auto app-login-box col-md-8">
+                        <div>
+                            <a href="tampilan-beranda-admin-sekolah.html">
+                                <img src="assets/images/logo1.png" style="width: 150px; margin-left: 360px;">
+                            </a>
+                        </div>
+                        <div class="modal-dialog w-100 mx-auto">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="h5 modal-title text-center">
+                                        <h4 class="mt-2">
+                                            <div>Login</div>
+                                        </h4>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-premium-dark" tabindex="-1">
-                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/citynights.jpg');"></div>
-                                        <div class="slider-content">
-                                            <h3>Lengkap, Mudah dan Responsive</h3>
-                                            <p>Easily exclude the components you don't require. Lightweight, consistent
-                                                Bootstrap based styles across all elements and components
-                                            </p>
+                                    <form action="<?php echo base_url('login/proses_login' ) ?>" class="login-form" method="post">
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <div class="position-relative form-group">
+                                                <button class="mb-2 mr-2 btn btn-outline-success btn-lg btn-block">Login dengan Akun Google</button>
+                                            </div></div>
+                                            <div class="col-md-12">
+                                            <div class="modal-body text-center">
+                                                <h6 class="mt-2">Atau login dengan</h6>
+                                            </div></div>
+                                            <div class="col-md-12">
+                                            <div class="position-relative form-group">
+                                                <input name="username" placeholder="Username" type="text" class="form-control">
+                                            </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                            <div class="position-relative form-group">
+                                                <input name="password" id="examplePassword" placeholder="Password" type="password" class="form-control">
+                                            </div>
                                         </div>
+                                        </div>
+                                        <div class="position-relative form-check">
+                                            <input name="check" id="exampleCheck" type="checkbox" class="form-check-input">
+                                            <label for="exampleCheck" class="form-check-label">Ingat saya</label>
+                                        </div>
+                                    </form>
+                                    <div class="divider"></div>
+                                    <h6 class="mb-0">Belum punya akun Pusat Sekolah?<a href="register.html" class="text-primary">Daftar Sekarang</a></h6>
+                                </div>
+                                <div class="modal-footer clearfix">
+                                    <div class="float-left">
+                                        <a href="lupa-password.html" class="btn-lg btn btn-link">Lupa password</a>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="position-relative h-100 d-flex justify-content-center align-items-center bg-sunny-morning" tabindex="-1">
-                                        <div class="slide-img-bg" style="background-image: url('assets/images/originals/citydark.jpg');"></div>
-                                        <div class="slider-content">
-                                            <h3>Maintenance dan Calibration</h3>
-                                            <p>We've included a lot of components that cover almost all use cases for any type of application.</p>
-                                        </div>
+                                    <div class="float-right">
+                                        <a href="Beranda.html">
+                                        <button class="btn btn-primary btn-lg">LOGIN</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="h-100 d-flex bg-white justify-content-center align-items-center col-md-12 col-lg-8">
-                        <div class="mx-auto app-login-box col-sm-12 col-md-10 col-lg-9">
-                            <!-- <div class="app-logo"></div> -->
-                            <h4 class="mb-0">
-                                <span class="d-block">Selamat Datang,</span>
-                                <span>Silahkan Login ke dalam sistem.</span>
-                            </h4>
-                            <div class="divider row"></div>
-                            <div>
-                               <form action="<?php echo base_url('login/proses_login' ) ?>" class="login-form" method="post">
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-                                            <div class="position-relative form-group">
-                                                <label for="exampleEmail" class="">Username</label>
-                                                <input name="username" placeholder="Username anda..." type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="position-relative form-group">
-                                                <label for="examplePassword" class="">Password</label>
-                                                <input name="password" id="examplePassword" placeholder="Password anda..." type="password" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="position-relative form-check">
-                                        <input name="check" id="exampleCheck" type="checkbox" class="form-check-input">
-                                        <label for="exampleCheck" class="form-check-label">Keep me logged in</label>
-                                    </div>
-                                    <div class="divider row"></div>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ml-auto">
-                                            <button class="btn btn-primary btn-lg" type="submit">Login to Dashboard</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <div class="text-center text-white opacity-8 mt-3">Copyright © Pusat Sekolah 2021</div>
                     </div>
                 </div>
             </div>

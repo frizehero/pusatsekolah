@@ -79,11 +79,11 @@ $menu = $uri_segments[2];
             </div>    
             <div class="app-header__content">
             <div>
-                    <a href="tampilan-beranda-admin-sekolah.html">
-                        <img src="assets/images/logoatas.png" style="width: 150px;">
-                    </a>
-                </div>
-                <div class="header-btn-lg pr-0"></div>
+                <a href="tampilan-beranda-admin-sekolah.html">
+                    <img src="assets/images/logoatas.png" style="width: 150px;">
+                </a>
+            </div>
+            <div class="header-btn-lg pr-0"></div>
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
