@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login - Rumah Sakit Bangil</title>
+    <title>Pusat Sekolah</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="ArchitectUI HTML Bootstrap 4 Dashboard Template">
@@ -63,20 +63,18 @@
                                             <input name="check" id="exampleCheck" type="checkbox" class="form-check-input">
                                             <label for="exampleCheck" class="form-check-label">Ingat saya</label>
                                         </div>
+                                        <div class="divider"></div>
+                                        <h6 class="mb-0">Belum punya akun Pusat Sekolah?<a href="register.html" class="text-primary">Daftar Sekarang</a></h6>
+                                </div>
+                                        <div class="modal-footer clearfix">
+                                            <div class="float-left">
+                                                <a href="lupa-password.html" class="btn-lg btn btn-link">Lupa password</a>
+                                            </div>
+                                            <div class="float-right">
+                                            <button class="btn btn-primary btn-lg" type="submit">Login</button>
+                                            </div>
+                                        </div>
                                     </form>
-                                    <div class="divider"></div>
-                                    <h6 class="mb-0">Belum punya akun Pusat Sekolah?<a href="register.html" class="text-primary">Daftar Sekarang</a></h6>
-                                </div>
-                                <div class="modal-footer clearfix">
-                                    <div class="float-left">
-                                        <a href="lupa-password.html" class="btn-lg btn btn-link">Lupa password</a>
-                                    </div>
-                                    <div class="float-right">
-                                        <a href="Beranda.html">
-                                        <button class="btn btn-primary btn-lg">LOGIN</button>
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         <div class="text-center text-white opacity-8 mt-3">Copyright © Pusat Sekolah 2021</div>
