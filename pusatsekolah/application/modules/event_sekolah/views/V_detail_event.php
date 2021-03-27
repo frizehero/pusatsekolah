@@ -9,7 +9,7 @@
                             </div>  
                         </div>
                         <div>
-                            <a href="<?php echo base_url('V_tambah_event'); ?>">
+                            <a href="tampilan-tambah-event.html">
                                 <button type="button" class="btn btn-shadow btn-wide btn-primary">
                                     <span class="btn-icon-wrapper pr-2 opacity-7">
                                         <i class="fa fa-plus fa-w-20"></i>
@@ -34,7 +34,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <span class="badge badge-success align-text-bottom ml-1">Baru</span>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
@@ -56,7 +56,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <span class="badge badge-secondary align-text-bottom ml-1">Selesai</span>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
@@ -78,7 +78,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <span class="badge badge-default align-text-bottom ml-1">Terkunci</span>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
@@ -100,7 +100,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <span class="badge badge-danger align-text-bottom ml-1">Popular!</span>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
@@ -122,7 +122,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
                                 <div class="d-none d-md-block col-4">
@@ -143,7 +143,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
                                 <div class="d-none d-md-block col-4">
@@ -164,7 +164,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
                                 <div class="d-none d-md-block col-4">
@@ -185,7 +185,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
                                 <div class="d-none d-md-block col-4">
@@ -206,7 +206,7 @@
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
                                 <div class="col">
-                                    <a href="<?php echo base_url('V_detail_event'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
+                                    <a href="tampilan-event-detail.html" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
                                     <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
                                 </div>
                                 <div class="d-none d-md-block col-4">
