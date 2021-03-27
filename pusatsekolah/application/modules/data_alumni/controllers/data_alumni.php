@@ -23,8 +23,8 @@ class Data_alumni extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_data_alumni",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
