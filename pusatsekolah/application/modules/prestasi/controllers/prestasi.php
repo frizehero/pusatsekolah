@@ -23,8 +23,8 @@ class Prestasi extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "prestasi",
+			'namafileview' 	=> "V_prestasi",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
