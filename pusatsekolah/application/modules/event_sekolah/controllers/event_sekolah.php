@@ -33,12 +33,12 @@ class Event_sekolah extends MX_Controller {
 	}
 
 		// Halaman Edit
-	function editview($id)
+	function detailview()
 	{
 
 		$data = array(
 			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_edit_event",
+			'namafileview' 	=> "V_detail_event",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -53,9 +53,9 @@ class Event_sekolah extends MX_Controller {
 		//redirect('inventory_room');
 	}
 
-	function edit()
+	function detail()
 	{
-		$this->M_event->edit();
+		$this->M_event->detail();
 		redirect('event_sekolah');
 	}
 

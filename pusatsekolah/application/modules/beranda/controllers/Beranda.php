@@ -29,6 +29,16 @@ class Beranda extends MX_Controller
 		}
 	}
 
+		// halaman anak-anak beranda
+	function tentangview()
+	{
+		$data = array(
+			'namamodule' 	=> "beranda",
+			'namafileview' 	=> "V_tentang",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	function tambah()
 	{
 		$this->m_data_sekolah->tambah();
