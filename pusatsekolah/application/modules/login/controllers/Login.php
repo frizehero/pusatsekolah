@@ -81,7 +81,7 @@ class Login extends MX_Controller {
 			$this->M_register->insertDataregister();
 			redirect('login');
 		}
-		$this->load->view('register/v_register');
+		$this->load->view('v_register');
 	}
 
 	function lupaPassword(){

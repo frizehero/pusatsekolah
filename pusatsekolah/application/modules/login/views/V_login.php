@@ -26,7 +26,7 @@
                 <div class="d-flex h-100 justify-content-center align-items-center">
                     <div class="mx-auto app-login-box col-md-8">
                         <div>
-                            <a href="tampilan-beranda-admin-sekolah.html">
+                            <a href="">
                                 <img src="assets/images/logo1.png" style="width: 150px; margin-left: 360px;">
                             </a>
                         </div>
@@ -64,7 +64,7 @@
                                             <label for="exampleCheck" class="form-check-label">Ingat saya</label>
                                         </div>
                                         <div class="divider"></div>
-                                        <h6 class="mb-0">Belum punya akun Pusat Sekolah?<a href="register.html" class="text-primary">Daftar Sekarang</a></h6>
+                                        <h6 class="mb-0">Belum punya akun Pusat Sekolah?<a href="<?php echo base_url('login/register' ) ?>" class="text-primary">Daftar Sekarang</a></h6>
                                 </div>
                                         <div class="modal-footer clearfix">
                                             <div class="float-left">
