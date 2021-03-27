@@ -23,8 +23,8 @@ class Ppdb extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "ppdb",
+			'namafileview' 	=> "V_ppdb",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
