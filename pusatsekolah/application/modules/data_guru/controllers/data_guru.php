@@ -23,8 +23,8 @@ class Data_guru extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "data_guru",
+			'namafileview' 	=> "V_data_guru",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
