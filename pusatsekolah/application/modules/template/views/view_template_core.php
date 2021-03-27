@@ -3,6 +3,7 @@
 
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,51 +11,59 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Pusat Sekolah</title>
     <meta name="viewport
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+        content=" width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Rumah Sakit Terbaik Di Pasuruan.">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-<link rel="shortcut icon" href="assets/images/logo.ico">
+    <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/logo.ico">
 </head>
 
 <style type="text/css">
     .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place front is invalid - may break your css so removed */  
-    padding-top: 100px; /* Location of the box - don't know what this does?  If it is to move your modal down by 100px, then just change top below to 100px and remove this*/
-    left: 0;
-    right:0; /* Full width (left and right 0) */
-    top: 0;
-    bottom: 0; /* Full height top and bottom 0 */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place front is invalid - may break your css so removed */
+        padding-top: 100px;
+        /* Location of the box - don't know what this does?  If it is to move your modal down by 100px, then just change top below to 100px and remove this*/
+        left: 0;
+        right: 0;
+        /* Full width (left and right 0) */
+        top: 0;
+        bottom: 0;
+        /* Full height top and bottom 0 */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        z-index: 9999;
+        /* Sit on top - higher than any other z-index in your site*/
 
 
-}
+    }
 
-.modal-backdrop {
-  z-index: -1;
-}
-
+    .modal-backdrop {
+        z-index: -1;
+    }
 </style>
 
 
 <body>
 
 
-    <?php 
+    <?php
 
 
- 
-$uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$uri_segments = explode('/', $uri_path);
 
-$menu = $uri_segments[2];
+    $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+    $uri_segments = explode('/', $uri_path);
+
+    $menu = $uri_segments[2];
 
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
@@ -76,14 +85,14 @@ $menu = $uri_segments[2];
                         </span>
                     </button>
                 </span>
-            </div>    
-            <div class="app-header__content">
-            <div>
-                <a href="<?php echo base_url('beranda'); ?>">
-                    <img src="assets/images/logoatas.png" style="width: 150px;">
-                </a>
             </div>
-            <div class="header-btn-lg pr-0"></div>
+            <div class="app-header__content">
+                <div>
+                    <a href="<?php echo base_url('beranda'); ?>">
+                        <img src="assets/images/logoatas.png" style="width: 150px;">
+                    </a>
+                </div>
+                <div class="header-btn-lg pr-0"></div>
                 <div class="app-header-left">
                     <div class="search-wrapper">
                         <div class="input-holder">
@@ -92,20 +101,18 @@ $menu = $uri_segments[2];
                         </div>
                         <button class="close"></button>
                     </div>
-               </div>
+                </div>
                 <div class="app-header-right">
-                <div class="header-dots">
+                    <div class="header-dots">
                         <div class="dropdown">
-                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"
-                                class="p-0 mr-2 btn btn-link">
+                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
                                 <span class="icon-wrapper icon-wrapper-alt rounded-circle">
                                     <span class="icon-wrapper-bg bg-danger"></span>
                                     <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
                                     <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
                                 </span>
                             </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true"
-                                class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
+                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-menu-header mb-0">
                                     <div class="dropdown-menu-header-inner bg-deep-blue">
                                         <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
@@ -225,7 +232,7 @@ $menu = $uri_segments[2];
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
-                                        <div class="dropdown-menu-header">
+                                            <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">
                                                     <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
                                                     <div class="menu-header-content text-left">
@@ -239,29 +246,29 @@ $menu = $uri_segments[2];
                                                                     <div class="widget-subheading opacity-8">Admin Pusat Sekolah</div>
                                                                 </div>
                                                                 <div class="widget-content-right mr-2">
-                                                                    <a href="<?php echo base_url('login/logoutApp'); ?>"  class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</a>
+                                                                    <a href="<?php echo base_url('login/logoutApp'); ?>" class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</a>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="scroll-area-xs" style="height: 150px;">
-                                                <div class="scrollbar-container ps">
-                                                    <ul class="nav flex-column">
-                                                        <li class="nav-item-header nav-item">Akun</li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Profil Saya
-                                                                <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="javascript:void(0);" class="nav-link">Daftar Tindakan
-                                                                <div class="ml-auto badge badge-success">New</div>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="scrollbar-container ps">
+                                                        <ul class="nav flex-column">
+                                                            <li class="nav-item-header nav-item">Akun</li>
+                                                            <li class="nav-item">
+                                                                <a href="javascript:void(0);" class="nav-link">Profil Saya
+                                                                    <div class="ml-auto badge badge-pill badge-info">8</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a href="javascript:void(0);" class="nav-link">Daftar Tindakan
+                                                                    <div class="ml-auto badge badge-success">New</div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
                                             </div>
                                             <ul class="nav flex-column">
                                                 <li class="nav-item-divider nav-item">
@@ -284,10 +291,10 @@ $menu = $uri_segments[2];
                         <button type="button" class="hamburger hamburger--elastic open-right-drawer">
                             <span class="fa fa-cog fa-w-16 fa-2x"></span>
                         </button>
-                    </div>      
+                    </div>
                 </div>
             </div>
-        </div>       
+        </div>
         <div class="ui-theme-settings">
             <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
                 <i class="fa fa-fw fsize-2"></i>
@@ -344,7 +351,7 @@ $menu = $uri_segments[2];
                                     <div>
                                         <div class="chat-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, pariatur numquam soluta, est eveniet consequuntur, mollitia ratione nulla officia quas iusto quam. Repudiandae temporibus soluta quae debitis dicta. Blanditiis, natus!
                                         </div>
-                                        
+
                                         <small class="opacity-6">
                                             11:01 AM
                                         </small>
@@ -394,7 +401,7 @@ $menu = $uri_segments[2];
                     </div>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="app-main">
             <div class="app-sidebar sidebar-shadow">
                 <div class="app-header__logo">
@@ -426,90 +433,90 @@ $menu = $uri_segments[2];
                             </span>
                         </button>
                     </span>
-                </div>    
+                </div>
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php echo "".  $this->session->flashdata('msg');?></li>
-                           
-                            <?php if ($menu=="beranda"){?><li class="mm-active"><?php }else{?>
+                            <li class="app-sidebar__heading">Menu <?php echo "" .  $this->session->flashdata('msg'); ?></li>
+
+                            <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('beranda'); ?>">
-                                        <i class="metismenu-icon pe-7s-rocket"></i>Beranda
-                                    </a>
+                                <?php } ?>
+                                <a href="<?php echo base_url('beranda'); ?>">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Beranda
+                                </a>
                                 </li>
 
-                            <?php if ($menu=="data_guru"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
+                                <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
+                                    <li>
+                                    <?php } ?>
                                     <a href="<?php echo base_url('data_guru'); ?>">
                                         <i class="metismenu-icon pe-7s-science"></i>Data Guru
                                     </a>
-                                </li>
+                                    </li>
 
-                            <?php if ($menu=="data_alumni"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('data_alumni'); ?>">
-                                        <i class="metismenu-icon pe-7s-users"></i>Data Alumni
-                                    </a>
-                                </li>
+                                    <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
+                                        <li>
+                                        <?php } ?>
+                                        <a href="<?php echo base_url('data_alumni'); ?>">
+                                            <i class="metismenu-icon pe-7s-users"></i>Data Alumni
+                                        </a>
+                                        </li>
 
-                            <?php if ($menu=="prestasi"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('prestasi'); ?>">
-                                        <i class="metismenu-icon pe-7s-medal"></i>Prestasi
-                                    </a>
-                                </li>
+                                        <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
+                                            <li>
+                                            <?php } ?>
+                                            <a href="<?php echo base_url('prestasi'); ?>">
+                                                <i class="metismenu-icon pe-7s-medal"></i>Prestasi
+                                            </a>
+                                            </li>
 
-                            <?php if ($menu=="pesan"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('pesan'); ?>">
-                                        <i class="metismenu-icon pe-7s-chat"></i>Pesan
-                                    </a>
-                                </li>
+                                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
+                                                <li>
+                                                <?php } ?>
+                                                <a href="<?php echo base_url('pesan'); ?>">
+                                                    <i class="metismenu-icon pe-7s-chat"></i>Pesan
+                                                </a>
+                                                </li>
 
-                            <?php if ($menu=="event_sekolah"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('event_sekolah'); ?>">
-                                        <i class="metismenu-icon pe-7s-world"></i>Event
-                                    </a>
-                                </li>
+                                                <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                                    <li>
+                                                    <?php } ?>
+                                                    <a href="<?php echo base_url('event_sekolah'); ?>">
+                                                        <i class="metismenu-icon pe-7s-world"></i>Event
+                                                    </a>
+                                                    </li>
 
-                            <?php if ($menu=="produk"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('produk'); ?>">
-                                        <i class="metismenu-icon pe-7s-diamond"></i>Produk
-                                    </a>
-                                </li>
+                                                    <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
+                                                        <li>
+                                                        <?php } ?>
+                                                        <a href="<?php echo base_url('produk'); ?>">
+                                                            <i class="metismenu-icon pe-7s-diamond"></i>Produk
+                                                        </a>
+                                                        </li>
 
-                            <?php if ($menu=="ppdb"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('ppdb'); ?>">
-                                        <i class="metismenu-icon pe-7s-id"></i>PPDB
-                                    </a>
-                                </li>
+                                                        <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
+                                                            <li>
+                                                            <?php } ?>
+                                                            <a href="<?php echo base_url('ppdb'); ?>">
+                                                                <i class="metismenu-icon pe-7s-id"></i>PPDB
+                                                            </a>
+                                                            </li>
 
-                            <?php if ($menu=="media"){?><li class="mm-active"><?php }else{?>
-                                <li>
-                                    <?php }?>
-                                    <a href="<?php echo base_url('media'); ?>">
-                                        <i class="metismenu-icon pe-7s-folder"></i>Media
-                                    </a>
-                                </li>
-                                
+                                                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
+                                                                <li>
+                                                                <?php } ?>
+                                                                <a href="<?php echo base_url('media'); ?>">
+                                                                    <i class="metismenu-icon pe-7s-folder"></i>Media
+                                                                </a>
+                                                                </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="app-main__outer">
-                <?php $this->load->view($namamodule .'/'.$namafileview);?>
+                <?php $this->load->view($namamodule . '/' . $namafileview); ?>
                 <div class="app-wrapper-footer">
                     <div class="app-footer">
                         <div class="app-footer__inner">
@@ -535,65 +542,60 @@ $menu = $uri_segments[2];
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li  class="mm-active" >
+                            <li class="mm-active">
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
-                                <ul      >
+                                <ul>
                                     <li>
                                         <a href="tampilan-edit-sekolah.html">
                                             <i class="metismenu-icon"></i>Sekolah
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="tampilan-statistik-sekolah.html" >
+                                        <a href="tampilan-statistik-sekolah.html">
                                             <i class="metismenu-icon"></i>Log Aktifitas
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li  
-                                   >
+                            <li>
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
-                                <ul  
-                                      
-                                    >
+                                <ul>
                                     <li>
-                                        <a href="pages-login.html" >
+                                        <a href="pages-login.html">
                                             <i class="metismenu-icon"></i>Pusat Bantuan
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="pages-login-boxed.html" >
+                                        <a href="pages-login-boxed.html">
                                             <i class="metismenu-icon"></i>Kotak Masuk Dukungan
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="pages-register.html" >
+                                        <a href="pages-register.html">
                                             <i class="metismenu-icon"></i>Laporkan Masalah
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            <li  
-                                   >
+                            <li>
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-plugin"></i>Beri Dukungan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
-                                <ul  
-                                    >
+                                <ul>
                                     <li>
-                                        <a href="apps-mailbox.html" >
+                                        <a href="apps-mailbox.html">
                                             <i class="metismenu-icon"></i>Bantu Kami Menyempurnakan Pusat Sekolah
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="apps-chat.html" >
+                                        <a href="apps-chat.html">
                                             <i class="metismenu-icon"></i>Laporkan BUG/Fitur yang tidak berfungsi
                                         </a>
                                     </li>
@@ -607,40 +609,40 @@ $menu = $uri_segments[2];
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
 
-    <script type="text/javascript" src="<?php echo base_url('assets/') ?>scripts/main.js"></script></body>
+    <script type="text/javascript" src="<?php echo base_url('assets/') ?>scripts/main.js"></script>
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="<?php echo base_url('assets/') ?>scripts/jquery-3.2.1.min.js" ></script>
-    <script src="<?php echo base_url('assets/') ?>scripts/popper.min.js"></script>
-
-    
-
-    <!-- data table -->
-    <script src="<?php echo base_url('assets/') ?>scripts/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="<?php echo base_url('assets/') ?>scripts/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="<?php echo base_url('assets/') ?>scripts/jquery-3.2.1.min.js"></script>
+<script src="<?php echo base_url('assets/') ?>scripts/popper.min.js"></script>
 
 
 
-  <script>
-$(document).ready( function () {
-  $('#myTable').DataTable({          
-                         
-    "lengthMenu": true,             
-    "bLengthChange": true,
-    "scrollX": true,
-    "responsive": true,
-    lengthMenu: [10, 20, 50, 100, 200, 500],
-   
-  });  
-});
+<!-- data table -->
+<script src="<?php echo base_url('assets/') ?>scripts/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/') ?>scripts/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#myTable').DataTable({
+
+            "lengthMenu": true,
+            "bLengthChange": true,
+            "scrollX": true,
+            "responsive": true,
+            lengthMenu: [10, 20, 50, 100, 200, 500],
+
+        });
+    });
 </script>
 
 
 <!-- Small modal -->
 
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
-    aria-hidden="true">
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
@@ -650,8 +652,8 @@ $(document).ready( function () {
                 </button>
             </div>
             <div class="modal-body">
-                <div class="form-row">                                                                            
-                     <div class="col-md-12">
+                <div class="form-row">
+                    <div class="col-md-12">
                         <div class="position-relative form-group">
                             <h5 h5 class="card-title">Keterangan Ditolak</h5>
                             <textarea rows="1" class="form-control autosize-input" style="height: 100px;"></textarea>
@@ -673,62 +675,58 @@ $(document).ready( function () {
 
 
 <script>
-$(document).ready(function(){
+    $(document).ready(function() {
 
 
- load_data();
+        load_data();
 
- load_datatanah();
+        load_datatanah();
 
- function load_data(query)
- {
-  $.ajax({
-   url:"<?php echo base_url(); ?>inventory_peralatan/fetch",
-   method:"POST",
-   data:{query:query},
-   success:function(data){
-    $('#result').html(data);
-   }
-  })
- }
+        function load_data(query) {
+            $.ajax({
+                url: "<?php echo base_url(); ?>inventory_peralatan/fetch",
+                method: "POST",
+                data: {
+                    query: query
+                },
+                success: function(data) {
+                    $('#result').html(data);
+                }
+            })
+        }
 
- $('#search_text').keyup(function(){
-  var search = $(this).val();
-  if(search != '')
-  {
-   load_data(search);
-  }
-  else
-  {
-   load_data();
-  }
- });
+        $('#search_text').keyup(function() {
+            var search = $(this).val();
+            if (search != '') {
+                load_data(search);
+            } else {
+                load_data();
+            }
+        });
 
 
- function load_datatanah(query)
- {
-  $.ajax({
-   url:"<?php echo base_url(); ?>inventory_peralatan/fetch",
-   method:"POST",
-   data:{query:query},
-   success:function(data){
-    $('#result').html(data);
-   }
-  })
- }
+        function load_datatanah(query) {
+            $.ajax({
+                url: "<?php echo base_url(); ?>inventory_peralatan/fetch",
+                method: "POST",
+                data: {
+                    query: query
+                },
+                success: function(data) {
+                    $('#result').html(data);
+                }
+            })
+        }
 
- $('#search_text').keyup(function(){
-  var search = $(this).val();
-  if(search != '')
-  {
-   load_datatanah(search);
-  }
-  else
-  {
-   load_datatanah();
-  }
- });
+        $('#search_text').keyup(function() {
+            var search = $(this).val();
+            if (search != '') {
+                load_datatanah(search);
+            } else {
+                load_datatanah();
+            }
+        });
 
 
-});
+    });
 </script>

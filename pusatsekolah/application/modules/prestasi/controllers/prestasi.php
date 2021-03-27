@@ -1,35 +1,42 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Prestasi extends MX_Controller {
+class Prestasi extends MX_Controller
+{
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_beranda');
-		 $this->load->model('login/m_session');
+		$this->load->model('m_beranda');
+		$this->load->model('login/m_session');
 	}
 
-	
+
 	// index
 	function index()
 	{
 
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
+		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
-
 		} else {
 
 			$data = array(
+				'namamodule' 	=> "prestasi",
+				'namafileview' 	=> "V_prestasi",
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}
+
+	// halaman tambah
+	function tambahview()
+	{
+		$data = array(
 			'namamodule' 	=> "prestasi",
-			'namafileview' 	=> "V_prestasi",
+			'namafileview' 	=> "V_tambah-prestasi",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
 
 	function tambah()
@@ -59,6 +66,4 @@ class Prestasi extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-	
 }
- 
