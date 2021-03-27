@@ -23,8 +23,8 @@ class Pesan extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "pesan",
+			'namafileview' 	=> "V_pesan",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
