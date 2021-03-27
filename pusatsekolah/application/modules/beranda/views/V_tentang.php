@@ -2,7 +2,7 @@
                         <div class="col-mb-12">
                             <div class="card-shadow-primary card-border text-white card bg-light">
                                 <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/originals/smkn1p.jpg');">
+                                    <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/originals/smkn1p.jpg');">
                                         <div class="menu-header-btn-pane pt-5">
                                             <div class="pt-5">
                                                 <div class="pt-5">
@@ -39,7 +39,7 @@
                                         <div class="widget-content-left card-footer">
                                             <div class="widget-content-left mr-3 avatar-icon-xl">
                                                 <a href="#">
-                                                <img class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="widget-content-left" style="color: black;">

@@ -2,7 +2,7 @@
     <div class="col-mb-12">
         <div class="card-shadow-primary card-border text-white card bg-light">
             <div class="dropdown-menu-header">
-                <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/originals/smkn1p.jpg');">
+                <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/originals/smkn1p.jpg');">
                     <div class="menu-header-btn-pane pt-5">
                         <div class="pt-5">
                             <div class="pt-5">
@@ -36,7 +36,7 @@
             </div>
             <div class="widget-content-left card-footer">
                 <div class="widget-content-left mr-3 avatar-icon-xl">
-                    <img class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                    <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                 </div>
                 <div class="widget-content-left" style="color: black;">
                     <div class="widget-heading"><b>SMK Negeri 1 Kota Probolinggo</b></div>
@@ -68,7 +68,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                         </div>
@@ -94,7 +94,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                             <div class="text-muted small">4 hari yang lalu</div>
@@ -160,7 +160,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -177,7 +177,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -211,7 +211,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/21.jpeg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -245,7 +245,7 @@
                                                 <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/6.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -281,7 +281,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                             <div class="text-muted small">4 hari yang lalu</div>
@@ -346,7 +346,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -363,7 +363,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -397,7 +397,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/21.jpeg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -431,7 +431,7 @@
                                                 <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/6.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -467,7 +467,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                             <div class="text-muted small">4 hari yang lalu</div>
@@ -532,7 +532,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -549,7 +549,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -583,7 +583,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/21.jpeg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -617,7 +617,7 @@
                                                 <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/6.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -661,7 +661,7 @@
                             <div class="menu-header-content">
                                 <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                     <div class="avatar-icon rounded">
-                                        <img src="assets/images/avatars/6.jpg" alt="Avatar 5">
+                                        <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="Avatar 5">
                                     </div>
                                 </div>
                                 <div>

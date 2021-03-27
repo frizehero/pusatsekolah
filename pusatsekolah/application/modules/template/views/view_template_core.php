@@ -18,7 +18,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
 </head>
 
 <style type="text/css">
@@ -89,7 +89,7 @@
             <div class="app-header__content">
                 <div>
                     <a href="<?php echo base_url('beranda'); ?>">
-                        <img src="assets/images/logoatas.png" style="width: 150px;">
+                        <img src="<?php echo base_url() ?>assets/images/logoatas.png" style="width: 150px;">
                     </a>
                 </div>
                 <div class="header-btn-lg pr-0"></div>
@@ -115,7 +115,7 @@
                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-menu-header mb-0">
                                     <div class="dropdown-menu-header-inner bg-deep-blue">
-                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                        <div class="menu-header-image opacity-1" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
                                         <div class="menu-header-content text-dark">
                                             <h5 class="menu-header-title">Notifikasi</h5>
                                             <h6 class="menu-header-subtitle">Seluruh Notifikasi anda ada disini!</h6>
@@ -167,7 +167,7 @@
                                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -183,7 +183,7 @@
                                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/21.jpeg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -199,7 +199,7 @@
                                                                 <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/6.jpg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -228,18 +228,18 @@
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">
-                                                    <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                                    <div class="menu-header-image opacity-2" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
                                                     <div class="menu-header-content text-left">
                                                         <div class="widget-content p-0">
                                                             <div class="widget-content-wrapper">
                                                                 <div class="widget-content-left mr-3">
-                                                                    <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                                    <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                                                 </div>
                                                                 <div class="widget-content-left">
                                                                     <div class="widget-heading">Dhinda Rek</div>
@@ -310,7 +310,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +333,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,7 +344,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -369,7 +369,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -387,7 +387,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
