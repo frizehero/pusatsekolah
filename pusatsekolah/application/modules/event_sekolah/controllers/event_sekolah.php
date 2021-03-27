@@ -23,8 +23,8 @@ class Event_sekolah extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "event_sekolah",
+			'namafileview' 	=> "V_event",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}

@@ -23,8 +23,8 @@ class Media extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "beranda",
-			'namafileview' 	=> "V_beranda",
+			'namamodule' 	=> "media",
+			'namafileview' 	=> "V_media",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
