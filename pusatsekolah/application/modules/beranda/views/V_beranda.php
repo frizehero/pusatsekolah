@@ -50,7 +50,7 @@
                     </select>
                 </div>
                 <div class="btn-actions-pane-right">
-                    <a href="tampilan-pesan.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="btn-shadow-dark btn btn-primary">Pesan</button>
                     </a>
                     <a href="tampilan-tentang-sekolah.html">

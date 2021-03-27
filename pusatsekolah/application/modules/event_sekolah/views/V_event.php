@@ -9,7 +9,7 @@
                             </div>  
                         </div>
                         <div>
-                            <a href="<?php echo base_url('V_tambah_event'); ?>">
+                            <a href="<?php echo base_url('event_sekolah/tambahview'); ?>">
                                 <button type="button" class="btn btn-shadow btn-wide btn-primary">
                                     <span class="btn-icon-wrapper pr-2 opacity-7">
                                         <i class="fa fa-plus fa-w-20"></i>

@@ -35,26 +35,26 @@ class Prestasi extends MX_Controller {
 	function tambah()
 	{
 		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		redirect('prestasi');
 	}
 
 	function edit()
 	{
 		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		redirect('prestasi');
 	}
 
 	function hapus($id)
 	{
 		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		redirect('prestasi');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
+			'namamodule' 	=> "prestasi",
+			'namafileview' 	=> "V_prestasi",
 			'tampil'		=> $this->m_data_sekolah->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
