@@ -15,21 +15,11 @@ class Media extends MX_Controller {
 	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
-			$data = array(
+		$data = array(
 			'namamodule' 	=> "media",
 			'namafileview' 	=> "V_media",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
 
 	function tambah()

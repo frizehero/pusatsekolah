@@ -33,6 +33,15 @@ h1 {
 	padding: 14px 15px 10px 15px;
 }
 
+h5 {
+	color: #444;
+	background-color: transparent;
+	font-size: 19px;
+	font-weight: normal;
+	margin: 0 0 14px 0;
+	padding: 14px 15px 10px 15px;
+}
+
 code {
 	font-family: Consolas, Monaco, Courier New, Courier, monospace;
 	font-size: 12px;
@@ -59,6 +68,7 @@ p {
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
 		<?php echo $message; ?>
+		<h5>INI YANG ERROR DATABASE KAMU</h5>
 	</div>
 </body>
 </html>
