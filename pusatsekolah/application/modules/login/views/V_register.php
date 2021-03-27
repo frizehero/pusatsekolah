@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="divider row"></div>
                                     <h6 class="mb-0">Sudah punya akun?
-                                        <a href="<?php echo base_url('login' ) ?>" class="text-primary">Login</a> | <a href="lupa-password.html" class="text-primary">Lupa password</a>
+                                        <a href="<?php echo base_url('login' ) ?>" class="text-primary">Login</a> | <a href="<?php echo base_url('login/lupapassword' ) ?>" class="text-primary">Lupa password</a>
                                     </h6>
                                 </div>
                                 <div class="modal-footer d-block text-center">

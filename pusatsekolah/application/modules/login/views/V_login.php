@@ -69,7 +69,7 @@
                                 </div>
                                         <div class="modal-footer clearfix">
                                             <div class="float-left">
-                                                <a href="lupa-password.html" class="btn-lg btn btn-link">Lupa password</a>
+                                                <a href="<?php echo base_url('login/lupapassword' ) ?>" class="btn-lg btn btn-link">Lupa password</a>
                                             </div>
                                             <div class="float-right">
                                             <button class="btn btn-primary btn-lg" type="submit">Login</button>
