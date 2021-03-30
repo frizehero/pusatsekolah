@@ -107,8 +107,8 @@
                                                 <h6 class="menu-header-subtitle">Guru Sains</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="tampilan-profil-guru.html">
-                                                <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
+                                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
                                         </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>
