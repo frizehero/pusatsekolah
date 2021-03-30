@@ -80,8 +80,7 @@
                                     </div>
                                 </div>
                                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                    <a href="tampilan-tambah-guru.html">
-                                        <button type="button" class="btn btn-shadow btn-wide btn-primary">
+                                    <a href="<?php echo base_url('data_guru/tambahview'); ?>" class="btn btn-shadow btn-wide btn-primary">
                                             <span class="btn-icon-wrapper pr-2 opacity-7">
                                                 <i class="fa fa-plus fa-w-20"></i>
                                             </span>
