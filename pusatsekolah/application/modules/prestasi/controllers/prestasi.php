@@ -8,7 +8,7 @@ class Prestasi extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('m_beranda');
+		$this->load->model('M_prestasi');
 		$this->load->model('login/m_session');
 	}
 
@@ -16,17 +16,12 @@ class Prestasi extends MX_Controller
 	// index
 	function index()
 	{
-
-		if (empty($this->session->userdata('session_id'))) {
-			redirect('login');
-		} else {
-
-			$data = array(
-				'namamodule' 	=> "prestasi",
-				'namafileview' 	=> "V_prestasi",
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
+		$data = array(
+			'namamodule' 	=> "prestasi",
+			'namafileview' 	=> "V_prestasi",
+			'tampil'		=> $this->M_prestasi->tampil(),
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	// halaman tambah
@@ -41,19 +36,19 @@ class Prestasi extends MX_Controller
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
+		$this->M_prestasi->tambah();
 		redirect('prestasi');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
+		$this->M_prestasi->edit();
 		redirect('prestasi');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
+		$this->M_prestasi->hapus($id);
 		redirect('prestasi');
 	}
 
@@ -62,7 +57,7 @@ class Prestasi extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "prestasi",
 			'namafileview' 	=> "V_prestasi",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'tampil'		=> $this->M_prestasi->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
