@@ -32,6 +32,15 @@ class Data_alumni extends MX_Controller {
 
 	}
 
+	function detailprofil()
+	{
+		$data = array(
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_profil_alumni",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	function tambah()
 	{
 		$this->m_data_sekolah->tambah();

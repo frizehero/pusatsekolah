@@ -137,7 +137,7 @@
                                                 <h6 class="menu-header-subtitle">Guru Matematika</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="profil_guru.html">
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
                                                 <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>
@@ -167,7 +167,7 @@
                                                 <h6 class="menu-header-subtitle">Guru Bahasa Inggris</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="profil_guru.html">
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
                                                 <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
@@ -176,7 +176,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>
@@ -199,7 +199,7 @@
                                                 <h6 class="menu-header-subtitle">Guru IPS</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="profil_guru.html">
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
                                                 <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
@@ -208,7 +208,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>
@@ -229,7 +229,7 @@
                                                 <h6 class="menu-header-subtitle">Guru Bahasa Indonesia</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="profil_guru.html">
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
                                                 <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
@@ -238,7 +238,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>
@@ -259,7 +259,7 @@
                                                 <h6 class="menu-header-subtitle">Guru Sejarah</h6>
                                             </div>
                                             <div class="menu-header-btn-pane pt-1">
-                                                <a href="profil_guru.html">
+                                                <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
                                                 <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                                 </a>
                                             </div>
@@ -268,7 +268,7 @@
                                 </div>
                                 <div class="text-center d-block card-footer">
                                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus Guru</button>
-                                    <a href="tampilan-pesan.html">
+                                    <a href="<?php echo base_url('pesan'); ?>">
                                         <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                                     </a>
                                 </div>

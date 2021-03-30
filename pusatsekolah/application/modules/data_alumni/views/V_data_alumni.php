@@ -83,7 +83,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -154,7 +154,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
@@ -175,7 +175,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -246,7 +246,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
@@ -267,7 +267,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -338,7 +338,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
@@ -361,7 +361,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -432,7 +432,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
@@ -453,7 +453,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -524,7 +524,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
@@ -545,7 +545,7 @@
                                 <h6 class="menu-header-subtitle">Alumni 2019</h6>
                             </div>
                             <div class="menu-header-btn-pane pt-1">
-                                <a href="tampilan-profil-alumni.html">
+                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
                                     <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                 </a>
                             </div>
@@ -616,7 +616,7 @@
                 </ul>
                 <div class="text-center d-block card-footer">
                     <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="send-message.html">
+                    <a href="<?php echo base_url('pesan'); ?>">
                         <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
                     </a>
                 </div>
