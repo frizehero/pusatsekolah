@@ -13,7 +13,7 @@ class Beranda_ps extends MX_Controller {
 
 	
 	// index
-	function index()
+	function index_ps()
 	{
 
 		if ( empty( $this->session->userdata('session_id') ) )

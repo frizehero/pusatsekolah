@@ -18,7 +18,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
 </head>
 
 <style type="text/css">
@@ -89,7 +89,7 @@
             <div class="app-header__content">
                 <div>
                     <a href="<?php echo base_url('beranda'); ?>">
-                        <img src="assets/images/logoatas.png" style="width: 150px;">
+                        <img src="<?php echo base_url() ?>assets/images/logoatas.png" style="width: 150px;">
                     </a>
                 </div>
                 <div class="header-btn-lg pr-0"></div>
@@ -115,7 +115,7 @@
                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-menu-header mb-0">
                                     <div class="dropdown-menu-header-inner bg-deep-blue">
-                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                        <div class="menu-header-image opacity-1" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
                                         <div class="menu-header-content text-dark">
                                             <h5 class="menu-header-title">Notifikasi</h5>
                                             <h6 class="menu-header-subtitle">Seluruh Notifikasi anda ada disini!</h6>
@@ -167,7 +167,7 @@
                                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -183,7 +183,7 @@
                                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/21.jpeg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -199,7 +199,7 @@
                                                                 <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
                                                                 </div>
                                                                 <div class="avatar-icon">
-                                                                    <img src="assets/images/avatars/6.jpg" alt="">
+                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -228,18 +228,18 @@
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
                                             <div class="dropdown-menu-header">
                                                 <div class="dropdown-menu-header-inner bg-info">
-                                                    <div class="menu-header-image opacity-2" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                                    <div class="menu-header-image opacity-2" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
                                                     <div class="menu-header-content text-left">
                                                         <div class="widget-content p-0">
                                                             <div class="widget-content-wrapper">
                                                                 <div class="widget-content-left mr-3">
-                                                                    <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                                                    <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                                                 </div>
                                                                 <div class="widget-content-left">
                                                                     <div class="widget-heading">Dhinda Rek</div>
@@ -310,7 +310,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +333,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,7 +344,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -369,7 +369,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -387,7 +387,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -447,101 +447,76 @@
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "konfirmasi") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('konfirmasi'); ?>">
-                                    <i class="metismenu-icon pe-7s-science"></i>Konfirmasi
+                                <a href="<?php echo base_url('data_guru'); ?>">
+                                    <i class="metismenu-icon pe-7s-science"></i>Data Guru
                                 </a>
                                 </li>
-                            
-                            <li>
-                                <a href="#" >
-                                    <i class="metismenu-icon pe-7s-rocket"></i>Report
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Sekolah
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Postingan Sekolah
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Review Sekolah
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Event Sekolah
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Akun
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Komentar
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <?php if ($menu == "pesan_ps") { ?><li class="mm-active"><?php } else { ?>
+                                
+                            <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('pesan_ps'); ?>">
-                                    <i class="metismenu-icon pe-7s-chat"></i>Pesan
+                                <a href="<?php echo base_url('data_alumni'); ?>">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Data Alumni
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "data_review_ps") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('data_review_ps'); ?>">
-                                    <i class="metismenu-icon pe-7s-world"></i>Data Review Pusat Sekolah
+                                <a href="<?php echo base_url('prestasi'); ?>">
+                                    <i class="metismenu-icon pe-7s-science"></i>Prestasi
+                                </a>
+                                </li>
+                                
+                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
+                                <li>
+                                <?php } ?>
+                                <a href="<?php echo base_url('pesan'); ?>">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Pesan
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "masukan_ps") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('masukan_ps'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>Masukan
+                                <a href="<?php echo base_url('event_sekolah'); ?>">
+                                    <i class="metismenu-icon pe-7s-science"></i>Event
+                                </a>
+                                </li>
+                                
+                            <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
+                                <li>
+                                <?php } ?>
+                                <a href="<?php echo base_url('produk'); ?>">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Produk
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "laporan_ps") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('laporan_ps'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Laporan
+                                <a href="<?php echo base_url('ppdb'); ?>">
+                                    <i class="metismenu-icon pe-7s-science"></i>PPDB
                                 </a>
                                 </li>
-
+                                
+                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
+                                <li>
+                                <?php } ?>
+                                <a href="<?php echo base_url('media'); ?>">
+                                    <i class="metismenu-icon pe-7s-rocket"></i>Media
+                                </a>
+                                </li>
+                                
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="app-main__outer">
                 <?php $this->load->view($namamodule . '/' . $namafileview); ?>
-                <div class="app-wrapper-footer">
-                    <div class="app-footer">
-                        <div class="app-footer__inner">
-                            <div class="app-footer-left">
-                            </div>
-                            <div class="app-footer-right">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -556,50 +531,55 @@
                 <h3 class="drawer-heading">Pengaturan</h3>
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
-                    <ul class="vertical-nav-menu">
-                        <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg');?></li>
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg'); ?></li>
                             <li>
-                                <a href="#" >
+                                <a href="#">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Sekolah
+                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('sekolah'); ?>">
+                                            <i class="metismenu-icon"></i>Sekolah
                                         </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Log Aktifitas
-                                        </a>
-                                    </li>
+                                        </li>
+                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('log'); ?>">
+                                                <i class="metismenu-icon"></i>Log Aktifitas
+                                            </a>
+                                            </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="#" >
+                            <li>
+                                <a href="#">
                                     <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Pusat Bantuan
+                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('sekolah'); ?>">
+                                            <i class="metismenu-icon"></i>Pusat Bantuan
                                         </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Kotak Masuk Dukungan
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Laporkan Masalah
-                                        </a>
-                                    </li>
+                                        </li>
+                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('log'); ?>">
+                                                <i class="metismenu-icon"></i>Kotak Masuk Dukungan
+                                            </a>
+                                            </li>
+                                            <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                                <li><?php } ?>
+                                                <a href="<?php echo base_url('log'); ?>">
+                                                    <i class="metismenu-icon"></i>Laporkan Masalah
+                                                </a>
+                                                </li>
                                 </ul>
                             </li>
-                        </li>
+                            </li>
                     </div>
                 </div>
             </div>
