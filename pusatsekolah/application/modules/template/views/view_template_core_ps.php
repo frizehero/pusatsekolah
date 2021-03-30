@@ -437,7 +437,7 @@
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
+                            <li class="app-sidebar__heading">Menu <?php echo "string" . $this->session->flashdata('msg'); ?></li>
 
                             <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
                                 <li><?php } ?>
@@ -523,7 +523,7 @@
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg'); ?></li>
+                            <li class="app-sidebar__heading"> <?php echo "string" . $this->session->flashdata('msg'); ?></li>
                             <li>
                                 <a href="#">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan

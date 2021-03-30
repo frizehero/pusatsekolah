@@ -28,4 +28,18 @@ class Template extends MX_Controller {
 		$this->load->view('view_template_core',$data);
 	}
 
+	// view core templating
+	public function index_ps()
+	{
+		
+		$this->load->view('view_template_core_ps');
+	}
+
+	public function tampilCore_ps($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('view_template_core',$data);
+	}
+
 }
