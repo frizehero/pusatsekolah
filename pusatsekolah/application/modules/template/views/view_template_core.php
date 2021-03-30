@@ -437,79 +437,70 @@
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
+                            <li class="app-sidebar__heading">Menu <?php echo "string" . $this->session->flashdata('msg'); ?></li>
 
                             <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
+                                <li><?php } ?>
                                 <a href="<?php echo base_url('beranda'); ?>">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Beranda
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_guru'); ?>">
-                                    <i class="metismenu-icon pe-7s-science"></i>Data Guru
-                                </a>
-                                </li>
-                            
-                            <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_alumni'); ?>">
-                                    <i class="metismenu-icon pe-7s-users"></i>Data Alumni
-                                </a>
-                                </li>
+                                <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
+                                    <li><?php } ?>
+                                    <a href="<?php echo base_url('data_guru'); ?>">
+                                        <i class="metismenu-icon pe-7s-science"></i>Data Guru
+                                    </a>
+                                    </li>
 
-                            <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('prestasi'); ?>">
-                                    <i class="metismenu-icon pe-7s-medal"></i>Prestasi
-                                </a>
-                                </li>
+                                    <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('data_alumni'); ?>">
+                                            <i class="metismenu-icon pe-7s-users"></i>Data Alumni
+                                        </a>
+                                        </li>
 
-                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('pesan'); ?>">
-                                    <i class="metismenu-icon pe-7s-chat"></i>Pesan
-                                </a>
-                                </li>
+                                        <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('prestasi'); ?>">
+                                                <i class="metismenu-icon pe-7s-medal"></i>Prestasi
+                                            </a>
+                                            </li>
 
-                            <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('event_sekolah'); ?>">
-                                    <i class="metismenu-icon pe-7s-world"></i>Event
-                                </a>
-                                </li>
+                                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
+                                                <li><?php } ?>
+                                                <a href="<?php echo base_url('pesan'); ?>">
+                                                    <i class="metismenu-icon pe-7s-chat"></i>Pesan
+                                                </a>
+                                                </li>
 
-                            <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('produk'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>Produk
-                                </a>
-                                </li>
+                                                <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                                    <li><?php } ?>
+                                                    <a href="<?php echo base_url('event_sekolah'); ?>">
+                                                        <i class="metismenu-icon pe-7s-world"></i>Event
+                                                    </a>
+                                                    </li>
 
-                            <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('ppdb'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>PPDB
-                                </a>
-                                </li>
+                                                    <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
+                                                        <li><?php } ?>
+                                                        <a href="<?php echo base_url('produk'); ?>">
+                                                            <i class="metismenu-icon pe-7s-diamond"></i>Produk
+                                                        </a>
+                                                        </li>
 
-                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('media'); ?>">
-                                    <i class="metismenu-icon pe-7s-folder"></i>Media
-                                </a>
-                                </li>
+                                                        <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
+                                                            <li><?php } ?>
+                                                            <a href="<?php echo base_url('ppdb'); ?>">
+                                                                <i class="metismenu-icon pe-7s-id"></i>PPDB
+                                                            </a>
+                                                            </li>
+
+                                                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
+                                                                <li><?php } ?>
+                                                                <a href="<?php echo base_url('media'); ?>">
+                                                                    <i class="metismenu-icon pe-7s-folder"></i>Media
+                                                                </a>
+                                                                </li>
 
                         </ul>
                     </div>
@@ -541,50 +532,55 @@
                 <h3 class="drawer-heading">Pengaturan</h3>
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
-                    <ul class="vertical-nav-menu">
-                        <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg');?></li>
+                        <ul class="vertical-nav-menu">
+                            <li class="app-sidebar__heading"> <?php echo "string" . $this->session->flashdata('msg'); ?></li>
                             <li>
-                                <a href="#" >
+                                <a href="#">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Sekolah
+                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('sekolah'); ?>">
+                                            <i class="metismenu-icon"></i>Sekolah
                                         </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Log Aktifitas
-                                        </a>
-                                    </li>
+                                        </li>
+                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('log'); ?>">
+                                                <i class="metismenu-icon"></i>Log Aktifitas
+                                            </a>
+                                            </li>
                                 </ul>
                             </li>
-                            <li >
-                                <a href="#" >
+                            <li>
+                                <a href="#">
                                     <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Pusat Bantuan
+                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('sekolah'); ?>">
+                                            <i class="metismenu-icon"></i>Pusat Bantuan
                                         </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Kotak Masuk Dukungan
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Laporkan Masalah
-                                        </a>
-                                    </li>
+                                        </li>
+                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('log'); ?>">
+                                                <i class="metismenu-icon"></i>Kotak Masuk Dukungan
+                                            </a>
+                                            </li>
+                                            <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                                <li><?php } ?>
+                                                <a href="<?php echo base_url('log'); ?>">
+                                                    <i class="metismenu-icon"></i>Laporkan Masalah
+                                                </a>
+                                                </li>
                                 </ul>
                             </li>
-                        </li>
+                            </li>
                     </div>
                 </div>
             </div>
