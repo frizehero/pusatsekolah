@@ -15,21 +15,11 @@ class Data_alumni extends MX_Controller {
 	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
-			$data = array(
+		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
 
 	function detailprofil()

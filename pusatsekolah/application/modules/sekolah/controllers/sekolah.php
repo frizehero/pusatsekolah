@@ -16,17 +16,11 @@ class Sekolah extends MX_Controller
 	// index
 	function index()
 	{
-
-		if (empty($this->session->userdata('session_id'))) {
-			redirect('login');
-		} else {
-
-			$data = array(
-				'namamodule' 	=> "beranda",
-				'namafileview' 	=> "V_beranda",
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
+		$data = array(
+			'namamodule' 	=> "sekolah",
+			'namafileview' 	=> "V_sekolah",
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 		// halaman anak-anak beranda

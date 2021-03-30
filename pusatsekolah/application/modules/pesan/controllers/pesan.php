@@ -15,21 +15,11 @@ class Pesan extends MX_Controller {
 	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
-			$data = array(
+		$data = array(
 			'namamodule' 	=> "pesan",
 			'namafileview' 	=> "V_pesan",
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
 
 	function tambah()

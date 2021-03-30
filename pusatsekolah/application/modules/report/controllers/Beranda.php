@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Beranda extends MX_Controller
+class Report extends MX_Controller
 {
 
 	function __construct()
@@ -22,8 +22,8 @@ class Beranda extends MX_Controller
 		} else {
 
 			$data = array(
-				'namamodule' 	=> "beranda",
-				'namafileview' 	=> "V_beranda",
+				'namamodule' 	=> "report",
+				'namafileview' 	=> "V_report",
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}

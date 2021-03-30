@@ -16,17 +16,11 @@ class Data_guru extends MX_Controller
 	// index
 	function index()
 	{
-
-		if (empty($this->session->userdata('session_id'))) {
-			redirect('login');
-		} else {
-
-			$data = array(
-				'namamodule' 	=> "data_guru",
-				'namafileview' 	=> "V_data_guru",
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
+		$data = array(
+			'namamodule' 	=> "data_guru",
+			'namafileview' 	=> "V_data_guru",
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	// halaman tambah
