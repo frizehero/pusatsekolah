@@ -8,7 +8,7 @@ class Data_guru extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('m_beranda');
+		$this->load->model('M_data_guru');
 		$this->load->model('login/m_session');
 	}
 
@@ -53,28 +53,28 @@ class Data_guru extends MX_Controller
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		$this->M_data_guru->tambah();
+		redirect('data_guru');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		$this->M_data_guru->edit();
+		redirect('data_guru');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_data_guru->hapus($id);
+		redirect('data_guru');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'namamodule' 	=> "data_guru",
+			'namafileview' 	=> "V_data_guru",
+			'tampil'		=> $this->M_data_guru->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

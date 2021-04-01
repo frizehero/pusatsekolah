@@ -99,7 +99,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/18.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/18.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
@@ -129,7 +129,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/16.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/16.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
@@ -159,7 +159,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/17.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/17.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
@@ -191,7 +191,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/15.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/15.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
@@ -221,7 +221,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/14.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/14.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
@@ -251,7 +251,7 @@
                                         <div class="menu-header-content">
                                             <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                                 <div class="avatar-icon">
-                                                    <img src="assets/images/avatars/19.png" alt="Avatar 5">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/19.png" alt="Avatar 5">
                                                 </div>
                                             </div>
                                             <div>
