@@ -39,7 +39,7 @@ class Template extends MX_Controller {
 	{
 		$id = $this->session->userdata('session_id');
 		
-		$this->load->view('view_template_core',$data);
+		$this->load->view('view_template_core_ps',$data);
 	}
 
 }

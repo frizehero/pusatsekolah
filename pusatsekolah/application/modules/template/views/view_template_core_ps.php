@@ -63,7 +63,7 @@
     $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $uri_segments = explode('/', $uri_path);
 
-    $menu = $uri_segments[2];
+    $menu = $uri_segments[3];
 
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">

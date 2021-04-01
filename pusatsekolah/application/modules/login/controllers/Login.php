@@ -31,7 +31,7 @@ class Login extends MX_Controller {
 		} else {
 
 			// sudah login
-			redirect('beranda');
+			//redirect('beranda');
 		}
 	}
 
@@ -53,7 +53,20 @@ class Login extends MX_Controller {
 			// flashdata
 			$this->session->set_flashdata('msg', 'greeting');
 
-			redirect('beranda');
+			$iduser = $getData->id_admin;
+
+			//echo "cekuseraaaaaa".$iduser;
+
+			$tampunguserlevel = $this->M_master_userid->cekUser($iduser);
+
+			//echo "cekuser".$tampunguserlevel;
+
+			if($tampunguserlevel=='1'){
+				redirect('beranda_ps');
+			}else{
+				redirect('beranda');
+			}
+			//redirect('beranda');
 		} else { // gagal login
 
 			$this->session->set_flashdata('msg', 'loginError');

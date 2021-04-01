@@ -21,5 +21,18 @@ Class M_master_userid extends CI_Model {
 		return $query = $this->db->select('*')->from('tb_login')->get()->num_rows();
 	}
 
+	function cekUser($iduser){
+
+		$array = array('id_admin' => $iduser, 'user_level' => '2');
+
+		$check = $this
+				->db
+				->where($array)
+				->get('tb_login')->num_rows();
+
+		return $check;
+
+	}
+
 }
 ?>

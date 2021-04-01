@@ -26,7 +26,7 @@ class Komentar_ps extends MX_Controller {
 			'namamodule' 	=> "komentar_ps",
 			'namafileview' 	=> "V_komentar_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 		}
 
 

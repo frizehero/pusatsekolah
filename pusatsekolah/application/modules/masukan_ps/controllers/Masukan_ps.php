@@ -19,7 +19,7 @@ class Masukan_ps extends MX_Controller {
 			'namamodule' 	=> "masukan_ps",
 			'namafileview' 	=> "V_masukan_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 	}
 
 	function tambah()

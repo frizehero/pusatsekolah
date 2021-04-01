@@ -19,7 +19,7 @@ class Laporan_ps extends MX_Controller {
 			'namamodule' 	=> "laporan_ps",
 			'namafileview' 	=> "V_laporan_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 	}
 
 	function tambah()

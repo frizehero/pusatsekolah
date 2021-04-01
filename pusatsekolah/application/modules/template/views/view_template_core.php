@@ -18,7 +18,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/logo.ico">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
 </head>
 
 <style type="text/css">
@@ -63,7 +63,7 @@
     $uri_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     $uri_segments = explode('/', $uri_path);
 
-    $menu = $uri_segments[2];
+    $menu = $uri_segments[3];
 
     ?>
     <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
@@ -284,11 +284,6 @@
                                     <div class="widget-heading"> Alina Mclourd </div>
                                     <div class="widget-subheading"> Admin Sekolah </div>
                                 </div>
-                                <div class="header-btn-lg">
-                                    <button type="button" class="hamburger hamburger--elastic open-right-drawer">
-                                        <span class="fa fa-cog fa-w-16 fa-2x"></span>
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -315,7 +310,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -338,7 +333,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -349,7 +344,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="assets/images/avatars/13.png" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -374,7 +369,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -392,7 +387,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -522,7 +517,7 @@
             </div>
             <div class="app-main__outer">
                 <?php $this->load->view($namamodule . '/' . $namafileview); ?>
-                <div class="app-wrapper-footer">
+                <!--<div class="app-wrapper-footer">
                     <div class="app-footer">
                         <div class="app-footer__inner">
                             <div class="app-footer-left">
@@ -531,7 +526,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
