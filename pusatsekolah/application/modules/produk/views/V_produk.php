@@ -80,7 +80,7 @@
                                                 <div class="widget-chart-content">
                                                     <div class="wrapper rounded">
                                                         <div class="wrapper rounded"></div>
-                                                        <img src="<?php echo base_url() ?>assets/images/produk/produk1.jpg" style="width: 240px; height: 160px;">
+                                                        <img src="<?php echo base_url() ?>assets/images/produk/<?php echo $rowP->foto_produk;?>" style="width: 240px; height: 160px;">
                                                     </div>
                                                 </div>
                                                 <div style="height: 120px;">

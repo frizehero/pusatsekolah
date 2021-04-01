@@ -30,7 +30,7 @@
                             <div class="widget-content-left">
                                 <div class="widget-heading">UPLOAD FOTO PRODUK</div>
                                 <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                <input name="file" type="file" class="form-control-file">
+                                <input name="foto" type="file" class="form-control-file">
                             </div>
                         </div>
                     </div>
