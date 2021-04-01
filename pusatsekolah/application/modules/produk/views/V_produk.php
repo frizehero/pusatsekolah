@@ -96,10 +96,40 @@
                                                         <h3><small class="opacity-5"><?php echo "Rp. ";?></small><span><?php echo $rowP->harga_produk;?></span></h3>
                                                     </div>
                                                     <div class="col-md-5">
-                                                        <a href="<?php echo base_url('produk/editview/'. encrypt_url($rowP->id_produk)); ?>"><button type="button" data-toggle="modal" class="btn-lg mb-2 mr-2 btn-transition btn btn-outline-primary btn-block">
-                                                        Edit</button>
+                                                        <a href="<?php echo base_url('produk/editview/'. encrypt_url($rowP->id_produk)); ?>"class="btn btn-primary">
+                                                            <i class="fa fa-pen fa-w-16"></i>
                                                         </a>
-                                                        
+                                                        <button class="btn btn-warning" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button>
+                                                    </div>
+                                                    <!-- Modal HAPUS -->
+                                                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Hapus Produk?</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <form action="<?php echo base_url('produk/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                        <div class="modal-body">
+                                                            <!--Modal body-->
+                                                                <p class="text-semibold text-main"></p>
+                                                                <p>Anda Yakin Ingin Menghapus Produk <b><?php echo $rowP->nama_produk ?></b> ? </p>
+
+                                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_produk ?>" class="form-control">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                                            <button class="btn btn-primary" type="submit" >Hapus</button>
+                                                        </div>
+                                                        </form>
+
+                                                        </div>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>

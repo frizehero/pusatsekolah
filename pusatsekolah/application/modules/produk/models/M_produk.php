@@ -40,6 +40,7 @@ class M_produk extends CI_Model {
 					
 				);
 				$this->db->insert('produk', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
 			
 			}	 
 		}
@@ -51,6 +52,7 @@ class M_produk extends CI_Model {
 					'foto_produk' 		=> 'kosong.jpeg',
 				);
 				$this->db->insert('produk', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
 
@@ -152,9 +154,11 @@ class M_produk extends CI_Model {
 			}
 	}
 
-	function hapus($id)
+	function hapus()
 	{
+		$id = $this->input->post('id');
 		$this->db->where('id_produk', $id)->delete('produk');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
