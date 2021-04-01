@@ -23,8 +23,8 @@ class Produk extends MX_Controller {
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "produk_ps",
-			'namafileview' 	=> "V_produk_ps",
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_produk",
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}

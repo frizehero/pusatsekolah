@@ -18,7 +18,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
+    <link rel="shortcut icon" href="assets/images/logo.ico">
 </head>
 
 <style type="text/css">
@@ -284,6 +284,11 @@
                                     <div class="widget-heading"> Alina Mclourd </div>
                                     <div class="widget-subheading"> Admin Sekolah </div>
                                 </div>
+                                <div class="header-btn-lg">
+                                    <button type="button" class="hamburger hamburger--elastic open-right-drawer">
+                                        <span class="fa fa-cog fa-w-16 fa-2x"></span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -310,7 +315,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
+                                                <img src="assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -333,7 +338,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,7 +349,7 @@
                                         <div class="avatar-icon-wrapper mr-1">
                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
+                                                <img src="assets/images/avatars/13.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -369,7 +374,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -387,7 +392,7 @@
                                             <div class="avatar-icon-wrapper ml-1">
                                                 <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
                                                 <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                                    <img src="assets/images/avatars/3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -436,7 +441,7 @@
                 </div>
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
-                    <ul class="vertical-nav-menu">
+                        <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
 
                             <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
@@ -475,7 +480,7 @@
                                 <li>
                                 <?php } ?>
                                 <a href="<?php echo base_url('pesan'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>Pesan
+                                    <i class="metismenu-icon pe-7s-diamond"></i>pesan
                                 </a>
                                 </li>
 
@@ -494,7 +499,7 @@
                                     <i class="metismenu-icon pe-7s-id"></i>Produk
                                 </a>
                                 </li>
-                            
+
                             <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
@@ -502,7 +507,7 @@
                                     <i class="metismenu-icon pe-7s-id"></i>PPDB
                                 </a>
                                 </li>
-                            
+
                             <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
@@ -517,6 +522,16 @@
             </div>
             <div class="app-main__outer">
                 <?php $this->load->view($namamodule . '/' . $namafileview); ?>
+                <div class="app-wrapper-footer">
+                    <div class="app-footer">
+                        <div class="app-footer__inner">
+                            <div class="app-footer-left">
+                            </div>
+                            <div class="app-footer-right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
