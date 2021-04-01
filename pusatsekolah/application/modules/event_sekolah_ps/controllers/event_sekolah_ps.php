@@ -26,7 +26,7 @@ class Event_sekolah_ps extends MX_Controller {
 			'namamodule' 	=> "event_sekolah_ps",
 			'namafileview' 	=> "V_event_sekolah_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 		}
 
 

@@ -15,7 +15,8 @@
                                   
                                   <a href="<?php echo base_url('inventory_room/tambahview'); ?>" class="mb-2 mr-2 btn btn-shadow btn-success">Tambah Data</a>
 
-                                </div>    </div>
+                                </div>    
+                              </div>
                         </div>
 
                         <?php tampilnotif()?>

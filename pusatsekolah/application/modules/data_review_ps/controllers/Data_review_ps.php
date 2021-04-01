@@ -19,7 +19,7 @@ class Data_review_ps extends MX_Controller {
 			'namamodule' 	=> "data_review_ps",
 			'namafileview' 	=> "V_data_review_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 	}
 
 	function tambah()

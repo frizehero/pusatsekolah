@@ -13,7 +13,7 @@ class Beranda_ps extends MX_Controller {
 
 	
 	// index
-	function index_ps()
+	function index()
 	{
 
 		if ( empty( $this->session->userdata('session_id') ) )
@@ -26,7 +26,7 @@ class Beranda_ps extends MX_Controller {
 			'namamodule' 	=> "beranda_ps",
 			'namafileview' 	=> "V_beranda_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 		}
 
 

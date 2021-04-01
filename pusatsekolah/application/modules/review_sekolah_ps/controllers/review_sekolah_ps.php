@@ -26,7 +26,7 @@ class Review_sekolah_ps extends MX_Controller {
 			'namamodule' 	=> "review_sekolah_ps",
 			'namafileview' 	=> "V_review_sekolah_ps",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_ps', $data);
 		}
 
 
