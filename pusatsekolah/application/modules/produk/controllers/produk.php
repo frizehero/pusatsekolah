@@ -40,7 +40,7 @@ class Produk extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_edit_produk",
-			'tampil'		=> $this->M_produk->tampil($id),
+			'tampil'		=> $this->M_produk->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

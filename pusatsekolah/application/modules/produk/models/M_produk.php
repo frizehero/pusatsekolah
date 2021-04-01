@@ -99,6 +99,12 @@ class M_produk extends CI_Model {
 				$this->db->insert('sekolah', $data);
 			}
 	}*/
+	function tampiledit($id)
+	{
+		$idnya=decrypt_url($id);
+		$this->db->where('id_produk',$idnya);
+    	return $this->db->get('produk')->row_array();
+	}
 
 	function edit()
 	{

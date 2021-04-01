@@ -8,21 +8,22 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?php echo base_url('produk/editview') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url('produk/edit') ?>" method="POST" enctype="multipart/form-data">
+            <input name="id" value="<?php echo $tampil['id_produk']?>" type="hidden" class="form-control">
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Nama Produk</label>
                         <input name="nama" value="<?php echo $tampil['nama_produk']?>" type="text" class="form-control">
                     </div>
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Deskripsi Produk</label>
-                        <input name="deskripsi" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
+                        <input name="deskripsi" value="<?php echo $tampil['deskripsi_produk']?>" type="text" class="form-control">
                     </div>
                     <label for="exampleEmail" class="">Harga Produk</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Rp.</span>
                         </div>
-                        <input name="harga" type="number" class="form-control">
+                        <input name="harga" value="<?php echo $tampil['harga_produk']?>" type="text" class="form-control">
                     </div>
                     <br>
                     <div class="card mb-3 widget-content bg-primary">
@@ -30,7 +31,7 @@
                             <div class="widget-content-left">
                                 <div class="widget-heading">UPLOAD FOTO PRODUK</div>
                                 <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                <input name="file" type="file" class="form-control-file">
+                                <input name="foto" value="<?php echo $tampil['foto_produk']?>" type="file">
                             </div>
                         </div>
                     </div>
