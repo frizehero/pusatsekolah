@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Event_sekolah extends MX_Controller {
+class Sekolah_ps extends MX_Controller {
 
 	function __construct()
 	{
@@ -15,32 +15,21 @@ class Event_sekolah extends MX_Controller {
 	// index
 	function index()
 	{
-		$data = array(
-			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_event",
+
+		if ( empty( $this->session->userdata('session_id') ) )
+		{
+			redirect('login');
+
+		} else {
+
+			$data = array(
+			'namamodule' 	=> "sekolah_ps",
+			'namafileview' 	=> "V_sekolah_ps",
 		);
 		echo Modules::run('template/tampilCore', $data);
-	}
+		}
 
-		// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_tambah_event",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
 
-		// Halaman Edit
-	function detailview()
-	{
-
-		$data = array(
-			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_detail_event",
-		);
-		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function tambah()

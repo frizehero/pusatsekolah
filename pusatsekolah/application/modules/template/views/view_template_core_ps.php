@@ -88,7 +88,7 @@
             </div>
             <div class="app-header__content">
                 <div>
-                    <a href="<?php echo base_url('beranda'); ?>">
+                    <a href="<?php echo base_url('beranda_ps'); ?>">
                         <img src="assets/images/logoatas.png" style="width: 150px;">
                     </a>
                 </div>
@@ -287,11 +287,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="header-btn-lg">
-                        <button type="button" class="hamburger hamburger--elastic open-right-drawer">
-                            <span class="fa fa-cog fa-w-16 fa-2x"></span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
@@ -439,18 +434,18 @@
                         <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
 
-                            <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "beranda_ps") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('beranda'); ?>">
+                                <a href="<?php echo base_url('beranda_ps'); ?>">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Beranda
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "konfirmasi") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "konfirmasi_ps") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('konfirmasi'); ?>">
+                                <a href="<?php echo base_url('konfirmasi_ps'); ?>">
                                     <i class="metismenu-icon pe-7s-science"></i>Konfirmasi
                                 </a>
                                 </li>
@@ -461,33 +456,33 @@
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
+                                    <?php if ($menu=="sekolah_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('sekolah_ps'); ?>">
                                            <i class="metismenu-icon"></i>Sekolah
                                         </a>
                                     </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
+                                    <?php if ($menu=="postingan_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('postingan_ps'); ?>">
                                            <i class="metismenu-icon"></i>Postingan Sekolah
                                         </a>
                                     </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
+                                    <?php if ($menu=="review_sekolah_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('review_sekolah_ps'); ?>">
                                            <i class="metismenu-icon"></i>Review Sekolah
                                         </a>
                                     </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
+                                    <?php if ($menu=="event_sekolah_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('event_sekolah_ps'); ?>">
                                            <i class="metismenu-icon"></i>Event Sekolah
                                         </a>
                                     </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
+                                    <?php if ($menu=="akun_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('akun_ps'); ?>">
                                            <i class="metismenu-icon"></i>Akun
                                         </a>
                                     </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
+                                    <?php if ($menu=="komentar_ps"){?><li class="mm-active"><?php }else{?><li><?php }?>
+                                       <a href="<?php echo base_url('komentar_ps'); ?>">
                                            <i class="metismenu-icon"></i>Komentar
                                         </a>
                                     </li>
@@ -540,66 +535,6 @@
                             <div class="app-footer-right">
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="app-drawer-wrapper">
-        <div class="drawer-nav-btn">
-            <button type="button" class="hamburger hamburger--elastic is-active">
-                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-            </button>
-        </div>
-        <div class="drawer-content-wrapper">
-            <div class="scrollbar-container">
-                <h3 class="drawer-heading">Pengaturan</h3>
-                <div class="scrollbar-sidebar">
-                    <div class="app-sidebar__inner">
-                    <ul class="vertical-nav-menu">
-                        <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg');?></li>
-                            <li>
-                                <a href="#" >
-                                    <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Sekolah
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Log Aktifitas
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li >
-                                <a href="#" >
-                                    <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <?php if ($menu=="sekolah"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('sekolah'); ?>">
-                                           <i class="metismenu-icon"></i>Pusat Bantuan
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Kotak Masuk Dukungan
-                                        </a>
-                                    </li>
-                                    <?php if ($menu=="log"){?><li class="mm-active"><?php }else{?><li><?php }?>
-                                       <a href="<?php echo base_url('log'); ?>">
-                                           <i class="metismenu-icon"></i>Laporkan Masalah
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </li>
                     </div>
                 </div>
             </div>

@@ -15,11 +15,21 @@ class Produk extends MX_Controller {
 	// index
 	function index()
 	{
-		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_produk",
+
+		if ( empty( $this->session->userdata('session_id') ) )
+		{
+			redirect('login');
+
+		} else {
+
+			$data = array(
+			'namamodule' 	=> "produk_ps",
+			'namafileview' 	=> "V_produk_ps",
 		);
 		echo Modules::run('template/tampilCore', $data);
+		}
+
+
 	}
 
 	function tambah()
