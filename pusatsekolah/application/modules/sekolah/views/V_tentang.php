@@ -261,7 +261,7 @@
                                                         </div>
                                                         <div class="divider"></div>
                                                         <div class="clearfix">
-                                                            <a href="tampilan-edit-sekolah.html">
+                                                        <a href="<?php echo base_url('sekolah/editview/'. encrypt_url($rowP->id_sosmed_sekolah)); ?>">
                                                             <button type="button" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Edit</button>
                                                             </a>
                                                         </div>
