@@ -175,8 +175,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
+                                                    <?php tampilnotif()?>
                                                         <div class="card-body">
                                                             <h5 class="mb-3 card-title">Kontak Sekolah</h5>
+                                                            <?php $no=1; foreach ($tampil AS $rowP ) { ?>
                                                                 <div class="widget-content p-0">
                                                                     <div class="widget-content-wrapper">
                                                                         <div class="widget-content-left center-elem mr-2">
@@ -184,7 +186,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Email</b> :
-                                                                                <span>admin@smkn1probolinggo.sch.id</span>
+                                                                                <?php echo $rowP->email_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -195,7 +197,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Telephone</b> :
-                                                                                <span>0335421121</span>
+                                                                                <?php echo $rowP->tlp_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -206,7 +208,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Facebook</b> :
-                                                                                <span>SMK Negeri 1 Kota Probolinggo</span>
+                                                                                <?php echo $rowP->twitter_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -217,7 +219,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Instagram</b> :
-                                                                                <span>@smkn1kotaprobolinggo</span>
+                                                                                <?php echo $rowP->ig_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -228,7 +230,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Twitter</b> :
-                                                                                <span>@smkn1kotaprobolinggo</span>
+                                                                                <?php echo $rowP->fb_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -239,7 +241,7 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Link Website Sekolah</b> :
-                                                                                <span>smkn1kotaprobolinggo.sch.id</span>
+                                                                                <?php echo $rowP->lvp_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -250,11 +252,12 @@
                                                                         </div>
                                                                         <div class="widget-content-left">
                                                                             <div><b>Link Video Profil Sekolah</b> :
-                                                                                <span>https://www.youtube.com/smkn1kotaprobolinggo</span>
+                                                                                <?php echo $rowP->lw_sekolah;?>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                            <?php $no++;} ?>
                                                         </div>
                                                         <div class="divider"></div>
                                                         <div class="clearfix">
