@@ -2,7 +2,7 @@
     <div class="main-card mb-3 card">
         <div class="card-body">
             <h5 class="card-title">Prestasi Sekolah</h5>
-            <form id="signupForm" class="col-md-10 mx-auto" method="post" action="#">
+            <form id="signupForm" class="col-md-10 mx-auto" action="<?php echo base_url('prestasi/tambah') ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="nama_prestasi">Nama Prestasi</label>
                     <div>
@@ -24,17 +24,17 @@
                 <div class="form-group">
                     <label for="juara_prestasi">Juara Prestasi</label>
                     <div>
-                        <input type="text" class="form-control" id="juara_prestasi" name="juara_prestasi" placeholder="Juara Prestasi" />
+                        <input type="text" class="form-control" id="juara" name="juara" placeholder="Juara Prestasi" />
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="tanggal_prestasi">Tanggal Prestasi</label>
-                    <input type="date" class="form-control" id="tanggal_prestasi" name="tanggal_prestasi" placeholder="Tanggal Prestasi" />
+                    <input type="date" class="form-control" id="tgl_prestasi" name="tgl_prestasi" placeholder="Tanggal Prestasi" />
                 </div>
                 <div class="position-relative form-group">
                     <label for="exampleFile" class="">Foto Prestasi</label>
-                    <input name="file" id="exampleFile" type="file" class="form-control-file">
+                    <input name="gambar" id="fileExample" type="file" class="form-control-file">
                     <small class="form-text text-muted"> Upload Foto Prestasi Anda Disini
                     </small>
                 </div>
