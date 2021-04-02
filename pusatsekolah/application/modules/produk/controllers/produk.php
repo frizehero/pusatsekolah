@@ -52,7 +52,6 @@ class Produk extends MX_Controller {
 		$this->M_produk->tambah();
 		redirect('produk');
 		
-		//redirect('inventory_room');
 	}
 
 	function edit()

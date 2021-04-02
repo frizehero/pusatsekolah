@@ -8,7 +8,7 @@ class Sekolah extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('m_beranda');
+		$this->load->model('M_sosmed_as');
 		$this->load->model('login/m_session');
 	}
 
@@ -19,6 +19,7 @@ class Sekolah extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "sekolah",
 			'namafileview' 	=> "V_sekolah",
+			'tampil'		=> $this->M_sosmed_as->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -27,36 +28,47 @@ class Sekolah extends MX_Controller
 	function tentangview()
 	{
 		$data = array(
-			'namamodule' 	=> "beranda",
+			'namamodule' 	=> "sekolah",
 			'namafileview' 	=> "V_tentang",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function editview($id)
+	{
+
+		$data = array(
+			'namamodule' 	=> "sekolah",
+			'namafileview' 	=> "V_sekolah",
+			'tampil'		=> $this->M_sosmed_as->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		$this->M_sosmed_as->tambah();
+		redirect('sekolah');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		$this->M_sosmed_as->edit();
+		redirect('sekolah');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_sosmed_as->hapus($id);
+		redirect('sekolah');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'namamodule' 	=> "sekolah",
+			'namafileview' 	=> "V_sekolah",
+			'tampil'		=> $this->M_sosmed_as->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

@@ -110,8 +110,8 @@ class M_produk extends CI_Model {
 
 	function edit()
 	{
-		$id 		= $this->input->post('id');
-		$nama 		= $this->input->post('nama');
+		$id 			= $this->input->post('id');
+		$nama 			= $this->input->post('nama');
 		$deskripsi 		= $this->input->post('deskripsi');
 		$harga			= $this->input->post('harga');
 
