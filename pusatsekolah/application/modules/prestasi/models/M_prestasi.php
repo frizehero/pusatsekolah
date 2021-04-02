@@ -20,7 +20,7 @@ class M_prestasi extends CI_Model
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/img/';
+		$config['upload_path']		= 'assets/gambar-prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -31,18 +31,19 @@ class M_prestasi extends CI_Model
 
 		if ($_FILES['gambar']['name']) {
 			if ($this->upload->do_upload('gambar')) {
-				$gbr = $this->upload->data();
+				$gambarp = $this->upload->data();
 				$data = array(
 					'nama_prestasi'		=> $namap,
 					'jenis_prestasi'	=> $jenisp,
 					'tingkat_prestasi'	=> $tingkatp,
 					'juara'				=> $juara,
 					'tgl_prestasi'		=> $tanggalp,
-					'logo' 				=> $gbr['file_name'],
+					'gambar_prestasi' 	=> $gambarp['file_name'],
 
 
 				);
-				$this->db->insert('sekolah', $data);
+				$this->db->insert('prestasi', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 		} else {
 			$data = array(
@@ -51,15 +52,16 @@ class M_prestasi extends CI_Model
 				'tingkat_prestasi'	=> $tingkatp,
 				'juara'				=> $juara,
 				'tgl_prestasi'		=> $tanggalp,
-				'logo' 				=> 'kosong1.png',
+				'gambar_prestasi'	=> 'kosong1.png',
 			);
 			$this->db->insert('prestasi', $data);
+			$this->session->set_flashdata('msg', 'suksestambah');
 		}
 	}
 
 	function edit()
 	{
-		$id_prestasi 	= $this->input->post('id_sekolah');
+		$id 			= $this->input->post('id_sekolah');
 		$namap 			= $this->input->post('nama_prestasi');
 		$jenisp			= $this->input->post('jenis_prestasi');
 		$tingkatp		= $this->input->post('tingkat_prestasi');
@@ -89,7 +91,7 @@ class M_prestasi extends CI_Model
 					'tgl_prestasi'		=> $tanggalp,
 					'logo' 				=> $gbr['file_name'],
 				);
-				$this->db->where('id_prestasi', $id_prestasi)->update('prestasi', $data);
+				$this->db->where('id_prestasi', $id)->update('prestasi', $data);
 			}
 		} else {
 			$data = array(
@@ -99,13 +101,13 @@ class M_prestasi extends CI_Model
 				'juara'				=> $juara,
 				'tgl_prestasi'		=> $tanggalp,
 			);
-			$this->db->where('id_prestasi', $id_prestasi)->update('prestasi', $data);
+			$this->db->where('id_prestasi', $id)->update('prestasi', $data);
 		}
 	}
 
 	function hapus($id)
 	{
-		$this->db->where('id_prestasi', $id_prestasi)->delete('prestasi');
+		$this->db->where('id_prestasi', $id)->delete('prestasi');
 	}
 
 	function cari()
