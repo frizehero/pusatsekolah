@@ -46,9 +46,9 @@ class Prestasi extends MX_Controller
 		redirect('prestasi');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->M_prestasi->hapus($id);
+		$this->M_prestasi->hapus();
 		redirect('prestasi');
 	}
 

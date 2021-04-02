@@ -105,9 +105,11 @@ class M_prestasi extends CI_Model
 		}
 	}
 
-	function hapus($id)
+	function hapus()
 	{
+		$id = $this->input->post('id');
 		$this->db->where('id_prestasi', $id)->delete('prestasi');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
