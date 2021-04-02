@@ -34,6 +34,19 @@ class Prestasi extends MX_Controller
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	// Halaman Edit
+	function editview($id)
+	{
+
+		$data = array(
+			'namamodule' 	=> "prestasi",
+			'namafileview' 	=> "V_edit-prestasi",
+			'tampil'		=> $this->M_prestasi->tampiledit($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+
 	function tambah()
 	{
 		$this->M_prestasi->tambah();
