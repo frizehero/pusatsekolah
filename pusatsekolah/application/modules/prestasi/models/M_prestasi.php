@@ -9,6 +9,13 @@ class M_prestasi extends CI_Model
 		return $this->db->get('prestasi')->result();
 	}
 
+	function tampiledit($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_prestasi', $idnya);
+		return $this->db->get('prestasi')->row_array();
+	}
+
 	function tambah()
 	{
 		$namap 		= $this->input->post('nama_prestasi');
@@ -61,7 +68,8 @@ class M_prestasi extends CI_Model
 
 	function edit()
 	{
-		$id 			= $this->input->post('id_sekolah');
+		$id 			= $this->input->post('id');
+
 		$namap 			= $this->input->post('nama_prestasi');
 		$jenisp			= $this->input->post('jenis_prestasi');
 		$tingkatp		= $this->input->post('tingkat_prestasi');
@@ -71,7 +79,7 @@ class M_prestasi extends CI_Model
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/img/';
+		$config['upload_path']		= 'assets/gambar-prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -89,9 +97,10 @@ class M_prestasi extends CI_Model
 					'tingkat_prestasi'	=> $tingkatp,
 					'juara'				=> $juara,
 					'tgl_prestasi'		=> $tanggalp,
-					'logo' 				=> $gbr['file_name'],
+					'gambar_prestasi' 	=> $gbr['file_name'],
 				);
 				$this->db->where('id_prestasi', $id)->update('prestasi', $data);
+				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 		} else {
 			$data = array(
@@ -102,12 +111,15 @@ class M_prestasi extends CI_Model
 				'tgl_prestasi'		=> $tanggalp,
 			);
 			$this->db->where('id_prestasi', $id)->update('prestasi', $data);
+			$this->session->set_flashdata('msg', 'suksesedit');
 		}
 	}
 
-	function hapus($id)
+	function hapus()
 	{
+		$id = $this->input->post('id');
 		$this->db->where('id_prestasi', $id)->delete('prestasi');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()

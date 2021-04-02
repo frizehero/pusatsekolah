@@ -159,17 +159,46 @@
                     <div class="text-center d-block card-footer">
                         <div class="row">
                             <div class="col-md-6">
-                                <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Hapus</button>
+                                <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus</button>
                             </div>
                             <div class="col-md-6">
-                                <a href="tampilan-edit-prestasi.html">
-                                    <button class="mr-2 border-0 btn-transition btn btn-outline-primary"> Edit </button>
+                                <a href="<?php echo base_url('prestasi/editview/' . encrypt_url($rowP->id_prestasi)); ?>" class="mr-2 border-0 btn-transition btn btn-outline-primary">Edit
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal HAPUS -->
+            <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <form action="<?php echo base_url('prestasi/hapus') ?>" method="POST" enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <!--Modal body-->
+                                <p class="text-semibold text-main"></p>
+                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_prestasi ?></b> ? </p>
+
+                                <input name="id" type="hidden" value="<?php echo $rowP->id_prestasi ?>" class="form-control">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                <button class="btn btn-primary" type="submit">Hapus</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
         <?php $no++;
         } ?>
     </div>
