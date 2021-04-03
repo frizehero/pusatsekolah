@@ -6,19 +6,19 @@
                 <div class="form-group">
                     <label for="nama_prestasi">Nama Prestasi</label>
                     <div>
-                        <input type="text" class="form-control" id="nama_prestasi" name="namap" placeholder="Nama Prestasi" />
+                        <input type="text" class="form-control" id="nama_prestasi" name="nama_prestasi" placeholder="Nama Prestasi" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="jenis_prestasi">Jenis Prestasi</label>
                     <div>
-                        <input type="text" class="form-control" id="jenis_prestasi" name="jenisp" placeholder="Jenis Prestasi" />
+                        <input type="text" class="form-control" id="jenis_prestasi" name="jenis_prestasi" placeholder="Jenis Prestasi" />
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="tingkat_prestasi">Tingkat Prestasi</label>
                     <div>
-                        <input type="text" class="form-control" id="tingkat_prestasi" name="tingkatp" placeholder="Tingkat Prestasi" />
+                        <input type="text" class="form-control" id="tingkat_prestasi" name="tingkat_prestasi" placeholder="Tingkat Prestasi" />
                     </div>
                 </div>
                 <div class="form-group">
@@ -30,11 +30,11 @@
 
                 <div class="form-group">
                     <label for="tanggal_prestasi">Tanggal Prestasi</label>
-                    <input type="date" class="form-control" id="tgl_prestasi" name="tanggalp" placeholder="Tanggal Prestasi" />
+                    <input type="date" class="form-control" id="tgl_prestasi" name="tgl_prestasi" placeholder="Tanggal Prestasi" />
                 </div>
                 <div class="position-relative form-group">
                     <label for="exampleFile" class="">Foto Prestasi</label>
-                    <input name="gambarp" type="file" class="form-control-file">
+                    <input name="gambar_prestasi" type="file" class="form-control-file">
                     <small class="form-text text-muted"> Upload Foto Prestasi Anda Disini
                     </small>
                 </div>
