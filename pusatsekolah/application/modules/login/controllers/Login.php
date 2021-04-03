@@ -64,7 +64,7 @@ class Login extends MX_Controller {
 			if($tampunguserlevel=='1'){
 				redirect('beranda_ps');
 			}else{
-				redirect('beranda');
+				redirect('beranda_as');
 			}
 			//redirect('beranda');
 		} else { // gagal login

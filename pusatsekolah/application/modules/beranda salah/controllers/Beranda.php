@@ -8,7 +8,7 @@ class Beranda extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('m_beranda');
+		$this->load->model('M_beranda');
 		$this->load->model('login/m_session');
 	}
 
@@ -41,19 +41,19 @@ class Beranda extends MX_Controller
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
+		$this->M_beranda->tambah();
 		redirect('data_sekolah');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
+		$this->M_beranda->edit();
 		redirect('data_sekolah');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
+		$this->M_beranda->hapus($id);
 		redirect('data_sekolah');
 	}
 
@@ -62,7 +62,7 @@ class Beranda extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "data_sekolah",
 			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'tampil'		=> $this->M_beranda->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

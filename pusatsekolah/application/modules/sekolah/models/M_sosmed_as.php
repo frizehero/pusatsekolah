@@ -60,12 +60,4 @@ class M_sosmed_as extends CI_Model {
 
 	}
 
-
-	function hapus()
-	{
-		$id = $this->input->post('id');
-		$this->db->where('id_sosmed_as', $id)->delete('sosmed_as');
-		$this->session->set_flashdata('msg', 'sukseshapus');
-	}
-
 }
