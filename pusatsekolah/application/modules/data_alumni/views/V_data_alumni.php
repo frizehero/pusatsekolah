@@ -1,27 +1,92 @@
 <div class="app-main__inner">
-    <div class="app-page-title">
-        <div class="page-title-wrapper">
-            <div class="page-title-heading">
-                <div class="page-title-icon">
-                    <i class="pe-7s-id icon-gradient bg-happy-itmeo"></i>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex flex-wrap justify-content-between">
+                <div class="col-12 col-md-9 p-0 mb-3">
+                    <div class="search-wrapper active">
+                        <div class="input-holder" style="background-color: #fff;">
+                            <input type="text" class="search-input" placeholder="Cari...">
+                            <button class="search-icon" style="background-color: #fff;"><span></span></button>
+                        </div>
+                    </div>  
                 </div>
-                <div>Daftar Alumni Sekolah
-                    <div class="page-title-subheading">Ceritakan Pengalamanmu Selama Bersekolah!</div>
-                </div>
-            </div>
-            <div class="page-title-actions">
-
-                <div class="dropdown d-inline-block">
-                    <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="mb-2 mr-2 dropdown-toggle btn btn-outline-warning">
-                        <i class="lnr-magic-wand btn-icon-wrapper"> </i> Filter
-                    </button>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                        <button type="button" tabindex="0" class="dropdown-item">Tahun Lulus</button>
-                        <h6 tabindex="-1" class="dropdown-header">Angkatan</h6>
-                        <button type="button" tabindex="0" class="dropdown-item">Jenis Kelamin</button>
-                        <div tabindex="-1" class="dropdown-divider"></div>
-                        <button type="button" tabindex="0" class="dropdown-item">Urutkan Berdasarkan</button>
+                <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                    <div class="mb-2 mr-2 btn-group">
+                        <button type="button" aria-haspopup="true" aria-expanded="false"
+                            data-toggle="dropdown" class="dropdown-toggle btn-shadow btn btn-primary">Filter
+                        </button>
+                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                            <h6 tabindex="-1" class="dropdown-header">Filter</h6>
+                            <div class="nav-item-divider nav-item"></div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Semua
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="nav-item-divider nav-item"></div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Angkatan
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Tahun Lulus
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Alumni Perempuan
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Alumni Laki-Laki
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Alumni Terpopuler
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Alumni Berprestasi Akademik
+                                        
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Alumni Berprestasi Non-Akademik
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                    <a href="<?php echo base_url('data_alumni/tambahview'); ?>" class="btn btn-shadow btn-wide btn-primary">
+                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                <i class="fa fa-plus fa-w-20"></i>
+                            </span>
+                            Tambah Alumni
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
