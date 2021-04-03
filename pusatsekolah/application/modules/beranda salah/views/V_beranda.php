@@ -695,14 +695,27 @@
                 </div>
             </div>
             <div class="card-hover-shadow card-border mb-2 card">
+            <?php tampilnotif()?>
                 <div class="card-header">Kopetensi Keahlian</div>
+                <?php $no=1; foreach ($tampil AS $rowP ) { ?>
                 <div class="card-body">
-                    <p>1. Rekayasa Perangkat Lunak</p>
-                    <p>2. Akuntansi dan Keuangan Lembaga</p>
-                    <p>3. Perbankan dan Keuangan Mikro</p>
-                    <p>4. Bisnis Daring dan Pemasaran</p>
-                    <p>5. Otomatisasi Tata Kelola Perkantoran</p>
+                    <div>
+                        <p>1. <?php echo $rowP->kompetensi1;?></p>
+                    </div>
+                    <div>
+                        <p>2. <?php echo $rowP->kompetensi2;?></p>
+                    </div>
+                    <div>
+                        <p>3. <?php echo $rowP->kompetensi3;?></p>
+                    </div>
+                    <div>
+                        <p>4. <?php echo $rowP->kompetensi4;?></p>
+                    </div>
+                    <div>
+                        <p>5. <?php echo $rowP->kompetensi5;?></p>
+                    </div>
                 </div>
+                <?php $no++;} ?>
             </div>
             <div class="card-hover-shadow card-border mb-2 card">
                 <div class="card-header">Jam Operasional</div>

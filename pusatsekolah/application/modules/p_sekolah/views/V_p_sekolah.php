@@ -708,25 +708,39 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-4" role="tabpanel">
-                                                    <div class="card-body">
-                                                        <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"></div>
-                                                            <input placeholder="Tulis Nama jurusan" type="text" class="form-control">
+                                                    <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                    
+                                                        <div class="card-body">
+                                                            <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend"></div>
+                                                                <input name="jrsn1" value="<?php echo $tampil['kompetensi1']?>" type="text" class="form-control">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend"></div>
+                                                                <input name="jrsn2" value="<?php echo $tampil['kompetensi2']?>" type="text" class="form-control">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend"></div>
+                                                                <input name="jrsn3" value="<?php echo $tampil['kompetensi3']?>" type="text" class="form-control">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend"></div>
+                                                                <input name="jrsn4" value="<?php echo $tampil['kompetensi4']?>" type="text" class="form-control">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend"></div>
+                                                                <input name="jrsn5" value="<?php echo $tampil['kompetensi5']?>" type="text" class="form-control">
+                                                            </div>
                                                         </div>
-                                                        <br>
-                                                        <div class="position-relative form-group">
-                                                            <textarea name="text" placeholder="Deskripsi" id="exampleText" class="form-control"></textarea>
+                                                        <div class="divider"></div>
+                                                        <div class="clearfix">
+                                                            <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                            <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
                                                         </div>
-                                                        <br>
-                                                    </div>
-                                                    <div class="divider"></div>
-                                                    <div class="clearfix">
-                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
-                                                    </div>
+                                                    </form>
                                                 </div>
-                                                <div class="tab-pane" id="tab-eg8-5" role="tabpanel">
+                                                <!--<div class="tab-pane" id="tab-eg8-5" role="tabpanel">
                                                     <div class="card-body">
                                                         <form action="<?php echo base_url('sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                         <input name="id" value="<?php echo $tampil['id_sosmed_sekolah']?>" type="hidden" class="form-control">
@@ -783,7 +797,7 @@
                                                                 <button type="submit" class="btn-shadow btn-wide btn btn-primary float-right btn-pill">Simpan</button>
                                                             </div>
                                                         </form>
-                                                </div>
+                                                </div>-->
                                             </div>
                                 </div>
                             </div>

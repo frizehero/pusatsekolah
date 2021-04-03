@@ -105,7 +105,7 @@
                             <label class="col-sm-2 col-form-label">Alamat Lengkap :</label>
                             <div class="col-sm-10">
                                 <div class="input-group">
-                                    <input name="alamatlengkap_guru" id="text" placeholder="....." type="text" class="form-control">
+                                    <input name="alamat_guru" id="text" placeholder="....." type="text" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label">Kecamatan :</label>
                                     <div class="col-sm-8">
-                                        <select name="kec_guru" class="multiselect-dropdown form-control">
+                                        <select name="kecamatan_guru" class="multiselect-dropdown form-control">
                                             <option>Jawa Timur</option>
                                             <option>Jawa Tengah</option>
                                             <option>Jawa Barat</option>
@@ -204,7 +204,7 @@
                                     <label class="col-sm-3 col-form-label">Telephone :</label>
                                     <div class="col-sm-9">
                                         <div class="input-group">
-                                            <input name="telephone_guru" id="number" placeholder="....." type="number" class="form-control">
+                                            <input name="telepon_guru" id="number" placeholder="....." type="number" class="form-control">
                                         </div>
                                     </div>
                                 </div>

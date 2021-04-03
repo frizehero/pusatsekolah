@@ -708,25 +708,67 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-4" role="tabpanel">
-                                                    <div class="card-body">
-                                                        <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"></div>
-                                                            <input placeholder="Tulis Nama jurusan" type="text" class="form-control">
-                                                        </div>
-                                                        <br>
-                                                        <div class="position-relative form-group">
-                                                            <textarea name="text" placeholder="Deskripsi" id="exampleText" class="form-control"></textarea>
-                                                        </div>
-                                                        <br>
-                                                    </div>
-                                                    <div class="divider"></div>
-                                                    <div class="clearfix">
-                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
-                                                    </div>
+                                                    <form action="<?php echo base_url('beranda_as/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                    
+                                                        <div class="card-body">
+                                                            <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
+                                                                <div class="position-relative form-group">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 col-form-label">Jurusan 1 :</label>
+                                                                        <div class="col-sm-10">
+                                                                            <div class="input-group">
+                                                                            <input name="jrsn1" value="<?php echo $tampil['kompetensi1']?>" type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position-relative form-group">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 col-form-label">Jurusan 2 :</label>
+                                                                        <div class="col-sm-10">
+                                                                            <div class="input-group">
+                                                                            <input name="jrsn2" value="<?php echo $tampil['kompetensi2']?>" type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position-relative form-group">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 col-form-label">Jurusan 3 :</label>
+                                                                        <div class="col-sm-10">
+                                                                            <div class="input-group">
+                                                                            <input name="jrsn3" value="<?php echo $tampil['kompetensi3']?>" type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position-relative form-group">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 col-form-label">Jurusan 4 :</label>
+                                                                        <div class="col-sm-10">
+                                                                            <div class="input-group">
+                                                                            <input name="jrsn4" value="<?php echo $tampil['kompetensi4']?>" type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="position-relative form-group">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 col-form-label">Jurusan 5 :</label>
+                                                                        <div class="col-sm-10">
+                                                                            <div class="input-group">
+                                                                            <input name="jrsn5" value="<?php echo $tampil['kompetensi5']?>" type="text" class="form-control">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            <div class="clearfix">
+                                                                <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                                <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
+                                                            </div>
+                                                    </form>
                                                 </div>
-                                                <div class="tab-pane" id="tab-eg8-5" role="tabpanel">
+                                                <!--<div class="tab-pane" id="tab-eg8-5" role="tabpanel">
                                                     <div class="card-body">
                                                         <form action="<?php echo base_url('sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                         <input name="id" value="<?php echo $tampil['id_sosmed_sekolah']?>" type="hidden" class="form-control">
@@ -783,7 +825,7 @@
                                                                 <button type="submit" class="btn-shadow btn-wide btn btn-primary float-right btn-pill">Simpan</button>
                                                             </div>
                                                         </form>
-                                                </div>
+                                                </div>-->
                                             </div>
                                 </div>
                             </div>

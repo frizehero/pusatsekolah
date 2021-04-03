@@ -439,10 +439,10 @@
                         <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
 
-                            <?php if ($menu == "beranda") { ?><li class="mm-active"><?php } else { ?>
+                            <?php if ($menu == "beranda_as") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('beranda'); ?>">
+                                <a href="<?php echo base_url('beranda_as'); ?>">
                                     <i class="metismenu-icon pe-7s-rocket"></i>Beranda
                                 </a>
                                 </li>
@@ -549,18 +549,28 @@
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
+
                                     <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
                                         <li><?php } ?>
                                         <a href="<?php echo base_url('sekolah'); ?>">
                                             <i class="metismenu-icon"></i>Sekolah
                                         </a>
                                         </li>
-                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
-                                            <li><?php } ?>
-                                            <a href="<?php echo base_url('log'); ?>">
-                                                <i class="metismenu-icon"></i>Log Aktifitas
-                                            </a>
-                                            </li>
+
+                                    <?php if ($menu == "p_sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('p_sekolah'); ?>">
+                                            <i class="metismenu-icon"></i>Sekolah
+                                        </a>
+                                        </li>
+
+                                    <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                        <li><?php } ?>
+                                        <a href="<?php echo base_url('log'); ?>">
+                                            <i class="metismenu-icon"></i>Log Aktifitas
+                                        </a>
+                                        </li>
+
                                 </ul>
                             </li>
                             <li>

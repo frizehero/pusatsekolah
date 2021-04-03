@@ -1,15 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_beranda extends CI_Model
+class M_kompetensi_as extends CI_Model
 {
 
 	function tampil()
 	{
-		return $this->db->get('sekolah')->result();
+		return $this->db->get('kompetensi_as')->result();
 	}
 
-	function tambah()
+	/*function tambah()
 	{
 		$nama 		= $this->input->post('nama_sekolah');
 		$keterangan	= $this->input->post('keterangan');
@@ -83,7 +83,7 @@ class M_beranda extends CI_Model
 			);
 			$this->db->where('id_sekolah', $id_sekolah)->update('sekolah', $data);
 		}
-	}
+	}*/
 
 	function hapus($id)
 	{
