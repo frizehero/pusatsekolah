@@ -46,12 +46,12 @@ class Data_guru extends MX_Controller
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function detailprofil()
+	function detailprofil($id)
 	{
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_profil_guru",
-			'tampil'		=> $this->M_data_guru->tampil(),
+			'tampil'		=> $this->M_data_guru->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
