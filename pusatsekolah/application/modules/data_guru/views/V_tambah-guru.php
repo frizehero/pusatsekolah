@@ -3,7 +3,7 @@
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <h5 class="card-title">Tambah Guru</h5>
-                <form class="" id="signupForm" action="<?php echo base_url('data_guru/tambah') ?>" method="POS" enctype="multipart/form-data">
+                <form action="<?php echo base_url('data_guru/tambah') ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="position-relative form-group">

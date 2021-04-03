@@ -16,6 +16,7 @@ class M_data_guru extends CI_Model {
 		$tanggal_lahir 	= $this->input->post('tgllahir_guru');
 		$jenis_kelamin 	= $this->input->post('jk_guru');
 		$status 		= $this->input->post('status_guru');
+		$mapel 			= $this->input->post('mapel_guru');
 		$alamat_lengkap = $this->input->post('alamatlengkap_guru');
 		$provinsi 		= $this->input->post('provinsi_guru');
 		$kotakab 		= $this->input->post('kotakab_guru');
@@ -35,6 +36,7 @@ class M_data_guru extends CI_Model {
 					'tgllahir_guru' 		=> $tanggal_lahir,
 					'jk_guru'				=> $jenis_kelamin,
 					'status_guru'			=> $status,
+					'mapel_guru'			=> $mapel,
 					'alamatlengkap_guru'	=> $alamat_lengkap,
 					'provinsi_guru'			=> $provinsi,
 					'kotakab_guru'			=> $kotakab,
@@ -69,6 +71,7 @@ class M_data_guru extends CI_Model {
 		$tanggal_lahir 	= $this->input->post('tgllahir_guru');
 		$jenis_kelamin 	= $this->input->post('jk_guru');
 		$status 		= $this->input->post('status_guru');
+		$mapel 			= $this->input->post('mapel_guru');
 		$alamat_lengkap = $this->input->post('alamatlengkap_guru');
 		$provinsi 		= $this->input->post('provinsi_guru');
 		$kotakab 		= $this->input->post('kotakab_guru');
@@ -88,6 +91,7 @@ class M_data_guru extends CI_Model {
 					'tgllahir_guru' 		=> $tanggal_lahir,
 					'jk_guru'				=> $jenis_kelamin,
 					'status_guru'			=> $status,
+					'mapel_guru'			=> $mapel,
 					'alamatlengkap_guru'	=> $alamat_lengkap,
 					'provinsi_guru'			=> $provinsi,
 					'kotakab_guru'			=> $kotakab,
