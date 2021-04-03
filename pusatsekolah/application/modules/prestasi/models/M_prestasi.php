@@ -18,16 +18,16 @@ class M_prestasi extends CI_Model
 
 	function tambah()
 	{
-		$namap 		= $this->input->post('nama_prestasi');
-		$jenisp		= $this->input->post('jenis_prestasi');
-		$tingkatp	= $this->input->post('tingkat_prestasi');
-		$juara		= $this->input->post('juara');
-		$tanggalp	= $this->input->post('tgl_prestasi');
+		$nama_prestasi 		= $this->input->post('nama_prestasi');
+		$jenis_prestasi		= $this->input->post('jenis_prestasi');
+		$tingkat_prestasi	= $this->input->post('tingkat_prestasi');
+		$juara				= $this->input->post('juara');
+		$tgl_prestasi		= $this->input->post('tgl_prestasi');
 
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/gambar-prestasi/';
+		$config['upload_path']		= 'assets/gambar_prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -36,16 +36,16 @@ class M_prestasi extends CI_Model
 
 		$this->upload->initialize($config);
 
-		if ($_FILES['gambar']['name']) {
-			if ($this->upload->do_upload('gambar')) {
-				$gambarp = $this->upload->data();
+		if ($_FILES['gambar_prestasi']['name']) {
+			if ($this->upload->do_upload('gambar_prestasi')) {
+				$gbr = $this->upload->data();
 				$data = array(
-					'nama_prestasi'		=> $namap,
-					'jenis_prestasi'	=> $jenisp,
-					'tingkat_prestasi'	=> $tingkatp,
+					'nama_prestasi'		=> $nama_prestasi,
+					'jenis_prestasi'	=> $jenis_prestasi,
+					'tingkat_prestasi'	=> $tingkat_prestasi,
 					'juara'				=> $juara,
-					'tgl_prestasi'		=> $tanggalp,
-					'gambar_prestasi' 	=> $gambarp['file_name'],
+					'tgl_prestasi'		=> $tgl_prestasi,
+					'gambar_prestasi' 	=> $gbr['file_name'],
 
 
 				);
@@ -54,11 +54,11 @@ class M_prestasi extends CI_Model
 			}
 		} else {
 			$data = array(
-				'nama_prestasi'		=> $namap,
-				'jenis_prestasi'	=> $jenisp,
-				'tingkat_prestasi'	=> $tingkatp,
+				'nama_prestasi'		=> $nama_prestasi,
+				'jenis_prestasi'	=> $jenis_prestasi,
+				'tingkat_prestasi'	=> $tingkat_prestasi,
 				'juara'				=> $juara,
-				'tgl_prestasi'		=> $tanggalp,
+				'tgl_prestasi'		=> $tgl_prestasi,
 				'gambar_prestasi'	=> 'kosong1.png',
 			);
 			$this->db->insert('prestasi', $data);
@@ -70,16 +70,16 @@ class M_prestasi extends CI_Model
 	{
 		$id 			= $this->input->post('id');
 
-		$namap 			= $this->input->post('nama_prestasi');
-		$jenisp			= $this->input->post('jenis_prestasi');
-		$tingkatp		= $this->input->post('tingkat_prestasi');
-		$juara			= $this->input->post('juara');
-		$tanggalp		= $this->input->post('tgl_prestasi');
+		$nama_prestasi 			= $this->input->post('nama_prestasi');
+		$jenis_prestasi			= $this->input->post('jenis_prestasi');
+		$tingkat_prestasi		= $this->input->post('tingkat_prestasi');
+		$juara					= $this->input->post('juara');
+		$tgl_prestasi			= $this->input->post('tgl_prestasi');
 
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/gambar-prestasi/';
+		$config['upload_path']		= 'assets/gambar_prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -88,15 +88,15 @@ class M_prestasi extends CI_Model
 
 		$this->upload->initialize($config);
 
-		if ($_FILES['gambar']['name']) {
-			if ($this->upload->do_upload('gambar')) {
+		if ($_FILES['gambar_prestasi']['name']) {
+			if ($this->upload->do_upload('gambar_prestasi')) {
 				$gbr = $this->upload->data();
 				$data = array(
-					'nama_prestasi'		=> $namap,
-					'jenis_prestasi'	=> $jenisp,
-					'tingkat_prestasi'	=> $tingkatp,
+					'nama_prestasi'		=> $nama_prestasi,
+					'jenis_prestasi'	=> $jenis_prestasi,
+					'tingkat_prestasi'	=> $tingkat_prestasi,
 					'juara'				=> $juara,
-					'tgl_prestasi'		=> $tanggalp,
+					'tgl_prestasi'		=> $tgl_prestasi,
 					'gambar_prestasi' 	=> $gbr['file_name'],
 				);
 				$this->db->where('id_prestasi', $id)->update('prestasi', $data);
@@ -104,11 +104,11 @@ class M_prestasi extends CI_Model
 			}
 		} else {
 			$data = array(
-				'nama_prestasi'		=> $namap,
-				'jenis_prestasi'	=> $jenisp,
-				'tingkat_prestasi'	=> $tingkatp,
+				'nama_prestasi'		=> $nama_prestasi,
+				'jenis_prestasi'	=> $jenis_prestasi,
+				'tingkat_prestasi'	=> $tingkat_prestasi,
 				'juara'				=> $juara,
-				'tgl_prestasi'		=> $tanggalp,
+				'tgl_prestasi'		=> $tgl_prestasi,
 			);
 			$this->db->where('id_prestasi', $id)->update('prestasi', $data);
 			$this->session->set_flashdata('msg', 'suksesedit');

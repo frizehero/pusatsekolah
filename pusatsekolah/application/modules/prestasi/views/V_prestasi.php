@@ -60,7 +60,7 @@
             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card-shadow-primary card-border text-dark mb-3 card">
                     <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner" style="background-image: url('assets/gambar-prestasi/<?php echo $rowP->gambar_prestasi; ?>');">
+                        <div class="dropdown-menu-header-inner" style="background-image: url('assets/gambar_prestasi/<?php echo $rowP->gambar_prestasi; ?>');">
                             <div class="menu-header-btn-pane pt-5">
                                 <div class="pt-5">
                                     <div class="pt-5">
