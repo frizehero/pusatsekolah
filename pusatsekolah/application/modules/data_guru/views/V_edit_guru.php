@@ -3,7 +3,7 @@
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <h5 class="card-title">Edit Profil Guru</h5>
-                <form class="">
+                <form class="col-md-10 mx-auto" action="<?php echo base_url('data_guru/edit') ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="position-relative form-group">

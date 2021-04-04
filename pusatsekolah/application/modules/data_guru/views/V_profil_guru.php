@@ -47,7 +47,7 @@
                                                 <i class="pe-7s-user text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Nama : <?php echo $rowP->nama_guru; ?></div>
+                                                <div>Nama : <?php echo $tampil['nama_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                                                 <i class="pe-7s-id text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>NIP : <?php echo $rowP->nip_guru; ?></div>
+                                                <div>NIP : <?php echo $tampil['nip_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -71,7 +71,7 @@
                                                 <i class="pe-7s-map-2 text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Tempat Lahir : <?php echo $rowP->tmplahir_guru; ?></div>
+                                                <div>Tempat Lahir : <?php echo $tampil['tmplahir_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                                 <i class="pe-7s-date text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Tanggal Lahir : <?php echo $rowP->tgllahir_guru; ?></div>
+                                                <div>Tanggal Lahir : <?php echo $tampil['tgllahir_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
                                                 <i class="pe-7s-home text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Alamat : <?php echo $rowP->alamat_guru; ?></div>
+                                                <div>Alamat : <?php echo $tampil['alamat_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -107,7 +107,7 @@
                                                 <i class="pe-7s-ribbon text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Status : <?php echo $rowP->status_guru; ?></div>
+                                                <div>Status : <?php echo $tampil['status_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +119,7 @@
                                                 <i class="pe-7s-notebook text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Mengajar : <?php echo $rowP->mapel_guru; ?></div>
+                                                <div>Mengajar : <?php echo $tampil['mapel_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -183,7 +183,7 @@
                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Instagram : <?php echo $rowP->instagram_guru; ?></div>
+                                                <div>Instagram : <?php echo $tampil['instagram_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@
                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Facebook : <?php echo $rowP->facebook_guru; ?></div>
+                                                <div>Facebook : <?php echo $tampil['facebook_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@
                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div>Twitter : <?php echo $rowP->twitter_guru; ?></div>
+                                                <div>Twitter : <?php echo $tampil['twitter_guru'] ?></div>
                                             </div>
                                         </div>
                                     </div>
@@ -222,9 +222,7 @@
                         </div>
                     </div>
                     <div class="text-center d-block card-footer">
-                        <a href="<?php echo base_url('data_guru/editview'); ?>">
-                            <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Edit Data</button>
-                        </a>
+                        <a href="<?php echo base_url('data_guru/editview' . encrypt_url($rowP->id_guru)); ?>" class="mr-2 border-0 btn-transition btn btn-outline-danger">Edit Data</a>
                         <a href="<?php echo base_url('pesan'); ?>">
                             <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                         </a>

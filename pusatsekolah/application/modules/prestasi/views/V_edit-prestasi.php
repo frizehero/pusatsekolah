@@ -1,7 +1,7 @@
 <div class="app-main__inner">
     <div class="main-card mb-3 card">
         <div class="card-body">
-            <h5 class="card-title">Edut Prestasi Sekolah</h5>
+            <h5 class="card-title">Edit Prestasi Sekolah</h5>
             <form class="col-md-10 mx-auto" action="<?php echo base_url('prestasi/edit') ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <input name="id" value="<?php echo $tampil['id_prestasi'] ?>" type="hidden" class="form-control">
