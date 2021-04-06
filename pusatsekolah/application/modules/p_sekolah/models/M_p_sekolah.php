@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_beranda_as extends CI_Model {
+class M_p_sekolah extends CI_Model {
 
 	function tampil()
 	{
@@ -58,7 +58,7 @@ class M_beranda_as extends CI_Model {
     	return $this->db->get('p_sekolah')->row_array();
 	}
 
-	/*function edit()
+	function edit()
 	{
 		$id 		= $this->input->post('id');
 		$jrsn1 		= $this->input->post('jrsn1');
@@ -98,19 +98,19 @@ class M_beranda_as extends CI_Model {
 					'sabtu_m'			=> $sabtum,
 					'sabtu_p'			=> $sabtup,
 				);
-				$this->db->where('id_beranda_as',$id)->update('beranda_as', $data);
+				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 
-	}*/
+	}
 
 	function hapus($id)
 	{
-		$this->db->where('id_sekolah', $id)->delete('sekolah');
+		$this->db->where('id_p_sekolah', $id)->delete('p_sekolah');
 	}
 
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_sekolah',$cari)->get('sekolah')->result();
+		return $this->db->like('nama_sekolah',$cari)->get('p_sekolah')->result();
 	}
 }

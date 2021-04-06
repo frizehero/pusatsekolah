@@ -714,8 +714,7 @@
                         <div>
                             <p>5. <?php echo $rowP->kompetensi5;?></p>
                         </div>
-                        <a href="<?php echo base_url('beranda_as/editview/'. encrypt_url($rowP->id_beranda_as)); ?>"class="btn btn-primary">
-                            <i class="fa fa-pen fa-w-16"></i>
+                        <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                         </a>
                     </div>
                 </div>

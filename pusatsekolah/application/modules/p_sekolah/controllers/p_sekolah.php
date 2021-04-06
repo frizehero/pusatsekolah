@@ -7,7 +7,7 @@ class P_sekolah extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_inventory_room');
+		 $this->load->model('M_p_sekolah');
 		 $this->load->model('login/m_session');
 	}
 
@@ -33,16 +33,22 @@ class P_sekolah extends MX_Controller {
 	}*/
 
 		// Halaman Edit
-	//function editview($id)
-	//{
+	function editview($id)
+	{
 
-	//	$data = array(
-	//		'namamodule' 	=> "p_sekolah",
-	//		'namafileview' 	=> "V_p_sekolah",
-	//		'tampil'		=> $this->M_beranda_as->tampiledit($id),
-	//	);
-	//	echo Modules::run('template/tampilCore', $data);
-	//}
+		$data = array(
+			'namamodule' 	=> "p_sekolah",
+			'namafileview' 	=> "V_p_sekolah",
+			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function edit()
+	{
+		$this->M_p_sekolah->edit();
+		redirect('p_sekolah');
+	}
 	
 }
  

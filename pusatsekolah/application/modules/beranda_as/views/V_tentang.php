@@ -4,7 +4,7 @@
         <div class="col-mb-12">
             <div class="card-shadow-primary card-border text-white card bg-light">
                 <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner" style="background-image: url('assets/images/originals/smkn1p.jpg');">
+                    <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/originals/smkn1p.jpg');">
                         <div class="menu-header-btn-pane pt-5">
                             <div class="pt-5">
                                 <div class="pt-5">
@@ -41,7 +41,7 @@
                         <div class="widget-content-left card-footer">
                             <div class="widget-content-left mr-3 avatar-icon-xl">
                                 <a href="#">
-                                <img class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                 </a>
                             </div>
                             <div class="widget-content-left" style="color: black;">
@@ -104,9 +104,8 @@
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ea quod temporibus modi dignissimos quas nisi! Minus quae voluptatibus odio quibusdam aperiam et, illum saepe, iure cum, nisi rem quisquam.</p>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum sequi officia optio dignissimos odit itaque natus tempore iste! Adipisci enim praesentium aperiam dolor amet harum animi reprehenderit temporibus dolorum.</p>
                                         </div>
-                                        <a href="<?php echo base_url('p_sekolah'); ?>"class="btn btn-primary">
-                                            <i class="fa fa-pen fa-w-16"></i>
-                                        </a>
+                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
+                                            </a>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
                                         <div class="card-body">
@@ -168,10 +167,8 @@
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="divider"></div>
                                         <div class="clearfix">
-                                            <a href="tampilan-edit-sekolah.html">
-                                            <button type="button" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Edit</button>
+                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                                             </a>
                                         </div>
                                     </div>
@@ -185,7 +182,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Email</b> :
-                                                                <span>admin@smkn1probolinggo.sch.id</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -196,7 +193,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Telephone</b> :
-                                                                <span>0335421121</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -207,7 +204,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Facebook</b> :
-                                                                <span>SMK Negeri 1 Kota Probolinggo</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -218,7 +215,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Instagram</b> :
-                                                                <span>@smkn1kotaprobolinggo</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -229,7 +226,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Twitter</b> :
-                                                                <span>@smkn1kotaprobolinggo</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -240,7 +237,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Website Sekolah</b> :
-                                                                <span>smkn1kotaprobolinggo.sch.id</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -251,16 +248,14 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Video Profil Sekolah</b> :
-                                                                <span>https://www.youtube.com/smkn1kotaprobolinggo</span>
+                                                                <?php echo $rowP->deskripsi_produk;?>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                         </div>
-                                        <div class="divider"></div>
                                         <div class="clearfix">
-                                            <a href="tampilan-edit-sekolah.html">
-                                            <button type="button" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Edit</button>
+                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                                             </a>
                                         </div>
                                     </div>
@@ -335,10 +330,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        <div class="divider"></div>
                                         <div class="clearfix">
-                                            <a href="tampilan-edit-sekolah.html">
-                                            <button type="button" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Edit</button>
+                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                                             </a>
                                         </div>
                                     </div>
@@ -362,7 +355,7 @@
                             class="dropdown-menu-xl rm-pointers dropdown-menu">
                             <div class="dropdown-menu-header mb-0">
                                 <div class="dropdown-menu-header-inner bg-deep-blue">
-                                    <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
+                                    <div class="menu-header-image opacity-1" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
                                     <div class="menu-header-content text-dark">
                                         <h5 class="menu-header-title">Notifications</h5>
                                         <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
@@ -432,47 +425,47 @@
                                                                         <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/1.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div
                                                                                 class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/2.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div
                                                                                 class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/3.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div
                                                                                 class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/4.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/5.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/5.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/9.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/9.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div
                                                                                 class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/7.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/7.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div
                                                                                 class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon">
-                                                                                    <img src="assets/images/avatars/8.jpg" alt="">
+                                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/8.jpg" alt="">
                                                                                 </div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -697,7 +690,7 @@
                         <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu">
                             <div class="dropdown-menu-header">
                                 <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
-                                    <div class="menu-header-image opacity-05" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
+                                    <div class="menu-header-image opacity-05" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city2.jpg');"></div>
                                     <div class="menu-header-content text-center text-white">
                                         <h6 class="menu-header-subtitle mt-0"> Choose Language</h6>
                                     </div>
@@ -735,7 +728,7 @@
                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
                             <div class="dropdown-menu-header">
                                 <div class="dropdown-menu-header-inner bg-premium-dark">
-                                    <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract4.jpg');"></div>
+                                    <div class="menu-header-image" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/abstract4.jpg');"></div>
                                     <div class="menu-header-content text-white">
                                         <h5 class="menu-header-title">Users Online</h5>
                                         <h6 class="menu-header-subtitle">Recent Account Activity Overview</h6>
@@ -846,7 +839,7 @@
                             <div class="d-none popover-custom-content">
                                 <div class="dropdown-menu-header">
                                     <div class="dropdown-menu-header-inner bg-tempting-azure">
-                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city5.jpg');"></div>
+                                        <div class="menu-header-image opacity-1" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city5.jpg');"></div>
                                         <div class="menu-header-content text-dark">
                                             <h5 class="menu-header-title">Two Column Grid</h5>
                                             <h6 class="menu-header-subtitle">Easy grid navigation inside popovers</h6>

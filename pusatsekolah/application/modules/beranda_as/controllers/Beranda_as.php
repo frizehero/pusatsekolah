@@ -44,9 +44,9 @@ class Beranda_as extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_edit_sekolah",
-			'tampil'		=> $this->M_beranda_as->tampiledit($id),
+			'namamodule' 	=> "p_sekolah",
+			'namafileview' 	=> "V_p_sekolah",
+			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -59,8 +59,8 @@ class Beranda_as extends MX_Controller
 
 	function edit()
 	{
-		$this->M_beranda_as->edit();
-		redirect('beranda_as');
+		$this->M_p_sekolah->edit();
+		redirect('p_sekolah');
 	}
 
 	function cari()
