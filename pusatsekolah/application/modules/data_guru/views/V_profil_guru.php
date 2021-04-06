@@ -222,10 +222,7 @@
                         </div>
                     </div>
                     <div class="text-center d-block card-footer">
-                        <a href="<?php echo base_url('data_guru/editview' . encrypt_url($rowP->id_guru)); ?>" class="mr-2 border-0 btn-transition btn btn-outline-danger">Edit Data</a>
-                        <a href="<?php echo base_url('pesan'); ?>">
-                            <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
-                        </a>
+                        <a href="<?php echo base_url('data_guru/editview/'); ?>" class="mr-2 border-0 btn-transition btn btn-outline-primary">Edit Profil Guru</a>
                     </div>
                 </div>
             </div>
