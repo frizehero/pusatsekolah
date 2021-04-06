@@ -18,21 +18,11 @@ class P_sekolah extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "p_sekolah",
 			'namafileview' 	=> "V_p_sekolah",
+			'tampil'		=> $this->M_p_sekolah->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-
-		// halaman tambah
-	/*function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "inventory_room",
-			'namafileview' 	=> "V_room_tambah",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}*/
-
-		// Halaman Edit
+	
 	function editview($id)
 	{
 

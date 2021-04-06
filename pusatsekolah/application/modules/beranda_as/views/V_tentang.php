@@ -182,7 +182,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Email</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->email;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -193,7 +193,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Telephone</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->telphone;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -204,7 +204,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Facebook</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->facebook;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -215,7 +215,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Instagram</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->instagram;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -226,7 +226,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Twitter</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->twitter;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -237,7 +237,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Website Sekolah</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->link_web;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -248,7 +248,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Video Profil Sekolah</b> :
-                                                                <?php echo $rowP->deskripsi_produk;?>
+                                                                <?php echo $rowP->link_video;?>
                                                             </div>
                                                         </div>
                                                     </div>

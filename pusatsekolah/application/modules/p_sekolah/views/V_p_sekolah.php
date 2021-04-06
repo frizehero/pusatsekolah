@@ -772,19 +772,19 @@
                                                     <div class="card-body">
                                                         <div class="position-relative form-group">
                                                             <h5 class="card-title">LINK VIDEO PROFIL SEKOLAH</h5>
-                                                            <input name="address" id="exampleAddress" placeholder=". . . . . . . . ." type="text" class="form-control">
+                                                            <input name="lvs" value="<?php echo $tampil['link_video']?>" type="text" class="form-control">
                                                         </div>
                                                         <div class="form-row">
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">TELEPON SEKOLAH</h5>
-                                                                    <input name="number" id="exampleEmail55" placeholder=". . . . . . . . ." type="number" class="form-control">
+                                                                    <input name="tlps" value="<?php echo $tampil['telephone']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">TWITTER</h5>
-                                                                    <input name="password" id="examplePassword22" placeholder=". . . . . . . . ." type="password" class="form-control">
+                                                                    <input name="twitters" value="<?php echo $tampil['twitter']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -792,13 +792,13 @@
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">INSTAGRAM</h5>
-                                                                    <input name="email" id="exampleEmail55" placeholder=". . . . . . . . ." type="email" class="form-control">
+                                                                    <input name="igs" value="<?php echo $tampil['instagram']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">FACEBOOK</h5>
-                                                                    <input name="password" id="examplePassword22" placeholder=". . . . . . . . ." type="password" class="form-control">
+                                                                    <input name="fbs" value="<?php echo $tampil['facebook']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -806,13 +806,13 @@
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">EMAIL</h5>
-                                                                    <input name="email" id="exampleEmail55" placeholder=". . . . . . . . ." type="email" class="form-control">
+                                                                    <input name="emails" value="<?php echo $tampil['email']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">LINK WEBSITE SEKOLAH</h5>
-                                                                    <input name="url" id="examplePassword22" placeholder=". . . . . . . . ." type="url" class="form-control">
+                                                                    <input name="lws" value="<?php echo $tampil['link_web']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>

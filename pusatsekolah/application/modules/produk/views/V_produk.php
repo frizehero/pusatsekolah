@@ -88,7 +88,8 @@
                                                         <?php echo $rowP->nama_produk;?>
                                                     </div>
                                                     <div class="widget-description opacity-8">
-                                                    <?php echo $rowP->deskripsi_produk;?></div>
+                                                        <?php echo $rowP->deskripsi_produk;?>
+                                                    </div>
                                                 </div>
                                                 <div class="divider"></div>
                                                 <div class="row">

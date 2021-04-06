@@ -8,49 +8,6 @@ class M_p_sekolah extends CI_Model {
 		return $this->db->get('p_sekolah')->result();
 	}
 
-	/*function tambah()
-	{
-		$nama 		= $this->input->post('nama_sekolah');
-		$keterangan	= $this->input->post('keterangan');
-
-
-		$this->load->library('upload');
-		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/img/';
-		$config['allowed_types']	= 'gif|jpg|png|jpeg';
-		$config['max_size']			= 5120;
-		$config['max_width']		= 4300;
-		$config['max_height']		= 4300;
-		$config['file_name'] 		= $nmfile;
-		
-		$this->upload->initialize($config);
-		
-		if($_FILES['gambar']['name'])
-        {
-            if ($this->upload->do_upload('gambar'))
-            {
-				$gbr = $this->upload->data();
-				$data = array(
-					'nama_sekolah'		=> $nama,
-					'keterangan'		=> $keterangan,
-					'logo' 				=> $gbr['file_name'],
-					
-					
-				);
-				$this->db->insert('sekolah', $data);
-			
-			}	 
-		}
-		else{
-				$data = array(
-					'nama_sekolah'		=> $nama,
-					'keterangan'		=> $keterangan,
-					'logo' 				=> 'kosong1.png',
-				);
-				$this->db->insert('sekolah', $data);
-			}
-	}*/
-
 	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);
@@ -78,6 +35,13 @@ class M_p_sekolah extends CI_Model {
 		$jumatp		= $this->input->post('jumatp');
 		$sabtum		= $this->input->post('sabutm');
 		$sabtup		= $this->input->post('sabutp');
+		$emails		= $this->input->post('emails');
+		$tlps		= $this->input->post('tlps');
+		$twitters	= $this->input->post('twitters');
+		$igs		= $this->input->post('igs');
+		$fbs		= $this->input->post('fbs');
+		$lws		= $this->input->post('lws');
+		$lvs		= $this->input->post('lvs');
 
 				$data = array(
 					'kompetensi1'		=> $jrsn1,
@@ -97,6 +61,13 @@ class M_p_sekolah extends CI_Model {
 					'jumat_p'			=> $jumatp,
 					'sabtu_m'			=> $sabtum,
 					'sabtu_p'			=> $sabtup,
+					'email'				=> $emails,
+					'telphone'			=> $tlps,
+					'twitter'			=> $twitters,
+					'instagram'			=> $igs,
+					'facebook'			=> $fbs,
+					'link_web'			=> $lws,
+					'link_video'		=> $lvs,
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');

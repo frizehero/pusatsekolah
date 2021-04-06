@@ -35,6 +35,7 @@ class Beranda_as extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "beranda_as",
 			'namafileview' 	=> "V_tentang",
+			
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
