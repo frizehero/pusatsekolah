@@ -53,7 +53,7 @@
                     <a href="<?php echo base_url('pesan'); ?>">
                         <button class="btn-shadow-dark btn btn-primary">Pesan</button>
                     </a>
-                    <a href="<?php echo base_url('beranda/tentangview'); ?>">
+                    <a href="<?php echo base_url('beranda_as/tentangview'); ?>">
                         <button class="btn-shadow-dark btn btn-primary">Tentang Sekolah</button>
                     </a>
                     <button class="btn-shadow-dark btn btn-primary">Bagikan Sekolah</button>

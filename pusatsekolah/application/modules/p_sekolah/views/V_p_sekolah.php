@@ -708,96 +708,79 @@
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-4" role="tabpanel">
-                                                    <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
-                                                    
-                                                        <div class="card-body">
-                                                            <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend"></div>
-                                                                <input name="jrsn1" value="<?php echo $tampil['kompetensi1']?>" type="text" class="form-control">
-                                                            </div>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend"></div>
-                                                                <input name="jrsn2" value="<?php echo $tampil['kompetensi2']?>" type="text" class="form-control">
-                                                            </div>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend"></div>
-                                                                <input name="jrsn3" value="<?php echo $tampil['kompetensi3']?>" type="text" class="form-control">
-                                                            </div>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend"></div>
-                                                                <input name="jrsn4" value="<?php echo $tampil['kompetensi4']?>" type="text" class="form-control">
-                                                            </div>
-                                                            <div class="input-group">
-                                                                <div class="input-group-prepend"></div>
-                                                                <input name="jrsn5" value="<?php echo $tampil['kompetensi5']?>" type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <div class="divider"></div>
-                                                        <div class="clearfix">
-                                                            <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                            <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                                <!--<div class="tab-pane" id="tab-eg8-5" role="tabpanel">
                                                     <div class="card-body">
-                                                        <form action="<?php echo base_url('sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
-                                                        <input name="id" value="<?php echo $tampil['id_sosmed_sekolah']?>" type="hidden" class="form-control">
-                                                            <div class="position-relative form-group">
-                                                                <h5 class="card-title">EMAIL SEKOLAH</h5>
-                                                                <input name="email" value="<?php echo $tampil['email_sekolah']?>" type="text" class="form-control">
-                                                            </div>
-                                                            <div class="form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">TELEPON SEKOLAH</h5>
-                                                                        <input name="telephone" value="<?php echo $tampil['tlp_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">TWITTER</h5>
-                                                                        <input name="twitter" value="<?php echo $tampil['twitter_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">INSTAGRAM</h5>
-                                                                        <input name="instagram" value="<?php echo $tampil['ig_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">FACEBOOK</h5>
-                                                                        <input name="facebook" value="<?php echo $tampil['fb_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
+                                                        <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend"></div>
+                                                            <input placeholder="Tulis Nama jurusan" type="text" class="form-control">
+                                                        </div>
+                                                        <br>
+                                                        <div class="position-relative form-group">
+                                                            <textarea name="text" placeholder="Deskripsi" id="exampleText" class="form-control"></textarea>
+                                                        </div>
+                                                        <br>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="clearfix">
+                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="tab-eg8-5" role="tabpanel">
+                                                    <div class="card-body">
+                                                        <div class="position-relative form-group">
+                                                            <h5 class="card-title">LINK VIDEO PROFIL SEKOLAH</h5>
+                                                            <input name="address" id="exampleAddress" placeholder=". . . . . . . . ." type="text" class="form-control">
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">TELEPON SEKOLAH</h5>
+                                                                    <input name="number" id="exampleEmail55" placeholder=". . . . . . . . ." type="number" class="form-control">
                                                                 </div>
                                                             </div>
-                                                            <div class="form-row">
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">LINK VIDEO PROFIL SEKOLAH</h5>
-                                                                        <input name="linkvideo" value="<?php echo $tampil['lvp_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6">
-                                                                    <div class="position-relative form-group">
-                                                                        <h5 class="card-title">LINK WEBSITE SEKOLAH</h5>
-                                                                        <input name="linkwebsite" value="<?php echo $tampil['lw_sekolah']?>" type="text" class="form-control">
-                                                                    </div>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">TWITTER</h5>
+                                                                    <input name="password" id="examplePassword22" placeholder=". . . . . . . . ." type="password" class="form-control">
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">INSTAGRAM</h5>
+                                                                    <input name="email" id="exampleEmail55" placeholder=". . . . . . . . ." type="email" class="form-control">
+                                                                </div>
                                                             </div>
-                                                            <div class="divider"></div>
-                                                            <div class="clearfix">
-                                                                <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                                <button type="submit" class="btn-shadow btn-wide btn btn-primary float-right btn-pill">Simpan</button>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">FACEBOOK</h5>
+                                                                    <input name="password" id="examplePassword22" placeholder=". . . . . . . . ." type="password" class="form-control">
+                                                                </div>
                                                             </div>
-                                                        </form>
-                                                </div>-->
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">EMAIL</h5>
+                                                                    <input name="email" id="exampleEmail55" placeholder=". . . . . . . . ." type="email" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">LINK WEBSITE SEKOLAH</h5>
+                                                                    <input name="url" id="examplePassword22" placeholder=". . . . . . . . ." type="url" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider"></div>
+                                                    <div class="clearfix">
+                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Simpan</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                 </div>
                             </div>

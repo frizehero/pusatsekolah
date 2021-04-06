@@ -30,6 +30,15 @@ class Beranda_as extends MX_Controller
 		}
 	}
 
+	function tentangview()
+	{
+		$data = array(
+			'namamodule' 	=> "beranda_as",
+			'namafileview' 	=> "V_tentang",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 		// Halaman Edit
 	function editview($id)
 	{
