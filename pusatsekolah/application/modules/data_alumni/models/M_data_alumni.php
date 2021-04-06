@@ -11,6 +11,7 @@ class M_data_alumni extends CI_Model {
 	function tambah()
 	{
 		$nama 				= $this->input->post('nama_alumni');
+		$tahun_lulus		= $this->input->post('thlulus_alumni');
 		$nisn				= $this->input->post('nisn');
 		$tempat_lahir 		= $this->input->post('tmplahir_alumni');
 		$tanggal_lahir 		= $this->input->post('tgllahir_alumni');
@@ -31,6 +32,7 @@ class M_data_alumni extends CI_Model {
 
 				$data = array(
 					'nama_alumni'			=> $nama,
+					'thlulus_alumni'		=> $tahun_lulus,
 					'nisn'					=> $nisn,
 					'tmplahir_alumni' 		=> $tempat_lahir,
 					'tgllahir_alumni' 		=> $tanggal_lahir,
@@ -66,6 +68,7 @@ class M_data_alumni extends CI_Model {
 	{
 		$id_alumni		= $this->input->post('id_alumni');
 		$nama 			= $this->input->post('nama_alumni');
+		$tahun_lulus	= $this->input->post('thlulus_alumni');
 		$nisn			= $this->input->post('nisn');
 		$tempat_lahir 	= $this->input->post('tmplahir_alumni');
 		$tanggal_lahir 	= $this->input->post('tgllahir_alumni');
@@ -86,6 +89,7 @@ class M_data_alumni extends CI_Model {
 
 				$data = array(
 					'nama_alumni'			=> $nama,
+					'thlulus_alumni'		=> $tahun_lulus,
 					'nisn'					=> $nisn,
 					'tmplahir_alumni' 		=> $tempat_lahir,
 					'tgllahir_alumni' 		=> $tanggal_lahir,

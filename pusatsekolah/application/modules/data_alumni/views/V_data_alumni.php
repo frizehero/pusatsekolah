@@ -79,15 +79,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                    <a href="<?php echo base_url('data_alumni/tambahview'); ?>" class="btn btn-shadow btn-wide btn-primary">
-                            <span class="btn-icon-wrapper pr-2 opacity-7">
-                                <i class="fa fa-plus fa-w-20"></i>
-                            </span>
-                            Tambah Alumni
-                        </button>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -132,561 +123,106 @@
             </div>
         </div>
     </div>
+    <?php tampilnotif() ?>
     <div class="row">
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/18.png" alt="Avatar 5">
+        <?php $no = 1;
+        foreach ($tampil as $rowP) { ?>
+            <div class="col-md-12 col-lg-6 col-xl-4">
+                <div class="card-shadow-primary card-border mb-3 card">
+                    <div class="dropdown-menu-header">
+                        <div class="dropdown-menu-header-inner bg-dark">
+                            <div class="menu-header-content">
+                                <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
+                                    <div class="avatar-icon">
+                                        <img src="<?php echo base_url() ?> assets/images/avatars/18.png" alt="Avatar 5">
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <h5 class="menu-header-title">Olivia Rodrigo</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
-                            </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
+                                <div>
+                                    <h5 class="menu-header-title"><?php echo $rowP->nama_alumni; ?></h5>
+                                    <h6 class="menu-header-subtitle"><?php echo $rowP->thlulus_alumni; ?></h6>
+                                </div>
+                                <div class="menu-header-btn-pane pt-1">
+                                    <a href="<?php echo base_url('data_alumni/detailprofil/' . encrypt_url($rowP->id_alumni)); ?>">
+                                        <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : Olivia Isabel Ridrigo</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Malang</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left center-elem mr-2">
+                                        <i class="pe-7s-user text-muted fsize-2"></i>
+                                    </div>
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Nama : <?php echo $rowP->nama_alumni;?></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 08 Desember 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Mawar Timur No.08</div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left center-elem mr-2">
+                                        <i class="pe-7s-map-2 text-muted fsize-2"></i>
+                                    </div>
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Tempat Lahir : <?php echo $tampil['tmplahir_alumni'] ?></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/16.png" alt="Avatar 5">
+                        </li>
+                        <li class="list-group-item">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left center-elem mr-2">
+                                        <i class="pe-7s-date text-muted fsize-2"></i>
+                                    </div>
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Tanggal Lahir : <?php echo $tampil['tgllahir_alumni'] ?></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div>
-                                <h5 class="menu-header-title">Johnny Orlando</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left center-elem mr-2">
+                                        <i class="pe-7s-home text-muted fsize-2"></i>
+                                    </div>
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Alamat : <?php echo $tampil['alamatlengkap_alumni'] ?></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="widget-content p-0">
+                                <div class="widget-content-wrapper">
+                                    <div class="widget-content-left center-elem mr-2">
+                                        <i class="pe-7s-ribbon text-muted fsize-2"></i>
+                                    </div>
+                                    <div class="widget-content-left">
+                                        <div class="widget-heading">Status : <?php echo $tampil['status_alumni'] ?></div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </li>
+                    </ul>
+                    <div class="text-center d-block card-footer">
+                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus Data</button>
+                        <a href="<?php echo base_url('pesan'); ?>">
+                            <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
+                        </a>
                     </div>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : John Vincent Orlando</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Malang</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 21 Februari 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Melati Barat No.09</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
             </div>
-        </div>
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/17.png" alt="Avatar 5">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="menu-header-title">Loren Grey</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
-                            </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : Loren Grey Beech</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Jakarta</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 29 Juni 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Anggrek Bulan No.10</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <?php $no++;
+        } ?>
     </div>
     <div class="row">
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/15.png" alt="Avatar 5">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="menu-header-title">Jacob Sartorius</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
-                            </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : Rolf Jacob Sartorius</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Kalimantan</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 27 Oktober 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Bunga Matahari No.11</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/14.png" alt="Avatar 5">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="menu-header-title">Camila Mendes</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
-                            </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : Camila Carraro Mendes</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Surabaya</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 16 November 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Bougenville Selatan No.12</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12 col-lg-6 col-xl-4">
-            <div class="card-shadow-primary card-border mb-3 card">
-                <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner bg-dark">
-                        <div class="menu-header-content">
-                            <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                <div class="avatar-icon">
-                                    <img src="assets/images/avatars/19.png" alt="Avatar 5">
-                                </div>
-                            </div>
-                            <div>
-                                <h5 class="menu-header-title">Keneti James</h5>
-                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
-                            </div>
-                            <div class="menu-header-btn-pane pt-1">
-                                <a href="<?php echo base_url('data_alumni/detailprofil'); ?>">
-                                    <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-user text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Nama : Keneti James Fitzgerald</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tempat Lahir : Jogjakarta</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-date text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Tanggal Lahir : 28 Desember 2003</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-home text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Alamat : Jl. Lilac Utara No.13</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left center-elem mr-2">
-                                    <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                </div>
-                                <div class="widget-content-left">
-                                    <div class="widget-heading">Status : Pelajar</div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="text-center d-block card-footer">
-                    <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Remove from list</button>
-                    <a href="<?php echo base_url('pesan'); ?>">
-                        <button class="border-0 btn-transition btn btn-outline-success">Send Message</button>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-sm-12 col-md-5">
                 <div class="dataTables_info" id="example_info" role="status" aria-live="polite">
