@@ -63,6 +63,13 @@ class M_data_guru extends CI_Model
 		return $this->db->get('data_guru')->row_array();
 	}
 
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_guru', $idnya);
+		return $this->db->get('data_guru')->row_array();
+	}
+
 	function edit()
 	{
 		$id		= $this->input->post('id');

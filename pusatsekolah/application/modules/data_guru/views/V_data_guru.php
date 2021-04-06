@@ -109,7 +109,7 @@
                                     <h6 class="menu-header-subtitle"><?php echo $rowP->mapel_guru; ?></h6>
                                 </div>
                                 <div class="menu-header-btn-pane pt-1">
-                                    <a href="<?php echo base_url('data_guru/detailprofil'); ?>">
+                                    <a href="<?php echo base_url('data_guru/detailprofil/' . encrypt_url($rowP->id_guru)); ?>">
                                         <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
                                     </a>
                                 </div>
