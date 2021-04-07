@@ -3,8 +3,10 @@
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <h5 class="card-title">Edit Profil Guru</h5>
-                <form class="col-md-10 mx-auto" action="<?php echo base_url('data_guru/edit') ?>" method="POST" enctype="multipart/form-data">
+                <?php tampilnotif() ?>
+                <form action="<?php echo base_url('data_guru/edit') ?>" method="POST" enctype="multipart/form-data">
                     <div class="form-row">
+                        <input name="id" value="<?php echo $tampil['id_guru'] ?>" type="hidden" class="form-control">
                         <div class="col-md-6">
                             <div class="position-relative form-group">
                                 <div class="form-group row">
