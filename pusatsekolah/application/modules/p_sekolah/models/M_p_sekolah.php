@@ -14,6 +14,30 @@ class M_p_sekolah extends CI_Model {
 		$this->db->where('id_p_sekolah',$idnya);
     	return $this->db->get('p_sekolah')->row_array();
 	}
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
+	}
+
+	function tampilkompetensi($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('p_sekolah');
+		$this->db->where('id_p_sekolah',$id);
+		$query = $this->db->get();
+    	return $query->row_array();
+	}
+
+
 
 	function edit()
 	{

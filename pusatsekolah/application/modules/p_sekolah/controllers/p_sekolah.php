@@ -15,10 +15,15 @@ class P_sekolah extends MX_Controller {
 	// index
 	function index()
 	{
+
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_p_sekolah->ambilidsekolah($iduser);
+
+
 		$data = array(
 			'namamodule' 	=> "p_sekolah",
 			'namafileview' 	=> "V_p_sekolah",
-			'tampil'		=> $this->M_p_sekolah->tampil(),
+			'tampilkompetensi'		=> $this->M_p_sekolah->tampilkompetensi($idsekolahx['id_sekolah']),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

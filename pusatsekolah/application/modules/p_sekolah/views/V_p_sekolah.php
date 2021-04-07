@@ -709,7 +709,7 @@
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-4" role="tabpanel">
                                                     <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
-                                                    <input name="id" value="<?php echo $tampil['id_p_sekolah']?>" type="hidden" class="form-control">
+                                                    <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                         <div class="card-body">
                                                             <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
                                                                 <div class="position-relative form-group">
@@ -717,7 +717,7 @@
                                                                         <label class="col-sm-2 col-form-label">Jurusan 1 :</label>
                                                                         <div class="col-sm-10">
                                                                             <div class="input-group">
-                                                                            <input name="jrsn1" value="<?php echo $tampil['kompetensi1']?>" type="text" class="form-control">
+                                                                            <input name="jrsn1" value="<?php echo $tampilkompetensi['kompetensi1']?>" type="text" class="form-control">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -727,7 +727,7 @@
                                                                         <label class="col-sm-2 col-form-label">Jurusan 2 :</label>
                                                                         <div class="col-sm-10">
                                                                             <div class="input-group">
-                                                                            <input name="jrsn2" value="<?php echo $tampil['kompetensi2']?>" type="text" class="form-control">
+                                                                            <input name="jrsn2" value="<?php echo $tampilkompetensi['kompetensi2']?>" type="text" class="form-control">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -737,7 +737,7 @@
                                                                         <label class="col-sm-2 col-form-label">Jurusan 3 :</label>
                                                                         <div class="col-sm-10">
                                                                             <div class="input-group">
-                                                                            <input name="jrsn3" value="<?php echo $tampil['kompetensi3']?>" type="text" class="form-control">
+                                                                            <input name="jrsn3" value="<?php echo $tampilkompetensi['kompetensi3']?>" type="text" class="form-control">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -747,7 +747,7 @@
                                                                         <label class="col-sm-2 col-form-label">Jurusan 4 :</label>
                                                                         <div class="col-sm-10">
                                                                             <div class="input-group">
-                                                                            <input name="jrsn4" value="<?php echo $tampil['kompetensi4']?>" type="text" class="form-control">
+                                                                            <input name="jrsn4" value="<?php echo $tampilkompetensi['kompetensi4']?>" type="text" class="form-control">
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -757,7 +757,7 @@
                                                                         <label class="col-sm-2 col-form-label">Jurusan 5 :</label>
                                                                         <div class="col-sm-10">
                                                                             <div class="input-group">
-                                                                            <input name="jrsn5" value="<?php echo $tampil['kompetensi5']?>" type="text" class="form-control">
+                                                                            <input name="jrsn5" value="<?php echo $tampilkompetensi['kompetensi5']?>" type="text" class="form-control">
                                                                             </div>
                                                                         </div>
                                                                     </div>
