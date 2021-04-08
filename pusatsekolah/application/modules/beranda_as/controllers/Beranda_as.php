@@ -16,15 +16,19 @@ class Beranda_as extends MX_Controller
 	// index
 	function index()
 	{
-
+		echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
 		} else {
+			$iduser=$this->session->userdata('session_id');
+			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 
 			$data = array(
 				'namamodule' 	=> "beranda_as",
 				'namafileview' 	=> "V_beranda_as",
-				'tampil'		=> $this->M_beranda_as->tampil(),
+				'idnya' 		=> $iduser,
+				'idsekolah' 	=> $idsekolahx,
+				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
@@ -32,12 +36,20 @@ class Beranda_as extends MX_Controller
 
 	function tentangview()
 	{
-		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_tentang",
-			
-		);
-		echo Modules::run('template/tampilCore', $data);
+		echo $this->session->userdata('session_id');
+		{
+			$iduser=$this->session->userdata('session_id');
+			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+
+			$data = array(
+				'namamodule' 	=> "beranda_as",
+				'namafileview' 	=> "V_tentang",
+				'idnya' 		=> $iduser,
+				'idsekolah' 	=> $idsekolahx,
+				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
 	}
 
 		// Halaman Edit

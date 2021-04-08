@@ -25,4 +25,28 @@ class M_beranda_as extends CI_Model {
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('nama_sekolah',$cari)->get('sekolah')->result();
 	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
+	}
+
+	function tampilkompetensi($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('p_sekolah');
+		$this->db->where('id_p_sekolah',$id);
+		$query = $this->db->get();
+    	return $query->result();
+	}
+
 }

@@ -72,8 +72,7 @@ class M_data_guru extends CI_Model
 
 	function edit()
 	{
-		$id		= $this->input->post('id');
-
+		$id					= $this->input->post('id');
 		$nama_guru 			= $this->input->post('nama_guru');
 		$tmplahir_guru		= $this->input->post('tmplahir_guru');
 		$jk_guru 			= $this->input->post('jk_guru');

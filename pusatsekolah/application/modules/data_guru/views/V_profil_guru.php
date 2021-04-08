@@ -221,8 +221,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-center d-block card-footer">
-                        <a href="<?php echo base_url('data_guru/editview/'); ?>" class="mr-2 border-0 btn-transition btn btn-outline-primary">Edit Profil Guru</a>
+                    <div class="text-center d-block card-footer" style="padding: 8px 20px 10px 8px;">
+                        <a href="<?php echo base_url('data_guru/editview/'); ?>" type="button" class="mr-2 border-0 btn-transition btn btn-outline-primary">Edit Profil Guru</a>
                     </div>
                 </div>
             </div>
