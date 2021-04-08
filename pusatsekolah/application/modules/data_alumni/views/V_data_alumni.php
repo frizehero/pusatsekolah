@@ -134,12 +134,12 @@
                             <div class="menu-header-content">
                                 <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                     <div class="avatar-icon">
-                                        <img src="<?php echo base_url() ?> assets/images/avatars/18.png" alt="Avatar 5">
+                                        <img src="<?php echo base_url() ?>assets/images/avatars/18.png" alt="Avatar 5">
                                     </div>
                                 </div>
                                 <div>
                                     <h5 class="menu-header-title"><?php echo $rowP->nama_alumni; ?></h5>
-                                    <h6 class="menu-header-subtitle"><?php echo $rowP->thlulus_alumni; ?></h6>
+                                    <h6 class="menu-header-subtitle">Alumni <?php echo $rowP->thlulus_alumni; ?></h6>
                                 </div>
                                 <div class="menu-header-btn-pane pt-1">
                                     <a href="<?php echo base_url('data_alumni/detailprofil/' . encrypt_url($rowP->id_alumni)); ?>">
@@ -169,7 +169,7 @@
                                         <i class="pe-7s-map-2 text-muted fsize-2"></i>
                                     </div>
                                     <div class="widget-content-left">
-                                        <div class="widget-heading">Tempat Lahir : <?php echo $tampil['tmplahir_alumni'] ?></div>
+                                        <div class="widget-heading">Tempat Lahir : <?php echo $rowP->tmplahir_alumni; ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +181,7 @@
                                         <i class="pe-7s-date text-muted fsize-2"></i>
                                     </div>
                                     <div class="widget-content-left">
-                                        <div class="widget-heading">Tanggal Lahir : <?php echo $tampil['tgllahir_alumni'] ?></div>
+                                        <div class="widget-heading">Tanggal Lahir : <?php echo $rowP->tgllahir_alumni; ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@
                                         <i class="pe-7s-home text-muted fsize-2"></i>
                                     </div>
                                     <div class="widget-content-left">
-                                        <div class="widget-heading">Alamat : <?php echo $tampil['alamatlengkap_alumni'] ?></div>
+                                        <div class="widget-heading">Alamat : <?php echo $rowP->alamatlengkap_alumni; ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                         <i class="pe-7s-ribbon text-muted fsize-2"></i>
                                     </div>
                                     <div class="widget-content-left">
-                                        <div class="widget-heading">Status : <?php echo $tampil['status_alumni'] ?></div>
+                                        <div class="widget-heading">Status : <?php echo $rowP->status_alumni; ?></div>
                                     </div>
                                 </div>
                             </div>
