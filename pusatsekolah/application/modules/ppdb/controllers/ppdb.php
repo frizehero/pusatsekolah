@@ -7,7 +7,7 @@ class Ppdb extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_beranda');
+		 $this->load->model('M_ppdb');
 		 $this->load->model('login/m_session');
 	}
 
@@ -25,6 +25,7 @@ class Ppdb extends MX_Controller {
 			$data = array(
 			'namamodule' 	=> "ppdb",
 			'namafileview' 	=> "V_ppdb",
+			'tampil'		=> $this->M_ppdb->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 		}
@@ -32,30 +33,50 @@ class Ppdb extends MX_Controller {
 
 	}
 
+	function tambahview()
+	{
+		$data = array(
+			'namamodule' 	=> "ppdb",
+			'namafileview' 	=> "V_ppdb",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function editview($id)
+	{
+
+		$data = array(
+			'namamodule' 	=> "ppdb",
+			'namafileview' 	=> "V_ppdb",
+			'tampil'		=> $this->M_ppdb->tampiledit($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		$this->M_ppdb->tambah();
+		redirect('ppdb');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		$this->M_ppdb->edit();
+		redirect('ppdb');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_ppdb->hapus($id);
+		redirect('ppdb');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'namamodule' 	=> "ppdb",
+			'namafileview' 	=> "V_ppdb",
+			'tampil'		=> $this->M_ppdb->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
