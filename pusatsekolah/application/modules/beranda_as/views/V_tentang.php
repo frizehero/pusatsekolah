@@ -173,8 +173,10 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
+                                    <?php tampilnotif()?>
                                         <div class="card-body">
                                             <h5 class="mb-3 card-title">Kontak Sekolah</h5>
+                                            <?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
                                                 <div class="widget-content p-0">
                                                     <div class="widget-content-wrapper">
                                                         <div class="widget-content-left center-elem mr-2">
@@ -258,6 +260,7 @@
                                             <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                                             </a>
                                         </div>
+                                        <?php $no++;} ?>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-3" role="tabpanel">
                                         <div class="card-body">

@@ -696,7 +696,7 @@
             </div>
             <?php tampilnotif()?>
                 <div class="card-hover-shadow card-border mb-2 card">
-                    <div class="card-header ">Kopetensi Keahlian <?php echo $idnya?><?php echo $idsekolah['id_sekolah']?></div>
+                    <div class="card-header ">Kopetensi Keahlian <!--<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?>--></div>
                     <?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
                     <div class="card-body">
                         <div>
