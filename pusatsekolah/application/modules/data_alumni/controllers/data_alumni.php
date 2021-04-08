@@ -54,9 +54,9 @@ class Data_alumni extends MX_Controller {
 		redirect('data_alumni');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->m_data_alumni->hapus($id);
+		$this->M_data_alumni->hapus();
 		redirect('data_alumni');
 	}
 

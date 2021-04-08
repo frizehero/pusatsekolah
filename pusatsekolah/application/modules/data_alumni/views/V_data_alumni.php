@@ -212,10 +212,37 @@
                         </li>
                     </ul>
                     <div class="text-center d-block card-footer">
-                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus Data</button>
+                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus Alumni</button>
                         <a href="<?php echo base_url('pesan'); ?>">
                             <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <form action="<?php echo base_url('data_alumni/hapus') ?>" method="POST" enctype="multipart/form-data">
+                            <div class="modal-body">
+                                <!--Modal body-->
+                                <p class="text-semibold text-main"></p>
+                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_alumni ?></b> ? </p>
+
+                                <input name="id" type="hidden" value="<?php echo $rowP->id_alumni ?>" class="form-control">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                <button class="btn btn-primary" type="submit">Hapus</button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>

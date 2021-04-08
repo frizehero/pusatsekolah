@@ -120,9 +120,11 @@ class M_data_alumni extends CI_Model {
 		return $this->db->get('data_alumni')->row_array();
 	}
 
-	function hapus($id)
+	function hapus()
 	{
+		$id = $this->input->post('id');
 		$this->db->where('id_alumni', $id)->delete('data_alumni');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
