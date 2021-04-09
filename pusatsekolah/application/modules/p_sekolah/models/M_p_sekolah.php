@@ -66,6 +66,18 @@ class M_p_sekolah extends CI_Model {
 		$fbs		= $this->input->post('fbs');
 		$lws		= $this->input->post('lws');
 		$lvs		= $this->input->post('lvs');
+		$jjgs		= $this->input->post('jjgs');
+		$stts		= $this->input->post('stts');
+		$npsns		= $this->input->post('npsns');
+		$akres		= $this->input->post('akres');
+		$desks		= $this->input->post('desks');
+		$almtls		= $this->input->post('almtls');
+		$provs		= $this->input->post('provs');
+		$kokas		= $this->input->post('kokas');
+		$kels		= $this->input->post('kels');
+		$kecs		= $this->input->post('kecs');
+		$kposs		= $this->input->post('kposs');
+		$sjrhs		= $this->input->post('sjrhs');
 
 				$data = array(
 					'kompetensi1'		=> $jrsn1,
@@ -92,6 +104,18 @@ class M_p_sekolah extends CI_Model {
 					'facebook'			=> $fbs,
 					'link_web'			=> $lws,
 					'link_video'		=> $lvs,
+					'jjg_sekolah'		=> $jjgs,
+					'stt_sekolah'		=> $stts,
+					'npsn_sekolah'		=> $npsns,
+					'akre_sekolah'		=> $akres,
+					'desk_sekolah'		=> $desks,
+					'almtlengkap_sekolah'	=> $almtls,
+					'provinsi_sekolah'		=> $provs,
+					'kota_kab_sekolah'		=> $kokas,
+					'kel_sekolah'		=> $kels,
+					'kec_sekolah'		=> $kecs,
+					'kpos_sekolah'		=> $kposs,
+					'sejarah_sekolah'	=> $sjrhs,
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');

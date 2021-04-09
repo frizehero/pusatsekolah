@@ -253,7 +253,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="scroll-area-xs" style="height: 150px;">
-                                                    <div class="scrollbar-container ps">
+                                                    <div class="scrollbar-container">
                                                         <ul class="nav flex-column">
                                                             <li class="nav-item-header nav-item">Akun</li>
                                                             <li class="nav-item">

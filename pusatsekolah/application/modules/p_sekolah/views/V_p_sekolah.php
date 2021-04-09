@@ -90,7 +90,7 @@
                                                         <br>
                                                         <h5 class="card-title">STATUS SEKOLAH</h5>
                                                         <div class="input-group">
-                                                            <input placeholder=". . . . . . . . ." type="text" class="form-control">
+                                                        <input name="stts" value="<?php echo $tampilkompetensi['stt_sekolah']?>" type="text" class="form-control">
                                                             <div class="input-group-append">
                                                                 <span class="input-group-text">Negeri / Swasta</span>
                                                             </div>
@@ -99,7 +99,7 @@
                                                         <div class="form-row">
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">NPSN SEKOLAH</h5>
-                                                                <input name="number" placeholder=". . . . . . . . ." type="number" class="form-control">
+                                                                <input name="npsns" value="<?php echo $tampilkompetensi['npsn_sekolah']?>" type="text" class="form-control">
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">AKREDITASI SEKOLAH</h5>
@@ -115,33 +115,19 @@
                                                         <br>
                                                         <h5 class="card-title">DESKRIPSI SEKOLAH</h5>
                                                         <div class="position-relative form-group">
-                                                            <textarea placeholder=". . . . . . . . ." name="text" id="exampleText" class="form-control"></textarea>
+                                                            <input name="desks" value="<?php echo $tampilkompetensi['desk_sekolah']?>" type="text" class="form-control">
                                                         </div>
-                                                        <!--<div class="card mb-3 widget-content bg-plum-plate">
-                                                            <div class="widget-content-wrapper text-white">
-                                                                <div class="widget-content-left">
-                                                                    <div class="widget-heading">UPLOAD FOTO SURAT KERJASAMA</div>
-                                                                    <div class="widget-subheading">File upload maximal 1 Mb</div>
-                                                                    <br>
-                                                                    <input name="file" type="file" class="form-control-file">
-                                                                </div>
-                                                                <div class="widget-content-right">
-                                                                    <div class="widget-subheading">Download format surat ?</div>
-                                                                    <button class="mb-2 mr-2 btn-pill btn-hover-shine btn btn-light"><i class="lnr-file-empty btn-icon-wrapper"></i> Download Format </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>-->
                                                         <div class="form-row">
                                                             <div class="col-md-9">
                                                                 <div class="position-relative form-group">
-                                                                    <h5 class="card-title">ALAMAT SEKOLAH</h5>
-                                                                    <input name="address" id="exampleAddress" placeholder=". . . . . . . . ." type="text" class="form-control">
+                                                                    <h5 class="card-title">ALAMAT LENGKAP SEKOLAH</h5>
+                                                                    <input name="almtls" value="<?php echo $tampilkompetensi['almtlengkap_sekolah']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">KODEPOS</h5>
-                                                                    <input name="number" id="exampleAddress" placeholder=". . . . . . . . ." type="number" class="form-control">
+                                                                    <input name="kposs" value="<?php echo $tampilkompetensi['kpos_sekolah']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>

@@ -68,6 +68,7 @@
             </div>
         </div>
     </div>
+    <?php tampilnotif()?>
     <div class="app-main__inner">
         <div class="main-card mb-3 card">
             <div class="card-body">
@@ -96,16 +97,41 @@
                                 </li>
                             </ul>
                     </div>
+                    <?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
                     <div class="col-md-8">
-                                <div class="tab-content">
+                        <div class="tab-content">
                                     <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
                                         <div class="card-body">
                                             <h5 class="card-title">Sejarah Sekolah</h5>
-                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ea quod temporibus modi dignissimos quas nisi! Minus quae voluptatibus odio quibusdam aperiam et, illum saepe, iure cum, nisi rem quisquam.</p>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum sequi officia optio dignissimos odit itaque natus tempore iste! Adipisci enim praesentium aperiam dolor amet harum animi reprehenderit temporibus dolorum.</p>
+                                            <?php echo $rowP->sejarah_sekolah;?>
                                         </div>
-                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
-                                            </a>
+                                        <button class="btn-shadow btn-wide float-right btn-pill btn btn-primary" data-toggle="modal" data-target="#edit<?php echo $no ?>">
+                                            <a>Edit</a>
+                                        </button>
+                                        <!-- Modal Edit Popup -->
+                                        <div class="modal fade" id="edit<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?></h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+
+                                                        <form action="<?php echo base_url('beranda_as/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                        <div class="modal-body">
+                                                            <textarea rows="1" class="form-control autosize-input" placeholder="Ketik Sejarah Sekolah disini" style="max-height: 200px; height: 265px; margin-top: 0px; margin-bottom: 0px;"></textarea>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                                                            <button type="button" class="btn btn-primary">Perbarui</button>
+                                                        </div>
+                                                        </form>
+
+                                                        </div>
+                                                    </div>
+                                                    </div>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
                                         <div class="card-body">
@@ -117,7 +143,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Jenjang Sekolah</b> :
-                                                                <span>SMK</span>
+                                                                <?php echo $rowP->jjg_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -128,7 +154,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Status Sekolah</b> :
-                                                                <span>Negeri</span>
+                                                                <?php echo $rowP->stt_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -139,7 +165,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>NPSN Sekolah</b> :
-                                                                <span>12312482</span>
+                                                                <?php echo $rowP->npsn_sekolah;?> 
                                                             </div>
                                                         </div>
                                                     </div>
@@ -150,7 +176,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Akreditasi Sekolah</b> :
-                                                                <span>A</span>
+                                                                <?php echo $rowP->akre_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -161,8 +187,8 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Deskripsi Sekolah</b> :
-                                                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora modi totam adipisci doloremque fugiat error deleniti odio velit veniam rem id est, cumque optio nemo repellat? Vero obcaecati magnam alias!</span>
-                                                            </div>
+                                                                <?php echo $rowP->desk_sekolah;?>
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -173,17 +199,15 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
-                                    <?php tampilnotif()?>
                                         <div class="card-body">
                                             <h5 class="mb-3 card-title">Kontak Sekolah</h5>
-                                            <?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
                                                 <div class="widget-content p-0">
                                                     <div class="widget-content-wrapper">
                                                         <div class="widget-content-left center-elem mr-2">
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Email</b> :
+                                                            <div><b>Email </b> :
                                                                 <?php echo $rowP->email;?>
                                                             </div>
                                                         </div>
@@ -194,7 +218,7 @@
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Telephone</b> :
+                                                            <div><b>Telephone </b> :
                                                                 <?php echo $rowP->telphone;?>
                                                             </div>
                                                         </div>
@@ -205,8 +229,8 @@
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Facebook</b> :
-                                                                <?php echo $rowP->facebook;?>
+                                                            <div><b>Facebook </b> :
+                                                                <?php echo $rowP->facebook;?> 
                                                             </div>
                                                         </div>
                                                     </div>
@@ -216,7 +240,7 @@
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Instagram</b> :
+                                                            <div><b>Instagram </b> :
                                                                 <?php echo $rowP->instagram;?>
                                                             </div>
                                                         </div>
@@ -227,9 +251,9 @@
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Twitter</b> :
+                                                            <div><b>Twitter </b> :
                                                                 <?php echo $rowP->twitter;?>
-                                                            </div>
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                     <li class="nav-item-divider mb-2 nav-item"></li>
@@ -238,9 +262,9 @@
                                                             <i class="pe-7s-user text-muted fsize-2"></i>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div><b>Link Website Sekolah</b> :
+                                                            <div><b>Link Website Sekolah </b> :
                                                                 <?php echo $rowP->link_web;?>
-                                                            </div>
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                     <li class="nav-item-divider mb-2 nav-item"></li>
@@ -251,7 +275,7 @@
                                                         <div class="widget-content-left">
                                                             <div><b>Link Video Profil Sekolah</b> :
                                                                 <?php echo $rowP->link_video;?>
-                                                            </div>
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -260,7 +284,6 @@
                                             <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
                                             </a>
                                         </div>
-                                        <?php $no++;} ?>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-3" role="tabpanel">
                                         <div class="card-body">
@@ -272,7 +295,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Alamat Lengkap</b> :
-                                                                <span>Jl. Mastrip No.357 Kademangan, Jrebeng Wetan, Kedopok, Kota Probolinggo 67239</span>
+                                                                <?php echo $rowP->almtlengkap_sekolah	;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -283,7 +306,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Provinsi</b> :
-                                                                <span>Jawa Timur</span>
+                                                                <?php echo $rowP->provinsi_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -294,7 +317,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kota/Kabupaten</b> :
-                                                                <span>Kota Probolinggo</span>
+                                                                <?php echo $rowP->kota_kab_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -305,7 +328,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kelurahan</b> :
-                                                                <span>kedopok</span>
+                                                                <?php echo $rowP->kel_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -316,7 +339,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kecamatan</b> :
-                                                                <span>kademangan</span>
+                                                                <?php echo $rowP->kec_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -327,7 +350,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kode Pos</b> :
-                                                                <span>67239</span>
+                                                                <?php echo $rowP->kpos_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -342,8 +365,9 @@
                     </div>
                 </div>
             </div>
-        </div>       
+        </div>
     </div>
+    <?php $no++;} ?>
 <div class="app-wrapper-footer">
     <div class="app-footer">
         <div class="app-footer__inner">
