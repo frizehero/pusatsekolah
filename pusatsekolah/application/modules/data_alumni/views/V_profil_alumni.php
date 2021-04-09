@@ -1,7 +1,9 @@
 <div class="app-main__inner">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-12 col-xl-12">
-                            <div class="card-shadow-primary card-border mb-3 card">
+    <?php tampilnotif() ?>
+    <form action="<?php echo base_url('data_alumni/tampildetail') ?>" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+                <div class="card-shadow-primary card-border mb-3 card">
                                 <div class="dropdown-menu-header">
                                     <div class="dropdown-menu-header-inner bg-primary">
                                         <br><br>
@@ -13,8 +15,8 @@
                                                 </div>
                                             </div>
                                             <div>
-                                                <h5 class="menu-header-title">Charli D'Amelio</h5>
-                                                <h6 class="menu-header-subtitle">Alumni 2019</h6>
+                                                <h5 class="menu-header-title"><?php echo $tampil['nama_alumni'] ?></h5>
+                                                <h6 class="menu-header-subtitle">Alumni <?php echo $tampil['thlulus_alumni'] ?></h6>
                                             </div>
                                             <br><br>
                                         </div>
@@ -43,7 +45,7 @@
                                                                 <i class="pe-7s-user text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Nama : Charli Grace D'Amelio</div>
+                                                                <div>Nama : <?php echo $tampil['nama_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -55,7 +57,7 @@
                                                                 <i class="pe-7s-id text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>NISN : 00648352923</div>
+                                                                <div>NISN : <?php echo $tampil['nisn'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -67,7 +69,7 @@
                                                                 <i class="pe-7s-map-2 text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Tempat Lahir : Malang</div>
+                                                                <div>Tempat Lahir : <?php echo $tampil['tmplahir_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -79,7 +81,7 @@
                                                                 <i class="pe-7s-date text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Tanggal Lahir : 08 Desember 2003</div>
+                                                                <div>Tanggal Lahir : <?php echo $tampil['tgllahir_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -91,7 +93,7 @@
                                                                 <i class="pe-7s-home text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Alamat : Jl. Lily Elm No.29</div>
+                                                                <div>Alamat : <?php echo $tampil['alamatlengkap_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -103,7 +105,7 @@
                                                                 <i class="pe-7s-ribbon text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Status : Mahasiswa</div>
+                                                                <div>Status : <?php echo $tampil['status_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -115,7 +117,7 @@
                                                                 <i class="pe-7s-notebook text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Sekolah/Tempat Bekerja : Univercity Of Harvard</div>
+                                                                <div>Sekolah/Tempat Bekerja : <?php echo $tampil['sekolah_bekerja'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -147,11 +149,11 @@
                                                             </div>
                                                             <div class="widget-content-left">
                                                                 <div>
-                                                                SD Liberty
+                                                                <?php echo $tampil['riwayat_sd'] ?>
                                                                 <br>
-                                                                SMP Las Encitas
+                                                                <?php echo $tampil['riwayat_smp'] ?>
                                                                 <br>
-                                                                SMA Riverdale
+                                                                <?php echo $tampil['riwayat_sma'] ?>
                                                             </div>
                                                             </div>
                                                         </div>
@@ -173,7 +175,7 @@
                                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Instagram : @charlidamelio</div>
+                                                                <div>Instagram : <?php echo $tampil['instagram_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -185,7 +187,7 @@
                                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Facebook : @charlidamelio</div>
+                                                                <div>Facebook : <?php echo $tampil['facebook_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -197,7 +199,7 @@
                                                                 <i class="pe-7s-user-female text-muted fsize-2"></i>
                                                             </div>
                                                             <div class="widget-content-left">
-                                                                <div>Twitter : @charlidamelio</div>
+                                                                <div>Twitter : <?php echo $tampil['twitter_alumni'] ?></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -213,4 +215,5 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </form>
+            </div>  

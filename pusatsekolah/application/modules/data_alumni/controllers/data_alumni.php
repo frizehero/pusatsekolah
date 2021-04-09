@@ -7,7 +7,7 @@ class Data_alumni extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_data_alumni');
+		 $this->load->model('M_data_alumni');
 		 $this->load->model('login/m_session');
 	}
 
@@ -18,15 +18,17 @@ class Data_alumni extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
+			'tampil'		=> $this->M_data_alumni->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function detailprofil()
+	function detailprofil($id)
 	{
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_profil_alumni",
+			'tampil'		=> $this->M_data_alumni->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -52,9 +54,9 @@ class Data_alumni extends MX_Controller {
 		redirect('data_alumni');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->m_data_alumni->hapus($id);
+		$this->M_data_alumni->hapus();
 		redirect('data_alumni');
 	}
 
