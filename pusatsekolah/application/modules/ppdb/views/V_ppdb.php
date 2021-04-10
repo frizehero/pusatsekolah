@@ -2,7 +2,7 @@
     <div class="tab-content">
         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
             <div class="main-card mb-3 card">
-                <div class="card-body" style="width: 920px;">
+                <div class="card-body" style="width: 1080px;">
                     <div class="slider-light">
                         <div class="slick-slider-inverted">
                             <div class="p-5" style="background-image: url('assets/images/ppdb/ppdb3.jpg');">

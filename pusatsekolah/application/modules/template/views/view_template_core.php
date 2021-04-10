@@ -475,7 +475,7 @@
                                 <li>
                                 <?php } ?>
                                 <a href="<?php echo base_url('pesan'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>pesan
+                                    <i class="metismenu-icon pe-7s-diamond"></i>Pesan
                                 </a>
                                 </li>
 
