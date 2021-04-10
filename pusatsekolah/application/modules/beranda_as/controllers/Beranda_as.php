@@ -26,12 +26,23 @@ class Beranda_as extends MX_Controller
 			$data = array(
 				'namamodule' 	=> "beranda_as",
 				'namafileview' 	=> "V_beranda_as",
+				'tampil'		=> $this->M_beranda_as->tampil(),
 				'idnya' 		=> $iduser,
 				'idsekolah' 	=> $idsekolahx,
 				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
+	}
+
+		// halaman tambah
+	function tambahview()
+	{
+		$data = array(
+			'namamodule' 	=> "beranda_as",
+			'namafileview' 	=> "V_beranda_",
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function tentangview()
