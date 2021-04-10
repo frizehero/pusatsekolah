@@ -1,4 +1,5 @@
 <div class="app-main__inner">
+                <?php tampilnotif()?>
                     <div class="main-card mb-3 card">
                         <div class="card-body">
                             <div class="row">
@@ -39,42 +40,44 @@
                                 <div class="col-md-8">
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
+                                                <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                    <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                     <div class="card-body">
                                                         <h5 class="card-title">JENJANG SEKOLAH</h5>
                                                         <div class="row">
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">PAUD</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">TK</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">SD</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">SMP</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">SMA</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                    <input type="radio" name="sd" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
                                                                     <label class="form-check-label">SMK</label>
                                                                 </div>
                                                             </div>
@@ -83,9 +86,8 @@
                                                         <h5 class="card-title">NAMA SEKOLAH</h5>
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
-                                                                <!--<span class="input-group-text"> </span>-->
                                                             </div>
-                                                            <input placeholder="SMA Negeri 1 Kota Malang" type="text" class="form-control">
+                                                            <input name="namas" value="<?php echo $tampilkompetensi['nama_sekolah']?>" type="text" class="form-control">
                                                         </div>
                                                         <br>
                                                         <h5 class="card-title">STATUS SEKOLAH</h5>
@@ -103,12 +105,12 @@
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">AKREDITASI SEKOLAH</h5>
-                                                                <select class="multiselect-dropdown form-control">
-                                                                    <optgroup label="Pilih sesuai akreditasi sekolah">
-                                                                        <option value="A">A</option>
-                                                                        <option value="B">B</option>
-                                                                        <option value="C">C</option>
-                                                                    </optgroup>
+                                                                <select name="akres" value="<?php echo $tampilkompetensi['akre_sekolah']?>" class="form-control">
+                                                                    <option>A</option>
+                                                                    <option>B</option>
+                                                                    <option>C</option>
+                                                                    <option>D</option>
+                                                                    <option>E</option>
                                                                 </select>
                                                             </div>
                                                         </div>   
@@ -134,148 +136,42 @@
                                                         <div class="form-row">
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Provinsi</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
-                                                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                                        <option value="AK">Alaska</option>
-                                                                        <option value="HI">Hawaii</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Pacific Time Zone">
-                                                                        <option value="CA">California</option>
-                                                                        <option value="NV">Nevada</option>
-                                                                        <option value="OR">Oregon</option>
-                                                                        <option value="WA">Washington</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Mountain Time Zone">
-                                                                        <option value="AZ">Arizona</option>
-                                                                        <option value="CO">Colorado</option>
-                                                                        <option value="ID">Idaho</option>
-                                                                        <option value="MT">Montana</option>
-                                                                        <option value="NE">Nebraska</option>
-                                                                        <option value="NM">New Mexico</option>
-                                                                        <option value="ND">North Dakota</option>
-                                                                        <option value="UT">Utah</option>
-                                                                        <option value="WY">Wyoming</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Central Time Zone">
-                                                                        <option value="AL">Alabama</option>
-                                                                        <option value="AR">Arkansas</option>
-                                                                        <option value="IL">Illinois</option>
-                                                                        <option value="IA">Iowa</option>
-                                                                        <option value="KS">Kansas</option>
-                                                                        <option value="KY">Kentucky</option>
-                                                                        <option value="LA">Louisiana</option>
-                                                                        <option value="MN">Minnesota</option>
-                                                                        <option value="MS">Mississippi</option>
-                                                                        <option value="MO">Missouri</option>
-                                                                        <option value="OK">Oklahoma</option>
-                                                                        <option value="SD">South Dakota</option>
-                                                                        <option value="TX">Texas</option>
-                                                                        <option value="TN">Tennessee</option>
-                                                                        <option value="WI">Wisconsin</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Eastern Time Zone">
-                                                                        <option value="CT">Connecticut</option>
-                                                                        <option value="DE">Delaware</option>
-                                                                        <option value="FL">Florida</option>
-                                                                        <option value="GA">Georgia</option>
-                                                                        <option value="IN">Indiana</option>
-                                                                        <option value="ME">Maine</option>
-                                                                        <option value="MD">Maryland</option>
-                                                                        <option value="MA">Massachusetts</option>
-                                                                        <option value="MI">Michigan</option>
-                                                                        <option value="NH">New Hampshire</option>
-                                                                        <option value="NJ">New Jersey</option>
-                                                                        <option value="NY">New York</option>
-                                                                        <option value="NC">North Carolina</option>
-                                                                        <option value="OH">Ohio</option>
-                                                                        <option value="PA">Pennsylvania</option>
-                                                                        <option value="RI">Rhode Island</option>
-                                                                        <option value="SC">South Carolina</option>
-                                                                        <option value="VT">Vermont</option>
-                                                                        <option value="VA">Virginia</option>
-                                                                        <option value="WV">West Virginia</option>
-                                                                    </optgroup>
+                                                                <select name="provs" value="<?php echo $tampilkompetensi['provinsi_sekolah']?>" class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kota / Kab</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
-                                                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                                        <option value="AK">Alaska</option>
-                                                                        <option value="HI">Hawaii</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Pacific Time Zone">
-                                                                        <option value="CA">California</option>
-                                                                        <option value="NV">Nevada</option>
-                                                                        <option value="OR">Oregon</option>
-                                                                        <option value="WA">Washington</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Mountain Time Zone">
-                                                                        <option value="AZ">Arizona</option>
-                                                                        <option value="CO">Colorado</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Eastern Time Zone">
-                                                                        <option value="CT">Connecticut</option>
-                                                                        <option value="DE">Delaware</option>
-                                                                        <option value="FL">Florida</option>
-                                                                        <option value="GA">Georgia</option>
-                                                                        <option value="IN">Indiana</option>
-                                                                        <option value="ME">Maine</option>
-                                                                    </optgroup>
+                                                                <select name="kokas" value="<?php echo $tampilkompetensi['kota_kab_sekolah']?>" class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kelurahan</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
-                                                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                                        <option value="AK">Alaska</option>
-                                                                        <option value="HI">Hawaii</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Pacific Time Zone">
-                                                                        <option value="CA">California</option>
-                                                                        <option value="NV">Nevada</option>
-                                                                        <option value="OR">Oregon</option>
-                                                                        <option value="WA">Washington</option>
-                                                                    </optgroup>
-                                                                        <optgroup label="Mountain Time Zone">
-                                                                        <option value="AZ">Arizona</option>
-                                                                        <option value="CO">Colorado</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Eastern Time Zone">
-                                                                        <option value="CT">Connecticut</option>
-                                                                        <option value="DE">Delaware</option>
-                                                                        <option value="FL">Florida</option>
-                                                                        <option value="GA">Georgia</option>
-                                                                        <option value="IN">Indiana</option>
-                                                                        <option value="ME">Maine</option>
-                                                                    </optgroup>
+                                                                <select name="kels" value="<?php echo $tampilkompetensi['kel_sekolah']?>" class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kecamatan</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
-                                                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                                        <option value="AK">Alaska</option>
-                                                                        <option value="HI">Hawaii</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Pacific Time Zone">
-                                                                        <option value="CA">California</option>
-                                                                        <option value="NV">Nevada</option>
-                                                                        <option value="OR">Oregon</option>
-                                                                        <option value="WA">Washington</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Mountain Time Zone">
-                                                                        <option value="AZ">Arizona</option>
-                                                                        <option value="CO">Colorado</option>
-                                                                    </optgroup>
-                                                                    <optgroup label="Eastern Time Zone">
-                                                                        <option value="CT">Connecticut</option>
-                                                                        <option value="DE">Delaware</option>
-                                                                        <option value="FL">Florida</option>
-                                                                        <option value="GA">Georgia</option>
-                                                                        <option value="IN">Indiana</option>
-                                                                        <option value="ME">Maine</option>
-                                                                    </optgroup>
+                                                                <select name="kecs" value="<?php echo $tampilkompetensi['kec_sekolah']?>" class="form-control">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option>4</option>
+                                                                    <option>5</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -471,10 +367,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="divider"></div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id="next-btn" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Simpan</button>
+                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
@@ -510,7 +405,6 @@
                                                             </div>
                                                         </div>                        
                                                     </div>
-                                                    <div class="divider"></div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
                                                         <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Upload Media</button>
@@ -519,139 +413,83 @@
                                                 <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
                                                     <div class="card-body">
                                                         <div class="row">
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <h5 class="card-title">HARI</h5>
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">SENIN</button>
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">SENIN</button>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <h5 class="card-title">JAM BUKA</h5>
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                                <input name="seninm" value="<?php echo $tampilkompetensi['senin_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-4">
                                                                 <h5 class="card-title">JAM TUTUP</h5>
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <h5 class="card-title">KETERANGAN</h5>
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                                <input name="seninp" value="<?php echo $tampilkompetensi['senin_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                         <br>
                                                         <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">SELASA</button>
+                                                            <div class="col-md-4">
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">SELASA</button>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                            <div class="col-md-4">
+                                                            <input name="selasanm" value="<?php echo $tampilkompetensi['selasa_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                            <div class="col-md-4">
+                                                            <input name="selasap" value="<?php echo $tampilkompetensi['selasa_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                         <br>
                                                         <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">RABU</button>
+                                                            <div class="col-md-4">
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">RABU</button>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                            <div class="col-md-4">
+                                                            <input name="rabum" value="<?php echo $tampilkompetensi['rabu_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                            <div class="col-md-4">
+                                                            <input name="rabup" value="<?php echo $tampilkompetensi['rabu_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                         <br>
                                                         <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">KAMIS</button>
+                                                            <div class="col-md-4">
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">KAMIS</button>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                            <div class="col-md-4">
+                                                            <input name="kamism" value="<?php echo $tampilkompetensi['kamis_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                            <div class="col-md-4">
+                                                            <input name="kamisp" value="<?php echo $tampilkompetensi['kamis_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                         <br>
                                                         <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">JUMAT</button>
+                                                            <div class="col-md-4">
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">JUMAT</button>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                            <div class="col-md-4">
+                                                            <input name="jumatm" value="<?php echo $tampilkompetensi['jumat_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                            <div class="col-md-4">
+                                                            <input name="jumatp" value="<?php echo $tampilkompetensi['jumat_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                         <br>
                                                         <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">SABTU</button>
+                                                            <div class="col-md-4">
+                                                                <button type="button" class="btn btn-outline-primary btn-lg btn-block disabled">SABTU</button>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
+                                                            <div class="col-md-4">
+                                                            <input name="sabtum" value="<?php echo $tampilkompetensi['sabtu_m']?>" type="time" class="form-control">
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="row">
-                                                            <div class="col-md-3">
-                                                                <button class="btn btn-outline-primary btn-lg btn-block disabled">MINGGU</button>
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-3">
-                                                                <select name="select" placeholder="Pilih Hari" id="exampleSelect" class="form-control">
-                                                                    <option>Buka</option>
-                                                                    <option>Libur</option>
-                                                                </select>
+                                                            <div class="col-md-4">
+                                                            <input name="sabtup" value="<?php echo $tampilkompetensi['sabtu_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="divider"></div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Simpan</button>
+                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-3" role="tabpanel">
@@ -687,15 +525,12 @@
                                                             </div>
                                                         </div>                        
                                                     </div>
-                                                    <div class="divider"></div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Tambahkan</button>
+                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                                 </div>
                                                 <div class="tab-pane" id="tab-eg8-4" role="tabpanel">
-                                                    <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
-                                                    <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                         <div class="card-body">
                                                             <div class="card-title">JURUSAN / KOMPETENSI KEAHLIAN</div>
                                                                 <div class="position-relative form-group">
@@ -748,68 +583,67 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            <div class="clearfix">
-                                                                <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                                <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
+                                                                <div class="clearfix">
+                                                                    <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                                    <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
+                                                                </div>
                                                             </div>
-                                                    </form>
-                                                </div>
-                                                <div class="tab-pane" id="tab-eg8-5" role="tabpanel">
+                                                        </div>
+                                            <div class="tab-pane" id="tab-eg8-5" role="tabpanel">
                                                     <div class="card-body">
                                                         <div class="position-relative form-group">
-                                                            <h5 class="card-title">LINK VIDEO PROFIL SEKOLAH</h5>
-                                                            <input name="lvs" value="<?php echo $tampil['link_video']?>" type="text" class="form-control">
+                                                            <h5 class="card-title">EMAIL</h5>
+                                                            <input name="emails" value="<?php echo $tampilkompetensi['email']?>" type="email" class="form-control">
                                                         </div>
                                                         <div class="form-row">
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">TELEPON SEKOLAH</h5>
-                                                                    <input name="tlps" value="<?php echo $tampil['telephone']?>" type="text" class="form-control">
+                                                                    <input name="tlps" value="<?php echo $tampilkompetensi['telphone']?>" type="number" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">INSTAGRAM</h5>
+                                                                    <input name="igs" value="<?php echo $tampilkompetensi['instagram']?>" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">FACEBOOK</h5>
+                                                                    <input name="fbs" value="<?php echo $tampilkompetensi['facebook']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">TWITTER</h5>
-                                                                    <input name="twitters" value="<?php echo $tampil['twitter']?>" type="text" class="form-control">
+                                                                    <input name="twitters" value="<?php echo $tampilkompetensi['twitter']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-row">
-                                                            <div class="col-md-6">
-                                                                <div class="position-relative form-group">
-                                                                    <h5 class="card-title">INSTAGRAM</h5>
-                                                                    <input name="igs" value="<?php echo $tampil['instagram']?>" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="position-relative form-group">
-                                                                    <h5 class="card-title">FACEBOOK</h5>
-                                                                    <input name="fbs" value="<?php echo $tampil['facebook']?>" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-row">
-                                                            <div class="col-md-6">
-                                                                <div class="position-relative form-group">
-                                                                    <h5 class="card-title">EMAIL</h5>
-                                                                    <input name="emails" value="<?php echo $tampil['email']?>" type="text" class="form-control">
-                                                                </div>
-                                                            </div>
                                                             <div class="col-md-6">
                                                                 <div class="position-relative form-group">
                                                                     <h5 class="card-title">LINK WEBSITE SEKOLAH</h5>
-                                                                    <input name="lws" value="<?php echo $tampil['link_web']?>" type="text" class="form-control">
+                                                                    <input name="lws" value="<?php echo $tampilkompetensi['link_web']?>" type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="position-relative form-group">
+                                                                    <h5 class="card-title">LINK VIDEO PROFIL SEKOLAH</h5>
+                                                                    <input name="lvs" value="<?php echo $tampilkompetensi['link_video']?>" type="text" class="form-control">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="divider"></div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Simpan</button>
+                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                </form>
                                 </div>
                             </div>
                         </div>

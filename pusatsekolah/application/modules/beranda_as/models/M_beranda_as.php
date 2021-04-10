@@ -5,7 +5,19 @@ class M_beranda_as extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('p_sekolah')->result();
+		return $this->db->get('beranda_as')->result();
+	}
+
+	function tambah()
+	{
+		$posts 		= $this->input->post('posts');
+
+
+				$data = array(
+					'post_sekolah'		=> $posts,
+				);
+				$this->db->insert('beranda_as', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
 	}
 
 	function tampiledit($id)

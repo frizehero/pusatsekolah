@@ -1,4 +1,5 @@
 <div class="tabs-animation">
+<?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
     <div class="col-mb-12">
         <div class="card-shadow-primary card-border text-white card bg-light">
             <div class="dropdown-menu-header">
@@ -39,7 +40,7 @@
                     <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                 </div>
                 <div class="widget-content-left" style="color: black;">
-                    <div class="widget-heading"><b>SMK Negeri 1 Kota Probolinggo</b></div>
+                    <div class="widget-heading"><b><?php echo $rowP->nama_sekolah;?></b></div>
                     <div class="widget-subheading">2,391 Pengikut</div>
                     <select id="css-stars">
                         <option value="1">1</option>
@@ -65,12 +66,13 @@
 <div class="app-main__inner">
     <div class="row">
         <div class="col-sm-12 col-lg-8">
+        <form action="<?php echo base_url('beranda_as/tambah') ?>" method="POST" enctype="multipart/form-data">
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
                         <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
-                            <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
+                            <a href="javascript:void(0)"><?php echo $rowP->nama_sekolah;?></a>
                         </div>
                     </div>
                 </div>
@@ -91,12 +93,14 @@
                     </div>
                 </div>
             </div>
+        </form>
+            <?php $no=1; foreach ($tampil AS $rowO ) { ?>
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
                         <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
-                            <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
+                            <a href="javascript:void(0)"><?php echo $rowP->nama_sekolah;?></a>
                             <div class="text-muted small">4 hari yang lalu</div>
                         </div>
                     </div>
@@ -122,6 +126,7 @@
                         ligula metus. Vivamus eget quam sit amet risus venenatis laoreet ut vel magna. Sed dui ligula,
                         tincidunt in nunc eu, rhoncus
                         iaculis nisi.
+                        <?php echo $rowO->post_sekolah;?>
                     </p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
@@ -278,378 +283,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-2">
-                <div class="card-header">
-                    <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
-                        <div class="media-body ml-3">
-                            <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
-                            <div class="text-muted small">4 hari yang lalu</div>
-                        </div>
-                    </div>
-                    <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                        <div class="btn-group dropdown">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                <i class="fa fa-fw"></i>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="fa fa-fw"></i>&nbsp;<span>Edit Postingan</span>
-                                </button>
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>
-                        Aliquam varius euismod lectus, vel consectetur nibh tincidunt vitae. In non dignissim est. Sed eu
-                        ligula metus. Vivamus eget quam sit amet risus venenatis laoreet ut vel magna. Sed dui ligula,
-                        tincidunt in nunc eu, rhoncus
-                        iaculis nisi.
-                    </p>
-                </div>
-                <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
-                    <div class="row col-lg-12">
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="ion ion-ios-heart text-danger fsize-3"></i>&nbsp;
-                                <span class="align-middle">86</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="pe-7s-comment fsize-3"></i>&nbsp;
-                                <span class="align-middle">3</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="fa fa-fw fsize-2"></i>&nbsp;
-                                <span class="align-middle">9</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div tabindex="-1" class="dropdown-divider"></div>
-                <div class="card-body">
-                    <div id="exampleAccordion" data-children=".item">
-                        <div class="item">
-                            <button type="button" aria-expanded="true" aria-controls="exampleAccordion1" data-toggle="collapse" href="#tampilkanKomentar2" class="m-0 p-0 btn btn-link">Tampilkan Komentar</button>
-                            <div data-parent="#exampleAccordion" id="tampilkanKomentar2" class="collapse show">
-                                <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body p-0">
-                                            <input name="komen" id="komen" placeholder="Tulis komentar..." type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div tabindex="-1" class="dropdown-divider"></div>
-                                <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Alina Mcloughlin</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Abdul Hasan</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Farhan Ariyanto</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-2">
-                <div class="card-header">
-                    <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
-                        <div class="media-body ml-3">
-                            <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
-                            <div class="text-muted small">4 hari yang lalu</div>
-                        </div>
-                    </div>
-                    <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                        <div class="btn-group dropdown">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                <i class="fa fa-fw"></i>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="fa fa-fw"></i>&nbsp;<span>Edit Postingan</span>
-                                </button>
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <p>
-                        Aliquam varius euismod lectus, vel consectetur nibh tincidunt vitae. In non dignissim est. Sed eu
-                        ligula metus. Vivamus eget quam sit amet risus venenatis laoreet ut vel magna. Sed dui ligula,
-                        tincidunt in nunc eu, rhoncus
-                        iaculis nisi.
-                    </p>
-                </div>
-                <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
-                    <div class="row col-lg-12">
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="ion ion-ios-heart text-danger fsize-3"></i>&nbsp;
-                                <span class="align-middle">86</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="pe-7s-comment fsize-3"></i>&nbsp;
-                                <span class="align-middle">3</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-4 col-xl-4 text-center">
-                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ml-3">
-                                <i class="fa fa-fw fsize-2"></i>&nbsp;
-                                <span class="align-middle">9</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div tabindex="-1" class="dropdown-divider"></div>
-                <div class="card-body">
-                    <div id="exampleAccordion" data-children=".item">
-                        <div class="item">
-                            <button type="button" aria-expanded="true" aria-controls="exampleAccordion1" data-toggle="collapse" href="#tampilkanKomentar3" class="m-0 p-0 btn btn-link">Tampilkan Komentar</button>
-                            <div data-parent="#exampleAccordion" id="tampilkanKomentar3" class="collapse show">
-                                <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body p-0">
-                                            <input name="komen" id="komen" placeholder="Tulis komentar..." type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div tabindex="-1" class="dropdown-divider"></div>
-                                <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Alina Mcloughlin</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Abdul Hasan</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Farhan Ariyanto</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php $no++;} ?>
         </div>
 
         <div class="col-sm-12 col-lg-4">
@@ -697,7 +331,6 @@
             <?php tampilnotif()?>
                 <div class="card-hover-shadow card-border mb-2 card">
                     <div class="card-header ">Kopetensi Keahlian <!--<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?>--></div>
-                    <?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
                     <div class="card-body">
                         <div>
                             <p>1. <?php echo $rowP->kompetensi1;?></p>
@@ -714,8 +347,6 @@
                         <div>
                             <p>5. <?php echo $rowP->kompetensi5;?></p>
                         </div>
-                        <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
-                        </a>
                     </div>
                 </div>
             <?php $no++;} ?>
@@ -723,7 +354,7 @@
                 <div class="card-header">Jam Operasional</div>
                 <div class="card-body">
                     <p>Senin -  <?php echo $rowP->senin_m;?> s/d    <?php echo $rowP->senin_p;?></p>
-                    <p>selasa - <?php echo $rowP->selasa_m;?> s/d   <?php echo $rowP->selasa_p;?></p>
+                    <p>Selasa - <?php echo $rowP->selasa_m;?> s/d   <?php echo $rowP->selasa_p;?></p>
                     <p>Rabu -   <?php echo $rowP->rabu_m;?> s/d     <?php echo $rowP->rabu_p;?></p>
                     <p>Kamis -  <?php echo $rowP->kamis_m;?> s/d    <?php echo $rowP->kamis_p;?></p>
                     <p>Jum'at - <?php echo $rowP->jumat_m;?> s/d    <?php echo $rowP->jumat_p;?></p>

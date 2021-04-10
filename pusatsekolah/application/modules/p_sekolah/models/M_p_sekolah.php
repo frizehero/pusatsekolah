@@ -48,9 +48,9 @@ class M_p_sekolah extends CI_Model {
 		$jrsn4		= $this->input->post('jrsn4');
 		$jrsn5		= $this->input->post('jrsn5');
 		$seninm		= $this->input->post('seninm');
-		$seninp		= $this->input->post('seninm');
-		$selasam	= $this->input->post('seninm');
-		$selasap	= $this->input->post('seninm');
+		$seninp		= $this->input->post('seninp');
+		$selasam	= $this->input->post('selasam');
+		$selasap	= $this->input->post('selasap');
 		$rabum		= $this->input->post('rabum');
 		$rabup		= $this->input->post('rabup');
 		$kamism		= $this->input->post('kamism');
@@ -78,6 +78,7 @@ class M_p_sekolah extends CI_Model {
 		$kecs		= $this->input->post('kecs');
 		$kposs		= $this->input->post('kposs');
 		$sjrhs		= $this->input->post('sjrhs');
+		$namas		= $this->input->post('namas');
 
 				$data = array(
 					'kompetensi1'		=> $jrsn1,
@@ -116,6 +117,7 @@ class M_p_sekolah extends CI_Model {
 					'kec_sekolah'		=> $kecs,
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
+					'nama_sekolah'	=> $namas,
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
