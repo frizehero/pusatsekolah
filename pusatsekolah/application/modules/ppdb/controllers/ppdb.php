@@ -1,36 +1,33 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Ppdb extends MX_Controller {
+class Ppdb extends MX_Controller
+{
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_ppdb');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_ppdb');
+		$this->load->model('login/m_session');
 	}
 
-	
+
 	// index
 	function index()
 	{
 
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
+		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
-
 		} else {
 
 			$data = array(
-			'namamodule' 	=> "ppdb",
-			'namafileview' 	=> "V_ppdb",
-			'tampil'		=> $this->M_ppdb->tampil(),
-		);
-		echo Modules::run('template/tampilCore', $data);
+				'namamodule' 	=> "ppdb",
+				'namafileview' 	=> "V_ppdb",
+				'tampil'		=> $this->M_ppdb->tampil(),
+			);
+			echo Modules::run('template/tampilCore', $data);
 		}
-
-
 	}
 
 	function tambahview()
@@ -80,6 +77,4 @@ class Ppdb extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-	
 }
- 
