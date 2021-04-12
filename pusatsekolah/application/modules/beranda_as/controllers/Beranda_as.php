@@ -87,6 +87,12 @@ class Beranda_as extends MX_Controller
 		redirect('p_sekolah');
 	}
 
+	function hapus()
+	{
+		$this->M_beranda_as->hapus();
+		redirect('beranda_as');
+	}
+
 	function cari()
 	{
 		$data = array(

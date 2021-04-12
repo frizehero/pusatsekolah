@@ -64,6 +64,7 @@
     </div>
 </div>
 <div class="app-main__inner">
+<?php tampilnotif()?>
     <div class="row">
         <div class="col-sm-12 col-lg-8">
         <form action="<?php echo base_url('beranda_as/tambah') ?>" method="POST" enctype="multipart/form-data">
@@ -72,12 +73,12 @@
                     <div class="media flex-wrap w-100 align-items-center">
                         <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
-                            <a href="javascript:void(0)"><?php echo $rowP->nama_sekolah;?></a>
+                            <a href="<?php echo base_url('beranda_as'); ?>"><?php echo $rowP->nama_sekolah;?></a>
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <textarea rows="1" class="form-control autosize-input" placeholder="Buat Postingan...." style="max-height: 200px; height: 35px;"></textarea>
+                    <textarea name="posts" id="" placeholder="Lagi Mikirin Aku ya :)" type="text" class="form-control autosize-input" style="max-height: 200px; height: 100px;"></textarea>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
                     <div class="px-4 pt-3">
@@ -87,7 +88,7 @@
                         </a>
                     </div>
                     <div class="px-4 pt-3">
-                        <button type="button" class="btn btn-primary">
+                        <button type="submit" class="btn btn-primary">
                             <i class="ion ion-md-create"></i>&nbsp;Posting
                         </button>
                     </div>
@@ -100,7 +101,7 @@
                     <div class="media flex-wrap w-100 align-items-center">
                         <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
                         <div class="media-body ml-3">
-                            <a href="javascript:void(0)"><?php echo $rowP->nama_sekolah;?></a>
+                            <a href="<?php echo base_url('beranda_as'); ?>"><?php echo $rowP->nama_sekolah;?></a>
                             <div class="text-muted small">4 hari yang lalu</div>
                         </div>
                     </div>
@@ -113,19 +114,43 @@
                                 <button type="button" tabindex="0" class="dropdown-item">
                                     <i class="fa fa-fw"></i>&nbsp;<span>Edit Postingan</span>
                                 </button>
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
+                                <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                <i class="pe-7s-trash"></i></i>&nbsp;<span>Hapus Postingan</span>
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <!-- Modal HAPUS -->
+                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Menghapus Postingan</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <form action="<?php echo base_url('beranda_as/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                <div class="modal-body">
+                                    <!--Modal body-->
+                                        <p class="text-semibold text-main"></p>
+                                        <p>Anda Yakin Ingin Menghapus Postingan Ini? </p>
+
+                                        <input name="id"  type="hidden" value="<?php echo $rowO->id_beranda_as ?>" class="form-control">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                    <button class="btn btn-primary" type="submit" >Hapus</button>
+                                </div>
+                                </form>
+
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 <div class="card-body">
                     <p>
-                        Aliquam varius euismod lectus, vel consectetur nibh tincidunt vitae. In non dignissim est. Sed eu
-                        ligula metus. Vivamus eget quam sit amet risus venenatis laoreet ut vel magna. Sed dui ligula,
-                        tincidunt in nunc eu, rhoncus
-                        iaculis nisi.
                         <?php echo $rowO->post_sekolah;?>
                     </p>
                 </div>
@@ -158,6 +183,7 @@
                             <button type="button" aria-expanded="true" aria-controls="exampleAccordion1" data-toggle="collapse" href="#tampilkanKomentar1" class="m-0 p-0 btn btn-link">Tampilkan Komentar
                             </button>
                             <div data-parent="#exampleAccordion" id="tampilkanKomentar1" class="collapse show">
+                            <form action="<?php echo base_url('beranda_as/tambah') ?>" method="POST" enctype="multipart/form-data">
                                 <div class="widget-content card-body">
                                     <div class="widget-content-wrapper">
                                         <div class="widget-content-left mr-3">
@@ -174,6 +200,7 @@
                                         </div>
                                     </div>
                                 </div>
+                            </form>
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <div class="widget-content card-body">
                                     <div class="widget-content-wrapper">
@@ -187,76 +214,8 @@
                                             </div>
                                         </div>
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">Alina Mcloughlin</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Abdul Hasan</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="widget-content-left">
-                                            <div class="widget-heading">Farhan Ariyanto</div>
-                                            <div>Aenean vulputate eleifend tellus.</div>
+                                            <div class="widget-heading">SMK Negeri 1 Kota Probolinggo</div>
+                                            <div>vsknfgjkersjnnfgjrnjfnjkern</div>
                                             <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
                                             <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
                                             <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
@@ -328,7 +287,6 @@
                     <p>Isi Kopetensi keahlian</p>
                 </div>
             </div>
-            <?php tampilnotif()?>
                 <div class="card-hover-shadow card-border mb-2 card">
                     <div class="card-header ">Kopetensi Keahlian <!--<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?>--></div>
                     <div class="card-body">

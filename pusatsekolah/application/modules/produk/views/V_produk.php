@@ -94,7 +94,7 @@
                                                 <div class="divider"></div>
                                                 <div class="row">
                                                     <div class="col-md-7">
-                                                        <h3><small class="opacity-5"><?php echo "Rp. ";?></small><span><?php echo $rowP->harga_produk;?></span></h3>
+                                                        <h3><small class="opacity-5"><?php echo "Rp. ";?></small><span style="font-size: 24px;"><?php echo $rowP->harga_produk;?></span></h3>
                                                     </div>
                                                     <div class="col-md-5">
                                                         <a href="<?php echo base_url('produk/editview/'. encrypt_url($rowP->id_produk)); ?>"class="btn btn-primary">

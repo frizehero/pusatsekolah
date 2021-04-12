@@ -8,13 +8,18 @@ class M_beranda_as extends CI_Model {
 		return $this->db->get('beranda_as')->result();
 	}
 
+	function tampilkomentar()
+	{
+		return $this->db->get('beranda_as')->result();
+	}
+
 	function tambah()
 	{
 		$posts 		= $this->input->post('posts');
 
-
 				$data = array(
 					'post_sekolah'		=> $posts,
+
 				);
 				$this->db->insert('beranda_as', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
@@ -27,9 +32,11 @@ class M_beranda_as extends CI_Model {
     	return $this->db->get('p_sekolah')->row_array();
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->db->where('id_sekolah', $id)->delete('sekolah');
+		$id = $this->input->post('id');
+		$this->db->where('id_beranda_as', $id)->delete('beranda_as');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
