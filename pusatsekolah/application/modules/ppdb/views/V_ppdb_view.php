@@ -13,30 +13,22 @@
                         <div class="dropdown-menu-header mt-0 mb-0">
                             <div class="dropdown-menu-header-inner bg-heavy-rain" style="height: 200px;">
                                 <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
-                                <div class="menu-header-content text-dark">
-                                    <h5 class="menu-header-title">Notifications</h5>
-                                    <h6 class="menu-header-subtitle">
-                                        You have
-                                        <b class="text-danger">21 </b>
-                                        unread messages
-                                    </h6>
-                                </div>
                             </div>
                         </div>
                         <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
                             <li class="nav-item">
                                 <a role="tab" class="nav-link active" id="tab-c-0" data-toggle="tab" href="#tab-animated-0">
-                                    <span>Messages</span>
+                                    <span>Alur Pendaftaran</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a role="tab" class="nav-link" id="tab-c-1" data-toggle="tab" href="#tab-animated-1">
-                                    <span>Events</span>
+                                    <span>Tanggal Penting</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a role="tab" class="nav-link" id="tab-c-2" data-toggle="tab" href="#tab-animated-2">
-                                    <span>System Errors</span>
+                                    <span>Pendaftar</span>
                                 </a>
                             </li>
                         </ul>
