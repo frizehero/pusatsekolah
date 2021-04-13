@@ -21,9 +21,9 @@ class P_sekolah extends MX_Controller {
 
 
 		$data = array(
-			'namamodule' 	=> "p_sekolah",
-			'namafileview' 	=> "V_p_sekolah",
-			'tampilkompetensi'		=> $this->M_p_sekolah->tampilkompetensi($idsekolahx['id_sekolah']),
+			'namamodule' 		=> "p_sekolah",
+			'namafileview' 		=> "V_p_sekolah",
+			'tampilkompetensi'	=> $this->M_p_sekolah->tampilkompetensi($idsekolahx['id_sekolah']),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
