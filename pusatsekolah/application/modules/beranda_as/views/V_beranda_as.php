@@ -84,7 +84,8 @@
                     <div class="px-4 pt-3">
                         <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">
                             <i class="pe-7s-camera text-success fsize-3"></i>&nbsp;
-                            <span class="align-middle">Foto/Video</span>
+                            <span class="align-middle">Foto/Video</span>&nbsp;
+                            <input name="postfoto" type="file" class="form-control-file">
                         </a>
                     </div>
                     <div class="px-4 pt-3">
@@ -151,7 +152,8 @@
                 </div>
                 <div class="card-body">
                     <p>
-                        <?php echo $rowO->post_sekolah;?>
+                        <?php echo $rowO->post_sekolah;?><br><br>
+                        <img src="<?php echo base_url() ?>assets/images/postsekolah/<?php echo $rowO->post_foto_sekolah;?>" style="width: 240px; height: 160px;">
                     </p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
