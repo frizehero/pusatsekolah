@@ -5,7 +5,9 @@ class M_beranda_as extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('beranda_as')->result();
+		$this->db->order_by('id_beranda_as', 'DESC');
+    	$query = $this->db->get('beranda_as');
+    	return $query->result();
 	}
 
 	function tampilkomentar()
