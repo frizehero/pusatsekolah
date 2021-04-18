@@ -12,11 +12,20 @@ class Beranda_as extends MX_Controller
 		$this->load->model('login/m_session');
 	}
 
+	/*function index()
+	{
+		$data = array(
+			'namamodule' 	=> "beranda_as",
+			'namafileview' 	=> "V_beranda_as",
+			'tampil'		=> $this->M_beranda_as->tampil(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}*/
 
 	// index
 	function index()
 	{
-		echo $this->session->userdata('session_id');
+		//echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
 		} else {
