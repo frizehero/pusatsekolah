@@ -56,7 +56,7 @@ class Beranda_as extends MX_Controller
 
 	function tentangview()
 	{
-		echo $this->session->userdata('session_id');
+		//echo $this->session->userdata('session_id');
 		{
 			$iduser=$this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);

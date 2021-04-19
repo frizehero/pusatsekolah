@@ -47,37 +47,37 @@
                                                         <div class="row">
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='0') echo "checked='checked'"; ?> value="0" <?php echo $this->form_validation->set_radio('jjg_sekolah', 0); ?> />
                                                                     <label class="form-check-label">PAUD</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='1') echo "checked='checked'"; ?> value="1" <?php echo $this->form_validation->set_radio('jjg_sekolah', 1); ?> />
                                                                     <label class="form-check-label">TK</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='2') echo "checked='checked'"; ?> value="2" <?php echo $this->form_validation->set_radio('jjg_sekolah', 2); ?> />
                                                                     <label class="form-check-label">SD</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='3') echo "checked='checked'"; ?> value="3" <?php echo $this->form_validation->set_radio('jjg_sekolah', 3); ?> />
                                                                     <label class="form-check-label">SMP</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='4') echo "checked='checked'"; ?> value="4" <?php echo $this->form_validation->set_radio('jjg_sekolah', 4); ?> />
                                                                     <label class="form-check-label">SMA</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-2">
                                                                 <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input">
+                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='5') echo "checked='checked'"; ?> value="5" <?php echo $this->form_validation->set_radio('jjg_sekolah', 5); ?> />
                                                                     <label class="form-check-label">SMK</label>
                                                                 </div>
                                                             </div>

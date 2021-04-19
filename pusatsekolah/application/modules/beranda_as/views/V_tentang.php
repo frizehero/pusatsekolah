@@ -69,8 +69,8 @@
             </div>
         </div>
     </div>
-    <?php tampilnotif()?>
     <div class="app-main__inner">
+    <?php tampilnotif()?>
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <div class="row">
@@ -366,7 +366,7 @@
                 </div>
             </div>
         </div>
-    </div>
     <?php $no++;} ?>
+    </div>
 </div>
 </div>
