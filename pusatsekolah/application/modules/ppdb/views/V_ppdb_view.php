@@ -796,7 +796,7 @@
                             <li class="nav-item-btn text-center pt-4 pb-3 nav-item">
                                 <button class="btn-shadow btn-wide btn-pill btn btn-dark">
                                     <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span>
-                                    View All Messages
+                                    Edit PPDB
                                 </button>
                             </li>
                         </ul>
