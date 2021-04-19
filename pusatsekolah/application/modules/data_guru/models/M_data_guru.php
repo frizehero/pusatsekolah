@@ -6,7 +6,12 @@ class M_data_guru extends CI_Model
 
 	function tampil()
 	{
-		return $this->db->get('data_guru')->result();
+		$this->db->from('data_guru');
+		$query = $this->db->get();
+
+
+
+		return $query->result();
 	}
 
 	function tambah()
@@ -59,7 +64,7 @@ class M_data_guru extends CI_Model
 	function tampiledit($id)
 	{
 		$idnya = decrypt_url($id);
-		$this->db->where('id_guru', $idnya);
+		$this->db->where('data_guru', $idnya);
 		return $this->db->get('data_guru')->row_array();
 	}
 
