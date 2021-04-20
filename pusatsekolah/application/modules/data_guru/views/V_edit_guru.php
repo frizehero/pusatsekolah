@@ -5,8 +5,8 @@
                 <h5 class="card-title">Edit Profil Guru</h5>
                 <?php tampilnotif()?>
                 <form action="<?php echo base_url('data_guru/edit') ?>" method="POST" enctype="multipart/form-data">
+                <input name="id" value="<?php echo $tampil['id_guru']?>" type="hidden" class="form-control">
                     <div class="form-row">
-                        <input name="id" value="<?php echo $tampil['id_guru'] ?>" type="hidden" class="form-control">
                         <div class="col-md-6">
                             <div class="position-relative form-group">
                                 <div class="form-group row">

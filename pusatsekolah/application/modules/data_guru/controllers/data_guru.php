@@ -45,12 +45,13 @@ class Data_guru extends MX_Controller
 		}
 
 	// Halaman Edit
-	function editview()
+	function editview($id)
 	{
 
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_edit_guru",
+			'tampil'		=> $this->M_data_guru->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

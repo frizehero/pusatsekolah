@@ -61,20 +61,21 @@ class M_data_guru extends CI_Model
 		$this->session->set_flashdata('msg', 'suksestambah');
 	}
 
-	function tampiledit($id)
-	{
-		$idnya = decrypt_url($id);
-		$this->db->where('data_guru', $idnya);
-		return $this->db->get('data_guru')->row_array();
-	}
-
+	
 	function tampildetail($id)
 	{
 		$idnya = decrypt_url($id);
 		$this->db->where('id_guru', $idnya);
 		return $this->db->get('data_guru')->row_array();
 	}
-
+	
+	function tampiledit($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_guru', $idnya);
+		return $this->db->get('data_guru')->row_array();
+	}
+	
 	function edit()
 	{
 		$id					= $this->input->post('id');
