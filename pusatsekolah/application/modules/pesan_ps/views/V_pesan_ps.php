@@ -14,7 +14,9 @@
                                             </div>
                                             <h4 class="mb-0">Inbox</h4>
                                             <div class="pt-4 pl-3 pr-3 pb-3 nav-item">
-                                                <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-info"> <i class="ion-android-add"></i> </button>
+                                                <a href="<?php echo base_url('pesan_ps/pesaninbox/'); ?>">
+                                                    <button class="mb-2 mr-2 btn-pill btn-transition btn btn-outline-info"> <i class="ion-android-add"></i> </button>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="pane-right">
