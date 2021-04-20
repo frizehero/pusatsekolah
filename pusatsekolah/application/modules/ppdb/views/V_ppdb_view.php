@@ -43,7 +43,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">All Hands Meeting</h4>
+                                                                <h4 class="timeline-title">Calon Peserta Didik melakukan pendaftaran secara ONLINE pada WEB PPDB DISDIKSU</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -52,7 +52,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <p> Yet another one, at<span class="text-success">15:00 PM</span></p>
+                                                                <h4 class="timeline-title">Print Out Formulir melalui WEB PPDB DISDIKSU serta melengkapi persyaratan lainnya.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -60,10 +60,7 @@
                                                     <div class="vertical-timeline-item dot-success vertical-timeline-element">
                                                         <div><span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">Build the production
-                                                                    release
-                                                                    <span class="badge badge-danger ml-2">NEW</span>
-                                                                </h4>
+                                                                <h4 class="timeline-title">Calon Pesert Didik datang ke sekolah membawa Formulir Pendaftaran dan persyaratan PPDB yang telah dilengkapi untuk proses VERIFIKASI oleh verofokator di sekolah.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -72,53 +69,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">Something not important
-                                                                    <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/1.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <imgsrc="assets /images/avatars/2.jpg"alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/3.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/4.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/5.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/9.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/7.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                            <div class="avatar-icon">
-                                                                                <img src="assets/images/avatars/8.jpg" alt="">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
-                                                                            <div class="avatar-icon"><i>+</i></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </h4>
+                                                                <h4 class="timeline-title">Panitia melakukan VERIFIKASI dan VALIDASI berkas pendaftaran.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -127,7 +78,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">This dot has an info state</h4>
+                                                                <h4 class="timeline-title">Calon Peserta Didik menerima BUKTI Verifikasi dan Tanda Terima BERKAS.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -136,7 +87,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">All Hands Meeting</h4>
+                                                                <h4 class="timeline-title">Bagi yang mengikuti TESTING akan mendapatkan KARTU UJIAN untuk mengikuti TESTING.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -145,7 +96,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <p>Yet another one, at <span class="text-success">15:00 PM</span></p>
+                                                                <h4 class="timeline-title">Mengikuti Ujian TESTING secara ONLINE di Sekolah.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -154,9 +105,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">Build the production release
-                                                                    <span class="badge badge-danger ml-2">NEW</span>
-                                                                </h4>
+                                                                <h4 class="timeline-title">Pengumuman hasil PPDB ONLINE sesuai dengan jadwal yang diberikan oleh panitia di website.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
@@ -165,7 +114,7 @@
                                                         <div>
                                                             <span class="vertical-timeline-element-icon bounce-in"></span>
                                                             <div class="vertical-timeline-element-content bounce-in">
-                                                                <h4 class="timeline-title">This dot has a dark state</h4>
+                                                                <h4 class="timeline-title">Bagi Calon Peserta Ddidik yang dinyatakan DITERIMA wajib melakukan Daftar Ulang pada di Sekolah.</h4>
                                                                 <span class="vertical-timeline-element-date"></span>
                                                             </div>
                                                         </div>
