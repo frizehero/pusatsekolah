@@ -7,7 +7,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/17.png" alt="">
+                                                        <img src="assets/images/avatars/20.png" alt="">
                                                     </div>
                                                 </a>
                                             </div>
@@ -38,7 +38,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/13.png" alt="Avatar 5">
+                                                        <img src="assets/images/avatars/15.png" alt="Avatar 5">
                                                     </div>
                                                 </a>
                                             </div>
@@ -69,7 +69,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/18.png" alt="Avatar 5">
+                                                        <img src="assets/images/avatars/17.png" alt="Avatar 5">
                                                     </div>
                                                 </a>
                                             </div>
@@ -100,7 +100,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/14.png" alt="Avatar 5">
+                                                        <img src="assets/images/avatars/19.png" alt="Avatar 5">
                                                     </div>
                                                 </a>
                                             </div>
@@ -131,7 +131,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/16.png" alt="">
+                                                        <img src="assets/images/avatars/23.png" alt="">
                                                     </div>
                                                 </a>
                                             </div>
@@ -162,7 +162,7 @@
                                         <div class="menu-header-content">
                                             <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
                                                     <div class="avatar-icon rounded">
-                                                        <img src="assets/images/avatars/13.png" alt="Avatar 5">
+                                                        <img src="assets/images/avatars/16.png" alt="Avatar 5">
                                                     </div>
                                                 </a>
                                             </div>
