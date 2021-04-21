@@ -49,7 +49,6 @@ class M_beranda_as extends CI_Model {
 		else{
 				$data = array(
 					'post_sekolah'		=> $posts,
-					'post_foto_sekolah'	=> 'kosong.jpeg',
 				);
 				$this->db->insert('beranda_as', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');

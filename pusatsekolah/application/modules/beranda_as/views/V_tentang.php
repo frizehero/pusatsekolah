@@ -101,37 +101,38 @@
                     <div class="col-md-8">
                         <div class="tab-content">
                                     <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Sejarah Sekolah</h5>
-                                            <?php echo $rowP->sejarah_sekolah;?>
-                                        </div>
-                                        <button class="btn-shadow btn-wide float-right btn-pill btn btn-primary" data-toggle="modal" data-target="#edit<?php echo $no ?>">
-                                            <a>Edit</a>
-                                        </button>
-                                        <!-- Modal Edit Popup -->
-                                        <div class="modal fade" id="edit<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog" role="document">
-                                                        <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?></h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Sejarah Sekolah</h5>
+                                                <?php echo $rowP->sejarah_sekolah;?>
+                                            </div>
+                                            <button class="btn-shadow btn-wide float-right btn-pill btn btn-primary" data-toggle="modal" data-target="#edit<?php echo $no ?>">
+                                                <a>Edit</a>
+                                            </button>
+                                            <!-- Modal Edit Popup -->
+                                            <div class="modal fade" id="edit<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?></h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
 
-                                                        <form action="<?php echo base_url('beranda_as/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                    <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                         <div class="modal-body">
-                                                            <textarea rows="1" class="form-control autosize-input" placeholder="Ketik Sejarah Sekolah disini" style="max-height: 200px; height: 265px; margin-top: 0px; margin-bottom: 0px;"></textarea>
+                                                            <!--<input name="sjrhss" value="<?php echo $tampilkompetensi['sejarah_sekolah']?>" type="text" class="form-control" size="50">-->
+                                                            <textarea rows="1" class="form-control autosize-input" placeholder="Ketik Sejarah Sekolah disini" style="max-height: 200px; height: 265px; margin-top: 0px; margin-bottom: 0px;" size="50"></textarea>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
                                                             <button type="button" class="btn btn-primary">Perbarui</button>
                                                         </div>
-                                                        </form>
+                                                    </form>
 
-                                                        </div>
                                                     </div>
-                                                    </div>
+                                                </div>
+                                            </div>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
                                         <div class="card-body">

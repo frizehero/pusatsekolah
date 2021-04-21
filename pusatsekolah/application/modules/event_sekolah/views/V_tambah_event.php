@@ -2,19 +2,21 @@
                 <div class="tab-content">
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <form class="">
-                                <div class="position-relative form-group">
-                                    <div class="form-group row">
-                                        <textarea name="text" placeholder="Sementara katanya dibuat untuk menampilkan WYSIWYG Editor" id="exampleText" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="clearfix">
-                                    <a href="tampilan-profil-guru.html">
-                                    <button type="button" id="next-btn" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Perbarui</button>
-                                    </a>
-                                </div>
+                            <form>
+                            <textarea id="ckeditor" name="tamevent" style="height: 800px;"><?php echo $tamevent;?></textarea>
                             </form>
                         </div>
                     </div>
                 </div>
 </div>
+
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/template/js/plugins/ckeditor/ckeditor.js'></script>
+
+<script>
+var ckeditor = CKEDITOR.replace('tamevent',{
+height:'600px'
+});
+
+CKEDITOR.disableAutoInline = true;
+CKEDITOR.inline('editable');
+</script>

@@ -106,11 +106,11 @@
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">AKREDITASI SEKOLAH</h5>
                                                                 <select name="akres" value="<?php echo $tampilkompetensi['akre_sekolah']?>" class="form-control">
-                                                                    <option>A</option>
-                                                                    <option>B</option>
-                                                                    <option>C</option>
-                                                                    <option>D</option>
-                                                                    <option>E</option>
+                                                                        <option <?php if ('A'  == $tampilkompetensi['akre_sekolah']) {echo 'selected="selected"';} ?> value="A">A </option>
+                                                                        <option <?php if ('B'  == $tampilkompetensi['akre_sekolah']) {echo 'selected="selected"';} ?> value="B">B </option>
+                                                                        <option <?php if ('C'  == $tampilkompetensi['akre_sekolah']) {echo 'selected="selected"';} ?> value="C">C </option>
+                                                                        <option <?php if ('D'  == $tampilkompetensi['akre_sekolah']) {echo 'selected="selected"';} ?> value="D">D </option>
+                                                                        <option <?php if ('E'  == $tampilkompetensi['akre_sekolah']) {echo 'selected="selected"';} ?> value="E">E </option>
                                                                 </select>
                                                             </div>
                                                         </div>   

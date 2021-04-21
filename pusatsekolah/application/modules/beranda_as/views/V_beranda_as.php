@@ -153,7 +153,11 @@
                 <div class="card-body">
                     <p>
                         <?php echo $rowO->post_sekolah;?><br><br>
+                        <?php if ($rowO->post_foto_sekolah==""){?>
+
+                        <?php }else{ ?>
                         <img src="<?php echo base_url() ?>assets/images/postsekolah/<?php echo $rowO->post_foto_sekolah;?>" style="width: 240px; height: 160px;">
+                        <?php }?>
                     </p>
                 </div>
                 <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">

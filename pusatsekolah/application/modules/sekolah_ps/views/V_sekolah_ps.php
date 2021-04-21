@@ -106,6 +106,66 @@
                                                 <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Sekolah
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-4">
+                            <div class="card-shadow-primary card-border mb-3 profile-responsive card">
+                                <div class="dropdown-menu-header">
+                                    <div class="dropdown-menu-header-inner bg-alternate">
+                                        <div class="menu-header-image opacity-4"
+                                            style="background-image: url('assets/images/originals/smkn1p.jpg');"></div>
+                                        <div class="menu-header-content btn-pane-right">
+                                            <div class="avatar-icon-wrapper mr-3 avatar-icon-xl btn-hover-shine">
+                                                <div class="avatar-icon rounded">
+                                                    <img src="assets/images/avatars/12.jpg" alt="Avatar 5">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h5 class="menu-header-title">SMK Negeri 1 Probolinggo</h5>
+                                            </div>
+                                            <div class="menu-header-btn-pane">
+                                                <a href="tampilan-detail-report.html">
+                                                    <button type="button" class="btn-wide btn-hover-shine btn-pill btn btn-warning">Detail Info Report</button>
+                                                </a>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="p-0 list-group-item">
+                                        <div class="widget-content">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left">
+                                                    <div class="widget-heading">Followers</div>
+                                                    <div class="widget-subheading">Total Followers Sekolah</div>
+                                                </div>
+                                                <div class="widget-content-right">
+                                                    <div class="widget-numbers text-success"><span>1896</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="p-0 list-group-item">
+                                        <div class="grid-menu grid-menu-2col">
+                                        <div class="no-gutters row">
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Sekolah
                                                         </button>
                                                     </div>
@@ -118,69 +178,18 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-xl-4">
-                            <div class="card-shadow-primary card-border mb-3 profile-responsive card">
-                                <div class="dropdown-menu-header">
-                                    <div class="dropdown-menu-header-inner bg-alternate">
-                                        <div class="menu-header-image opacity-4"
-                                            style="background-image: url('assets/images/originals/smkn1p.jpg');"></div>
-                                        <div class="menu-header-content btn-pane-right">
-                                            <div class="avatar-icon-wrapper mr-3 avatar-icon-xl btn-hover-shine">
-                                                <div class="avatar-icon rounded">
-                                                    <img src="assets/images/avatars/12.jpg" alt="Avatar 5">
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h5 class="menu-header-title">SMK Negeri 1 Probolinggo</h5>
-                                            </div>
-                                            <div class="menu-header-btn-pane">
-                                                <a href="tampilan-detail-report.html">
-                                                    <button type="button" class="btn-wide btn-hover-shine btn-pill btn btn-warning">Detail Info Report</button>
-                                                </a>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                    <li class="p-0 list-group-item">
-                                        <div class="widget-content">
-                                            <div class="widget-content-wrapper">
-                                                <div class="widget-content-left">
-                                                    <div class="widget-heading">Followers</div>
-                                                    <div class="widget-subheading">Total Followers Sekolah</div>
-                                                </div>
-                                                <div class="widget-content-right">
-                                                    <div class="widget-numbers text-success"><span>1896</span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="p-0 list-group-item">
-                                        <div class="grid-menu grid-menu-2col">
                                             <div class="no-gutters row">
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Sekolah
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Data Report
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="">
-                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Sekolah
                                                         </button>
                                                     </div>
                                                 </div>
@@ -229,25 +238,34 @@
                                     </li>
                                     <li class="p-0 list-group-item">
                                         <div class="grid-menu grid-menu-2col">
-                                            <div class="no-gutters row">
-                                                <div class="col-sm-4">
+                                        <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Sekolah
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Data Report
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                            </div>
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Sekolah
                                                         </button>
                                                     </div>
                                                 </div>

@@ -83,24 +83,33 @@
                                     <li class="p-0 list-group-item">
                                         <div class="grid-menu grid-menu-2col">
                                             <div class="no-gutters row">
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Review Sekolah
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Data Report
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                            </div>
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Akun
                                                         </button>
                                                     </div>
                                                 </div>
@@ -145,25 +154,34 @@
                                     </li>
                                     <li class="p-0 list-group-item">
                                         <div class="grid-menu grid-menu-2col">
-                                            <div class="no-gutters row">
-                                                <div class="col-sm-4">
+                                        <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Review Sekolah
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Data Report
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                            </div>
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Akun
                                                         </button>
                                                     </div>
                                                 </div>
@@ -208,25 +226,34 @@
                                     </li>
                                     <li class="p-0 list-group-item">
                                         <div class="grid-menu grid-menu-2col">
-                                            <div class="no-gutters row">
-                                                <div class="col-sm-4">
+                                        <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Review Sekolah
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
                                                                 class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Hapus Data Report
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4">
+                                            </div>
+                                            <div class="no-gutters row">
+                                                <div class="col-sm-6">
                                                     <div class="">
                                                         <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
-                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                                class="lnr-sun text-primary opacity-7 btn-icon-wrapper mb-2"></i>Beri Peringatan
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="">
+                                                        <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i
+                                                                class="lnr-magic-wand text-primary opacity-7 btn-icon-wrapper mb-2"></i>Cek Akun
                                                         </button>
                                                     </div>
                                                 </div>

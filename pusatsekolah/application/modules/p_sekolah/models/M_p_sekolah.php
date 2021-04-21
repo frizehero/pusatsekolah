@@ -14,6 +14,7 @@ class M_p_sekolah extends CI_Model {
 		$this->db->where('id_p_sekolah',$idnya);
     	return $this->db->get('p_sekolah')->row_array();
 	}
+
 	function ambilidsekolah($id)
 	{
 	
@@ -37,7 +38,11 @@ class M_p_sekolah extends CI_Model {
     	return $query->row_array();
 	}
 
-
+	function getselect($id)
+	{
+	
+		$this->db->get('p_sekolah');
+	}
 
 	function edit()
 	{
@@ -117,7 +122,7 @@ class M_p_sekolah extends CI_Model {
 					'kec_sekolah'		=> $kecs,
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
-					'nama_sekolah'	=> $namas,
+					'nama_sekolah'		=> $namas,
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
