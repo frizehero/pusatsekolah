@@ -31,6 +31,15 @@ class Pesan_ps extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function inboxdetail()
+	{
+		$data = array(
+			'namamodule' 	=> "pesan_ps",
+			'namafileview' 	=> "V_inbox_detail",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	function tambah()
 	{
 		$this->m_data_sekolah->tambah();

@@ -2,7 +2,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <div class="media flex-wrap w-100 align-items-center">
-                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/18.png" class="d-block ui-w-40 rounded-circle" alt="">
+                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/17.png" class="d-block ui-w-40 rounded-circle" alt="">
                                 <div class="media-body ml-3">
                                     <a href="javascript:void(0)">Loren Gray</a>
                                     <div class="text-muted small">3 Hari Lalu</div>
@@ -28,7 +28,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <div class="media flex-wrap w-100 align-items-center">
-                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/13.png" class="d-block ui-w-40 rounded-circle" alt="">
+                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/16.png" class="d-block ui-w-40 rounded-circle" alt="">
                                 <div class="media-body ml-3">
                                     <a href="javascript:void(0)">Andrew Davila</a>
                                     <div class="text-muted small">1 Minggu Lalu</div>
@@ -49,7 +49,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <div class="media flex-wrap w-100 align-items-center">
-                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/17.png" class="d-block ui-w-40 rounded-circle" alt="">
+                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/20.png" class="d-block ui-w-40 rounded-circle" alt="">
                                 <div class="media-body ml-3">
                                     <a href="javascript:void(0)">Lexi Rivera</a>
                                     <div class="text-muted small">1 Bulan Lalu</div>
@@ -72,7 +72,7 @@
                     <div class="card mb-4">
                         <div class="card-header">
                             <div class="media flex-wrap w-100 align-items-center">
-                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/14.png" class="d-block ui-w-40 rounded-circle" alt="">
+                                <img style="width: 40px; height: 40px;" src="assets/images/avatars/19.png" class="d-block ui-w-40 rounded-circle" alt="">
                                 <div class="media-body ml-3">
                                     <a href="javascript:void(0)">Ben Azelart</a>
                                     <div class="text-muted small">25/03//20</div>
