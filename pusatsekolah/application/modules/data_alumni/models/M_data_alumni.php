@@ -127,6 +127,31 @@ class M_data_alumni extends CI_Model {
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
+	function totalalumni()
+	{
+		return $this->db->get('data_alumni')->num_rows();
+	}
+
+	function totalperempuan()
+	{
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('jk_alumni','Perempuan');
+		$query = $this->db->get();
+		
+    	return $query->num_rows();
+	}
+
+	function totallaki()
+	{
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('jk_alumni','laki-laki');
+		$query = $this->db->get();
+		
+    	return $query->num_rows();
+	}
+
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');

@@ -91,7 +91,7 @@
                         <div class="widget-subheading"></div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>2345</span></div>
+                        <div class="widget-numbers text-white"><?php echo $totalperempuan?></div>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@
                         <div class="widget-subheading"></div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>2543</span></div>
+                        <div class="widget-numbers text-white"><?php echo $totallaki?></div>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                         <div class="widget-subheading"></div>
                     </div>
                     <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><span>4888</span></div>
+                        <div class="widget-numbers text-white"><?php echo $totalalumni?></div>
                     </div>
                 </div>
             </div>
