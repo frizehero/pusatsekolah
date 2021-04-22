@@ -31,210 +31,51 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <span class="badge badge-success align-text-bottom ml-1">Baru</span>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php tampilnotif() ?>
+                        <?php $no = 1;
+                        foreach ($tampil as $rowP) { ?>
                         <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <span class="badge badge-secondary align-text-bottom ml-1">Selesai</span>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
+                            <div class="card-body py-3">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col">
+                                        <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><?php echo $rowP->judul_event; ?></a>
+                                        <span class="badge badge-success align-text-bottom ml-1">Baru</span>
+                                        <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
+                                    </div>
+                                    <div class="d-none d-md-block col-4">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-4">12</div>
+                                            <div class="media col-8 align-items-center">
+                                                <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                                <div class="media-body flex-truncate ml-2">
+                                                    <div class="line-height-1 text-truncate">1 hari yang lalu</div>
+                                                    <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <span class="badge badge-default align-text-bottom ml-1">Terkunci</span>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <span class="badge badge-danger align-text-bottom ml-1">Popular!</span>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr class="m-0">
-                        <div class="card-body py-3">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col">
-                                    <a href="<?php echo base_url('event_sekolah/detailview'); ?>" class="text-big">Lomba Desain Logo OSIS SMKN 1 Kota Probolinggo</a>
-                                    <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                </div>
-                                <div class="d-none d-md-block col-4">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-4">12</div>
-                                        <div class="media col-8 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php $no++;
+                        } ?>
                     </div>
         
-                    <nav>
-                        <ul class="pagination mb-5">
-                            <li class="page-item disabled"><a class="page-link" href="javascript:void(0)">«</a></li>
-                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
-                            <li class="page-item"><a class="page-link" href="javascript:void(0)">»</a></li>
-                        </ul>
-                    </nav>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <nav>
+                                <ul class="pagination mb-5">
+                                    <li class="page-item disabled"><a class="page-link" href="javascript:void(0)">«</a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0)">»</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
         
                 </div>

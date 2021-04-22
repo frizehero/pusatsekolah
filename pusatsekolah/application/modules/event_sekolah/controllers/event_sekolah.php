@@ -7,7 +7,7 @@ class Event_sekolah extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_beranda');
+		 $this->load->model('M_event');
 		 $this->load->model('login/m_session');
 	}
 
@@ -18,6 +18,7 @@ class Event_sekolah extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "event_sekolah",
 			'namafileview' 	=> "V_event",
+			'tampil'		=> $this->M_event->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -33,32 +34,32 @@ class Event_sekolah extends MX_Controller {
 	}
 
 		// Halaman Edit
-	function detailview()
-	{
-
-		$data = array(
-			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_detail_event",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
+	function detailview($id)
+		{
+			$data = array(
+				'namamodule' 	=> "event_sekolah",
+				'namafileview' 	=> "V_detail_event",
+				'tampil'		=> $this->M_event->tampildetail($id),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+		$this->M_event->tambah();
+		redirect('event_sekolah');
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		$this->M_event->edit();
+		redirect('event_sekolah');
 	}
 
 	function hapus($id)
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
+		$this->M_event->hapus($id);
+		redirect('event_sekolah');
 	}
 
 	function cari()
@@ -66,7 +67,7 @@ class Event_sekolah extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_sekolah",
 			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
+			'tampil'		=> $this->M_event->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
