@@ -42,83 +42,27 @@
                                         <div class="scrollbar-container">
                                             <div class="p-3">
                                                 <div class="notifications-box">
-                                                    <div class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
-                                                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
+                                                    <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
                                                             <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                </span>
                                                                 <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Calon Peserta Didik melakukan pendaftaran secara ONLINE pada WEB PPDB DISDIKSU</h4>
+                                                                    <h4 class="timeline"><?php echo $rowP->judul_ppdb; ?></h4>
                                                                     <span class="vertical-timeline-element-date"></span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
+                                                        <div class="vertical-timeline-item vertical-timeline-element">
                                                             <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
+                                                                <span class="vertical-timeline-element-icon bounce-in">
+                                                                    <i class="badge badge-dot badge-dot-xl badge-danger"></i>
+                                                                </span>
                                                                 <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Print Out Formulir melalui WEB PPDB DISDIKSU serta melengkapi persyaratan lainnya.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Calon Pesert Didik datang ke sekolah membawa Formulir Pendaftaran dan persyaratan PPDB yang telah dilengkapi untuk proses VERIFIKASI oleh verofokator di sekolah.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-primary vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Panitia melakukan VERIFIKASI dan VALIDASI berkas pendaftaran.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-info vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Calon Peserta Didik menerima BUKTI Verifikasi dan Tanda Terima BERKAS.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Bagi yang mengikuti TESTING akan mendapatkan KARTU UJIAN untuk mengikuti TESTING.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Mengikuti Ujian TESTING secara ONLINE di Sekolah.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Pengumuman hasil PPDB ONLINE sesuai dengan jadwal yang diberikan oleh panitia di website.</h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item dot-dark vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Bagi Calon Peserta Ddidik yang dinyatakan DITERIMA wajib melakukan Daftar Ulang pada di Sekolah.</h4>
+                                                                    <h4 class="timeline-title">Informasi PPDB</h4>
+                                                                    <p style="width: 850px;"><?php echo $rowP->deskripsi_ppdb; ?>
+                                                                    </p>
                                                                     <span class="vertical-timeline-element-date"></span>
                                                                 </div>
                                                             </div>
@@ -315,7 +259,7 @@
                             </div>
                             <ul class="nav flex-column">
                                 <li class="nav-item-btn text-center pt-4 pb-3 nav-item">
-                                    <a href="<?php echo base_url('ppdb/tambahview'); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark">
+                                    <a href="<?php echo base_url('ppdb/editview/'  . encrypt_url($rowP->id_ppdb)); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark">
                                         <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span>
                                         Edit PPDB
                                     </a>
