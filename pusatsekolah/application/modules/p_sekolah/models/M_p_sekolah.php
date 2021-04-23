@@ -34,14 +34,16 @@ class M_p_sekolah extends CI_Model {
 		$this->db->select('*');
 		$this->db->from('p_sekolah');
 		$this->db->where('id_p_sekolah',$id);
+		$this->db->join('wilayah_provinsi','p_sekolah.provinsi_sekolah = wilayah_provinsi.id');
 		$query = $this->db->get();
     	return $query->row_array();
 	}
-
-	function getselect($id)
-	{
 	
-		$this->db->get('p_sekolah');
+	function provinsi()
+	{
+		
+		$get_prov = $this->db->select('*')->from('wilayah_provinsi')->get();
+		return $get_prov->result();
 	}
 
 	function edit()
@@ -77,10 +79,10 @@ class M_p_sekolah extends CI_Model {
 		$akres		= $this->input->post('akres');
 		$desks		= $this->input->post('desks');
 		$almtls		= $this->input->post('almtls');
-		$provs		= $this->input->post('provs');
-		$kokas		= $this->input->post('kokas');
-		$kels		= $this->input->post('kels');
-		$kecs		= $this->input->post('kecs');
+		$provs		= $this->input->post('prov');
+		$kokas		= $this->input->post('kab');
+		$kels		= $this->input->post('des');
+		$kecs		= $this->input->post('kec');
 		$kposs		= $this->input->post('kposs');
 		$sjrhs		= $this->input->post('sjrhs');
 		$namas		= $this->input->post('namas');
@@ -123,6 +125,7 @@ class M_p_sekolah extends CI_Model {
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
 					'nama_sekolah'		=> $namas,
+					
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');

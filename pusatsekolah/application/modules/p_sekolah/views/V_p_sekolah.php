@@ -11,18 +11,8 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item col-md-12">
-                                                <a data-toggle="tab" href="#tab-eg8-1" class="nav-link dropdown-item">
-                                                    MEDIA SEKOLAH
-                                                </a>
-                                            </li>
-                                            <li class="nav-item col-md-12">
                                                 <a data-toggle="tab" href="#tab-eg8-2" class="nav-link dropdown-item">
                                                     JAM OPERASIONAL
-                                                </a>
-                                            </li>
-                                            <li class="nav-item col-md-12">
-                                                <a data-toggle="tab" href="#tab-eg8-3" class="nav-link dropdown-item">
-                                                    FASILITAS SEKOLAH
                                                 </a>
                                             </li>
                                             <li class="nav-item col-md-12">
@@ -43,51 +33,26 @@
                                                 <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                     <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">JENJANG SEKOLAH</h5>
-                                                        <div class="row">
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='0') echo "checked='checked'"; ?> value="0" <?php echo $this->form_validation->set_radio('jjg_sekolah', 0); ?> />
-                                                                    <label class="form-check-label">PAUD</label>
+                                                        <div class="form-row">
+                                                        <div class="col-md-8">
+                                                            <h5 class="card-title">NAMA SEKOLAH</h5>
+                                                            <div class="input-group">
+                                                                <div class="input-group-prepend">
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='1') echo "checked='checked'"; ?> value="1" <?php echo $this->form_validation->set_radio('jjg_sekolah', 1); ?> />
-                                                                    <label class="form-check-label">TK</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='2') echo "checked='checked'"; ?> value="2" <?php echo $this->form_validation->set_radio('jjg_sekolah', 2); ?> />
-                                                                    <label class="form-check-label">SD</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='3') echo "checked='checked'"; ?> value="3" <?php echo $this->form_validation->set_radio('jjg_sekolah', 3); ?> />
-                                                                    <label class="form-check-label">SMP</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='4') echo "checked='checked'"; ?> value="4" <?php echo $this->form_validation->set_radio('jjg_sekolah', 4); ?> />
-                                                                    <label class="form-check-label">SMA</label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-2">
-                                                                <div class="form-check">
-                                                                <input name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" type="radio" class="form-check-input" <?php if($tampilkompetensi=='5') echo "checked='checked'"; ?> value="5" <?php echo $this->form_validation->set_radio('jjg_sekolah', 5); ?> />
-                                                                    <label class="form-check-label">SMK</label>
-                                                                </div>
+                                                                <input name="namas" value="<?php echo $tampilkompetensi['nama_sekolah']?>" type="text" class="form-control">
                                                             </div>
                                                         </div>
-                                                        <br>
-                                                        <h5 class="card-title">NAMA SEKOLAH</h5>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend">
+                                                        <div class="col-md-4">
+                                                                <h5 class="card-title">JENJANG SEKOLAH</h5>
+                                                                <select name="jjgs" value="<?php echo $tampilkompetensi['jjg_sekolah']?>" class="form-control">
+                                                                        <option <?php if ('PAUD' == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="PAUD">PAUD </option>
+                                                                        <option <?php if ('TK'   == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="TK">TK </option>
+                                                                        <option <?php if ('SD'   == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SD">SD </option>
+                                                                        <option <?php if ('SMP'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SMP">SMP </option>
+                                                                        <option <?php if ('SMA'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SMA">SMA </option>
+                                                                        <option <?php if ('SMK'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="E">SMK </option>
+                                                                </select>
                                                             </div>
-                                                            <input name="namas" value="<?php echo $tampilkompetensi['nama_sekolah']?>" type="text" class="form-control">
                                                         </div>
                                                         <br>
                                                         <h5 class="card-title">STATUS SEKOLAH</h5>
@@ -134,44 +99,37 @@
                                                             </div>
                                                         </div>
                                                         <div class="form-row">
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <h5 class="card-title">Provinsi</h5>
-                                                                <select name="provs" value="<?php echo $tampilkompetensi['provinsi_sekolah']?>" class="form-control">
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
+                                                                <select name="prov" class="form-control" id="provinsi">
+                                                                    <option>Pilih Provinsi</option>
+                                                                    <?php 
+                                                                        foreach($provinsi as $prov)
+                                                                        {
+                                                                            echo '<option value="'.$prov->id.'">'.$prov->nama.'</option>';
+                                                                        }
+                                                                    ?>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-md-6">
                                                                 <h5 class="card-title">Kota / Kab</h5>
-                                                                <select name="kokas" value="<?php echo $tampilkompetensi['kota_kab_sekolah']?>" class="form-control">
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
+                                                                <select name="kab" class="form-control" id="kabupaten">
+                                                                    <option value=''>Pilih Kota / Kab</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="col-md-3">
-                                                                <h5 class="card-title">Kelurahan</h5>
-                                                                <select name="kels" value="<?php echo $tampilkompetensi['kel_sekolah']?>" class="form-control">
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-md-3">
+                                                        </div>
+                                                        <br>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
                                                                 <h5 class="card-title">Kecamatan</h5>
-                                                                <select name="kecs" value="<?php echo $tampilkompetensi['kec_sekolah']?>" class="form-control">
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
+                                                                <select name="kec" class="form-control" id="kecamatan">
+                                                                    <option>Pilih Kecamatan</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h5 class="card-title">Kelurahan</h5>
+                                                                <select name="des" class="form-control" id="desa">
+                                                                    <option>Pilih Kel / Desa</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -372,44 +330,6 @@
                                                         <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
-                                                    <div class="card-body">
-                                                        <div class="card-title">MEDIA SEKOLAH</div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"></div>
-                                                            <input placeholder="Judul Media Sekolah" type="text" class="form-control">
-                                                        </div>
-                                                        <br>
-                                                        <div class="card-title">DESKRIPSI MEDIA</div>
-                                                        <div class="position-relative form-group">
-                                                            <textarea name="text" placeholder="Tulis deskripsi ....." id="exampleText" class="form-control"></textarea>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="card-title">TANGGAL</div>
-                                                                <input name="date" id="exampleDate" placeholder="Pilih Tanggal" type="date" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="card-title">WAKTU</div>
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="card mb-3 widget-content bg-primary">
-                                                            <div class="widget-content-wrapper text-white">
-                                                                <div class="widget-content-left">
-                                                                    <div class="widget-heading">UPLOAD FOTO MEDIA SEKOLAH</div>
-                                                                    <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                                    <input name="file" type="file" class="form-control-file">
-                                                                </div>
-                                                            </div>
-                                                        </div>                        
-                                                    </div>
-                                                    <div class="clearfix">
-                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="button" id=" " class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-primary">Upload Media</button>
-                                                    </div>
-                                                </div>
                                                 <div class="tab-pane" id="tab-eg8-2" role="tabpanel">
                                                     <div class="card-body">
                                                         <div class="row">
@@ -486,44 +406,6 @@
                                                             <input name="sabtup" value="<?php echo $tampilkompetensi['sabtu_p']?>" type="time" class="form-control">
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="clearfix">
-                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
-                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane" id="tab-eg8-3" role="tabpanel">
-                                                    <div class="card-body">
-                                                        <div class="card-title">FASILITAS SEKOLAH</div>
-                                                        <div class="input-group">
-                                                            <div class="input-group-prepend"></div>
-                                                            <input placeholder="Nama Fasilitas Sekolah" type="text" class="form-control">
-                                                        </div>
-                                                        <br>
-                                                        <div class="card-title">DESKRIPSI FASILITAS</div>
-                                                        <div class="position-relative form-group">
-                                                            <textarea name="text" placeholder="Tulis deskripsi ....." id="exampleText" class="form-control"></textarea>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="card-title">TANGGAL MULAI DIGUNAKAN</div>
-                                                                <input name="date" id="exampleDate" placeholder="Pilih Tanggal" type="date" class="form-control">
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="card-title">WAKTU MULAI DIGUNAKAN</div>
-                                                                <input name="time" id="exampleTime" placeholder="Pilih Waktu" type="time" class="form-control">
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="card mb-3 widget-content bg-primary">
-                                                            <div class="widget-content-wrapper text-white">
-                                                                <div class="widget-content-left">
-                                                                    <div class="widget-heading">UPLOAD FOTO FASILITAS SEKOLAH</div>
-                                                                    <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                                    <input name="file" type="file" class="form-control-file">
-                                                                </div>
-                                                            </div>
-                                                        </div>                        
                                                     </div>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
@@ -649,3 +531,26 @@
                         </div>
                     </div>
                 </div>
+
+                <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                <script>
+                    $(document).ready(function(){
+                        $("#provinsi").change(function (){
+                            var url = "<?php echo site_url('p_sekolah/add_ajax_kab');?>/"+$(this).val();
+                            $('#kabupaten').load(url);
+                            return false;
+                        })
+                        
+                        $("#kabupaten").change(function (){
+                            var url = "<?php echo site_url('p_sekolah/add_ajax_kec');?>/"+$(this).val();
+                            $('#kecamatan').load(url);
+                            return false;
+                        })
+            
+                        $("#kecamatan").change(function (){
+                            var url = "<?php echo site_url('p_sekolah/add_ajax_des');?>/"+$(this).val();
+                            $('#desa').load(url);
+                            return false;
+                        })
+                    });
+                </script>
