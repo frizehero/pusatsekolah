@@ -1,17 +1,18 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Event_sekolah extends MX_Controller {
+class Event_sekolah extends MX_Controller
+{
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_event');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_event');
+		$this->load->model('login/m_session');
 	}
 
-	
+
 	// index
 	function index()
 	{
@@ -23,7 +24,7 @@ class Event_sekolah extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-		// halaman tambah
+	// halaman tambah
 	function tambahview()
 	{
 		$data = array(
@@ -33,16 +34,27 @@ class Event_sekolah extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-		// Halaman Edit
+	// Halaman Edit
 	function detailview($id)
-		{
-			$data = array(
-				'namamodule' 	=> "event_sekolah",
-				'namafileview' 	=> "V_detail_event",
-				'tampil'		=> $this->M_event->tampildetail($id),
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
+	{
+		$data = array(
+			'namamodule' 	=> "event_sekolah",
+			'namafileview' 	=> "V_detail_event",
+			'tampil'		=> $this->M_event->tampildetail($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function editview($id)
+	{
+
+		$data = array(
+			'namamodule' 	=> "event_sekolah",
+			'namafileview' 	=> "V_edit_event",
+			'tampil'		=> $this->M_event->tampiledit($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
 
 	function tambah()
 	{
@@ -71,6 +83,4 @@ class Event_sekolah extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-	
 }
- 

@@ -21,7 +21,7 @@
                             <div tabindex="-1" role="menu" aria-hidden="true"
                                 class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
                                 <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="fa fa-fw"></i>&nbsp;<span>Edit Event</span>
+                                    <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><i class="fa fa-fw"></i>&nbsp;<span>Edit Event</span>
                                 </button>
                                 <button type="button" tabindex="0" class="dropdown-item">
                                     <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Event</span>
