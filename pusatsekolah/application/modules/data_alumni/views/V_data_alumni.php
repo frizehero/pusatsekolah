@@ -11,7 +11,7 @@
                     </div>  
                 </div>
                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                    <div class="mb-2 mr-2 btn-group">
+                    <div class="mb-3 mr-3 btn-group">
                         <button type="button" aria-haspopup="true" aria-expanded="false"
                             data-toggle="dropdown" class="dropdown-toggle btn-shadow btn btn-primary">Filter
                         </button>

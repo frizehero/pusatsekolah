@@ -25,7 +25,8 @@
                                         </a>
                                     </li>
                                         <div class="btn-actions-pane-right text-capitalize">
-                                            <button class="mb-2 mr-2 border-0 btn-transition btn btn-outline-link">Tambah Foto</button>
+                                            <a href="<?php echo base_url('produk/tambahview'); ?>"></a>
+                                            
                                         </div>
                                 </ul>
                                 <div class="tab-content">

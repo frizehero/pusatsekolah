@@ -7,7 +7,7 @@ class Media extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_beranda');
+		 $this->load->model('M_media');
 		 $this->load->model('login/m_session');
 	}
 
@@ -15,49 +15,55 @@ class Media extends MX_Controller {
 	// index
 	function index()
 	{
-
-		if ( empty( $this->session->userdata('session_id') ) )
-		{
-			redirect('login');
-
-		} else {
-
-			$data = array(
+		$data = array(
 			'namamodule' 	=> "media",
 			'namafileview' 	=> "V_media",
+			'tampil'		=> $this->M_media->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
-		}
-
-
 	}
+
+		// halaman tambah
+	function tambahview()
+	{
+		$data = array(
+			'namamodule' 	=> "media",
+			'namafileview' 	=> "V_tambah_media",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+		// Halaman Edit
+	function editview($id)
+	{
+
+		$data = array(
+			'namamodule' 	=> "media",
+			'namafileview' 	=> "V_edit_media",
+			'tampil'		=> $this->M_media->tampiledit($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 
 	function tambah()
 	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
+
+		$this->M_media->tambah();
+		redirect('media');
+		
 	}
 
 	function edit()
 	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
+		$this->M_media->edit();
+		redirect('media');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
+		$this->M_media->hapus();
+		redirect('media');
 	}
 	
 }
