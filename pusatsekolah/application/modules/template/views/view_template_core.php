@@ -19,6 +19,16 @@
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#provinsi").change(function (){
+                var url = "<?php echo site_url('p_sekolah/add_ajax_kab');?>/"+$(this).val();
+                $('#kabupaten').load(url);
+                return false;
+            })
+        });
+    </script>
 </head>
 
 <style type="text/css">
