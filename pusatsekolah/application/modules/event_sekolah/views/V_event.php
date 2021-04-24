@@ -23,7 +23,11 @@
                     <div class="card mb-3">
                         <div class="card-header pl-0 pr-0">
                             <div class="row no-gutters w-100 align-items-center">
-                                <div class="col"></div>
+                                <div class="col">
+                                    <div class="row no-gutters align-items-center" style="margin-left: 25px;">
+                                        <div class="col-2">Event</div>
+                                    </div>
+                                </div>
                                 <div class="col-4 text-muted">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-2">Like</div>
@@ -33,16 +37,20 @@
                                 </div>
                             </div>
                         </div>
+                        <?php $no = 1; foreach ($tampil as $rowP) { ?>
                         <div class="row">
-                            <?php $no = 1;
-                            foreach ($tampil as $rowP) { ?>
-                            <hr class="m-0">
                                 <div class="card-body py-3">
+                                    <style type="text/css">
+                                       .upper { text-transform: uppercase; }
+                                       .lower { text-transform: lowercase; }
+                                       .cap   { text-transform: capitalize; }
+                                       .small { font-variant:   small-caps; }
+                                    </style>
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col" style="margin: 10px;">
+                                        <div class="col cap" style="margin-left: 20px; font-size: 18px;">
                                             <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><?php echo $rowP->judul_event; ?></a>
                                             <span class="badge badge-success align-text-bottom ml-1">Baru</span>
-                                            <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
+                                            <div class="small mt-1 lower">Di upload 2 hari yang lalu</div>
                                         </div>
                                         <div class="d-none d-md-block col-4">
                                             <div class="row no-gutters align-items-center">
@@ -59,41 +67,41 @@
                                                             <i class="fa fa-trash fa-w-16"></i>
                                                     </button>
                                                 </div>
+
                                                 <!-- Modal HAPUS -->
-                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Menghapus Postingan</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
+                                                <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Menghapus Postingan</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
 
-                                <form action="<?php echo base_url('event_sekolah/hapus') ?>" method="POST" enctype="multipart/form-data">
-                                <div class="modal-body">
-                                    <!--Modal body-->
-                                        <p class="text-semibold text-main"></p>
-                                        <p>Anda Yakin Ingin Menghapus Postingan Ini? </p>
+                                                        <form action="<?php echo base_url('event_sekolah/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                        <div class="modal-body">
+                                                            <!--Modal body-->
+                                                                <p class="text-semibold text-main"></p>
+                                                                <p>Anda Yakin Ingin Menghapus Postingan Ini? </p>
 
-                                        <input name="id"  type="hidden" value="<?php echo $rowP->id_event ?>" class="form-control">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
-                                    <button class="btn btn-primary" type="submit" >Hapus</button>
-                                </div>
-                                </form>
+                                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_event ?>" class="form-control">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                                            <button class="btn btn-primary" type="submit" >Hapus</button>
+                                                        </div>
+                                                        </form>
 
-                                </div>
-                            </div>
-                    </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div><hr>
                                     </div>
                                 </div>
-                            <?php $no++;
-                            } ?>
                         </div>
+                        <?php $no++;} ?>
                     </div>
         
                     <div class="row">
