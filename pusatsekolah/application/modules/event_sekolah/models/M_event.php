@@ -37,7 +37,7 @@ class M_event extends CI_Model {
 
 	function edit()
 	{
-		$judul_event 	= $this->input->post('event_sekolah');
+		$judul_event 	= $this->input->post('judul_event');
 		$text_event 	= $this->input->post('text_event');
 
 				$data = array(
@@ -48,10 +48,10 @@ class M_event extends CI_Model {
 				$this->session->set_flashdata('msg', 'suksesedit');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
 		$id = $this->input->post('id');
-		$this->db->where('id_ppdb', $id)->delete('event_sekolah');
+		$this->db->where('id_event', $id)->delete('event_sekolah');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 

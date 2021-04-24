@@ -19,45 +19,81 @@
                             </a >
                         </div>
                     </div>
+                    <?php tampilnotif() ?>
                     <div class="card mb-3">
                         <div class="card-header pl-0 pr-0">
                             <div class="row no-gutters w-100 align-items-center">
                                 <div class="col"></div>
                                 <div class="col-4 text-muted">
                                     <div class="row no-gutters align-items-center">
-                                        <div class="col-4">Like</div>
-                                        <div class="col-8">Terakhir di update</div>
+                                        <div class="col-2">Like</div>
+                                        <div class="col-7">Terakhir di update</div>
+                                        <div class="col-3">tool</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <?php tampilnotif() ?>
-                        <?php $no = 1;
-                        foreach ($tampil as $rowP) { ?>
-                        <hr class="m-0">
-                            <div class="card-body py-3">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col">
-                                        <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><?php echo $rowP->judul_event; ?></a>
-                                        <span class="badge badge-success align-text-bottom ml-1">Baru</span>
-                                        <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
-                                    </div>
-                                    <div class="d-none d-md-block col-4">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col-4">12</div>
-                                            <div class="media col-8 align-items-center">
-                                                <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
-                                                <div class="media-body flex-truncate ml-2">
-                                                    <div class="line-height-1 text-truncate">1 hari yang lalu</div>
-                                                    <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
+                        <div class="row">
+                            <?php $no = 1;
+                            foreach ($tampil as $rowP) { ?>
+                            <hr class="m-0">
+                                <div class="card-body py-3">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col" style="margin: 10px;">
+                                            <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><?php echo $rowP->judul_event; ?></a>
+                                            <span class="badge badge-success align-text-bottom ml-1">Baru</span>
+                                            <div class="text-muted small mt-1">Di upload 2 hari yang lalu</div>
+                                        </div>
+                                        <div class="d-none d-md-block col-4">
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-2">12</div>
+                                                <div class="media col-7 align-items-center">
+                                                    <img style="width: 40px; height: auto;" src="assets/images/avatars/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                                    <div class="media-body flex-truncate ml-2">
+                                                        <div class="line-height-1 text-truncate">1 hari yang lalu</div>
+                                                        <a href="tampilan-beranda-admin-sekolah.html" class="text-muted small text-truncate">SMKN 1 Kota Probolinggo</a>
+                                                    </div>
                                                 </div>
+                                                <div class="col-3">
+                                                    <button class="btn btn-warning" data-toggle="modal" data-target="#hapus<?php echo $no ?>" style="margin: 5px;">
+                                                            <i class="fa fa-trash fa-w-16"></i>
+                                                    </button>
+                                                </div>
+                                                <!-- Modal HAPUS -->
+                    <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Menghapus Postingan</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <form action="<?php echo base_url('event_sekolah/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                <div class="modal-body">
+                                    <!--Modal body-->
+                                        <p class="text-semibold text-main"></p>
+                                        <p>Anda Yakin Ingin Menghapus Postingan Ini? </p>
+
+                                        <input name="id"  type="hidden" value="<?php echo $rowP->id_event ?>" class="form-control">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                    <button class="btn btn-primary" type="submit" >Hapus</button>
+                                </div>
+                                </form>
+
+                                </div>
+                            </div>
+                    </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php $no++;
-                        } ?>
+                            <?php $no++;
+                            } ?>
+                        </div>
                     </div>
         
                     <div class="row">

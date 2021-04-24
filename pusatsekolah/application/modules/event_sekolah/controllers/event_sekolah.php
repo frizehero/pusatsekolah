@@ -68,12 +68,11 @@ class Event_sekolah extends MX_Controller
 		redirect('event_sekolah');
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->M_event->hapus($id);
+		$this->M_event->hapus();
 		redirect('event_sekolah');
 	}
-
 	function cari()
 	{
 		$data = array(

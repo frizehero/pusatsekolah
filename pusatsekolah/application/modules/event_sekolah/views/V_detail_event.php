@@ -1,5 +1,4 @@
 <div class="app-main__inner">
-    <?php tampilnotif() ?>
         <div class="card mb-2">
             <div class="card-body">
                 <div class="card-header">
@@ -10,29 +9,7 @@
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                             <div class="text-muted small">4 hari yang lalu</div>
                         </div>
-                    </div>
-                    <?php $no=1;
-                    foreach ($tampil AS $rowO ) { ?>
-                    <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                        <div class="btn-group dropdown">
-                            <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                <i class="fa fa-fw"></i>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true"
-                                class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <a href="<?php echo base_url('event_sekolah/editview/'. encrypt_url($tampil['id_event'])); ?>"><i class="fa fa-fw"></i>&nbsp;<span>Edit Event</span></a>
-                                </button>
-                                <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
-                                    <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Event</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <?php $no++;
-                    } ?>
-                </div>
+                    </div>                </div>
                 <form action="<?php echo base_url('event_sekolah/tampildetail') ?>" method="POST" enctype="multipart/form-data">
                     <div class="card-header"><?php echo $tampil['judul_event'] ?></div>
                     <div class="card-body">
@@ -175,33 +152,4 @@
                 </form>
             </div>
         </div>
-
-        <!-- Modal HAPUS -->
-        <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <form action="<?php echo base_url('event_sekolah/hapus') ?>" method="POST" enctype="multipart/form-data">
-                        <div class="modal-body">
-                            <!--Modal body-->
-                            <p class="text-semibold text-main"></p>
-                            <p>Anda Yakin Ingin Menghapus Event <b><?php echo $rowP->judul_event ?></b> ini ? </p>
-
-                            <input name="id" type="hidden" value="<?php echo $rowP->id_guru ?>" class="form-control">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                            <button class="btn btn-primary" type="submit">Hapus</button>
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
-</div>
+    </div>

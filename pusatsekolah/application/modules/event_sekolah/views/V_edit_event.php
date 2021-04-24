@@ -15,7 +15,7 @@
                     <input id="ckeditor" name="text_event" value="<?php echo $tampil['text_event']?>" type="text" style="height: 800px;"></input>
                     <br>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Upload</button>
+                        <button type="submit" class="btn btn-primary">Upload</button>
                     </div>
                 </form>
             </div>
