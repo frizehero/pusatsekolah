@@ -33,6 +33,15 @@ class Media extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function tambahvidio()
+	{
+		$data = array(
+			'namamodule' 	=> "media",
+			'namafileview' 	=> "V_tambah_vidio",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 		// Halaman Edit
 	function editview($id)
 	{
@@ -47,6 +56,14 @@ class Media extends MX_Controller {
 
 
 	function tambah()
+	{
+
+		$this->M_media->tambah();
+		redirect('media');
+		
+	}
+
+	function tambahvid()
 	{
 
 		$this->M_media->tambah();

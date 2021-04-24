@@ -82,14 +82,16 @@ class M_media extends CI_Model {
 		}
 	}
 
-	function hapus($id)
+	function hapus()
 	{
-		$this->db->where('id_sekolah', $id)->delete('sekolah');
+		$id = $this->input->post('id');
+		$this->db->where('id_media', $id)->delete('media');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_sekolah',$cari)->get('sekolah')->result();
+		return $this->db->like('foto_media',$cari)->get('media')->result();
 	}
 }
