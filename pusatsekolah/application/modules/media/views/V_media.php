@@ -59,7 +59,7 @@
                                                                         <div class="modal-dialog" role="document">
                                                                             <div class="modal-content">
                                                                             <div class="modal-header">
-                                                                                <h5 class="modal-title" id="exampleModalLabel">Hapus Produk?</h5>
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Hapus Produk?</h5>
                                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                                 <span aria-hidden="true">&times;</span>
                                                                                 </button>
@@ -68,10 +68,10 @@
                                                                             <form action="<?php echo base_url('media/hapus') ?>" method="POST" enctype="multipart/form-data">
                                                                             <div class="modal-body">
                                                                                 <!--Modal body-->
-                                                                                    <p class="text-semibold text-main"></p>
-                                                                                    <p>Anda Yakin Ingin Menghapus Produk <b><?php echo $rowP->foto_media ?></b> ? </p>
+                                                                                <p class="text-semibold text-main"></p>
+                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Produk <b><?php echo $rowP->foto_media ?></b> ? </p>
 
-                                                                                    <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
+                                                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
