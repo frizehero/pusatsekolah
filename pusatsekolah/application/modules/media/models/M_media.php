@@ -52,36 +52,6 @@ class M_media extends CI_Model {
     	return $this->db->get('media')->row_array();
 	}
 
-	function edit()
-	{
-		$id_media 			= $this->input->post('id_media');
-
-		$this->load->library('upload');
-		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/images/media/';
-		$config['allowed_types']	= 'gif|jpg|png|jpeg';
-		$config['max_size']			= 5120;
-		$config['max_width']		= 4300;
-		$config['max_height']		= 4300;
-		$config['file_name'] 		= $nmfile;
-		
-		$this->upload->initialize($config);
-		
-		if($_FILES['foto']['name'])
-        {
-            if ($this->upload->do_upload('foto'))
-            {
-				$gbr = $this->upload->data();
-				$data = array(
-					'foto_produk' 		=> $gbr['file_name'],
-				);
-				$this->db->where('id_media',$id)->update('media', $data);
-				$this->session->set_flashdata('msg', 'suksesedit');
-			
-			}	 
-		}
-	}
-
 	function hapus()
 	{
 		$id = $this->input->post('id');
