@@ -189,7 +189,7 @@
                             <button type="button" aria-expanded="true" aria-controls="exampleAccordion1" data-toggle="collapse" href="#tampilkanKomentar1" class="m-0 p-0 btn btn-link">Tampilkan Komentar
                             </button>
                             <div data-parent="#exampleAccordion" id="tampilkanKomentar1" class="collapse show">
-                            <form action="<?php echo base_url('beranda_as/tambah') ?>" method="POST" enctype="multipart/form-data">
+                            <form action="<?php echo base_url('beranda_as/tambahkoms') ?>" method="POST" enctype="multipart/form-data">
                                 <div class="widget-content card-body">
                                     <div class="widget-content-wrapper">
                                         <div class="widget-content-left mr-3">
@@ -202,7 +202,7 @@
                                             </div>
                                         </div>
                                         <div class="card-body p-0">
-                                            <input name="komen" id="komen" placeholder="Tulis komentar..." type="text" class="form-control">
+                                            <input name="komens" placeholder="Tulis komentar..." type="text" class="form-control">
                                         </div>
                                     </div>
                                 </div>
@@ -220,8 +220,8 @@
                                             </div>
                                         </div>
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">SMK Negeri 1 Kota Probolinggo</div>
-                                            <div>vsknfgjkersjnnfgjrnjfnjkern</div>
+                                            <a href="<?php echo base_url('beranda_as'); ?> "><?php echo $rowP->nama_sekolah;?></a>
+                                            <div><?php echo $rowP->kpos_sekolah	;?></div>
                                             <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
                                             <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
                                             <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>

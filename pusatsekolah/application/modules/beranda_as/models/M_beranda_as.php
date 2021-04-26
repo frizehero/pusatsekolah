@@ -9,11 +9,6 @@ class M_beranda_as extends CI_Model {
     	$query = $this->db->get('beranda_as');
     	return $query->result();
 	}
-
-	function tampilkomentar()
-	{
-		return $this->db->get('beranda_as')->result();
-	}
 			
 	function tambah()
 	{

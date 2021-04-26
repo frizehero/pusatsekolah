@@ -32,7 +32,7 @@ class P_sekolah extends MX_Controller {
 	function add_ajax_kab($id_prov)
 	{
     	$query = $this->db->get_where('wilayah_kabupaten',array('provinsi_id'=>$id_prov));
-    	$data = "<option value=''>- Select Kabupaten -</option>";
+    	$data = "<option value=''>- Pilih Kabupaten -</option>";
     	foreach ($query->result() as $value) {
         	$data .= "<option value='".$value->id."'>".$value->nama."</option>";
     	}

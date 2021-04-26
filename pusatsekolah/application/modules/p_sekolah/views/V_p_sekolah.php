@@ -25,6 +25,11 @@
                                                     SOSIAL MEDIA
                                                 </a>
                                             </li>
+                                            <li class="nav-item col-md-12">
+                                                <a data-toggle="tab" href="#tab-eg8-1" class="nav-link dropdown-item">
+                                                    KEPALA SEKOLAH
+                                                </a>
+                                            </li>
                                         </ul>
                                 </div>
                                 <div class="col-md-8">
@@ -524,7 +529,18 @@
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
                                                         <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
-                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
+                                                    <div class="card-body">
+                                                        <div class="position-relative form-group">
+                                                            <h5 class="card-title">Link Akun Kepala Sekolah</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix">
+                                                        <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                        <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
+                                                    </div>
+                                            </div>
                                                 </form>
                                 </div>
                             </div>

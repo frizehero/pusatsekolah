@@ -33,8 +33,8 @@ class M_p_sekolah extends CI_Model {
 	
 		$this->db->select('*');
 		$this->db->from('p_sekolah');
+		//$this->db->join('wilayah_provinsi','p_sekolah.provinsi_sekolah = wilayah_provinsi.id');
 		$this->db->where('id_p_sekolah',$id);
-		$this->db->join('wilayah_provinsi','p_sekolah.provinsi_sekolah = wilayah_provinsi.id');
 		$query = $this->db->get();
     	return $query->row_array();
 	}

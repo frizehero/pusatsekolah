@@ -264,7 +264,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Website Sekolah </b> :
-                                                                <?php echo $rowP->link_web;?>
+                                                                <a href="<?php echo $rowP->link_web;?>"><?php echo $rowP->link_web;?></a>
                                                             </div> 
                                                         </div>
                                                     </div>
@@ -275,7 +275,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Link Video Profil Sekolah</b> :
-                                                                <?php echo $rowP->link_video;?>
+                                                                <a href="<?php echo $rowP->link_video;?>"><?php echo $rowP->link_video;?></a>
                                                             </div> 
                                                         </div>
                                                     </div>
@@ -296,7 +296,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Alamat Lengkap</b> :
-                                                                <?php echo $rowP->almtlengkap_sekolah	;?>
+                                                                <?php echo $rowP->almtlengkap_sekolah;?>
                                                             </div>
                                                         </div>
                                                     </div>

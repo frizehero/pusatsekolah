@@ -559,14 +559,6 @@
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>
-
-                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                        <li><?php } ?>
-                                        <a href="<?php echo base_url('sekolah'); ?>">
-                                            <i class="metismenu-icon"></i>Sekolah
-                                        </a>
-                                        </li>
-
                                     <?php if ($menu == "p_sekolah") { ?><li class="mm-active"><?php } else { ?>
                                         <li><?php } ?>
                                         <a href="<?php echo base_url('p_sekolah'); ?>">
