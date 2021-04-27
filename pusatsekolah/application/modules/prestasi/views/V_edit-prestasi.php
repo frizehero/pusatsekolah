@@ -35,8 +35,8 @@
                 </div>
                 <div class="position-relative form-group">
                     <label for="exampleFile" class="">Foto Prestasi</label>
-                    <input name="gambar_prestasi" value="<?php echo $tampil['gambar_prestasi'] ?>" type="file" class="form-control-file">
-                    <small class="form-text text-muted"> Upload Foto Prestasi Anda Disini
+                    <input name="gambar_prestasi" type="file" class="form-control-file"><?php echo $tampil['gambar_prestasi'] ?>
+                    <small class="form-text text-muted"> Ubah Foto Prestasi Anda Disini
                     </small>
                 </div>
                 <div class="form-group">

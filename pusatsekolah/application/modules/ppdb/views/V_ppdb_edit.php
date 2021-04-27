@@ -19,7 +19,7 @@
                                                             <div class="widget-content-left">
                                                                 <div class="widget-heading">UPLOAD PAMFLET PPDB SEKOLAH</div>
                                                                 <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                                <input name="pamflet_ppdb" value="<?php echo $tampil['pamflet_ppdb'] ?>" type="file" class="form-control-file">
+                                                                <input name="pamflet_ppdb" type="file" class="form-control-file"><?php echo $tampil['pamflet_ppdb'] ?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -31,7 +31,7 @@
                                                     <br>
                                                     <div class="card-title">DESKRIPSI DAN INFORMASI PPDB</div>
                                                     <div class="position-relative form-group">
-                                                        <textarea name="deskripsi_ppdb" value="<?php echo $tampil['deskripsi_ppdb'] ?>" type="text"class="form-control"></textarea>
+                                                        <textarea name="deskripsi_ppdb" type="text"class="form-control"><?php echo $tampil['deskripsi_ppdb'] ?></textarea>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
