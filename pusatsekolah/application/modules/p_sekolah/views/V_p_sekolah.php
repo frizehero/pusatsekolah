@@ -38,6 +38,11 @@
                                                 <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                     <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                     <div class="card-body">
+                                                        <div class="form-group">
+                                                            <label for="exampleFile" class="">Foto Profil</label>
+                                                            <input name="fotoprofil" type="file" class="form-control-file">
+                                                            </small>
+                                                        </div>
                                                         <div class="form-row">
                                                         <div class="col-md-8">
                                                             <h5 class="card-title">NAMA SEKOLAH</h5>

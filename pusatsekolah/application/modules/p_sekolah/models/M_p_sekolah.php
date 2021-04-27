@@ -87,6 +87,23 @@ class M_p_sekolah extends CI_Model {
 		$sjrhs		= $this->input->post('sjrhs');
 		$namas		= $this->input->post('namas');
 
+
+		$this->load->library('upload');
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/fotoprofil/';
+		$config['allowed_types']	= 'gif|jpg|png|jpeg';
+		$config['max_size']			= 5120;
+		$config['max_width']		= 4300;
+		$config['max_height']		= 4300;
+		$config['file_name'] 		= $nmfile;
+		
+		$this->upload->initialize($config);
+		
+		if($_FILES['fotoprofil']['name'])
+        {
+            if ($this->upload->do_upload('fotoprofil'))
+            {
+				$gbr = $this->upload->data();
 				$data = array(
 					'kompetensi1'		=> $jrsn1,
 					'kompetensi2'		=> $jrsn2,
@@ -125,11 +142,56 @@ class M_p_sekolah extends CI_Model {
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
 					'nama_sekolah'		=> $namas,
-					
+					'foto_profil' 		=> $gbr['file_name'],
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
-
+			
+			}	 
+		}
+		else{
+				$data = array(
+					'kompetensi1'		=> $jrsn1,
+					'kompetensi2'		=> $jrsn2,
+					'kompetensi3'		=> $jrsn3,
+					'kompetensi4'		=> $jrsn4,
+					'kompetensi5'		=> $jrsn5,
+					'senin_m'			=> $seninm,
+					'senin_p'			=> $seninp,
+					'selasa_m'			=> $selasam,
+					'selasa_p'			=> $selasap,
+					'rabu_m'			=> $rabum,
+					'rabu_p'			=> $rabup,
+					'kamis_m'			=> $kamism,
+					'kamis_p'			=> $kamisp,
+					'jumat_m'			=> $jumatm,
+					'jumat_p'			=> $jumatp,
+					'sabtu_m'			=> $sabtum,
+					'sabtu_p'			=> $sabtup,
+					'email'				=> $emails,
+					'telphone'			=> $tlps,
+					'twitter'			=> $twitters,
+					'instagram'			=> $igs,
+					'facebook'			=> $fbs,
+					'link_web'			=> $lws,
+					'link_video'		=> $lvs,
+					'jjg_sekolah'		=> $jjgs,
+					'stt_sekolah'		=> $stts,
+					'npsn_sekolah'		=> $npsns,
+					'akre_sekolah'		=> $akres,
+					'desk_sekolah'		=> $desks,
+					'almtlengkap_sekolah'	=> $almtls,
+					'provinsi_sekolah'		=> $provs,
+					'kota_kab_sekolah'		=> $kokas,
+					'kel_sekolah'		=> $kels,
+					'kec_sekolah'		=> $kecs,
+					'kpos_sekolah'		=> $kposs,
+					'sejarah_sekolah'	=> $sjrhs,
+					'nama_sekolah'		=> $namas,
+				);
+				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
+				$this->session->set_flashdata('msg', 'suksesedit');
+			}
 	}
 
 	function hapus($id)
