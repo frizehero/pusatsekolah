@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="widget-content-left card-footer">
-                <div class="widget-content-left mr-3 avatar-icon-xl">
-                    <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                <div class="widget-content-left mr-3 avatar-icon-wrapper avatar-icon-xl">
+                    <img class="avatar-icon" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none">
                 </div>
                 <div class="widget-content-left" style="color: black;">
                     <div class="widget-heading"><b><?php echo $rowP->nama_sekolah;?></b></div>
@@ -71,7 +71,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                        <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
                         <div class="media-body ml-3">
                             <a href="<?php echo base_url('beranda_as'); ?>"><?php echo $rowP->nama_sekolah;?></a>
                         </div>
@@ -100,7 +100,7 @@
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
-                        <img style="width: 40px; height: auto;" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" class="d-block ui-w-40 rounded-circle" alt="">
+                    <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
                         <div class="media-body ml-3">
                             <a href="<?php echo base_url('beranda_as'); ?>"><?php echo $rowP->nama_sekolah;?></a>
                             <div class="text-muted small">4 hari yang lalu</div>
@@ -215,7 +215,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
+                                                <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
                                                 </div>
                                             </div>
                                         </div>
