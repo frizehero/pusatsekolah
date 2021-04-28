@@ -59,7 +59,7 @@
                                                                         <div class="modal-dialog" role="document">
                                                                             <div class="modal-content">
                                                                             <div class="modal-header">
-                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Hapus Produk?</h5>
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Hapus Foto Sekolah?</h5>
                                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                                 <span aria-hidden="true">&times;</span>
                                                                                 </button>
@@ -69,7 +69,7 @@
                                                                             <div class="modal-body">
                                                                                 <!--Modal body-->
                                                                                 <p class="text-semibold text-main"></p>
-                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Produk <b><?php echo $rowP->foto_media ?></b> ? </p>
+                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Foto Sekolah <b><?php echo $rowP->foto_media ?></b> ? </p>
 
                                                                                 <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
                                                                             </div>
@@ -90,16 +90,14 @@
                                                     </div>
                                                 </div>
                                             <?php $no++;} ?>
-                                            
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="tab-animated-1" role="tabpanel">
                                         <div class="row">
                                             <?php $no=1; foreach ($tampil AS $rowP ) { ?>
-                                            <div class="col-md-12 col-lg-3">
-                                                <div class="card-shadow-primary card-border mb-3 card">
-                                                    <div class="dropdown-menu-header">
-                                                        <img src="<?php echo base_url() ?>assets/images/media/<?php echo $rowP->fasilitas_media;?>" style="width: auto; height: 200px;">
+                                                <div class="col-md-12 col-lg-3">
+                                                    <div class="card-shadow-primary card-border mb-3 card">
+                                                        <div class="dropdown-menu-header">
                                                             <div class="menu-header-content btn-pane-right">
                                                                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
                                                                     <div class="btn-group dropdown">
@@ -109,19 +107,19 @@
                                                                         </button>
                                                                         <div tabindex="-1" role="menu" aria-hidden="true"
                                                                             class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                                            <button type="button" tabindex="0" class="dropdown-item" data-target="#hapus<?php echo $no ?>">
-                                                                                <i class="lnr-trash"></i>&nbsp;<span>Hapus Foto</span>
+                                                                            <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                                                                <i class="fa fa-trash fa-w-16"></i>&nbsp;<span>Hapus Foto</span>
                                                                             </button>
                                                                             <button type="button" tabindex="0" class="dropdown-item">
                                                                                 <i class="lnr-download"></i>&nbsp;<span>Download Foto</span>
                                                                             </button>
                                                                         </div>
-
+                                                                        <!-- Modal HAPUS -->
                                                                         <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                                         <div class="modal-dialog" role="document">
                                                                             <div class="modal-content">
                                                                             <div class="modal-header">
-                                                                                <h5 class="modal-title" id="exampleModalLabel">Hapus Produk?</h5>
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Hapus Foto Sekolah?</h5>
                                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                                 <span aria-hidden="true">&times;</span>
                                                                                 </button>
@@ -130,10 +128,10 @@
                                                                             <form action="<?php echo base_url('media/hapus') ?>" method="POST" enctype="multipart/form-data">
                                                                             <div class="modal-body">
                                                                                 <!--Modal body-->
-                                                                                    <p class="text-semibold text-main"></p>
-                                                                                    <p>Anda Yakin Ingin Menghapus Produk <b><?php echo $rowP->nama_produk ?></b> ? </p>
+                                                                                <p class="text-semibold text-main"></p>
+                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Foto Sekolah <b><?php echo $rowP->foto_media ?></b> ? </p>
 
-                                                                                    <input name="id"  type="hidden" value="<?php echo $rowP->id_produk ?>" class="form-control">
+                                                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
                                                                             </div>
                                                                             <div class="modal-footer">
                                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
@@ -143,12 +141,14 @@
 
                                                                             </div>
                                                                         </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                        </div>
+                                                        <img src="<?php echo base_url() ?>assets/images/media/<?php echo $rowP->fasilitas_media;?>" style="width: auto; height: 200px;">
                                                     </div>
                                                 </div>
-                                            </div>
                                             <?php $no++;} ?>
                                             
                                             <div class="col-md-12 col-lg-3">
@@ -251,10 +251,9 @@
                                     <div class="tab-pane active" id="tab-animated-2" role="tabpanel">
                                         <div class="row">
                                             <?php $no=1; foreach ($tampil AS $rowP ) { ?>
-                                            <div class="col-md-12 col-lg-3">
-                                                <div class="card-shadow-primary card-border mb-3 card">
-                                                    <div class="dropdown-menu-header">
-                                                        <img src="<?php echo base_url() ?>assets/images/media/<?php echo $rowP->vidio_media;?>" style="width: auto; height: 200px;">
+                                                <div class="col-md-12 col-lg-3">
+                                                    <div class="card-shadow-primary card-border mb-3 card">
+                                                        <div class="dropdown-menu-header">
                                                             <div class="menu-header-content btn-pane-right">
                                                                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
                                                                     <div class="btn-group dropdown">
@@ -264,25 +263,48 @@
                                                                         </button>
                                                                         <div tabindex="-1" role="menu" aria-hidden="true"
                                                                             class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                                                <i class="lnr-trash"></i>&nbsp;<span>Hapus Video</span>
+                                                                            <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
+                                                                                <i class="fa fa-trash fa-w-16"></i>&nbsp;<span>Hapus Video</span>
                                                                             </button>
                                                                             <button type="button" tabindex="0" class="dropdown-item">
                                                                                 <i class="lnr-download"></i>&nbsp;<span>Download Video</span>
                                                                             </button>
                                                                         </div>
+                                                                        <!-- Modal HAPUS -->
+                                                                        <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Hapus Video Sekolah?</h5>
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                <span aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                            </div>
+
+                                                                            <form action="<?php echo base_url('media/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                                            <div class="modal-body">
+                                                                                <!--Modal body-->
+                                                                                <p class="text-semibold text-main"></p>
+                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Video Sekolah <b><?php echo $rowP->video_media ?></b> ? </p>
+
+                                                                                <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                                                                <button class="btn btn-primary" type="submit" >Hapus</button>
+                                                                            </div>
+                                                                            </form>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <br><br><br><br><br><br><br>
-                                                            <div class="menu-header-content btn-pane-right">
-                                                                <div class="btn-actions-pane-right">
-                                                                    <p>1:00</p>
-                                                                </div>
-                                                            </div>
+                                                        </div>
+                                                        <img src="<?php echo base_url() ?>assets/images/media/<?php echo $rowP->vidio_media;?>" style="width: auto; height: 200px;">
                                                     </div>
                                                 </div>
-                                            </div>
                                             <?php $no++;} ?>
                                             
                                             <div class="col-md-12 col-lg-3">

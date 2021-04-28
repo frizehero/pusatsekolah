@@ -27,8 +27,8 @@ class M_media extends CI_Model {
             {
 				$gbr = $this->upload->data();
 				$data = array(
-					'foto_media' 		=> $gbr['file_name'],
-					
+					'foto_media' 			=> $gbr['file_name'],
+					'fasilitas_media' 		=> $gbr['file_name'],
 					
 				);
 				$this->db->insert('media', $data);
@@ -38,7 +38,44 @@ class M_media extends CI_Model {
 		}
 		else{
 				$data = array(
-					'foto_media' 		=> 'kosong.jpeg',
+					'foto_media' 			=> 'kosong.jpeg',
+					'fasilitas_media' 		=> 'kosong.jpeg',
+				);
+				$this->db->insert('media', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			}
+	}
+
+	function tambahvid()
+	{
+		$this->load->library('upload');
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/media/';
+		$config['allowed_types']	= 'gif|jpg|png|jpeg';
+		$config['max_size']			= 5120;
+		$config['max_width']		= 4300;
+		$config['max_height']		= 4300;
+		$config['file_name'] 		= $nmfile;
+		
+		$this->upload->initialize($config);
+		
+		if($_FILES['foto']['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
+				$gbr = $this->upload->data();
+				$data = array(				
+					'vidio_media' 			=> $gbr['file_name'],
+					
+				);
+				$this->db->insert('media', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+			}	 
+		}
+		else{
+				$data = array(
+					'vidio_media' 			=> 'kosong.jpeg',
 				);
 				$this->db->insert('media', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
