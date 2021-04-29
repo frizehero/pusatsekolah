@@ -49,11 +49,12 @@ class M_produk extends CI_Model {
 					'nama_produk'		=> $nama,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
-					'foto_produk' 		=> 'kosong.jpeg',
+					'foto_produk' 		=> 'kosong1.jpeg',
 				);
 				$this->db->insert('produk', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
+			
 	}
 
 	function tampiledit($id)
@@ -107,6 +108,8 @@ class M_produk extends CI_Model {
 				$this->db->where('id_produk',$id)->update('produk', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
+
+			return "kosong.jpeg";
 	}
 
 	function hapus()

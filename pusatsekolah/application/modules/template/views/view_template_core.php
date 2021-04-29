@@ -98,7 +98,7 @@
             </div>
             <div class="app-header__content">
                 <div>
-                    <a href="<?php echo base_url('beranda'); ?>">
+                    <a href="<?php echo base_url('beranda_as'); ?>">
                         <img src="<?php echo base_url() ?>assets/images/logoatas.png" style="width: 150px;">
                     </a>
                 </div>

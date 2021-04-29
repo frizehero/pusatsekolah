@@ -27,7 +27,7 @@ class M_prestasi extends CI_Model
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/gambar_prestasi/';
+		$config['upload_path']		= 'assets/images/gambar_prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -59,7 +59,7 @@ class M_prestasi extends CI_Model
 				'tingkat_prestasi'	=> $tingkat_prestasi,
 				'juara'				=> $juara,
 				'tgl_prestasi'		=> $tgl_prestasi,
-				'gambar_prestasi'	=> 'kosong1.png',
+				'gambar_prestasi'	=> 'kosong1.jpeg',
 			);
 			$this->db->insert('prestasi', $data);
 			$this->session->set_flashdata('msg', 'suksestambah');
@@ -79,7 +79,7 @@ class M_prestasi extends CI_Model
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/gambar_prestasi/';
+		$config['upload_path']		= 'assets/images/gambar_prestasi/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
