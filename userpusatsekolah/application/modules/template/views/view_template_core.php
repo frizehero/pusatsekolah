@@ -5,30 +5,24 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Pusat Sekolah</title>
-    <meta name="viewport
-        content=" width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
-    <meta name="description" content="Rumah Sakit Terbaik Di Pasuruan.">
-
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#provinsi").change(function (){
-                var url = "<?php echo site_url('p_sekolah/add_ajax_kab');?>/"+$(this).val();
-                $('#kabupaten').load(url);
-                return false;
-            })
-        });
-    </script>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Language" content="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pusat Sekolah</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="msapplication-tap-highlight" content="no">
+        <!--=============== css  ===============-->	
+        <link type="text/css" rel="stylesheet" href="css/reset.css">
+        <link type="text/css" rel="stylesheet" href="css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="images/logo.ico">
 </head>
 
 <style type="text/css">
@@ -76,538 +70,184 @@
     $menu = $uri_segments[3];
 
     ?>
-    <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
-        <div class="app-header header-shadow">
-            <div class="app-header__mobile-menu">
-                <div>
-                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                </div>
+    <header class="main-header">
+        <!-- logo-->
+        <a href="tampilan-beranda-user.html" class="logo-holder"><img src="images/logoatas.png" alt=""></a>
+        <!-- logo end-->
+        <!-- header-search_btn-->         
+        <div class="header-search_btn show-search-button"><i class="fal fa-search"></i><span>Search</span></div>
+        <!-- header-search_btn end-->
+        <!-- header opt --> 
+        <a href="pusatsekolah/signup-adminsekolah.html" class="add-list color-bg">Daftarkan Sekolahmu<span><i class="fal fa-layer-plus"></i></span></a>
+        <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter green-bg"></span> </div>
+        <div class="header-user-menu">
+            <div class="header-user-name">
+                <span><img src="images/avatar/4.jpg" alt=""></span>
+                Hai, Emak
             </div>
-            <div class="app-header__menu">
-                <span>
-                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                        <span class="btn-icon-wrapper">
-                            <i class="fa fa-ellipsis-v fa-w-6"></i>
-                        </span>
-                    </button>
-                </span>
+            <ul>
+                <li><a href="tampilan-edit-profiluser.html"> Akun Saya</a></li>
+                <li><a href="tampilan-nilaips-user.html"> Nilai Kami! </a></li>
+                <li><a href="tampilan-beranda-nonlogin.html">Log Out</a></li>
+            </ul>
+        </div>
+        <!-- lang-wrap end-->                                 
+        <!-- nav-button-wrap--> 
+        <div class="nav-button-wrap color-bg">
+            <div class="nav-button">
+                <span></span><span></span><span></span>
             </div>
-            <div class="app-header__content">
-                <div>
-                    <a href="<?php echo base_url('beranda'); ?>">
-                        <img src="<?php echo base_url() ?>assets/images/logoatas.png" style="width: 150px;">
-                    </a>
-                </div>
-                <div class="header-btn-lg pr-0"></div>
-                <div class="app-header-left">
-                    <div class="search-wrapper">
-                        <div class="input-holder">
-                            <input type="text" class="search-input" placeholder="Type to search">
-                            <button class="search-icon"><span></span></button>
-                        </div>
-                        <button class="close"></button>
-                    </div>
-                </div>
-                <div class="app-header-right">
-                    <div class="header-dots">
-                        <div class="dropdown">
-                            <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="p-0 mr-2 btn btn-link">
-                                <span class="icon-wrapper icon-wrapper-alt rounded-circle">
-                                    <span class="icon-wrapper-bg bg-danger"></span>
-                                    <i class="icon text-danger icon-anim-pulse ion-android-notifications"></i>
-                                    <span class="badge badge-dot badge-dot-sm badge-danger">Notifications</span>
-                                </span>
-                            </button>
-                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu dropdown-menu-right">
-                                <div class="dropdown-menu-header mb-0">
-                                    <div class="dropdown-menu-header-inner bg-deep-blue">
-                                        <div class="menu-header-image opacity-1" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
-                                        <div class="menu-header-content text-dark">
-                                            <h5 class="menu-header-title">Notifikasi</h5>
-                                            <h6 class="menu-header-subtitle">Seluruh Notifikasi anda ada disini!</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link active" data-toggle="tab" href="#tab-messages-header">
-                                            <span>Chat</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header">
-                                            <span>Umum</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header">
-                                            <span>Pusat Sekolah</span>
-                                        </a>
-                                    </li>
+        </div>
+        <!-- nav-button-wrap end-->
+        <!--  navigation --> 
+        <div class="nav-holder main-menu">
+            <nav>
+                <ul class="no-list-style">
+                    <li>
+                        <a href="tampilan-beranda-user.html" class="act-link">Home</a>
+                        <!--second level end-->
+                    </li>
+                    <!--<li>
+                        <a href="#">Listings <i class="fa fa-caret-down"></i></a>
+                        second level
+                        <ul>
+                            <li><a href="listing.html">Column map</a></li>
+                            <li><a href="listing2.html">Column map 2</a></li>
+                            <li><a href="listing3.html">Fullwidth Map</a></li>
+                            <li><a href="listing4.html">Fullwidth Map 2</a></li>
+                            <li><a href="listing5.html">Without Map</a></li>
+                            <li><a href="listing6.html">Without Map 2</a></li>
+                            <li>
+                                <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                third  level
+                                <ul>
+                                    <li><a href="listing-single.html">Style 1</a></li>
+                                    <li><a href="listing-single2.html">Style 2</a></li>
+                                    <li><a href="listing-single3.html">Style 3</a></li>
+                                    <li><a href="listing-single4.html">Style 4</a></li>
                                 </ul>
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="tab-messages-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                                <div class="no-results pt-3 pb-0">
-                                                    <div class="swal2-icon swal2-success swal2-animate-success-icon">
-                                                        <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-                                                        <span class="swal2-success-line-tip"></span>
-                                                        <span class="swal2-success-line-long"></span>
-                                                        <div class="swal2-success-ring"></div>
-                                                        <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-                                                        <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
-                                                    </div>
-                                                    <div class="results-subtitle">Hari ini tidak ada Pesan</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-events-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                                <div class="widget-content card-body">
-                                                    <div class="widget-content-wrapper">
-                                                        <div class="widget-content-left mr-3">
-                                                            <div class="avatar-icon-wrapper">
-                                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                                </div>
-                                                                <div class="avatar-icon">
-                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/2.jpg" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="widget-content-left">
-                                                            <div><b>Suharji</b> Telah menyukai postingan anda.</div>
-                                                            <span class="text-muted d-inline-flex align-items-center align-middle">1 Hari yang lalu</span>
-                                                        </div>
-                                                    </div>
-                                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                                    <div class="widget-content-wrapper">
-                                                        <div class="widget-content-left mr-3">
-                                                            <div class="avatar-icon-wrapper">
-                                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                                </div>
-                                                                <div class="avatar-icon">
-                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/21.jpeg" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="widget-content-left">
-                                                            <div><b>Abdul Hasan</b> Telah mengomentari potingan anda.</div>
-                                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                                        </div>
-                                                    </div>
-                                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                                    <div class="widget-content-wrapper">
-                                                        <div class="widget-content-left mr-3">
-                                                            <div class="avatar-icon-wrapper">
-                                                                <div class="badge badge-bottom badge-secondary badge-dot badge-dot-lg">
-                                                                </div>
-                                                                <div class="avatar-icon">
-                                                                    <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="widget-content-left">
-                                                            <div><b>Farhan Ariyanto</b> Telah membagikan halaman sekolah anda</div>
-                                                            <span class="text-muted d-inline-flex align-items-center align-middle">3 Hari yang lalu</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-errors-header" role="tabpanel">
-                                        <div class="scroll-area-sm">
-                                            <div class="scrollbar-container">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-btn-lg pr-0">
-                        <div class="widget-content p-0">
-                            <div class="widget-content-wrapper">
-                                <div class="widget-content-left">
-                                    <div class="btn-group">
-                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
-                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
-                                        </a>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
-                                            <div class="dropdown-menu-header">
-                                                <div class="dropdown-menu-header-inner bg-info">
-                                                    <div class="menu-header-image opacity-2" style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/city3.jpg');"></div>
-                                                    <div class="menu-header-content text-left">
-                                                        <div class="widget-content p-0">
-                                                            <div class="widget-content-wrapper">
-                                                                <div class="widget-content-left mr-3">
-                                                                    <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
-                                                                </div>
-                                                                <div class="widget-content-left">
-                                                                    <div class="widget-heading">Dhinda Rek</div>
-                                                                    <div class="widget-subheading opacity-8">Admin Pusat Sekolah</div>
-                                                                </div>
-                                                                <div class="widget-content-right mr-2">
-                                                                    <a href="<?php echo base_url('login/logoutApp'); ?>" class="btn-pill btn-shadow btn-shine btn btn-focus">Logout</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="scroll-area-xs" style="height: 150px;">
-                                                    <div class="scrollbar-container">
-                                                        <ul class="nav flex-column">
-                                                            <li class="nav-item-header nav-item">Akun</li>
-                                                            <li class="nav-item">
-                                                                <a href="javascript:void(0);" class="nav-link">Profil Saya
-                                                                    <div class="ml-auto badge badge-pill badge-info">8</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="javascript:void(0);" class="nav-link">Daftar Tindakan
-                                                                    <div class="ml-auto badge badge-success">New</div>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider nav-item">
-                                                </li>
-                                                <li class="nav-item-btn text-center nav-item">
-                                                    <button class="btn-wide btn btn-primary btn-sm"> Open Messages </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-content-left  ml-3 header-user-info">
-                                    <div class="widget-heading"> Alina Mclourd </div>
-                                    <div class="widget-subheading"> Admin Sekolah </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-btn-lg">
-                        <button type="button" class="hamburger hamburger--elastic open-right-drawer">
-                            <span class="fa fa-cog fa-w-16 fa-2x"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ui-theme-settings">
-            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
-                <i class="fa fa-fw fsize-2"></i>
-            </button>
-            <div class="theme-settings__inner">
-                <div class="main-card mb-3 card">
-                    <div class="card-header">Tanyakan ke Pusat Sekolah</div>
-                    <div class="scroll-area-lg">
-                        <div class="scrollbar-container">
-                            <div class="chat-wrapper p-1">
-                                <div class="chat-box-wrapper">
-                                    <div>
-                                        <div class="avatar-icon-wrapper mr-1">
-                                            <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                            <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="chat-box">Halo, ada yang bisa kami bantu?</div>
-                                        <small class="opacity-6">
-                                            11:01 AM
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="float-right">
-                                    <div class="chat-box-wrapper chat-box-wrapper-right">
-                                        <div>
-                                            <div class="chat-box">Halo admin, bagaimana cara mendaftar menjadi alumni sekolah?</div>
-                                            <small class="opacity-6">
-                                                11:01 AM
-                                            </small>
-                                        </div>
-                                        <div>
-                                            <div class="avatar-icon-wrapper ml-1">
-                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                                <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="chat-box-wrapper">
-                                    <div>
-                                        <div class="avatar-icon-wrapper mr-1">
-                                            <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                            <div class="avatar-icon avatar-icon-lg rounded">
-                                                <img src="<?php echo base_url() ?>assets/images/avatars/13.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="chat-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, pariatur numquam soluta, est eveniet consequuntur, mollitia ratione nulla officia quas iusto quam. Repudiandae temporibus soluta quae debitis dicta. Blanditiis, natus!
-                                        </div>
-
-                                        <small class="opacity-6">
-                                            11:01 AM
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="float-right">
-                                    <div class="chat-box-wrapper chat-box-wrapper-right">
-                                        <div>
-                                            <div class="chat-box">Denouncing pleasure and praising pain was born and I will give you a complete account.</div>
-                                            <small class="opacity-6">
-                                                11:01 AM
-                                            </small>
-                                        </div>
-                                        <div>
-                                            <div class="avatar-icon-wrapper ml-1">
-                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                                <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="float-right">
-                                    <div class="chat-box-wrapper chat-box-wrapper-right">
-                                        <div>
-                                            <div class="chat-box">The master-builder of human happiness.</div>
-                                            <small class="opacity-6">
-                                                11:01 AM
-                                            </small>
-                                        </div>
-                                        <div>
-                                            <div class="avatar-icon-wrapper ml-1">
-                                                <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg"></div>
-                                                <div class="avatar-icon avatar-icon-lg rounded">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <input placeholder="Ketik Pesan..." type="text" class="form-control-lg form-control">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="app-main">
-            <div class="app-sidebar sidebar-shadow">
-                <div class="app-header__logo">
-                    <div class="logo-src"></div>
-                    <div class="header__pane ml-auto">
-                        <div>
-                            <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
-                                <span class="hamburger-box">
-                                    <span class="hamburger-inner"></span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="app-header__mobile-menu">
-                    <div>
-                        <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="app-header__menu">
-                    <span>
-                        <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
-                            <span class="btn-icon-wrapper">
-                                <i class="fa fa-ellipsis-v fa-w-6"></i>
-                            </span>
-                        </button>
-                    </span>
-                </div>
-                <div class="scrollbar-sidebar">
-                    <div class="app-sidebar__inner">
-                        <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading">Menu <?php $this->session->flashdata('msg'); ?></li>
-
-                            <?php if ($menu == "beranda_as") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('beranda_as'); ?>">
-                                    <i class="metismenu-icon pe-7s-rocket"></i>Beranda
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_guru'); ?>">
-                                    <i class="metismenu-icon pe-7s-science"></i>Data Guru
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_alumni'); ?>">
-                                    <i class="metismenu-icon pe-7s-chat"></i>Data Alumni
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('prestasi'); ?>">
-                                    <i class="metismenu-icon pe-7s-world"></i>Prestasi
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('pesan'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>Pesan
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('event_sekolah'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Event
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('produk'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Produk
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('ppdb'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>PPDB
-                                </a>
-                                </li>
-
-                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('media'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Media
-                                </a>
-                                </li>
-
+                                third  level end
+                            </li>
                         </ul>
+                        second level end
+                    </li>-->
+                    <li>
+                        <a href="tampilan-event-sekolah.html">Event</a>
+                    </li>
+                    <li>
+                        <a href="#">Kami <i class="fa fa-caret-down"></i></a>
+                        <!--second level -->   
+                        <ul style="width: 180px;">
+                            <li><a href="tampilan-tentangkami-user.html">Tentang Kami</a></li>
+                            <li><a href="tampilan-kontakps-user.html">Kontak</a></li>
+                            <li><a href="tampilan-pusatbantuan.html">Pusat Bantuan</a></li>
+                            <li><a href="tampilan-pusatbantuan-syaratketentuanumum.html">Syarat & Ketentuan</a></li>
+                        </ul>
+                        <!--second level end-->                                
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- navigation  end -->
+        <!-- header-search_container -->                     
+        <div class="header-search_container header-search vis-search">
+            <div class="container small-container">
+                <div class="header-search-input-wrap fl-wrap">
+                    <!-- header-search-input --> 
+                    <div class="header-search-input">
+                        <label><i class="fal fa-keyboard"></i></label>
+                        <input type="text" placeholder="Apa yang sedang kamu cari ?"   value=""/>  
                     </div>
+                    <!-- header-search-input end -->  
+                    <!-- header-search-input --> 
+                    <div class="header-search-input location autocomplete-container">
+                        <label><i class="fal fa-map-marker"></i></label>
+                        <input type="text" placeholder="Lokasi..." class="autocomplete-input" id="autocompleteid2" value=""/>
+                        <a href="#"><i class="fal fa-dot-circle"></i></a>
+                    </div>
+                    <!-- header-search-input end -->                                        
+                    <!-- header-search-input --> 
+                    <div class="header-search-input header-search_selectinpt ">
+                        <select data-placeholder="Category" class="chosen-select no-radius" >
+                            <option>Semua kategori</option>
+                            <option>PAUD</option>
+                            <option>TK</option>
+                            <option>SD</option>
+                            <option>SMP</option>
+                            <option>SMA</option>
+                            <option>SMK</option>
+                        </select>
+                    </div>
+                    <!-- header-search-input end --> 
+                    <button class="header-search-button green-bg" onclick="window.location.href='tampilan-beranda-user.html'"><i class="far fa-search"></i> Cari </button>
                 </div>
-            </div>
-            <div class="app-main__outer">
-                <?php $this->load->view($namamodule . '/' . $namafileview); ?>
-                <!--<div class="app-wrapper-footer">
-                    <div class="app-footer">
-                        <div class="app-footer__inner">
-                            <div class="app-footer-left">
-                            </div>
-                            <div class="app-footer-right">
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+                <div class="header-search_close color-bg"><i class="fal fa-long-arrow-up"></i></div>
             </div>
         </div>
-    </div>
-    <div class="app-drawer-wrapper">
-        <div class="drawer-nav-btn">
-            <button type="button" class="hamburger hamburger--elastic is-active">
-                <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-            </button>
-        </div>
-        <div class="drawer-content-wrapper">
-            <div class="scrollbar-container">
-                <h3 class="drawer-heading">Pengaturan</h3>
-                <div class="scrollbar-sidebar">
-                    <div class="app-sidebar__inner">
-                        <ul class="vertical-nav-menu">
-                            <li class="app-sidebar__heading"> <?php $this->session->flashdata('msg'); ?></li>
-                            <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-rocket"></i>Pengaturan
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <?php if ($menu == "p_sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                        <li><?php } ?>
-                                        <a href="<?php echo base_url('p_sekolah'); ?>">
-                                            <i class="metismenu-icon"></i>Sekolah
-                                        </a>
-                                        </li>
-
-                                    <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
-                                        <li><?php } ?>
-                                        <a href="<?php echo base_url('log'); ?>">
-                                            <i class="metismenu-icon"></i>Log Aktifitas
-                                        </a>
-                                        </li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-browser"></i>Bantuan & Dukungan
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                </a>
-                                <ul>
-                                    <?php if ($menu == "sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                        <li><?php } ?>
-                                        <a href="<?php echo base_url('sekolah'); ?>">
-                                            <i class="metismenu-icon"></i>Pusat Bantuan
-                                        </a>
-                                        </li>
-                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
-                                            <li><?php } ?>
-                                            <a href="<?php echo base_url('log'); ?>">
-                                                <i class="metismenu-icon"></i>Kotak Masuk Dukungan
-                                            </a>
-                                            </li>
-                                            <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
-                                                <li><?php } ?>
-                                                <a href="<?php echo base_url('log'); ?>">
-                                                    <i class="metismenu-icon"></i>Laporkan Masalah
-                                                </a>
-                                                </li>
-                                </ul>
-                            </li>
-                            </li>
-                    </div>
+        <!-- header-search_container  end --> 
+        <!-- wishlist-wrap--> 
+        <div class="header-modal novis_wishlist">
+            <!-- header-modal-container--> 
+            <div class="header-modal-container scrollbar-inner fl-wrap" data-simplebar>
+                <!--widget-posts-->
+                <div class="widget-posts  fl-wrap">
+                    <ul class="no-list-style">
+                        <li>
+                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/sd1.jpg" alt=""></a>  
+                            </div>
+                            <div class="widget-posts-descr">
+                                <h4><a href="tampilan-beranda-sekolah.html">SDN Ardimulyo 1</a></h4>
+                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
+                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html" >Sekolah Dasar </a></div>
+                                <div class="widget-posts-descr-score">4.1</div>
+                                <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/tk1.jpg" alt=""></a>
+                            </div>
+                            <div class="widget-posts-descr">
+                                <h4><a href="tampilan-beranda-sekolah.html">TK Barnadian Uta</a></h4>
+                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur, Indonesia </a></div>
+                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html" >Taman Kanak-Kanak </a>  </div>
+                                <div class="widget-posts-descr-score">5.0</div>
+                                <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/paud2.jpg" alt=""></a>
+                            </div>
+                            <div class="widget-posts-descr">
+                                <h4><a href="tampilan-beranda-sekolah.html">PAUD Bhayangkara 205</a></h4>
+                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>Lebak Bulus, Jakarta, Indonesia</a></div>
+                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html" >Pendidikan Anak Usia Dini</a> </div>
+                                <div class="widget-posts-descr-score">4.2</div>
+                                <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/smk1.jpg" alt=""></a>
+                            </div>
+                            <div class="widget-posts-descr">
+                                <h4><a href="tampilan-beranda-sekolah.html">SMK Negeri 1 Probolinggo</a></h4>
+                                <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
+                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html" >Sekolah Menengah Kejuruan</a> <a href="listing.html" >Gym</a> </div>
+                                <div class="widget-posts-descr-score">5.0</div>
+                                <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                <!-- widget-posts end-->
+            </div>
+            <!-- header-modal-container end--> 
+            <div class="header-modal-top fl-wrap">
+                <h4>Sekolah Disukai : <span><strong></strong> Sekolah</span></h4>
+                <div class="close-header-modal"><i class="far fa-times"></i></div>
             </div>
         </div>
-    </div>
-    <div class="app-drawer-overlay d-none animated fadeIn"></div>
+        <!--wishlist-wrap end --> 
+    </header>
 
     <script type="text/javascript" src="<?php echo base_url('assets/') ?>scripts/main.js"></script>
 </body>
