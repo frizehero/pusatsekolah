@@ -49,7 +49,7 @@ class Beranda_as extends MX_Controller
 	{
 		$data = array(
 			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_",
+			'namafileview' 	=> "V_beranda_as",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
