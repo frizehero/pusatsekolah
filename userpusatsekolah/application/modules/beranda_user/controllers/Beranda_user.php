@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Beranda_as extends MX_Controller
+class Beranda_user extends MX_Controller
 {
 
 	function __construct()
@@ -33,8 +33,8 @@ class Beranda_as extends MX_Controller
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 
 			$data = array(
-				'namamodule' 		=> "beranda_as",
-				'namafileview' 		=> "V_beranda_as",
+				'namamodule' 		=> "beranda_user",
+				'namafileview' 		=> "V_beranda_user",
 				'tampil'			=> $this->M_beranda_as->tampil(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
@@ -54,7 +54,7 @@ class Beranda_as extends MX_Controller
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function tentangview()
+	/*function tentangview()
 	{
 		//echo $this->session->userdata('session_id');
 		{
@@ -70,7 +70,7 @@ class Beranda_as extends MX_Controller
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}
+	}*/
 
 		// Halaman Edit
 	function editview($id)

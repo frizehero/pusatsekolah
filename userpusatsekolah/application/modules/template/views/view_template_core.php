@@ -258,6 +258,14 @@
             <!--wishlist-wrap end --> 
         </header>
         <!-- header end-->
+
+        <div id="wrapper">
+                <!-- content-->
+                <div class="content">
+                <?php $this->load->view($namamodule . '/' . $namafileview); ?>
+                </div>
+                <!--content end-->
+            </div>
 </body>
 
 <!-- Optional JavaScript -->
