@@ -115,7 +115,7 @@
                             <!-- listsearch-input-item-->
                             <div class="col-md-2">
                                 <div class="listsearch-input-item">
-                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
+                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class=""></i>Tambah Alumni</button>
                                 </div>
                             </div>
                             <!-- listsearch-input-item end-->                                         
@@ -124,6 +124,8 @@
             <div class="limit-box fl-wrap"></div>
             <!--tab end-->
             <section style="padding-top: 20px; padding-bottom: 10px;">
+                <?php $no = 1;
+                foreach ($tampil as $rowP) { ?>
                     <div class="gallery-item">
                         <!-- listing-item  -->
                         <div class="listing-item" style="height: 433px;">
@@ -131,27 +133,29 @@
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
                                     <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
+                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
                                     </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
                                     </div>
                                 </div>
                                 <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title fl-wrap ">
                                         <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Álvaro Rico Ladera</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
+                                            <h3 class="title-sin_map"><a href="listing-single.html"><?php echo $rowP->nama_alumni; ?></a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni <?php echo $rowP->thlulus_alumni; ?></b></a></div>
                                         </div>
                                     </div>
                                     <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                        <p class="small-text"><?php echo $rowP->deskripsi_alumni; ?></p>
                                     </div>
                                 </div>
                             </article>
                         </div>
                         <!-- listing-item end -->                              
                     </div>
+                <?php $no++;
+                } ?>
                     <div class="gallery-item">
                         <!-- listing-item  -->
                         <div class="listing-item" style="height: 433px;">
@@ -215,17 +219,17 @@
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
                                     <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
+                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
                                     </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
                                     </div>
                                 </div>
                                 <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title fl-wrap">
                                         <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Ester Expósito</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Álvaro Rico Ladera</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
                                         </div>
                                     </div>
                                     <div class="geodir-category-text fl-wrap">
