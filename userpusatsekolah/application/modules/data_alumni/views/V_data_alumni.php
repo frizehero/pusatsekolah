@@ -1,305 +1,368 @@
-<div class="app-main__inner">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="d-flex flex-wrap justify-content-between">
-                <div class="col-12 col-md-9 p-0 mb-3">
-                    <div class="search-wrapper active">
-                        <div class="input-holder" style="background-color: #fff;">
-                            <input type="text" class="search-input" placeholder="Cari...">
-                            <button class="search-icon" style="background-color: #fff;"><span></span></button>
-                        </div>
-                    </div>  
-                </div>
-                <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                    <div class="mb-3 mr-3 btn-group">
-                        <button type="button" aria-haspopup="true" aria-expanded="false"
-                            data-toggle="dropdown" class="dropdown-toggle btn-shadow btn btn-primary">Filter
-                        </button>
-                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                            <h6 tabindex="-1" class="dropdown-header">Filter</h6>
-                            <div class="nav-item-divider nav-item"></div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Semua
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="nav-item-divider nav-item"></div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Angkatan
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Tahun Lulus
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Alumni Perempuan
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Alumni Laki-Laki
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Alumni Terpopuler
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Alumni Berprestasi Akademik
-                                        
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Alumni Berprestasi Non-Akademik
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- content-->
+<div class="content">
+    <!--section  -->
+    <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
+        <div class="bg-parallax-wrap">
+            <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="overlay"></div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-6 col-xl-4">
-            <div class="card mb-3 widget-content bg-night-fade">
-                <div class="widget-content-wrapper text-white">
-                    <div class="widget-content-left">
-                        <div class="widget-heading">Alumni Perempuan</div>
-                        <div class="widget-subheading"></div>
+        <div class="container">
+            <div class="list-single-header-item  fl-wrap">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>SMK Negeri 1 Kota Probolinggo<span class="verified-badge"><i class="fal fa-check"></i></span></h1>
+                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
                     </div>
-                    <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><?php echo $totalperempuan?></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-            <div class="card mb-3 widget-content bg-arielle-smile">
-                <div class="widget-content-wrapper text-white">
-                    <div class="widget-content-left">
-                        <div class="widget-heading">Alumni Laki-Laki</div>
-                        <div class="widget-subheading"></div>
-                    </div>
-                    <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><?php echo $totallaki?></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-6 col-xl-4">
-            <div class="card mb-3 widget-content bg-happy-green">
-                <div class="widget-content-wrapper text-white">
-                    <div class="widget-content-left">
-                        <div class="widget-heading">Total Alumni</div>
-                        <div class="widget-subheading"></div>
-                    </div>
-                    <div class="widget-content-right">
-                        <div class="widget-numbers text-white"><?php echo $totalalumni?></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php tampilnotif() ?>
-    <div class="row">
-        <?php $no = 1;
-        foreach ($tampil as $rowP) { ?>
-            <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="card-shadow-primary card-border mb-3 card">
-                    <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-dark">
-                            <div class="menu-header-content">
-                                <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
-                                    <div class="avatar-icon">
-                                        <img src="<?php echo base_url() ?>assets/images/avatars/18.png" alt="Avatar 5">
-                                    </div>
-                                </div>
-                                <div>
-                                    <h5 class="menu-header-title"><?php echo $rowP->nama_alumni; ?></h5>
-                                    <h6 class="menu-header-subtitle">Alumni <?php echo $rowP->thlulus_alumni; ?></h6>
-                                </div>
-                                <div class="menu-header-btn-pane pt-1">
-                                    <a href="<?php echo base_url('data_alumni/detailprofil/' . encrypt_url($rowP->id_alumni)); ?>">
-                                        <button class="btn-icon btn btn-warning btn-sm">Profil Lengkap</button>
-                                    </a>
-                                </div>
+                    <div class="col-md-3">
+                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="tampilan-inbox-user.html">
+                            <div class="listing-rating-count-wrap single-list-count">
+                                <div class="review-score">4.1</div>
+                                <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                <br>
+                                <div class="reviews-count">2 Rating</div>
                             </div>
-                        </div>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left center-elem mr-2">
-                                        <i class="pe-7s-user text-muted fsize-2"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Nama : <?php echo $rowP->nama_alumni;?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left center-elem mr-2">
-                                        <i class="pe-7s-map-2 text-muted fsize-2"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Tempat Lahir : <?php echo $rowP->tmplahir_alumni; ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left center-elem mr-2">
-                                        <i class="pe-7s-date text-muted fsize-2"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Tanggal Lahir : <?php echo $rowP->tgllahir_alumni; ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left center-elem mr-2">
-                                        <i class="pe-7s-home text-muted fsize-2"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Alamat : <?php echo $rowP->alamatlengkap_alumni; ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left center-elem mr-2">
-                                        <i class="pe-7s-ribbon text-muted fsize-2"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Status : <?php echo $rowP->status_alumni; ?></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="text-center d-block card-footer">
-                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus Alumni</button>
-                        <a href="<?php echo base_url('pesan'); ?>">
-                            <button class="border-0 btn-transition btn btn-outline-success">Kirim Pesan</button>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                        <form action="<?php echo base_url('data_alumni/hapus') ?>" method="POST" enctype="multipart/form-data">
-                            <div class="modal-body">
-                                <!--Modal body-->
-                                <p class="text-semibold text-main"></p>
-                                <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_alumni ?></b> ? </p>
-
-                                <input name="id" type="hidden" value="<?php echo $rowP->id_alumni ?>" class="form-control">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
-                                <button class="btn btn-primary" type="submit">Hapus</button>
-                            </div>
-                        </form>
-
-                    </div>
+            <div class="list-single-header_bottom fl-wrap">
+                <a class="listing-item-category-wrap" href="#">
+                    <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
+                    <span>Negeri</span>
+                </a>
+                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                <div class="geodir_status_date gsd_open">Online</div>
+                <div class="list-single-stats">
+                    <ul class="no-list-style">
+                        <li><span class="viewed-counter"><i class="fas fa-eye"></i> Di lihat -  156 </span></li>
+                        <li><span class="bookmark-counter"><i class="fas fa-heart"></i> Pengikut 24 </span></li>
+                    </ul>
                 </div>
             </div>
-        <?php $no++;
-        } ?>
-    </div>
-    <div class="row">
-        <div class="row">
-            <div class="col-sm-12 col-md-5">
-                <div class="dataTables_info" id="example_info" role="status" aria-live="polite">
+        </div>
+    </section>
+    <!-- scroll-nav-wrapper-->
+    <div class="scroll-nav-wrapper fl-wrap">
+        <div class="container">
+            <nav class="scroll-nav">
+                <ul class="no-list-style">
+                    <li><a href="tampilan-beranda-sekolah.html"><i class="fal fa-images"></i>Beranda</a></li>
+                    <li><a href="tampilan-data-guru.html"><i class="fal fa-info"></i>Guru</a></li>
+                    <li><a class="act-scrlink" href="tampilan-data-alumni.html"><i class="fal fa-image"></i>Alumni</a></li>
+                    <li><a href="tampilan-beranda-event-sekolah.html"><i class="fal fa-utensils"></i>Event</a></li>
+                    <li><a href="tampilan-produk-sekolah.html"><i class="fal fa-comments-alt"></i>Produk</a></li>
+                    <li><a href="tampilan-media-sekolah.html"><i class="fal fa-images"></i>Media</a></li>
+                </ul>
+            </nav>
+            <div class="scroll-nav-wrapper-opt">
+                <a href="#" class="scroll-nav-wrapper-opt-btn"> <i class="fas fa-heart"></i> Ikuti </a>
+                <a href="#" class="scroll-nav-wrapper-opt-btn showshare"> <i class="fas fa-share"></i> Bagikan </a>
+                <div class="share-holder hid-share">
+                    <div class="share-container  isShare"></div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-7">
-                <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <nav class="pagination-rounded" aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">1</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">4</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">5</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">...</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">19</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">20</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                <div class="show-more-snopt-tooltip">
+                    <a href="#"> <i class="fas fa-comment-alt"></i> Write a review</a>
+                    <a href="#"> <i class="fas fa-flag-alt"></i> Report </a>
                 </div>
             </div>
         </div>
     </div>
+        <div class="container">
+            <!--tab -->
+                <div id="filters-search" class="tab-content  first-tab ">
+                <div class="container" style="padding-top: 20px;"></div>
+                    <div class="fl-wrap">
+                        <div class="row">
+                            <!-- listsearch-input-item-->
+                            <div class="col-md-4">
+                                <div class="listsearch-input-item">
+                                    <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                    <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                </div>
+                            </div>
+                            <!-- listsearch-input-item end-->
+                            <!-- listsearch-input-item-->
+                            <div class="col-md-3">
+                                <div class="listsearch-input-item">
+                                    <select data-placeholder="Location" class="chosen-select no-search-select" >
+                                        <option>Semua Kategori</option>
+                                        <option>Terpopuler</option>
+                                        <option>Paling Banyak Dicari</option>
+                                        <option>Alumni Berprestasi Akademik</option>
+                                        <option>Alumni Berprestasi Non-Akademik</option>
+                                        <option>Alumni Bekerja</option>
+                                        <option>Alumni Bersekolah</option>
+                                        <option>Alumni Laki-Laki</option>
+                                        <option>Alumni Perempuan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- listsearch-input-item end-->
+                            <!-- listsearch-input-item-->
+                            <div class="col-md-3">
+                                <div class="listsearch-input-item">
+                                    <select data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                        <option>Semua Angkatan</option>
+                                        <option>Angkatan 2020</option>
+                                        <option>Angkatan 2019</option>
+                                        <option>Angkatan 2018</option>
+                                        <option>Angkatan 2017</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- listsearch-input-item end-->  
+                            <!-- listsearch-input-item-->
+                            <div class="col-md-2">
+                                <div class="listsearch-input-item">
+                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
+                                </div>
+                            </div>
+                            <!-- listsearch-input-item end-->                                         
+                        </div>
+                    </div>
+            <div class="limit-box fl-wrap"></div>
+            <!--tab end-->
+            <section style="padding-top: 20px; padding-bottom: 10px;">
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Álvaro Rico Ladera</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                              
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/22.jpg" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/23.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Mina El Hammani</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Mina El Hammani</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i>  <b>Alumni 2015</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->  
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/8.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/9.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Danna Paola</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Danna Paola</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                                   
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap ">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Ester Expósito</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                                                            
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Álvaro Rico Ladera</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                              
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/22.jpg" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/23.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Mina El Hammani</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Mina El Hammani</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i>  <b>Alumni 2015</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->  
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/8.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/9.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Danna Paola</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Danna Paola</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                                   
+                    </div>
+                    <div class="gallery-item">
+                        <!-- listing-item  -->
+                        <div class="listing-item" style="height: 433px;">
+                            <article class="geodir-category-listing fl-wrap">
+                                <div class="geodir-category-img">
+                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
+                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
+                                    </a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
+                                        <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-content fl-wrap title-sin_item">
+                                    <div class="geodir-category-content-title fl-wrap ">
+                                        <div class="geodir-category-content-title-item">
+                                            <h3 class="title-sin_map"><a href="listing-single.html">Ester Expósito</a></h3>
+                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="geodir-category-text fl-wrap">
+                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- listing-item end -->                                                            
+                    </div>
+                <!-- listing-item-container -->
+                <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid" style="padding-top: 0;">                                                      
+                    <div class="pagination fwmpag">
+                        <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
+                        <a href="#">1</a>
+                        <a href="#" class="current-page">2</a>
+                        <a href="#">3</a>
+                        <a href="#">...</a>
+                        <a href="#">7</a>
+                        <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <!-- listing-item-container end -->
+            </section>
+        </div>
+    <!--section end-->
 </div>
+<!--content end-->

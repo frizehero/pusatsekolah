@@ -285,7 +285,7 @@
                                                                             <div class="modal-body">
                                                                                 <!--Modal body-->
                                                                                 <p class="text-semibold text-main"></p>
-                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Video Sekolah <b><?php echo $rowP->video_media ?></b> ? </p>
+                                                                                <p style="color: black;">Anda Yakin Ingin Menghapus Video Sekolah <b><?php echo $rowP->vidio_media ?></b> ? </p>
 
                                                                                 <input name="id"  type="hidden" value="<?php echo $rowP->id_media ?>" class="form-control">
                                                                             </div>
