@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Beranda_user extends MX_Controller
+class Daftar_sd extends MX_Controller
 {
 
 	function __construct()
@@ -34,7 +34,7 @@ class Beranda_user extends MX_Controller
 
 			$data = array(
 				'namamodule' 		=> "daftar_sd",
-				'namafileview' 		=> "V_beranda_user",
+				'namafileview' 		=> "V_daftar_sd",
 				'tampil'			=> $this->M_beranda_as->tampil(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
@@ -48,8 +48,8 @@ class Beranda_user extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
+			'namamodule' 	=> "daftar_sd",
+			'namafileview' 	=> "V_daftar_sd",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
