@@ -28,12 +28,6 @@ class Pesan extends MX_Controller {
 		redirect('pesan');
 	}
 
-	function edit()
-	{
-		$this->M_pesan->edit();
-		redirect('pesan');
-	}
-
 	function hapus($id)
 	{
 		$this->M_pesan->hapus($id);
