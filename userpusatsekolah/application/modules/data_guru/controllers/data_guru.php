@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Dataguru_user extends MX_Controller
+class Data_guru extends MX_Controller
 {
 
 	function __construct()
@@ -17,7 +17,7 @@ class Dataguru_user extends MX_Controller
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "dataguru_user",
+			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->tampil(),
 		);
