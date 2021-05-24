@@ -64,9 +64,9 @@
                 Hai, Emak
             </div>
             <ul>
-                <li><a href="tampilan-edit-profiluser.html"> Akun Saya</a></li>
-                <li><a href="tampilan-nilaips-user.html"> Nilai Kami! </a></li>
-                <li><a href="tampilan-beranda-nonlogin.html">Log Out</a></li>
+                <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"> Akun Saya</a></li>
+                <li><a href="<?php echo base_url('tampilan_nilaikami'); ?>"> Nilai Kami! </a></li>
+                <li><a href="<?php echo base_url('login'); ?>">Log Out</a></li>
             </ul>
         </div>
         <!-- lang-wrap end-->
@@ -86,7 +86,7 @@
                         <!--second level end-->
                     </li>
                     <li>
-                        <a href="tampilan-event-sekolah.html">Event</a>
+                        <a href="<?php echo base_url('tampilan_event'); ?>">Event</a>
                     </li>
                     <li>
                         <a href="#">Kami <i class="fa fa-caret-down"></i></a>
@@ -147,45 +147,45 @@
                 <div class="widget-posts  fl-wrap">
                     <ul class="no-list-style">
                         <li>
-                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/sd1.jpg" alt=""></a>
+                            <div class="widget-posts-img"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/sd1.jpg" alt=""></a>
                             </div>
                             <div class="widget-posts-descr">
-                                <h4><a href="tampilan-beranda-sekolah.html">SDN Ardimulyo 1</a></h4>
+                                <h4><a href="<?php echo base_url('beranda_su'); ?>">SDN Ardimulyo 1</a></h4>
                                 <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html">Sekolah Dasar </a></div>
+                                <div class="widget-posts-descr-link"><a href="<?php echo base_url('daftar_sd'); ?>">Sekolah Dasar </a></div>
                                 <div class="widget-posts-descr-score">4.1</div>
                                 <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                             </div>
                         </li>
                         <li>
-                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/tk1.jpg" alt=""></a>
+                            <div class="widget-posts-img"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/tk1.jpg" alt=""></a>
                             </div>
                             <div class="widget-posts-descr">
-                                <h4><a href="tampilan-beranda-sekolah.html">TK Barnadian Uta</a></h4>
+                                <h4><a href="<?php echo base_url('beranda_su'); ?>">TK Barnadian Uta</a></h4>
                                 <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Surabaya, Jawa Timur, Indonesia </a></div>
-                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html">Taman Kanak-Kanak </a> </div>
+                                <div class="widget-posts-descr-link"><a href="<?php echo base_url('daftar_tk'); ?>">Taman Kanak-Kanak </a> </div>
                                 <div class="widget-posts-descr-score">5.0</div>
                                 <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                             </div>
                         </li>
                         <li>
-                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/paud2.jpg" alt=""></a>
+                            <div class="widget-posts-img"><a href="<?php echo base_url('beranda_su'); ?>"><img src="images/sekolah/paud2.jpg" alt=""></a>
                             </div>
                             <div class="widget-posts-descr">
-                                <h4><a href="tampilan-beranda-sekolah.html">PAUD Bhayangkara 205</a></h4>
+                                <h4><a href="<?php echo base_url('beranda_su'); ?>">PAUD Bhayangkara 205</a></h4>
                                 <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>Lebak Bulus, Jakarta, Indonesia</a></div>
-                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html">Pendidikan Anak Usia Dini</a> </div>
+                                <div class="widget-posts-descr-link"><a href="<?php echo base_url('daftar_paud'); ?>">Pendidikan Anak Usia Dini</a> </div>
                                 <div class="widget-posts-descr-score">4.2</div>
                                 <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                             </div>
                         </li>
                         <li>
-                            <div class="widget-posts-img"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/smk1.jpg" alt=""></a>
+                            <div class="widget-posts-img"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/smk1.jpg" alt=""></a>
                             </div>
                             <div class="widget-posts-descr">
-                                <h4><a href="tampilan-beranda-sekolah.html">SMK Negeri 1 Probolinggo</a></h4>
+                                <h4><a href="<?php echo base_url('beranda_su'); ?>">SMK Negeri 1 Probolinggo</a></h4>
                                 <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
-                                <div class="widget-posts-descr-link"><a href="tampilan-beranda-sekolah.html">Sekolah Menengah Kejuruan</a> <a href="listing.html">Gym</a> </div>
+                                <div class="widget-posts-descr-link"><a href="<?php echo base_url('daftar_smp'); ?>">Sekolah Menengah Kejuruan</a> <a href="listing.html">Gym</a> </div>
                                 <div class="widget-posts-descr-score">5.0</div>
                                 <div class="clear-wishlist"><i class="fal fa-times-circle"></i></div>
                             </div>

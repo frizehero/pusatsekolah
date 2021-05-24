@@ -18,7 +18,7 @@
     <meta name="msapplication-tap-highlight" content="no">
 
 <link href="<?php echo base_url() ?>main.css" rel="stylesheet"></head>
-<link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
+<link rel="shortcut icon" href="<?php echo base_url() ?>images/logo.ico">
 
 <body>
     <div class="app-container app-theme-white body-tabs-shadow">
