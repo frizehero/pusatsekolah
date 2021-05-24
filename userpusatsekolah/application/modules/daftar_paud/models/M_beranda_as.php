@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_daftar_paud extends CI_Model
+class M_beranda_as extends CI_Model
 {
 
 	function tampil()
