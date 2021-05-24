@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Ppdb extends MX_Controller
+class Ppdb_user extends MX_Controller
 {
 
 	function __construct()
@@ -22,7 +22,7 @@ class Ppdb extends MX_Controller
 		} else {
 
 			$data = array(
-				'namamodule' 	=> "ppdb",
+				'namamodule' 	=> "ppdb_user",
 				'namafileview' 	=> "V_ppdb",
 				'tampil'		=> $this->M_ppdb->tampil(),
 			);
@@ -33,7 +33,7 @@ class Ppdb extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "ppdb",
+			'namamodule' 	=> "ppdb_user",
 			'namafileview' 	=> "V_ppdb_tambah",
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -43,7 +43,7 @@ class Ppdb extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "ppdb",
+			'namamodule' 	=> "ppdb_user",
 			'namafileview' 	=> "V_ppdb_edit",
 			'tampil'		=> $this->M_ppdb->tampiledit($id),
 		);
@@ -53,25 +53,25 @@ class Ppdb extends MX_Controller
 	function tambah()
 	{
 		$this->M_ppdb->tambah();
-		redirect('ppdb');
+		redirect('ppdb_user');
 	}
 
 	function edit()
 	{
 		$this->M_ppdb->edit();
-		redirect('ppdb');
+		redirect('ppdb_user');
 	}
 
 	function hapus($id)
 	{
 		$this->M_ppdb->hapus($id);
-		redirect('ppdb');
+		redirect('ppdb_user');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "ppdb",
+			'namamodule' 	=> "ppdb_user",
 			'namafileview' 	=> "V_ppdb",
 			'tampil'		=> $this->M_ppdb->cari(),
 		);
