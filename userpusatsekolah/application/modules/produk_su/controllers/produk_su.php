@@ -23,6 +23,16 @@ class Produk_su extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function detailview()
+	{
+
+			$data = array(
+				'namamodule' 	=> "produk_su",
+				'namafileview' 	=> "V_detail_produk",
+			);
+			echo Modules::run('template/tampilCore', $data);
+	}
+
 		// halaman tambah
 	function tambahview()
 	{

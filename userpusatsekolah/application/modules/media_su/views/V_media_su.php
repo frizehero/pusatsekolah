@@ -45,12 +45,12 @@
         <div class="container">
             <nav class="scroll-nav">
                 <ul class="no-list-style">
-                    <li><a href="tampilan-beranda-sekolah.html"><i class="fal fa-images"></i>Beranda</a></li>
-                    <li><a href="tampilan-data-guru.html"><i class="fal fa-info"></i>Guru</a></li>
-                    <li><a href="tampilan-data-alumni.html"><i class="fal fa-image"></i>Alumni</a></li>
-                    <li><a href="tampilan-beranda-event-sekolah.html"><i class="fal fa-utensils"></i>Event</a></li>
-                    <li><a href="tampilan-produk-sekolah.html"><i class="fal fa-comments-alt"></i>Produk</a></li>
-                    <li><a class="act-scrlink" href="tampilan-media-sekolah.html"><i class="fal fa-images"></i>Media</a></li>
+                    <li><a href="<?php echo base_url('beranda_su'); ?>"><i class="fal fa-images"></i>Beranda</a></li>
+                    <li><a href="<?php echo base_url('data_guru'); ?>"><i class="fal fa-info"></i>Guru</a></li>
+                    <li><a href="<?php echo base_url('data_alumni'); ?>"><i class="fal fa-image"></i>Alumni</a></li>
+                    <li><a href="<?php echo base_url('event_su'); ?>"><i class="fal fa-utensils"></i>Event</a></li>
+                    <li><a href="<?php echo base_url('produk_su'); ?>"><i class="fal fa-comments-alt"></i>Produk</a></li>
+                    <li><a class="act-scrlink" href="<?php echo base_url('media_su'); ?>"><i class="fal fa-images"></i>Media</a></li>
                 </ul>
             </nav>
             <div class="scroll-nav-wrapper-opt">
