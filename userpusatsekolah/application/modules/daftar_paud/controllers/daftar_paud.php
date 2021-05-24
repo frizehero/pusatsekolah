@@ -30,15 +30,15 @@ class Daftar_paud extends MX_Controller
 			redirect('login');
 		} else {
 			$iduser = $this->session->userdata('session_id');
-			$idsekolahx = $this->M_daftar_paud->ambilidsekolah($iduser);
+			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 
 			$data = array(
 				'namamodule' 		=> "daftar_paud",
 				'namafileview' 		=> "V_daftar_paud",
-				'tampil'			=> $this->M_daftar_paud->tampil(),
+				'tampil'			=> $this->M_beranda_as->tampil(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
-				'tampilkompetensi'	=> $this->M_daftar_paud->tampilkompetensi($idsekolahx['id_sekolah']),
+				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
@@ -48,8 +48,8 @@ class Daftar_paud extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
+			'namamodule' 	=> "daftar_sd",
+			'namafileview' 	=> "V_daftar_sd",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
