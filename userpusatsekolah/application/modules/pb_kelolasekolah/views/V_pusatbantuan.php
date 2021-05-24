@@ -42,12 +42,12 @@
                         <div class="faq-section fl-wrap">
                             <!-- accordion-->
                             <div class="accordion">
-                                <a class="toggle act-accordion" href="#mencarisekolah" style="font-size: 17px; animation: none;">Pencari Sekolah<span></span></a>
-                                <div class="accordion-inner visible">
+                                <a class="toggle" style="font-size: 17px;">Pencari Sekolah<span></span></a>
+                                <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
-                                                <a href="#mencarisekol" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
+                                            <li style="padding: 15px 0px 15px 0px;">
+                                                <a href="tampilan-pusatbantuan.html" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-informasisekolah.html" style="color: #384F95; font-size: 15px;">Informasi Sekolah</a>
@@ -58,12 +58,12 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle" href="#" style="font-size: 17px;">Pemilik Akun Sekolah<span></span></a>
-                                <div class="accordion-inner">
+                                <a class="toggle act-accordion" href="#kelolasekolah" style="font-size: 17px;">Pemilik Akun Sekolah<span></span></a>
+                                <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-kelolasekolah.html" style="color: #384F95; font-size: 15px;">Kelola Sekolah</a>
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                                <a href="#kelolasekolah" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Kelola Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-premium.html" style="color: #384F95; font-size: 15px;">Premium</a>
@@ -101,7 +101,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-produklayanan.html" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
@@ -120,64 +120,83 @@
                         </div>
                         <!--box-widget-item end -->                                            
                     </div>
-                    <div class="col-md-8" id="mencarisekolah">
+                    <div class="col-md-8" id="kelolasekolah">
                         <div class="ab_text">
                             <div class="ab_text-title fl-wrap">
-                                <h3>Mencari Sekolah</h3>
+                                <h3>Kelola Sekolah</h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <div class="faq-section fl-wrap" id="mencarisekolah">
+                            <div class="faq-section fl-wrap" id="kelolasekolah">
                             <!-- accordion-->
                                 <div class="accordion">
-                                    <a class="toggle act-accordion" href="#" style="font-size: 15px;">Bagaimana cara mencari sekolah di Pusat Sekolah?<span></span></a>
+                                    <a class="toggle act-accordion" href="#" style="font-size: 15px;">Bagaimana cara mendaftarkan akun sekolah?<span></span></a>
                                     <div class="accordion-inner visible">
-                                        <p style="font-size: 14px;">Anda dapat dengan mudah mencari Sekolah di Pusat Sekolah. Pencarian bisa lebih tepat dengan mencari sekolah berdasarkan area, kota, kampus, atau bahkan stasiun dan halte. Untuk mencari Sekolah : </p>
+                                        <p style="font-size: 14px;">Daftarkan akun sekolah Anda dengan cara sebagai berikut :</p>
                                         
-                                        <p style="font-size: 14px;">1. Pada halaman utama Pusat Sekolah masukkan lokasi / area / alamat kos yang ingin Anda cari.<br>
-                                        2. Anda juga bisa menggunakan pencarian populer berdasarkan : PAUD / SD / SMP / SMA / dan SMK.<br>
-                                        3. Untuk pencarian lebih tepat, gunakan fitur untuk melihat semua filter yang tersedia.<br>
-                                        4. Cari sekolah yang tersedia atau gunakan peta untuk menemukan lokasi yang Anda inginkan.<br>
-                                        5. Klik salah satu sekolah untuk membukanya. Pelajari lebih lanjut dengan baca deskripsi, fasilitas yang tersedia dan ulasan yang ditinggalkan alumni sekolah lain untuk sekolah tersebut.<br>
-                                        6. Jika ada pertanyaan, gunakan fitur pesan (chat) sekolah.</p>
-
-                                        <p style="font-size: 14px;">Anda juga dapat klik ikon hati / Simpan untuk menyimpan sekolah favorit Anda (pastikan sudah login akun sebagai pencari sekolah terlebih dahulu) agar dapat dilihat di lain waktu. Bagikan skeolah yang menarik ke teman-teman Anda dengan klik Bagikan.</p>
-                                    </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;">Bagaimana cara menggunakan filter pencarian?<span></span></a>
-                                    <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Filter pencarian yang tersedia akan membantu Anda dalam mencari sekolah yang sesuai kebutuhan Anda. Tentu untuk mendapatkan hasil yang akurat Anda harus mengawali pencarian menggunakan lokasi lengkap yang diinginkan.</p>
-
-                                        <div class="facilities-list-title"> Deskripsi filter : </div><br>
-
-                                        <p style="font-size: 14px;">Pusat Sekolah menyediakan beragam filter untuk membantu Anda menemukan Sekolah yang dicari. Beberapa di antaranya bisa Anda temukan dengan memilih Filter Lanjutan di bawah filter yang disediakan.</p>
-
-                                        <div class="facilities-list-title"> - Jenjang </div><br>
-                                        <p style="font-size: 14px;">Pilih Jenjang Sekolah yang Anda cari berdasarkan : PAUD, TK, SD, SMP, SMA, atau SMK.</p>
-
-                                        <div class="facilities-list-title"> - Lokasi </div><br>
-                                        <p style="font-size: 14px;">Pilih Lokasi Sekolah yang Anda cari berdasarkan : Terdekat, Kota, Provinsi, atau alamat yang Anda cari.</p> 
-
-                                        <div class="facilities-list-title"> - Pusat Sekolah Checked </div><br>
-                                        <p style="font-size: 14px;">Akan menampilkan daftar Sekolah yang kondisinya sesuai dengan iklan dan sudah dikunjungi oleh tim Pusat Sekolah.</p>
-
-                                        <p style="font-size: 14px;">Kedepannya kami akan terus berusaha agar Anda dengan mudah mendapatkan sekolah yang sesuai dengan kebutuhan Anda di Pusat Sekolah.</p>                                                       
-                                    </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;"> Bagaimana cara menyimpan kos yang saya sukai?  <span></span></a>
-                                    <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Simpan Sekolah yang disukai agar dapat Anda lihat kembali di lain waktu dengan cara berikut :</p>
                                         <p style="font-size: 14px;">
-                                            1. Login akun Pusat Sekolah, kemudian pilih skeolah yang ingin disimpan.<br>
-                                            2. Klik ikon hati yang berada di kiri atas tampilan sekolah. <br>
-                                            3. Anda berhasil menyimpan sekolah. Cek kembali sekolah yang Anda simpan pada menu Histori tab Favorit.<br>
+                                            1. Login akun pencari sekolah. Pada halaman utama, klik tombol 'Daftarkan Sekolahmu', maka akan mengantarkan Anda ke halaman yang berisikan foorm pendaftaran akun sekolah.<br>
+                                            2. Lanjutkan dengan mengisi data - data yang harus Anda lengkapi untuk kebutuhan pembuatan akun sekolah.<br>
+                                            3. Masukkan data lokasi sekolah dengan menggeser pin pada peta sesuai dengan lokasi sekolah.<br>
+                                            4. Masukkan juga alamat lengkap sekolah, kemudian klik Lanjutkan.<br>
+                                            5. Lengkapi data sekolah seperti nama sekolah, jenjang sekolah, dsb.<br>
+                                            6. Masukkan hasil foto surat perjanjian antara sekolah dengan Pusat Sekolah, apabila belum memiliki format surat Anda dapat mengunduhnya terlebih dahulu.<br>
+                                            7. Centang syarat dan ketentuan yang berlaku, kemudian klik Upload.<br>
+                                            8. Permintaan pembuatan akun skeolah Anda akan diverifikasi oleh tim Pusat Sekolah maksimal 2×24 jam (hari kerja).
                                         </p>
                                     </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;"> Bagaimana cara mendapatkan alamat sekolah? <span></span></a>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Bagaimana cara menambahkan foto pada akun sekolah?<span></span></a>
                                     <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Dapatkan alamat Sekolah dengan klik Tanya Alamat Lengkap pada peta lokasi kos atau hubungi kos dengan cara sebagai berikut :</p>
+                                        <p style="font-size: 14px;">Anda dapat menambahkan foto dengan melakukan tambah media akun sekolah Anda, caranya sebagai berikut:</p>
+
                                         <p style="font-size: 14px;">
-                                            1. Login akun pencari Sekolah, kemudian pilih Sekolah yang ingin Anda tanyakan alamatnya.<br>
-                                            2. Klik ikon chat, kemudian pilih pertanyaan “Alamat Sekolah di mana?”, lanjutkan dengan klik Kirim. <br>
-                                            3. Pusat Sekolah akan membalas chat Anda dan menginformasikan alamat lengkap dari sekolah yang ditanyakan. <br>
+                                            1. Login akun pencari sekolah dan beralih ke tampilan halaman sekolah dengan mengklik tombol 'Lihat Halaman Sekolah'. Pada halaman utama profil sekolah klik navigasi media.<br>
+                                            2. Pilih media / foto yang ingin Anda tambahkan dengan klik Upload Media.<br>
+                                            3. Setelah foto di upload, maka secara otomatis akan muncul pada data simpanan media di tampilan admin sekolah.
                                         </p>
+                                    </div>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Bagaimana cara mengolah akun sekolah yang direkomendasikan oleh Pusat Sekolah?<span></span></a>
+                                    <div class="accordion-inner">
+                                        <p style="font-size: 14px;">Berikut beberapa hal yang kami rekomendasikan ketika Anda telah membuat Akun Sekolah :</p>
+                                        <p style="font-size: 14px;">
+                                            1. Tulis informasi sekolah dengan lengkap dan sesuai dengan keadaan sekolah Anda.<br>
+                                            2. Masukkan foto sekolah yang menarik dan dalam posisi landscape, tanpa editan, serta jelas agar pencari sekolah lebih mudah mendapatkan gambaran keadaan sekolah Anda.<br>
+                                            3. Pastikan setiap data yang dimasukkan lengkap dan sesuai format untuk mempercepat proses verifikasi.<br>
+                                            4. Update data akun sekolah Anda secara berkala untuk menghindari terjadi perbedaan antara profil dan sekolah Anda.<br>
+                                        </p>
+                                        <p style="font-size: 14px;">Anda juga dapat mengaktifkan beberapa fitur dari Pusat Sekolah seperti Premium, atau fitur dan layanan lainnya agar pencari sekolah lebih tertarik, percaya, dan mudah menemukan sekolah Anda.</p>
+                                    </div>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Mengapa sekolah yang saya buat belum tampil?<span></span></a>
+                                    <div class="accordion-inner">
+                                        <p style="font-size: 14px;">Ada beberapa kemungkinan akun / profil sekolah yang dibuat belum tampil, antara lain :</p>
+                                        <p style="font-size: 14px;">
+                                            1. Akun sekolah Anda belum terverifikasi.<br>
+                                            2. Permintaan akun sekolah Anda masih dalam proses verifikasi.<br>
+                                            3. Proses verifikasi pendaftaran akun sekolah Anda ditolak karena terdapat data yang tidak lengkap/ tidak sesuai.
+                                        </p>
+                                        <p style="font-size: 14px;">Sebelum membuat akun sekolah, lakukan verifikasi akun dan identitas Anda terlebih dahulu. Setelah itu mohon menunggu maksimal 2×24 jam (hari kerja) untuk verifikasi akun Anda.</p>
+                                        <p style="font-size: 14px;">Untuk proses verifikasi akun sekolah akan membutuhkan waktu maksimal 1×24 jam (hari kerja). Jika dalam proses verifikasi terdapat data yang tidak lengkap/ tidak sesuai, maka verifikasi iklan Anda akan ditolak.</p>
+                                        <p style="font-size: 14px;">Cek alasan ditolaknya pendaftaran akun sekolah dengan cara sebagai berikut:</p>
+                                        <p style="font-size: 14px;">
+                                            1. Login akun pencari sekolah (akun biasa). Pada halaman utama klik 'Daftarkan Sekolahmu'.<br>
+                                            2. Klik Selengkapnya dan akan menampilkan mengapa pendaftaran akun sekolah Anda ditolak.<br>
+                                            3. Perbaiki kembali data sekolah Anda untuk menghindari verifikasi sakun skeolah kembali ditolak.
+                                        </p>
+                                    </div>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Bagaimana agar sekolah saya ada di urutan atas hasil pencarian sekolah?<span></span></a>
+                                    <div class="accordion-inner">
+                                        <p style="font-size: 14px;">Berikut beberapa hal yang kami rekomendasikan agar sekolah Anda lebih mudah ditemukan oleh pencari sekolah :</p>
+                                        
+                                        <div class="facilities-list-title">1. Lengkapi informasi pada detail sekolah</div><br>
+                                        <p style="font-size: 14px;">Dengan menuliskan informasi mengenai skeolah secara lengkap serta memasukkan foto sekolah dapat membantu meningkatkan kualitas akun sekolah sehingga mudah ditemukan oleh pencari sekolah.</p>
+
+                                        <div class="facilities-list-title">2. Menjadi pemilik akun sekolah yang responsif</div><br>
+                                        <p style="font-size: 14px;">Pastikan Anda aktif membalas setiap chat yang masuk dari para pencari sekolah Anda.</p> 
+
+                                        <div class="facilities-list-title">3. Tingkatkan review sekolah dari murid ataupun alumni sekolah</div><br>
+                                        <p style="font-size: 14px;">Jumlah review sekolah juga dapat membantu meningkatkan kualitas akun sekolah Anda. Selain itu review sekolah yang positif dapat meningkatkan kepercayaan pencari sekolah lain untuk mendaftarkan di sekolah Anda.</p>
+
+                                        <div class="facilities-list-title">4. Daftar Premium dan gunakan Saldo Iklan</div><br>
+                                        <p style="font-size: 14px;">Iklan Premium dengan alokasi saldo aktif berkesempatan tampil pada urutan teratas, sehingga lebih mudah ditemukan pencari sekolah. Semakin banyak saldo yang dialokasikan, maka peluang tampilan skeolah berada di urutan atas menjadi lebih besar.</p>
                                     </div>
                                 </div>
                                 <!-- accordion end -->                                               

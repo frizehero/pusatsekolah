@@ -42,12 +42,12 @@
                         <div class="faq-section fl-wrap">
                             <!-- accordion-->
                             <div class="accordion">
-                                <a class="toggle act-accordion" href="#mencarisekolah" style="font-size: 17px; animation: none;">Pencari Sekolah<span></span></a>
-                                <div class="accordion-inner visible">
+                                <a class="toggle" style="font-size: 17px;">Pencari Sekolah<span></span></a>
+                                <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
-                                                <a href="#mencarisekol" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
+                                            <li style="padding: 15px 0px 15px 0px;">
+                                                <a href="tampilan-pusatbantuan.html" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-informasisekolah.html" style="color: #384F95; font-size: 15px;">Informasi Sekolah</a>
@@ -58,8 +58,8 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle" href="#" style="font-size: 17px;">Pemilik Akun Sekolah<span></span></a>
-                                <div class="accordion-inner">
+                                <a class="toggle act-accordion" href="#prophoto" style="font-size: 17px;">Pemilik Akun Sekolah<span></span></a>
+                                <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
@@ -71,8 +71,8 @@
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-pusatsekolahchecked.html" style="color: #384F95; font-size: 15px;">Pusat Sekolah Checked</a>
                                             </li>
-                                            <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-prophoto.html" style="color: #384F95; font-size: 15px;">Pro Photo</a>
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                                <a href="#prophoto" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pro Photo</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -101,7 +101,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-produklayanan.html" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
@@ -120,63 +120,46 @@
                         </div>
                         <!--box-widget-item end -->                                            
                     </div>
-                    <div class="col-md-8" id="mencarisekolah">
+                    <div class="col-md-8" id="prophoto">
                         <div class="ab_text">
                             <div class="ab_text-title fl-wrap">
-                                <h3>Mencari Sekolah</h3>
+                                <h3>Pro Photo</h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <div class="faq-section fl-wrap" id="mencarisekolah">
+                            <div class="faq-section fl-wrap" id="prophoto">
                             <!-- accordion-->
                                 <div class="accordion">
-                                    <a class="toggle act-accordion" href="#" style="font-size: 15px;">Bagaimana cara mencari sekolah di Pusat Sekolah?<span></span></a>
+                                    <a class="toggle act-accordion" href="#" style="font-size: 15px;">Apa itu Pro Photo by Pusat Sekolah?<span></span></a>
                                     <div class="accordion-inner visible">
-                                        <p style="font-size: 14px;">Anda dapat dengan mudah mencari Sekolah di Pusat Sekolah. Pencarian bisa lebih tepat dengan mencari sekolah berdasarkan area, kota, kampus, atau bahkan stasiun dan halte. Untuk mencari Sekolah : </p>
-                                        
-                                        <p style="font-size: 14px;">1. Pada halaman utama Pusat Sekolah masukkan lokasi / area / alamat kos yang ingin Anda cari.<br>
-                                        2. Anda juga bisa menggunakan pencarian populer berdasarkan : PAUD / SD / SMP / SMA / dan SMK.<br>
-                                        3. Untuk pencarian lebih tepat, gunakan fitur untuk melihat semua filter yang tersedia.<br>
-                                        4. Cari sekolah yang tersedia atau gunakan peta untuk menemukan lokasi yang Anda inginkan.<br>
-                                        5. Klik salah satu sekolah untuk membukanya. Pelajari lebih lanjut dengan baca deskripsi, fasilitas yang tersedia dan ulasan yang ditinggalkan alumni sekolah lain untuk sekolah tersebut.<br>
-                                        6. Jika ada pertanyaan, gunakan fitur pesan (chat) sekolah.</p>
-
-                                        <p style="font-size: 14px;">Anda juga dapat klik ikon hati / Simpan untuk menyimpan sekolah favorit Anda (pastikan sudah login akun sebagai pencari sekolah terlebih dahulu) agar dapat dilihat di lain waktu. Bagikan skeolah yang menarik ke teman-teman Anda dengan klik Bagikan.</p>
+                                        <p>Pro Photo by Pusat Sekolah adalah jasa foto oleh tim profesional Pusat Sekolah untuk menghasilkan foto berestetika yang dapat Anda gunakan sebagai investasi jangka panjang untuk memasarkan sekolah Anda, serta dapat membantu mempercepat keputusan memilih sekolah oleh calon peserta didik baru karena foto yang menarik lebih terpercaya.</p>
                                     </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;">Bagaimana cara menggunakan filter pencarian?<span></span></a>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Mengapa foto sekolah harus menarik?<span></span></a>
                                     <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Filter pencarian yang tersedia akan membantu Anda dalam mencari sekolah yang sesuai kebutuhan Anda. Tentu untuk mendapatkan hasil yang akurat Anda harus mengawali pencarian menggunakan lokasi lengkap yang diinginkan.</p>
-
-                                        <div class="facilities-list-title"> Deskripsi filter : </div><br>
-
-                                        <p style="font-size: 14px;">Pusat Sekolah menyediakan beragam filter untuk membantu Anda menemukan Sekolah yang dicari. Beberapa di antaranya bisa Anda temukan dengan memilih Filter Lanjutan di bawah filter yang disediakan.</p>
-
-                                        <div class="facilities-list-title"> - Jenjang </div><br>
-                                        <p style="font-size: 14px;">Pilih Jenjang Sekolah yang Anda cari berdasarkan : PAUD, TK, SD, SMP, SMA, atau SMK.</p>
-
-                                        <div class="facilities-list-title"> - Lokasi </div><br>
-                                        <p style="font-size: 14px;">Pilih Lokasi Sekolah yang Anda cari berdasarkan : Terdekat, Kota, Provinsi, atau alamat yang Anda cari.</p> 
-
-                                        <div class="facilities-list-title"> - Pusat Sekolah Checked </div><br>
-                                        <p style="font-size: 14px;">Akan menampilkan daftar Sekolah yang kondisinya sesuai dengan iklan dan sudah dikunjungi oleh tim Pusat Sekolah.</p>
-
-                                        <p style="font-size: 14px;">Kedepannya kami akan terus berusaha agar Anda dengan mudah mendapatkan sekolah yang sesuai dengan kebutuhan Anda di Pusat Sekolah.</p>                                                       
+                                        <p>Sekolah yang memiliki foto dengan kualitas terbaik, berpeluang 35% lebih banyak untuk dikunjungi di Pusat Sekolah oleh pencari sekolah.</p>
                                     </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;"> Bagaimana cara menyimpan kos yang saya sukai?  <span></span></a>
+                                    <a class="toggle" href="#" style="font-size: 15px;">Apa keunggulan Pro Photo by Pusat Sekolah?<span></span></a>
                                     <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Simpan Sekolah yang disukai agar dapat Anda lihat kembali di lain waktu dengan cara berikut :</p>
-                                        <p style="font-size: 14px;">
-                                            1. Login akun Pusat Sekolah, kemudian pilih skeolah yang ingin disimpan.<br>
-                                            2. Klik ikon hati yang berada di kiri atas tampilan sekolah. <br>
-                                            3. Anda berhasil menyimpan sekolah. Cek kembali sekolah yang Anda simpan pada menu Histori tab Favorit.<br>
-                                        </p>
+                                        <p>Pro Photo by Mamikos memiliki keunggulan diantaranya:</p>
+
+                                        <p> 1. Di foto oleh fotografer handal yang telah memiliki jam terbang tinggi di bidang foto Properti seperti Kos dan Apartemen.</p>
+                                        <p> 2. Menggunakan peralatan yang profesional untuk menambah pencahayaan serta jeli dalam mengambil sudut sekolah terbaik.</p>
+                                        <p> 3. Diambil dengan lensa sudut lebar sehingga terlihat luas.</p>
+                                        <p> 4. Hasil foto diedit secara detail.</p>
+                                        <p> 5. Hasil foto memiliki resolusi tinggi.</p>
+                                        <p> 6. Pemilik sekolah mendapatkan softcopy foto dan video dan dapat digunakan untuk materi promosi di saluran marketing lainnya.</p>
                                     </div>
-                                    <a class="toggle" href="#" style="font-size: 15px;"> Bagaimana cara mendapatkan alamat sekolah? <span></span></a>
+                                    <a class="toggle" href="#" style="font-size: 15px;"> Bagaimana cara mendapatkan alamat kos yang akan disewa? <span></span></a>
                                     <div class="accordion-inner">
-                                        <p style="font-size: 14px;">Dapatkan alamat Sekolah dengan klik Tanya Alamat Lengkap pada peta lokasi kos atau hubungi kos dengan cara sebagai berikut :</p>
-                                        <p style="font-size: 14px;">
-                                            1. Login akun pencari Sekolah, kemudian pilih Sekolah yang ingin Anda tanyakan alamatnya.<br>
-                                            2. Klik ikon chat, kemudian pilih pertanyaan “Alamat Sekolah di mana?”, lanjutkan dengan klik Kirim. <br>
-                                            3. Pusat Sekolah akan membalas chat Anda dan menginformasikan alamat lengkap dari sekolah yang ditanyakan. <br>
+                                        <p>Apabila Anda tertarik, Anda dapat menghubungi:</p>
+                                        <p>Premium Executive Maria: +62 856-4383-2865<br>
+                                            Premium Executive Isna: +62 813-2748-3704<br>
+                                            Premium Executive Vira: +62 813-2748-3702<br>
+                                            Premium Executive Dwi: +62 813-8890-1866<br>
+                                            Premium Executive Okti: +62 821-3493-9597<br>
+                                            Premium Executive Ulfa: +62 856-4092-3251<br>
+                                            Premium Executive Sinta: +62 821-3492-9974<br>
+
+                                            Atau CS Premium di: +62 859-3022-9138 (Chat WhatsApp only).
                                         </p>
                                     </div>
                                 </div>

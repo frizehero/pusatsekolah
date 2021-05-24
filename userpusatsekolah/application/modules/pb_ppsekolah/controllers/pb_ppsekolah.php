@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pusat_bantuan extends MX_Controller
+class Pb_ppsekolah extends MX_Controller
 {
 
 	function __construct()
@@ -17,7 +17,7 @@ class Pusat_bantuan extends MX_Controller
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "pusat_bantuan",
+			'namamodule' 	=> "pb_ppsekolah",
 			'namafileview' 	=> "V_pusatbantuan",
 			'tampil'		=> $this->M_data_guru->tampil(),
 		);
@@ -28,7 +28,7 @@ class Pusat_bantuan extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "pusat_bantuan",
+			'namamodule' 	=> "pb_ppsekolah",
 			'namafileview' 	=> "V_tambah_guru",
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -37,7 +37,7 @@ class Pusat_bantuan extends MX_Controller
 	function detailprofil($id)
 		{
 			$data = array(
-				'namamodule' 	=> "pusat_bantuan",
+				'namamodule' 	=> "pb_ppsekolah",
 				'namafileview' 	=> "V_profil_guru",
 				'tampil'		=> $this->M_data_guru->tampildetail($id),
 			);
@@ -49,7 +49,7 @@ class Pusat_bantuan extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "pusat_bantuan",
+			'namamodule' 	=> "pb_ppsekolah",
 			'namafileview' 	=> "V_edit_guru",
 			'tampil'		=> $this->M_data_guru->tampiledit($id),
 		);
@@ -59,25 +59,25 @@ class Pusat_bantuan extends MX_Controller
 	function tambah()
 	{
 		$this->M_data_guru->tambah();
-		redirect('pusat_bantuan');
+		redirect('pb_ppsekolah');
 	}
 
 	function edit()
 	{
 		$this->M_data_guru->edit();
-		redirect('pusat_bantuan');
+		redirect('pb_ppsekolah');
 	}
 
 	function hapus()
 	{
 		$this->M_data_guru->hapus();
-		redirect('pusat_bantuan');
+		redirect('pb_ppsekolah');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "pusat_bantuan",
+			'namamodule' 	=> "pb_ppsekolah",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->cari(),
 		);
