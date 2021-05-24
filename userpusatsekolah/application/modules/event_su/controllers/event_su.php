@@ -23,6 +23,16 @@ class Event_su extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function detailview()
+	{
+
+		$data = array(
+			'namamodule' 	=> "event_su",
+			'namafileview' 	=> "V_detail_event",
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 		// halaman tambah
 	function tambahview()
 	{

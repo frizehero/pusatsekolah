@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dataalumni_user extends MX_Controller {
+class Data_alumni extends MX_Controller {
 
 	function __construct()
 	{
@@ -16,7 +16,7 @@ class Dataalumni_user extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "dataalumni_user",
+			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 			'tampil'		=> $this->M_data_alumni->tampil(),
 		);
