@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Sekolah extends MX_Controller {
+class beranda_su extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_sosmed_as');
+		 $this->load->model('M_produk');
 		 $this->load->model('login/m_session');
 	}
 
@@ -16,31 +16,31 @@ class Sekolah extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "sekolah",
-			'namafileview' 	=> "V_edit_sekolah",
-			'tampil'		=> $this->M_sosmed_as->tampil(),
+			'namamodule' 	=> "beranda_su",
+			'namafileview' 	=> "V_beranda_su",
+			'tampil'		=> $this->M_produk->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
 		// halaman tambah
-	/*function tambahview()
+	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "inventory_room",
-			'namafileview' 	=> "V_room_tambah",
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_tambah_produk",
 		);
 		echo Modules::run('template/tampilCore', $data);
-	}*/
+	}
 
 		// Halaman Edit
 	function editview($id)
 	{
 
 		$data = array(
-			'namamodule' 	=> "sekolah",
-			'namafileview' 	=> "V_edit_sekolah",
-			'tampil'		=> $this->M_sosmed_as->tampiledit($id),
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_edit_produk",
+			'tampil'		=> $this->M_produk->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -49,21 +49,21 @@ class Sekolah extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_sosmed_as->tambah();
-		redirect('sekolah');
+		$this->M_produk->tambah();
+		redirect('produk');
 		
 	}
 
 	function edit()
 	{
-		$this->M_sosmed_as->edit();
-		redirect('sekolah');
+		$this->M_produk->edit();
+		redirect('produk');
 	}
 
 	function hapus()
 	{
-		$this->M_sosmed_as->hapus();
-		redirect('sekolah');
+		$this->M_produk->hapus();
+		redirect('produk');
 	}
 	
 }

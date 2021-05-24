@@ -1,86 +1,70 @@
 <?php
-defined('BASEPATH') or exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data_guru extends MX_Controller
-{
+class Data_guru extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		$this->load->model('M_data_guru');
-		$this->load->model('login/m_session');
+		 $this->load->model('M_produk');
+		 $this->load->model('login/m_session');
 	}
 
-
+	
 	// index
 	function index()
 	{
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->tampil(),
+			'tampil'		=> $this->M_produk->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	// halaman tambah
+		// halaman tambah
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_tambah_guru",
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_tambah_produk",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-	
-	function detailprofil($id)
-		{
-			$data = array(
-				'namamodule' 	=> "data_guru",
-				'namafileview' 	=> "V_profil_guru",
-				'tampil'		=> $this->M_data_guru->tampildetail($id),
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
 
-	// Halaman Edit
+		// Halaman Edit
 	function editview($id)
 	{
 
 		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_edit_guru",
-			'tampil'		=> $this->M_data_guru->tampiledit($id),
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_edit_produk",
+			'tampil'		=> $this->M_produk->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+
 	function tambah()
 	{
-		$this->M_data_guru->tambah();
-		redirect('data_guru');
+
+		$this->M_produk->tambah();
+		redirect('produk');
+		
 	}
 
 	function edit()
 	{
-		$this->M_data_guru->edit();
-		redirect('data_guru');
+		$this->M_produk->edit();
+		redirect('produk');
 	}
 
 	function hapus()
 	{
-		$this->M_data_guru->hapus();
-		redirect('data_guru');
+		$this->M_produk->hapus();
+		redirect('produk');
 	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
+	
 }
+ 

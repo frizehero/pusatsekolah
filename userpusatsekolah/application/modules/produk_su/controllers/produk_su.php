@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Produk extends MX_Controller {
+class Produk_su extends MX_Controller {
 
 	function __construct()
 	{
@@ -16,8 +16,8 @@ class Produk extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_produk",
+			'namamodule' 	=> "produk_su",
+			'namafileview' 	=> "V_produk_su",
 			'tampil'		=> $this->M_produk->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
