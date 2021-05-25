@@ -47,7 +47,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('pusat_bantuan'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
+                                                <a href="<?php echo base_url('pusat_bantuan'); ?>" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_informasisekolah'); ?>" style="color: #384F95; font-size: 15px;">Informasi Sekolah</a>
@@ -66,7 +66,7 @@
                                                 <a href="<?php echo base_url('pb_kelolasekolah'); ?>" style="color: #384F95; font-size: 15px;">Kelola Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="pb_premium" style="color: #384F95; font-size: 15px;">Premium</a>
+                                                <a href="<?php echo base_url('pb_premium'); ?>" style="color: #384F95; font-size: 15px;">Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_pschecked'); ?>" style="color: #384F95; font-size: 15px;">Pusat Sekolah Checked</a>
@@ -88,7 +88,7 @@
                                                 <a href="<?php echo base_url('syaratketentuan_premium'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('pb_pencari'); ?>" style="color: #384F95; font-size: 15px;">Pencari</a>
+                                                <a href="<?php echo base_url('pb_pencari'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pencari</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_sekolah'); ?>" style="color: #384F95; font-size: 15px;">Sekolah</a>
