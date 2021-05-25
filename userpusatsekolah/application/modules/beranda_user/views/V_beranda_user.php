@@ -10,7 +10,7 @@
                             <!--ms_item-->
                             <div class="swiper-slide">
                                 <div class="ms-item_fs fl-wrap full-height">
-                                    <div class="bg" data-bg="images/sekolah/sekolah2.jpg"></div>
+                                    <div class="bg" data-bg="<?php echo base_url() ?>images/sekolah/sekolah2.jpg"></div>
                                     <div class="overlay op7"></div>
                                 </div>
                             </div>
@@ -18,7 +18,7 @@
                             <!--ms_item-->
                             <div class="swiper-slide ">
                                 <div class="ms-item_fs fl-wrap full-height">
-                                    <div class="bg" data-bg="images/sekolah/sekolah3.jpg"></div>
+                                    <div class="bg" data-bg="<?php echo base_url() ?>images/sekolah/sekolah3.jpg"></div>
                                     <div class="overlay op7"></div>
                                 </div>
                             </div>
@@ -26,7 +26,7 @@
                             <!--ms_item-->
                             <div class="swiper-slide">
                                 <div class="ms-item_fs fl-wrap full-height">
-                                    <div class="bg" data-bg="images/sekolah/sekolah1.jpg"></div>
+                                    <div class="bg" data-bg="<?php echo base_url() ?>images/sekolah/sekolah1.jpg"></div>
                                     <div class="overlay op7"></div>
                                 </div>
                             </div>
@@ -85,12 +85,12 @@
             <div class="hero-categories fl-wrap">
                 <h4 class="hero-categories_title">Sedang mencari sesuatu? Temukan dengan mudah menggunakan kategori :</h4>
                 <ul class="no-list-style">
-                    <li><a href="tampilan-daftar-paud.html"><i class="far fa-user"></i><span>PAUD</span></a></li>
-                    <li><a href="tampilan-daftar-tk.html"><i class="far fa-user-friends"></i><span>TK</span></a></li>
-                    <li><a href="tampilan-daftar-sd.html"><i class="far fa-user-plus"></i><span>SD</span></a></li>
-                    <li><a href="tampilan-daftar-smp.html"><i class="far fa-play"></i><span>SMP</span></a></li>
-                    <li><a href="tampilan-daftar-sma.html"><i class="far fa-envelope"></i><span>SMA</span></a></li>
-                    <li><a href="tampilan-daftar-smk.html"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_paud'); ?>"><i class="far fa-user"></i><span>PAUD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_tk'); ?>"><i class="far fa-user-friends"></i><span>TK</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sd'); ?>"><i class="far fa-user-plus"></i><span>SD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smp'); ?>"><i class="far fa-play"></i><span>SMP</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sma'); ?>"><i class="far fa-envelope"></i><span>SMA</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smk'); ?>"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
                 </ul>
             </div>
         </div>
@@ -118,8 +118,8 @@
                                 <div class="listing-item listing_carditem">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <a href="tampilan-event-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                            <img src="images/sekolah/event1.jpg" alt="" style="height: 270px;"> 
+                                            <a href="<?php echo base_url('tampilan_event'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="<?php echo base_url() ?>images/sekolah/event1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">
                                                 <div class="listing_carditem fl-wrap">
@@ -143,7 +143,7 @@
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
                                             <a href="tampilan-ppdb-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                            <img src="images/sekolah/ppdb1.jpg" alt="" style="height: 270px;"> 
+                                            <img src="<?php echo base_url() ?>images/sekolah/ppdb1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">
                                                 <div class="listing_carditem fl-wrap">
@@ -167,7 +167,7 @@
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
                                             <a href="tampilan-produk-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                            <img src="images/sekolah/produk1.jpg" alt="" style="height: 270px;"> 
+                                            <img src="<?php echo base_url() ?>images/sekolah/produk1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">
                                                 <div class="listing_carditem fl-wrap">
@@ -190,8 +190,8 @@
                                 <div class="listing-item listing_carditem">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <a href="tampilan-berita-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                            <img src="images/sekolah/qurban1.jpg" alt="" style="height: 270px;"> 
+                                            <a href="<?php echo base_url('tampilan_berita'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="<?php echo base_url() ?>images/sekolah/qurban1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">
                                                 <div class="listing_carditem fl-wrap">
@@ -252,10 +252,10 @@
                         <article class="geodir-category-listing fl-wrap">
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/paud1.jpg" alt="" style="height: 185px;"> 
+                                <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                <img src="<?php echo base_url() ?>images/sekolah/paud1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/logopaud1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/logopaud1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -271,7 +271,7 @@
                                 <div class="geodir-category-content-title fl-wrap">
                                     <div class="geodir-category-content-title-item">
                                         <br>
-                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">PAUD Ananda 5</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>">PAUD Ananda 5</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
                                         <div class="geodir-category-location fl-wrap"><a href="#" ><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
                                     </div>
                                 </div>
@@ -291,10 +291,10 @@
                         <article class="geodir-category-listing fl-wrap">
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
+                                <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                <img src="<?php echo base_url() ?>images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -310,7 +310,7 @@
                                 <div class="geodir-category-content-title fl-wrap ">
                                     <div class="geodir-category-content-title-item">
                                         <br>
-                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SDN Sukabumi 2</a></h3>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>">SDN Sukabumi 2</a></h3>
                                         <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indonesia</a></div>
                                     </div>
                                 </div>
@@ -339,10 +339,10 @@
                         <article class="geodir-category-listing fl-wrap">
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;"> 
+                                <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                <img src="<?php echo base_url() ?>images/sekolah/sd2.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -358,7 +358,7 @@
                                 <div class="geodir-category-content-title fl-wrap">
                                     <div class="geodir-category-content-title-item">
                                         <br>
-                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
                                         <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
                                     </div>
                                 </div>
@@ -388,9 +388,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/tk1.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/tk1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logotk1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logotk1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -436,9 +436,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/paud2.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/paud2.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logopaud2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logopaud2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -483,9 +483,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -531,9 +531,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/tk3.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/tk3.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logotk2.jpg" alt=""></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logotk2.jpg" alt=""></a>
                                     <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -579,9 +579,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smp1.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/smp1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosmp1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -625,9 +625,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -671,9 +671,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -718,9 +718,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smk2.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/smk2.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosmk2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -765,9 +765,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sma2.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/sma2.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosma2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -809,7 +809,7 @@
     </section>
 
     <section class="parallax-section small-par" data-scrollax-parent="true">
-        <div class="bg par-elem "  data-bg="images/sekolah/sma1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+        <div class="bg par-elem "  data-bg="<?php echo base_url() ?>images/sekolah/sma1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
         <div class="overlay  op7"></div>
         <div class="container">
             <div class=" single-facts single-facts_2 fl-wrap">
@@ -880,10 +880,10 @@
                         <article class="geodir-category-listing fl-wrap">
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
+                                <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                <img src="<?php echo base_url() ?>images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -899,7 +899,7 @@
                                 <div class="geodir-category-content-title fl-wrap ">
                                     <div class="geodir-category-content-title-item">
                                         <br>
-                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SDN Sukabumi 2</a></h3>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>">SDN Sukabumi 2</a></h3>
                                         <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indonesia</a></div>
                                     </div>
                                 </div>
@@ -927,10 +927,10 @@
                         <article class="geodir-category-listing fl-wrap">
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
+                                <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                <img src="<?php echo base_url() ?>images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="<?php echo base_url() ?>images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -946,7 +946,7 @@
                                 <div class="geodir-category-content-title fl-wrap">
                                     <div class="geodir-category-content-title-item">
                                         <br>
-                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMK Negeri 1 Probolinggo</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>">SMK Negeri 1 Probolinggo</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
                                         <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
                                     </div>
                                 </div>
@@ -975,9 +975,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -1021,9 +1021,9 @@
                             <div class="geodir-category-img">
                                 <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
                                 <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                <img src="images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
+                                <img src="<?php echo base_url() ?>images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
                                 </a>
-                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
                                     <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
                                 </div>
                                 <div class="geodir-category-opt">
@@ -1076,7 +1076,7 @@
                     <!--  listing-item-grid  -->
                     <div class="col-sm-4">
                         <div class="listing-item-grid">
-                            <div class="bg"  data-bg="images/sekolah/yogyakarta.jpg"></div>
+                            <div class="bg"  data-bg="<?php echo base_url() ?>images/sekolah/yogyakarta.jpg"></div>
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>160 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
@@ -1089,7 +1089,7 @@
                     <!--  listing-item-grid  -->
                     <div class="col-sm-4">
                         <div class="listing-item-grid">
-                            <div class="bg"  data-bg="images/sekolah/jakarta.jpg"></div>
+                            <div class="bg"  data-bg="<?php echo base_url() ?>images/sekolah/jakarta.jpg"></div>
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>220 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
@@ -1102,7 +1102,7 @@
                     <!--  listing-item-grid  -->
                     <div class="col-sm-4">
                         <div class="listing-item-grid">
-                            <div class="bg"  data-bg="images/sekolah/surabaya.jpg"></div>
+                            <div class="bg"  data-bg="<?php echo base_url() ?>images/sekolah/surabaya.jpg"></div>
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>189 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
@@ -1116,7 +1116,7 @@
                     <div class="col-sm-2"></div>
                     <div class="col-sm-4">
                         <div class="listing-item-grid">
-                            <div class="bg"  data-bg="images/sekolah/aceh.jpg"></div>
+                            <div class="bg"  data-bg="<?php echo base_url() ?>images/sekolah/aceh.jpg"></div>
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>213 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
@@ -1127,7 +1127,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="listing-item-grid">
-                            <div class="bg"  data-bg="images/sekolah/malang.jpg"></div>
+                            <div class="bg"  data-bg="<?php echo base_url() ?>images/sekolah/malang.jpg"></div>
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>170 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
@@ -1163,7 +1163,7 @@
                         <!--testi-item-->
                         <div class="swiper-slide">
                             <div class="testi-item fl-wrap">
-                                <div class="testi-avatar"><img src="images/avatar/2.jpg" alt=""></div>
+                                <div class="testi-avatar"><img src="<?php echo base_url() ?>images/avatar/2.jpg" alt=""></div>
                                 <div class="testimonilas-text fl-wrap">
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
                                     <p>"Saya merasa terbantu dengan adanya Pusat Sekolah ini, saya tidak perlu repot - repot mencari informasi tentang sekolah yang saya inginkan, atau bahkan harus mencari kontak alumninya, semua lengkap."</p>
@@ -1179,7 +1179,7 @@
                         <!--testi-item-->
                         <div class="swiper-slide">
                             <div class="testi-item fl-wrap">
-                                <div class="testi-avatar"><img src="images/sekolah/profil1.jpg" alt=""></div>
+                                <div class="testi-avatar"><img src="<?php echo base_url() ?>images/sekolah/profil1.jpg" alt=""></div>
                                 <div class="testimonilas-text fl-wrap">
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
                                     <p>"Semenjak ada Pusat Sekola, saya yang notabene sering pindah - pindah koota tinggal tidak perlu repot - repot untuk mendatangi sekolah yang akan menjadi sekolah anak saya nantinya."</p>
@@ -1195,7 +1195,7 @@
                         <!--testi-item-->
                         <div class="swiper-slide">
                             <div class="testi-item fl-wrap">
-                                <div class="testi-avatar"><img src="images/avatar/3.jpg" alt=""></div>
+                                <div class="testi-avatar"><img src="<?php echo base_url() ?>images/avatar/3.jpg" alt=""></div>
                                 <div class="testimonilas-text fl-wrap">
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
                                     <p>"Semenjak ada Pusat Sekolah, sekolah saya memiliki website yang aktraktif dan informatif, sehingga lebih mudah menjangkau peserta didik baru."</p>
@@ -1211,7 +1211,7 @@
                         <!--testi-item-->
                         <div class="swiper-slide">
                             <div class="testi-item fl-wrap">
-                                <div class="testi-avatar"><img src="images/sekolah/logotk2.jpg" alt=""></div>
+                                <div class="testi-avatar"><img src="<?php echo base_url() ?>images/sekolah/logotk2.jpg" alt=""></div>
                                 <div class="testimonilas-text fl-wrap">
                                     <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
                                     <p>"Desain yang simple dan mudah dipahami dari Pusat Sekolah membuat kami mudah dalam mengaplikasikannya. Tentunya hal seperti ini sangat dibutuhkan seluruh sekolah di Indonesia untuk informasi sekolah mereka."</p>
@@ -1232,11 +1232,11 @@
 
         <div class="waveWrapper waveAnimation">
             <div class="waveWrapperInner bgMiddle">
-            <div class="wave-bg-anim waveMiddle" style="background-image: url('images/wave-top.png')"></div>
+            <div class="wave-bg-anim waveMiddle" style="background-image: url('<?php echo base_url() ?>images/wave-top.png')"></div>
             </div>
 
             <div class="waveWrapperInner bgBottom">
-            <div class="wave-bg-anim waveBottom" style="background-image: url('images/wave-top.png')"></div>
+            <div class="wave-bg-anim waveBottom" style="background-image: url('<?php echo base_url() ?>images/wave-top.png')"></div>
             </div>
         </div>
     </section>
@@ -1252,33 +1252,33 @@
                         <div class="swiper-wrapper">
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/sekolah/logobawah1.png" alt="" style="height: 80px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/sekolah/logobawah1.png" alt="" style="height: 80px; width: auto;"></a>
                             </div>
                             <!--client-item end-->
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/sekolah/logobawah2.png" alt="" style="height: 80px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/sekolah/logobawah2.png" alt="" style="height: 80px; width: auto;"></a>
                             </div>
                             <!--client-item end-->
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/sekolah/logosmk1.png" alt="" style="height: 80px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/sekolah/logosmk1.png" alt="" style="height: 80px; width: auto;"></a>
                             </div>
                             <!--client-item end-->
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/logoatas.png" alt="" style="height: 60px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/logoatas.png" alt="" style="height: 60px; width: auto;"></a>
                             </div>
                             <div class="swiper-slide"></div>
                             <!--client-item end-->
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/sekolah/logosmk2.png" alt="" style="height: 80px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/sekolah/logosmk2.png" alt="" style="height: 80px; width: auto;"></a>
                             </div>
                             <!--client-item end-->
                             <!--client-item-->
                             <div class="swiper-slide">
-                                <a href="#" class="client-item"><img src="images/sekolah/logotk1.png" alt="" style="height: 100px; width: auto;"></a>
+                                <a href="#" class="client-item"><img src="<?php echo base_url() ?>images/sekolah/logotk1.png" alt="" style="height: 100px; width: auto;"></a>
                             </div>
                             <!--client-item end-->                                                                         
                         </div>
@@ -1323,7 +1323,7 @@
                 <!-- footer-widget-->
                 <div class="col-md-4">
                     <div class="footer-widget fl-wrap">
-                        <div class="footer-logo"><a href="index.html"><img src="images/logoatas.png" alt=""></a></div>
+                        <div class="footer-logo"><a href="index.html"><img src="<?php echo base_url() ?>images/logoatas.png" alt=""></a></div>
                         <div class="footer-contacts-widget fl-wrap">
                             <p>Pusat Sekolah hadir sebagai salah satu sara mudah bagi sekolah - sekolah di selurh Indonesia agar saling terhubung dan mudah dalam menyampaikan informasi tentang sekolah mereka.   </p>
                             <ul  class="footer-contacts fl-wrap no-list-style">
@@ -1351,21 +1351,21 @@
                         <div class="footer-widget-posts fl-wrap">
                             <ul class="no-list-style">
                                 <li class="clearfix">
-                                    <a href="#"  class="widget-posts-img"><img src="images/all/4.jpg" class="respimg" alt=""></a>
+                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/4.jpg" class="respimg" alt=""></a>
                                     <div class="widget-posts-descr">
                                         <a href="#" title="">SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</a>
                                         <span class="widget-posts-date"><i class="fal fa-calendar"></i> 21 Mar 09.05 </span> 
                                     </div>
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#"  class="widget-posts-img"><img src="images/all/2.jpg" class="respimg" alt=""></a>
+                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/2.jpg" class="respimg" alt=""></a>
                                     <div class="widget-posts-descr">
                                         <a href="#" title="">Pusat Sekolah Berkunjung ke Istana Presiden</a>
                                         <span class="widget-posts-date"><i class="fal fa-calendar"></i> 7 Mar 18.21 </span> 
                                     </div>
                                 </li>
                                 <li class="clearfix">
-                                    <a href="#"  class="widget-posts-img"><img src="images/all/7.jpg" class="respimg" alt=""></a>
+                                    <a href="#"  class="widget-posts-img"><img src="<?php echo base_url() ?>images/all/7.jpg" class="respimg" alt=""></a>
                                     <div class="widget-posts-descr">
                                         <a href="#" title="">SMPN 10 Karanganyar Mulai Buka PPDB 2021</a>
                                         <span class="widget-posts-date"><i class="fal fa-calendar"></i> 7 Mar 16.42 </span>
@@ -1384,8 +1384,8 @@
                         <div>
                             <ul  class="footer-contacts no-list-style">
                                 <li><a href="tampilan-job.html" target="_blank">Job Pusat Sekolah</a></li>
-                                <li><a href="tampilan-nilaips-user.html" target="_blank">Nilai Kami !</a></li>
-                                <li><a href="tampilan-pusatbantuan.html" target="_blank">Layanan Bantuan</a></li>
+                                <li><a href="<?php echo base_url('tampilan_nilaikami'); ?>" target="_blank">Nilai Kami !</a></li>
+                                <li><a href="<?php echo base_url('pusat_bantuan'); ?>" target="_blank">Layanan Bantuan</a></li>
                             </ul>
                         </div>
                     </div>
