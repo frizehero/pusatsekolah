@@ -42,18 +42,18 @@
                         <div class="faq-section fl-wrap">
                             <!-- accordion-->
                             <div class="accordion">
-                                <a class="toggle" style="font-size: 17px;">Pencari Sekolah<span></span></a>
-                                <div class="accordion-inner">
+                                <a class="toggle act-accordion" href="#mencarisekolah" style="font-size: 17px; animation: none;">Pencari Sekolah<span></span></a>
+                                <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan.html" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                                <a href="<?php echo base_url('pusat_bantuan'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-informasisekolah.html" style="color: #384F95; font-size: 15px;">Informasi Sekolah</a>
+                                                <a href="<?php echo base_url('pb_informasisekolah'); ?>" style="color: #384F95; font-size: 15px;">Informasi Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-menghubungisekolah.html" style="color: #384F95; font-size: 15px;">Menghubungi Sekolah</a>
+                                                <a href="<?php echo base_url('pb_menghubungisekolah'); ?>" style="color: #384F95; font-size: 15px;">Menghubungi Sekolah</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -63,54 +63,54 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-kelolasekolah" style="color: #384F95; font-size: 15px;">Kelola Sekolah</a>
+                                                <a href="<?php echo base_url('pb_kelolasekolah'); ?>" style="color: #384F95; font-size: 15px;">Kelola Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-premium.html" style="color: #384F95; font-size: 15px;">Premium</a>
+                                                <a href="pb_premium" style="color: #384F95; font-size: 15px;">Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pusatsekolahchecked.html" style="color: #384F95; font-size: 15px;">Pusat Sekolah Checked</a>
+                                                <a href="<?php echo base_url('pb_pschecked'); ?>" style="color: #384F95; font-size: 15px;">Pusat Sekolah Checked</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-prophoto.html" style="color: #384F95; font-size: 15px;">Pro Photo</a>
+                                                <a href="<?php echo base_url('pb_prophoto'); ?>" style="color: #384F95; font-size: 15px;">Pro Photo</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle" href="#sekolah" style="font-size: 17px;">Syarat & Ketentuan<span></span></a>
+                                <a class="toggle" href="#" style="font-size: 17px;">Syarat & Ketentuan<span></span></a>
                                 <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-syaratketentuanumum.html" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
+                                                <a href="<?php echo base_url('syaratketentuan_umum'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-syaratketentuanpremium.html" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
+                                                <a href="<?php echo base_url('syaratketentuan_premium'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pencari.html" style="color: #384F95; font-size: 15px;">Pencari</a>
+                                                <a href="<?php echo base_url('pb_pencari'); ?>" style="color: #384F95; font-size: 15px;">Pencari</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-sekolah.html" style="color: #384F95; font-size: 15px;">Sekolah</a>
+                                                <a href="<?php echo base_url('pb_sekolah'); ?>" style="color: #384F95; font-size: 15px;">Sekolah</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle act-accordion" href="#pertanyaanpopuler" style="font-size: 17px;">Info Umum<span></span></a>
-                                <div class="accordion-inner visible">
+                                <a class="toggle" href="#" style="font-size: 17px;">Info Umum<span></span></a>
+                                <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
-                                                <a href="#pertanyaanpopuler" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                            <li style="padding: 15px 0px 15px 0px;">
+                                                <a href="<?php echo base_url('pb_pertanyaanpopuler'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-produklayanan.html" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
+                                                <a href="<?php echo base_url('pb_produklayanan'); ?>" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pendaftaranpengaturanakun.html" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Akun</a>
+                                                <a href="<?php echo base_url('pb_ppakun'); ?>" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Akun</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pendaftaranpengaturansekolah.html" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Sekolah</a>
+                                                <a href="<?php echo base_url('pb_ppsekolah'); ?>" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Sekolah</a>
                                             </li>
                                         </ul>
                                     </div>

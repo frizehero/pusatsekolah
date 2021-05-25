@@ -120,13 +120,13 @@
                         </div>
                         <!--box-widget-item end -->                                            
                     </div>
-                    <div class="col-md-8" id="pendaftaranpengaturansekolah">
+                    <div class="col-md-8" id="pendaftaranpengaturanakun">
                         <div class="ab_text">
                             <div class="ab_text-title fl-wrap">
-                                <h3>Pendaftaran & Pengaturan Sekolah</h3>
+                                <h3>Pendaftaran & Pengaturan Akun</h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <div class="faq-section fl-wrap" id="pendaftaranpengaturansekolah">
+                            <div class="faq-section fl-wrap" id="pendaftaranpengaturanakun">
                             <!-- accordion-->
                                 <div class="accordion">
                                     <a class="toggle act-accordion" href="#" style="font-size: 15px;">Bagaimana cara mencari sekolah di Pusat Sekolah?<span></span></a>

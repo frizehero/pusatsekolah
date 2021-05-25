@@ -77,15 +77,15 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle" href="#sekolah" style="font-size: 17px;">Syarat & Ketentuan<span></span></a>
-                                <div class="accordion-inner">
+                                <a class="toggle act-accordion" href="#syaratketentuanpremium" style="font-size: 17px;">Syarat & Ketentuan<span></span></a>
+                                <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-syaratketentuanumum.html" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
                                             </li>
-                                            <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-syaratketentuanpremium.html" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                                <a href="#syaratketentuanpremium" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-pencari.html" style="color: #384F95; font-size: 15px;">Pencari</a>
@@ -96,18 +96,18 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle act-accordion" href="#pendaftaranpengaturanakun" style="font-size: 17px;">Info Umum<span></span></a>
-                                <div class="accordion-inner visible">
+                                <a class="toggle" href="#" style="font-size: 17px;">Info Umum<span></span></a>
+                                <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                                <a href="tampilan-pusatbantuan-pertanyaanpopuler.html" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-produklayanan.html" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
                                             </li>
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
-                                                <a href="#pendaftaranpengaturanakun" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Akun</a>
+                                            <li style="padding: 15px 0px 15px 0px;">
+                                                <a href="tampilan-pusatbantuan-pendaftaranpengaturanakun.html" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Akun</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="tampilan-pusatbantuan-pendaftaranpengaturansekolah.html" style="color: #384F95; font-size: 15px;">Pendaftaran & Pengaturan Sekolah</a>
@@ -120,13 +120,13 @@
                         </div>
                         <!--box-widget-item end -->                                            
                     </div>
-                    <div class="col-md-8" id="pendaftaranpengaturanakun">
+                    <div class="col-md-8" id="syaratketentuanpremium">
                         <div class="ab_text">
                             <div class="ab_text-title fl-wrap">
-                                <h3>Pendaftaran & Pengaturan Akun</h3>
+                                <h3>Syarat Ketentuan Premium</h3>
                                 <span class="section-separator fl-sec-sep"></span>
                             </div>
-                            <div class="faq-section fl-wrap" id="pendaftaranpengaturanakun">
+                            <div class="faq-section fl-wrap" id="syaratketentuanpremium">
                             <!-- accordion-->
                                 <div class="accordion">
                                     <a class="toggle act-accordion" href="#" style="font-size: 15px;">Bagaimana cara mencari sekolah di Pusat Sekolah?<span></span></a>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pb_prophoto extends MX_Controller
+class syaratketentuan_premium extends MX_Controller
 {
 
 	function __construct()
@@ -17,8 +17,8 @@ class Pb_prophoto extends MX_Controller
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_prophoto",
-			'namafileview' 	=> "V_pusatbantuan",
+			'namamodule' 	=> "syaratketentuan_premium",
+			'namafileview' 	=> "V_syarat_ketentuan",
 			'tampil'		=> $this->M_data_guru->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -28,7 +28,7 @@ class Pb_prophoto extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_prophoto",
+			'namamodule' 	=> "syaratketentuan_premium",
 			'namafileview' 	=> "V_tambah_guru",
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -37,7 +37,7 @@ class Pb_prophoto extends MX_Controller
 	function detailprofil($id)
 		{
 			$data = array(
-				'namamodule' 	=> "pb_prophoto",
+				'namamodule' 	=> "syaratketentuan_premium",
 				'namafileview' 	=> "V_profil_guru",
 				'tampil'		=> $this->M_data_guru->tampildetail($id),
 			);
@@ -49,7 +49,7 @@ class Pb_prophoto extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "pb_prophoto",
+			'namamodule' 	=> "syaratketentuan_premium",
 			'namafileview' 	=> "V_edit_guru",
 			'tampil'		=> $this->M_data_guru->tampiledit($id),
 		);
@@ -59,25 +59,25 @@ class Pb_prophoto extends MX_Controller
 	function tambah()
 	{
 		$this->M_data_guru->tambah();
-		redirect('pb_prophoto');
+		redirect('syaratketentuan_premium');
 	}
 
 	function edit()
 	{
 		$this->M_data_guru->edit();
-		redirect('pb_prophoto');
+		redirect('syaratketentuan_premium');
 	}
 
 	function hapus()
 	{
 		$this->M_data_guru->hapus();
-		redirect('pb_prophoto');
+		redirect('syaratketentuan_premium');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_prophoto",
+			'namamodule' 	=> "syaratketentuan_premium",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->cari(),
 		);
