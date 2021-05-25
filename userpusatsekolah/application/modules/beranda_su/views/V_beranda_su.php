@@ -2,7 +2,7 @@
 <div class="content">
                     <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
                         <div class="bg-parallax-wrap">
-                            <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                            <div class="bg par-elem "  data-bg="<?php echo base_url() ?>images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
                             <div class="overlay"></div>
                         </div>
                         <div class="container">
@@ -13,7 +13,7 @@
                                         <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
                                     </div>
                                     <div class="col-md-3">
-                                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="tampilan-inbox-user.html">
+                                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="<?php echo base_url('tampilan_inbox'); ?>">
                                             <div class="listing-rating-count-wrap single-list-count">
                                                 <div class="review-score">4.1</div>
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
@@ -29,7 +29,7 @@
                                     <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
                                     <span>Negeri</span>
                                 </a>
-                                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
                                 <div class="geodir_status_date gsd_open">Online</div>
                                 <div class="list-single-stats">
                                     <ul class="no-list-style">
@@ -81,13 +81,13 @@
                                             <div class="list-single-main-item_content fl-wrap">
                                                 <div class="reviews-comments-wrap">
                                                     <!-- reviews-comments-item -->
-                                                        <div class="list-single-author"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'></span><b>SMK Negeri 1 Kota Probolinggo</b></div>
+                                                        <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/5.jpg'></span><b>SMK Negeri 1 Kota Probolinggo</b></div>
                                                         <div class="fl-wrap">
                                                             <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
                                                             <div class="review-images " style="padding-left: 70px">
-                                                                <a href="images/all/18.jpg" class="image-popup"><img src="images/all/18.jpg" alt=""></a>
-                                                                <a href="images/all/24.jpg" class="image-popup"><img src="images/all/24.jpg" alt=""></a>
-                                                                <a href="images/all/24.jpg" class="image-popup"><img src="images/all/24.jpg" alt=""></a>
+                                                                <a href="<?php echo base_url() ?>images/all/18.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/18.jpg" alt=""></a>
+                                                                <a href="<?php echo base_url() ?>images/all/24.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/24.jpg" alt=""></a>
+                                                                <a href="<?php echo base_url() ?>images/all/24.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/24.jpg" alt=""></a>
                                                             </div>
                                                             <div class="reviews-comments-item-footer fl-wrap">
                                                                 <div class="row">
@@ -103,7 +103,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='images/avatar/4.jpg'></span><b>Emak</b></div>
+                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/4.jpg'></span><b>Emak</b></div>
                                                                 <div class="fl-wrap">
                                                                     <form class="custom-form">
                                                                         <fieldset>
@@ -115,7 +115,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='images/avatar/4.jpg'></span><b>Emak</b></div>
+                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/4.jpg'></span><b>Emak</b></div>
                                                                 <div class="fl-wrap">
                                                                     <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
                                                                     <div style="padding-right: 585px">
@@ -124,7 +124,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='images/avatar/3.jpg'></span><b>Rois Antono</b></div>
+                                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/3.jpg'></span><b>Rois Antono</b></div>
                                                                 <div class="fl-wrap">
                                                                     <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
                                                                     <div style="padding-right: 585px">
@@ -152,7 +152,7 @@
                                             <div class="box-widget-author fl-wrap">
                                                 <div class="box-widget-author-title">
                                                     <div class="box-widget-author-title-img">
-                                                        <img src="images/avatar/5.jpg" alt="">
+                                                        <img src="<?php echo base_url() ?>images/avatar/5.jpg" alt="">
                                                     </div>
                                                     <div class="box-widget-author-title_content">
                                                         <a href="tampilan-edit-profiluser.html">Alisa Noory</a>
@@ -238,7 +238,7 @@
                                                 <div class="widget-posts  fl-wrap">
                                                     <ul class="no-list-style">
                                                         <li>
-                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/1.png" alt=""></a>
+                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="<?php echo base_url() ?>images/gallery/thumbnail/1.png" alt=""></a>
                                                             </div>
                                                             <div class="widget-posts-descr">
                                                                 <h4><a href="listing-single.html">Iconic Cafe</a></h4>
@@ -248,7 +248,7 @@
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/2.png" alt=""></a>
+                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="<?php echo base_url() ?>images/gallery/thumbnail/2.png" alt=""></a>
                                                             </div>
                                                             <div class="widget-posts-descr">
                                                                 <h4><a href="listing-single.html">MontePlaza Hotel</a></h4>
@@ -258,7 +258,7 @@
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/3.png" alt=""></a>
+                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="<?php echo base_url() ?>images/gallery/thumbnail/3.png" alt=""></a>
                                                             </div>
                                                             <div class="widget-posts-descr">
                                                                 <h4><a href="listing-single.html">Rocko Band in Marquee Club</a></h4>
@@ -268,7 +268,7 @@
                                                             </div>
                                                         </li>
                                                         <li>
-                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="images/gallery/thumbnail/4.png" alt=""></a>
+                                                            <div class="widget-posts-img"><a href="listing-single.html"><img src="<?php echo base_url() ?>images/gallery/thumbnail/4.png" alt=""></a>
                                                             </div>
                                                             <div class="widget-posts-descr">
                                                                 <h4><a href="listing-single.html">Premium Fitness Gym</a></h4>
