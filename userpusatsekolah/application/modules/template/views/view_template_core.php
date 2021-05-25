@@ -92,10 +92,10 @@
                         <a href="#">Kami <i class="fa fa-caret-down"></i></a>
                         <!--second level -->
                         <ul style="width: 180px;">
-                            <li><a href="tampilan-tentangkami-user.html">Tentang Kami</a></li>
-                            <li><a href="tampilan-kontakps-user.html">Kontak</a></li>
-                            <li><a href="tampilan-pusatbantuan.html">Pusat Bantuan</a></li>
-                            <li><a href="tampilan-pusatbantuan-syaratketentuanumum.html">Syarat & Ketentuan</a></li>
+                            <li><a href="<?php echo base_url('tentang_kami'); ?>">Tentang Kami</a></li>
+                            <li><a href="<?php echo base_url('kontak_user'); ?>">Kontak</a></li>
+                            <li><a href="<?php echo base_url('pusat_bantuan'); ?>">Pusat Bantuan</a></li>
+                            <li><a href="<?php echo base_url('syaratketentuan_umum'); ?>">Syarat & Ketentuan</a></li>
                         </ul>
                         <!--second level end-->
                     </li>
