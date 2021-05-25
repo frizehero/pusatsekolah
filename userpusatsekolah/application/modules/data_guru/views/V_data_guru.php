@@ -138,7 +138,7 @@
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                            <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                            <a href="<?php echo base_url('profil_user'); ?>" class="geodir-category-img-wrap fl-wrap">
                             <img src="images/avatar/26.png" alt="" style="height: 250px;"> 
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/27.png" alt=""></a>
@@ -148,7 +148,7 @@
                         <div class="geodir-category-content fl-wrap title-sin_item">
                             <div class="geodir-category-content-title fl-wrap">
                                 <div class="geodir-category-content-title-item">
-                                    <h3 class="title-sin_map"><a href="listing-single.html">Vanessa Jo Merrell</a></h3>
+                                    <h3 class="title-sin_map"><a href="<?php echo base_url('profil_user'); ?>">Vanessa Jo Merrell</a></h3>
                                     <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Mengajar Seni Musik</b></a></div>
                                 </div>
                             </div>

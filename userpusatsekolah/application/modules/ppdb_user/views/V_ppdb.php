@@ -492,7 +492,7 @@
                                         <label><i class="fal fa-phone"></i>  </label>
                                         <input type="text" placeholder="No. Telephone *" value=""/>
                                     </fieldset>
-                                    <button class="btn color2-bg url_btn float-btn" onclick="window.location.href='tampilan-form-pendaftaran-ppdb.html'"> Daftar Sekarang <i class="fal fa-bookmark"></i></button>
+                                    <button class="btn color2-bg url_btn float-btn" onclick="window.location.href='<?php echo base_url('pendaftaran_ppdb'); ?>'"> Daftar Sekarang <i class="fal fa-bookmark"></i></button>
                                 </form>
                             </div>
                         </div>
