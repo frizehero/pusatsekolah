@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pb_pernyataanpopuler extends MX_Controller
+class Pb_pertanyaanpopuler extends MX_Controller
 {
 
 	function __construct()
@@ -17,7 +17,7 @@ class Pb_pernyataanpopuler extends MX_Controller
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_pernyataanpopuler",
+			'namamodule' 	=> "pb_pertanyaanpopuler",
 			'namafileview' 	=> "V_pusatbantuan",
 			'tampil'		=> $this->M_data_guru->tampil(),
 		);
@@ -28,7 +28,7 @@ class Pb_pernyataanpopuler extends MX_Controller
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_pernyataanpopuler",
+			'namamodule' 	=> "pb_pertanyaanpopuler",
 			'namafileview' 	=> "V_tambah_guru",
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -37,7 +37,7 @@ class Pb_pernyataanpopuler extends MX_Controller
 	function detailprofil($id)
 		{
 			$data = array(
-				'namamodule' 	=> "pb_pernyataanpopuler",
+				'namamodule' 	=> "pb_pertanyaanpopuler",
 				'namafileview' 	=> "V_profil_guru",
 				'tampil'		=> $this->M_data_guru->tampildetail($id),
 			);
@@ -49,7 +49,7 @@ class Pb_pernyataanpopuler extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "pb_pernyataanpopuler",
+			'namamodule' 	=> "pb_pertanyaanpopuler",
 			'namafileview' 	=> "V_edit_guru",
 			'tampil'		=> $this->M_data_guru->tampiledit($id),
 		);
@@ -59,25 +59,25 @@ class Pb_pernyataanpopuler extends MX_Controller
 	function tambah()
 	{
 		$this->M_data_guru->tambah();
-		redirect('pb_pernyataanpopuler');
+		redirect('pb_pertanyaanpopuler');
 	}
 
 	function edit()
 	{
 		$this->M_data_guru->edit();
-		redirect('pb_pernyataanpopuler');
+		redirect('pb_pertanyaanpopuler');
 	}
 
 	function hapus()
 	{
 		$this->M_data_guru->hapus();
-		redirect('pb_pernyataanpopuler');
+		redirect('pb_pertanyaanpopuler');
 	}
 
 	function cari()
 	{
 		$data = array(
-			'namamodule' 	=> "pb_pernyataanpopuler",
+			'namamodule' 	=> "pb_pertanyaanpopuler",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->cari(),
 		);
