@@ -60,7 +60,7 @@
                                                                         <option <?php if ('SD'   == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SD">SD </option>
                                                                         <option <?php if ('SMP'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SMP">SMP </option>
                                                                         <option <?php if ('SMA'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SMA">SMA </option>
-                                                                        <option <?php if ('SMK'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="E">SMK </option>
+                                                                        <option <?php if ('SMK'  == $tampilkompetensi['jjg_sekolah']) {echo 'selected="selected"';} ?> value="SMK">SMK </option>
                                                                 </select>
                                                             </div>
                                                         </div>
