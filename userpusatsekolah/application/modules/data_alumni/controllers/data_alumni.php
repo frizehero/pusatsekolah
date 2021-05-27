@@ -23,12 +23,22 @@ class Data_alumni extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function profilalumni($id)
+	{
+		$data = array(
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_profil_alumni",
+			'tampil'		=> $this->M_data_alumni->tampildetail($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 		// halaman tambah
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "dataalumni_user",
-			'namafileview' 	=> "V_tambah_produk",
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_tambah_alumni",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -38,8 +48,8 @@ class Data_alumni extends MX_Controller {
 	{
 
 		$data = array(
-			'namamodule' 	=> "dataalumni_user",
-			'namafileview' 	=> "V_edit_produk",
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_edit_alumni",
 			'tampil'		=> $this->M_data_alumni->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -50,20 +60,20 @@ class Data_alumni extends MX_Controller {
 	{
 
 		$this->M_produk->tambah();
-		redirect('dataalumni_user');
+		redirect('data_alumni');
 		
 	}
 
 	function edit()
 	{
 		$this->M_data_alumni->edit();
-		redirect('dataalumni_user');
+		redirect('data_alumni');
 	}
 
 	function hapus()
 	{
 		$this->M_data_alumni->hapus();
-		redirect('dataalumni_user');
+		redirect('data_alumni');
 	}
 	
 }
