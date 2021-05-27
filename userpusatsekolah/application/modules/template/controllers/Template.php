@@ -29,17 +29,16 @@ class Template extends MX_Controller {
 	}
 
 	// view core templating
-	public function index_ps()
+	public function index_nl()
 	{
 		
-		$this->load->view('view_template_core_ps');
+		$this->load->view('view_template_core_nl');
 	}
 
-	public function tampilCore_ps($data)
+	public function tampilCore_nl($data)
 	{
-		$id = $this->session->userdata('session_id');
 		
-		$this->load->view('view_template_core_ps',$data);
+		$this->load->view('view_template_core_nl',$data);
 	}
 
 }
