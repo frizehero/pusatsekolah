@@ -66,7 +66,7 @@
             <ul>
                 <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"> Akun Saya</a></li>
                 <li><a href="<?php echo base_url('tampilan_nilaikami'); ?>"> Nilai Kami! </a></li>
-                <li><a href="<?php echo base_url('login'); ?>">Log Out</a></li>
+                <li><a href="<?php echo base_url('login/logoutApp'); ?>">Log Out</a></li>
             </ul>
         </div>
         <!-- lang-wrap end-->

@@ -81,7 +81,7 @@
                             </ul>
                         </div>
                         <!-- user-profile-menu end-->
-                        <button class="logout_btn color2-bg">Log Out <i class="fas fa-sign-out"></i></button>
+                        <button class="logout_btn color2-bg"><a href="<?php echo base_url('login/logoutApp'); ?>" style="color:white;">Log Out </a><i class="fas fa-sign-out"></i></button>
                     </div>
                 </div>
                 <a class="back-tofilters color2-bg custom-scroll-link fl-wrap" href="#dash_menu">Tampilan Profil<i class="fas fa-caret-up"></i></a>
