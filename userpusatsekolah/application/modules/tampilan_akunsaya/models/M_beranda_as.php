@@ -13,38 +13,90 @@ class M_beranda_as extends CI_Model
 
 	function tambah()
 	{
-		$posts 		= $this->input->post('posts');
+		$nama_depan 		= $this->input->post('nama_depan');
+		$nama_belakang		= $this->input->post('nama_belakang');
+		$email_user 		= $this->input->post('email_user');
+		$telepon_user 		= $this->input->post('telepon_user');
+		$profesi_user 		= $this->input->post('profesi_user');
+		$alamat_user 		= $this->input->post('alamat_user');
+		$deskripsi_user 	= $this->input->post('deskripsi_user');
+		$longitude_user 	= $this->input->post('longitude_user');
+		$latitude_user		= $this->input->post('latitude_user');
+		$kota_user 			= $this->input->post('kota_user');
+		$kecamatan_user 	= $this->input->post('kecamatan_user');
+		$kelurahan_user 	= $this->input->post('kelurahan_user');
+		$instagram_user 	= $this->input->post('instagram_user');
+		$twitter_user 		= $this->input->post('twitter_user');
+		$whatsapp_user 		= $this->input->post('whatsapp_user');
+		$facebook_user 		= $this->input->post('facebook_user');
+		$fotop_user			= $this->input->post('fotop_user');
 
 		$this->load->library('upload');
-		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/images/postsekolah/';
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/profil_user/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
 		$config['max_height']		= 4300;
 		$config['file_name'] 		= $nmfile;
-
+		
 		$this->upload->initialize($config);
-
-		if ($_FILES['postfoto']['name']) {
-			if ($this->upload->do_upload('postfoto')) {
+		
+		if($_FILES['foto']['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
 				$gbr = $this->upload->data();
 				$data = array(
-					'post_sekolah'		=> $posts,
-					'post_foto_sekolah'	=> $gbr['file_name'],
-
-
+					'nama_depan' 		= $nama_depan
+					'nama_belakang'		= $nama_belakang
+					'email_user' 		= $email_user
+					'telepon_user' 		= $telepon_user
+					'profesi_user' 		= $profesi_user
+					'alamat_user' 		= $alamat_user
+					'deskripsi_user' 	= $deskripsi_user
+					'longitude_user' 	= $longitude_user
+					'latitude_user'		= $latitude_user
+					'kota_user' 		= $kota_user
+					'kecamatan_user' 	= $kecamatan_user
+					'kelurahan_user' 	= $kelurahan_user
+					'instagram_user' 	= $instagram_user
+					'twitter_user' 		= $twitter_user
+					'whatsapp_user' 	= $whatsapp_user
+					'facebook_user' 	= $facebook_user
+					'fotop_user' 		=> $gbr['file_name'],
+					
+					
 				);
-				$this->db->insert('beranda_as', $data);
+				$this->db->insert('produk', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+			}	 
+		}
+		else{
+				$data = array(
+					'nama_depan' 		= $nama_depan
+					'nama_belakang'		= $nama_belakang
+					'email_user' 		= $email_user
+					'telepon_user' 		= $telepon_user
+					'profesi_user' 		= $profesi_user
+					'alamat_user' 		= $alamat_user
+					'deskripsi_user' 	= $deskripsi_user
+					'longitude_user' 	= $longitude_user
+					'latitude_user'		= $latitude_user
+					'kota_user' 		= $kota_user
+					'kecamatan_user' 	= $kecamatan_user
+					'kelurahan_user' 	= $kelurahan_user
+					'instagram_user' 	= $instagram_user
+					'twitter_user' 		= $twitter_user
+					'whatsapp_user' 	= $whatsapp_user
+					'facebook_user' 	= $facebook_user
+					'fotop_user' 		=> 'kosong1.jpeg',
+				);
+				$this->db->insert('produk', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
-		} else {
-			$data = array(
-				'post_sekolah'		=> $posts,
-			);
-			$this->db->insert('beranda_as', $data);
-			$this->session->set_flashdata('msg', 'suksestambah');
-		}
+
 	}
 
 	function tampiledit($id)
