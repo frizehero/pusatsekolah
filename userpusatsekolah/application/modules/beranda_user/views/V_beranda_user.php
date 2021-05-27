@@ -1061,7 +1061,7 @@
                     <!-- listing-item end -->  
                 </div>          
             </div>
-            <a href="tampilan-sekolah-terdekat.html" class="btn  dec_btn  color2-bg">Lihat Sekolah Terdekat Lainnya<i class="fal fa-arrow-alt-right"></i></a>
+            <a href="<?php echo base_url('sekolah_terdekat'); ?>" class="btn  dec_btn  color2-bg">Lihat Sekolah Terdekat Lainnya<i class="fal fa-arrow-alt-right"></i></a>
         </div>
     </section>
 
@@ -1080,7 +1080,7 @@
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>160 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
-                                <h3><a href="listing.html">Yogyakarta</a></h3>
+                                <h3><a href="<?php echo base_url('kota_pilihan'); ?>">Yogyakarta</a></h3>
                                 <p>Constant care and attention to the patients makes good record</p>
                             </div>
                         </div>
@@ -1093,7 +1093,7 @@
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>220 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
-                                <h3><a href="tampilan-kota-pilihan.html">Jakarta</a></h3>
+                                <h3><a href="<?php echo base_url('kota_pilihan'); ?>">Jakarta</a></h3>
                                 <p>Constant care and attention to the patients makes good record</p>
                             </div>
                         </div>
@@ -1106,7 +1106,7 @@
                             <div class="d-gr-sec"></div>
                             <div class="listing-counter color2-bg"><span>189 </span> Sekolah Terdaftar</div>
                             <div class="listing-item-grid_title">
-                                <h3><a href="listing.html">Surabaya</a></h3>
+                                <h3><a href="<?php echo base_url('kota_pilihan'); ?>">Surabaya</a></h3>
                                 <p>Constant care and attention to the patients makes good record</p>
                             </div>
                         </div>
@@ -1139,7 +1139,7 @@
                     <div class="col-sm-2"></div>                                                          
                 </div>
             </div>
-            <a href="tampilan-kota-lainnya.html" class="btn  dec_btn  color2-bg">Lihat Kota Lainnya<i class="fal fa-arrow-alt-right"></i></a>
+            <a href="<?php echo base_url('kota_lainnya'); ?>" class="btn  dec_btn  color2-bg">Lihat Kota Lainnya<i class="fal fa-arrow-alt-right"></i></a>
         </div>
     </section>
 
@@ -1372,7 +1372,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <a href="tampilan-event-sekolah.html" class="footer-link">Baca lebih banyak <i class="fal fa-long-arrow-right"></i></a>
+                            <a href="<?php echo base_url('tampilan_event'); ?>" class="footer-link">Baca lebih banyak <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1383,7 +1383,7 @@
                         <h3>Pusat Sekolah</h3>
                         <div>
                             <ul  class="footer-contacts no-list-style">
-                                <li><a href="tampilan-job.html" target="_blank">Job Pusat Sekolah</a></li>
+                                <li><a href="<?php echo base_url('job_user'); ?>" target="_blank">Job Pusat Sekolah</a></li>
                                 <li><a href="<?php echo base_url('tampilan_nilaikami'); ?>" target="_blank">Nilai Kami !</a></li>
                                 <li><a href="<?php echo base_url('pusat_bantuan'); ?>" target="_blank">Layanan Bantuan</a></li>
                             </ul>
