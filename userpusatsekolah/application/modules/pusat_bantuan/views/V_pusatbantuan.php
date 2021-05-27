@@ -82,7 +82,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('syaratketentuan_umum'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
+                                                <a href="<?php echo base_url('syaratketentuan_umum'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('syaratketentuan_premium'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
@@ -101,7 +101,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('pb_pertanyaanpopuler'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                                <a href="<?php echo base_url('pb_pertanyaanpopuler'); ?>" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_produklayanan'); ?>" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>

@@ -81,10 +81,10 @@
                                 <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                            <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('syaratketentuan_umum'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
                                             </li>
-                                            <li style="padding: 15px 0px 15px 0px;">
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('syaratketentuan_premium'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">

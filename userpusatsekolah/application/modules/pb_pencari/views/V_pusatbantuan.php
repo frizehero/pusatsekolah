@@ -42,11 +42,11 @@
                         <div class="faq-section fl-wrap">
                             <!-- accordion-->
                             <div class="accordion">
-                                <a class="toggle act-accordion" href="#mencarisekolah" style="font-size: 17px; animation: none;">Pencari Sekolah<span></span></a>
-                                <div class="accordion-inner visible">
+                                <a class="toggle act-accordion" href="#" style="font-size: 17px;">Pencari Sekolah<span></span></a>
+                                <div class="accordion-inner">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
-                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
+                                            <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pusat_bantuan'); ?>" style="color: #384F95; font-size: 15px;">Mencari Sekolah</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
@@ -77,17 +77,17 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="toggle" href="#" style="font-size: 17px;">Syarat & Ketentuan<span></span></a>
-                                <div class="accordion-inner">
+                                <a class="toggle act-accordion" href="#syaratketentuanumum" style="font-size: 17px; animation: none;">Syarat & Ketentuan<span></span></a>
+                                <div class="accordion-inner visible">
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('syaratketentuan_umum'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
+                                                <a href="<?php echo base_url('syaratketentuan_umum'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Umum</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('syaratketentuan_premium'); ?>" style="color: #384F95; font-size: 15px;">Syarat & Ketentuan Premium</a>
                                             </li>
-                                            <li style="padding: 15px 0px 15px 0px;">
+                                            <li style="background-color: #f9f6f6; padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_pencari'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pencari</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
@@ -101,7 +101,7 @@
                                     <div class="list-author-widget-contacts list-item-widget-contacts">
                                         <ul class="no-list-style">
                                             <li style="padding: 15px 0px 15px 0px;">
-                                                <a href="<?php echo base_url('pb_pertanyaanpopuler'); ?>" class="custom-scroll-link" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
+                                                <a href="<?php echo base_url('pb_pertanyaanpopuler'); ?>" style="color: #384F95; font-size: 15px;">Pertanyaan Populer</a>
                                             </li>
                                             <li style="padding: 15px 0px 15px 0px;">
                                                 <a href="<?php echo base_url('pb_produklayanan'); ?>" style="color: #384F95; font-size: 15px;">Produk & Layanan</a>
