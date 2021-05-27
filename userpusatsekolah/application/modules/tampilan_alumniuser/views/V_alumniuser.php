@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <a class="toggle" href="#"> SDN Ardimulyo 1 - Lulusan 2008 <span></span></a>
-                    <div class="accordion-inner" style="">
+                    <div class="accordion-inner">
                         <div class="list-single-main-item_content fl-wrap">
                             <div class="rooms-container fl-wrap">
                                 <div class="rooms-item fl-wrap">
