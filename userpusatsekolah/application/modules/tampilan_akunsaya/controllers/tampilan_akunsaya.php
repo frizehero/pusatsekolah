@@ -60,7 +60,7 @@ class Tampilan_akunsaya extends MX_Controller
 			'namamodule' 	=> "tampilan_akunsaya",
 			'namafileview' 	=> "V_akun_saya",
 		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore',$data);
 	}
 
 	/*function tentangview()
@@ -88,7 +88,7 @@ class Tampilan_akunsaya extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "tampilan_akunsaya",
 			'namafileview' 	=> "V_akunsaya",
-			'tampil'		=> $this->data_user->tampiledit($id),
+			'tampil'		=> $this->M_akunsaya->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
