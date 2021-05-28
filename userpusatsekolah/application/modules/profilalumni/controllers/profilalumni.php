@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Data_alumni extends MX_Controller {
+class Profilalumni extends MX_Controller {
 
 	function __construct()
 	{
@@ -16,19 +16,9 @@ class Data_alumni extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "data_alumni",
-			'namafileview' 	=> "V_data_alumni",
+			'namamodule' 	=> "profilalumni",
+			'namafileview' 	=> "V_profilalumni",
 			'tampil'		=> $this->M_data_alumni->tampil(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function profilalumni()
-	{
-		$data = array(
-			'namamodule' 	=> "data_alumni",
-			'namafileview' 	=> "V_profil_alumni",
-			//'tampil'		=> $this->M_data_alumni->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -37,8 +27,8 @@ class Data_alumni extends MX_Controller {
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "data_alumni",
-			'namafileview' 	=> "V_tambah_alumni",
+			'namamodule' 	=> "profilalumni",
+			'namafileview' 	=> "V_room_tambah",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -48,8 +38,8 @@ class Data_alumni extends MX_Controller {
 	{
 
 		$data = array(
-			'namamodule' 	=> "data_alumni",
-			'namafileview' 	=> "V_edit_alumni",
+			'namamodule' 	=> "profilalumni",
+			'namafileview' 	=> "V_room_edit",
 			'tampil'		=> $this->M_data_alumni->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -59,21 +49,22 @@ class Data_alumni extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_produk->tambah();
-		redirect('data_alumni');
+		$this->M_data_alumni->tambah();
+		redirect('profilalumni');
 		
+		//redirect('profilalumni');
 	}
 
 	function edit()
 	{
 		$this->M_data_alumni->edit();
-		redirect('data_alumni');
+		redirect('profilalumni');
 	}
 
 	function hapus()
 	{
 		$this->M_data_alumni->hapus();
-		redirect('data_alumni');
+		redirect('profilalumni');
 	}
 	
 }

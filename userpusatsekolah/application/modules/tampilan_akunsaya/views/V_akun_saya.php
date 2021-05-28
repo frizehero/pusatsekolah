@@ -89,200 +89,204 @@
             </div>
             <!-- dashboard-menu  end-->
             <!-- dashboard content-->
-            <div class="col-md-9">
-                <div class="dashboard-title fl-wrap">
-                    <h3>Data Profil</h3>
-                </div>
-                <!-- profile-edit-container-->
-                <div class="profile-edit-container fl-wrap block_box">
-                    <div class="custom-form">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label> Nama Depan <i class="fal fa-user"></i></label>
-                                <input type="text" placeholder="Jessie" value="" />
+            <?php tampilnotif() ?>
+            <form action="<?php echo base_url('tampilan_akunsaya/edit') ?>" method="POST" enctype="multipart/form-data">
+                <input name="id" value="<?php echo $tampil['id_user'] ?>" type="hidden" class="form-control">
+                <div class="col-md-9">
+                    <div class="dashboard-title fl-wrap">
+                        <h3>Data Profil</h3>
+                    </div>
+                    <!-- profile-edit-container-->
+                    <div class="profile-edit-container fl-wrap block_box">
+                        <div class="custom-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label> Nama Depan <i class="fal fa-user"></i></label>
+                                    <input type="text" name="nama_depan" value="<?php echo $tampil['nama_depan'] ?>" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Nama Belakang <i class="fal fa-user"></i></label>
+                                    <input type="text" name="nama_belakang" value="<?php echo $tampil['nama_belakang'] ?>" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Email<i class="far fa-envelope"></i> </label>
+                                    <input type="text" name="email_user" value="<?php echo $tampil['email_user'] ?>" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Nomor Telepon<i class="far fa-phone"></i> </label>
+                                    <input type="text" name="telepon_user" value="<?php echo $tampil['telepon_user'] ?>" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Profesi <i class="far fa-globe"></i> </label>
+                                    <input type="text" name="profesi_user" value="<?php echo $tampil['profesi_user'] ?>" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <label> Alamat <i class="fas fa-map-marker"></i> </label>
+                                    <input type="text" name="alamat_user" value="<?php echo $tampil['alamat_user'] ?>" />
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <label> Nama Belakang <i class="fal fa-user"></i></label>
-                                <input type="text" placeholder="Manrty" value="" />
-                            </div>
-                            <div class="col-sm-6">
-                                <label> Email<i class="far fa-envelope"></i> </label>
-                                <input type="text" placeholder="JessieManrty@domain.com" value="" />
-                            </div>
-                            <div class="col-sm-6">
-                                <label> Nomor Telepon<i class="far fa-phone"></i> </label>
-                                <input type="text" placeholder="(+62)8321178900" value="" />
-                            </div>
-                            <div class="col-sm-6">
-                                <label> Profesi <i class="far fa-globe"></i> </label>
-                                <input type="text" placeholder="Guru" value="" />
-                            </div>
-                            <div class="col-sm-6">
-                                <label> Alamat <i class="fas fa-map-marker"></i> </label>
-                                <input type="text" placeholder="Jl. Juanda, Surabaya, Jawa Timur, Indonesia" value="" />
-                            </div>
-                        </div>
-                        <label> Deskripsi</label>
-                        <textarea cols="40" rows="3" placeholder="Ceritakan sedikit tentangmu ..." style="margin-bottom:20px;"></textarea>
-                        <div class="clearfix"></div>
-                        <label>Ubah Foto Profil</label>
-                        <div class="clearfix"></div>
-                        <div class="listsearch-input-item fl-wrap">
-                            <div class="fuzone">
-                                <form>
-                                    <div class="fu-text">
-                                        <span><i class="fal fa-images"></i> klik dan upload foto</span>
-                                        <div class="photoUpload-files fl-wrap"></div>
-                                    </div>
-                                    <input type="file" class="upload" multiple>
-                                </form>
+                            <label> Deskripsi</label>
+                            <textarea cols="40" rows="3" name="deskripsi_user" style="margin-bottom:20px;"><?php echo $tampil['deskripsi_user'] ?></textarea>
+                            <div class="clearfix"></div>
+                            <label>Ubah Foto Profil</label>
+                            <div class="clearfix"></div>
+                            <div class="listsearch-input-item fl-wrap">
+                                <div class="fuzone">
+                                    <form>
+                                        <div class="fu-text">
+                                            <span><i class="fal fa-images"></i> klik dan upload foto</span>
+                                            <div class="photoUpload-files fl-wrap"></div>
+                                        </div>
+                                        <input name="fotop_user" value="<?php echo $tampil['fotop_user'] ?>" type="file" class="upload" multiple>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="dashboard-title  dt-inbox fl-wrap">
-                    <h3>Lokasi</h3>
-                </div>
-                <div class="profile-edit-container fl-wrap block_box">
-                    <div class="custom-form">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Longitude<i class="fal fa-long-arrow-alt-right"></i> </label>
-                                <input type="text" placeholder="Map Longitude" id="long" value="">
+                    <div class="dashboard-title  dt-inbox fl-wrap">
+                        <h3>Lokasi</h3>
+                    </div>
+                    <div class="profile-edit-container fl-wrap block_box">
+                        <div class="custom-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Longitude<i class="fal fa-long-arrow-alt-right"></i> </label>
+                                    <input type="text" placeholder="Map Longitude" id="long" name="longitude_user" value="<?php echo $tampil['longitude_user'] ?>">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Latitude<i class="fal fa-long-arrow-alt-down"></i> </label>
+                                    <input type="text" placeholder="Map Latitude" id="lat" name="latitude_user" value="<?php echo $tampil['latitude_user'] ?>">
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <label>Latitude<i class="fal fa-long-arrow-alt-down"></i> </label>
-                                <input type="text" placeholder="Map Latitude" id="lat" value="">
+                            <div class="map-container">
+                                <div id="singleMap" class="drag-map" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;">
+                                    <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                        <div class="gm-err-container">
+                                            <div class="gm-err-content">
+                                                <div class="gm-err-icon"><img src="https://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div>
+                                                <div class="gm-err-title">Ups! Ada sesuatu yang salah.</div>
+                                                <div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="map-container">
-                            <div id="singleMap" class="drag-map" data-latitude="40.7427837" data-longitude="-73.11445617675781" style="position: relative; overflow: hidden;">
-                                <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-                                    <div class="gm-err-container">
-                                        <div class="gm-err-content">
-                                            <div class="gm-err-icon"><img src="https://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;"></div>
-                                            <div class="gm-err-title">Ups! Ada sesuatu yang salah.</div>
-                                            <div class="gm-err-message">Halaman ini tidak memuat Google Maps dengan benar. Lihat konsol JavaScript untuk mengetahui detail teknisnya.</div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Kota</label>
+                                    <div class="listsearch-input-item">
+                                        <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
+                                            <option>All Cities</option>
+                                            <option>New York</option>
+                                            <option>London</option>
+                                            <option>Paris</option>
+                                            <option>Kiev</option>
+                                            <option>Moscow</option>
+                                            <option>Dubai</option>
+                                            <option>Rome</option>
+                                            <option>Beijing</option>
+                                        </select>
+                                        <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
+                                            <div class="nice-select-search-box"><input name="kota_user" value="<?php echo $tampil['kota_user'] ?>" type="text" class="nice-select-search" placeholder="Search..."></div>
+                                            <ul class="list">
+                                                <li data-value="All Cities" class="option selected focus">All Cities</li>
+                                                <li data-value="New York" class="option">New York</li>
+                                                <li data-value="London" class="option">London</li>
+                                                <li data-value="Paris" class="option">Paris</li>
+                                                <li data-value="Kiev" class="option">Kiev</li>
+                                                <li data-value="Moscow" class="option">Moscow</li>
+                                                <li data-value="Dubai" class="option">Dubai</li>
+                                                <li data-value="Rome" class="option">Rome</li>
+                                                <li data-value="Beijing" class="option">Beijing</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Kecamatan</label>
+                                    <div class="listsearch-input-item">
+                                        <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
+                                            <option>All Cities</option>
+                                            <option>New York</option>
+                                            <option>London</option>
+                                            <option>Paris</option>
+                                            <option>Kiev</option>
+                                            <option>Moscow</option>
+                                            <option>Dubai</option>
+                                            <option>Rome</option>
+                                            <option>Beijing</option>
+                                        </select>
+                                        <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
+                                            <div class="nice-select-search-box"><input type="text" name="kecamatan_user" value="<?php echo $tampil['kecamatan_user'] ?>" class="nice-select-search" placeholder="Search..."></div>
+                                            <ul class="list">
+                                                <li data-value="All Cities" class="option selected">All Cities</li>
+                                                <li data-value="New York" class="option">New York</li>
+                                                <li data-value="London" class="option">London</li>
+                                                <li data-value="Paris" class="option">Paris</li>
+                                                <li data-value="Kiev" class="option">Kiev</li>
+                                                <li data-value="Moscow" class="option">Moscow</li>
+                                                <li data-value="Dubai" class="option">Dubai</li>
+                                                <li data-value="Rome" class="option">Rome</li>
+                                                <li data-value="Beijing" class="option">Beijing</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Kelurahan</label>
+                                    <div class="listsearch-input-item">
+                                        <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
+                                            <option>All Cities</option>
+                                            <option>New York</option>
+                                            <option>London</option>
+                                            <option>Paris</option>
+                                            <option>Kiev</option>
+                                            <option>Moscow</option>
+                                            <option>Dubai</option>
+                                            <option>Rome</option>
+                                            <option>Beijing</option>
+                                        </select>
+                                        <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
+                                            <div class="nice-select-search-box"><input type="text" name="kelurahan_user" value="<?php echo $tampil['kelurahan_user'] ?>" class="nice-select-search" placeholder="Search..."></div>
+                                            <ul class="list">
+                                                <li data-value="All Cities" class="option selected">All Cities</li>
+                                                <li data-value="New York" class="option">New York</li>
+                                                <li data-value="London" class="option">London</li>
+                                                <li data-value="Paris" class="option">Paris</li>
+                                                <li data-value="Kiev" class="option">Kiev</li>
+                                                <li data-value="Moscow" class="option">Moscow</li>
+                                                <li data-value="Dubai" class="option">Dubai</li>
+                                                <li data-value="Rome" class="option">Rome</li>
+                                                <li data-value="Beijing" class="option">Beijing</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Kota</label>
-                                <div class="listsearch-input-item">
-                                    <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
-                                        <option>All Cities</option>
-                                        <option>New York</option>
-                                        <option>London</option>
-                                        <option>Paris</option>
-                                        <option>Kiev</option>
-                                        <option>Moscow</option>
-                                        <option>Dubai</option>
-                                        <option>Rome</option>
-                                        <option>Beijing</option>
-                                    </select>
-                                    <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
-                                        <div class="nice-select-search-box"><input type="text" class="nice-select-search" placeholder="Search..."></div>
-                                        <ul class="list">
-                                            <li data-value="All Cities" class="option selected focus">All Cities</li>
-                                            <li data-value="New York" class="option">New York</li>
-                                            <li data-value="London" class="option">London</li>
-                                            <li data-value="Paris" class="option">Paris</li>
-                                            <li data-value="Kiev" class="option">Kiev</li>
-                                            <li data-value="Moscow" class="option">Moscow</li>
-                                            <li data-value="Dubai" class="option">Dubai</li>
-                                            <li data-value="Rome" class="option">Rome</li>
-                                            <li data-value="Beijing" class="option">Beijing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Kecamatan</label>
-                                <div class="listsearch-input-item">
-                                    <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
-                                        <option>All Cities</option>
-                                        <option>New York</option>
-                                        <option>London</option>
-                                        <option>Paris</option>
-                                        <option>Kiev</option>
-                                        <option>Moscow</option>
-                                        <option>Dubai</option>
-                                        <option>Rome</option>
-                                        <option>Beijing</option>
-                                    </select>
-                                    <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
-                                        <div class="nice-select-search-box"><input type="text" class="nice-select-search" placeholder="Search..."></div>
-                                        <ul class="list">
-                                            <li data-value="All Cities" class="option selected">All Cities</li>
-                                            <li data-value="New York" class="option">New York</li>
-                                            <li data-value="London" class="option">London</li>
-                                            <li data-value="Paris" class="option">Paris</li>
-                                            <li data-value="Kiev" class="option">Kiev</li>
-                                            <li data-value="Moscow" class="option">Moscow</li>
-                                            <li data-value="Dubai" class="option">Dubai</li>
-                                            <li data-value="Rome" class="option">Rome</li>
-                                            <li data-value="Beijing" class="option">Beijing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Kelurahan</label>
-                                <div class="listsearch-input-item">
-                                    <select data-placeholder="City" class="chosen-select no-search-select" style="display: none;">
-                                        <option>All Cities</option>
-                                        <option>New York</option>
-                                        <option>London</option>
-                                        <option>Paris</option>
-                                        <option>Kiev</option>
-                                        <option>Moscow</option>
-                                        <option>Dubai</option>
-                                        <option>Rome</option>
-                                        <option>Beijing</option>
-                                    </select>
-                                    <div class="nice-select chosen-select no-search-select" tabindex="0"><span class="current">All Cities</span>
-                                        <div class="nice-select-search-box"><input type="text" class="nice-select-search" placeholder="Search..."></div>
-                                        <ul class="list">
-                                            <li data-value="All Cities" class="option selected">All Cities</li>
-                                            <li data-value="New York" class="option">New York</li>
-                                            <li data-value="London" class="option">London</li>
-                                            <li data-value="Paris" class="option">Paris</li>
-                                            <li data-value="Kiev" class="option">Kiev</li>
-                                            <li data-value="Moscow" class="option">Moscow</li>
-                                            <li data-value="Dubai" class="option">Dubai</li>
-                                            <li data-value="Rome" class="option">Rome</li>
-                                            <li data-value="Beijing" class="option">Beijing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- profile-edit-container end-->
+                    <div class="dashboard-title dt-inbox fl-wrap">
+                        <h3>Sosial Media</h3>
+                    </div>
+                    <!-- profile-edit-container-->
+                    <div class="profile-edit-container fl-wrap block_box">
+                        <div class="custom-form">
+                            <label> Facebook <i class="fab fa-facebook"></i></label>
+                            <input type="text" placeholder="https://www.facebook.com/" name="facebook_user" value="<?php echo $tampil['facebook_user'] ?>" />
+                            <label> Twitter<i class="fab fa-twitter"></i> </label>
+                            <input type="text" placeholder="https://twitter.com/" name="twitter_user" value="<?php echo $tampil['twitter_user'] ?>" />
+                            <label> Whatsapp<i class="fab fa-whatsapp"></i> </label>
+                            <input type="text" placeholder="https://www.whatsapp.com" name="whatsapp_user" value="<?php echo $tampil['whatsapp_user'] ?>" />
+                            <label> Instagram <i class="fab fa-instagram"></i> </label>
+                            <input type="text" placeholder="https://www.instagram.com/" name="instagram_user" value="<?php echo $tampil['instagram_user'] ?>" />
+                            <button type="button" class="btn    color2-bg  float-btn">Simpn Perubahan<i class="fal fa-save"></i></button>
                         </div>
                     </div>
+                    <!-- profile-edit-container end-->
                 </div>
-                <!-- profile-edit-container end-->
-                <div class="dashboard-title dt-inbox fl-wrap">
-                    <h3>Sosial Media</h3>
-                </div>
-                <!-- profile-edit-container-->
-                <div class="profile-edit-container fl-wrap block_box">
-                    <div class="custom-form">
-                        <label> Facebook <i class="fab fa-facebook"></i></label>
-                        <input type="text" placeholder="https://www.facebook.com/" value="" />
-                        <label> Twitter<i class="fab fa-twitter"></i> </label>
-                        <input type="text" placeholder="https://twitter.com/" value="" />
-                        <label> Whatsapp<i class="fab fa-whatsapp"></i> </label>
-                        <input type="text" placeholder="https://www.whatsapp.com" value="" />
-                        <label> Instagram <i class="fab fa-instagram"></i> </label>
-                        <input type="text" placeholder="https://www.instagram.com/" value="" />
-                        <button class="btn    color2-bg  float-btn">Simpn Perubahan<i class="fal fa-save"></i></button>
-                    </div>
-                </div>
-                <!-- profile-edit-container end-->
-            </div>
+            </form>
             <!-- dashboard content end-->
         </div>
     </section>

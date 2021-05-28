@@ -132,6 +132,8 @@
     <div class="limit-box fl-wrap"></div>
     <!--tab end-->
     <section style="padding-top: 20px; padding-bottom: 10px;">
+        <?php $no = 1;
+        foreach ($tampil as $rowP) { ?>
             <div class="gallery-item">
                 <!-- listing-item  -->
                 <div class="listing-item" style="height: 433px;">
@@ -142,24 +144,24 @@
                             <img src="images/avatar/26.png" alt="" style="height: 250px;"> 
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/27.png" alt=""></a>
-                                <span class="avatar-tooltip"><strong>Vanessa Jo Merrell</strong></span>
+                                <span class="avatar-tooltip"><strong><?php echo $rowP->nama_guru; ?></a></strong></span>
                             </div>
                         </div>
                         <div class="geodir-category-content fl-wrap title-sin_item">
                             <div class="geodir-category-content-title fl-wrap">
                                 <div class="geodir-category-content-title-item">
-                                    <h3 class="title-sin_map"><a href="<?php echo base_url('profil_user'); ?>">Vanessa Jo Merrell</a></h3>
-                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Mengajar Seni Musik</b></a></div>
+                                    <h3 class="title-sin_map"><a href="<?php echo base_url('profil_user'); ?>"><?php echo $rowP->nama_guru; ?></a></a></h3>
+                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Mengajar <?php echo $rowP->mapel_guru; ?></a></b></a></div>
                                 </div>
                             </div>
                             <div class="geodir-category-text fl-wrap">
                                 <br><br>
                                 <p class="small-text">
-                                Nama : Vanesssa Jo Merrell
+                                Nama : <?php echo $rowP->nama_guru; ?></a>
                                 <br>
-                                NIP : 0074936294
+                                NIP : <?php echo $rowP->nip_guru; ?></a>
                                 <br>
-                                Mengajar Mapel : Seni Musik
+                                Mengajar Mapel : <?php echo $rowP->mapel_guru; ?></a>
                                 </p>
                                 <br><br><br>
                             </div>
@@ -168,9 +170,11 @@
                 </div>
                 <!-- listing-item end -->                              
             </div>
-            <div class="gallery-item">
+        <?php $no++;
+        } ?>
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -201,12 +205,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->  
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -237,12 +241,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->                                   
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -273,12 +277,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->                                                            
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -309,12 +313,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->                              
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -345,12 +349,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->  
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> -->
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -381,12 +385,12 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> -->
                 <!-- listing-item end -->                                   
-            </div>
-            <div class="gallery-item">
+            <!-- </div> -->
+            <!-- <div class="gallery-item"> --> 
                 <!-- listing-item  -->
-                <div class="listing-item" style="height: 433px;">
+                <!-- <div class="listing-item" style="height: 433px;">
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -417,9 +421,9 @@
                             </div>
                         </div>
                     </article>
-                </div>
+                </div> --> 
                 <!-- listing-item end -->                                                            
-            </div>
+            <!-- </div> --> 
         <!-- listing-item-container -->
         <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid" style="padding-top: 0;">                                                      
             <div class="pagination fwmpag">

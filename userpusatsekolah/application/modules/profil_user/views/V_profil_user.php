@@ -1,13 +1,12 @@
 <div class="content">
-    <?php $no = 1;
-    foreach ($tampil as $rowP) { ?>
+    <form action="<?php echo base_url('profil_user/tampildetail') ?>" method="POST" enctype="multipart/form-data">
         <!--  section  -->
         <section class="parallax-section dashboard-header-sec gradient-bg" data-scrollax-parent="true">
             <div class="container">
                 <!--Tariff Plan menu-->
                 <!--Tariff Plan menu end-->
                 <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
-                    <h1>   <span><?php echo $rowP->nama_alumni; ?></span></h1>
+                    <h1>   <span><?php echo $tampil['nama_alumni'] ?></span></h1>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -75,24 +74,24 @@
                         <div class="custom-form">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label>Username <i class="fal fa-user"> </i></label>
-                                    <input type="text" placeholder="veronicamerrell" value=""/>
+                                    <label>Username <i class="fal fa-user"></i></label>
+                                    <input type="text" placeholder="<?php echo $rowP->nama_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Nama Lengkap <i class="fal fa-user"></i></label>
-                                    <input type="text" placeholder="Veronica Jo Merrell" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->nama_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Tempat, Tanggal Lahir <i class="fal fa-calendar"></i></label>
-                                    <input type="text" placeholder="Malang, 08 Desember 2003" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->tmplahir_alumni; ?>, <?php echo $rowP->tgllahir_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Alamat <i class="fal fa-map-marker"></i></label>
-                                    <input type="text" placeholder="St. Elm Bougenville 80 Northside" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->alamatlengkap_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Status <i class="fal fa-user"></i></label>
-                                    <input type="text" placeholder="Mahasiswa" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->status_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Alumni <i class="fal fa-user"></i></label>
@@ -100,31 +99,31 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Sekolah / Tempat Bekerja <i class="fal fa-user"></i></label>
-                                    <input type="text" placeholder="Univercity of Harvard" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->sekolah_bekerja; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Pekerjaan / Fakultas <i class="fal fa-user"></i></label>
-                                    <input type="text" placeholder="Fakultas Hukum" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->pekerjaan_fakultas; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Email <i class="far fa-envelope"></i>  </label>
-                                    <input type="text" placeholder="veronicamerrell@gmail.com" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->email_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Telephone<i class="far fa-phone"></i>  </label>
-                                    <input type="text" placeholder="+6281987654367" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->telephone_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Facebook <i class="fab fa-facebook"></i></label>
-                                    <input type="text" placeholder="veronicamerrell" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->facebook_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label>Twitter<i class="fab fa-twitter"></i>  </label>
-                                    <input type="text" placeholder="it'smeveronica" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->twitter_alumni; ?>" value=""/>
                                 </div>
                                 <div class="col-sm-6">
                                     <label> Instagram <i class="fab fa-instagram"></i>  </label>
-                                    <input type="text" placeholder="varonicamerrell" value=""/>
+                                    <input type="text" placeholder="<?php echo $rowP->instagram_alumni; ?>" value=""/>
                                 </div>
                             </div>
                         </div>
@@ -232,6 +231,5 @@
         </section>
         <!--  section  end-->
         <div class="limit-box fl-wrap"></div>
-    <?php $no++;
-    } ?>
+    </form>
 </div>
