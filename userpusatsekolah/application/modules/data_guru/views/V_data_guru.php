@@ -83,7 +83,7 @@
                     </div>
                     <!-- listsearch-input-item end-->
                     <!-- listsearch-input-item-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="listsearch-input-item">
                             <select data-placeholder="Location" class="chosen-select no-search-select" >
                                 <option>Semua Kategori</option>
@@ -96,7 +96,7 @@
                     </div>
                     <!-- listsearch-input-item end-->
                     <!-- listsearch-input-item-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="listsearch-input-item">
                             <select data-placeholder="City/Location" class="chosen-select no-search-select" >
                                 <option>Semua Mata Pelajaran</option>
@@ -121,11 +121,11 @@
                     </div>
                     <!-- listsearch-input-item end-->  
                     <!-- listsearch-input-item-->
-                    <div class="col-md-2">
+                    <!-- <div class="col-md-2">
                         <div class="listsearch-input-item">
                             <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- listsearch-input-item end-->                                         
                 </div>
             </div>
