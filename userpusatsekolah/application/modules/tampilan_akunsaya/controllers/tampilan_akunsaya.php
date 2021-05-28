@@ -86,38 +86,28 @@ class Tampilan_akunsaya extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "p_sekolah",
-			'namafileview' 	=> "V_p_sekolah",
-			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
+			'namamodule' 	=> "tampilan_akunsaya",
+			'namafileview' 	=> "V_akunsaya",
+			'tampil'		=> $this->data_user->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function tambah()
 	{
-		$this->M_beranda_as->tambah();
-		redirect('beranda_as');
+		$this->M_akunsaya->tambah();
+		redirect('tampilan_akunsaya');
 	}
 
 	function edit()
 	{
-		$this->M_p_sekolah->edit();
-		redirect('p_sekolah');
+		$this->M_akunsaya->edit();
+		redirect('tampilan_akunsaya');
 	}
 
 	function hapus()
 	{
-		$this->M_beranda_as->hapus();
-		redirect('beranda_as');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_beranda_as->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
+		$this->M_akunsaya->hapus();
+		redirect('tampilan_akunsaya');
 	}
 }
