@@ -14,7 +14,7 @@
 	            <div class="container">
 	                <div class="dashboard-header_conatiner fl-wrap">
 	                    <div class="dashboard-header-avatar">
-	                        <img src="images/avatar/25.png" alt="">
+	                        <img src="<?php echo base_url() ?>images/avatar/25.png" alt="">
 	                    </div>
 	                    <!--  dashboard-header-stats-wrap end -->
 	                    <br><br><br>
@@ -75,55 +75,55 @@
 	                        <div class="row">
 	                            <div class="col-sm-6">
 	                                <label>Username <i class="fal fa-user"> </i></label>
-	                                <input type="text" placeholder="veronicamerrell" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['nama_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Nama Lengkap <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="Veronica Jo Merrell" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['nama_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Tempat, Tanggal Lahir <i class="fal fa-calendar"></i></label>
-	                                <input type="text" placeholder="Malang, 08 Desember 2003" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['tmplahir_alumni'] ?>, <?php echo $tampil['tgllahir_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Alamat <i class="fal fa-map-marker"></i></label>
-	                                <input type="text" placeholder="St. Elm Bougenville 80 Northside" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['alamatlengkap_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Status <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="Mahasiswa" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['status_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Alumni <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="Las Encitas International High" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['riwayat_sma'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Sekolah / Tempat Bekerja <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="Univercity of Harvard" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['sekolah_bekerja'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Pekerjaan / Fakultas <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="Fakultas Hukum" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['pekerjaan_fakultas'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Email <i class="far fa-envelope"></i>  </label>
-	                                <input type="text" placeholder="veronicamerrell@gmail.com" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['email_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Telephone<i class="far fa-phone"></i>  </label>
-	                                <input type="text" placeholder="+6281987654367" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['telephone_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Facebook <i class="fab fa-facebook"></i></label>
-	                                <input type="text" placeholder="veronicamerrell" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['facebook_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Twitter<i class="fab fa-twitter"></i>  </label>
-	                                <input type="text" placeholder="it'smeveronica" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['twitter_alumni'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label> Instagram <i class="fab fa-instagram"></i>  </label>
-	                                <input type="text" placeholder="varonicamerrell" value=""/>
+	                                <input type="text" placeholder="<?php echo $tampil['instagram_alumni'] ?>" value=""/>
 	                            </div>
 	                        </div>
 	                    </div>
@@ -136,25 +136,25 @@
 	                        <article class="geodir-category-listing fl-wrap">
 	                            <div class="geodir-category-img">
 	                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-	                                <img src="images/avatar/10.png" alt="" style="height: 200px;"> 
+	                                <img src="<?php echo base_url() ?>images/avatar/10.png" alt="" style="height: 200px;"> 
 	                                </a>
 	                                <div class="listing-avatar"><a href="author-single.html">
-	                                    <img src="images/avatar/25.png" alt=""></a>
+	                                    <img src="<?php echo base_url() ?>images/avatar/25.png" alt=""></a>
 	                                </div>
 	                            </div>
 	                            <div class="geodir-category-content fl-wrap title-sin_item">
 	                                <div class="geodir-category-content-title fl-wrap">
 	                                    <div class="geodir-category-content-title-item">
-	                                        <h3 class="title-sin_map"><a href="listing-single.html">Veronica Jo Merrell</a></h3>
-	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Alumni Sunnyside Elementary School</a></div>
+	                                        <h3 class="title-sin_map"><a href="listing-single.html"><?php echo $tampil['nama_alumni'] ?></a></h3>
+	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> <?php echo $tampil['riwayat_sd'] ?></div>
 	                                    </div>
 	                                </div>
 	                                <div class="geodir-category-text fl-wrap">
 	                                    <br>
 	                                    <p class="small-text">
-	                                        Nama: Veronica Jo Merrell <br>
-	                                        NISN : 0098463745 <br>
-	                                        Angkatan : 2015
+	                                        Nama: <?php echo $tampil['nama_alumni'] ?> <br>
+	                                        NISN : <?php echo $tampil['nisn'] ?> <br>
+	                                        Angkatan : <?php echo $tampil['thlulus_alumni'] ?>
 	                                    </p>
 	                                    <br>
 	                                </div>
@@ -167,25 +167,25 @@
 	                        <article class="geodir-category-listing fl-wrap">
 	                            <div class="geodir-category-img">
 	                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-	                                <img src="images/avatar/40.png" alt="" style="height: 200px;"> 
+	                                <img src="<?php echo base_url() ?>images/avatar/40.png" alt="" style="height: 200px;"> 
 	                                </a>
 	                                <div class="listing-avatar"><a href="author-single.html">
-	                                    <img src="images/avatar/25.png" alt=""></a>
+	                                    <img src="<?php echo base_url() ?>images/avatar/25.png" alt=""></a>
 	                                </div>
 	                            </div>
 	                            <div class="geodir-category-content fl-wrap title-sin_item">
 	                                <div class="geodir-category-content-title fl-wrap ">
 	                                    <div class="geodir-category-content-title-item">
-	                                        <h3 class="title-sin_map"><a href="listing-single.html">Veronica Jo Merrell</a></h3>
-	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Liberty Junior High School </a></div>
+	                                        <h3 class="title-sin_map"><a href="listing-single.html"><?php echo $tampil['nama_alumni'] ?></a></h3>
+	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  <?php echo $tampil['riwayat_smp'] ?> </a></div>
 	                                    </div>
 	                                </div>
 	                                <div class="geodir-category-text fl-wrap">
 	                                    <br>
 	                                    <p class="small-text">
-	                                        Nama : Veronica Jo Merrell <br>
-	                                        NISN : 0098463745 <br>
-	                                        Angkatan : 2019
+	                                        Nama : <?php echo $tampil['nama_alumni'] ?> <br>
+	                                        NISN : <?php echo $tampil['nisn'] ?> <br>
+	                                        Angkatan : <?php echo $tampil['thlulus_alumni'] ?>
 	                                    </p>
 	                                    <br>
 	                                </div>
@@ -198,25 +198,25 @@
 	                        <article class="geodir-category-listing fl-wrap">
 	                            <div class="geodir-category-img">
 	                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-	                                <img src="images/avatar/41.png" alt="" style="height: 200px;"> 
+	                                <img src="<?php echo base_url() ?>images/avatar/41.png" alt="" style="height: 200px;"> 
 	                                </a>
 	                                <div class="listing-avatar">
-	                                    <a href="author-single.html"><img src="images/avatar/25.png" alt=""></a>
+	                                    <a href="author-single.html"><img src="<?php echo base_url() ?>images/avatar/25.png" alt=""></a>
 	                                </div>
 	                            </div>
 	                            <div class="geodir-category-content fl-wrap title-sin_item">
 	                                <div class="geodir-category-content-title fl-wrap">
 	                                    <div class="geodir-category-content-title-item">
-	                                        <h3 class="title-sin_map"><a href="listing-single.html">Veronica Jo Merrell</a></h3>
-	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Riverdale High School</a></div>
+	                                        <h3 class="title-sin_map"><a href="listing-single.html"><?php echo $tampil['nama_alumni'] ?></a></h3>
+	                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> <?php echo $tampil['riwayat_sma'] ?></a></div>
 	                                    </div>
 	                                </div>
 	                                <div class="geodir-category-text fl-wrap">
 	                                    <br>
 	                                    <p class="small-text">
-	                                        Nama : Veronica Jo Merrell <br>
-	                                        NISN : 0098463745 <br>
-	                                        Angkatan : 2022
+	                                        Nama : <?php echo $tampil['nama_alumni'] ?> <br>
+	                                        NISN : <?php echo $tampil['nisn'] ?> <br>
+	                                        Angkatan : <?php echo $tampil['thlulus_alumni'] ?>
 	                                    </p>
 	                                    <br>
 	                                </div>
