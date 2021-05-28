@@ -140,7 +140,7 @@
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                            <a href="<?php echo base_url('profil_user'); ?>" class="geodir-category-img-wrap fl-wrap">
+                            <a href="<?php echo base_url('data_guru/profilguru/' . encrypt_url($rowP->id_guru)); ?>" class="geodir-category-img-wrap fl-wrap">
                             <img src="images/avatar/26.png" alt="" style="height: 250px;"> 
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/27.png" alt=""></a>
