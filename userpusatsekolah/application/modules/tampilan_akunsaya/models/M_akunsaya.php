@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_beranda_as extends CI_Model
+class M_akunsaya extends CI_Model
 {
 
 	function tampil()
 	{
-		$this->db->order_by('id_beranda_as', 'DESC');
-		$query = $this->db->get('beranda_as');
+		$this->db->order_by('id_user', 'DESC');
+		$query = $this->db->get('data_user');
 		return $query->result();
 	}
 
@@ -64,11 +64,11 @@ class M_beranda_as extends CI_Model
 					'twitter_user' 		= $twitter_user
 					'whatsapp_user' 	= $whatsapp_user
 					'facebook_user' 	= $facebook_user
-					'fotop_user' 		=> $gbr['file_name'],
+					'fotop_user' 		= $gbr['file_name'],
 					
 					
 				);
-				$this->db->insert('produk', $data);
+				$this->db->insert('data_user', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			
 			}	 
@@ -93,7 +93,7 @@ class M_beranda_as extends CI_Model
 					'facebook_user' 	= $facebook_user
 					'fotop_user' 		=> 'kosong1.jpeg',
 				);
-				$this->db->insert('produk', $data);
+				$this->db->insert('data_user', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 

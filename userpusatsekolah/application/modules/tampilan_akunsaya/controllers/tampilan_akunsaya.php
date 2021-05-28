@@ -8,7 +8,7 @@ class Tampilan_akunsaya extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('M_beranda_as');
+		$this->load->model('M_akunsaya');
 		$this->load->model('login/m_session');
 	}
 
@@ -21,9 +21,18 @@ class Tampilan_akunsaya extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}*/
+	function index()
+	{
+		$data = array(
+			'namamodule' 	=> "tampilan_akunsaya",
+			'namafileview' 	=> "V_akun_saya",
+			'tampil'		=> $this->M_akunsaya->tampil(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
 
 	// index
-	function index()
+	/*function index()
 	{
 		//echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
@@ -42,14 +51,14 @@ class Tampilan_akunsaya extends MX_Controller
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}
+	}*/
 
 	// halaman tambah
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "daftar_sd",
-			'namafileview' 	=> "V_daftar_sd",
+			'namamodule' 	=> "tampilan_akunsaya",
+			'namafileview' 	=> "V_akun_saya",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
