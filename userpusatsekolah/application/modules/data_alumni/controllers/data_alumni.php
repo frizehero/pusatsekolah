@@ -23,12 +23,12 @@ class Data_alumni extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function profilalumni()
+	function profilalumni($id)
 	{
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_profil_alumni",
-			//'tampil'		=> $this->M_data_alumni->tampildetail($id),
+			'tampil'		=> $this->M_data_alumni->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

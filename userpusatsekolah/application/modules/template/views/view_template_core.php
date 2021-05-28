@@ -41,11 +41,11 @@
     ?>
 
     <!--loader-->
-    <div class="loader-wrap">
+    <!-- <div class="loader-wrap">
         <div class="loader-inner">
             <div class="loader-inner-cirle"></div>
         </div>
-    </div>
+    </div> -->
     <!--loader end-->
     <!-- header -->
     <header class="main-header">
