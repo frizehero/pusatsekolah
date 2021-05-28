@@ -5,7 +5,7 @@ class M_akunsaya extends CI_Model{
 
 	function tampil()
 	{
-		return $this->db->get('data_user')->result();
+		return $this->db->get('tb_login')->result();
 	}
 
 	function tambah()
@@ -64,7 +64,7 @@ class M_akunsaya extends CI_Model{
 
 
 				);
-				$this->db->insert('data_user', $data);
+				$this->db->insert('tb_login', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 		}
@@ -88,7 +88,7 @@ class M_akunsaya extends CI_Model{
 					'facebook_user' 	=> $facebook_user,
 					'fotop_user' 		=> 'kosong1.jpeg',
 				);
-				$this->db->insert('data_user', $data);
+				$this->db->insert('tb_login', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
@@ -148,7 +148,7 @@ class M_akunsaya extends CI_Model{
 					'facebook_user' 	=> $facebook_user,
 					'fotop_user' 		=> $gbr['file_name'],
 				);
-				$this->db->where('id_user',$id)->update('data_user', $data);
+				$this->db->where('id_admin',$id)->update('tb_login',$data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 		}
@@ -171,7 +171,7 @@ class M_akunsaya extends CI_Model{
 					'whatsapp_user' 	=> $whatsapp_user,
 					'facebook_user' 	=> $facebook_user,
 				);
-				$this->db->where('id_user',$id)->update('data_user', $data);
+				$this->db->where('id_admin',$id)->update('tb_login',$data);
 				$this->session->set_flashdata('msg', 'suksesedit');
 			}
 
@@ -181,8 +181,8 @@ class M_akunsaya extends CI_Model{
 	function tampiledit($id)
 	{
 		$idnya = decrypt_url($id);
-		$this->db->where('id_user', $idnya);
-		return $this->db->get('data_user')->row_array();
+		$this->db->where('id_admin', $idnya);
+		return $this->db->get('tb_login')->row_array();
 	}
 
 	/*function hapus()

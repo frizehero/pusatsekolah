@@ -91,7 +91,7 @@
             <!-- dashboard content-->
             <?php tampilnotif() ?>
             <form action="<?php echo base_url('tampilan_akunsaya/edit') ?>" method="POST" enctype="multipart/form-data">
-                <input name="id" value="<?php echo $tampil['id_user'] ?>" type="hidden" class="form-control">
+                <input name="id" value="<?php echo $tampil['id_admin'] ?>" type="hidden" class="form-control">
                 <div class="col-md-9">
                     <div class="dashboard-title fl-wrap">
                         <h3>Data Profil</h3>
