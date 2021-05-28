@@ -5,7 +5,12 @@ class M_data_alumni extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('data_alumni')->result();
+		$this->db->from('data_alumni');
+		$query = $this->db->get();
+
+
+
+		return $query->result();
 	}
 
 	function tambah()

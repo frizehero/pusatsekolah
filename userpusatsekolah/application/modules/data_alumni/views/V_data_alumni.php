@@ -142,7 +142,7 @@
                                 <div class="geodir-category-content fl-wrap title-sin_item">
                                     <div class="geodir-category-content-title fl-wrap ">
                                         <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="<?php echo base_url('profil_user'); ?>"><?php echo $rowP->nama_alumni; ?></a></h3>
+                                            <h3 class="title-sin_map"><a href="tampilan-profil-user.html"><?php echo $rowP->nama_alumni; ?></a></h3>
                                             <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni <?php echo $rowP->thlulus_alumni; ?></b></a></div>
                                         </div>
                                     </div>
@@ -156,9 +156,9 @@
                     </div>
                 <?php $no++;
                 } ?>
-                    <div class="gallery-item">
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -181,12 +181,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->  
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!--<div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -209,12 +209,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->                                   
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -237,12 +237,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->                                                            
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -265,12 +265,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->                              
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -293,12 +293,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->  
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -321,12 +321,12 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->                                   
-                    </div>
-                    <div class="gallery-item">
+                    <!-- </div> -->
+                    <!-- <div class="gallery-item"> -->
                         <!-- listing-item  -->
-                        <div class="listing-item" style="height: 433px;">
+                        <!-- <div class="listing-item" style="height: 433px;">
                             <article class="geodir-category-listing fl-wrap">
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
@@ -349,9 +349,9 @@
                                     </div>
                                 </div>
                             </article>
-                        </div>
+                        </div> -->
                         <!-- listing-item end -->                                                            
-                    </div>
+                    <!-- </div> -->
                 <!-- listing-item-container -->
                 <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid" style="padding-top: 0;">                                                      
                     <div class="pagination fwmpag">

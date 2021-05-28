@@ -23,6 +23,16 @@ class Profil_user extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function profilalumni($id)
+	{
+		$data = array(
+			'namamodule' 	=> "profil_user",
+			'namafileview' 	=> "V_profil_user",
+			'tampil'		=> $this->M_data_alumni->tampildetail($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 		// halaman tambah
 	function tambahview()
 	{
