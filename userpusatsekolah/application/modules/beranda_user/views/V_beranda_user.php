@@ -142,7 +142,7 @@
                                 <div class="listing-item listing_carditem">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <a href="tampilan-ppdb-sekolah.html" class="geodir-category-img-wrap fl-wrap">
+                                            <a href="<?php echo base_url('ppdb_user'); ?>" class="geodir-category-img-wrap fl-wrap">
                                             <img src="<?php echo base_url() ?>images/sekolah/ppdb1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">

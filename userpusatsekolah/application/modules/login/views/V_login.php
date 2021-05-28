@@ -11,10 +11,10 @@
         <meta name="keywords" content=""/>
         <meta name="description" content=""/>
         <!--=============== css  ===============-->	
-        <link type="text/css" rel="stylesheet" href="css/reset.css">
-        <link type="text/css" rel="stylesheet" href="css/plugins.css">
-        <link type="text/css" rel="stylesheet" href="css/style.css">
-        <link type="text/css" rel="stylesheet" href="css/color.css">
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/reset.css">
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/plugins.css">
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/style.css">
+        <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/color.css">
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="<?php echo base_url() ?>images/logo.ico">
     </head>
@@ -31,7 +31,7 @@
             <!--login-column  -->
             <div class="login-column">
                 <div class="login-column_header">
-                    <img src="images/logoatas.png" alt="">
+                    <img src="<?php echo base_url() ?>images/logoatas.png" alt="">
                     <div class="clearfix"></div>
                     <h4>Selamat Bergabung Dengan Kami</h4>
                 </div>
@@ -92,7 +92,7 @@
                                                     <label for="check-a">I agree to the <a href="#">Terms and Conditions</a></label>
                                                 </div>
                                                 <div class="clearfix"></div>
-                                                <button type="submit"     class="btn float-btn color2-bg"> Register  <i class="fas fa-caret-right"></i></button>
+                                                <button type="submit" class="btn float-btn color2-bg"> Register  <i class="fas fa-caret-right"></i></button>
                                             </form>
                                         </div>
                                     </div>

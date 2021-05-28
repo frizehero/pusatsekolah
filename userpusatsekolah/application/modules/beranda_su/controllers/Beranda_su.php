@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class beranda_su extends MX_Controller {
+class Beranda_su extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_produk');
+		 $this->load->model('M_beranda_as');
 		 $this->load->model('login/m_session');
 	}
 
@@ -18,7 +18,7 @@ class beranda_su extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "beranda_su",
 			'namafileview' 	=> "V_beranda_su",
-			'tampil'		=> $this->M_produk->tampil(),
+			'tampil'		=> $this->M_beranda_as->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -40,7 +40,7 @@ class beranda_su extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_edit_produk",
-			'tampil'		=> $this->M_produk->tampiledit($id),
+			'tampil'		=> $this->M_beranda_as->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -49,20 +49,20 @@ class beranda_su extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_produk->tambah();
+		$this->M_beranda_as->tambah();
 		redirect('produk');
 		
 	}
 
 	function edit()
 	{
-		$this->M_produk->edit();
+		$this->M_beranda_as->edit();
 		redirect('produk');
 	}
 
 	function hapus()
 	{
-		$this->M_produk->hapus();
+		$this->M_beranda_as->hapus();
 		redirect('produk');
 	}
 	

@@ -50,7 +50,7 @@
     <!-- header -->
     <header class="main-header">
         <!-- logo-->
-        <a href="tampilan-beranda-user.html" class="logo-holder"><img src="<?php echo base_url() ?>images/logoatas.png" alt=""></a>
+        <a href="<?php echo base_url('beranda_user'); ?>" class="logo-holder"><img src="<?php echo base_url() ?>images/logoatas.png" alt=""></a>
         <!-- logo end-->
         <!-- header-search_btn-->
         <div class="header-search_btn show-search-button"><i class="fal fa-search"></i><span>Search</span></div>

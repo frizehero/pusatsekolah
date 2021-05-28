@@ -83,7 +83,7 @@ class Login extends MX_Controller {
 
 		$this->session->set_flashdata('msg', 'logoutAplikasi');
 		// redirect
-		redirect('login');
+		redirect('beranda_nl');
 	}
 
 	function register(){
@@ -94,7 +94,7 @@ class Login extends MX_Controller {
 			$this->M_register->insertDataregister();
 			redirect('login');
 		}
-		$this->load->view('v_register');
+		$this->load->view('v_login');
 	}
 
 	function lupaPassword(){

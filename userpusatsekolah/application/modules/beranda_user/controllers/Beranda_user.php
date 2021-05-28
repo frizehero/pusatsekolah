@@ -26,8 +26,7 @@ class Beranda_user extends MX_Controller
 	function index()
 	{
 		//echo $this->session->userdata('session_id');
-		if (empty($this->session->userdata('session_id'))) {
-			redirect('login');
+		if (empty($this->session->userdata('session_id'))) {redirect('login');
 		} else {
 			$iduser=$this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);

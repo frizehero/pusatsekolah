@@ -1,0 +1,1329 @@
+<!-- content-->
+<div class="content">
+    <!--section  -->
+    <section class="hero-section"   data-scrollax-parent="true">
+        <div class="bg-tabs-wrap">
+            <div class="bg-parallax-wrap" data-scrollax="properties: { translateY: '200px' }">
+                <!--ms-container-->
+                <div class="slideshow-container" data-scrollax="properties: { translateY: '300px' }" >
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--ms_item-->
+                            <div class="swiper-slide">
+                                <div class="ms-item_fs fl-wrap full-height">
+                                    <div class="bg" data-bg="images/sekolah/sekolah2.jpg"></div>
+                                    <div class="overlay op7"></div>
+                                </div>
+                            </div>
+                            <!--ms_item end-->
+                            <!--ms_item-->
+                            <div class="swiper-slide ">
+                                <div class="ms-item_fs fl-wrap full-height">
+                                    <div class="bg" data-bg="images/sekolah/sekolah3.jpg"></div>
+                                    <div class="overlay op7"></div>
+                                </div>
+                            </div>
+                            <!--ms_item end-->
+                            <!--ms_item-->
+                            <div class="swiper-slide">
+                                <div class="ms-item_fs fl-wrap full-height">
+                                    <div class="bg" data-bg="images/sekolah/sekolah1.jpg"></div>
+                                    <div class="overlay op7"></div>
+                                </div>
+                            </div>
+                            <!--ms_item end-->
+                        </div>
+                    </div>
+                </div>
+                <!--ms-container end-->
+            </div>
+        </div>
+        <div class="container small-container">
+            <div class="intro-item fl-wrap">
+                <span class="section-separator"></span>
+                <div class="bubbles">
+                    <h1>Temukan Sekolah Terbaikmu</h1>
+                </div>
+                <h2 style="color: #ffffff">Pilih sekolah berdasarkan tempat, jenjang, atau kriteriamu</h2>
+            </div>
+            <!-- main-search-input-tabs-->
+            <div class="main-search-input-tabs  tabs-act fl-wrap">                      
+                <div class="tabs-container fl-wrap  ">
+                    <!--tab -->
+                    <div class="tab">
+                        <div id="tab-inpt1" class="tab-content first-tab">
+                            <div class="main-search-input-wrap fl-wrap">
+                                <div class="main-search-input fl-wrap">
+                                    <div class="main-search-input-item">
+                                        <label><i class="fal fa-keyboard"></i></label>
+                                        <input type="text" placeholder="Apa yang sedang kamu cari ?" value=""/>
+                                    </div>
+                                    <div class="main-search-input-item location autocomplete-container">
+                                        <label><i class="fal fa-map-marker-check"></i></label>
+                                        <input type="text" placeholder="Kota / Provinsi" class="autocomplete-input" id="autocompleteid" value=""/>
+                                        <a href="#"><i class="fa fa-dot-circle-o"></i></a>
+                                    </div>
+                                    <div class="main-search-input-item">
+                                        <select data-placeholder="Semua kategori" class="chosen-select" >
+                                            <option>Semua kategori</option>
+                                            <option>PAUD</option>
+                                            <option>TK</option>
+                                            <option>SD</option>
+                                            <option>SMP</option>
+                                            <option>SMA</option>
+                                            <option>SMK</option>
+                                        </select>
+                                    </div>
+                                    <button class="main-search-button color2-bg" onclick="window.location.href='listing.html'">Cari <i class="far fa-search"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                                  
+                </div>
+                <!--tabs end-->
+            </div>
+            <!-- main-search-input-tabs end-->
+            <div class="hero-categories fl-wrap">
+                <h4 class="hero-categories_title">Sedang mencari sesuatu? Temukan dengan mudah menggunakan kategori :</h4>
+                <ul class="no-list-style">
+                    <li><a href="<?php echo base_url('nl_daftar_paud'); ?>"><i class="far fa-user"></i><span>PAUD</span></a></li>
+                    <li><a href="<?php echo base_url('nl_daftar_tk'); ?>"><i class="far fa-user-friends"></i><span>TK</span></a></li>
+                    <li><a href="<?php echo base_url('nl_daftar_sd'); ?>"><i class="far fa-user-plus"></i><span>SD</span></a></li>
+                    <li><a href="<?php echo base_url('nl_daftar_smp'); ?>"><i class="far fa-play"></i><span>SMP</span></a></li>
+                    <li><a href="<?php echo base_url('nl_daftar_sma'); ?>"><i class="far fa-envelope"></i><span>SMA</span></a></li>
+                    <li><a href="<?php echo base_url('nl_daftar_smk'); ?>"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-sec-link">
+            <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a> 
+        </div>
+    </section>
+    <!--section end-->
+    <!--section  -->
+    <section class="slw-sec" id="sec1">
+        <div class="section-title">
+            <h2>Informasi Sekolah</h2>
+            <div class="section-subtitle">Berita Terbaru</div>
+            <span class="section-separator"></span>
+            <p>Berbagai informasi tentang sekolah bisa kamu temukan di PusatSekolah.com</p>
+        </div>
+        <div class="listing-slider-wrap fl-wrap">
+            <div class="listing-slider fl-wrap">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--  swiper-slide  -->
+                        <div class="swiper-slide">
+                            <div class="listing-slider-item fl-wrap">
+                                <!-- listing-item  -->
+                                <div class="listing-item listing_carditem">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <a href="<?php echo base_url('nl_tampilan_event'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="images/sekolah/event1.jpg" alt="" style="height: 270px;"> 
+                                            </a>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing_carditem fl-wrap">
+                                                    <div class="section-title">
+                                                        <h2 style="color: #ffffff;">EVENT SEKOLAH</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- listing-item end -->                                                   
+                            </div>
+                        </div>
+                        <!--  swiper-slide end  -->  
+                        <!--  swiper-slide  -->
+                        <div class="swiper-slide">
+                            <div class="listing-slider-item fl-wrap">
+                                <!-- listing-item  -->
+                                <div class="listing-item listing_carditem">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <a href="<?php echo base_url('nl_ppdb_user'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="images/sekolah/ppdb1.jpg" alt="" style="height: 270px;"> 
+                                            </a>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing_carditem fl-wrap">
+                                                    <div class="section-title">
+                                                        <h2 style="color: #ffffff;">PPDB 2021</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- listing-item end -->                                                   
+                            </div>
+                        </div>
+                        <!--  swiper-slide end  -->                                                                                                                      
+                        <!--  swiper-slide  -->
+                        <div class="swiper-slide">
+                            <div class="listing-slider-item fl-wrap">
+                                <!-- listing-item  -->
+                                <div class="listing-item listing_carditem">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <a href="tampilan-produk-sekolah.html" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="images/sekolah/produk1.jpg" alt="" style="height: 270px;"> 
+                                            </a>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing_carditem fl-wrap">
+                                                    <div class="section-title">
+                                                        <h2 style="color: #ffffff;">PRODUK SEKOLAH</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- listing-item end -->                                                   
+                            </div>
+                        </div>
+                        <!--  swiper-slide end  -->                                       
+                        <!--  swiper-slide  -->
+                        <div class="swiper-slide">
+                            <div class="listing-slider-item fl-wrap">
+                                <!-- listing-item  -->
+                                <div class="listing-item listing_carditem">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <a href="<?php echo base_url('nl_tampilan_berita'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                            <img src="images/sekolah/qurban1.jpg" alt="" style="height: 270px;"> 
+                                            </a>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing_carditem fl-wrap">
+                                                    <div class="section-title">
+                                                        <h2 style="color: #ffffff;">BERITA SEKOLAH</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <!-- listing-item end -->                                                   
+                            </div>
+                        </div>
+                        <!--  swiper-slide end  -->                                        
+                    </div>
+                </div>
+                <div class="listing-carousel-button listing-carousel-button-next2"><i class="fas fa-caret-right"></i></div>
+                <div class="listing-carousel-button listing-carousel-button-prev2"><i class="fas fa-caret-left"></i></div>
+            </div>
+            <div class="tc-pagination_wrap">
+                <div class="tc-pagination2"></div>
+            </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="soc-log" style="width: 400px;">
+                <a href="tampilan-signin-signup.html" class="facebook-log"> Daftarkan Sekolah Anda di PusatSekolah.com</a>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+    <section>
+        <div class="container big-container">
+            <div class="section-title">
+                <h2><span>Sekolah Terpopuler</span></h2>
+                <div class="section-subtitle">PALING POPULER</div>
+                <span class="section-separator"></span>
+                <p>Sekolah populer pilihan kami ini mungkin cocok untuk kamu</p>
+            </div>
+            <div class="listing-filters gallery-filters fl-wrap">
+                <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">Semua Jenjang</a>
+                <a href="#" class="gallery-filter" data-filter=".paud">PAUD</a>
+                <a href="#" class="gallery-filter" data-filter=".tk">TK</a>
+                <a href="#" class="gallery-filter" data-filter=".sd">SD</a>
+                <a href="#" class="gallery-filter" data-filter=".smp">SMP</a>
+                <a href="#" class="gallery-filter" data-filter=".sma">SMA</a>
+                <a href="#" class="gallery-filter" data-filter=".smk">SMK</a>
+            </div>
+            <div class="grid-item-holder gallery-items fl-wrap">
+                <!--  gallery-item-->
+                <div class="gallery-item paud">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/paud1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="tampilan-beranda-sekolah.html"><img src="images/sekolah/logopaud1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.8</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                        <br>
+                                        <div class="reviews-count">12 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('nl_beranda_su'); ?>">PAUD Ananda 5</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#" ><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">PAUD Ananda 5 adalah sekolah yang baik untuk anak - anak bunda.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                                <!--<div class="geodir-category-footer fl-wrap">
+                                    <a class="listing-item-category-wrap">
+                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
+                                        <span>Restaurants</span>
+                                    </a>
+                                    <div class="geodir-opt-list">
+                                        <ul class="no-list-style">
+                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
+                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
+                                            <li>
+                                                <div class="dynamic-gal gdop-list-link" data-dynamicPath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-level geodir-category_price">
+                                        <span class="price-level-item" data-pricerating="3"></span>
+                                        <span class="price-name-tooltip">Pricey</span>
+                                    </div>
+                                    <div class="geodir-category_contacts">
+                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
+                                        <ul class="no-list-style">
+                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
+                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>-->
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                              
+                </div>
+                <!-- gallery-item  end-->
+                <!--  gallery-item-->
+                <div class="gallery-item sd">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.2</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">6 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="<?php echo base_url('nl_beranda_su'); ?>">SDN Sukabumi 2</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->  
+                </div>
+                <!-- gallery-item  end-->         
+                <!-- gallery-item  -->
+                <div class="gallery-item sd">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">3.8</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
+                                        <br>
+                                        <div class="reviews-count">4 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                   
+                </div>
+                <!-- gallery-item  end-->  
+                <!-- gallery-item  -->
+                <div class="gallery-item tk">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/tk1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logotk1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Kliff Antony</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">5.0</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">4 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">TK Barnadian Uta</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Surabaya, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                                            
+                </div>
+                <!-- gallery-item  end-->                                 
+                <!-- gallery-item  -->
+                <div class="gallery-item paud">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/paud2.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logopaud2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.1</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>
+                                        <div class="reviews-count">26 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">PAUD Bhayangkara 205</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Lebak Bulus, Jakarta, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                                        
+                </div>
+
+                <div class="gallery-item smk">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.1</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>
+                                        <div class="reviews-count">26 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMK Negeri 1 Probolinggo</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                                        
+                </div>
+                <!-- gallery-item  end-->
+                <!-- gallery-item  -->
+                <div class="gallery-item tk">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/tk3.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logotk2.jpg" alt=""></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Lisa Smith</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.1</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>
+                                        <div class="reviews-count">56 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">TK Bunga Bangsa</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Semarang, Jawa Tengah, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                   
+                </div>
+                <!-- gallery-item  end--> 
+                <!-- gallery-item  -->
+                <div class="gallery-item smp">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smp1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.7</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                        <br>
+                                        <div class="reviews-count">9 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMP Negeri 3 Cisauk</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Tangerang, Jawa Barat, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                           
+                </div>
+
+                <div class="gallery-item smp">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.7</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                        <br>
+                                        <div class="reviews-count">9 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMP Negeri 34 Sidoarjo</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Sidoarjo, Jawa Timur, Indoneisa</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                           
+                </div>
+
+                <div class="gallery-item sma">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.2</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">6 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMA Negeri 8 Jakarta</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Jakarta, Jawa Barat, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->  
+                </div>
+
+                <div class="gallery-item smk">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smk2.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.1</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>
+                                        <div class="reviews-count">26 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMK Negeri 12 Malang</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                                        
+                </div> 
+
+                <div class="gallery-item sma">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sma2.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.2</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">6 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMA Negeri 2 Bangkalan</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Madura, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->  
+                </div>                                                                                                                  
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-section small-par" data-scrollax-parent="true">
+        <div class="bg par-elem "  data-bg="images/sekolah/sma1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+        <div class="overlay  op7"></div>
+        <div class="container">
+            <div class=" single-facts single-facts_2 fl-wrap">
+                <!-- inline-facts -->
+                <div class="inline-facts-wrap">
+                    <div class="inline-facts">
+                        <div class="milestone-counter">
+                            <div class="stats animaper">
+                                <div class="num" data-content="0" data-num="300254">300254</div>
+                            </div>
+                        </div>
+                        <h6>Total Pengunjung Website</h6>
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                <!-- inline-facts  -->
+                <div class="inline-facts-wrap">
+                    <div class="inline-facts">
+                        <div class="milestone-counter">
+                            <div class="stats animaper">
+                                <div class="num" data-content="0" data-num="12168">12.168</div>
+                            </div>
+                        </div>
+                        <h6>Jumlah Sekolah Terdaftar</h6>
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                <!-- inline-facts  -->
+                <div class="inline-facts-wrap">
+                    <div class="inline-facts">
+                        <div class="milestone-counter">
+                            <div class="stats animaper">
+                                <div class="num" data-content="0" data-num="22172">22.172</div>
+                            </div>
+                        </div>
+                        <h6>Jumlah Akun Terdaftar</h6>
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+                <!-- inline-facts  -->
+                <div class="inline-facts-wrap">
+                    <div class="inline-facts">
+                        <div class="milestone-counter">
+                            <div class="stats animaper">
+                                <div class="num" data-content="0" data-num="732">732</div>
+                            </div>
+                        </div>
+                        <h6>Komentar Ditulis Hari Ini</h6>
+                    </div>
+                </div>
+                <!-- inline-facts end -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container big-container">
+            <div class="section-title">
+                <h2><span>Sekolah Terdekat</span></h2>
+                <div class="section-subtitle">REKOMENDASI</div>
+                <span class="section-separator"></span>
+            </div>
+            <div class="grid-item-holder gallery-items fl-wrap">
+
+                <div class="gallery-item sd">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sd1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.2</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">6 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SDN Sukabumi 2</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->  
+                </div>
+
+                <div class="gallery-item smk">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smk1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmk1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Alisa Noory</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.1</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>
+                                        <div class="reviews-count">26 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMK Negeri 1 Probolinggo</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Bekerjasama dengan TNI AD mendidik anak - anak bunda berprestasi.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                                        
+                </div>
+
+                <div class="gallery-item smp">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/smp2.jpeg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosmp2.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Nasty Wood</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.7</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                        <br>
+                                        <div class="reviews-count">9 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMP Negeri 34 Probolinggo</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indoneisa</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->                                           
+                </div>
+
+                <div class="gallery-item sma">
+                    <!-- listing-item  -->
+                    <div class="listing-item">
+                        <article class="geodir-category-listing fl-wrap">
+                            <div class="geodir-category-img">
+                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
+                                <img src="images/sekolah/sma1.jpg" alt="" style="height: 185px;"> 
+                                </a>
+                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosma1.png" alt="" style="background: #ffffff"></a>
+                                    <span class="avatar-tooltip">Added By  <strong>Mark Rose</strong></span>
+                                </div>
+                                <div class="geodir-category-opt">
+                                    <div class="listing-rating-count-wrap">
+                                        <div class="review-score">4.2</div>
+                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                        <br>                                                
+                                        <div class="reviews-count">6 reviews</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="geodir-category-content fl-wrap title-sin_item">
+                                <div class="geodir-category-content-title fl-wrap ">
+                                    <div class="geodir-category-content-title-item">
+                                        <br>
+                                        <h3 class="title-sin_map"><a href="tampilan-beranda-sekolah.html">SMA Negeri 8 Probolinggo</a></h3>
+                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolinggo, Jawa Timur, Indonesia</a></div>
+                                    </div>
+                                </div>
+                                <div class="geodir-category-text fl-wrap">
+                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                                    <!--<div class="facilities-list fl-wrap">
+                                        <div class="facilities-list-title">Facilities : </div>
+                                        <ul class="no-list-style">
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
+                                            <li class="tolt"  data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
+                                        </ul>
+                                    </div>-->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- listing-item end -->  
+                </div>          
+            </div>
+            <a href="<?php echo base_url('nl_sekolah_terdekat'); ?>" class="btn  dec_btn  color2-bg">Lihat Sekolah Terdekat Lainnya<i class="fal fa-arrow-alt-right"></i></a>
+        </div>
+    </section>
+
+    <section   class="gray-bg hidden-section particles-wrapper">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilihan Kota Untuk Kamu</h2>
+                <div class="section-subtitle">Pilih kota belajarmu</div>
+            </div>
+            <div class="listing-item-grid_container fl-wrap">
+                <div class="row">
+                    <!--  listing-item-grid  -->
+                    <div class="col-sm-4">
+                        <div class="listing-item-grid">
+                            <div class="bg"  data-bg="images/sekolah/yogyakarta.jpg"></div>
+                            <div class="d-gr-sec"></div>
+                            <div class="listing-counter color2-bg"><span>160 </span> Sekolah Terdaftar</div>
+                            <div class="listing-item-grid_title">
+                                <h3><a href="<?php echo base_url('nl_kota_pilihan'); ?>">Yogyakarta</a></h3>
+                                <p>Constant care and attention to the patients makes good record</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  listing-item-grid end  -->
+                    <!--  listing-item-grid  -->
+                    <div class="col-sm-4">
+                        <div class="listing-item-grid">
+                            <div class="bg"  data-bg="images/sekolah/jakarta.jpg"></div>
+                            <div class="d-gr-sec"></div>
+                            <div class="listing-counter color2-bg"><span>220 </span> Sekolah Terdaftar</div>
+                            <div class="listing-item-grid_title">
+                                <h3><a href="tampilan-kota-pilihan.html">Jakarta</a></h3>
+                                <p>Constant care and attention to the patients makes good record</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  listing-item-grid end  -->                                
+                    <!--  listing-item-grid  -->
+                    <div class="col-sm-4">
+                        <div class="listing-item-grid">
+                            <div class="bg"  data-bg="images/sekolah/surabaya.jpg"></div>
+                            <div class="d-gr-sec"></div>
+                            <div class="listing-counter color2-bg"><span>189 </span> Sekolah Terdaftar</div>
+                            <div class="listing-item-grid_title">
+                                <h3><a href="listing.html">Surabaya</a></h3>
+                                <p>Constant care and attention to the patients makes good record</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  listing-item-grid end  -->
+                    <!--  listing-item-grid  -->
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-4">
+                        <div class="listing-item-grid">
+                            <div class="bg"  data-bg="images/sekolah/aceh.jpg"></div>
+                            <div class="d-gr-sec"></div>
+                            <div class="listing-counter color2-bg"><span>213 </span> Sekolah Terdaftar</div>
+                            <div class="listing-item-grid_title">
+                                <h3><a href="listing.html">Aceh</a></h3>
+                                <p>Constant care and attention to the patients makes good record</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="listing-item-grid">
+                            <div class="bg"  data-bg="images/sekolah/malang.jpg"></div>
+                            <div class="d-gr-sec"></div>
+                            <div class="listing-counter color2-bg"><span>170 </span> Sekolah Terdaftar</div>
+                            <div class="listing-item-grid_title">
+                                <h3><a href="listing.html">Malang</a></h3>
+                                <p>Constant care and attention to the patients makes good record</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                                                                                                                    
+                </div>
+            </div>
+            <a href="<?php echo base_url('nl_kota_lainnya'); ?>" class="btn dec_btn   color2-bg">Lihat Kota Lainnya<i class="fal fa-arrow-alt-right"></i></a>
+        </div>
+    </section>
+
+    <!--section end-->   
+    <!--section  -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2> Kata Mereka Tentang Pusat Sekolah</h2>
+                <div class="section-subtitle">Clients Reviews</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="testimonilas-carousel-wrap fl-wrap">
+            <div class="listing-carousel-button listing-carousel-button-next"><i class="fas fa-caret-right"></i></div>
+            <div class="listing-carousel-button listing-carousel-button-prev"><i class="fas fa-caret-left"></i></div>
+            <div class="testimonilas-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--testi-item-->
+                        <div class="swiper-slide">
+                            <div class="testi-item fl-wrap">
+                                <div class="testi-avatar"><img src="images/avatar/2.jpg" alt=""></div>
+                                <div class="testimonilas-text fl-wrap">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                    <p>"Saya merasa terbantu dengan adanya Pusat Sekolah ini, saya tidak perlu repot - repot mencari informasi tentang sekolah yang saya inginkan, atau bahkan harus mencari kontak alumninya, semua lengkap."</p>
+                                    <a href="#" class="testi-link" target="_blank">Lihat Profil</a>
+                                    <div class="testimonilas-avatar fl-wrap">
+                                        <h3>Andy Dimasky</h3>
+                                        <h4>Siswa SMK Ngeri 1 Probolinggo</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--testi-item end-->
+                        <!--testi-item-->
+                        <div class="swiper-slide">
+                            <div class="testi-item fl-wrap">
+                                <div class="testi-avatar"><img src="images/sekolah/profil1.jpg" alt=""></div>
+                                <div class="testimonilas-text fl-wrap">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                    <p>"Semenjak ada Pusat Sekola, saya yang notabene sering pindah - pindah koota tinggal tidak perlu repot - repot untuk mendatangi sekolah yang akan menjadi sekolah anak saya nantinya."</p>
+                                    <a href="#" class="testi-link" target="_blank">Lihat Profil</a>
+                                    <div class="testimonilas-avatar fl-wrap">
+                                        <h3>Jamiani Dwi</h3>
+                                        <h4>Ibu Rumah Tangga</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--testi-item end-->
+                        <!--testi-item-->
+                        <div class="swiper-slide">
+                            <div class="testi-item fl-wrap">
+                                <div class="testi-avatar"><img src="images/avatar/3.jpg" alt=""></div>
+                                <div class="testimonilas-text fl-wrap">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                    <p>"Semenjak ada Pusat Sekolah, sekolah saya memiliki website yang aktraktif dan informatif, sehingga lebih mudah menjangkau peserta didik baru."</p>
+                                    <a href="#" class="testi-link" target="_blank">Lihat Profil</a>
+                                    <div class="testimonilas-avatar fl-wrap">
+                                        <h3>Budi Pamungkas</h3>
+                                        <h4>Kepala Sekolah</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--testi-item end-->
+                        <!--testi-item-->
+                        <div class="swiper-slide">
+                            <div class="testi-item fl-wrap">
+                                <div class="testi-avatar"><img src="images/sekolah/logotk2.jpg" alt=""></div>
+                                <div class="testimonilas-text fl-wrap">
+                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
+                                    <p>"Desain yang simple dan mudah dipahami dari Pusat Sekolah membuat kami mudah dalam mengaplikasikannya. Tentunya hal seperti ini sangat dibutuhkan seluruh sekolah di Indonesia untuk informasi sekolah mereka."</p>
+                                    <a href="#" class="testi-link" target="_blank">Lihat Profil</a>
+                                    <div class="testimonilas-avatar fl-wrap">
+                                        <h3>SMK Negeri 1 Kota Probolinggo</h3>
+                                        <h4>Sekolah</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--testi-item end-->
+                    </div>
+                </div>
+            </div>
+            <div class="tc-pagination"></div>
+        </div>
+
+        <div class="waveWrapper waveAnimation">
+            <div class="waveWrapperInner bgMiddle">
+            <div class="wave-bg-anim waveMiddle" style="background-image: url('images/wave-top.png')"></div>
+            </div>
+
+            <div class="waveWrapperInner bgBottom">
+            <div class="wave-bg-anim waveBottom" style="background-image: url('images/wave-top.png')"></div>
+            </div>
+        </div>
+    </section>
+    <!--section end-->                
+    <!--section  -->
+    <section class="gray-bg">
+        <div class="container">
+            <div class="clients-carousel-wrap fl-wrap">
+                <div class="cc-btn   cc-prev"><i class="fal fa-angle-left"></i></div>
+                <div class="cc-btn cc-next"><i class="fal fa-angle-right"></i></div>
+                <div class="clients-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/sekolah/logobawah1.png" alt="" style="height: 80px; width: auto;"></a>
+                            </div>
+                            <!--client-item end-->
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/sekolah/logobawah2.png" alt="" style="height: 80px; width: auto;"></a>
+                            </div>
+                            <!--client-item end-->
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/sekolah/logosmk1.png" alt="" style="height: 80px; width: auto;"></a>
+                            </div>
+                            <!--client-item end-->
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/logoatas.png" alt="" style="height: 60px; width: auto;"></a>
+                            </div>
+                            <div class="swiper-slide"></div>
+                            <!--client-item end-->
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/sekolah/logosmk2.png" alt="" style="height: 80px; width: auto;"></a>
+                            </div>
+                            <!--client-item end-->
+                            <!--client-item-->
+                            <div class="swiper-slide">
+                                <a href="#" class="client-item"><img src="images/sekolah/logotk1.png" alt="" style="height: 100px; width: auto;"></a>
+                            </div>
+                            <!--client-item end-->                                                                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section end-->
+</div>
+<!--content end-->
