@@ -8,26 +8,28 @@
                         <div class="pt-5">
                             <div class="pt-5">
                                 <div class="pt-5">
-                                    <div class="widget-content p-1">
-                                        <div class="text-right d-block">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <b class="btn-shadow-dark btn-wider btn btn-primary">Edit Sampul</b>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="dropdown-icon pe-7s-copy-file"></i><span>Pilih Foto</span>
+                                    <div class="pt-5">
+                                        <!--<div class="widget-content p-1">
+                                            <div class="text-right d-block">
+                                                <div class="btn-group dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                                        <b class="btn-shadow-dark btn-wider btn btn-primary">Edit Sampul</b>
                                                     </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="dropdown-icon pe-7s-expand1"> </i><span>Ubah Posisi</span>
-                                                    </button>
-                                                    <div tabindex="-1" class="dropdown-divider"></div>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="dropdown-icon pe-7s-trash"> </i><span>Hapus</span>
-                                                    </button>
+                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
+                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                            <i class="dropdown-icon pe-7s-copy-file"></i><span>Pilih Foto</span>
+                                                        </button>
+                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                            <i class="dropdown-icon pe-7s-expand1"> </i><span>Ubah Posisi</span>
+                                                        </button>
+                                                        <div tabindex="-1" class="dropdown-divider"></div>
+                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                            <i class="dropdown-icon pe-7s-trash"> </i><span>Hapus</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>

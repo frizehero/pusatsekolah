@@ -144,7 +144,7 @@
                                                             </div>
                                                         </div>
                                                         <br>
-                                                        <div class="main-card mb-3 card">
+                                                        <div class="main-card mb-3">
                                                             <div class="card-body">
                                                                 <div class="card-title">Tentukan Titik Koordinat</div>
                                                                 <div id="gmap-example" style="width: 100%; height: 300px; position: relative; overflow: hidden;">
@@ -574,4 +574,14 @@
                             return false;
                         })
                     });
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwa2ImDor3GgLvw-2vH7WLM3DSIObiiZU&callback=initMap" async defer></script>
+                <script type="text/javascript">
+                    function initMap() {
+                        var map = new google.maps.Map(document.getElementById('show_maps'), {
+                            center: new google.maps.LatLng(-7.0016372,110.4428114),
+                        zoom: 5
+                        });
+                    }
                 </script>
