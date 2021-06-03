@@ -86,6 +86,8 @@ class M_p_sekolah extends CI_Model {
 		$kposs		= $this->input->post('kposs');
 		$sjrhs		= $this->input->post('sjrhs');
 		$namas		= $this->input->post('namas');
+		$lat		= $this->input->post('lat');
+		$lng		= $this->input->post('lng');
 
 
 		$this->load->library('upload');
@@ -142,6 +144,8 @@ class M_p_sekolah extends CI_Model {
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
 					'nama_sekolah'		=> $namas,
+					'latitude'			=> $lat,
+					'longitude'			=> $lng,
 					'foto_profil' 		=> $gbr['file_name'],
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
@@ -188,6 +192,8 @@ class M_p_sekolah extends CI_Model {
 					'kpos_sekolah'		=> $kposs,
 					'sejarah_sekolah'	=> $sjrhs,
 					'nama_sekolah'		=> $namas,
+					'latitude'			=> $lat,
+					'longitude'			=> $lng,
 				);
 				$this->db->where('id_p_sekolah',$id)->update('p_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksesedit');
