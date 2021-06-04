@@ -315,7 +315,6 @@
                         </div>
                     </div>
                 </div>
-            <?php $no++;} ?>
             <div class="card-hover-shadow card-border mb-2 card">
                 <div class="card-header">Jam Operasional</div>
                 <div class="card-body">
@@ -327,6 +326,7 @@
                     <p>Sabtu -  <?php echo $rowP->sabtu_m;?> s/d    <?php echo $rowP->sabtu_p;?></p>
                 </div>
             </div>
+            <?php $no++;} ?>
         </div>
     </div>
 </div>

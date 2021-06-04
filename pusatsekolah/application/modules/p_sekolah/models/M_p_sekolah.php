@@ -33,7 +33,6 @@ class M_p_sekolah extends CI_Model {
 	
 		$this->db->select('*');
 		$this->db->from('p_sekolah');
-		//$this->db->join('wilayah_provinsi','p_sekolah.provinsi_sekolah = wilayah_provinsi.id');
 		$this->db->where('id_p_sekolah',$id);
 		$query = $this->db->get();
     	return $query->row_array();
@@ -207,7 +206,7 @@ class M_p_sekolah extends CI_Model {
 
 	function cari()
 	{
-		$cari 		= $this->input->post('cari');
+		$cari = $this->input->post('cari');
 		return $this->db->like('nama_sekolah',$cari)->get('p_sekolah')->result();
 	}
 }
