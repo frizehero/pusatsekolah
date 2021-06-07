@@ -1,3 +1,23 @@
+<!--<?php
+    error_reporting(0);
+    session_start();
+    $nama_user = $_SESSION['nama'];
+
+    include "koneksi.php";
+
+    date_default_timezone_set("Asia/Jakarta");
+    $waktu = date("H:i");
+
+    if (isset($_POST['submit'])) {
+        $id_user = $_SESSION['id'];
+        $pesan = htmlspecialchars($_POST['pesan']);
+
+        $query = "INSERT INTO tb_pesan VALUES('','$id_user','$pesan','$waktu')";
+        $insert = mysqli_query($koneksi, $query);
+    }
+
+    ?>-->
+
 <div class="app-main__inner p-0">
     <div class="app-inner-layout chat-layout">
         <div class="app-inner-layout__wrapper">
@@ -50,53 +70,67 @@
                         </div>
                     </div>
                     <div class="chat-wrapper" style="height: 500px;">
-                        <div class="chat-box-wrapper">
-                            <div>
-                                <div class="avatar-icon-wrapper mr-1">
-                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                    </div>
-                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                        <img src="assets/images/avatars/3.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="chat-box">But I must explain to you how all this mistaken idea of
-                                    denouncing pleasure and praising pain was born and I will give you a complete
-                                    account of the system.</div>
-                                <small class="opacity-6">
-                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                    11:01 AM | Kemarin
-                                </small>
-                            </div>
-                        </div>
-                        <div class="chat-box-wrapper chat-box-wrapper-right">
-                            <div>
-                                <div class="chat-box">Expound the actual teachings of the great explorer of the
-                                    truth, the master-builder of human happiness.</div>
-                                <small class="opacity-6">
-                                    <i class="fa fa-calendar-alt mr-1"></i>
-                                    11:01 AM | Kemarin
-                                </small>
-                            </div>
-                            <div>
-                                <div class="avatar-icon-wrapper ml-1">
-                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                    </div>
-                                    <div class="avatar-icon avatar-icon-lg rounded">
-                                        <img src="assets/images/avatars/4.jpg" alt="">
+                            <div class="chat-box-wrapper">
+                                <div>
+                                    <div class="avatar-icon-wrapper mr-1">
+                                        <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
+                                        </div>
+                                        <div class="avatar-icon avatar-icon-lg rounded">
+                                            <img src="assets/images/avatars/3.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
+                                <div>
+                                    <div class="chat-box">But I must explain to you how all this mistaken idea of
+                                        denouncing pleasure and praising pain was born and I will give you a complete
+                                        account of the system.</div>
+                                    <small class="opacity-6">
+                                        <i class="fa fa-calendar-alt mr-1"></i>
+                                        11:01 AM | Kemarin
+                                    </small>
+                                </div>
+                            </div>
+                            <?php tampilnotif() ?>
+                            <?php $no = 1;
+                                foreach ($tampil as $rowP) { ?>
+                                    <div class="float-right">
+                                        <div class="chat-box-wrapper chat-box-wrapper-right">  
+                                                <div>
+                                                    <div class="chat-box"><?php echo $rowP->pesan; ?></div>
+                                                    <small class="opacity-6">
+                                                        <i class="fa fa-calendar-alt mr-1"></i>
+                                                        11:01 AM | Kemarin
+                                                    </small>
+                                                </div>
+                                            <div>
+                                                <div class="avatar-icon-wrapper ml-1">
+                                                    <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
+                                                    </div>
+                                                    <div class="avatar-icon avatar-icon-lg rounded">
+                                                        <img src="assets/images/avatars/4.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            <?php $no++;
+                                } ?>
+                    </div>
+                    <form action="<?php echo base_url('tb_pesan/tambah') ?>" method="POST" enctype="multipart/form-data">
+                        <div class="app-inner-layout__bottom-pane d-block text-center">
+                            <div class="mb-0 position-relative row form-group">
+                                <div class="col-sm-10">
+                                    <!--<input name="twitter_guru" id="text" placeholder="....." type="text" class="form-control">-->
+                                    <input name="pesan" id="text" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button name="signup" value="Sign up" type="submit" id="" class="btn btn-primary"><i class="pe-7s-paper-plane"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="app-inner-layout__bottom-pane d-block text-center">
-                        <div class="mb-0 position-relative row form-group">
-                            <div class="col-sm-12">
-                                <input name="isi_pesan" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <div class="app-inner-layout__sidebar card">
