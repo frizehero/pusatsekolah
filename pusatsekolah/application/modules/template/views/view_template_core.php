@@ -23,9 +23,9 @@
     
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $("#provinsi").change(function (){
-                var url = "<?php echo site_url('p_sekolah/add_ajax_kab');?>/"+$(this).val();
+        $(document).ready(function() {
+            $("#provinsi").change(function() {
+                var url = "<?php echo site_url('p_sekolah/add_ajax_kab'); ?>/" + $(this).val();
                 $('#kabupaten').load(url);
                 return false;
             })
@@ -504,69 +504,79 @@
                                 </a>
                                 </li>
 
-                            <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_guru'); ?>">
-                                    <i class="metismenu-icon pe-7s-science"></i>Data Guru
-                                </a>
-                                </li>
+                                <?php if ($menu == "data_guru") { ?><li class="mm-active"><?php } else { ?>
+                                    <li>
+                                    <?php } ?>
+                                    <a href="<?php echo base_url('data_guru'); ?>">
+                                        <i class="metismenu-icon pe-7s-science"></i>Data Guru
+                                    </a>
+                                    </li>
 
-                            <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('data_alumni'); ?>">
-                                    <i class="metismenu-icon pe-7s-chat"></i>Data Alumni
-                                </a>
-                                </li>
+                                    <?php if ($menu == "data_alumni") { ?><li class="mm-active"><?php } else { ?>
+                                        <li>
+                                        <?php } ?>
+                                        <a href="<?php echo base_url('data_alumni'); ?>">
+                                            <i class="metismenu-icon pe-7s-chat"></i>Data Alumni
+                                        </a>
+                                        </li>
 
-                            <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('prestasi'); ?>">
-                                    <i class="metismenu-icon pe-7s-world"></i>Prestasi
-                                </a>
-                                </li>
+                                        <?php if ($menu == "prestasi") { ?><li class="mm-active"><?php } else { ?>
+                                            <li>
+                                            <?php } ?>
+                                            <a href="<?php echo base_url('prestasi'); ?>">
+                                                <i class="metismenu-icon pe-7s-world"></i>Prestasi
+                                            </a>
+                                            </li>
 
-                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('pesan'); ?>">
-                                    <i class="metismenu-icon pe-7s-diamond"></i>Pesan
-                                </a>
-                                </li>
+                                            <?php if ($menu == "pesan") { ?><li class="mm-active"><?php } else { ?>
+                                                <li>
+                                                <?php } ?>
+                                                <a href="<?php echo base_url('tb_pesan'); ?>">
+                                                    <i class="metismenu-icon pe-7s-diamond"></i>Pesan
+                                                </a>
+                                                </li>
 
-                            <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('event_sekolah'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Event
-                                </a>
-                                </li>
+                                                <?php if ($menu == "event_sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                                    <li>
+                                                    <?php } ?>
+                                                    <a href="<?php echo base_url('event_sekolah'); ?>">
+                                                        <i class="metismenu-icon pe-7s-id"></i>Event
+                                                    </a>
+                                                    </li>
 
-                            <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('produk'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>Produk
-                                </a>
-                                </li>
+                                                    <?php if ($menu == "produk") { ?><li class="mm-active"><?php } else { ?>
+                                                        <li>
+                                                        <?php } ?>
+                                                        <a href="<?php echo base_url('produk'); ?>">
+                                                            <i class="metismenu-icon pe-7s-id"></i>Produk
+                                                        </a>
+                                                        </li>
 
-                            <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
-                                <li>
-                                <?php } ?>
-                                <a href="<?php echo base_url('ppdb'); ?>">
-                                    <i class="metismenu-icon pe-7s-id"></i>PPDB
-                                </a>
-                                </li>
+                                                        <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
+                                                            <li>
+                                                            <?php } ?>
+                                                            <a href="<?php echo base_url('ppdb'); ?>">
+                                                                <i class="metismenu-icon pe-7s-id"></i>PPDB
+                                                            </a>
+                                                            </li>
 
-                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
+<<<<<<< HEAD
+                            <?php if ($menu == "media_sekolah") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
-                                <a href="<?php echo base_url('media'); ?>">
+                                <a href="<?php echo base_url('media_sekolah'); ?>">
                                     <i class="metismenu-icon pe-7s-id"></i>Media
                                 </a>
                                 </li>
+=======
+                                                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
+                                                                <li>
+                                                                <?php } ?>
+                                                                <a href="<?php echo base_url('media'); ?>">
+                                                                    <i class="metismenu-icon pe-7s-id"></i>Media
+                                                                </a>
+                                                                </li>
+>>>>>>> c5397ed7d828524a12db12d2ac33164851b3f692
 
                         </ul>
                     </div>
@@ -613,12 +623,12 @@
                                         </a>
                                         </li>
 
-                                    <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
-                                        <li><?php } ?>
-                                        <a href="<?php echo base_url('log'); ?>">
-                                            <i class="metismenu-icon"></i>Log Aktifitas
-                                        </a>
-                                        </li>
+                                        <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
+                                            <li><?php } ?>
+                                            <a href="<?php echo base_url('log'); ?>">
+                                                <i class="metismenu-icon"></i>Log Aktifitas
+                                            </a>
+                                            </li>
 
                                 </ul>
                             </li>

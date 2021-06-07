@@ -2,13 +2,13 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">TAMBAH FOTO SEKOLAH</h5>
+                <h5 class="modal-title" id="exampleModalLabel">TAMBAH Fasilitas SEKOLAH</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?php echo base_url('media/tambah') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url('media_fasilitas/tambah') ?>" method="POST" enctype="multipart/form-data">
                     <div class="card mb-3 widget-content bg-primary">
                         <div class="widget-content-wrapper text-white">
                             <div class="widget-content-left">
