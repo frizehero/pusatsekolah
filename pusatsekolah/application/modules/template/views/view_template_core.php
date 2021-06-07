@@ -6,6 +6,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -19,6 +20,7 @@
 
     <link href="<?php echo base_url() ?>main.css" rel="stylesheet">
     <link rel="shortcut icon" href="<?php echo base_url() ?>assets/images/logo.ico">
+    
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
         $(document).ready(function() {
@@ -28,6 +30,51 @@
                 return false;
             })
         });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwQIUGOL2hDmYztuBIyda_TXzK7S8OtRI&callback"></script>
+    <script>
+        // variabel global marker
+        var marker;
+        
+        function taruhMarker(peta, posisiTitik){
+            
+            if( marker ){
+            // pindahkan marker
+            marker.setPosition(posisiTitik);
+            } else {
+            // buat marker baru
+            marker = new google.maps.Marker({
+                position: posisiTitik,
+                map: peta
+            });
+            }
+        
+            // isi nilai koordinat ke form
+            document.getElementById("lat").value = posisiTitik.lat();
+            document.getElementById("lng").value = posisiTitik.lng();
+            
+        }
+        
+        function initialize() {
+        var propertiPeta = {
+            center:new google.maps.LatLng(-7.900074,112.6046973),
+            zoom:11,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        
+        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        
+        // even listner ketika peta diklik
+        google.maps.event.addListener(peta, 'click', function(event) {
+            taruhMarker(this, event.latLng);
+        });
+
+        }
+
+
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
+        
     </script>
 </head>
 

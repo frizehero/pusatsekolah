@@ -83,7 +83,7 @@
                     </div>
                     <!-- listsearch-input-item end-->
                     <!-- listsearch-input-item-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="listsearch-input-item">
                             <select data-placeholder="Location" class="chosen-select no-search-select" >
                                 <option>Semua Kategori</option>
@@ -96,7 +96,7 @@
                     </div>
                     <!-- listsearch-input-item end-->
                     <!-- listsearch-input-item-->
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="listsearch-input-item">
                             <select data-placeholder="City/Location" class="chosen-select no-search-select" >
                                 <option>Semua Mata Pelajaran</option>
@@ -121,11 +121,11 @@
                     </div>
                     <!-- listsearch-input-item end-->  
                     <!-- listsearch-input-item-->
-                    <div class="col-md-2">
+                    <!-- <div class="col-md-2">
                         <div class="listsearch-input-item">
                             <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- listsearch-input-item end-->                                         
                 </div>
             </div>
@@ -140,7 +140,7 @@
                     <article class="geodir-category-listing fl-wrap">
                         <div class="geodir-category-img">
                             <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                            <a href="<?php echo base_url('profil_user'); ?>" class="geodir-category-img-wrap fl-wrap">
+                            <a href="<?php echo base_url('data_guru/profilguru/' . encrypt_url($rowP->id_guru)); ?>" class="geodir-category-img-wrap fl-wrap">
                             <img src="images/avatar/26.png" alt="" style="height: 250px;"> 
                             </a>
                             <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/27.png" alt=""></a>

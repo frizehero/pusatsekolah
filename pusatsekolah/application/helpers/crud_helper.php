@@ -18,11 +18,10 @@ function tampilnotif(){
 
 	if( $CI->session->flashdata('msg')=="suksestambah"){
 
-		echo ' <div class="alert alert-success alert-dismissible fade show" role="alert">
+		echo ' <div class="alert alert-success fade show" role="alert">
 					<button type="button" class="close" aria-label="Close" data-dismiss="alert">
                     	<span aria-hidden="true">×</span>
-                	</button>
-					Data anda telah berhasil ditembahkan.
+                	</button>	Data anda telah berhasil ditembahkan.
 				</div>';
 	}
 

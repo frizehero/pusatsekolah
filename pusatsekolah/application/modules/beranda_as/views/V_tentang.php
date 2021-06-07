@@ -10,15 +10,14 @@
                             <div class="pt-5">
                                 <div class="pt-5">
                                     <div class="pt-5">
-                                            <div class="widget-content p-1">
+                                        <div class="pt-5">
+                                            <!--<div class="widget-content p-1">
                                                 <div class="text-right d-block">
                                                     <div class="btn-group dropdown">
-                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                            aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
                                                             <b class="btn-shadow-dark btn-wider btn btn-primary">Edit Sampul</b>
                                                         </button>
-                                                        <div tabindex="-1" role="menu" aria-hidden="true"
-                                                            class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
+                                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
                                                             <button type="button" tabindex="0" class="dropdown-item">
                                                                 <i class="dropdown-icon pe-7s-copy-file"></i><span>Pilih Foto</span>
                                                             </button>
@@ -32,7 +31,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div>-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@
                         <div class="widget-content-left card-footer">
                             <div class="widget-content-left mr-3 avatar-icon-xl">
                                 <a href="#">
-                                <img class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                <img class="avatar-icon" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" alt="">
                                 </a>
                             </div>
                             <div class="widget-content-left" style="color: black;">
@@ -307,7 +307,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Provinsi</b> :
-                                                                <?php echo $rowP->provinsi_sekolah;?>
+                                                                <?php echo $rowP->provinsi;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -318,7 +318,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kota/Kabupaten</b> :
-                                                                <?php echo $rowP->kota_kab_sekolah;?>
+                                                                <?php echo $rowP->kota_kab;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -329,7 +329,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kelurahan</b> :
-                                                                <?php echo $rowP->kel_sekolah;?>
+                                                                <?php echo $rowP->kelurahan;?>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -340,7 +340,7 @@
                                                         </div>
                                                         <div class="widget-content-left">
                                                             <div><b>Kecamatan</b> :
-                                                                <?php echo $rowP->kec_sekolah;?>
+                                                                <?php echo $rowP->kecamatan;?>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -115,7 +115,7 @@
                             <!-- listsearch-input-item-->
                             <div class="col-md-2">
                                 <div class="listsearch-input-item">
-                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"><i class="far fa-search"></i><span>Search</span></button>
+                                    <button class="header-search-button color-bg" onclick="window.location.href='listing.html'"> <!-- <i class="far fa-search"></i> <span> </span> --> Daftar Alumni</button>
                                 </div>
                             </div>
                             <!-- listsearch-input-item end-->                                         
