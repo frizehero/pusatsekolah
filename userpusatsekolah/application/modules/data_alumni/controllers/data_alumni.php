@@ -26,13 +26,8 @@ class Data_alumni extends MX_Controller {
 	function profilalumni($id)
 	{
 		$data = array(
-<<<<<<< Updated upstream
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_profil_alumni",
-=======
-			'namamodule' 	=> "profilalumni",
-			'namafileview' 	=> "V_profilalumni",
->>>>>>> Stashed changes
 			'tampil'		=> $this->M_data_alumni->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
