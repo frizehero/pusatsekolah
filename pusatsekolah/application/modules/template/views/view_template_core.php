@@ -560,7 +560,6 @@
                                                             </a>
                                                             </li>
 
-<<<<<<< HEAD
                             <?php if ($menu == "media_sekolah") { ?><li class="mm-active"><?php } else { ?>
                                 <li>
                                 <?php } ?>
@@ -568,16 +567,6 @@
                                     <i class="metismenu-icon pe-7s-id"></i>Media
                                 </a>
                                 </li>
-=======
-                                                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
-                                                                <li>
-                                                                <?php } ?>
-                                                                <a href="<?php echo base_url('media'); ?>">
-                                                                    <i class="metismenu-icon pe-7s-id"></i>Media
-                                                                </a>
-                                                                </li>
->>>>>>> c5397ed7d828524a12db12d2ac33164851b3f692
-
                         </ul>
                     </div>
                 </div>
