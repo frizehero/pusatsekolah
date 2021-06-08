@@ -3,7 +3,7 @@
     <div class="col-mb-12">
         <div class="card-shadow-primary card-border text-white card bg-light">
             <div class="dropdown-menu-header">
-                <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/originals/smkn1p.jpg');">
+                <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>');">
                     <div class="menu-header-btn-pane pt-5">
                         <div class="pt-5">
                             <div class="pt-5">
@@ -199,7 +199,7 @@
                                                 <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
                                                 </div>
                                                 <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                                    <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -262,15 +262,15 @@
                             <div class="menu-header-content">
                                 <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                     <div class="avatar-icon rounded">
-                                        <img src="<?php echo base_url() ?>assets/images/avatars/6.jpg" alt="Avatar 5">
+                                        <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_kepsek;?> alt="Avatar 5">
                                     </div>
                                 </div>
                                 <div>
                                     <h5 class="menu-header-title">Kepala Sekolah</h5>
-                                    <h6 class="menu-header-subtitle">DWI ANGGRAENI, S.Pd, M.Pd</h6>
+                                    <h6 class="menu-header-subtitle"><?php echo $rowP->nama_kepalasekolah;?></h6>
                                 </div>
                                 <div class="menu-header-btn-pane pt-1">
-                                    <button class="btn-icon btn btn-warning btn-sm">Cek Selengkapnya</button>
+                                    <a href="<?php echo $rowP->link_akunkepsek;?>" class="btn-icon btn btn-warning btn-sm">Cek Selengkapnya</a>
                                 </div>
                             </div>
                         </div>

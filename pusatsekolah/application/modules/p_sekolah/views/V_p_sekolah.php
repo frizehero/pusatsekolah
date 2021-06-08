@@ -38,10 +38,21 @@
                                                 <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                                                     <input name="id" value="<?php echo $tampilkompetensi['id_p_sekolah']?>" type="hidden" class="form-control">
                                                     <div class="card-body">
-                                                        <div class="form-group">
-                                                            <label for="exampleFile" class="">Foto Profil</label>
-                                                            <input name="fotoprofil" type="file" class="form-control-file">
-                                                            </small>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <h5 class="card-title">Foto Profil</h5>
+                                                                    <input name="fotoprofil" type="file" class="form-control-file">
+                                                                    </small>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <h5 class="card-title">Foto Sampul</h5>
+                                                                    <input name="fotosampul" type="file" class="form-control-file">
+                                                                    </small>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="form-row">
                                                         <div class="col-md-8">
@@ -369,11 +380,24 @@
                                                     </div>
                                             </div>
                                             <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
-                                                    <div class="card-body">
-                                                        <div class="position-relative form-group">
-                                                            <h5 class="card-title">Link Akun Kepala Sekolah</h5>
+                                                        <div class="form-group">
+                                                            <h5 class="card-title">Foto Kepala Sekolah</h5>
+                                                            <input name="fotokepsek" type="file" class="form-control-file">
+                                                            </small>
                                                         </div>
-                                                    </div>
+                                                        <h5 class="card-title">NAMA Kepala Sekolah</h5>
+                                                        <div class="input-group">
+                                                            <div class="input-group-prepend">
+                                                            </div>
+                                                            <input name="namakepsek" value="<?php echo $tampilkompetensi['nama_kepalasekolah']?>" type="text" class="form-control">
+                                                        </div>
+                                                        <br>
+                                                        <h5 class="card-title" style="margin:0px;">Link Profil Kepala Sekolah</h5>
+                                                        <small class="form-text" style="color: Tomato;">(Jika kepala sekolah memiliki akun Pusat Sekolah)</small><br>
+                                                        <div class="input-group">
+                                                            <input name="akunkepsek" value="<?php echo $tampilkompetensi['link_akunkepsek']?>" type="text" class="form-control">
+                                                        </div>
+                                                        <br>
                                                     <div class="clearfix">
                                                         <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
                                                         <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>

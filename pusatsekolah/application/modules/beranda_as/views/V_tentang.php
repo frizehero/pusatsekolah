@@ -5,7 +5,7 @@
         <div class="col-mb-12">
             <div class="card-shadow-primary card-border text-white card bg-light">
                 <div class="dropdown-menu-header">
-                    <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/originals/smkn1p.jpg');">
+                    <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>');">
                         <div class="menu-header-btn-pane pt-5">
                             <div class="pt-5">
                                 <div class="pt-5">
@@ -113,20 +113,21 @@
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah<?php echo $idnya?><?php echo $idsekolah['id_sekolah']?></h5>
+                                                        <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
 
                                                     <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
+                                                    <input name="id" value="<?php echo $tampilsejarah?>" type="text" class="form-control">
                                                         <div class="modal-body">
-                                                            <!--<input name="sjrhss" value="<?php echo $tampilkompetensi['sejarah_sekolah']?>" type="text" class="form-control" size="50">-->
+                                                            <!--<input name="sjrhs" value="<?php echo $tampilsejarah?>" type="text" class="form-control" size="50">-->
                                                             <textarea rows="1" class="form-control autosize-input" placeholder="Ketik Sejarah Sekolah disini" style="max-height: 200px; height: 265px; margin-top: 0px; margin-bottom: 0px;" size="50"></textarea>
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                            <button type="button" class="btn btn-primary">Perbarui</button>
+                                                            <button type="submit" class="btn btn-primary">Perbarui</button>
                                                         </div>
                                                     </form>
 

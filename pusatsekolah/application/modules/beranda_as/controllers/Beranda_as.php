@@ -67,6 +67,7 @@ class Beranda_as extends MX_Controller
 				'idnya' 		=> $iduser,
 				'idsekolah' 	=> $idsekolahx,
 				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
+				'tampilsejarah' => $idsekolahx['id_sekolah'],
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
