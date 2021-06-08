@@ -383,7 +383,6 @@
                                                         <div class="form-group">
                                                             <h5 class="card-title">Foto Kepala Sekolah</h5>
                                                             <input name="fotokepsek" type="file" class="form-control-file">
-                                                            </small>
                                                         </div>
                                                         <h5 class="card-title">NAMA Kepala Sekolah</h5>
                                                         <div class="input-group">

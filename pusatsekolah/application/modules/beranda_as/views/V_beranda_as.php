@@ -53,7 +53,7 @@
                     </select>
                 </div>
                 <div class="btn-actions-pane-right">
-                    <a href="<?php echo base_url('pesan'); ?>">
+                    <a href="<?php echo base_url('tb_pesan'); ?>">
                         <button class="btn-shadow-dark btn btn-primary">Pesan</button>
                     </a>
                     <a href="<?php echo base_url('beranda_as/tentangview'); ?>">
@@ -262,7 +262,7 @@
                             <div class="menu-header-content">
                                 <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                     <div class="avatar-icon rounded">
-                                        <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_kepsek;?> alt="Avatar 5">
+                                        <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_kepsek;?>" alt="Avatar 5">
                                     </div>
                                 </div>
                                 <div>
@@ -275,24 +275,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-block text-right card-footer">
-                    <button class="btn-shadow-primary btn btn-primary btn-lg">Edit</button>
-                </div>
-            </div>
-            <div class="card-hover-shadow card-border mb-2 card">
-                <div class="card-header">Verifikasi Sekolah</div>
-                <div class="card-body">
-                    <p><b>Selesaikan Sekolah Anda Untuk Meraih Keberhasilan</b></p>
-                    <p>sehingga orang di Pusat Sekolah mengetahui bahwa Sekolah Anda kredibel.</p>
-                    <div class="mb-3 progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">25%</div>
-                    </div>
-                </div>
-                <div class="d-block text-left card-footer">
-                    <p>Tambah Foto Sampul</p>
-                    <p>Isi jadwal</p>
-                    <p>Isi Kopetensi keahlian</p>
                 </div>
             </div>
                 <div class="card-hover-shadow card-border mb-2 card">

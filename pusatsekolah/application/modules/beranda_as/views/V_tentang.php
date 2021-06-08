@@ -57,7 +57,7 @@
                                 </select>
                             </div>
                             <div class="btn-actions-pane-right">
-                                <a href="<?php echo base_url('pesan'); ?>">
+                                <a href="<?php echo base_url('tb_pesan'); ?>">
                                     <button class="btn-shadow-dark btn btn-primary">Pesan</button>
                                 </a>
                                 <a href="<?php echo base_url('beranda_as/tentangview'); ?>">
