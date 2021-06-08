@@ -560,14 +560,13 @@
                                                             </a>
                                                             </li>
 
-                                                            <?php if ($menu == "media") { ?><li class="mm-active"><?php } else { ?>
-                                                                <li>
-                                                                <?php } ?>
-                                                                <a href="<?php echo base_url('media'); ?>">
-                                                                    <i class="metismenu-icon pe-7s-id"></i>Media
-                                                                </a>
-                                                                </li>
-
+                            <?php if ($menu == "media_sekolah") { ?><li class="mm-active"><?php } else { ?>
+                                <li>
+                                <?php } ?>
+                                <a href="<?php echo base_url('media_sekolah'); ?>">
+                                    <i class="metismenu-icon pe-7s-id"></i>Media
+                                </a>
+                                </li>
                         </ul>
                     </div>
                 </div>

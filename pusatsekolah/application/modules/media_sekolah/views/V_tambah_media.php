@@ -8,7 +8,7 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?php echo base_url('media/tambahfasilitas') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url('media_sekolah/tambah') ?>" method="POST" enctype="multipart/form-data">
                     <div class="card mb-3 widget-content bg-primary">
                         <div class="widget-content-wrapper text-white">
                             <div class="widget-content-left">

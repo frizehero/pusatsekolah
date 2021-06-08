@@ -8,16 +8,17 @@
                 </button>
             </div>
             <div class="modal-body">
-            <form action="<?php echo base_url('media/tambahvid') ?>" method="POST" enctype="multipart/form-data">
-                    <div class="card mb-3 widget-content bg-primary">
-                        <div class="widget-content-wrapper text-white">
-                            <div class="widget-content-left">
-                                <div class="widget-heading">UPLOAD VIDEO SEKOLAH</div>
-                                <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                <input name="foto" type="file" class="form-control-file">
+            <form action="<?php echo base_url('media_video/tambah') ?>" method="POST" enctype="multipart/form-data">
+                    <div class="position-relative form-group">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Link Youtube :</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input name="video_media" id="text" placeholder="....." type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>

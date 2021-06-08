@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Media extends MX_Controller {
+class Media_sekolah extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_media');
+		 $this->load->model('M_media_sekolah');
 		 $this->load->model('login/m_session');
 	}
 
@@ -16,9 +16,9 @@ class Media extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "media",
-			'namafileview' 	=> "V_media",
-			'tampil'		=> $this->M_media->tampil(),
+			'namamodule' 	=> "media_sekolah",
+			'namafileview' 	=> "V_media_sekolah",
+			'tampil'		=> $this->M_media_sekolah->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -27,29 +27,21 @@ class Media extends MX_Controller {
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "media",
+			'namamodule' 	=> "media_sekolah",
 			'namafileview' 	=> "V_tambah_media",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function tambahvidio()
-	{
-		$data = array(
-			'namamodule' 	=> "media",
-			'namafileview' 	=> "V_tambah_vidio",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
 
 		// Halaman Edit
 	function editview($id)
 	{
 
 		$data = array(
-			'namamodule' 	=> "media",
+			'namamodule' 	=> "media_sekolah",
 			'namafileview' 	=> "V_edit_media",
-			'tampil'		=> $this->M_media->tampiledit($id),
+			'tampil'		=> $this->M_media_sekolah->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -58,29 +50,22 @@ class Media extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_media->tambah();
-		redirect('media');
+		$this->M_media_sekolah->tambah();
+		redirect('media_sekolah');
 		
 	}
 
-	function tambahvid()
-	{
-
-		$this->M_media->tambah();
-		redirect('media');
-		
-	}
 
 	function edit()
 	{
-		$this->M_media->edit();
-		redirect('media');
+		$this->M_media_sekolah->edit();
+		redirect('media_sekolah');
 	}
 
 	function hapus()
 	{
-		$this->M_media->hapus();
-		redirect('media');
+		$this->M_media_sekolah->hapus();
+		redirect('media_sekolah');
 	}
 	
 }
