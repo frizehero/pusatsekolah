@@ -8,7 +8,7 @@ class Template extends MX_Controller {
 		parent:: __construct();
 		//load model
 
-		$this->load->model('m_template');
+		$this->load->model('M_template');
 		$this->load->model('login/m_session');
 	}
 
@@ -24,6 +24,10 @@ class Template extends MX_Controller {
 	public function tampilCore($data)
 	{
 		$id = $this->session->userdata('session_id');
+		/*$data = array(
+			'nama_userx' 	=> $this->M_template->tampil_user($id),
+			
+		);*/
 		
 		$this->load->view('view_template_core',$data);
 	}

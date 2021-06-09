@@ -338,7 +338,7 @@
                                     </div>
                                 </div>
                                 <div class="widget-content-left  ml-3 header-user-info">
-                                    <div class="widget-heading"> Alina Mclourd </div>
+                                    <div class="widget-heading"><!--<?php echo $nama_userx?>-->testing</div>
                                     <div class="widget-subheading"> Admin Sekolah </div>
                                 </div>
                             </div>
