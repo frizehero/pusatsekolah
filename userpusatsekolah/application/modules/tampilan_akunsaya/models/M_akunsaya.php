@@ -5,7 +5,9 @@ class M_akunsaya extends CI_Model{
 
 	function tampil()
 	{
-		return $this->db->get('tb_login')->result();
+		$this->db->order_by('id_admin', 'DESC');
+    	$query = $this->db->get('tb_login');
+    	return $query->result();
 	}
 
 	function tambah()
