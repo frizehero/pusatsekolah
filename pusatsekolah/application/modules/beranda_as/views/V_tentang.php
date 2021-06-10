@@ -101,39 +101,14 @@
                     <div class="col-md-8">
                         <div class="tab-content">
                                     <div class="tab-pane active" id="tab-eg8-0" role="tabpanel">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Sejarah Sekolah</h5>
-                                                <?php echo $rowP->sejarah_sekolah;?>
-                                            </div>
-                                            <button class="btn-shadow btn-wide float-right btn-pill btn btn-primary" data-toggle="modal" data-target="#edit<?php echo $no ?>">
-                                                <a>Edit</a>
-                                            </button>
-                                            <!-- Modal Edit Popup -->
-                                            <div class="modal fade" id="edit<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Sejarah Sekolah</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-
-                                                    <form action="<?php echo base_url('p_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
-                                                    <input name="id" value="<?php echo $tampilsejarah?>" type="text" class="form-control">
-                                                        <div class="modal-body">
-                                                            <!--<input name="sjrhs" value="<?php echo $tampilsejarah?>" type="text" class="form-control" size="50">-->
-                                                            <textarea rows="1" class="form-control autosize-input" placeholder="Ketik Sejarah Sekolah disini" style="max-height: 200px; height: 265px; margin-top: 0px; margin-bottom: 0px;" size="50"></textarea>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                                            <button type="submit" class="btn btn-primary">Perbarui</button>
-                                                        </div>
-                                                    </form>
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sejarah Sekolah</h5>
+                                            <?php echo $rowP->sejarah_sekolah;?>
+                                        </div>
+                                        <div class="clearfix">
+                                            <a href="<?php echo base_url('p_sekolah'); ?>"class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Edit
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="tab-pane" id="tab-eg8-1" role="tabpanel">
                                         <div class="card-body">

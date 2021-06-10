@@ -30,6 +30,11 @@
                                                     KEPALA SEKOLAH
                                                 </a>
                                             </li>
+                                            <li class="nav-item col-md-12">
+                                                <a data-toggle="tab" href="#tab-eg8-6" class="nav-link dropdown-item">
+                                                    SEJARAH SEKOLAH
+                                                </a>
+                                            </li>
                                         </ul>
                                 </div>
                                 <div class="col-md-8">
@@ -402,6 +407,15 @@
                                                         <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
                                                     </div>
                                             </div>
+                                            <div class="tab-pane" id="tab-eg8-6" role="tabpanel">
+                                                <h5 class="card-title">Sejarah Sekolah</h5>
+                                                <textarea id="ckeditor" name="sjrhs" type="text" style="height: 500px; width: 640px"><?php echo $tampilkompetensi['sejarah_sekolah']?></textarea>
+                                                <br>
+                                                <div class="clearfix">
+                                                    <button type="button" id="reset-btn22" class="btn-shadow float-left btn btn-link">Reset</button>
+                                                    <button type="submit" class="btn-shadow btn-wide float-right btn-pill btn btn-primary">Tampilkan</button>
+                                                </div>
+                                            </div>
                                                 </form>
                                 </div>
                             </div>
@@ -431,3 +445,14 @@
                         })
                     });
                 </script>
+
+<script type='text/javascript' src='<?php echo base_url(); ?>assets/template/js/plugins/ckeditor/ckeditor.js'></script>
+
+<script>
+var ckeditor = CKEDITOR.replace('sjrhs',{
+height:'290px'
+});
+
+CKEDITOR.disableAutoInline = true;
+CKEDITOR.inline('sjrhs');
+</script>
