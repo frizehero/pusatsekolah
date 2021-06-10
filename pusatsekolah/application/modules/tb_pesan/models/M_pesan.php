@@ -26,9 +26,11 @@ class M_pesan extends CI_Model
 	{
 		$pesan		= $this->input->post('pesan');
 		$iduser		= $this->input->post('iduser');
+		$namauser		= $this->input->post('namauser');
 		$data = array(
 			'id_user'			=> $iduser,
-			'pesan'			=> $pesan,
+			'nama_user'			=> $namauser,
+			'pesan'				=> $pesan,
 		);
 		$this->db->insert('tb_pesan', $data);
 	}
