@@ -65,6 +65,17 @@ class Tb_pesan extends MX_Controller
 		}
 	}*/
 
+	function detailpesan($id)
+	{
+		$data = array(
+			'namamodule' 	=> "tb_pesan",
+			'namafileview' 	=> "V_pesan_detail",
+			'tampil'		=> $this->M_pesan->tampildetail($id),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+
 	function tambah()
 	{
 		$this->M_pesan->tambah();

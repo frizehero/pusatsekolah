@@ -21,14 +21,23 @@ class M_pesan extends CI_Model
 		return $query->result();
 	}
 
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_user', $idnya);
+		return $this->db->get('tb_pesan')->row_array();
+	}
+
 
 	function tambah()
 	{
 		$pesan		= $this->input->post('pesan');
 		$iduser		= $this->input->post('iduser');
+		$namauser		= $this->input->post('namauser');
 		$data = array(
 			'id_user'			=> $iduser,
-			'pesan'			=> $pesan,
+			'nama_user'			=> $namauser,
+			'pesan'				=> $pesan,
 		);
 		$this->db->insert('tb_pesan', $data);
 	}
