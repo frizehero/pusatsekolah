@@ -10,14 +10,14 @@ class M_media_video extends CI_Model {
 
 	function tambah()
 	{
-		$video_media 			= $this->input->post('video_media');
+		$video_media 					= $this->input->post('video_media');
 
 		$data = array(
 			'video_media'				=> $video_media,
 
 		);
 
-		$this->db->insert('video_media', $data);
+		$this->db->insert('media_video', $data);
 		$this->session->set_flashdata('msg', 'suksestambah');
 	}
 
