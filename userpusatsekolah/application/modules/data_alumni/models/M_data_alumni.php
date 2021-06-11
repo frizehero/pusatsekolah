@@ -16,6 +16,7 @@ class M_data_alumni extends CI_Model {
 	function tambah()
 	{
 		$nama_alumni 			= $this->input->post('nama_alumni');
+		$username				= $this->input->post('username');
 		$thlulus_alumni			= $this->input->post('thlulus_alumni');
 		$nisn					= $this->input->post('nisn');
 		$tmplahir_alumni 		= $this->input->post('tmplahir_alumni');
@@ -34,9 +35,11 @@ class M_data_alumni extends CI_Model {
 		$instagram_alumni		= $this->input->post('instagram_alumni');
 		$facebook_alumni		= $this->input->post('facebook_alumni');
 		$twitter_alumni			= $this->input->post('twitter_alumni');
+		$deskripsi_alumni		= $this->input->post('deskripsi_alumni');
 
 				$data = array(
 					'nama_alumni'			=> $nama_alumni,
+					'username'				=> $username,
 					'thlulus_alumni'		=> $thlulus_alumni,
 					'nisn'					=> $nisn,
 					'tmplahir_alumni' 		=> $tmplahir_alumni,
@@ -55,6 +58,7 @@ class M_data_alumni extends CI_Model {
 					'instagram_alumni'		=> $instagram_alumni,
 					'facebook_alumni'		=> $facebook_alumni,
 					'twitter_alumni'		=> $twitter_alumni,
+					'deskripsi_alumni'		=> $deskripsi_alumni,
 				);
 
 				$this->db->insert('data_alumni', $data);

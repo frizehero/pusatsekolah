@@ -59,7 +59,7 @@ class Data_alumni extends MX_Controller {
 	function tambah()
 	{
 
-		$this->M_produk->tambah();
+		$this->M_data_alumni->tambah();
 		redirect('data_alumni');
 		
 	}

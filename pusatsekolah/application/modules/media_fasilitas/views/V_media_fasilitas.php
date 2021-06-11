@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url('media_fasilitas'); ?>">
+                    <a class="nav-link" href="<?php echo base_url('media_video'); ?>">
                         <span>Video</span>
                     </a>
                 </li>
