@@ -21,6 +21,13 @@ class M_pesan extends CI_Model
 		return $query->result();
 	}
 
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_user', $idnya);
+		return $this->db->get('tb_pesan')->row_array();
+	}
+
 
 	function tambah()
 	{
