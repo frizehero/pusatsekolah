@@ -25,7 +25,7 @@
                     <?php $no = 1;
                     foreach ($tampil as $rowP) { ?>
                         <li class="nav-item">
-                            <a href="<?php echo base_url('tb_pesan/detailpesan/' . encrypt_url($rowP->id_user)); ?>">
+                            <a href="<?php echo base_url('tb_pesan/detailpesan/' . encrypt_url($rowP->id_penerima)); ?>">
                                 <button type="button" tabindex="0" class="dropdown-item">
                                     <div class="widget-content p-0">
                                         <div class="widget-content-wrapper">

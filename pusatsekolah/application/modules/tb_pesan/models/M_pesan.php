@@ -24,7 +24,7 @@ class M_pesan extends CI_Model
 	function tampildetail($id)
 	{
 		$idnya = decrypt_url($id);
-		$this->db->where('id_user', $idnya);
+		$this->db->where('id_penerima', $idnya);
 		return $this->db->get('tb_pesan')->row_array();
 	}
 

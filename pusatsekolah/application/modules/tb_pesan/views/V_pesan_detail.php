@@ -1,7 +1,7 @@
  <div class="app-main__inner p-0">
     <?php tampilnotif() ?>
     <form action="<?php echo base_url('tb_pesan/tampildetail') ?>" method="POST" enctype="multipart/form-data">
-    <input name="id" value="<?php echo $tampil['id_user']?>" type="hidden" class="form-control">
+    <input name="id" value="<?php echo $tampil['id_penerima']?>" type="hidden" class="form-control">
         <div class="app-inner-layout chat-layout">
             <div class="app-inner-layout__wrapper">
                 <div class="app-inner-layout__content card">
@@ -103,12 +103,11 @@
                             <?php $no++;
                             } ?>
                         </div>
-                        <form action="<?php echo base_url('tb_pesan/tambah') ?>" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo base_url('tb_pesan/tambah')?>" method="POST" enctype="multipart/form-data">
                             <div class="app-inner-layout__bottom-pane d-block text-center">
                                 <div class="mb-0 position-relative row form-group">
                                     <div class="col-sm-10">
-                                        <input name="iduser" id="idnya" value="<?php echo $idnya; ?>" type="hidden" class="form-control">
-                                        <input name="namauser" id="namanya" value="<?php echo $idnya; ?>" type="hidden" class="form-control">
+                                        <input name="iduser" id="idnya" type="hidden" value="<?php echo $idnya; ?>" class="form-control">
                                         <input name="pesan" id="text" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
                                     </div>
                                     <div class="col-sm-2">

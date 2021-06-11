@@ -13,7 +13,7 @@ class Tb_pesan extends MX_Controller
 	}
 
 	// index
-	/*function index()
+	function index()
 	{
 		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
@@ -25,9 +25,9 @@ class Tb_pesan extends MX_Controller
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}*/
+	}
 
-	function index()
+	function tambah()
 	{
 		//echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
@@ -38,7 +38,7 @@ class Tb_pesan extends MX_Controller
 
 			$data = array(
 				'namamodule' 		=> "tb_pesan",
-				'namafileview' 		=> "V_pesan",
+				'namafileview' 		=> "V_pesan_detail",
 				'tampil'			=> $this->M_pesan->tampilpesan($iduser),
 				'idnya' 			=> $iduser,
 				'tampilkompetensi'	=> $this->M_pesan->tampilkompetensi($iduserx['id_admin']),
@@ -75,12 +75,32 @@ class Tb_pesan extends MX_Controller
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-
-	function tambah()
+	/*function tambah()
 	{
 		$this->M_pesan->tambah();
 		redirect('tb_pesan');
-	}
+		//echo $this->session->userdata('session_id');
+		{
+			$iduser=$this->session->userdata('session_id');
+			$idsekolahx = $this->M_pesan->ambilidsekolah($iduser);
+
+			$data = array(
+				'namamodule' 	=> "tb_pesan",
+				'namafileview' 	=> "V_pesan_detail",
+				'idnya' 		=> $iduser,
+				'idsekolah' 	=> $idsekolahx,
+				'tampilkompetensi'		=> $this->M_pesan->tampilkompetensi($idsekolahx['id_admin']),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}*/
+
+
+	/*function tambah()
+	{
+		$this->M_pesan->tambah();
+		redirect('tb_pesan');
+	}*/
 
 	function hapus($id)
 	{
