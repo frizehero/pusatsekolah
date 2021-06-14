@@ -9,6 +9,8 @@ class Produk extends MX_Controller {
 		// model
 		 $this->load->model('M_produk');
 		 $this->load->model('login/m_session');
+		 //here we will autoload the pagination library
+		 $this->load->library('pagination');
 	}
 
 	
@@ -32,11 +34,11 @@ class Produk extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-
-		// Halaman Edit
+	
+	// Halaman Edit
 	function editview($id)
 	{
-
+		
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_edit_produk",
@@ -44,7 +46,16 @@ class Produk extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-
+	
+	function cariview()
+	{
+		$data = array(
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_produk",
+			'tampil'		=> $this->M_produk->cari(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
 
 	function tambah()
 	{
@@ -66,5 +77,10 @@ class Produk extends MX_Controller {
 		redirect('produk');
 	}
 	
+	function cari()
+	{
+		$this->M_produk->cari();
+		redirect('produk');
+	}
 }
  
