@@ -31,13 +31,15 @@ class Beranda_as extends MX_Controller
 		} else {
 			$iduser=$this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
-
+			$idpostingx = $this->M_beranda_as->ambilidpostingan($iduser);
+			
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_beranda_as",
 				'tampil'			=> $this->M_beranda_as->tampil(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
+				'idposting' 		=> $idpostingx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
@@ -62,12 +64,12 @@ class Beranda_as extends MX_Controller
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 
 			$data = array(
-				'namamodule' 	=> "beranda_as",
-				'namafileview' 	=> "V_tentang",
-				'idnya' 		=> $iduser,
-				'idsekolah' 	=> $idsekolahx,
-				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
-				'tampilsejarah' => $idsekolahx['id_sekolah'],
+				'namamodule' 		=> "beranda_as",
+				'namafileview' 		=> "V_tentang",
+				'idnya' 			=> $iduser,
+				'idsekolah' 		=> $idsekolahx,
+				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
+				'tampilsejarah' 	=> $idsekolahx['id_sekolah'],
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}

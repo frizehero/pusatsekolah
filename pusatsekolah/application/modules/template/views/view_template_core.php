@@ -45,7 +45,8 @@
             // buat marker baru
             marker = new google.maps.Marker({
                 position: posisiTitik,
-                map: peta
+                map: peta,
+                icon: "<?php echo base_url() ?>assets/images/logomaps.ico"
             });
             }
         
@@ -54,7 +55,7 @@
             document.getElementById("lng").value = posisiTitik.lng();
             
         }
-        
+
         function initialize() {
         var propertiPeta = {
             center:new google.maps.LatLng(-7.900074,112.6046973),
@@ -70,10 +71,6 @@
         });
 
         }
-
-
-        // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', initialize);
         
     </script>
 </head>
