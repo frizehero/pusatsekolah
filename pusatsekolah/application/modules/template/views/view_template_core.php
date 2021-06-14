@@ -614,7 +614,7 @@
 
                                         <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
                                             <li><?php } ?>
-                                            <a href="<?php echo base_url('log'); ?>">
+                                            <a href="<?php echo base_url('log_aktivitas'); ?>">
                                                 <i class="metismenu-icon"></i>Log Aktifitas
                                             </a>
                                             </li>
