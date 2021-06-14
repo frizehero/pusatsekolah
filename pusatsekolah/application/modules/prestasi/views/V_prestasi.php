@@ -58,10 +58,11 @@
         <?php $no = 1;
         foreach ($tampil as $rowP) { ?>
             <div class="col-md-12 col-lg-6 col-xl-4">
-                <div class="card-shadow-primary card-border text-dark mb-3 card">
+                <div class="card mb-3 widget-chart">
                     <div class="widget-chart-content">
                         <div class="wrapper rounded">
-                            <img src="<?php echo base_url() ?>assets/images/gambar_prestasi/<?php echo $rowP->gambar_prestasi;?>" style="width: 314px; height: 200px;">
+                            <div class="wrapper rounded"></div>
+                            <img src="<?php echo base_url() ?>assets/images/gambar_prestasi/<?php echo $rowP->gambar_prestasi; ?>" style="width: 240px; height: 200px;">
                         </div>
                     </div>
                     <ul class="list-group list-group-flush">
