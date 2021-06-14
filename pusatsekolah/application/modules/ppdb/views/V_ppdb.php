@@ -211,47 +211,7 @@
                                             <table class="text-nowrap table-lg mb-0 table table-hover">
                                                 <tbody>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox1" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox1">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
-                                                        <td>
-                                                            <div class="widget-content p-0">
-                                                                <div class="widget-content-wrapper">
-                                                                    <div class="widget-content-left mr-3">
-                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
-                                                                    </div>
-                                                                    <div class="widget-content-left">
-                                                                        <div class="widget-heading">Alina Mcloughlin</div>
-                                                                        <div class="widget-subheading">Last seen online 15 minutes ago</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
-                                                        </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox12" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox12">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -266,24 +226,15 @@
                                                         </td>
                                                         <td class="text-left">But I must explain to you how all this mistaken idea
                                                             of denouncing pleasure ...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox13" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox13">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -298,24 +249,16 @@
                                                         </td>
                                                         <td class="text-left">But I must explain to you how all this mistaken idea
                                                             of denouncing pleasure ...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox14" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox14">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                            
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -330,24 +273,16 @@
                                                         </td>
                                                         <td class="text-left">Create stunning UIs for your pages with these layout
                                                             components...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                            <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox15" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox15">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -361,24 +296,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="text-left">Etiam sit amet orci eget eros faucibus...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox16" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox16">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -393,24 +320,16 @@
                                                             </div>
                                                         </td>
                                                         <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            5 mins ago
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox17" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox17">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -425,24 +344,16 @@
                                                         </td>
                                                         <td class="text-left">But I must explain to you how all this mistaken idea
                                                             of denouncing pleasure ...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox18" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox18">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -457,24 +368,16 @@
                                                         </td>
                                                         <td class="text-left">But I must explain to you how all this mistaken idea
                                                             of denouncing pleasure ...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-center" style="width: 78px;">
-                                                            <div class="custom-checkbox custom-control">
-                                                                <input type="checkbox" id="eCheckbox19" class="custom-control-input">
-                                                                <label class="custom-control-label" for="eCheckbox19">&nbsp;</label>
-                                                            </div>
-                                                        </td>
-                                                        <td class="text-left pl-1">
-                                                            <i class="fa fa-star"></i>
-                                                        </td>
+                                                        
                                                         <td>
                                                             <div class="widget-content p-0">
                                                                 <div class="widget-content-wrapper">
@@ -488,13 +391,13 @@
                                                             </div>
                                                         </td>
                                                         <td class="text-left">Create stunning UIs for your pages with these layout components...</td>
-                                                        <td>
-                                                            <i class="fa fa-tags fa-w-20 opacity-4"></i>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
                                                         </td>
-                                                        <td class="text-right">
-                                                            <i class="fa fa-calendar-alt opacity-4 mr-2"></i>
-                                                            7 Dec
-                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                       
                                                     </tr>
                                                 </tbody>
                                             </table>
