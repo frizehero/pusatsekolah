@@ -62,7 +62,7 @@
                     <div class="widget-chart-content">
                         <div class="wrapper rounded">
                             <div class="wrapper rounded"></div>
-                            <img src="<?php echo base_url() ?>assets/images/gambar_prestasi/<?php echo $rowP->gambar_prestasi; ?>" style="width: 240px; height: 200px;">
+                            <img src="<?php echo base_url() ?>assets/images/gambar_prestasi/<?php echo $rowP->gambar_prestasi; ?>" style="width: 250px; height: 250px;">
                         </div>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -70,7 +70,7 @@
                             <div class="widget-content p-0">
                                 <div class="widget-content-wrapper">
                                     <div class="widget-content-left">
-                                        <div>
+                                        <div class="widget-subheading fsize-1 pt-2 opacity-10 text-dark font-weight-bold">
                                             <h5><b><?php echo $rowP->nama_prestasi; ?></b></h5>
                                         </div>
                                         <div class="table-responsive">
