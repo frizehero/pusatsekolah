@@ -204,54 +204,207 @@
                                     <div class="scroll-area-sm">
                                         <div class="scrollbar-container">
                                             <div class="card-body">
-                                    <table style="width: 100%;" id="example" class="table table-hover table-striped table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Nama</th>
-                                                <th>Matematika</th>
-                                                <th>IPA</th>
-                                                <th>B. Indonesia</th>
-                                                <th>B. Inggris</th>
-                                                <th>Total Nilai</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tiger Nixon Architect</td>
-                                                <td>92,5</td>
-                                                <td>98</td>
-                                                <td>100</td>
-                                                <td>100</td>
-                                                <td>390,5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Garrett Winters</td>
-                                                <td>92,5</td>
-                                                <td>80</td>
-                                                <td>100</td>
-                                                <td>98</td>
-                                                <td>370,5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Ashton Cox</td>
-                                                <td>75</td>
-                                                <td>85</td>
-                                                <td>96</td>
-                                                <td>86</td>
-                                                <td>342</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Nama</th>
-                                                <th>Matematika</th>
-                                                <th>IPA</th>
-                                                <th>B. Indonesia</th>
-                                                <th>B. Inggris</th>
-                                                <th>Total Nilai</th>
-                                            </tr>
-                                        </tfoot>
-                                    </table>
+                                    <div class="app-inner-layout__content card">
+                                <div>
+                                    <div class="bg-white">
+                                        <div class="table-responsive">
+                                            <table class="text-nowrap table-lg mb-0 table table-hover">
+                                                <tbody>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">John Smith</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">But I must explain to you how all this mistaken idea
+                                                            of denouncing pleasure ...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Eliot Huber</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">But I must explain to you how all this mistaken idea
+                                                            of denouncing pleasure ...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                            
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Ella-Rose Henry</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">Create stunning UIs for your pages with these layout
+                                                            components...</td>
+                                                            <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/5.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Vinnie Wagstaff</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">Etiam sit amet orci eget eros faucibus...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/6.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Alina Mcloughlin</div>
+                                                                        <div class="widget-subheading">Last seen online 15 minutes ago</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/7.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Eliot Huber</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">But I must explain to you how all this mistaken idea
+                                                            of denouncing pleasure ...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/8.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Eliot Huber</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">But I must explain to you how all this mistaken idea
+                                                            of denouncing pleasure ...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        <td>
+                                                            <div class="widget-content p-0">
+                                                                <div class="widget-content-wrapper">
+                                                                    <div class="widget-content-left mr-3">
+                                                                        <img width="42" class="rounded-circle" src="assets/images/avatars/9.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="widget-content-left">
+                                                                        <div class="widget-heading">Ella-Rose Henry</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-left">Create stunning UIs for your pages with these layout components...</td>
+                                                        <td class="text-left">Nullam dictum felis eu pede mollis pretium.</td>
+                                                        <td><a href="<?php echo base_url('ppdb/editview/'. encrypt_url($rowP->id_ppdb)); ?>" class="btn btn-primary"><i class="fa fa-pen fa-w-16"></i></a>
+                                                        </td>
+                                                        <td><button class="btn btn-warning" data-toggle="modal" data-target="#hapus1">
+                                                        <i class="fa fa-trash fa-w-16"></i>
+                                                        </button></td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                                 </div>
                                         </div>
                                     </div>
