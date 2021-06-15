@@ -56,12 +56,12 @@ class Data_alumni extends MX_Controller {
         	'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 			'tampil'		=> $this->M_data_alumni->tampil($idsekolahx['id_sekolah']),
-			'tampilkan'        => $this->M_data_alumni->tampilkan($config["per_page"], $data['page']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampilkan'     => $this->M_data_alumni->tampilkan($config["per_page"], $data['page']),
 			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
 			'totallaki'		=> $this->M_data_alumni->totallaki(),
-			'idnya' 		=> $iduser,
-			'idsekolah' 	=> $idsekolahx,
             'pagination'    => $this->pagination->create_links(),
 
         );

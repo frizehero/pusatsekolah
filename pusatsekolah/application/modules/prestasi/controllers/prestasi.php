@@ -22,7 +22,7 @@ class Prestasi extends MX_Controller
         $config = array();
         $config['base_url']         = site_url('prestasi/index'); //site url
         $config['total_rows']       = $this->db->count_all('prestasi'); //total row
-        $config['per_page']         = 5;  //show record per halaman
+        $config['per_page']         = 6;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);
