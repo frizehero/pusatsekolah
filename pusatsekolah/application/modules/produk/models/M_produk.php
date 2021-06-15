@@ -119,9 +119,11 @@ class M_produk extends CI_Model {
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
-	function cari()
-	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_produk',$cari)->get('produk')->result();
+	public function get_keyword($keyword){
+		$this->db->select('*');
+		$this->db->from('produk');
+		$this->db->like('nama_produk',$keyword);
+		$this->db->like('deskripsi_produk',$keyword);
+		return $this->db->get()->result();
 	}
 }
