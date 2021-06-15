@@ -128,7 +128,7 @@
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">Provinsi</h5>
                                                                 <select name="prov" class="form-control" id="provinsi">
-                                                                    <option><?php echo $tampilkompetensi['provinsi_sekolah']?></option>
+                                                                    <option><?php echo $tampilkompetensi['provinsi']?></option>
                                                                     <?php 
                                                                         foreach($provinsi as $prov)
                                                                         {
@@ -140,7 +140,7 @@
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">Kota / Kab</h5>
                                                                 <select name="kab" class="form-control" id="kabupaten">
-                                                                    <option><?php echo $tampilkompetensi['kota_kab_sekolah']?></option>
+                                                                    <option><?php echo $tampilkompetensi['kota_kab']?></option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -149,13 +149,13 @@
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">Kecamatan</h5>
                                                                 <select name="kec" class="form-control" id="kecamatan">
-                                                                    <option><?php echo $tampilkompetensi['kec_sekolah']?></option>
+                                                                    <option><?php echo $tampilkompetensi['kecamatan']?></option>
                                                                 </select>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">Kelurahan</h5>
                                                                 <select name="des" class="form-control" id="desa">
-                                                                    <option><?php echo $tampilkompetensi['kel_sekolah']?></option>
+                                                                    <option><?php echo $tampilkompetensi['kelurahan']?></option>
                                                                 </select>
                                                             </div>
                                                         </div>
