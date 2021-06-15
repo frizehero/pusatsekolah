@@ -9,6 +9,17 @@ class M_prestasi extends CI_Model
 		return $this->db->get('prestasi')->result();
 	}
 
+	function filter ($prestasi)
+	{
+
+		 $this->db->select('*')
+		->from ('prestasi')
+		->like('nama_prestasi',$prestasi);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	function tampiledit($id)
 	{
 		$idnya = decrypt_url($id);

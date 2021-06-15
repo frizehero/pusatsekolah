@@ -77,9 +77,16 @@ class Produk extends MX_Controller {
 		redirect('produk');
 	}
 	
-	function search(){
-		$keyword = $this->input->post('keyword');
-		$data['produk']=$this->M_produk->get_keyword($keyword);
+	function search()
+	{
+		$produk 	= $this->input->post('nama');
+		$data = array(
+			'namamodule' 	=> "produk",
+			'namafileview' 	=> "V_produk",
+			'tampil'		=> $this->M_produk->filter($produk),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	
 	}
 }
  

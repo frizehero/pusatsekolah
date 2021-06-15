@@ -36,7 +36,7 @@ class Beranda_as extends MX_Controller
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_beranda_as",
-				'tampil'			=> $this->M_beranda_as->tampil(),
+				'tampil'			=> $this->M_beranda_as->tampil($idsekolahx['id_sekolah']),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
 				'idposting' 		=> $idpostingx,

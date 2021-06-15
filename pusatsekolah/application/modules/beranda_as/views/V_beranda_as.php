@@ -70,6 +70,7 @@
     <div class="row">
         <div class="col-sm-12 col-lg-8">
         <form action="<?php echo base_url('beranda_as/tambah') ?>" method="POST" enctype="multipart/form-data">
+        <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
             <div class="card mb-2">
                 <div class="card-header">
                     <div class="media flex-wrap w-100 align-items-center">
@@ -105,7 +106,7 @@
                     <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
                         <div class="media-body ml-3">
                             <a href="<?php echo base_url('beranda_as'); ?>"><?php echo $rowP->nama_sekolah;?></a>
-                            <div class="text-muted small">4 hari yang lalu</div>
+                            <div class="text-muted small">4 hari yang lalu</div> 
                         </div>
                     </div>
                     <div class="btn-actions-pane-right text-capitalize actions-icon-btn">

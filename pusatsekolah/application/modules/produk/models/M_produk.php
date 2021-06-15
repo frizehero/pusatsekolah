@@ -8,6 +8,17 @@ class M_produk extends CI_Model {
 		return $this->db->get('produk')->result();
 	}
 
+	function filter ($produk)
+	{
+
+		 $this->db->select('*')
+		->from ('produk')
+		->like('nama_produk',$produk);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	function tambah()
 	{
 		$nama 			= $this->input->post('nama');
@@ -117,13 +128,5 @@ class M_produk extends CI_Model {
 		$id = $this->input->post('id');
 		$this->db->where('id_produk', $id)->delete('produk');
 		$this->session->set_flashdata('msg', 'sukseshapus');
-	}
-
-	public function get_keyword($keyword){
-		$this->db->select('*');
-		$this->db->from('produk');
-		$this->db->like('nama_produk',$keyword);
-		$this->db->like('deskripsi_produk',$keyword);
-		return $this->db->get()->result();
 	}
 }
