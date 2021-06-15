@@ -77,10 +77,10 @@ class Produk extends MX_Controller {
 		redirect('produk');
 	}
 	
-	function cari()
-	{
-		$this->M_produk->cari();
-		redirect('produk');
+	function search(){
+		$keyword = $this->input->post('keyword');
+		$data['produk']=$this->M_produk->get_keyword($keyword);
 	}
 }
  
+

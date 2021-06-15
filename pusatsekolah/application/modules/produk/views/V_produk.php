@@ -7,10 +7,13 @@
                         <div class="col-12 col-md-9 p-0 mb-3">
                             <div class="search-wrapper active">
                                 <div class="input-holder" style="background-color: #fff;">
-                                    <input type="text" class="search-input" placeholder="Cari...">
+                                <?php echo form_open('produk/search') ?>
+                                    <input type="text" name="keyword" class="search-input" placeholder="Cari...">
                                     <button class="search-icon" style="background-color: #fff;"><span></span></button>
+                                <?php echo form_close() ?>
                                 </div>
                             </div>
+
                         </div>
                         <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
                             <div class="mb-2 mr-2 btn-group">
