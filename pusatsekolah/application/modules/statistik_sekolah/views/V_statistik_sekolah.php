@@ -28,7 +28,7 @@
                                             <i class="lnr-graduation-hat text-danger"></i>
                                         </div>
                                         <div class="widget-heading fsize-1 pt-2 opacity-10 text-dark font-weight-bold"><span>Alumni Terdaftar</span></div>
-                                        <div class="widget-subheading fsize-1 pt-2 opacity-10 text-danger font-weight-bold"><?php echo $totalalumni?></div>
+                                        <div class="widget-subheading fsize- pt-2 opacity-10 text-danger font-weight-bold"><?php echo $totalalumni?></div>
                                         <br><br>
                                     </div>
                                     <div class="widget-chart-wrapper">
@@ -45,7 +45,7 @@
                                             <i class="ion-android-contact text-info"></i>
                                         </div>
                                         <div class="widget-heading fsize-1 pt-2 opacity-10 text-dark font-weight-bold"><span>Guru Pengajar Terdaftar</span></div>
-                                        <div class="widget-subheading fsize-1 pt-2 opacity-10 text-info font-weight-bold"><?php echo $totalpengajar?></div>
+                                        <div class="widget-subheading fsize-2 pt-2 opacity-10 text-info font-weight-bold"><?php echo $totalpengajar?></div>
                                         <br><br>
                                     </div>
                                     <div class="widget-chart-wrapper">
@@ -184,7 +184,7 @@
                                                                     <div class="widget-subheading">Event Terlaksana dan Terupload</div>
                                                                 </div>
                                                                 <div class="widget-content-right">
-                                                                    <div class="widget-numbers text-primary">150</div>
+                                                                    <div class="widget-numbers text-primary"><?php echo $totalevent?></div>
                                                                 </div>
                                                             </div>
                                                             <div class="widget-progress-wrapper">
@@ -254,7 +254,7 @@
                                                                 <div class="widget-content-right">
                                                                     <div class="widget-numbers text-danger">
                                                                         <small></small>
-                                                                        527
+                                                                        <?php echo $totalproduk?>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -288,7 +288,7 @@
                                                                     <div class="widget-subheading">Pencapaian Sekolah</div>
                                                                 </div>
                                                                 <div class="widget-content-right">
-                                                                    <div class="widget-numbers text-focus">682</div>
+                                                                    <div class="widget-numbers text-focus"><?php echo $totalprestasi?></div>
                                                                 </div>
                                                             </div>
                                                             <div class="widget-progress-wrapper">
