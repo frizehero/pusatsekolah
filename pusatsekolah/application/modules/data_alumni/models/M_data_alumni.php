@@ -173,9 +173,14 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
-	function cari()
+	function filter ($data_alumni)
 	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_alumni',$cari)->get('data_alumni')->result();
+
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('nama_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
 	}
 }

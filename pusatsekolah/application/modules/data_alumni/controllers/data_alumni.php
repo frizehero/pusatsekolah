@@ -99,14 +99,16 @@ class Data_alumni extends MX_Controller {
 		redirect('data_alumni');
 	}
 
-	function cari()
+	function search()
 	{
+		$data_alumni 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
-			'tampil'		=> $this->m_data_alumni->cari(),
+			'tampil'		=> $this->M_data_alumni->filter($data_alumni),
 		);
 		echo Modules::run('template/tampilCore', $data);
+	
 	}
 	
 }
