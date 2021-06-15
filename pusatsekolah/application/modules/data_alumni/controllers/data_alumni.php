@@ -49,13 +49,19 @@ class Data_alumni extends MX_Controller {
 
         $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+
         $data = array(
         	'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
 			'totallaki'		=> $this->M_data_alumni->totallaki(),
-            'tampil'        => $this->M_data_alumni->tampil($config["per_page"], $data['page']),
+			'tampil'		=> $this->M_data_alumni->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+            'tampilkan'        => $this->M_data_alumni->tampilkan($config["per_page"], $data['page']),
             'pagination'    => $this->pagination->create_links(),
 
         );

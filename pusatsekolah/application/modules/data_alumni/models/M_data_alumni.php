@@ -3,7 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_data_alumni extends CI_Model {
 
-	function tampil($limit, $start)
+	function tampil($idsekolahx)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		$query = $this->db->get();
+
+		return $query->result();
+	}
+	
+	function tampilkan($limit, $start)
 	{
 		
 		$query = $this->db->get('data_alumni', $limit, $start);
@@ -50,6 +59,7 @@ class M_data_alumni extends CI_Model {
 		$instagram_alumni		= $this->input->post('instagram_alumni');
 		$facebook_alumni		= $this->input->post('facebook_alumni');
 		$twitter_alumni			= $this->input->post('twitter_alumni');
+		$id 					= $this->input->post('id');
 
 				$data = array(
 					'nama_alumni'			=> $nama_alumni,
@@ -71,6 +81,7 @@ class M_data_alumni extends CI_Model {
 					'instagram_alumni'		=> $instagram_alumni,
 					'facebook_alumni'		=> $facebook_alumni,
 					'twitter_alumni'		=> $twitter_alumni,
+					'id_sekolah'			=> $id,
 				);
 
 				$this->db->insert('data_alumni', $data);
@@ -87,7 +98,7 @@ class M_data_alumni extends CI_Model {
 
     function edit()
 	{
-		$id_alumni				= $this->input->post('id_alumni');
+		$id 		= $this->input->post('id');
 		$nama_alumni 			= $this->input->post('nama_alumni');
 		$thlulus_alumni			= $this->input->post('thlulus_alumni');
 		$nisn					= $this->input->post('nisn');
@@ -182,5 +193,18 @@ class M_data_alumni extends CI_Model {
 	
 		$query = $this->db->get();
 		return $query->result();
+	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 }
