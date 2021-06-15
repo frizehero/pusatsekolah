@@ -3,9 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_produk extends CI_Model {
 
-	function tampil()
+	function tampil($idsekolahx)
 	{
-		return $this->db->get('produk')->result();
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('produk');
+		return $query->result();
 	}
 
 	function filter ($produk)
@@ -24,6 +26,7 @@ class M_produk extends CI_Model {
 		$nama 			= $this->input->post('nama');
 		$deskripsi 		= $this->input->post('deskripsi');
 		$harga			= $this->input->post('harga');
+		$id 			= $this->input->post('id');
 
 
 		$this->load->library('upload');
@@ -46,6 +49,7 @@ class M_produk extends CI_Model {
 					'nama_produk'		=> $nama,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
+					'id_sekolah'		=> $id,
 					'foto_produk' 		=> $gbr['file_name'],
 					
 					
@@ -60,6 +64,7 @@ class M_produk extends CI_Model {
 					'nama_produk'		=> $nama,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
+					'id_sekolah'		=> $id,
 					'foto_produk' 		=> 'kosong1.jpeg',
 				);
 				$this->db->insert('produk', $data);
@@ -129,4 +134,18 @@ class M_produk extends CI_Model {
 		$this->db->where('id_produk', $id)->delete('produk');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
+	}
+
 }

@@ -17,10 +17,15 @@ class Produk extends MX_Controller {
 	// index
 	function index()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_produk->ambilidsekolah($iduser);
+
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_produk",
-			'tampil'		=> $this->M_produk->tampil(),
+			'tampil'		=> $this->M_produk->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -28,9 +33,15 @@ class Produk extends MX_Controller {
 		// halaman tambah
 	function tambahview()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_produk->ambilidsekolah($iduser);
+		
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_tambah_produk",
+			'tampil'		=> $this->M_produk->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
