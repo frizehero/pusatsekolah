@@ -196,11 +196,5 @@
         <?php $no++;
         } ?>
     </div>
-    <div class="card-body">
-        <div class="text-center">
-            <button class="btn-shadow btn-wide btn-pill btn btn-primary">
-                Lihat Lainnya
-            </button>
-        </div>
-    </div>
+    <?php echo  $pagination; ?>
 </div>

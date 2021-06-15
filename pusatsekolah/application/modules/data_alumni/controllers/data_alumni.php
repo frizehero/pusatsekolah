@@ -21,7 +21,7 @@ class Data_alumni extends MX_Controller {
         $config = array();
         $config['base_url']         = site_url('data_alumni/index'); //site url
         $config['total_rows']       = $this->db->count_all('data_alumni'); //total row
-        $config['per_page']         = 1;  //show record per halaman
+        $config['per_page']         = 3;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);
