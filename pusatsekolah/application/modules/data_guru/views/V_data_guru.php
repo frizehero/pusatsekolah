@@ -66,7 +66,7 @@
     <?php tampilnotif() ?>
     <div class="row">
         <?php $no = 1;
-        foreach ($tampil as $rowP) { ?>
+        foreach ($tampilkan as $rowP) { ?>
             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card-shadow-primary card-border mb-3 card">
                     <div class="dropdown-menu-header">
@@ -130,6 +130,7 @@
         <?php $no++;
         } ?>
     </div>
+    <?php echo  $pagination; ?>
     <div class="text-center">
         <button class="mb-3 btn-shadow btn-wide btn-pill btn btn-primary">
             Lihat Lainnya
