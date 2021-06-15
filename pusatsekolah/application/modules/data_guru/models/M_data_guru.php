@@ -4,8 +4,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class M_data_guru extends CI_Model
 {
 
-	function tampil()
+	function tampil($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_guru');
 		$query = $this->db->get();
 
@@ -63,6 +64,7 @@ class M_data_guru extends CI_Model
 		$twitter_guru 		= $this->input->post('twitter_guru');
 		$telepon_guru 		= $this->input->post('telepon_guru');
 		$facebook_guru 		= $this->input->post('facebook_guru');
+		$id 				= $this->input->post('id');
 
 		$data = array(
 			'nama_guru'				=> $nama_guru,
@@ -83,6 +85,7 @@ class M_data_guru extends CI_Model
 			'twitter_guru'			=> $twitter_guru,
 			'telepon_guru'			=> $telepon_guru,
 			'facebook_guru'			=> $facebook_guru,
+			'id_sekolah'			=> $id,
 
 		);
 
@@ -151,12 +154,23 @@ class M_data_guru extends CI_Model
 		$this->session->set_flashdata('msg', 'suksesedit');
 	}
 
-
-
 	function hapus()
 	{
 		$id = $this->input->post('id');
 		$this->db->where('id_guru', $id)->delete('data_guru');
 		$this->session->set_flashdata('msg', 'sukseshapus');
+	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 }
