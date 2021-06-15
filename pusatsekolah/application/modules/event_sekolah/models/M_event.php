@@ -60,6 +60,17 @@ class M_event extends CI_Model {
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
 	}
+
+	function filter ($event_sekolah)
+	{
+
+		 $this->db->select('*')
+		->from ('event_sekolah')
+		->like('judul_event',$event_sekolah);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
 }
 
 
