@@ -70,9 +70,15 @@ class Event_sekolah extends MX_Controller
 	// halaman tambah
 	function tambahview()
 	{
+		$iduser = $this->session->userdata('session_id');
+		$idsekolahx = $this->M_event->ambilidsekolah($iduser);
+		
 		$data = array(
 			'namamodule' 	=> "event_sekolah",
 			'namafileview' 	=> "V_tambah_event",
+			'tampil'		    	 	=> $this->M_event->tampil($idsekolahx['id_sekolah']),
+			'idnya' 					=> $iduser,
+			'idsekolah' 				=> $idsekolahx,
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

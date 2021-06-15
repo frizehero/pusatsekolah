@@ -41,10 +41,12 @@ class M_event extends CI_Model {
 	{
 		$judul_event 	= $this->input->post('judul_event');
 		$text_event 	= $this->input->post('text_event');
+		$id 			= $this->input->post('id');
 
 				$data = array(
 					'judul_event'		=> $judul_event,
 					'text_event'		=> $text_event,
+					'id_sekolah'		=> $id,
 				);
 				$this->db->insert('event_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
@@ -66,6 +68,7 @@ class M_event extends CI_Model {
 
 	function edit()
 	{
+		$id 			= $this->input->post('id');
 		$judul_event 	= $this->input->post('judul_event');
 		$text_event 	= $this->input->post('text_event');
 
