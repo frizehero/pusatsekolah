@@ -58,7 +58,7 @@
     <?php tampilnotif() ?>
     <div class="row">
         <?php $no = 1;
-        foreach ($tampil as $rowP) { ?>
+        foreach ($tampilkan as $rowP) { ?>
             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card mb-3 widget-chart">
                     <div class="widget-chart-content">
