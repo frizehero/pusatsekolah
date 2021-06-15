@@ -131,9 +131,5 @@
         } ?>
     </div>
     <?php echo  $pagination; ?>
-    <div class="text-center">
-        <button class="mb-3 btn-shadow btn-wide btn-pill btn btn-primary">
-            Lihat Lainnya
-        </button>
-    </div>
+    
 </div>
