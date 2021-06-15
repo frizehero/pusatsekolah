@@ -10,6 +10,33 @@ class M_produk extends CI_Model {
 		return $query->result();
 	}
 
+	function tampilkan($limit, $start)
+	{
+		$query = $this->db->get('produk', $limit, $start);
+		return $query->result();
+		
+	}
+
+	function get_produk($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_produk',$st);
+		$query = $this->db->get('produk',$limit, $start);
+		return $query->result();
+	}
+
+	function get_produk_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_produk',$st);
+		$query = $this->db->get('produk');
+		return $query->num_rows();
+	}
+
 	function filter ($produk)
 	{
 

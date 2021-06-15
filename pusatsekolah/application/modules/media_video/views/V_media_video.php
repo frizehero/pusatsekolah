@@ -40,7 +40,7 @@
                 <div class="tab-pane active" id="tab-animated-0" role="tabpanel">
                     <div class="row">
                         <?php $no=1; foreach ($tampil AS $rowP ) { ?>
-                            <div class="col-md-12 col-lg-8">
+                            <div class="" width="560" height="315" >
                                 <div class="card-shadow-primary card-border mb-3 card">
                                     <div class="dropdown-menu-header">
                                         <div class="menu-header-content btn-pane-right">
@@ -55,9 +55,9 @@
                                                         <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
                                                             <i class="fa fa-trash fa-w-16"></i>&nbsp;<span>Hapus Video</span>
                                                         </button>
-                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                        <!-- <button type="button" tabindex="0" class="dropdown-item">
                                                             <i class="lnr-download"></i>&nbsp;<span>Download Video</span>
-                                                        </button>
+                                                        </button> -->
                                                     </div>
                                                     <!-- Modal HAPUS -->
                                                     <div class="modal fade" id="hapus<?php echo $no ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -71,7 +71,7 @@
                                                         </div>
 
                                                         <form action="<?php echo base_url('media_video/hapus') ?>" method="POST" enctype="multipart/form-data">
-                                                        <div class="modal-body">
+                                                        <div class="modal-body" width="560" height="315">
                                                             <!--Modal body-->
                                                             <p class="text-semibold text-main"></p>
                                                             <p><b><?php echo $rowP->video_media ?></b></p>
