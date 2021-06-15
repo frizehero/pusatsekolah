@@ -3,9 +3,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_data_alumni extends CI_Model {
 
-	function tampil()
+	function tampil($limit, $start)
 	{
-		return $this->db->get('data_alumni')->result();
+		
+		$query = $this->db->get('data_alumni', $limit, $start);
+		return $query->result();
+	}
+	function get_alumni($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_alumni',$st);
+		$query = $this->db->get('data_alumni',$limit, $start);
+		return $query->result();
+	}
+
+	function get_alumni_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_alumni',$st);
+		$query = $this->db->get('data_alumni');
+		return $query->num_rows();
 	}
 
 	function tambah()
