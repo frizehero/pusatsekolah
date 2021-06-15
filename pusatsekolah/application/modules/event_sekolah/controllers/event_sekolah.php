@@ -86,5 +86,17 @@ class Event_sekolah extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
+
+	function search()
+	{
+		$event_sekolah 	= $this->input->post('nama');
+		$data = array(
+			'namamodule' 	=> "event_sekolah",
+			'namafileview' 	=> "V_event",
+			'tampil'		=> $this->M_event->filter($event_sekolah),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	
+	}
   
 }
