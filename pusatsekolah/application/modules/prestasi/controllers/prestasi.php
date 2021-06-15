@@ -74,4 +74,16 @@ class Prestasi extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
+
+	function search()
+	{
+		$prestasi 	= $this->input->post('nama');
+		$data = array(
+			'namamodule' 	=> "prestasi",
+			'namafileview' 	=> "V_prestasi",
+			'tampil'		=> $this->M_prestasi->filter($prestasi),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	
+	}
 }
