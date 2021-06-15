@@ -3,9 +3,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_event extends CI_Model {
 
-	function tampil()
+	function tampil($idsekolahx)
 	{
-		return $this->db->get('event_sekolah')->result();
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('event_sekolah');
+		return $query->result();
+	}
+
+	function tampilkan($limit, $start)
+	{
+		$query = $this->db->get('event_sekolah', $limit, $start);
+		return $query->result();
+		
+	}
+
+	function get_event($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_event',$st);
+		$query = $this->db->get('event_sekolah',$limit, $start);
+		return $query->result();
+	}
+
+	function get_event_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_event',$st);
+		$query = $this->db->get('event_sekolah');
+		return $query->num_rows();
 	}
 
 	function tambah()
@@ -61,6 +90,20 @@ class M_event extends CI_Model {
 		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
 	}
 
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
+	}
+
 	function filter ($event_sekolah)
 	{
 
@@ -71,6 +114,8 @@ class M_event extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+
 }
 
 
