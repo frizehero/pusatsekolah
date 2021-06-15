@@ -611,7 +611,7 @@
 
                                         <?php if ($menu == "log") { ?><li class="mm-active"><?php } else { ?>
                                             <li><?php } ?>
-                                            <a href="<?php echo base_url('log_aktivitas'); ?>">
+                                            <a href="<?php echo base_url('statistik_sekolah'); ?>">
                                                 <i class="metismenu-icon"></i>Log Aktifitas
                                             </a>
                                             </li>
