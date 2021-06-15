@@ -4,9 +4,30 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class M_prestasi extends CI_Model
 {
 
-	function tampil()
+	function tampil($limit, $start)
 	{
-		return $this->db->get('prestasi')->result();
+		
+		$query = $this->db->get('prestasi', $limit, $start);
+		return $query->result();
+	}
+	function get_prestasi($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_prestasi',$st);
+		$query = $this->db->get('prestasi',$limit, $start);
+		return $query->result();
+	}
+
+	function get_prestasi_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_prestasi',$st);
+		$query = $this->db->get('prestasi');
+		return $query->num_rows();
 	}
 
 	function filter ($prestasi)
