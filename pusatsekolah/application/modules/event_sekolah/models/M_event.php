@@ -59,9 +59,7 @@ class M_event extends CI_Model {
 	{
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
-
-		//pagination settings
-		$config = array()
-
 	}
 }
+
+

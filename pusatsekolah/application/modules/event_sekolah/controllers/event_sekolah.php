@@ -10,6 +10,8 @@ class Event_sekolah extends MX_Controller
 		// model
 		$this->load->model('M_event');
 		$this->load->model('login/m_session');
+		$this->load->library('pagination');
+        $this->load->library('session');
 	}
 
 
@@ -17,11 +19,13 @@ class Event_sekolah extends MX_Controller
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "event_sekolah",
-			'namafileview' 	=> "V_event",
-			'tampil'		=> $this->M_event->tampil(),
-		);
-		echo Modules::run('template/tampilCore', $data);
+			'namamodule' 				=> "event_sekolah",
+			'namafileview' 				=> "V_event",
+			'tampil'					=> $this->M_event->tampil(),
+			
+
+			);
+			echo Modules::run('template/tampilCore', $data);
 	}
 
 	// halaman tambah
@@ -82,4 +86,5 @@ class Event_sekolah extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
+  
 }
