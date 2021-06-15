@@ -50,10 +50,16 @@ class Prestasi extends MX_Controller
 
         $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
+
         $data = array(
         	'namamodule' 	=> "prestasi",
 			'namafileview' 	=> "V_prestasi",
-            'tampil'        => $this->M_prestasi->tampil($config["per_page"], $data['page']),
+			'tampilkan'		=> $this->M_prestasi->tampilkan($config["per_page"], $data['page']),
+			'tampil'		=> $this->M_prestasi->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
             'pagination'    => $this->pagination->create_links(),
 
         );
@@ -64,9 +70,15 @@ class Prestasi extends MX_Controller
 	// halaman tambah
 	function tambahview()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
+
 		$data = array(
 			'namamodule' 	=> "prestasi",
 			'namafileview' 	=> "V_tambah-prestasi",
+			'tampil'		=> $this->M_prestasi->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

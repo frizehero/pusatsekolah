@@ -2,7 +2,8 @@
     <div class="main-card mb-3 card">
         <div class="card-body">
             <h5 class="card-title">Prestasi Sekolah</h5>
-            <form id="signupForm" class="col-md-10 mx-auto" action="<?php echo base_url('prestasi/tambah') ?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo base_url('prestasi/tambah') ?>" method="POST" enctype="multipart/form-data">
+            <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
                 <div class="form-group">
                     <label for="nama_prestasi">Nama Prestasi</label>
                     <div>

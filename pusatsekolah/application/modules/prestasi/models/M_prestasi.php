@@ -1,15 +1,23 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_prestasi extends CI_Model
-{
+class M_prestasi extends CI_Model{
 
-	function tampil($limit, $start)
+	function tampil($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('prestasi');
+		return $query->result();
 		
+	}
+
+	function tampilkan($limit, $start)
+	{
 		$query = $this->db->get('prestasi', $limit, $start);
 		return $query->result();
+		
 	}
+
 	function get_prestasi($limit, $start, $st = NULL)
 	{
 		
@@ -55,6 +63,7 @@ class M_prestasi extends CI_Model
 		$tingkat_prestasi	= $this->input->post('tingkat_prestasi');
 		$juara				= $this->input->post('juara');
 		$tgl_prestasi		= $this->input->post('tgl_prestasi');
+		$id 			= $this->input->post('id');
 
 
 		$this->load->library('upload');
@@ -77,6 +86,7 @@ class M_prestasi extends CI_Model
 					'tingkat_prestasi'	=> $tingkat_prestasi,
 					'juara'				=> $juara,
 					'tgl_prestasi'		=> $tgl_prestasi,
+					'id_sekolah'		=> $id,
 					'gambar_prestasi' 	=> $gbr['file_name'],
 
 
@@ -91,6 +101,7 @@ class M_prestasi extends CI_Model
 				'tingkat_prestasi'	=> $tingkat_prestasi,
 				'juara'				=> $juara,
 				'tgl_prestasi'		=> $tgl_prestasi,
+				'id_sekolah'		=> $id,
 				'gambar_prestasi'	=> 'kosong1.jpeg',
 			);
 			$this->db->insert('prestasi', $data);
@@ -158,5 +169,18 @@ class M_prestasi extends CI_Model
 	{
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('nama_prestasi', $cari)->get('prestasi')->result();
+	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 }
