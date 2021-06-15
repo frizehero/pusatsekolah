@@ -140,42 +140,7 @@
                 <?php $no++;
                 } ?>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <nav class="pagination-rounded" aria-label="Page navigation example">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link" aria-label="Previous">
-                                    <span aria-hidden="true">«</span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">1</a>
-                            </li>
-                            <li class="page-item active">
-                                <a href="javascript:void(0);" class="page-link">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">4</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link">5</a>
-                            </li>
-                            <li class="page-item">
-                                <a href="javascript:void(0);" class="page-link" aria-label="Next">
-                                    <span aria-hidden="true">»</span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            <?php echo  $pagination; ?>
         </div>
     </div>
 </div>
