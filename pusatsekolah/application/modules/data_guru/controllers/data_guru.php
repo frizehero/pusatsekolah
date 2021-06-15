@@ -20,6 +20,18 @@ class Data_guru extends MX_Controller
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->tampil(),
+			'tampil_mapel'		=> $this->M_data_guru->tampil_mapel(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+	function filter()
+	{
+		$mapel = $this->input->post('mapel');
+		$data = array(
+			'namamodule' 	=> "data_guru",
+			'namafileview' 	=> "V_data_guru",
+			'tampil'		=> $this->M_data_guru->filter($mapel),
+			'tampil_mapel'		=> $this->M_data_guru->tampil_mapel(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -74,13 +86,15 @@ class Data_guru extends MX_Controller
 		redirect('data_guru');
 	}
 
-	function cari()
+	function search()
 	{
+		$data_guru 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->cari(),
+			'tampil'		=> $this->M_data_guru->cari($data_guru),
 		);
 		echo Modules::run('template/tampilCore', $data);
+	
 	}
 }

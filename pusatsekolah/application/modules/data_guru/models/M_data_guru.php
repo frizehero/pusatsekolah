@@ -9,7 +9,36 @@ class M_data_guru extends CI_Model
 		$this->db->from('data_guru');
 		$query = $this->db->get();
 
+		return $query->result();
+	}
 
+	function filter ($mapel)
+	{
+
+		 $this->db->select('*')
+		->from ('data_guru')
+		->join('mapel', 'mapel.id_mapel = data_guru.id_mapel')
+		->like('nama_mapel',$mapel);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function cari ($data_guru)
+	{
+
+		 $this->db->select('*')
+		->from ('data_guru')
+		->like('nama_guru',$data_guru);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+	
+	function tampil_mapel()
+	{
+		$this->db->from('mapel');
+		$query = $this->db->get();
 
 		return $query->result();
 	}
