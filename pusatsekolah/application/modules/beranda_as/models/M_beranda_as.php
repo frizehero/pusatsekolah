@@ -4,9 +4,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class M_beranda_as extends CI_Model
 {
 
-	function tampil()
+	function tampil($idsekolahx)
 	{
 		$this->db->order_by('id_beranda_as', 'DESC');
+		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('beranda_as');
 		return $query->result();
 	}
@@ -14,7 +15,8 @@ class M_beranda_as extends CI_Model
 	function tambah()
 	{
 		$posts 		= $this->input->post('posts');
-
+		$id 		= $this->input->post('id');
+		
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
 		$config['upload_path']		= 'assets/images/postsekolah/';
@@ -31,6 +33,7 @@ class M_beranda_as extends CI_Model
 				$gbr = $this->upload->data();
 				$data = array(
 					'post_sekolah'		=> $posts,
+					'id_sekolah'		=> $id,
 					'post_foto_sekolah'	=> $gbr['file_name'],
 
 
@@ -41,6 +44,7 @@ class M_beranda_as extends CI_Model
 		} else {
 			$data = array(
 				'post_sekolah'		=> $posts,
+				'id_sekolah'		=> $id,
 			);
 			$this->db->insert('beranda_as', $data);
 			$this->session->set_flashdata('msg', 'suksestambah');
@@ -69,15 +73,15 @@ class M_beranda_as extends CI_Model
 
 	function ambilidsekolah($id)
 	{
-
+	
 		$this->db->select('*');
 		$this->db->from('tb_login');
-		$this->db->where('id_admin', $id);
+		$this->db->where('id_admin',$id);
 		$query = $this->db->get();
 
 
-
-		return $query->row_array();
+		
+    	return $query->row_array();
 	}
 
 	function ambilidpostingan($id)
