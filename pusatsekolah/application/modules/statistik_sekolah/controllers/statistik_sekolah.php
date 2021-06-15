@@ -22,59 +22,10 @@ class Statistik_sekolah extends MX_Controller
 			'tampil'			=> $this->M_statistik_sekolah->tampil(),
 			'totalalumni'		=> $this->M_statistik_sekolah->totalalumni(),
 			'totalpengajar'		=> $this->M_statistik_sekolah->totalpengajar(),
+			'totalprestasi'		=> $this->M_statistik_sekolah->totalprestasi(),
+			'totalproduk'		=> $this->M_statistik_sekolah->totalproduk(),
+			'totalevent'		=> $this->M_statistik_sekolah->totalevent(),
 			
-			
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "prestasi",
-			'namafileview' 	=> "V_tambah-prestasi",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "prestasi",
-			'namafileview' 	=> "V_edit-prestasi",
-			'tampil'		=> $this->M_prestasi->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-
-	function tambah()
-	{
-		$this->M_prestasi->tambah();
-		redirect('prestasi');
-	}
-
-	function edit()
-	{
-		$this->M_prestasi->edit();
-		redirect('prestasi');
-	}
-
-	function hapus()
-	{
-		$this->M_prestasi->hapus();
-		redirect('prestasi');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "prestasi",
-			'namafileview' 	=> "V_prestasi",
-			'tampil'		=> $this->M_prestasi->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

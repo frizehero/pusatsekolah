@@ -27,7 +27,7 @@ class Tb_pesan extends MX_Controller
 		}
 	}
 
-	function tambah()
+	/*function tambah()
 	{
 		//echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
@@ -45,27 +45,33 @@ class Tb_pesan extends MX_Controller
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}
-
-	/*function tentangview()
-	{
-		//echo $this->session->userdata('session_id');
-		{
-			$iduser=$this->session->userdata('session_id');
-			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
-
-			$data = array(
-				'namamodule' 	=> "beranda_as",
-				'namafileview' 	=> "V_tentang",
-				'idnya' 		=> $iduser,
-				'idsekolah' 	=> $idsekolahx,
-				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
 	}*/
 
 	function detailpesan($id)
+	{
+		//echo $this->session->userdata('session_id');
+		{
+			$iduser =$this->session->userdata('session_id');
+			$iduserx = $this->M_pesan->ambilidsekolah($iduser);
+			$idpenerima = decrypt_url($id);
+			/*$nama_user = decrypt_url($id);*/
+
+
+			$data = array(
+				'namamodule' 		=> "tb_pesan",
+				'namafileview' 		=> "V_pesan_detail",
+				'tampil'			=> $this->M_pesan->tampildetail($id),
+				'idnya' 			=> $iduser,
+				'idpenerima'		=> $idpenerima,
+				/*'nama_user'			=> $nama_user,*/
+				'idsekolah' 		=> $iduserx,
+				'tampilkompetensi'	=> $this->M_pesan->tampilkompetensi($iduserx['id_admin']),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}
+
+	/*function detailpesan($id)
 	{
 		$data = array(
 			'namamodule' 	=> "tb_pesan",
@@ -73,7 +79,7 @@ class Tb_pesan extends MX_Controller
 			'tampil'		=> $this->M_pesan->tampildetail($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
-	}
+	}*/
 
 	/*function tambah()
 	{
@@ -96,11 +102,11 @@ class Tb_pesan extends MX_Controller
 	}*/
 
 
-	/*function tambah()
+	function tambah()
 	{
-		$this->M_pesan->tambah();
+		$this->M_pesan->tambahdetail();
 		redirect('tb_pesan');
-	}*/
+	}
 
 	function hapus($id)
 	{

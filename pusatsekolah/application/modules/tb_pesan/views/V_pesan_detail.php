@@ -1,12 +1,13 @@
  <div class="app-main__inner p-0">
     <?php tampilnotif() ?>
-    <form action="<?php echo base_url('tb_pesan/tampildetail') ?>" method="POST" enctype="multipart/form-data">
-    <input name="id" value="<?php echo $tampil['id_penerima']?>" type="hidden" class="form-control">
         <div class="app-inner-layout chat-layout">
             <div class="app-inner-layout__wrapper">
                 <div class="app-inner-layout__content card">
                     <div class="table-responsive">
                         <div class="app-inner-layout__top-pane">
+                            <a href="<?php echo base_url('tb_pesan'); ?>">
+                                <i class="fa fa-fw" aria-hidden="true" title="Copy to use chevron-left" style="padding-right: 10px;"></i>
+                            </a>
                             <div class="pane-left">
                                 <div class="mobile-app-menu-btn">
                                     <button type="button" class="hamburger hamburger--elastic">
@@ -107,11 +108,12 @@
                             <div class="app-inner-layout__bottom-pane d-block text-center">
                                 <div class="mb-0 position-relative row form-group">
                                     <div class="col-sm-10">
-                                        <input name="iduser" id="idnya" type="hidden" value="<?php echo $idnya; ?>" class="form-control">
-                                        <input name="pesan" id="text" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
+                                        <input name="id_user" id="id_user" type="text" value="<?php echo $idnya; ?>" class="form-control">
+                                        <input name="id_penerima" id="id_user" type="text" value="<?php echo $idpenerima; ?>" class="form-control"> 
+                                        <input name="pesan" id="pesan" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
                                     </div>
                                     <div class="col-sm-2">
-                                        <button name="signup" value="Sign up" type="submit" id="" class="btn btn-primary"><i class="pe-7s-paper-plane"></i>
+                                        <button name="signup"  type="submit" id="" class="btn btn-primary"><i class="pe-7s-paper-plane"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -121,5 +123,4 @@
                 </div>
             </div>
         </div>
-    </form>
 </div>

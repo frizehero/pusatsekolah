@@ -28,17 +28,26 @@ class M_pesan extends CI_Model
 		return $this->db->get('tb_pesan')->row_array();
 	}
 
-
-	function tambah()
+	function tampilidpenerima($id)
 	{
-		$pesan		= $this->input->post('pesan');
-		$iduser		= $this->input->post('iduser');
-		$namauser		= $this->input->post('namauser');
+		$idpenerima = decrypt_url($id);
+		$this->db->where('id_penerima', $idpenerima);
+		return $this->db->get('tb_pesan')->row_array();
+	}
+
+
+	function tambahdetail()
+	{
+		$pesan				= $this->input->post('pesan');
+		$id_user			= $this->input->post('id_user');
+		$id_penerima		= $this->input->post('id_penerima');
+
 		$data = array(
-			'id_user'			=> $iduser,
-			'nama_user'			=> $namauser,
+			'id_user'			=> $id_user,
 			'pesan'				=> $pesan,
+			'id_penerima'		=> $id_penerima,
 		);
+
 		$this->db->insert('tb_pesan', $data);
 	}
 
@@ -67,13 +76,27 @@ class M_pesan extends CI_Model
 		return $query->row_array();
 	}
 
+	function ambilidpenerima($id)
+	{
+
+		$this->db->select('*');
+		$this->db->from('tb_pesan');
+		$this->db->where('id_penerima', $id);
+		$query = $this->db->get();
+
+
+
+		return $query->row_array();
+	}
+
 	function tampilkompetensi($id)
 	{
 
 		$this->db->select('*,tb_login.id_admin AS id_user, tb_login.nama AS nama_user');
 		$this->db->from('tb_pesan');
 		$this->db->join('tb_login', 'tb_pesan.id_user = tb_login.id_admin');
-		/*$this->db->join('tb_login', 'tb_pesan.nama_user = tb_login.nama');*/
+		/*$this->db->join('tb_login', 'tb_pesan.nama_user = tb_login.nama');
+		$this->db->join('tb_login', 'tb_pesan.nama_user = tb_login.nama');*/
 		$this->db->where('id_pesan', $id);
 		$query = $this->db->get();
 		return $query->result();
