@@ -71,6 +71,9 @@
         });
 
         }
+
+        // event jendela di-load  
+        google.maps.event.addDomListener(window, 'load', initialize);
         
     </script>
 </head>
