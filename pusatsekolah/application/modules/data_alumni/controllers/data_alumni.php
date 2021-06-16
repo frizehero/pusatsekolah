@@ -112,6 +112,9 @@ class Data_alumni extends MX_Controller {
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 			'tampil'		=> $this->M_data_alumni->filter($data_alumni),
+			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
+			'totallaki'		=> $this->M_data_alumni->totallaki(),
+			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	
