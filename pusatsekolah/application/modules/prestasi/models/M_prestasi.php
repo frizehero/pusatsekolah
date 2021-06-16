@@ -10,9 +10,17 @@ class M_prestasi extends CI_Model{
 		return $query->result();
 		
 	}
-
-	function tampilkan($limit, $start)
+	function totaldata($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('prestasi');
+		return $query->num_rows();
+		
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('prestasi', $limit, $start);
 		return $query->result();
 		
