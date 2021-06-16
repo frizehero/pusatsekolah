@@ -8,8 +8,8 @@ class M_prestasi extends CI_Model{
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('prestasi');
 		return $query->result();
-		
 	}
+
 	function totaldata($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);

@@ -9,9 +9,18 @@ class M_produk extends CI_Model {
 		$query = $this->db->get('produk');
 		return $query->result();
 	}
-
-	function tampilkan($limit, $start)
+    
+    function totaldata($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('produk');
+		return $query->num_rows();
+		
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('produk', $limit, $start);
 		return $query->result();
 		

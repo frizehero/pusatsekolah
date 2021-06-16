@@ -3,7 +3,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Prestasi extends MX_Controller
 {
-
 	function __construct()
 	{
 		parent::__construct();
@@ -20,8 +19,6 @@ class Prestasi extends MX_Controller
     {
     	$iduser=$this->session->userdata('session_id');
 		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
-
-
         //konfigurasi pagination
         $config = array();
         $config['base_url']         = site_url('prestasi/index'); //site url
@@ -54,7 +51,6 @@ class Prestasi extends MX_Controller
 
         $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
 
-		
         $data = array(
         	'namamodule' 	=> "prestasi",
 			'namafileview' 	=> "V_prestasi",
