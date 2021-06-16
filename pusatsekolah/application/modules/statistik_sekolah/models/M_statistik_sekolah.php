@@ -4,9 +4,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class M_statistik_sekolah extends CI_Model
 {
 
-	function tampil()
+	function tampil($idsekolahx)
 	{
-		return $this->db->get('prestasi')->result();
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		$query = $this->db->get();
+
+		return $query->result();
 	}
 
 	function totalpengajar()
@@ -38,5 +42,18 @@ class M_statistik_sekolah extends CI_Model
 	{
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('nama_prestasi', $cari)->get('prestasi')->result();
+	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 }

@@ -11,7 +11,7 @@
                                         </div>
                                         <div class="widget-heading fsize-1 pt-2 opacity-10 text-dark font-weight-bold"><span>Jumlah Followers</span>
                                         </div>
-                                        <div class="widget-subheading fsize-1 pt-2 opacity-10 text-warning font-weight-bold">2M</div>
+                                        <div class="widget-subheading fsize-2 pt-2 opacity-10 text-warning font-weight-bold">2M</div>
                                     </div>
                                     <div class="widget-chart-wrapper">
                                         <div id="dashboard-sparklines-simple-1"></div>
@@ -28,7 +28,7 @@
                                             <i class="lnr-graduation-hat text-danger"></i>
                                         </div>
                                         <div class="widget-heading fsize-1 pt-2 opacity-10 text-dark font-weight-bold"><span>Alumni Terdaftar</span></div>
-                                        <div class="widget-subheading fsize- pt-2 opacity-10 text-danger font-weight-bold"><?php echo $totalalumni?></div>
+                                        <div class="widget-subheading fsize-2 pt-2 opacity-10 text-danger font-weight-bold"><?php echo $totalalumni?></div>
                                         <br><br>
                                     </div>
                                     <div class="widget-chart-wrapper">
