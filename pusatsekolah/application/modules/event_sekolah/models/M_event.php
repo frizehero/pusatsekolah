@@ -17,6 +17,14 @@ class M_event extends CI_Model {
 		
 	}
 
+	function totaldata($idsekolahx)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('event_sekolah');
+		return $query->num_rows();
+		
+	}
+
 	function get_event($limit, $start, $st = NULL)
 	{
 		
@@ -39,17 +47,47 @@ class M_event extends CI_Model {
 
 	function tambah()
 	{
-		$judul_event 	= $this->input->post('judul_event');
-		$text_event 	= $this->input->post('text_event');
-		$id 			= $this->input->post('id');
+		$judul_event 		= $this->input->post('judul_event');
+		$text_event 		= $this->input->post('text_event');
+		$dokumentasi_event 	= $this->input->post('dokumentasi_event');
+		$id 				= $this->input->post('id');
 
+		$this->load->library('upload');
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/event/';
+		$config['allowed_types']	= 'gif|jpg|png|jpeg';
+		$config['max_size']			= 5120;
+		$config['max_width']		= 4300;
+		$config['max_height']		= 4300;
+		$config['file_name'] 		= $nmfile;
+		
+		$this->upload->initialize($config);
+		
+		if($_FILES['foto'] ['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
+				$gbr = $this->upload->data();
 				$data = array(
 					'judul_event'		=> $judul_event,
 					'text_event'		=> $text_event,
 					'id_sekolah'		=> $id,
+					'dokumentasi_event'	=> $gbr['file_name'],
 				);
 				$this->db->insert('event_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
+			}	
+		}
+		else{
+				$data = array(
+						'judul_event'	=> $judul_event,
+						'text_event'	=> $text_event,
+						'id_sekolah'	=> $id,
+						'dokumentasi_event'	=> 'kosong.jpeg',
+					);
+					$this->db->insert('event_sekolah', $data);
+					$this->session->set_flashdata('msg', 'suksestambah');
+			}
 	}
 
 	function tampiledit($id)

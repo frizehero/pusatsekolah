@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                         </div>
-                        <?php $no = 1; foreach ($tampil as $rowP) { ?>
+                        <?php $no = 1; foreach ($tampilkan as $rowP) { ?>
                         <div class="row">
                                 <div class="card-body py-3">
                                     <style type="text/css">

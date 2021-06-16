@@ -18,7 +18,7 @@
                         </p>
                         <div class="card-body">
                             <div class="dropdown-menu-header">
-                                <div class="dropdown-menu-header-inner"  style="background-image: url('<?php echo base_url() ?>assets/images/dropdown-header/pamflet.jpg'); width: auto; height: 278px; background-size: 278px;">
+                                <div class="dropdown-menu-header-inner"  style="background-image: url('<?php echo base_url() ?>assets/images/event'); width: auto; height: 278px; background-size: 278px;" name="foto">
                                 </div>
                             </div>
                         </div>
