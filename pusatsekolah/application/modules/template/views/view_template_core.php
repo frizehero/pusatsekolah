@@ -552,10 +552,10 @@
                                                         </a>
                                                         </li>
 
-                                                        <?php if ($menu == "ppdb") { ?><li class="mm-active"><?php } else { ?>
+                                                        <?php if ($menu == "ppdb_sekolah") { ?><li class="mm-active"><?php } else { ?>
                                                             <li>
                                                             <?php } ?>
-                                                            <a href="<?php echo base_url('ppdb'); ?>">
+                                                            <a href="<?php echo base_url('ppdb_sekolah'); ?>">
                                                                 <i class="metismenu-icon pe-7s-id"></i>PPDB
                                                             </a>
                                                             </li>
