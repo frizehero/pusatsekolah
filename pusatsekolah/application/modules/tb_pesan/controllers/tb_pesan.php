@@ -27,6 +27,22 @@ class Tb_pesan extends MX_Controller
 		}
 	}
 
+	// halaman tambah
+	function tambahview()
+	{
+		$iduser = $this->session->userdata('session_id');
+		$idsekolahx = $this->M_pesan->ambilidsekolah($iduser);
+
+		$data = array(
+			'namamodule' 	=> "tb_pesan",
+			'namafileview' 	=> "V_tambahpesan",
+			'tampil'		=> $this->M_pesan->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
 	/*function tambah()
 	{
 		//echo $this->session->userdata('session_id');
@@ -51,7 +67,7 @@ class Tb_pesan extends MX_Controller
 	{
 		//echo $this->session->userdata('session_id');
 		{
-			$iduser =$this->session->userdata('session_id');
+			$iduser = $this->session->userdata('session_id');
 			$iduserx = $this->M_pesan->ambilidsekolah($iduser);
 			$idpenerima = decrypt_url($id);
 			/*$nama_user = decrypt_url($id);*/
