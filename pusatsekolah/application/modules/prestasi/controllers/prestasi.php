@@ -17,8 +17,7 @@ class Prestasi extends MX_Controller
 	// index
 	function index()
     {
-    	$iduser=$this->session->userdata('session_id');
-		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
+    	
         //konfigurasi pagination
         $config = array();
         $config['base_url']         = site_url('prestasi/index'); //site url
@@ -50,6 +49,9 @@ class Prestasi extends MX_Controller
         $this->pagination->initialize($config);
 
         $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+        $iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
 
         $data = array(
         	'namamodule' 	=> "prestasi",
