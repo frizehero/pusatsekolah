@@ -8,7 +8,7 @@ class Ppdb_user extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('M_ppdb');
+		$this->load->model('M_ppdb_sekolah');
 		$this->load->model('login/m_session');
 	}
 
@@ -24,7 +24,7 @@ class Ppdb_user extends MX_Controller
 			$data = array(
 				'namamodule' 	=> "ppdb_user",
 				'namafileview' 	=> "V_ppdb",
-				'tampil'		=> $this->M_ppdb->tampil(),
+				'tampil'		=> $this->M_ppdb_sekolah->tampil(),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}

@@ -1,12 +1,12 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_ppdb extends CI_Model
+class M_ppdb_sekolah extends CI_Model
 {
 
 	function tampil()
 	{
-		return $this->db->get('ppdb')->result();
+		return $this->db->get('ppdb_sekolah')->result();
 	}
 
 	function tambah()

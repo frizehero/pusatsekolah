@@ -1,10 +1,7 @@
 <div class="app-main__inner">
     <div class="tab-content">
         <div class="tab-pane tabs-animation fade show active" id="tab-content-0" role="tabpanel">
-            <?php tampilnotif() ?>
             <div class="row">
-                <?php $no = 1;
-                foreach ($tampil as $rowP) { ?>
                 <div class="col-md-12">
                     <div class="mb-3 card">
                         <div class="card-header-tab card-header">
@@ -14,64 +11,148 @@
                             </div>
                         </div>
                         <div class="p-0 card-body">
-                            <div class="dropdown-menu-header mt-0 mb-0">
+                            <!-- <div class="dropdown-menu-header mt-0 mb-0">
                                 <div class="dropdown-menu-header-inner bg-heavy-rain" style="height: 200px;">
-                                    <div class="menu-header-image" style="background-image: url('assets/pamflet_ppdb/<?php echo $rowP->pamflet_ppdb; ?>');"></div>
+                                    <div class="menu-header-image" style="background-image: url('assets/pamflet_ppdb/');"></div>
                                 </div>
-                            </div>
+                            </div> -->
                             <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
                                 <li class="nav-item">
-                                    <a role="tab" class="nav-link active" id="tab-c-0" data-toggle="tab" href="#tab-animated-0">
+                                    <a role="tab" class="nav-link" href="<?php echo base_url('ppdb_sekolah'); ?>">
                                         <span>Informasi PPDB</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a role="tab" class="nav-link" id="tab-c-1" data-toggle="tab" href="#tab-animated-1">
-                                        <span>Tanggal Penting</span>
+                                    <a role="tab" class="nav-link active" id="tab-c-0" data-toggle="tab" href="#tab-animated-0">
+                                        <span>Panitia PPDB</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a role="tab" class="nav-link" id="tab-c-2" data-toggle="tab" href="#tab-animated-2">
-                                        <span>Pendaftar</span>
+                                    <a role="tab" class="nav-link" href="<?php echo base_url('ppdb_pendaftaran'); ?>">
+                                        <span>Pendaftaran</span>
                                     </a>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab-animated-0" role="tabpanel">
-                                    <div class="scroll-area-sm">
-                                        <div class="scrollbar-container">
-                                            <div class="p-3">
-                                                <div class="notifications-box">
-                                                    <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i class="badge badge-dot badge-dot-xl badge-success"></i>
-                                                                </span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline"><?php echo $rowP->judul_ppdb; ?></h4>
-                                                                    <span class="vertical-timeline-element-date"></span>
+                                    <br><br>
+                                    <div class="row">
+                                        <?php $no=1; foreach ($tampil AS $rowP ) { ?>
+                                            <!-- <div class="scroll-area-sm">
+                                                <div class="scrollbar-container">
+                                                    <div class="p-3">
+                                                        <div class="notifications-box">
+                                                            <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                                    <div>
+                                                                        <span class="vertical-timeline-element-icon bounce-in">
+                                                                            <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                        </span>
+                                                                        <div class="vertical-timeline-element-content bounce-in">
+                                                                            <h4 class="timeline"><?php echo $rowP->deskripsi_ppdb; ?></h4>
+                                                                            <span class="vertical-timeline-element-date"></span>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline-item vertical-timeline-element">
-                                                            <div>
-                                                                <span class="vertical-timeline-element-icon bounce-in">
-                                                                    <i class="badge badge-dot badge-dot-xl badge-danger"></i>
-                                                                </span>
-                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                    <h4 class="timeline-title">Informasi PPDB</h4>
-                                                                    <p style="width: 850px;"><?php echo $rowP->deskripsi_ppdb; ?>
-                                                                    </p>
-                                                                    <span class="vertical-timeline-element-date"></span>
+                                                                <div class="vertical-timeline-item vertical-timeline-element">
+                                                                    <div>
+                                                                        <span class="vertical-timeline-element-icon bounce-in">
+                                                                            <i class="badge badge-dot badge-dot-xl badge-danger"></i>
+                                                                        </span>
+                                                                        <div class="vertical-timeline-element-content bounce-in"> 
+                                                                            <h4 class="timeline-title"><?php echo $rowP->fasilitas_sekolah; ?></h4> -->
+                                                                            <!-- <p style="width: 850px;">deskripsi ppdb></p> -->
+                                                                            <!-- <span class="vertical-timeline-element-date"></span>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div> -->
+                                            
+                                            <div class="col-md-12 col-lg-6 col-xl-4">
+                                                <div class="card-hover-shadow card-border mb-3 card">
+                                                    <div class="dropdown-menu-header">
+                                                        <div class="dropdown-menu-header-inner bg-warning">
+                                                            <div class="menu-header-content">
+                                                                <div><a href="javascript:void(0);" class="avatar-icon-wrapper btn-hover-shine avatar-icon-xl">
+                                                                        <div class="avatar-icon rounded">
+                                                                            <img src="<?php echo base_url() ?>assets/ppdb/<?php echo $rowP->foto_panitia;?>">
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div>
+                                                                    <h5 class="menu-header-title"><?php echo $rowP->nama_panitia; ?></h5>
+                                                                    <h6 class="menu-header-subtitle"><?php echo $rowP->tugas_panitia; ?></h6>
+                                                                </div>
+                                                                <!-- <div class="menu-header-btn-pane">
+                                                                    <button class="mr-2 btn btn-dark btn-sm">Settings</button>
+                                                                    <button class="btn-icon btn-icon-only btn btn-primary btn-sm">
+                                                                        <i class="pe-7s-config btn-icon-wrapper"> </i>
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <p> Nama Panitia : <?php echo $rowP->nama_panitia; ?>
+                                                            <br>
+                                                            No.Telephone Panitia : <?php echo $rowP->telephone_panitia; ?>
+                                                            <br>
+                                                            Email Panitia : <?php echo $rowP->email_panitia; ?>
+                                                        </p>
+                                                        <!-- <p class="mb-0">Since the 1500s, when an unknown printer took a galley of type and scrambled.
+                                                        </p> -->
+                                                    </div>
+                                                    <div class="d-block text-right card-footer">
+                                                        <!-- <button class="mr-2 btn btn-link btn-sm">Cancel</button> -->
+                                                        <button class="btn-shadow-primary btn btn-dark btn-lg" data-toggle="modal" data-target="#hapus<?php echo $no ?>">Hapus Panitia</button>
+                                                    </div>
+                                                    <!-- Modal Hapus -->
+                                                    <div class="modal fade" id="hapus<?php echo $no ?>" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">Hapus Data?</h5>
+                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                                </div>
+
+                                                                <form action="<?php echo base_url('ppdb_panitia/hapus') ?>" method="POST" enctype="multipart/form-data">
+                                                                    <div class="modal-body">
+                                                                        <!--Modal body-->
+                                                                        <p class="text-semibold text-main"></p>
+                                                                        <p>Anda Yakin Ingin Menghapus <b><?php echo $rowP->nama_panitia ?></b> ? </p>
+
+                                                                        <input name="id" type="hidden" value="<?php echo $rowP->id_panitia ?>" class="form-control">
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">tutup</button>
+                                                                        <button class="btn btn-primary" type="submit">Hapus</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php $no++;} ?>
                                     </div>
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item-btn text-center pt-4 pb-3 nav-item">
+                                            <!-- <a href="<?php echo base_url('ppdb/editview/'  . encrypt_url($rowP->id_panitia)); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark"> -->
+                                                <!-- <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span> -->
+                                                <!-- Edit PPDB 
+                                            </a> -->
+                                            <a href="<?php echo base_url('ppdb_panitia/tambahview'); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark">
+                                                <!-- <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span> -->
+                                                Tambah Panitia PPDB
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="tab-pane" id="tab-animated-1" role="tabpanel">
                                     <div class="scroll-area-sm">
@@ -410,19 +491,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <ul class="nav flex-column">
-                                <li class="nav-item-btn text-center pt-4 pb-3 nav-item">
-                                    <a href="<?php echo base_url('ppdb/editview/'  . encrypt_url($rowP->id_ppdb)); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark">
-                                        <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span>
-                                        Edit PPDB
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
-                <?php $no++;
-                } ?>
             </div>
         </div>
     </div>
