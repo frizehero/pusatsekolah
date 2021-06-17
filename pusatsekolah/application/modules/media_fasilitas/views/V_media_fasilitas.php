@@ -1,14 +1,14 @@
 <div class="app-main__inner">
     <div class="">
         <div class="d-flex flex-wrap justify-content-between">
-            <div class="col-12 col-md-9 p-0 mb-3">
+            <!-- <div class="col-12 col-md-9 p-0 mb-3">
                 <div class="search-wrapper active">
                     <div class="input-holder" style="background-color: #fff;">
                         <input type="text" class="search-input" placeholder="Cari...">
                         <button class="search-icon" style="background-color: #fff;"><span></span></button>
                     </div>
                 </div>  
-            </div>
+            </div> -->
         </div>
     </div>
 <?php tampilnotif()?>
