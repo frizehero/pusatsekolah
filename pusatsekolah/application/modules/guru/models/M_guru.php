@@ -60,7 +60,7 @@ class M_guru extends CI_Model
 		$output = '';
 		if($data->num_rows() > 0)
 		{
-			foreach($mapel_data->result_array() as $row)
+			foreach($data->result_array() as $row)
 			{
 				$output .= '
 		        coba dulu
