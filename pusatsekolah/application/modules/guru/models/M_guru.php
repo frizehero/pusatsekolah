@@ -43,9 +43,10 @@ class M_guru extends CI_Model
 		{
 			$mapel_filter = implode("','", $mapel);
 			$query .= "
-			 AND mapel_guru IN('".$_filter."')
+			 AND mapel_guru IN('".$mapel_filter."')
 			";
 		}
+		return $query;
 	}
 
 	function fetch_data($limit, $start, $mapel)
@@ -59,16 +60,10 @@ class M_guru extends CI_Model
 		$output = '';
 		if($data->num_rows() > 0)
 		{
-			foreach($data->result_array() as $row)
+			foreach($mapel_data->result_array() as $row)
 			{
 				$output .= '
-		        <div class="col-sm-4 col-lg-3 col-md-3">
-					<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:16px; height:450px;">
-					<p align="center"><strong><a href="#">'. $row['nama_guru'] .'</a></strong></p>
-					<h4 style="text-align:center;" class="text-danger" >'. $row['mapel_guru'] .'</h4>
-					Jenis kelamin : '. $row['jk_guru'] .' <br />					
-					</div>
-				</div>
+		        coba dulu
 				';
 			}
 		}
@@ -85,4 +80,7 @@ class M_guru extends CI_Model
 		$data = $this->db->query($query);
 		return $data->num_rows();
 	}
+
 }
+
+?>

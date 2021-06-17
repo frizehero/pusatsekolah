@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-9 p-0 mb-3">
                     <div class="search-wrapper active">
                         <div class="input-holder" style="background-color: #fff;">
-                            <?php echo form_open('data_guru/search') ?>
+                            <?php echo form_open('guru/search') ?>
                                     <input type="text" name="nama" class="search-input" placeholder="Cari...">
                                     <button class="search-icon" style="background-color: #fff;"><span></span></button>
                                 <?php echo form_close() ?>
@@ -17,22 +17,18 @@
                         <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-primary">Filter
                         </button>
                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <?php
-                                        foreach($mapel_data->result_array() as $row)
-                                        {
-                                         
-                                        ?>
-                                            <div class="list-group-item checkbox"> 
-                                                <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['mapel_guru']; ?>"  > <?php echo $row['mapel_guru']; ?></label>
-                                            </div>
-                                        <?php 
-                                        } 
-                                        ?>
-                                    ccccc
+                            <?php
+                            foreach($mapel_data->result_array() as $row)
+                            {
+                             
+                            ?>
+                                <div class="list-group-item checkbox"> 
+                                    <label>
+                                        <input type="checkbox" class="common_selector mepel" value="<?php echo $row['mapel_guru']; ?>"  > <?php echo $row['mapel_guru']; ?></label>
                                 </div>
-                            </div>
+                            <?php 
+                            } 
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -49,17 +45,16 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-9">
-            <br />
-            <div align="center" id="pagination_link">
+        <h4 align="center">coba konten disini</h4>
+        <br />
+        <div align="center" id="pagination_link">
 
-            </div>
-            <br />
-            <br />
-            <br />
-            <div class="row filter_data">
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row filter_data">
             
-            </div>
         </div>
     </div>
 </div>
@@ -71,12 +66,12 @@ $(document).ready(function(){
 
     function filter_data(page)
     {
-        $('.filter_data').html();
+        $('.filter_data').html('<div style="" ></div>');
         var action = 'fetch_data';
         //var page = 1;
         var mapel = get_filter('mapel');
         $.ajax({
-            url:"<?php echo base_url(); ?>guru/fetch_data/"+page,
+            url:"<?php echo base_url(); ?>M_guru/fetch_data/"+page,
             method:"POST",
             dataType:"JSON",
             data:{action:action, mapel:mapel,},

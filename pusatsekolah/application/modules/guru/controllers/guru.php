@@ -15,7 +15,7 @@ class Guru extends MX_Controller
 	function index()
 	{
 		$data['mapel_data'] = $this->M_guru->fetch_filter_type('mapel_guru');
-		$idguru=$this->load->view('V_guru', $data);
+		$this->load->view('V_guru', $data);
 
 		$data = array(
 			'namamodule' 	=> "guru",
@@ -37,7 +37,6 @@ class Guru extends MX_Controller
 			'namamodule' 	=> "guru",
 			'namafileview' 	=> "V_guru",
 			'tampil'		=> $this->M_guru->cari($guru),
-			'tampil'		=> $this->M_guru->fetch_data($guru),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
@@ -49,8 +48,8 @@ class Guru extends MX_Controller
 		$this->load->library("pagination");
 		$config = array();
 		$config["base_url"] = "#";
-		$config["total_rows"] = $this->M_data_guru->count_all($mapel,);
-		$config["per_page"] = 6;
+		$config["total_rows"] = $this->M_guru->count_all($mapel,);
+		$config["per_page"] = 8;
 		$config["uri_segment"] = 3;
 		$config["use_page_numbers"] = TRUE;
 		$config["full_tag_open"] = '<ul class="pagination">';
@@ -81,3 +80,5 @@ class Guru extends MX_Controller
 		echo json_encode($output);
 	}
 }
+
+?>
