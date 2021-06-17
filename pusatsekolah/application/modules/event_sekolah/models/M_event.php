@@ -10,18 +10,20 @@ class M_event extends CI_Model {
 		return $query->result();
 	}
 
-	function tampilkan($limit, $start)
-	{
-		$query = $this->db->get('event_sekolah', $limit, $start);
-		return $query->result();
-		
-	}
-
+	
 	function totaldata($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('event_sekolah');
 		return $query->num_rows();
+		
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('event_sekolah', $limit, $start);
+		return $query->result();
 		
 	}
 
@@ -128,7 +130,7 @@ class M_event extends CI_Model {
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');
-		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
+		return $this->db->like('nama_event',$cari)->get('event_sekolah')->result();
 	}
 
 
