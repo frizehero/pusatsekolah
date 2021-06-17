@@ -36,7 +36,7 @@
                 </div>
                 <div class="position-relative form-group">
                     <!-- <label for="exampleFile" class="">Pamflet PPDB</label> -->
-                    <input name="pamflet_ppdb" type="file" class="form-control-file" value="><?php echo $tampil['pamflet_ppdb'] ?>"><?php echo $tampil['pamflet_ppdb'] ?>
+                    <input name="foto" type="file" class="form-control-file" value="><?php echo $tampil['pamflet_ppdb'] ?>"><?php echo $tampil['pamflet_ppdb'] ?>
                     <small class="form-text text-muted"> Ubah Pamflet Anda Disini
                     </small>
                 </div>

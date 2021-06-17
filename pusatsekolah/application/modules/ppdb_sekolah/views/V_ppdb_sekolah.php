@@ -7,7 +7,7 @@
                                         <div class="card-header-tab card-header">
                                             <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
                                                 <i class="header-icon lnr-cloud-download icon-gradient bg-happy-itmeo"> </i>
-                                                PPDB
+                                                PPDB Sekolah
                                             </div>
                                         </div>
                                         <div class="p-0 card-body">
@@ -45,6 +45,54 @@
                                                                         </div>
                                                                         <br><br>
                                                                         <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                                                            <div class="vertical-timeline-item vertical-timeline-element">
+                                                                                <div>
+                                                                                    <span class="vertical-timeline-element-icon bounce-in">
+                                                                                        <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                                    </span>
+                                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                                        <h2 class="timeline-title">Alamat Sekolah</h2>
+                                                                                        <p><?php echo $rowP->alamat_sekolah; ?></p>
+                                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="vertical-timeline-item vertical-timeline-element">
+                                                                                <div>
+                                                                                    <span class="vertical-timeline-element-icon bounce-in">
+                                                                                        <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                                    </span>
+                                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                                        <h2 class="timeline-title">No. Telephone Sekolah</h2>
+                                                                                        <p><?php echo $rowP->telp_sekolah; ?></p>
+                                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="vertical-timeline-item vertical-timeline-element">
+                                                                                <div>
+                                                                                    <span class="vertical-timeline-element-icon bounce-in">
+                                                                                        <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                                    </span>
+                                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                                        <h2 class="timeline-title">Email Sekolah</h2>
+                                                                                        <p><?php echo $rowP->email_sekolah; ?></p>
+                                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="vertical-timeline-item vertical-timeline-element">
+                                                                                <div>
+                                                                                    <span class="vertical-timeline-element-icon bounce-in">
+                                                                                        <i class="badge badge-dot badge-dot-xl badge-success"></i>
+                                                                                    </span>
+                                                                                    <div class="vertical-timeline-element-content bounce-in">
+                                                                                        <h2 class="timeline-title">Website Sekolah</h2>
+                                                                                        <p><?php echo $rowP->website_sekolah; ?></p>
+                                                                                        <span class="vertical-timeline-element-date"></span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
                                                                             <div class="vertical-timeline-item vertical-timeline-element">
                                                                                 <div>
                                                                                     <span class="vertical-timeline-element-icon bounce-in">
@@ -180,10 +228,10 @@
                                                             <!-- <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span> -->
                                                             Edit PPDB
                                                         </a>
-                                                        <a href="<?php echo base_url('ppdb_sekolah/tambahview'); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark">
+                                                        <!-- <a href="<?php echo base_url('ppdb_sekolah/tambahview'); ?>" class="btn-shadow btn-wide btn-pill btn btn-dark"> -->
                                                             <!-- <span class="badge badge-dot badge-dot-lg badge-warning badge-pulse">Badge</span> -->
-                                                            Tambah Informasi PPDB
-                                                        </a>
+                                                            <!-- Tambah Informasi PPDB
+                                                        </a> -->
                                                     </li>
                                                 </ul>
                                                 <!-- <div class="tab-pane" id="tab-animated-1" role="tabpanel">
