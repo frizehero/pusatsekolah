@@ -17,19 +17,35 @@
                         <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-primary">Filter
                         </button>
                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                            <h6 tabindex="-1" class="dropdown-header">Filter</h6>
+                            <div class="nav-item-divider nav-item"></div>
                             <div class="form-check">
                                 <div class="form-check">
-                                    <?php
-                                    foreach($mapel_data->result_array() as $row)
-                                    {
-                                        ?> 
-                                        <label>
-                                            <input type="checkbox" class="common_selector brand" value="<?php echo $row['mapel_guru']; ?>"  > <?php echo $row['mapel_guru']; ?>
-                                        </label>
-                                        <?php 
-                                    } 
-                                    ?>
-                                    ccccc
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> Semua
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="nav-item-divider nav-item"></div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> ipa
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> agama
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input"> ips
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -47,8 +63,9 @@
             </div>
         </div>
     </div>
+    <?php tampilnotif() ?>
     <div class="row">
-    <?php $no = 1;
+        <?php $no = 1;
         foreach ($tampil as $rowP) { ?>
             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card-shadow-primary card-border mb-3 card">
@@ -113,52 +130,6 @@
         <?php $no++;
         } ?>
     </div>
+    <?php echo  $pagination; ?>
+    
 </div>
-
-<script>
-$(document).ready(function(){
-
-    filter_data(1);
-
-    function filter_data(page)
-    {
-        $('.filter_data').html();
-        var action = 'fetch_data';
-        //var page = 1;
-        var mapel = get_filter('mapel');
-        $.ajax({
-            url:"<?php echo base_url(); ?>data_guru/fetch_data/"+page,
-            method:"POST",
-            dataType:"JSON",
-            data:{action:action, mapel:mapel,},
-            success:function(data)
-            {
-                $('.filter_data').html(data.product_list);
-                $('#pagination_link').html(data.pagination_link);
-            }
-        })
-    }
-
-    function get_filter(class_name)
-    {
-        var filter = [];
-        $('.'+class_name+':checked').each(function(){
-            filter.push($(this).val());
-        });
-        return filter;
-    }
-
-    $(document).on("click", ".pagination li a", function(event){
-        event.preventDefault();
-        var page = $(this).data("ci-pagination-page");
-        filter_data(page);
-    });
-
-    $('.common_selector').click(function(){
-        filter_data(1);
-    });
-
-
-
-});
-</script>
