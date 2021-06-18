@@ -51,7 +51,6 @@ class M_event extends CI_Model {
 	{
 		$judul_event 		= $this->input->post('judul_event');
 		$text_event 		= $this->input->post('text_event');
-		$dokumentasi_event 	= $this->input->post('dokumentasi_event');
 		$id 				= $this->input->post('id');
 
 		$this->load->library('upload');
@@ -111,6 +110,8 @@ class M_event extends CI_Model {
 		$id 			= $this->input->post('id');
 		$judul_event 	= $this->input->post('judul_event');
 		$text_event 	= $this->input->post('text_event');
+		$dokumentasi_event 	= $this->input->post('dokumentasi_event');
+
 
 				$data = array(
 					'judul_event'		=> $judul_event,

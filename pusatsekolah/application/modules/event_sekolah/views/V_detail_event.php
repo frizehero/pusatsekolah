@@ -9,7 +9,8 @@
                             <a href="javascript:void(0)">SMK Negeri 1 Kota Probolinggo</a>
                             <div class="text-muted small">4 hari yang lalu</div>
                         </div>
-                    </div>                </div>
+                    </div>                
+                </div>
                 <form action="<?php echo base_url('event_sekolah/tampildetail') ?>" method="POST" enctype="multipart/form-data">
                     <div class="card-header"><?php echo $tampil['judul_event'] ?></div>
                     <div class="card-body">
@@ -18,8 +19,7 @@
                         </p>
                         <div class="card-body">
                             <div class="dropdown-menu-header">
-                                <div class="dropdown-menu-header-inner"  style="background-image: url('<?php echo base_url() ?>assets/images/event'); width: auto; height: 278px; background-size: 278px;" name="foto">
-                                </div>
+                                <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event'] ?>"  style="width: 600px; height: auto;">
                             </div>
                         </div>
                     </div>
@@ -28,7 +28,8 @@
                             <div class="col-lg-4 col-xl-4 text-center">
                                 <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle ">
                                     <i class="ion ion-ios-heart text-danger fsize-3"></i>&nbsp;
-                                    <span class="align-middle">86</span>
+                                    <span class="align-middle">
+                                    86</span>
                                 </a>
                             </div>
                             <div class="col-lg-4 col-xl-4 text-center">
