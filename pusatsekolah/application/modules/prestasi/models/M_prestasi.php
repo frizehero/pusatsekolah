@@ -46,15 +46,26 @@ class M_prestasi extends CI_Model{
 		return $query->num_rows();
 	}
 
-	function filter ($prestasi)
+	function filter ($limit, $start, $st = NULL)
 	{
-
+		if ($st == "NIL") $st = "";
 		 $this->db->select('*')
 		->from ('prestasi')
-		->like('nama_prestasi',$prestasi);
-	
-		$query = $this->db->get();
+		->like('nama_prestasi',$st);
+	    
+		$query = $this->db->get('prestasi',$limit, $start);
 		return $query->result();
+	}
+
+	function count_filter ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('prestasi')
+		->like('nama_prestasi',$st);
+	    
+		$query = $this->db->get();
+		return $query->num_rows();
 	}
 
 	function tampiledit($id)
