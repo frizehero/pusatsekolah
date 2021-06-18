@@ -7,14 +7,15 @@ class M_statistik_sekolah extends CI_Model
 	function tampil($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
-		$this->db->from('data_alumni');
+		$this->db->from('data_guru');
 		$query = $this->db->get();
 
 		return $query->result();
 	}
 
-	function totalpengajar()
+	function totalpengajar($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
 		return $this->db->get('data_guru')->num_rows();
 	}
 

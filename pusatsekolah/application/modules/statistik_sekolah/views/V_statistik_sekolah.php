@@ -11,7 +11,7 @@
                                         </div>
                                         <div class="widget-heading fsize-1 pt-2 opacity-10 text-dark font-weight-bold"><span>Jumlah Followers</span>
                                         </div>
-                                        <div class="widget-subheading fsize-2 pt-2 opacity-10 text-warning font-weight-bold">2M</div>
+                                        <div class="widget-subheading fsize-2 pt-2 opacity-10 text-warning font-weight-bold"><?php echo $totalalumni?></div>
                                     </div>
                                     <div class="widget-chart-wrapper">
                                         <div id="dashboard-sparklines-simple-1"></div>
@@ -83,7 +83,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">KUNJUNGAN</div>
-                                            <div class="widget-numbers">1,7M</div>
+                                            <div class="widget-numbers"><?php echo $totalalumni?></div>
                                         </div>
                                     </div>
                                     <div class="divider m-0 d-md-none d-sm-block"></div>
@@ -98,7 +98,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">LIKE</div>
-                                            <div class="widget-numbers"><span>9M</span></div>
+                                            <div class="widget-numbers"><span><?php echo $totalalumni?></span></div>
                                         </div>
                                     </div>
                                     <div class="divider m-0 d-md-none d-sm-block"></div>
@@ -113,7 +113,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">REPORT</div>
-                                            <div class="widget-numbers"><span>563</span></div>
+                                            <div class="widget-numbers"><span><?php echo $totalalumni?></span></div>
                                         </div>
                                     </div>
                                     <br>
@@ -129,7 +129,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">INBOX MASUK</div>
-                                            <div class="widget-numbers">987</div>
+                                            <div class="widget-numbers"><?php echo $totalalumni?></div>
                                         </div>
                                     </div>
                                     <div class="divider m-0 d-md-none d-sm-block"></div>
@@ -144,7 +144,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">PENDAFTARAN TERAKHIR</div>
-                                            <div class="widget-numbers"><span>354</span></div>
+                                            <div class="widget-numbers"><span><?php echo $totalalumni?></span></div>
                                         </div>
                                     </div>
                                     <div class="divider m-0 d-md-none d-sm-block"></div>
@@ -159,7 +159,7 @@
                                         </div>
                                         <div class="widget-chart-content">
                                             <div class="widget-heading">NOTIFIKASI</div>
-                                            <div class="widget-numbers"><span>45</span></div>
+                                            <div class="widget-numbers"><span><?php echo $totalalumni?></span></div>
                                             <div class="widget-subheading">
                                                 Pembaruan
                                             </div>
@@ -217,7 +217,7 @@
                                                                     <div class="widget-subheading">Kerjasama Dengan Perusahaan</div>
                                                                 </div>
                                                                 <div class="widget-content-right">
-                                                                    <div class="widget-numbers text-success">20</div>
+                                                                    <div class="widget-numbers text-success"><?php echo $totalalumni?></div>
                                                                 </div>
                                                             </div>
                                                             <div class="widget-progress-wrapper">
