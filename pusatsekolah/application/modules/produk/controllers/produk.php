@@ -64,7 +64,6 @@ class Produk extends MX_Controller {
         echo Modules::run('template/tampilCore', $data);
     }
 
-		// halaman tambah
 	function tambahview()
 	{
 		$iduser=$this->session->userdata('session_id');
@@ -125,17 +124,18 @@ class Produk extends MX_Controller {
 
 	function search()
 	{
-		$iduser=$this->session->userdata('session_id');
-		$idsekolahx = $this->M_produk->ambilidsekolah($iduser);
+        // get search string
+		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
+		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
 
+        // pagination settings
 		$config = array();
-        $config['base_url']         = site_url('produk/index'); //site url
-        $config['total_rows']       = $this->M_produk->totaldata($idsekolahx['id_sekolah']); //total row
-        $config['per_page']         = 5;  //show record per halaman
-        $config["uri_segment"]      = 3;  // uri parameter
-        $choice = $config["total_rows"] / $config["per_page"];
-        $config["num_links"]        = floor($choice);
-
+		$config['base_url'] = site_url("produk/search/$search");
+		$config['total_rows'] = $this->M_produk->get_produk_count($search);
+		$config['per_page'] = "2";
+		$config["uri_segment"] = 4;
+		$choice = $config["total_rows"]/$config["per_page"];
+		$config["num_links"] = floor($choice);
 
         $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
@@ -157,13 +157,12 @@ class Produk extends MX_Controller {
         $config['last_tagl_close']  = '</span></li>';
         $this->pagination->initialize($config);
 
-        $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data['page'] = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
-		$produk 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_produk",
-			'tampilkan'		=> $this->M_produk->filter($produk),
+			'tampilkan'		=> $this->M_produk->get_produk($config["per_page"], $data['page'],$search),
 			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);

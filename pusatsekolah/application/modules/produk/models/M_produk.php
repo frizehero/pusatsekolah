@@ -46,15 +46,26 @@ class M_produk extends CI_Model {
 		return $query->num_rows();
 	}
 
-	function filter ($produk)
+	function filter ($limit, $start, $st = NULL)
 	{
-        
+        if ($st == "NIL") $st = "";
 		 $this->db->select('*')
 		->from ('produk')
-		->like('nama_produk',$produk);
+		->like('nama_produk',$st);
+	    
+		$query = $this->db->get('produk',$limit, $start);
+		return $query->result();
+	}
+
+	function count_filter ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('produk')
+		->like('nama_produk',$st);
 	    
 		$query = $this->db->get();
-		return $query->result();
+		return $query->num_rows();
 	}
 
 	function tambah()
