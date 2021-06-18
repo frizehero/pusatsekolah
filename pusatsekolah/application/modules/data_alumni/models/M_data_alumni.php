@@ -18,6 +18,14 @@ class M_data_alumni extends CI_Model {
 		$query = $this->db->get('data_alumni', $limit, $start);
 		return $query->result();
 	}
+
+	function totaldata($idsekolahx)
+	{
+		$this->db->where('id_alumni', $idsekolahx);
+		$query = $this->db->get('data_alumni');
+		return $query->num_rows();
+	}
+
 	function get_alumni($limit, $start, $st = NULL)
 	{
 		
@@ -184,7 +192,7 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
-	function filter ($data_alumni)
+	function cari ($data_alumni)
 	{
 
 		 $this->db->select('*')
