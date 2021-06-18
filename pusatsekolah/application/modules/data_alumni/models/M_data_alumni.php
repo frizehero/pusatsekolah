@@ -6,24 +6,24 @@ class M_data_alumni extends CI_Model {
 	function tampil($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
-		$this->db->from('data_alumni');
-		$query = $this->db->get();
-
+		$query = $this->db->get('data_alumni');
 		return $query->result();
 	}
-	
-	function tampilkan($limit, $start)
+    
+    function totaldata($idsekolahx)
 	{
-		
-		$query = $this->db->get('data_alumni', $limit, $start);
-		return $query->result();
-	}
-
-	function totaldata($idsekolahx)
-	{
-		$this->db->where('id_alumni', $idsekolahx);
+		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('data_alumni');
 		return $query->num_rows();
+		
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('data_alumni', $limit, $start);
+		return $query->result();
+		
 	}
 
 	function get_alumni($limit, $start, $st = NULL)
