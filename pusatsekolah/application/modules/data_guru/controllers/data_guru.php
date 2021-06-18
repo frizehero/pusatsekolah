@@ -65,17 +65,7 @@ class Data_guru extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-	function filter()
-	{
-		$mapel = $this->input->post('mapel');
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->filter($mapel),
-			'tampil_mapel'		=> $this->M_data_guru->tampil_mapel(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
+	
 
 	// halaman tambah
 	function tambahview()
@@ -131,6 +121,18 @@ class Data_guru extends MX_Controller
 	{
 		$this->M_data_guru->hapus();
 		redirect('data_guru');
+	}
+
+	function filter()
+	{
+		$data_guru = $this->input->post('mapel');
+		$data = array(
+			'namamodule' 	=> "data_guru",
+			'namafileview' 	=> "V_data_guru",
+			'tampil'		=> $this->M_data_guru->filter($data_guru),
+			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel(),
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function search()

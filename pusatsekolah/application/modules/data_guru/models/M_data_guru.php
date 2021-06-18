@@ -40,13 +40,12 @@ class M_data_guru extends CI_Model
 		return $query->num_rows();
 	}
 
-	function filter ($mapel)
+	function filter ($data_guru)
 	{
 
 		 $this->db->select('*')
 		->from ('data_guru')
-		->join('mapel', 'mapel.id_mapel = data_guru.id_mapel')
-		->like('nama_mapel',$mapel);
+		->like('mapel_guru',$data_guru);
 	
 		$query = $this->db->get();
 		return $query->result();
@@ -65,7 +64,7 @@ class M_data_guru extends CI_Model
 	
 	function tampil_mapel()
 	{
-		$this->db->from('mapel');
+		$this->db->from('data_guru');
 		$query = $this->db->get();
 
 		return $query->result();
