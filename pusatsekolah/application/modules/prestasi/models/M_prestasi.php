@@ -9,8 +9,8 @@ class M_prestasi extends CI_Model{
 		$query = $this->db->get('prestasi');
 		return $query->result();
 	}
-
-	function totaldata($idsekolahx)
+    
+    function totaldata($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('prestasi');
@@ -187,8 +187,6 @@ class M_prestasi extends CI_Model{
 		$this->db->where('id_admin',$id);
 		$query = $this->db->get();
 
-
-		
     	return $query->row_array();
 	}
 }

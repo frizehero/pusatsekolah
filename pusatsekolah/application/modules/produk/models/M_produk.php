@@ -48,11 +48,11 @@ class M_produk extends CI_Model {
 
 	function filter ($produk)
 	{
-
+        
 		 $this->db->select('*')
 		->from ('produk')
 		->like('nama_produk',$produk);
-	
+	    
 		$query = $this->db->get();
 		return $query->result();
 	}

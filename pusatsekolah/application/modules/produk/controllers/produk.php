@@ -7,10 +7,10 @@ class Produk extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_produk');
-		 $this->load->model('login/m_session');
-		 $this->load->library('pagination');
-         $this->load->library('session');
+		$this->load->model('M_produk');
+		$this->load->model('login/m_session');
+		$this->load->library('pagination');
+		$this->load->library('session');
 	}
 
 	

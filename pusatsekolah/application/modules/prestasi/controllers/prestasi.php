@@ -17,7 +17,8 @@ class Prestasi extends MX_Controller
 	// index
 	function index()
     {
-    	
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
         //konfigurasi pagination
         $config = array();
         $config['base_url']         = site_url('prestasi/index'); //site url
@@ -49,9 +50,6 @@ class Prestasi extends MX_Controller
         $this->pagination->initialize($config);
 
         $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-
-        $iduser=$this->session->userdata('session_id');
-		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
 
         $data = array(
         	'namamodule' 	=> "prestasi",
@@ -122,19 +120,6 @@ class Prestasi extends MX_Controller
 			'tampil'		=> $this->M_prestasi->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function search2()
-	{
-		$prestasi 	= $this->input->post('nama');
-		$data = array(
-			'namamodule' 	=> "prestasi",
-			'namafileview' 	=> "V_prestasi",
-			'tampilkan'		=> $this->M_prestasi->filter($prestasi),
-			'pagination'    => $this->pagination->create_links(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	
 	}
 
 	function search()
