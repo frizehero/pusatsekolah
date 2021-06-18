@@ -23,9 +23,11 @@ class Statistik_sekolah extends MX_Controller
 		$data = array(
 			'namamodule' 		=> "statistik_sekolah",
 			'namafileview' 		=> "V_statistik_sekolah",
+			'idnya' 			=> $iduser,
+			'idsekolah' 		=> $idsekolahx,
 			'tampil'			=> $this->M_statistik_sekolah->tampil($idsekolahx['id_sekolah']),
 			'totalalumni'		=> $this->M_statistik_sekolah->totalalumni(),
-			'totalpengajar'		=> $this->M_statistik_sekolah->totalpengajar(),
+			'totalpengajar'		=> $this->M_statistik_sekolah->totalpengajar($idsekolahx['id_sekolah']),
 			'totalprestasi'		=> $this->M_statistik_sekolah->totalprestasi(),
 			'totalproduk'		=> $this->M_statistik_sekolah->totalproduk(),
 			'totalevent'		=> $this->M_statistik_sekolah->totalevent(),

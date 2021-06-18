@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="d-flex flex-wrap justify-content-between">
-                <div class="col-12 col-md-7 p-0 mb-3">
+                <div class="col-12 col-md-5 p-0 mb-3">
                     <div class="search-wrapper active">
                         <div class="input-holder" style="background-color: #fff;">
                             <?php echo form_open('data_guru/search') ?>
@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                    <div class="btn-actions-pane text-capitalize actions-icon-btn col-md-3" style="margin-left: : 30px;">
+                    <div class="btn-actions-pane text-capitalize actions-icon-btn col-md-5" style="margin-left: : 30px;">
                     <div class="position-relative form-group ">
                         <form method="post" action="<?php echo site_url('data_guru/filter') ?>">
                         <select name="mapel" class="btn btn-shadow btn-wide btn-primary" >
@@ -107,6 +107,4 @@
         <?php $no++;
         } ?>
     </div>
-    <?php echo  $pagination; ?>
-    
 </div>

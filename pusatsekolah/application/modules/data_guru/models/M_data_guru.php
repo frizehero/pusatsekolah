@@ -13,33 +13,6 @@ class M_data_guru extends CI_Model
 		return $query->result();
 	}
 
-	function tampilkan($limit, $start)
-	{
-		$query = $this->db->get('data_guru', $limit, $start);
-		return $query->result();
-		
-	}
-
-	function get_guru($limit, $start, $st = NULL)
-	{
-		
-		if ($st == "NIL") $st = "";
-		$this->db->select('*')
-		->like('nama_guru',$st);
-		$query = $this->db->get('data_guru',$limit, $start);
-		return $query->result();
-	}
-
-	function get_guru_count($st = NULL)
-	{
-
-		if ($st == "NIL") $st = "";
-		$this->db->select('*')
-		->like('nama_guru',$st);
-		$query = $this->db->get('data_guru');
-		return $query->num_rows();
-	}
-
 	function filter ($data_guru)
 	{
 
@@ -62,8 +35,9 @@ class M_data_guru extends CI_Model
 		return $query->result();
 	}
 	
-	function tampil_mapel()
+	function tampil_mapel($idsekolahx)
 	{
+		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_guru');
 		$query = $this->db->get();
 
