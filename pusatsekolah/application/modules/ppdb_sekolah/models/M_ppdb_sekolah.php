@@ -15,6 +15,10 @@ class M_ppdb_sekolah extends CI_Model {
 		$pendaftaran_ppdb	 		= $this->input->post('pendaftaran_ppdb');
 		$validasi_pemberkasan	 	= $this->input->post('validasi_pemberkasan');
 		$verifikasi_daftarulang		= $this->input->post('verifikasi_daftarulang');
+		$alamat_sekolah 			= $this->input->post('alamat_sekolah');
+		$email_sekolah 				= $this->input->post('email_sekolah');
+		$telp_sekolah 				= $this->input->post('telp_sekolah');
+		$website_sekolah 			= $this->input->post('website_sekolah');
 
 
 		$this->load->library('upload');
@@ -37,6 +41,10 @@ class M_ppdb_sekolah extends CI_Model {
 					'pendaftaran_ppdb'		 => $pendaftaran_ppdb,
 					'validasi_pemberkasan'	 => $validasi_pemberkasan,
 					'verifikasi_daftarulang' => $verifikasi_daftarulang,
+					'alamat_sekolah'		 => $alamat_sekolah,
+					'email_sekolah'		 	 => $email_sekolah,
+					'telp_sekolah'		 	 => $telp_sekolah,
+					'website_sekolah'		 => $website_sekolah,
 					'pamflet_ppdb'		 	 => $gbr['file_name'],
 
 
@@ -51,6 +59,10 @@ class M_ppdb_sekolah extends CI_Model {
 				'pendaftaran_ppdb'		 => $pendaftaran_ppdb,
 				'validasi_pemberkasan'	 => $validasi_pemberkasan,
 				'verifikasi_daftarulang' => $verifikasi_daftarulang,
+				'alamat_sekolah'		 => $alamat_sekolah,
+				'email_sekolah'		 	 => $email_sekolah,
+				'telp_sekolah'		 	 => $telp_sekolah,
+				'website_sekolah'		 => $website_sekolah,
 				'pamflet_ppdb'		 	 => 'kosong1.jpeg',
 				
 			);
@@ -74,6 +86,10 @@ class M_ppdb_sekolah extends CI_Model {
 		$pendaftaran_ppdb	 		= $this->input->post('pendaftaran_ppdb');
 		$validasi_pemberkasan	 	= $this->input->post('validasi_pemberkasan');
 		$verifikasi_daftarulang		= $this->input->post('verifikasi_daftarulang');
+		$alamat_sekolah 			= $this->input->post('alamat_sekolah');
+		$email_sekolah 				= $this->input->post('email_sekolah');
+		$telp_sekolah 				= $this->input->post('telp_sekolah');
+		$website_sekolah 			= $this->input->post('website_sekolah');
 
 
 		$this->load->library('upload');
@@ -96,6 +112,10 @@ class M_ppdb_sekolah extends CI_Model {
 					'pendaftaran_ppdb'		 => $pendaftaran_ppdb,
 					'validasi_pemberkasan'	 => $validasi_pemberkasan,
 					'verifikasi_daftarulang' => $verifikasi_daftarulang,
+					'alamat_sekolah'		 => $alamat_sekolah,
+					'email_sekolah'		 	 => $email_sekolah,
+					'telp_sekolah'		 	 => $telp_sekolah,
+					'website_sekolah'		 => $website_sekolah,
 					'pamflet_ppdb'		 	 => $gbr['file_name'],
 				);
 				$this->db->where('id_ppdb', $id)->update('ppdb_sekolah', $data);
@@ -108,6 +128,10 @@ class M_ppdb_sekolah extends CI_Model {
 				'pendaftaran_ppdb'		 => $pendaftaran_ppdb,
 				'validasi_pemberkasan'	 => $validasi_pemberkasan,
 				'verifikasi_daftarulang' => $verifikasi_daftarulang,
+				'alamat_sekolah'		 => $alamat_sekolah,
+				'email_sekolah'		 	 => $email_sekolah,
+				'telp_sekolah'		 	 => $telp_sekolah,
+				'website_sekolah'		 => $website_sekolah,
 			);
 			$this->db->where('id_ppdb', $id)->update('ppdb_sekolah', $data);
 			$this->session->set_flashdata('msg', 'suksesedit');

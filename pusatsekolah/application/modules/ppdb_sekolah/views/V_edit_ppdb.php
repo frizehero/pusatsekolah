@@ -6,6 +6,30 @@
             <form class="col-md-10 mx-auto" action="<?php echo base_url('ppdb_sekolah/edit') ?>" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <input name="id" value="<?php echo $tampil['id_ppdb'] ?>" type="hidden" class="form-control">
+                    <label for="alamat_sekolah">Alamat Sekolah</label>
+                    <div>
+                        <input name="alamat_sekolah" value="<?php echo $tampil['alamat_sekolah'] ?>" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telp_sekolah">No. Telephone Sekolah</label>
+                    <div>
+                        <input name="telp_sekolah" value="<?php echo $tampil['telp_sekolah'] ?>" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email_sekolah">Email Sekolah</label>
+                    <div>
+                        <input name="email_sekolah" value="<?php echo $tampil['email_sekolah'] ?>" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="website_sekolah">Website Sekolah</label>
+                    <div>
+                        <input name="website_sekolah" value="<?php echo $tampil['website_sekolah'] ?>" type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group">
                     <label for="deskripsi_ppdb">Deskripsi PPDB</label>
                     <div>
                         <input name="deskripsi_ppdb" value="<?php echo $tampil['deskripsi_ppdb'] ?>" type="text" class="form-control">
