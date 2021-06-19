@@ -7,10 +7,66 @@ class M_data_guru extends CI_Model
 	function tampil($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
-		$this->db->from('data_guru');
-		$query = $this->db->get();
-
+		$query = $this->db->get('data_guru');
 		return $query->result();
+	}
+
+	function totaldata($idsekolahx)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('data_guru');
+		return $query->num_rows();
+		
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('data_guru', $limit, $start);
+		return $query->result();
+		
+	}
+
+	function get_guru($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_guru',$st);
+		$query = $this->db->get('data_guru',$limit, $start);
+		return $query->result();
+	}
+
+	function get_guru_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_guru',$st);
+		$query = $this->db->get('data_guru');
+		return $query->num_rows();
+	}
+
+	function filterkan ($limit, $start, $st = NULL)
+	{
+		if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_guru')
+		->like('nama_guru',$st);
+	    
+		$query = $this->db->get('data_guru',$limit, $start);
+		return $query->result();
+	}
+
+	function count_filterkan ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_guru')
+		->like('nama_guru',$st);
+	    
+		$query = $this->db->get();
+		return $query->num_rows();
 	}
 
 	function filter ($data_guru)
@@ -24,15 +80,10 @@ class M_data_guru extends CI_Model
 		return $query->result();
 	}
 
-	function cari ($data_guru)
+	function cari()
 	{
-
-		 $this->db->select('*')
-		->from ('data_guru')
-		->like('nama_guru',$data_guru);
-	
-		$query = $this->db->get();
-		return $query->result();
+		$cari 		= $this->input->post('cari');
+		return $this->db->like('nama_guru', $cari)->get('data_guru')->result();
 	}
 	
 	function tampil_mapel($idsekolahx)
