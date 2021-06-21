@@ -194,8 +194,7 @@ class M_data_alumni extends CI_Model {
 
 	function cari ($data_alumni)
 	{
-
-		 $this->db->select('*')
+		$this->db->select('*')
 		->from ('data_alumni')
 		->like('nama_alumni',$data_alumni);
 	

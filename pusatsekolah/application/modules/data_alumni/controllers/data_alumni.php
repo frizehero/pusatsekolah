@@ -144,8 +144,14 @@ class Data_alumni extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
+			'idnya' 			=> $iduser,
+			'idsekolah' 		=> $idsekolahx,
 			'tampilkan'		=> $this->M_data_alumni->cari($data_alumni),
 			'pagination'    => $this->pagination->create_links(),
+			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
+			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
+			'totallaki'		=> $this->M_data_alumni->totallaki(),
+            'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	
