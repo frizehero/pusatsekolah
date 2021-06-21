@@ -6,7 +6,7 @@
                     <div class="search-wrapper active">
                         <div class="input-holder" style="background-color: #fff;">
                             <?php echo form_open('data_guru/search') ?>
-                                    <input type="text" name="nama" class="search-input" placeholder="Cari...">
+                                    <input type="text" name="cari" class="search-input" placeholder="Cari...">
                                     <button class="search-icon" style="background-color: #fff;"><span></span></button>
                                 <?php echo form_close() ?>
                         </div>
@@ -43,7 +43,7 @@
     <?php tampilnotif() ?>
     <div class="row">
         <?php $no = 1;
-        foreach ($tampil as $rowP) { ?>
+        foreach ($tampilkan as $rowP) { ?>
             <div class="col-md-12 col-lg-6 col-xl-4">
                 <div class="card-shadow-primary card-border mb-3 card">
                     <div class="dropdown-menu-header">
@@ -107,4 +107,5 @@
         <?php $no++;
         } ?>
     </div>
+    <?php echo  $pagination; ?>
 </div>
