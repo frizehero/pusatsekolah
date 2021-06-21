@@ -7,29 +7,29 @@ class Data_alumni extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_data_alumni');
-		 $this->load->model('login/m_session');
-		 $this->load->library('pagination');
-         $this->load->library('session');
+		$this->load->model('M_data_alumni');
+		$this->load->model('login/m_session');
+		$this->load->library('pagination');
+        $this->load->library('session');
 	}
 
 	
 	// index
 	function index()
     {
-        $iduser=$this->session->userdata('session_id');
+		$iduser=$this->session->userdata('session_id');
 		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
         //konfigurasi pagination
         $config = array();
         $config['base_url']         = site_url('data_alumni/index'); //site url
-        $config['total_rows']       = $this->M_data_alumni->totaldata($idsekolahx['id_sekolah']);//total row
-        $config['per_page']         = 5;  //show record per halaman
+        $config['total_rows']       = $this->M_data_alumni->totaldata($idsekolahx['id_sekolah']); //total row
+        $config['per_page']         = 6;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);
 
 
-        $config['first_link']       = 'First';
+		$config['first_link']       = 'First';
         $config['last_link']        = 'Last';
         $config['next_link']        = 'Next';
         $config['prev_link']        = 'Prev';
@@ -106,16 +106,18 @@ class Data_alumni extends MX_Controller {
 
 	function search()
 	{
-		$iduser=$this->session->userdata('session_id');
-		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+		// get search string
+		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
+		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
+
         //konfigurasi pagination
-        $config = array();
-        $config['base_url']         = site_url('data_alumni/index'); //site url
-        $config['total_rows']       = $this->M_data_alumni->totaldata($idsekolahx['id_sekolah']);//total row
-        $config['per_page']         = 5;  //show record per halaman
-        $config["uri_segment"]      = 3;  // uri parameter
-        $choice = $config["total_rows"] / $config["per_page"];
-        $config["num_links"]        = floor($choice);
+       $config = array();
+		$config['base_url'] = site_url("data_alumni/search/$search");
+		$config['total_rows'] = $this->M_data_alumni->get_alumni_count($search);
+		$config['per_page'] = "2";
+		$config["uri_segment"] = 4;
+		$choice = $config["total_rows"]/$config["per_page"];
+		$config["num_links"] = floor($choice);
 
 
         $config['first_link']       = 'First';
@@ -138,20 +140,17 @@ class Data_alumni extends MX_Controller {
         $config['last_tagl_close']  = '</span></li>';
         $this->pagination->initialize($config);
 
-        $data['page'] = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+		$data['page'] = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
 		$data_alumni 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
-			'idnya' 			=> $iduser,
-			'idsekolah' 		=> $idsekolahx,
-			'tampilkan'		=> $this->M_data_alumni->cari($data_alumni),
-			'pagination'    => $this->pagination->create_links(),
+			'tampilkan'		=> $this->M_data_alumni->get_alumni($config["per_page"], $data['page'],$search),
 			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
 			'totallaki'		=> $this->M_data_alumni->totallaki(),
-            'pagination'    => $this->pagination->create_links(),
+			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	

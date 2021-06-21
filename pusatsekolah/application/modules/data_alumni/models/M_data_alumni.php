@@ -46,6 +46,29 @@ class M_data_alumni extends CI_Model {
 		return $query->num_rows();
 	}
 
+	function filter ($limit, $start, $st = NULL)
+	{
+		if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('nama_alumni',$st);
+	    
+		$query = $this->db->get('data_alumni',$limit, $start);
+		return $query->result();
+	}
+
+	function count_filter ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('nama_alumni',$st);
+	    
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+
+
 	function tambah()
 	{
 		$nama_alumni 			= $this->input->post('nama_alumni');

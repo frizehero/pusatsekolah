@@ -6,7 +6,7 @@
                     <div class="search-wrapper active">
                         <div class="input-holder" style="background-color: #fff;">
                             <?php echo form_open('data_alumni/search') ?>
-                                <input type="text" name="nama" class="search-input" placeholder="Cari...">
+                                <input type="text" name="cari" class="search-input" placeholder="Cari...">
                                 <button class="search-icon" style="background-color: #fff;"><span></span></button>
                             <?php echo form_close() ?>
                         </div>
