@@ -22,6 +22,13 @@
                                 <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event'] ?>"  style="width: 600px; height: auto;">
                             </div>
                         </div>
+                        <div class="card-body">
+                            <div class="dropdown-menu-header">
+                                <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event1'] ?>"  style="width: 600px; height: auto;" name="foto1">
+                                <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event2'] ?>"  style="width: 600px; height: auto;" name="foto2">
+                                <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event3'] ?>"  style="width: 600px; height: auto;" name="foto3">
+                            </div>
+                        </div>
                     </div>
                     <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
                         <div class="row col-lg-12">

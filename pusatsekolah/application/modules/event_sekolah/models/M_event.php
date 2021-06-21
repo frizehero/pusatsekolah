@@ -32,7 +32,7 @@ class M_event extends CI_Model {
 		
 		if ($st == "NIL") $st = "";
 		$this->db->select('*')
-		->like('nama_event',$st);
+		->like('judul_event',$st);
 		$query = $this->db->get('event_sekolah',$limit, $start);
 		return $query->result();
 	}
@@ -42,8 +42,30 @@ class M_event extends CI_Model {
 
 		if ($st == "NIL") $st = "";
 		$this->db->select('*')
-		->like('nama_event',$st);
+		->like('judul_event',$st);
 		$query = $this->db->get('event_sekolah');
+		return $query->num_rows();
+	}
+
+	function filter ($limit, $start, $st = NULL)
+	{
+		if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('event_sekolah')
+		->like('judul_event',$st);
+	    
+		$query = $this->db->get('event_sekolah',$limit, $start);
+		return $query->result();
+	}
+
+	function count_filter ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('event_sekolah')
+		->like('judul_event',$st);
+	    
+		$query = $this->db->get();
 		return $query->num_rows();
 	}
 
@@ -64,29 +86,62 @@ class M_event extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['foto'] ['name'])
+		if($_FILES['foto1'] ['name'])
         {
-            if ($this->upload->do_upload('foto'))
+            if ($this->upload->do_upload('foto1'))
             {
 				$gbr = $this->upload->data();
 				$data = array(
 					'judul_event'		=> $judul_event,
 					'text_event'		=> $text_event,
 					'id_sekolah'		=> $id,
-					'dokumentasi_event'	=> $gbr['file_name'],
+					'dokumentasi_event1'	=> $gbr['file_name'],
 				);
-				$this->db->insert('event_sekolah', $data);
+				$this->db->where('id_event',$id)->update('event_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}	
 		}
+		elseif($_FILES['foto2']['name'])
+        {
+            if ($this->upload->do_upload('foto2'))
+            {
+				$gbr = $this->upload->data();
+				$data = array(
+					'judul_event'		=> $judul_event,
+					'text_event'		=> $text_event,
+					'id_sekolah'		=> $id,
+					'dokumentasi_event2'	=> $gbr['file_name'],
+				);
+				$this->db->where('id_event',$id)->update('event_sekolah', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+			}	 
+		}
+		elseif($_FILES['foto3']['name'])
+        {
+            if ($this->upload->do_upload('foto3'))
+            {
+				$gbr = $this->upload->data();
+				$data = array(
+					'judul_event'		=> $judul_event,
+					'text_event'		=> $text_event,
+					'id_sekolah'		=> $id,
+					'dokumentasi_event3'	=> $gbr['file_name'],
+				);
+				$this->db->where('id_event',$id)->update('event_sekolah', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+			}
+		}
+
 		else{
 				$data = array(
 						'judul_event'	=> $judul_event,
 						'text_event'	=> $text_event,
 						'id_sekolah'	=> $id,
-						'dokumentasi_event'	=> 'kosong.jpeg',
+
 					);
-					$this->db->insert('event_sekolah', $data);
+					$this->db->where('id_event',$id)->update('event_sekolah', $data);
 					$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
@@ -131,7 +186,7 @@ class M_event extends CI_Model {
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_event',$cari)->get('event_sekolah')->result();
+		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
 	}
 
 
@@ -148,18 +203,7 @@ class M_event extends CI_Model {
     	return $query->row_array();
 	}
 
-	function filter ($event_sekolah)
-	{
-
-		 $this->db->select('*')
-		->from ('event_sekolah')
-		->like('judul_event',$event_sekolah);
 	
-		$query = $this->db->get();
-		return $query->result();
-	}
-
-
 }
 
 
