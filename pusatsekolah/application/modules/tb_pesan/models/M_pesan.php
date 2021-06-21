@@ -6,8 +6,20 @@ class M_pesan extends CI_Model
 
 	function tampil()
 	{
-		$this->db->from('tb_pesan');
-		$query = $this->db->get();
+		//$this->db->from('tb_pesan');
+		//$query = $this->db->get();
+
+		//$this->db->select('id_penerima,nama_penerima,pesan');
+		//$this->db->distinct();
+		//$query = $this->db->get('tb_pesans');
+
+		//$this->db->select('id_penerima');
+		//$this->db->distinct();
+		//$this->db->get('tb_pesan');
+		//$this->db->select('DISTINCT(id_penerima)');
+
+		$this->db->group_by('id_penerima');
+		$query = $this->db->get('tb_pesan');
 
 		return $query->result();
 	}
@@ -25,6 +37,12 @@ class M_pesan extends CI_Model
 	{
 		$idnya = decrypt_url($id);
 		$this->db->where('id_penerima', $idnya);
+		//$this->load->database();
+		//$last = $this->db->order_by('id', "desc")
+		//	->limit(1)
+		//	->get('tb_pesan')
+		//	->row();
+		//print_r($last);
 		return $this->db->get('tb_pesan')->row_array();
 	}
 
