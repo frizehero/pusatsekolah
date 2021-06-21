@@ -58,6 +58,7 @@ class Data_alumni extends MX_Controller {
 			'tampil'		=> $this->M_data_alumni->tampil($idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
+			'tampil_tahun'	=> $this->M_data_alumni->tampil_tahun($idsekolahx['id_sekolah']),
 			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
 			'totallaki'		=> $this->M_data_alumni->totallaki(),
@@ -102,6 +103,21 @@ class Data_alumni extends MX_Controller {
 	{
 		$this->M_data_alumni->hapus();
 		redirect('data_alumni');
+	}
+
+	function folter()
+	{
+		$folter = $this->input->post('tahun');
+		$data = array(
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_data_alumni",
+			'tampilkan'		=> $this->M_data_alumni->folter($folter),
+			'tampil'	=> $this->M_data_alumni->tampil_tahun($folter),
+			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
+			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
+			'totallaki'		=> $this->M_data_alumni->totallaki(),
+		);
+		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function search()

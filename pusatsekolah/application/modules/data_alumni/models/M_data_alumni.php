@@ -215,6 +215,25 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
+	function folter ($data_alumni)
+	{
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('thlulus_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function tampil_tahun($idsekolahx)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		$query = $this->db->get();
+
+		return $query->result();
+	}
+
 	function cari ($data_alumni)
 	{
 		$this->db->select('*')
