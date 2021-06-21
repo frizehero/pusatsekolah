@@ -18,7 +18,7 @@
                         <form method="post" action="<?php echo site_url('data_guru/filter') ?>">
                         <select name="mapel" class="btn btn-shadow btn-wide btn-primary" >
                             <?php
-                            foreach ($tampil_mapel as $mapel) {?>
+                            foreach ($tampilkan as $mapel) {?>
                                 <option value="<?php echo $mapel->mapel_guru?>"><?php echo $mapel->mapel_guru?></option>
                             <?php }?>
                         </select>

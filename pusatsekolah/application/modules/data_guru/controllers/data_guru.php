@@ -25,7 +25,7 @@ class Data_guru extends MX_Controller
         $config = array();
         $config['base_url']         = site_url('data_guru/index'); //site url
         $config['total_rows']       = $this->M_data_guru->totaldata($idsekolahx['id_sekolah']); //total row
-        $config['per_page']         = 3;  //show record per halaman
+        $config['per_page']         = 6;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);
@@ -131,7 +131,7 @@ class Data_guru extends MX_Controller
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
 			'tampilkan'		=> $this->M_data_guru->filter($filter),
-			'tampil'	=> $this->M_data_guru->tampil_mapel($idsekolahx),
+			'tampil'	=> $this->M_data_guru->tampil_mapel($filter),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
