@@ -71,7 +71,6 @@ class M_data_guru extends CI_Model
 
 	function filter ($data_guru)
 	{
-
 		 $this->db->select('*')
 		->from ('data_guru')
 		->like('mapel_guru',$data_guru);
@@ -85,6 +84,7 @@ class M_data_guru extends CI_Model
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('nama_guru', $cari)->get('data_guru')->result();
 	}
+	
 	
 	function tampil_mapel($idsekolahx)
 	{

@@ -124,24 +124,14 @@ class Data_guru extends MX_Controller
 		redirect('data_guru');
 	}
 
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_prestasi->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
 	function filter()
 	{
-		$data_guru = $this->input->post('mapel');
+		$filter = $this->input->post('mapel');
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->filter($data_guru),
-			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx),
+			'tampilkan'		=> $this->M_data_guru->filter($filter),
+			'tampil'	=> $this->M_data_guru->tampil_mapel($idsekolahx),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
