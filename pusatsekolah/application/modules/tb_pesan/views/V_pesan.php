@@ -69,7 +69,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="widget-content-left">
-                                                            <div class="widget-heading"><?php echo $rowP->nama_penerima; ?></div>
+                                                            <div class="widget-heading"><?php echo $rowP->nama_p; ?></div>
                                                             <div class="widget-subheading"><?php echo $rowP->pesan; ?></div>
                                                         </div>
                                                     </div>

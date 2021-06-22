@@ -29,10 +29,10 @@ class Beranda_as extends MX_Controller
 		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
 		} else {
-			$iduser=$this->session->userdata('session_id');
+			$iduser = $this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 			$idpostingx = $this->M_beranda_as->ambilidpostingan($iduser);
-			
+
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_beranda_as",
@@ -46,7 +46,7 @@ class Beranda_as extends MX_Controller
 		}
 	}
 
-		// halaman tambah
+	// halaman tambah
 	function tambahview()
 	{
 		$data = array(
@@ -60,7 +60,7 @@ class Beranda_as extends MX_Controller
 	{
 		//echo $this->session->userdata('session_id');
 		{
-			$iduser=$this->session->userdata('session_id');
+			$iduser = $this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
 
 			$data = array(
@@ -75,7 +75,7 @@ class Beranda_as extends MX_Controller
 		}
 	}
 
-		// Halaman Edit
+	// Halaman Edit
 	function editview($id)
 	{
 

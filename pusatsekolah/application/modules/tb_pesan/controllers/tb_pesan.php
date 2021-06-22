@@ -70,7 +70,7 @@ class Tb_pesan extends MX_Controller
 			$iduser = $this->session->userdata('session_id');
 			$iduserx = $this->M_pesan->ambilidsekolah($iduser);
 			$idpenerima = decrypt_url($id);
-			/*$nama_user = decrypt_url($id);*/
+			$nama_penerima = decrypt_url($id);
 
 
 			$data = array(
@@ -79,7 +79,7 @@ class Tb_pesan extends MX_Controller
 				'tampil'			=> $this->M_pesan->tampildetail($id),
 				'idnya' 			=> $iduser,
 				'idpenerima'		=> $idpenerima,
-				/*'nama_user'			=> $nama_user,*/
+				'nama_penerima'		=> $nama_penerima,
 				'idsekolah' 		=> $iduserx,
 				'tampilkompetensi'	=> $this->M_pesan->tampilkompetensi($iduserx['id_admin']),
 			);
