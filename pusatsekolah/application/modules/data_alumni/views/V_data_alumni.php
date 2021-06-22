@@ -19,7 +19,7 @@
                                 <select name="tahun" class="btn btn-shadow btn-wide btn-primary" >
                                         <option>Tahun lulusan</option>
                                     <?php
-                                    foreach ($tampilkan as $tahun) {?>
+                                    foreach ($tampil_tahun as $tahun) {?>
                                         
                                         <option value="<?php echo $tahun->thlulus_alumni?>"><?php echo $tahun->thlulus_alumni?></option>
                                     <?php }?>
