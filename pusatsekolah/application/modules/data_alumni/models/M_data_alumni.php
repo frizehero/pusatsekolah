@@ -227,6 +227,9 @@ class M_data_alumni extends CI_Model {
 
 	function tampil_tahun($idsekolahx)
 	{
+		$this->db->select('thlulus_alumni, COUNT(thlulus_alumni) as total');
+		$this->db->group_by('thlulus_alumni');
+		$this->db->order_by('total', 'dsc');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_alumni');
 		$query = $this->db->get();
