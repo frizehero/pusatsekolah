@@ -14,21 +14,21 @@
                 </div>
                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
                     <div class="btn-actions-pane text-capitalize actions-icon-btn col-md-5" style="margin-left: : 30px;">
-                    <div class="position-relative form-group ">
-                        <form method="post" action="<?php echo site_url('prestasi/folter') ?>">
-                        <select name="mapel" class="btn btn-shadow btn-wide btn-primary" >
-                            <option>Tingkat Prestasi</option>
-                            <?php
-                            foreach ($tampil_jenis as $prestasi) {?>
-                                
-                                <option value="<?php echo $prestasi->jenis_prestasi?>"><?php echo $prestasi->jenis_prestasi?></option>
-                            <?php }?>
-                        </select>
-                        <button type="submit" class="btn btn-shadow btn-wide btn-primary">
-                        Cari</button>
-                    </form>
+                        <div class="position-relative form-group ">
+                            <form method="post" action="<?php echo site_url('prestasi/folter') ?>">
+                                <select name="prestasi" class="btn btn-shadow btn-wide btn-primary" >
+                                         <option>Tingkat Prestasi</option>
+                                    <?php
+                                    foreach ($tampil_jenis as $prestasi) {?>
+                                        
+                                        <option value="<?php echo $prestasi->jenis_prestasi?>"><?php echo $prestasi->jenis_prestasi?></option>
+                                    <?php }?>
+                                </select>
+                                <button type="submit" class="btn btn-shadow btn-wide btn-primary">
+                                Cari</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn col-md-2">
                     <a href="<?php echo base_url('prestasi/tambahview'); ?>" class="btn btn-shadow btn-wide btn-primary">
