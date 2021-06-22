@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="d-flex flex-wrap justify-content-between">
-                <div class="col-12 col-md-9 p-0 mb-3">
+                <div class="col-12 col-md-5 p-0 mb-3">
                     <div class="search-wrapper active">
                         <div class="input-holder" style="background-color: #fff;">
                             <?php echo form_open('prestasi/search/') ?>
@@ -13,38 +13,24 @@
                     </div>
                 </div>
                 <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                    <div class="mb-2 mr-2 btn-group">
-                        <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-primary">Filter
-                        </button>
-                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                            <h6 tabindex="-1" class="dropdown-header">Filter</h6>
-                            <div class="nav-item-divider nav-item"></div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Semua
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="nav-item-divider nav-item"></div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Akademi
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-check">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input"> Non Akademi
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="btn-actions-pane text-capitalize actions-icon-btn col-md-5" style="margin-left: : 30px;">
+                    <div class="position-relative form-group ">
+                        <form method="post" action="<?php echo site_url('prestasi/folter') ?>">
+                        <select name="mapel" class="btn btn-shadow btn-wide btn-primary" >
+                            <option>Tingkat Prestasi</option>
+                            <?php
+                            foreach ($tampil_jenis as $prestasi) {?>
+                                
+                                <option value="<?php echo $prestasi->jenis_prestasi?>"><?php echo $prestasi->jenis_prestasi?></option>
+                            <?php }?>
+                        </select>
+                        <button type="submit" class="btn btn-shadow btn-wide btn-primary">
+                        Cari</button>
+                    </form>
                     </div>
                 </div>
-                <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                </div>
+                <div class="btn-actions-pane-right text-capitalize actions-icon-btn col-md-2">
                     <a href="<?php echo base_url('prestasi/tambahview'); ?>" class="btn btn-shadow btn-wide btn-primary">
                         <span class="btn-icon-wrapper pr-2 opacity-7">
                             <i class="fa fa-plus fa-w-20"></i>

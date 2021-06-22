@@ -177,6 +177,28 @@ class M_prestasi extends CI_Model{
 		}
 	}
 
+	function folter ($prestasi)
+	{
+		 $this->db->select('*')
+		->from ('prestasi')
+		->like('jenis_prestasi',$prestasi);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function tampil_jenis($idsekolahx)
+	{
+		$this->db->select('jenis_prestasi, COUNT(jenis_prestasi) as total');
+		$this->db->group_by('jenis_prestasi');
+		$this->db->order_by('total', 'dsc');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('prestasi');
+		$query = $this->db->get();
+
+		return $query->result();
+	}
+
 	function hapus()
 	{
 		$id = $this->input->post('id');
@@ -184,10 +206,14 @@ class M_prestasi extends CI_Model{
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
-	function cari()
+	function cari ($prestasi)
 	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_prestasi', $cari)->get('prestasi')->result();
+		$this->db->select('*')
+		->from ('prestasi')
+		->like('tingkat_prestasi',$prestasi);
+	
+		$query = $this->db->get();
+		return $query->result();
 	}
 
 	function ambilidsekolah($id)
