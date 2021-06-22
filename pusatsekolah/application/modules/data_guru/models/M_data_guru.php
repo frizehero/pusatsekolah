@@ -89,6 +89,10 @@ class M_data_guru extends CI_Model
 	
 	function tampil_mapel($idsekolahx)
 	{
+		
+		 $this->db->select('mapel_guru, COUNT(mapel_guru) as total');
+		 $this->db->group_by('mapel_guru'); 
+		 $this->db->order_by('total', 'desc'); 
 		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_guru');
 		$query = $this->db->get();
