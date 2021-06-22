@@ -17,8 +17,9 @@
                     <div class="position-relative form-group ">
                         <form method="post" action="<?php echo site_url('data_guru/filter') ?>">
                         <select name="mapel" class="btn btn-shadow btn-wide btn-primary" >
+                                <option>- Mata Pelajaran -</option>
                             <?php
-                            foreach ($tampilkan as $mapel) {?>
+                            foreach ($tampil_mapel as $mapel) {?>
                                 <option value="<?php echo $mapel->mapel_guru?>"><?php echo $mapel->mapel_guru?></option>
                             <?php }?>
                         </select>

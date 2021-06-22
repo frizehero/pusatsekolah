@@ -124,14 +124,18 @@ class Data_guru extends MX_Controller
 
 	function filter()
 	{
+
+        $iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_guru->ambilidsekolah($iduser);
+		
 		// get search string
-		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
-		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
+		$filter = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
+		$filter = ($this->uri->segment(3)) ? $this->uri->segment(3) : $filter;
 
 		// pagination settings
 		$config = array();
-		$config['base_url'] = site_url("data_guru/search/$search");
-		$config['total_rows'] = $this->M_data_guru->get_guru_count($search);
+		$config['base_url'] = site_url("data_guru/filter");
+		$config['total_rows'] = $this->M_data_guru->get_guru_count($filter);
 		$config['per_page'] = "6";
 		$config["uri_segment"] = 4;
 		$choice = $config["total_rows"]/$config["per_page"];
@@ -159,12 +163,14 @@ class Data_guru extends MX_Controller
 
         $data['page'] = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
-		$filter = $this->input->post('mapel');
+		$data_guru = $this->input->post('mapel');
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampilkan'		=> $this->M_data_guru->filter($filter),
-			'tampil'	=> $this->M_data_guru->tampil_mapel($idsekolahx),
+			'tampilkan'		=> $this->M_data_guru->filter($data_guru),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx['id_sekolah']),
 			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);

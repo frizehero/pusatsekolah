@@ -71,6 +71,7 @@ class M_data_guru extends CI_Model
 
 	function filter ($data_guru)
 	{
+
 		 $this->db->select('*')
 		->from ('data_guru')
 		->like('mapel_guru',$data_guru);
