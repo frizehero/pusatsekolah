@@ -22,7 +22,6 @@ class Template extends MX_Controller {
 	public function tampilCore($data)
 	{
 		$id = $this->session->userdata('session_id');
-		//$user = $this->m_template->oke($id);
 		if (empty($this->session->userdata('session_id'))) 
 		{
 			redirect('login');
