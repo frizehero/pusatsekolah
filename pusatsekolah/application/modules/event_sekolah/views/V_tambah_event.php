@@ -8,52 +8,27 @@
                     <div class="input-group">
                         <div class="input-group-prepend"></div>
                         <input type="text" id="judul_event" name="judul_event" placeholder="" class="form-control">
-                    </div>
+                    </div>m
                     <br>
                     <div class="card-title">DESKRIPSI EVENT</div>
                 	<textarea id="ckeditor" name="text_event" type="text" style="height: 800px;"></textarea>
                 	<br>
                     <div class="card-title">DOKUMENTASI EVENT
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-12">
                                 <div class="card mb-3 widget-content bg-primary">
                                     <div class="widget-content-wrapper text-white">
                                         <div class="widget-content-wrapper text-black">
                                             <div class="widget-content-left">
                                                 <div class="widget-heading">UPLOAD FOTO SEKOLAH</div>
                                                 <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                <input name="foto1" type="file" class="form-control-file">
+                                                <input name="foto" type="file" class="form-control-file">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="card mb-3 widget-content bg-primary">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-wrapper text-black">
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">UPLOAD FOTO SEKOLAH</div>
-                                                <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                <input name="foto2" type="file" class="form-control-file">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card mb-3 widget-content bg-primary">
-                                    <div class="widget-content-wrapper text-white">
-                                        <div class="widget-content-wrapper text-black">
-                                            <div class="widget-content-left">
-                                                <div class="widget-heading">UPLOAD FOTO SEKOLAH</div>
-                                                <div class="widget-subheading">File upload maximal 2 Mb</div>
-                                                <input name="foto3" type="file" class="form-control-file">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <br>

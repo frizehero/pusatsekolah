@@ -75,6 +75,7 @@ class M_event extends CI_Model {
 		$text_event 		= $this->input->post('text_event');
 		$id 				= $this->input->post('id');
 
+
 		$this->load->library('upload');
 		$nmfile = "file_".time();
 		$config['upload_path']		= 'assets/images/event/';
@@ -86,53 +87,22 @@ class M_event extends CI_Model {
 		
 		$this->upload->initialize($config);
 		
-		if($_FILES['foto1'] ['name'])
+		if($_FILES['foto'] ['name'])
         {
-            if ($this->upload->do_upload('foto1'))
+            if ($this->upload->do_upload('foto'))
             {
 				$gbr = $this->upload->data();
 				$data = array(
 					'judul_event'		=> $judul_event,
 					'text_event'		=> $text_event,
 					'id_sekolah'		=> $id,
-					'dokumentasi_event1'	=> $gbr['file_name'],
+					'dokumentasi_event'=> $gbr['file_name'],
 				);
-				$this->db->where('id_event',$id)->update('event_sekolah', $data);
+				$this->db->insert('event_sekolah', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}	
 		}
-		elseif($_FILES['foto2']['name'])
-        {
-            if ($this->upload->do_upload('foto2'))
-            {
-				$gbr = $this->upload->data();
-				$data = array(
-					'judul_event'		=> $judul_event,
-					'text_event'		=> $text_event,
-					'id_sekolah'		=> $id,
-					'dokumentasi_event2'	=> $gbr['file_name'],
-				);
-				$this->db->where('id_event',$id)->update('event_sekolah', $data);
-				$this->session->set_flashdata('msg', 'suksestambah');
-			
-			}	 
-		}
-		elseif($_FILES['foto3']['name'])
-        {
-            if ($this->upload->do_upload('foto3'))
-            {
-				$gbr = $this->upload->data();
-				$data = array(
-					'judul_event'		=> $judul_event,
-					'text_event'		=> $text_event,
-					'id_sekolah'		=> $id,
-					'dokumentasi_event3'	=> $gbr['file_name'],
-				);
-				$this->db->where('id_event',$id)->update('event_sekolah', $data);
-				$this->session->set_flashdata('msg', 'suksestambah');
-			
-			}
-		}
+		
 
 		else{
 				$data = array(
@@ -141,7 +111,7 @@ class M_event extends CI_Model {
 						'id_sekolah'	=> $id,
 
 					);
-					$this->db->where('id_event',$id)->update('event_sekolah', $data);
+					$this->db->insert('event_sekolah', $data);
 					$this->session->set_flashdata('msg', 'suksestambah');
 			}
 	}
@@ -158,6 +128,8 @@ class M_event extends CI_Model {
 		$idnya = decrypt_url($id);
 		$this->db->where('id_event', $idnya);
 		return $this->db->get('event_sekolah')->row_array();
+
+
 	}
 
 	function edit()
@@ -165,7 +137,7 @@ class M_event extends CI_Model {
 		$id 			= $this->input->post('id');
 		$judul_event 	= $this->input->post('judul_event');
 		$text_event 	= $this->input->post('text_event');
-		$dokumentasi_event 	= $this->input->post('dokumentasi_event');
+		
 
 
 				$data = array(
