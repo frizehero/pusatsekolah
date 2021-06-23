@@ -31,15 +31,18 @@ class Beranda_as extends MX_Controller
 		} else {
 			$iduser = $this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+<<<<<<< Updated upstream
 			$idpostingx = $this->M_beranda_as->ambilidpostingan($iduser);
 
+=======
+			
+>>>>>>> Stashed changes
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_beranda_as",
 				'tampil'			=> $this->M_beranda_as->tampil($idsekolahx['id_sekolah']),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
-				'idposting' 		=> $idpostingx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
