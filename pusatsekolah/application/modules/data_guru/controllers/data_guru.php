@@ -178,6 +178,9 @@ class Data_guru extends MX_Controller
 
 	function search()
 	{
+
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_guru->ambilidsekolah($iduser);
 		// get search string
 		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
 		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
@@ -217,6 +220,9 @@ class Data_guru extends MX_Controller
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
 			'tampilkan'		=> $this->M_data_guru->get_guru($config["per_page"], $data['page'],$search),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx['id_sekolah']),
 			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);
