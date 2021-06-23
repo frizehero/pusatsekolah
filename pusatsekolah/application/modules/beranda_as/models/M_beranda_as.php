@@ -84,17 +84,17 @@ class M_beranda_as extends CI_Model
     	return $query->row_array();
 	}
 
-	function ambilidpostingan($id)
+	function ambilkomentar($id)
 	{
 
 		$this->db->select('*');
-		$this->db->from('beranda_as');
-		$this->db->where('id_beranda_as', $id);
+		$this->db->from('komentar');
+		$this->db->where('id_postingan', $id);
 		$query = $this->db->get();
 
 
 
-		return $query->row_array();
+		return $query->result();
 	}
 
 	function tampilkompetensi($id)

@@ -212,39 +212,50 @@
                             </form>
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                    
+                                    <?php if ($komentarnya==null){?>
+
+                                    <?php }else{ ?>
+                                    <?php $no=1; foreach ($komentarnya AS $rowK ) { ?>
+                                    <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
+                                    
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-success badge-dot badge-dot-lg"></div>
+                                                    <div class="avatar-icon">
+                                                        <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
+                                                    </div>
                                                 </div>
-                                                <div class="avatar-icon">
-                                                <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
+                                            </div>
+
+
+                                            <div class="widget-content-left">
+                                                <a href="<?php echo base_url('beranda_as'); ?> ">test</a>
+                                                <div><?php echo $rowK->isi_komentar;?></div>
+                                                <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
+                                                <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
+                                                <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
+                                            </div>
+
+                                            <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
+                                                <div class="btn-group dropdown">
+                                                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
+                                                        <i class="fa fa-fw"></i>
+                                                    </button>
+                                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
+                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                            <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
+                                                        </button>
+                                                        <button type="button" tabindex="0" class="dropdown-item">
+                                                            <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="widget-content-left">
-                                            <a href="<?php echo base_url('beranda_as'); ?> "><?php echo $rowP->nama_sekolah;?></a>
-                                            <div><?php echo $rowP->kpos_sekolah	;?></div>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
-                                            <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
-                                            <span class="text-muted d-inline-flex align-items-center align-middle">2 Hari yang lalu</span>
-                                        </div>
-                                        <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
-                                            <div class="btn-group dropdown">
-                                                <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-icon btn-icon-only btn btn-link">
-                                                    <i class="fa fa-fw"></i>
-                                                </button>
-                                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
-                                                    </button>
-                                                    <button type="button" tabindex="0" class="dropdown-item">
-                                                        <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <?php }?>
+                                    <?php $no++;} ?>
                                 </div>
                             </div>
                         </div>
