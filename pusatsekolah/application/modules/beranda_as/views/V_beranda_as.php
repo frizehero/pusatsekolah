@@ -212,13 +212,14 @@
                             </form>
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <div class="widget-content card-body">
+                                    <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
                                     
                                     <?php if ($komentarnya==null){?>
 
                                     <?php }else{ ?>
                                     <?php $no=1; foreach ($komentarnya AS $rowK ) { ?>
-                                    <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
                                     
+                                        
                                         <div class="widget-content-wrapper">
                                             <div class="widget-content-left mr-3">
                                                 <div class="avatar-icon-wrapper">
@@ -231,7 +232,7 @@
 
 
                                             <div class="widget-content-left">
-                                                <a href="<?php echo base_url('beranda_as'); ?> ">test</a>
+                                                <a href="<?php echo base_url('beranda_as'); ?> "><?php echo $rowP->nama_sekolah;?></a>
                                                 <div><?php echo $rowK->isi_komentar;?></div>
                                                 <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
                                                 <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
@@ -254,8 +255,11 @@
                                                 </div>
                                             </div>
                                         </div>
+
                                         <?php }?>
+
                                     <?php $no++;} ?>
+
                                 </div>
                             </div>
                         </div>

@@ -31,6 +31,7 @@ class Beranda_as extends MX_Controller
 		} else {
 			$iduser = $this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_beranda_as",
