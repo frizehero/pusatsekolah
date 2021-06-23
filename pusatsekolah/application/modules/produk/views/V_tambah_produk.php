@@ -15,6 +15,15 @@
                         <input name="nama" id="exampleEmail" placeholder=". . . . ." type="text" class="form-control">
                     </div>
                     <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Kategori Produk</label>
+                            <select name="kategori_produk" id="exampleSelect" class="form-control">
+                                <option>Makanan</option>
+                                <option>Minuman</option>
+                                <option>Kerajinan</option>
+                                <option>Dan Lain - Lain</option>
+                            </select>
+                    </div>
+                    <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Deskripsi Produk</label>
                         <input name="deskripsi" id="exampleEmail" placeholder=". . . ." type="text" class="form-control">
                     </div>
