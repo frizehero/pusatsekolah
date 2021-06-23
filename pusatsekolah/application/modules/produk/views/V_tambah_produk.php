@@ -20,7 +20,7 @@
                                 <option>Makanan</option>
                                 <option>Minuman</option>
                                 <option>Kerajinan</option>
-                                <option>Dan Lain - Lain</option>
+                                <option>Lainnya</option>
                             </select>
                     </div>
                     <div class="position-relative form-group">
