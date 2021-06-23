@@ -12,8 +12,6 @@ class Template extends MX_Controller {
 		$this->load->model('login/m_session');
 	}
 
-	
-
 	// view core templating
 	public function index()
 	{
@@ -24,15 +22,16 @@ class Template extends MX_Controller {
 	public function tampilCore($data)
 	{
 		$id = $this->session->userdata('session_id');
-		/*$data = array(
-			'nama_userx' 	=> $this->M_template->tampil_user($id),
-			
-		);*/
+		if (empty($this->session->userdata('session_id'))) 
+		{
+			redirect('login');
+		}
+
+		$data['nama'] = $this->M_template->oke($id);
 		
 		$this->load->view('view_template_core',$data);
 	}
 
-	// view core templating
 	public function index_ps()
 	{
 		

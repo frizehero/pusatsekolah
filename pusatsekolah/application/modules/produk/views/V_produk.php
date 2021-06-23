@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="d-flex flex-wrap justify-content-between">
-                        <div class="col-12 col-md-9 p-0 mb-3">
+                        <div class="col-12 col-md-6 p-0 mb-3">
                             <div class="search-wrapper active">
                                 <div class="input-holder" style="background-color: #fff;">
                                 <?php echo form_open('produk/search/') ?>
@@ -16,48 +16,18 @@
                         </div>
                         <div class="btn-actions-pane-right text-capitalize actions-icon-btn">
                             <div class="mb-2 mr-2 btn-group">
-                                <button type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dropdown-toggle btn btn-primary">Filter
-                                </button>
-                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
-                                    <h6 tabindex="-1" class="dropdown-header">Filter</h6>
-                                    <div class="nav-item-divider nav-item"></div>
-                                    <div class="form-check">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"> Semua
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="nav-item-divider nav-item"></div>
-                                    <div class="form-check">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"> Makanan
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"> Minuman
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"> Kain
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input"> Lain - lain
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
+                                <form method="post" action="<?php echo site_url('produk/folter') ?>">
+                                    <select name="produk" class="btn btn-shadow btn-wide btn-primary" >
+                                            <option>produk</option>
+                                        <?php
+                                        foreach ($tampil_produk as $produk) {?>
+                                            
+                                            <option value="<?php echo $produk->kategori_produk?>"><?php echo $produk->kategori_produk?></option>
+                                        <?php }?>
+                                    </select>
+                                    <button type="submit" class="btn btn-shadow btn-wide btn-primary">
+                                    Cari</button>
+                                </form> 
                             </div>
                         </div>
                         <div class="btn-actions-pane-right text-capitalize actions-icon-btn">

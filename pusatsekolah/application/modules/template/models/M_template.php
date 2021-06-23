@@ -5,8 +5,8 @@ class M_template extends CI_Model {
 	public function __construct(){
 
 		parent::__construct();
-
 	}
+
 	public function tampil_pengguna_kesiswaan($username){
 
 		$query = "SELECT username FROM tb_login where username='$username' AND status='1'";
@@ -19,6 +19,15 @@ class M_template extends CI_Model {
 		}
 
 		return $nama;
+	}
+
+	function oke($id)
+	{
+		$this->db->select('*')
+		->from('tb_login')
+		->where('id_admin',$id);
+		$query = $this->db->get();
+		return $query->row_array();
 	}
 
 	/*public function tampil_user($nama){

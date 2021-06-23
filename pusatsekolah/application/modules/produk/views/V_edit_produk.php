@@ -15,6 +15,14 @@
                         <input name="nama" value="<?php echo $tampil['nama_produk']?>" type="text" class="form-control">
                     </div>
                     <div class="position-relative form-group">
+                        <label for="exampleEmail" class="">Kategori Produk</label>
+                            <select name="kategori_prduk" value="<?php echo $tampil['kategori_produk']?>" class="form-control">
+                                <option <?php if('Makanan' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="Makanan">Makanan</option>
+                                <option <?php if('Minuman' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="Minuman">Minuman</option>
+                                <option <?php if('kerajinan' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="kerajinan">kerajinan</option>
+                                <option <?php if('Dan Lain - Lain' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="Dan Lain - Lain">Dan Lain - Lain</option>
+                            </select>
+                    <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Deskripsi Produk</label>
                         <input name="deskripsi" value="<?php echo $tampil['deskripsi_produk']?>" type="text" class="form-control">
                     </div>

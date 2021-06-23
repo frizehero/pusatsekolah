@@ -71,6 +71,7 @@ class M_produk extends CI_Model {
 	function tambah()
 	{
 		$nama 			= $this->input->post('nama');
+		$kategori_produk		= $this->input->post('kategori_produk');
 		$deskripsi 		= $this->input->post('deskripsi');
 		$harga			= $this->input->post('harga');
 		$id 			= $this->input->post('id');
@@ -94,6 +95,7 @@ class M_produk extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_produk'		=> $nama,
+					'kategori_produk'		=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 					'id_sekolah'		=> $id,
@@ -109,6 +111,7 @@ class M_produk extends CI_Model {
 		else{
 				$data = array(
 					'nama_produk'		=> $nama,
+					'kategori_produk'		=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 					'id_sekolah'		=> $id,
@@ -131,6 +134,7 @@ class M_produk extends CI_Model {
 	{
 		$id 			= $this->input->post('id');
 		$nama 			= $this->input->post('nama');
+		$kategori_produk		= $this->input->post('kategori_produk');
 		$deskripsi 		= $this->input->post('deskripsi');
 		$harga			= $this->input->post('harga');
 
@@ -153,6 +157,7 @@ class M_produk extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_produk'		=> $nama,
+					'kategori_produk'		=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 					'foto_produk' 		=> $gbr['file_name'],
@@ -165,6 +170,7 @@ class M_produk extends CI_Model {
 		else{
 				$data = array(
 					'nama_produk'		=> $nama,
+					'kategori_produk'		=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 				);
@@ -173,6 +179,28 @@ class M_produk extends CI_Model {
 			}
 
 			return "kosong.jpeg";
+	}
+
+	function folter ($produk)
+	{
+		 $this->db->select('*')
+		->from ('produk')
+		->like('kategori_produk',$produk);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function tampil_produk($idsekolahx)
+	{
+		$this->db->select('kategori_produk, COUNT(kategori_produk) as total');
+		$this->db->group_by('kategori_produk');
+		$this->db->order_by('total', 'dsc');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('produk');
+		$query = $this->db->get();
+
+		return $query->result();
 	}
 
 	function hapus()
