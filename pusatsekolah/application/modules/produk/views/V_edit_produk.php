@@ -22,6 +22,7 @@
                                 <option <?php if('kerajinan' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="kerajinan">kerajinan</option>
                                 <option <?php if('Dan Lain - Lain' == $tampil['kategori_produk'] ){ echo 'selected="selected"'; } ?> value="Dan Lain - Lain">Dan Lain - Lain</option>
                             </select>
+                    </div>
                     <div class="position-relative form-group">
                         <label for="exampleEmail" class="">Deskripsi Produk</label>
                         <input name="deskripsi" value="<?php echo $tampil['deskripsi_produk']?>" type="text" class="form-control">

@@ -178,6 +178,9 @@ class Prestasi extends MX_Controller
 
 	function search()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
+
 		// get search string
 		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
 		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
@@ -218,6 +221,9 @@ class Prestasi extends MX_Controller
 			'namamodule' 	=> "prestasi",
 			'namafileview' 	=> "V_prestasi",
 			'tampilkan'		=> $this->M_prestasi->get_prestasi($config["per_page"], $data['page'],$search),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_jenis'	=> $this->M_prestasi->tampil_jenis($idsekolahx['id_sekolah']),
 			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);
