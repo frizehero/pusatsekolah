@@ -23,7 +23,7 @@
                                      <img width="82" src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
                                  </div>
                              </div>
-                             <h4 class="mb-0 text-nowrap"><?php echo $tampil['nama_penerima'] ?>
+                             <h4 class="mb-0 text-nowrap"><?php echo $nama_penerima; ?>
                                  <div class="opacity-7">Terakhir Online:
                                      <span class="opacity-8">10 menit yang lalu.</span>
                                  </div>
@@ -78,31 +78,26 @@
                                 </small>XXX
                             </div> -->
                          </div>
-                         <?php tampilnotif() ?>
-                         <?php $no = 1;
-                            foreach ($tampil as $rowP) { ?>
-                             <div class="float-right">
-                                 <div class="chat-box-wrapper chat-box-wrapper-right">
-                                     <div>
-                                         <div class="chat-box"><?php echo $tampil['pesan'] ?></div>
-                                         <small class="opacity-6">
-                                             <i class="fa fa-calendar-alt mr-1"></i>
-                                             11:01 AM | Kemarin
-                                         </small>
-                                     </div>
-                                     <div>
-                                         <div class="avatar-icon-wrapper ml-1">
-                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
-                                             </div>
-                                             <div class="avatar-icon avatar-icon-lg rounded">
-                                                 <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
-                                             </div>
+                         <div class="float-right">
+                             <div class="chat-box-wrapper chat-box-wrapper-right">
+                                 <div>
+                                     <div class="chat-box"><?php echo $tampil['pesan'] ?></div>
+                                     <small class="opacity-6">
+                                         <i class="fa fa-calendar-alt mr-1"></i>
+                                         11:01 AM | Kemarin
+                                     </small>
+                                 </div>
+                                 <div>
+                                     <div class="avatar-icon-wrapper ml-1">
+                                         <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
+                                         </div>
+                                         <div class="avatar-icon avatar-icon-lg rounded">
+                                             <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
                                          </div>
                                      </div>
                                  </div>
                              </div>
-                         <?php $no++;
-                            } ?>
+                         </div>
                      </div>
                      <form action="<?php echo base_url('tb_pesan/tambah') ?>" method="POST" enctype="multipart/form-data">
                          <div class="app-inner-layout__bottom-pane d-block text-center">
@@ -110,7 +105,7 @@
                                  <div class="col-sm-10">
                                      <input name="id_user" id="id_user" type="hidden" value="<?php echo $idnya; ?>" class="form-control">
                                      <input name="id_penerima" id="id_user" type="hidden" value="<?php echo $idpenerima; ?>" class="form-control">
-                                     <input name="nama_penerima" id="nama_penerima" type="text" value="<?php echo $nama_penerima; ?>" class="form-control">
+                                     <input name="nama_penerima" id="nama_penerima" type="hidden" value="<?php echo $nama_penerima; ?>" class="form-control">
                                      <input name="pesan" id="pesan" placeholder="Ketik pesan" type="text" class="form-control-lg form-control">
                                  </div>
                                  <div class="col-sm-2">
