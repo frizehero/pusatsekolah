@@ -193,27 +193,28 @@
                             </button>
                             <div data-parent="#exampleAccordion" id="tampilkanKomentar1" class="collapse show">
 
-                            <!--Tambah Komentar-->
 
-                            <form action="<?php echo base_url('produk/tambah') ?>" method="POST" enctype="multipart/form-data">
-                            <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
-                                <div class="widget-content card-body">
-                                    <div class="widget-content-wrapper">
-                                        <div class="widget-content-left mr-3">
-                                            <div class="avatar-icon-wrapper">
-                                                <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
-                                                </div>
-                                                <div class="avatar-icon">
-                                                    <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" alt="">
+                                <!--Tambah Komentar-->
+
+                                <form action="<?php echo base_url('beranda_as/tambahkomen') ?>" method="POST" enctype="multipart/form-data">
+                                <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="text" class="form-control">
+                                    <div class="widget-content card-body">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="avatar-icon-wrapper">
+                                                    <div class="badge badge-bottom badge-success badge-dot badge-dot-lg">
+                                                    </div>
+                                                    <div class="avatar-icon">
+                                                        <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card-body p-0">
-                                            <input name="komens" placeholder="Tulis komentar..." type="text" class="form-control">
+                                            <div class="card-body p-0">
+                                                <input name="koment" placeholder="Tulis komentar..." type="text" class="form-control">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
 
 
                                 <div tabindex="-1" class="dropdown-divider"></div>
@@ -223,7 +224,7 @@
                                     <?php if ($komentarnya==null){?>
 
                                     <?php }else{ ?>
-                                    <?php $no=1; foreach ($komentarnya AS $rowK ) { ?>
+                                    <?php $noK=1; foreach ($komentarnya AS $rowK ) { ?>
                                                                         
                                         <div class="widget-content-wrapper">
                                             <div class="widget-content-left mr-3">
@@ -250,21 +251,53 @@
                                                         <i class="fa fa-fw"></i>
                                                     </button>
                                                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                        <button type="button" tabindex="0" class="dropdown-item">
-                                                            <i class="pe-7s-trash"></i>&nbsp;<span>Hapus Postingan</span>
+                                                        <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $noK ?>">
+                                                            <i class="pe-7s-trash"></i>&nbsp;<span>Hapus komentar</span>
                                                         </button>
                                                         <button type="button" tabindex="0" class="dropdown-item">
                                                             <i class="fa fa-fw"></i>&nbsp;<span>Report Komentar</span>
                                                         </button>
                                                     </div>
+
+
+                                                    <!-- Modal HAPUS -->
+                                                    <div class="modal fade" id="hapus<?php echo $noK ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel">Menghapus Komentar</h5>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+
+                                                            <form action="<?php echo base_url('beranda_as/hapuskomen') ?>" method="POST" enctype="multipart/form-data">
+                                                            <div class="modal-body">
+                                                                <!--Modal body-->
+                                                                    <p class="text-semibold text-main"></p>
+                                                                    <p>Anda Yakin Ingin Menghapus Komentar Ini? </p>
+
+                                                                    <input name="id"  type="text" value="<?php echo $rowK->id_komentar ?>" class="form-control">
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
+                                                                <button class="btn btn-primary" type="submit" >Hapus</button>
+                                                            </div>
+                                                            </form>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div tabindex="-1" class="dropdown-divider"></div>
 
-                                        <?php }?>
+                                        <?php $noK++;}?>
 
-                                    <?php $no++;} ?>
+                                    <?php } ?>
 
                                 </div>
                             </div>
