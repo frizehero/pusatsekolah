@@ -89,7 +89,22 @@ class M_beranda_as extends CI_Model
 
 		$this->db->select('*');
 		$this->db->from('komentar');
+		$this->db->join('tb_login', 'komentar.id_user = tb_login.id_admin','left');
+		$this->db->join('p_sekolah', 'tb_login.id_sekolah = p_sekolah.id_p_sekolah','left');
 		$this->db->where('id_postingan', $id);
+		$query = $this->db->get();
+
+
+
+		return $query->result();
+	}
+
+	function ambiluser($id)
+	{
+
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin', $id);
 		$query = $this->db->get();
 
 

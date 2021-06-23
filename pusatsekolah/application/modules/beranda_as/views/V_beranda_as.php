@@ -192,7 +192,11 @@
                             <button type="button" aria-expanded="true" aria-controls="exampleAccordion1" data-toggle="collapse" href="#tampilkanKomentar1" class="m-0 p-0 btn btn-link">Tampilkan Komentar
                             </button>
                             <div data-parent="#exampleAccordion" id="tampilkanKomentar1" class="collapse show">
-                            <form action="<?php echo base_url('beranda_as/tambahkoms') ?>" method="POST" enctype="multipart/form-data">
+
+                            <!--Tambah Komentar-->
+
+                            <form action="<?php echo base_url('produk/tambah') ?>" method="POST" enctype="multipart/form-data">
+                            <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
                                 <div class="widget-content card-body">
                                     <div class="widget-content-wrapper">
                                         <div class="widget-content-left mr-3">
@@ -210,6 +214,8 @@
                                     </div>
                                 </div>
                             </form>
+
+
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <div class="widget-content card-body">
                                     <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
@@ -218,21 +224,20 @@
 
                                     <?php }else{ ?>
                                     <?php $no=1; foreach ($komentarnya AS $rowK ) { ?>
-                                    
-                                        
+                                                                        
                                         <div class="widget-content-wrapper">
                                             <div class="widget-content-left mr-3">
                                                 <div class="avatar-icon-wrapper">
                                                     <div class="badge badge-bottom badge-success badge-dot badge-dot-lg"></div>
                                                     <div class="avatar-icon">
-                                                        <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>" style="border: none;">
+                                                        <img class="avatar-icon d-block ui-w-40" src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowK->foto_profil;?>" style="border: none;">
                                                     </div>
                                                 </div>
                                             </div>
 
 
                                             <div class="widget-content-left">
-                                                <a href="<?php echo base_url('beranda_as'); ?> "><?php echo $rowP->nama_sekolah;?></a>
+                                                <a href="<?php echo base_url('beranda_as'); ?> "><?php echo $rowK->nama_sekolah;?></a>
                                                 <div><?php echo $rowK->isi_komentar;?></div>
                                                 <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Suka</a>
                                                 <a href="javascript:void(0)" class="text-muted d-inline-flex align-items-center align-middle">Balas</a>
@@ -255,6 +260,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div tabindex="-1" class="dropdown-divider"></div>
 
                                         <?php }?>
 
