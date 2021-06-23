@@ -29,13 +29,20 @@ class M_pesan extends CI_Model
 		// $query = $this->db->get('tb_pesan');
 
 		//$this->db->distinct('id_penerima');
-		$this->db->select('DISTINCT(id_penerima),id_pesan,id_user,pesan,waktu,id_penerima,nama_penerima, tb_login.nama AS nama_p');
+		$this->db->select('DISTINCT(id_penerima),id_pesan,id_user,pesan,waktu,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
 		$this->db->from('tb_pesan');
-		$this->db->join('tb_login', 'tb_pesan.id_user = tb_login.id_admin');
+		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
 		$this->db->order_by('id_pesan', "desc")->limit(1);
 		$query = $this->db->get();
 
 		return $query->result();
+	}
+
+	function tampilnamapenerima($id)
+	{
+		$nama_penerima = decrypt_url($id);
+		$this->db->where('nama_penerima', $nama_penerima);
+		return $this->db->get('tb_pesan')->row_array();
 	}
 
 
@@ -53,16 +60,6 @@ class M_pesan extends CI_Model
 		$idnya = decrypt_url($id);
 		$this->db->where('id_penerima', $idnya);
 
-		//$this->load->database();
-		//$last = $this->db->order_by('id_pesan', "desc")
-		//	->limit(1)
-		//	->get('tb_pesanss')
-		//	->row();
-		//print_r($last);
-
-		//$query = $this->db->get('my_table', 2);
-		//return $this->db->last_query(); // Return Last Query
-
 		return $this->db->get('tb_pesan')->row_array();
 	}
 
@@ -72,14 +69,6 @@ class M_pesan extends CI_Model
 		$this->db->where('id_penerima', $idpenerima);
 		return $this->db->get('tb_pesan')->row_array();
 	}
-
-	function tampilnamapenerima($id)
-	{
-		$nama_penerima = decrypt_url($id);
-		$this->db->where('nama_penerima', $nama_penerima);
-		return $this->db->get('tb_pesan')->row_array();
-	}
-
 
 	function tambahdetail()
 	{

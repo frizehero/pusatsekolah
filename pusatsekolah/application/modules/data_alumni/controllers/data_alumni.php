@@ -163,6 +163,9 @@ class Data_alumni extends MX_Controller {
 
 	function search()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+
 		// get search string
 		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
 		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
@@ -204,6 +207,9 @@ class Data_alumni extends MX_Controller {
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
 			'tampilkan'		=> $this->M_data_alumni->get_alumni($config["per_page"], $data['page'],$search),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_tahun'	=> $this->M_data_alumni->tampil_tahun($idsekolahx['id_sekolah']),
 			'totalalumni'	=> $this->M_data_alumni->totalalumni(),
 			'totalperempuan'=> $this->M_data_alumni->totalperempuan(),
 			'totallaki'		=> $this->M_data_alumni->totallaki(),

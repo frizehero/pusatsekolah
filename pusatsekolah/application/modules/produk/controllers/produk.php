@@ -23,7 +23,7 @@ class Produk extends MX_Controller {
         $config = array();
         $config['base_url']         = site_url('produk/index'); //site url
         $config['total_rows']       = $this->M_produk->totaldata($idsekolahx['id_sekolah']);//total row
-        $config['per_page']         = 5;  //show record per halaman
+        $config['per_page']         = 6;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);
@@ -178,6 +178,9 @@ class Produk extends MX_Controller {
 
 	function search()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_produk->ambilidsekolah($iduser);
+
         // get search string
 		$search = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
 		$search = ($this->uri->segment(3)) ? $this->uri->segment(3) : $search;
@@ -217,6 +220,9 @@ class Produk extends MX_Controller {
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_produk",
 			'tampilkan'		=> $this->M_produk->get_produk($config["per_page"], $data['page'],$search),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_produk'	=> $this->M_produk->tampil_produk($idsekolahx['id_sekolah']),
 			'pagination'    => $this->pagination->create_links(),
 		);
 		echo Modules::run('template/tampilCore', $data);

@@ -210,7 +210,7 @@ class M_prestasi extends CI_Model{
 	{
 		$this->db->select('*')
 		->from ('prestasi')
-		->like('tingkat_prestasi',$prestasi);
+		->like('jenis_prestasi',$prestasi);
 	
 		$query = $this->db->get();
 		return $query->result();
