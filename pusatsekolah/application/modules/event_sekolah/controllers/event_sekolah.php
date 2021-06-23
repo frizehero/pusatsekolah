@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -13,6 +14,10 @@ class Event_sekolah extends MX_Controller
 		$this->load->library('pagination');
         $this->load->library('session');
 	}
+
+
+
+
 
 
 	// index
