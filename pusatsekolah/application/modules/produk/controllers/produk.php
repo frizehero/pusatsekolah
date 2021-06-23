@@ -23,7 +23,7 @@ class Produk extends MX_Controller {
         $config = array();
         $config['base_url']         = site_url('produk/index'); //site url
         $config['total_rows']       = $this->M_produk->totaldata($idsekolahx['id_sekolah']);//total row
-        $config['per_page']         = 5;  //show record per halaman
+        $config['per_page']         = 6;  //show record per halaman
         $config["uri_segment"]      = 3;  // uri parameter
         $choice = $config["total_rows"] / $config["per_page"];
         $config["num_links"]        = floor($choice);

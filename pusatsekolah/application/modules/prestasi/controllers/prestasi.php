@@ -184,12 +184,12 @@ class Prestasi extends MX_Controller
 
 		// pagination settings
 		$config = array();
-		$config['base_url'] = site_url("prestasi/search/$search");
-		$config['total_rows'] = $this->M_prestasi->get_prestasi_count($search);
-		$config['per_page'] = "2";
-		$config["uri_segment"] = 4;
-		$choice = $config["total_rows"]/$config["per_page"];
-		$config["num_links"] = floor($choice);
+		$config['base_url'] 	= site_url("prestasi/search/$search");
+		$config['total_rows'] 	= $this->M_prestasi->get_prestasi_count($search);
+		$config['per_page'] 	= "6";
+		$config["uri_segment"] 	= 4;
+		$choice 				= $config["total_rows"]/$config["per_page"];
+		$config["num_links"] 	= floor($choice);
 
         $config['first_link']       = 'First';
         $config['last_link']        = 'Last';
