@@ -55,23 +55,35 @@
                             </div>
                         </div>
                         <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                                <h5 class="card-title">Jumlah Siswa dan Alumni</h5>
-                                                <canvas id="chart-area" width="450" height="225" class="chartjs-render-monitor" style="display: block; width: 450px; height: 225px;"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="main-card mb-3 card">
-                                            <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                                                <h5 class="card-title">Jumlah Guru dan Staff</h5>
-                                                <canvas id="doughnut-chart" width="450" height="225" class="chartjs-render-monitor" style="display: block; width: 450px; height: 225px;"></canvas>
-                                            </div>
-                                        </div>
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jumlah Siswa dan Alumni</h5>
+                                        <canvas id="myChart"></canvas>
+                                            <?php
+                                            //Inisialisasi nilai variabel awal
+                                            $nama_mapel= "";
+                                            $jumlah=null;
+                                            foreach ($hasil as $item)
+                                            {
+                                                $gur=$item->mapel_guru;
+                                                $nama_mapel .= "'$gur'". ", ";
+                                                $jum=$item->total;
+                                                $jumlah .= "$jum". ", ";
+                                            }
+                                            ?>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-body"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <h5 class="card-title">Jumlah Guru dan Staff</h5>
+                                        <canvas id="doughnut-chart" width="450" height="225" class="chartjs-render-monitor" style="display: block; width: 450px; height: 225px;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="mb-3 card">
                             <div class="no-gutters row">
                                 <div class="col-sm-6 col-md-4 col-xl-4">
@@ -314,3 +326,31 @@
                         </div>
                     </div>
                 </div>
+<script src="<?php echo base_url()?>/assets/js/Chart.js"></script>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+        // The data for our dataset
+        data: {
+            labels: [<?php echo $nama_mapel; ?>],
+            datasets: [{
+                label:'Data Mapel Guru ',
+                backgroundColor: ['rgb(255, 99, 132)', 'rgba(56, 86, 255, 0.87)', 'rgb(60, 179, 113)','rgb(175, 238, 239)'],
+                borderColor: ['rgb(255, 99, 132)'],
+                data: [<?php echo $jumlah; ?>]
+            }]
+        },
+        // Configuration options go here
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+</script>

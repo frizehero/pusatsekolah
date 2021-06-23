@@ -13,6 +13,16 @@ class M_statistik_sekolah extends CI_Model
 		return $query->result();
 	}
 
+	function Jum_mapel_guru()
+    {
+        $this->db->group_by('mapel_guru');
+        $this->db->select('mapel_guru');
+        $this->db->select("count(*) as total");
+        return $this->db->from('data_guru')
+          ->get()
+          ->result();
+    }
+
 	function totalpengajar($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
