@@ -299,7 +299,7 @@
                                                                     <img width="42" class="rounded-circle" src="<?php echo base_url() ?>assets/images/avatars/1.jpg" alt="">
                                                                 </div>
                                                                 <div class="widget-content-left">
-                                                                    <div class="widget-heading">Dhinda Rek</div>
+                                                                    <div class="widget-heading"><?php echo $nama['nama'] ?></div>
                                                                     <div class="widget-subheading opacity-8">Admin Pusat Sekolah</div>
                                                                 </div>
                                                                 <div class="widget-content-right mr-2">
