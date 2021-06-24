@@ -6,6 +6,7 @@ class M_data_guru extends CI_Model
 
 	function tampil($idsekolahx)
 	{
+		$this->db->order_by('id_guru', 'DESC');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('data_guru');
 		return $query->result();
@@ -21,6 +22,7 @@ class M_data_guru extends CI_Model
 
 	function tampilkan($idsekolahx,$limit, $start)
 	{
+		$this->db->order_by('id_guru', 'DESC');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('data_guru', $limit, $start);
 		return $query->result();
@@ -99,7 +101,7 @@ class M_data_guru extends CI_Model
 		
 		 $this->db->select('mapel_guru, COUNT(mapel_guru) as total');
 		 $this->db->group_by('mapel_guru'); 
-		 $this->db->order_by('total', 'desc'); 
+		 $this->db->order_by('mapel_guru', 'DESC'); 
 		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_guru');
 		$query = $this->db->get();
