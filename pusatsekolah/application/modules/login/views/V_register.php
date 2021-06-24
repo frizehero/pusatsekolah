@@ -48,19 +48,14 @@
                                         <div class="modal-body text-center">
                                             <h6 class="mt-2">Atau login dengan</h6>
                                         </div></div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="position-relative form-group">
-                                                <input name="text" id="exampleFirstName" placeholder="Nama Depan" type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="position-relative form-group">
-                                                <input name="text" id="exampleLastName" placeholder="Nama Belakang" type="text" class="form-control">
+                                                <input name="text" id="exampleFirstName" placeholder="Nama Lengkap" type="text" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="position-relative form-group">
-                                                <input name="email" id="exampleEmail" placeholder="Email" type="email" class="form-control">
+                                                <input name="email" id="exampleEmail" placeholder="Username" type="text" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -85,7 +80,7 @@
                                 </div>
                                 <div class="modal-footer d-block text-center">
                                     <a href="login.html">
-                                    <button class="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-primary btn-sm">DAFTAR</button>
+                                    <button class="btn-wide btn-pill btn-shadow btn-hover-shine btn btn-primary btn-sm" type="submit" a href="<?php echo base_url('login' ) ?>">DAFTAR</button>
                                     </a>
                                 </div>
                             </div>

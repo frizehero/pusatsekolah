@@ -13,17 +13,16 @@
                 </div>
                 <form action="<?php echo base_url('event_sekolah/tampildetail') ?>" method="POST" enctype="multipart/form-data">
                     <div class="card-header"><?php echo $tampil['judul_event'] ?></div>
-                    <div class="card-body">
-                        <p>
-                            <?php echo $tampil['text_event'] ?>
-                        </p>
                         <div class="card-body">
-                            <div class="dropdown-menu-header">
-                                <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event'] ?>"  style="width: 600px; height: auto;" name="foto">
-
-                            </div>
+                            <p>
+                                <?php echo $tampil['text_event'] ?>
+                            </p>
+                        <div class="dropdown-menu-header">
+                                
+                        <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event'] ?>"  style="width: 900px; height: auto;" name="foto">
+                                
                         </div>
-                    </div>
+                        </div>
                     <div class="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pb-3">
                         <div class="row col-lg-12">
                             <div class="col-lg-4 col-xl-4 text-center">

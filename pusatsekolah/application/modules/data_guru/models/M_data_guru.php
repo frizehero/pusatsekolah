@@ -69,12 +69,13 @@ class M_data_guru extends CI_Model
 		return $query->num_rows();
 	}
 
-	function filter ($data_guru)
+	function filter ($data_guru, $idsekolahx)
 	{
 
-		 $this->db->select('*')
-		->from ('data_guru')
-		->like('mapel_guru',$data_guru);
+		$this->db->select('*');
+		$this->db->from('data_guru');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('mapel_guru',$data_guru);
 	
 		$query = $this->db->get();
 		return $query->result();

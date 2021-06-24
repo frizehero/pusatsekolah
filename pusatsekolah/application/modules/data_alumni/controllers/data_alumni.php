@@ -149,7 +149,7 @@ class Data_alumni extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
-			'tampilkan'		=> $this->M_data_alumni->folter($data_alumni),
+			'tampilkan'		=> $this->M_data_alumni->folter($data_alumni, $idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 			'tampil_tahun'	=> $this->M_data_alumni->tampil_tahun($idsekolahx['id_sekolah']),
@@ -174,7 +174,7 @@ class Data_alumni extends MX_Controller {
        $config = array();
 		$config['base_url'] = site_url("data_alumni/search/$search");
 		$config['total_rows'] = $this->M_data_alumni->get_alumni_count($search);
-		$config['per_page'] = "2";
+		$config['per_page'] = "6";
 		$config["uri_segment"] = 4;
 		$choice = $config["total_rows"]/$config["per_page"];
 		$config["num_links"] = floor($choice);
@@ -206,7 +206,7 @@ class Data_alumni extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
-			'tampilkan'		=> $this->M_data_alumni->get_alumni($config["per_page"], $data['page'],$search),
+			'tampilkan'		=> $this->M_data_alumni->get_alumni($config["per_page"], $data['page'],$search, $idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 			'tampil_tahun'	=> $this->M_data_alumni->tampil_tahun($idsekolahx['id_sekolah']),

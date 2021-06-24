@@ -20,10 +20,14 @@
                             </select>
                 </div>
                 <div class="form-group">
-                    <label for="tingkat_prestasi">Tingkat Prestasi</label>
-                    <div>
-                        <input name="tingkat_prestasi" value="<?php echo $tampil['tingkat_prestasi'] ?>" type="text" class="form-control">
-                    </div>
+                    <label for="exampleEmail" class="">Tingkat Prestasi</label>
+                            <select name="tingkat_prestasi" <?php echo $tampil['tingkat_prestasi']?> class="form-control">
+                                <option <?php if('daerah' == $tampil['tingkat_prestasi'] ){ echo 'selected="selected"'; } ?> value="daerah">daerah</option>
+                                <option <?php if('kota' == $tampil['tingkat_prestasi'] ){ echo 'selected="selected"'; } ?> value="kota">kota</option>
+                                <option <?php if('provinsi' == $tampil['tingkat_prestasi'] ){ echo 'selected="selected"'; } ?> value="provinsi">provinsi</option>
+                                <option <?php if('nasional' == $tampil['tingkat_prestasi'] ){ echo 'selected="selected"'; } ?> value="nasional">nasional</option>
+                                <option <?php if('internasional' == $tampil['tingkat_prestasi'] ){ echo 'selected="selected"'; } ?> value="internasional">internasional</option>
+                            </select>
                 </div>
                 <div class="form-group">
                     <label for="juara_prestasi">Juara Prestasi</label>

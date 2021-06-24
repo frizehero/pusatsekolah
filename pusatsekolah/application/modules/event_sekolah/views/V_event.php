@@ -51,7 +51,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col cap" style="margin-left: 20px; font-size: 18px;">
                                             <a href="<?php echo base_url('event_sekolah/detailview/' . encrypt_url($rowP->id_event)); ?>" class="text-big"><?php echo $rowP->judul_event; ?></a>
-                                            <span class="badge badge-success align-text-bottom ml-1">Baru</span>
+                                            
                                             <div class="small mt-1 lower">Di upload 2 hari yang lalu</div>
                                         </div>
                                         <div class="d-none d-md-block col-4">
