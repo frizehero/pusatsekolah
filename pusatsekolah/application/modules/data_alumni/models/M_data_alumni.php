@@ -215,11 +215,12 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
-	function folter ($data_alumni)
+	function folter ($data_alumni, $idsekolahx)
 	{
-		 $this->db->select('*')
-		->from ('data_alumni')
-		->like('thlulus_alumni',$data_alumni);
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('thlulus_alumni',$data_alumni);
 	
 		$query = $this->db->get();
 		return $query->result();
@@ -232,16 +233,17 @@ class M_data_alumni extends CI_Model {
 		$this->db->order_by('total', 'dsc');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$this->db->from('data_alumni');
+		
 		$query = $this->db->get();
-
 		return $query->result();
 	}
 
-	function cari ($data_alumni)
+	function cari ($data_alumni, $idsekolahx)
 	{
-		$this->db->select('*')
-		->from ('data_alumni')
-		->like('nama_alumni',$data_alumni);
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('nama_alumni',$data_alumni);
 	
 		$query = $this->db->get();
 		return $query->result();
