@@ -85,7 +85,7 @@
                                  <div class="chat-box-wrapper chat-box-wrapper-right">
                                      <div>
                                          <div class="chat-box"><?php echo $rowP->pesan; ?>
-                                             <?php echo $idpenerima ?>
+                                             <!--<?php echo $idpenerima ?>-->
                                          </div>
                                          <small class="opacity-6">
                                              <i class="fa fa-calendar-alt mr-1"></i>
