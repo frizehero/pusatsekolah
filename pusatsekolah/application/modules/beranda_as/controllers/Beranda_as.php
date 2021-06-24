@@ -91,6 +91,12 @@ class Beranda_as extends MX_Controller
 		redirect('beranda_as');
 	}
 
+	function tambahkomen()
+	{
+		$this->M_beranda_as->tambahkomen();
+		redirect('beranda_as');
+	}
+
 	function edit()
 	{
 		$this->M_p_sekolah->edit();
@@ -100,6 +106,12 @@ class Beranda_as extends MX_Controller
 	function hapus()
 	{
 		$this->M_beranda_as->hapus();
+		redirect('beranda_as');
+	}
+
+	function hapuskomen()
+	{
+		$this->M_beranda_as->hapuskomen();
 		redirect('beranda_as');
 	}
 

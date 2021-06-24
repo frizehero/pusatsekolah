@@ -134,7 +134,7 @@ class M_produk extends CI_Model {
 	{
 		$id 			= $this->input->post('id');
 		$nama 			= $this->input->post('nama');
-		$kategori_produk		= $this->input->post('kategori_produk');
+		$kategori_produk= $this->input->post('kategori_produk');
 		$deskripsi 		= $this->input->post('deskripsi');
 		$harga			= $this->input->post('harga');
 
@@ -157,7 +157,7 @@ class M_produk extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_produk'		=> $nama,
-					'kategori_produk'		=> $kategori_produk,
+					'kategori_produk'	=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 					'foto_produk' 		=> $gbr['file_name'],
@@ -170,7 +170,7 @@ class M_produk extends CI_Model {
 		else{
 				$data = array(
 					'nama_produk'		=> $nama,
-					'kategori_produk'		=> $kategori_produk,
+					'kategori_produk'	=> $kategori_produk,
 					'deskripsi_produk'	=> $deskripsi,
 					'harga_produk'		=> $harga,
 				);

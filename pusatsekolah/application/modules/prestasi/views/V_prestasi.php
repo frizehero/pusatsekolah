@@ -17,7 +17,7 @@
                         <div class="position-relative form-group ">
                             <form method="post" action="<?php echo site_url('prestasi/folter') ?>">
                                 <select name="prestasi" class="btn btn-shadow btn-wide btn-primary" >
-                                         <option>Tingkat Prestasi</option>
+                                         <option>Jenis Prestasi</option>
                                     <?php
                                     foreach ($tampil_jenis as $prestasi) {?>
                                         

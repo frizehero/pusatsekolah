@@ -11,10 +11,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="jenis_prestasi">Jenis Prestasi</label>
-                    <div>
-                        <input name="jenis_prestasi" value="<?php echo $tampil['jenis_prestasi'] ?>" type="text" class="form-control">
-                    </div>
+                    <label for="exampleEmail" class="">Jenis Prestasi</label>
+                            <select name="jenis_prestasi" <?php echo $tampil['jenis_prestasi']?> class="form-control">
+                                <option <?php if('akademik' == $tampil['jenis_prestasi'] ){ echo 'selected="selected"'; } ?> value="akademik">Akademik</option>
+                                <option <?php if('seni' == $tampil['jenis_prestasi'] ){ echo 'selected="selected"'; } ?> value="seni">Seni</option>
+                                <option <?php if('olahraga' == $tampil['jenis_prestasi'] ){ echo 'selected="selected"'; } ?> value="olahraga">Olahraga</option>
+                                <option <?php if('Dan Lain - Lain' == $tampil['jenis_prestasi'] ){ echo 'selected="selected"'; } ?> value="Dan Lain - Lain">Dan Lain - Lain</option>
+                            </select>
                 </div>
                 <div class="form-group">
                     <label for="tingkat_prestasi">Tingkat Prestasi</label>

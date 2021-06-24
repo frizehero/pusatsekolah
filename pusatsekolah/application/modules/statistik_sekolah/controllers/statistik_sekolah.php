@@ -12,13 +12,13 @@ class Statistik_sekolah extends MX_Controller
 		$this->load->model('login/m_session');
 	}
 
-
 	// index
 	function index()
 	{
 
 		$iduser=$this->session->userdata('session_id');
 		$idsekolahx = $this->M_statistik_sekolah->ambilidsekolah($iduser);
+
 
 		$data = array(
 			'namamodule' 		=> "statistik_sekolah",
@@ -31,6 +31,7 @@ class Statistik_sekolah extends MX_Controller
 			'totalprestasi'		=> $this->M_statistik_sekolah->totalprestasi(),
 			'totalproduk'		=> $this->M_statistik_sekolah->totalproduk(),
 			'totalevent'		=> $this->M_statistik_sekolah->totalevent(),
+			'hasil'				=> $this->M_statistik_sekolah->Jum_mapel_guru(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

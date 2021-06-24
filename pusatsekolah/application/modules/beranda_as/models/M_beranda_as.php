@@ -51,6 +51,18 @@ class M_beranda_as extends CI_Model
 		}
 	}
 
+	function tambahkomen()
+	{
+		$koment 		= $this->input->post('koment');
+
+				$data = array(
+					'isi_komentar'		=> $koment,
+				);
+				$this->db->insert('komentar', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+	}
+
 	function tampiledit($id)
 	{
 		$idnya = decrypt_url($id);
@@ -62,6 +74,13 @@ class M_beranda_as extends CI_Model
 	{
 		$id = $this->input->post('id');
 		$this->db->where('id_beranda_as', $id)->delete('beranda_as');
+		$this->session->set_flashdata('msg', 'sukseshapus');
+	}
+
+	function hapuskomen()
+	{
+		$id = $this->input->post('id');
+		$this->db->where('id_komentar', $id)->delete('komentar');
 		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
