@@ -189,7 +189,7 @@ class Data_guru extends MX_Controller
 		$config = array();
 		$config['base_url'] = site_url("data_guru/search/$search");
 		$config['total_rows'] = $this->M_data_guru->get_guru_count($search);
-		$config['per_page'] = "2";
+		$config['per_page'] = "6";
 		$config["uri_segment"] = 4;
 		$choice = $config["total_rows"]/$config["per_page"];
 		$config["num_links"] = floor($choice);

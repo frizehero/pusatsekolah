@@ -174,7 +174,7 @@ class Data_alumni extends MX_Controller {
        $config = array();
 		$config['base_url'] = site_url("data_alumni/search/$search");
 		$config['total_rows'] = $this->M_data_alumni->get_alumni_count($search);
-		$config['per_page'] = "2";
+		$config['per_page'] = "6";
 		$config["uri_segment"] = 4;
 		$choice = $config["total_rows"]/$config["per_page"];
 		$config["num_links"] = floor($choice);

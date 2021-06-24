@@ -32,6 +32,7 @@ class Statistik_sekolah extends MX_Controller
 			'totalproduk'		=> $this->M_statistik_sekolah->totalproduk(),
 			'totalevent'		=> $this->M_statistik_sekolah->totalevent(),
 			'hasil'				=> $this->M_statistik_sekolah->Jum_mapel_guru(),
+			'dataSiswa' 		=> $this->M_statistik_sekolah->get_jenis_alumni(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
