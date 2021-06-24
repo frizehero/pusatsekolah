@@ -219,7 +219,7 @@ class Data_guru extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampilkan'		=> $this->M_data_guru->get_guru($config["per_page"], $data['page'],$search),
+			'tampilkan'		=> $this->M_data_guru->get_guru($config["per_page"], $data['page'],$search, $idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx['id_sekolah']),
