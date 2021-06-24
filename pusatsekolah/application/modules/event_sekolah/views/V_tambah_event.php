@@ -8,7 +8,7 @@
                     <div class="input-group">
                         <div class="input-group-prepend"></div>
                         <input type="text" id="judul_event" name="judul_event" placeholder="" class="form-control">
-                    </div>m
+                    </div>
                     <br>
                     <div class="card-title">DESKRIPSI EVENT</div>
                 	<textarea id="ckeditor" name="text_event" type="text" style="height: 800px;"></textarea>
