@@ -76,7 +76,7 @@ class Tb_pesan extends MX_Controller
 			$data = array(
 				'namamodule' 		=> "tb_pesan",
 				'namafileview' 		=> "V_pesan_detail",
-				'tampil'			=> $this->M_pesan->tampildetail($id),
+				'tampil'			=> $this->M_pesan->tampildetail($idpenerima),
 				'idnya' 			=> $iduser,
 				'idpenerima'		=> $idpenerima,
 				'nama_penerima'		=> $nama_penerima,

@@ -78,26 +78,33 @@
                                 </small>XXX
                             </div> -->
                          </div>
-                         <div class="float-right">
-                             <div class="chat-box-wrapper chat-box-wrapper-right">
-                                 <div>
-                                     <div class="chat-box"><?php echo $tampil['pesan'] ?></div>
-                                     <small class="opacity-6">
-                                         <i class="fa fa-calendar-alt mr-1"></i>
-                                         11:01 AM | Kemarin
-                                     </small>
-                                 </div>
-                                 <div>
-                                     <div class="avatar-icon-wrapper ml-1">
-                                         <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
+                         <?php tampilnotif() ?>
+                         <?php $no = 1;
+                            foreach ($tampil as $rowP) { ?>
+                             <div class="float-right">
+                                 <div class="chat-box-wrapper chat-box-wrapper-right">
+                                     <div>
+                                         <div class="chat-box"><?php echo $rowP->pesan; ?>
+                                             <?php echo $idpenerima ?>
                                          </div>
-                                         <div class="avatar-icon avatar-icon-lg rounded">
-                                             <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
+                                         <small class="opacity-6">
+                                             <i class="fa fa-calendar-alt mr-1"></i>
+                                             11:01 AM | Kemarin
+                                         </small>
+                                     </div>
+                                     <div>
+                                         <div class="avatar-icon-wrapper ml-1">
+                                             <div class="badge badge-bottom btn-shine badge-success badge-dot badge-dot-lg">
+                                             </div>
+                                             <div class="avatar-icon avatar-icon-lg rounded">
+                                                 <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
+                                             </div>
                                          </div>
                                      </div>
                                  </div>
                              </div>
-                         </div>
+                         <?php $no++;
+                            } ?>
                      </div>
                      <form action="<?php echo base_url('tb_pesan/tambah') ?>" method="POST" enctype="multipart/form-data">
                          <div class="app-inner-layout__bottom-pane d-block text-center">

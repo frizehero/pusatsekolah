@@ -55,12 +55,24 @@ class M_pesan extends CI_Model
 		return $query->result();
 	}
 
-	function tampildetail($id)
+	function tampildetail($id_penerima)
 	{
-		$idnya = decrypt_url($id);
-		$this->db->where('id_penerima', $idnya);
+		//$idnya = decrypt_url($id);
+		//$this->db->select('*');
+		//$this->db->from('tb_pesan');
+		//$this->db->where('pesan', $id_penerima);
 
-		return $this->db->get('tb_pesan')->row_array();
+		//$query = $this->db->row_array();;
+
+		//return $query;
+		//return $this->db->get('tb_pesan')->row_array();
+
+		$this->db->select('*,tb_login.nama AS nama_penerima');
+		$this->db->from('tb_pesan');
+		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
+		$this->db->where('id_penerima', $id_penerima);
+		$query = $this->db->get();
+		return $query->result();
 	}
 
 	function tampilidpenerima($id)

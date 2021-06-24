@@ -24,15 +24,15 @@
                                 </div>
                             </div>
                             <div class="col-md-5"></div>
-                            <div class="col-md-4">
+                            <!--<div class="col-md-4">
                                 <button type="button" data-target="#exampleModal" data-toggle="modal" class="btn btn-link" style="padding-top: 15px;">
                                     <div class="badge badge-pill badge-dark">New Chat</div>
                                 </button>
-                                <!--<button type="button" class="fa fa-fw" data-toggle="modal" data-target="#exampleModal" style="width: 30px; padding-top: 20px; padding-right: 10px;">
+                                //<button type="button" class="fa fa-fw" data-toggle="modal" data-target="#exampleModal" style="width: 30px; padding-top: 20px; padding-right: 10px;">
                                     Basic Modal
                                 </button>
-                                <div type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw" aria-hidden="true" title="Copy to use plus-circle" style="width: 30px; padding-top: 20px; padding-right: 10px;"></i></div>-->
-                            </div>
+                                <div type="button" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-fw" aria-hidden="true" title="Copy to use plus-circle" style="width: 30px; padding-top: 20px; padding-right: 10px;"></i></div>//
+                            </div>-->
                         </div>
                         <li class="pt-3 pl-3 pr-3 pb-2 nav-item">
                             <div class="input-group">
