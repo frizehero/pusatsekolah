@@ -23,6 +23,15 @@ class M_statistik_sekolah extends CI_Model
           ->result();
     }
 
+    public function get_jenis_alumni()
+    {
+        $query = "SELECT COUNT(*) AS total, jk_alumni FROM data_alumni
+                    GROUP BY jk_alumni ORDER BY jk_alumni DESC";
+
+        $result = $this->db->query($query)->result_array();
+        return $result;
+    }
+
 	function totalpengajar($idsekolahx)
 	{
 		$this->db->where('id_sekolah', $idsekolahx);
