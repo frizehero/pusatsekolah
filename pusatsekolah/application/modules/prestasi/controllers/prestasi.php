@@ -129,7 +129,7 @@ class Prestasi extends MX_Controller
 		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
 		
 		// get search string
-		$folter = ($this->input->post(""))? $this->input->post("") : "NIL";
+		$folter = ($this->input->post("folter"))? $this->input->post("folter") : "NIL";
 		$folter = ($this->uri->segment(3)) ? $this->uri->segment(3) : $folter;
 
 		// pagination settings
