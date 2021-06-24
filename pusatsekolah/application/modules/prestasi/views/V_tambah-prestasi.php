@@ -16,14 +16,18 @@
                                 <option>Akademik</option>
                                 <option>Seni</option>
                                 <option>Olahraga</option>
-                                <option>Lainnya</option>
+                                <option>Dan Lain-lain</option>
                             </select>
                 </div>
                 <div class="form-group">
-                    <label for="tingkat_prestasi">Tingkat Prestasi</label>
-                    <div>
-                        <input type="text" class="form-control" id="tingkat_prestasi" name="tingkat_prestasi" placeholder="Tingkat Prestasi" />
-                    </div>
+                    <label for="exampleEmail" class="">Tingkat Prestasi </label>
+                            <select name="tingkat_prestasi" id="exampleSelect" class="form-control">
+                                <option>Daerah</option>
+                                <option>Kota</option>
+                                <option>Provinsi</option>
+                                <option>Nasional</option>
+                                <option>Internasional</option>
+                            </select>
                 </div>
                 <div class="form-group">
                     <label for="juara_prestasi">Juara Prestasi</label>
