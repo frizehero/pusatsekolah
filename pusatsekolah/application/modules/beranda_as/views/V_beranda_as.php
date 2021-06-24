@@ -115,9 +115,6 @@
                                 <i class="fa fa-fw"></i>
                             </button>
                             <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                <button type="button" tabindex="0" class="dropdown-item">
-                                    <i class="fa fa-fw"></i>&nbsp;<span>Edit Postingan</span>
-                                </button>
                                 <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $no ?>">
                                 <i class="pe-7s-trash"></i></i>&nbsp;<span>Hapus Postingan</span>
                                 </button>
@@ -198,6 +195,7 @@
 
                                 <form action="<?php echo base_url('beranda_as/tambahkomen') ?>" method="POST" enctype="multipart/form-data">
                                 <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="text" class="form-control">
+                                <input name="id" value="<?php echo $rowO->id_beranda_as?>" type="text" class="form-control">
                                     <div class="widget-content card-body">
                                         <div class="widget-content-wrapper">
                                             <div class="widget-content-left mr-3">
@@ -219,6 +217,7 @@
 
                                 <div tabindex="-1" class="dropdown-divider"></div>
                                 <div class="widget-content card-body">
+                                
                                     <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
                                     
                                     <?php if ($komentarnya==null){?>

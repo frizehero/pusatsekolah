@@ -60,12 +60,14 @@ class Beranda_as extends MX_Controller
 		{
 			$iduser = $this->session->userdata('session_id');
 			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+			$idpostingx = $this->M_beranda_as->ambilidposting();
 
 			$data = array(
 				'namamodule' 		=> "beranda_as",
 				'namafileview' 		=> "V_tentang",
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
+				'idposting'			=> $idpostingx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 				'tampilsejarah' 	=> $idsekolahx['id_sekolah'],
 			);
