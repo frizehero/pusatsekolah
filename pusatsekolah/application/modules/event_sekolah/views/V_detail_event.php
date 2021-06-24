@@ -19,6 +19,7 @@
                             </p>
                         <div class="dropdown-menu-header">
                                 
+                        <img src="<?php echo base_url() ?>assets/images/event/<?php echo $tampil['dokumentasi_event'] ?>"  style="width: 900px; height: auto;" name="foto">
                                 
                         </div>
                         </div>
