@@ -129,17 +129,17 @@ class Prestasi extends MX_Controller
 		$idsekolahx = $this->M_prestasi->ambilidsekolah($iduser);
 		
 		// get search string
-		$folter = ($this->input->post("cari"))? $this->input->post("cari") : "NIL";
+		$folter = ($this->input->post(""))? $this->input->post("") : "NIL";
 		$folter = ($this->uri->segment(3)) ? $this->uri->segment(3) : $folter;
 
 		// pagination settings
 		$config = array();
-		$config['base_url'] = site_url("prestasi/folter");
-		$config['total_rows'] = $this->M_prestasi->get_prestasi_count($folter);
-		$config['per_page'] = "6";
-		$config["uri_segment"] = 4;
-		$choice = $config["total_rows"]/$config["per_page"];
-		$config["num_links"] = floor($choice);
+		$config['base_url'] 	= site_url("prestasi/folter/$folter"); // site url
+		$config['total_rows']	= $this->M_prestasi->get_prestasi_count($folter); // total row
+		$config['per_page'] 	= "6";
+		$config["uri_segment"] 	= 4; // uri paramater
+		$choice 				= $config["total_rows"]/$config["per_page"];
+		$config["num_links"] 	= floor($choice);
 
         $config['first_link']       = 'First';
         $config['last_link']        = 'Last';

@@ -11,10 +11,13 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="jenis_prestasi">Jenis Prestasi</label>
-                    <div>
-                        <input type="text" class="form-control" id="jenis_prestasi" name="jenis_prestasi" placeholder="Jenis Prestasi" />
-                    </div>
+                    <label for="exampleEmail" class="">Jenis Prestasi </label>
+                            <select name="jenis_prestasi" id="exampleSelect" class="form-control">
+                                <option>Akademik</option>
+                                <option>Seni</option>
+                                <option>Olahraga</option>
+                                <option>Lainnya</option>
+                            </select>
                 </div>
                 <div class="form-group">
                     <label for="tingkat_prestasi">Tingkat Prestasi</label>
