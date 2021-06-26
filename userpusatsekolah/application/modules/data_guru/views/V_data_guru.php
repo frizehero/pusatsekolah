@@ -98,7 +98,7 @@
                     <!-- listsearch-input-item-->
                     <div class="col-md-4">
                         <div class="listsearch-input-item">
-                            <select data-placeholder="City/Location" class="chosen-select no-search-select" >
+                            <!--<select data-placeholder="City/Location" class="chosen-select no-search-select" >
                                 <option>Semua Mata Pelajaran</option>
                                 <option>Guru Mapel Sejarah</option>
                                 <option>Guru Mapel Sains</option>
@@ -116,6 +116,13 @@
                                 <option>Guru Mapel Pendidikan Agama</option>
                                 <option>Guru Mapel Seni Budaya</option>
                                 <option>Guru Mapel Seni Musik</option>
+                            </select>-->
+                            <select name="mapel" data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                <option>- Mata Pelajaran -</option>
+                            <?php
+                            foreach ($tampil_mapel as $mapel) {?>
+                                <option value="<?php echo $mapel->mapel_guru?>"><?php echo $mapel->mapel_guru?></option>
+                            <?php }?>
                             </select>
                         </div>
                     </div>
