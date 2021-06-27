@@ -4,7 +4,7 @@
             <div class="card-body">
                 <h5 class="card-title">Tambah Guru</h5>
                 <form action="<?php echo base_url('data_guru/tambah') ?>" method="POST" enctype="multipart/form-data">
-                <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="text" class="form-control">
+                <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="position-relative form-group">
