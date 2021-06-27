@@ -5,6 +5,7 @@ class M_produk extends CI_Model {
 
 	function tampil($idsekolahx)
 	{
+		$this->db->order_by('id_produk', 'DESC');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('produk');
 		return $query->result();
@@ -20,6 +21,7 @@ class M_produk extends CI_Model {
 
 	function tampilkan($idsekolahx,$limit, $start)
 	{
+		$this->db->order_by('id_produk', 'DESC');
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('produk', $limit, $start);
 		return $query->result();
