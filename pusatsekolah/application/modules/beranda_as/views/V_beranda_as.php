@@ -3,7 +3,7 @@
     <div class="col-mb-12">
         <div class="card-shadow-primary card-border text-white card bg-light">
             <div class="dropdown-menu-header">
-                <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>');">
+                <div class="dropdown-menu-header-inner" style="background-image: url('<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>'); background-repeat: no-repeat; ">
                     <div class="menu-header-btn-pane pt-5">
                         <div class="pt-5">
                             <div class="pt-5">
