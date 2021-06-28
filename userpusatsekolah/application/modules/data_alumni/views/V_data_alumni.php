@@ -147,7 +147,7 @@
                                         </div>
                                     </div>
                                     <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text"><?php echo $rowP->deskripsi_alumni; ?></p>
+                                        <p class="small-text"><?php echo $rowP->status_alumni; ?></p>
                                     </div>
                                 </div>
                             </article>

@@ -3,13 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_data_alumni extends CI_Model {
 
-	function tampil()
+
+	function tampil($idsekolahx)
 	{
-		$this->db->from('data_alumni');
-		$query = $this->db->get();
-
-
-
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('data_alumni');
 		return $query->result();
 	}
 
@@ -161,9 +159,50 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
-	function cari()
+	function folter ($data_alumni, $idsekolahx)
 	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_alumni',$cari)->get('data_alumni')->result();
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('thlulus_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function tampil_tahun($idsekolahx)
+	{
+		$this->db->select('thlulus_alumni, COUNT(thlulus_alumni) as total');
+		$this->db->group_by('thlulus_alumni');
+		$this->db->order_by('total', 'dsc');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function cari ($data_alumni, $idsekolahx)
+	{
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('nama_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function ambilidsekolah($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('tb_login');
+		$this->db->where('id_admin',$id);
+		$query = $this->db->get();
+
+
+		
+    	return $query->row_array();
 	}
 }
