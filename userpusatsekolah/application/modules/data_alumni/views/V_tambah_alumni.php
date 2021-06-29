@@ -2,19 +2,21 @@
     <section class="gray-bg no-top-padding-sec" id="sec1">
         <div class="container">
             <br><br>
-            <div class="list-main-wrap-title single-main-wrap-title fl-wrap">
+            <!-- <div class="list-main-wrap-title single-main-wrap-title fl-wrap align-center">
                 <h2>Daftar Sebagai Alumni<span></span></h2>
-            </div>
+            </div> -->
             <form action="<?php echo base_url('data_alumni/tambah') ?>" method="POST" enctype="multipart/form-data">
                 <div class="fl-wrap ">
                     <div class="row">
+                        <div class="col-md-2">
+                        </div>
                         <div class="col-md-8">
-                            <ul id="progressbar" class="no-list-style">
+                            <!-- <ul id="progressbar" class="no-list-style">
                                 <li class="active"><span class="tolt" data-microtip-position="top" data-tooltip="Profil Lengkap">01.</span></li>
                                 <li><span class="tolt" data-microtip-position="top" data-tooltip="Alamat Lengkap">02.</span></li>
                                 <li><span class="tolt" data-microtip-position="top" data-tooltip="Foto Profil">03.</span></li>
                                 <li><span class="tolt" data-microtip-position="top" data-tooltip="Konfirmasi">04.</span></li>
-                            </ul>
+                            </ul> -->
                             <div class="bookiing-form-wrap block_box fl-wrap">
                                 <!--   list-single-main-item -->
                                 <div class="list-single-main-item fl-wrap hidden-section tr-sec">
@@ -22,7 +24,7 @@
                                         <div class="custom-form">
                                             <form>
                                                 <fieldset class="fl-wrap">
-                                                    <div class="list-single-main-item-title fl-wrap">
+                                                   <div class="list-single-main-item-title fl-wrap">
                                                         <h3>Profil Lengkap</h3>
                                                     </div>
                                                     <div class="row">
@@ -92,12 +94,66 @@
                                                             <label class="vis-label">Twitter <i class="far fa-user"></i></label>
                                                             <input name="twitter_alumni" type="text" placeholder="Twitter" value=""/>
                                                         </div>
+                                                        <div class="list-single-main-item-title fl-wrap">
+                                                        <h3>Alamat Lengkap</h3>
                                                     </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <label class="vis-label">Provinsi <i class="fal fa-globe-asia"></i></label>
+                                                            <input type="text" placeholder="Provinsi" value=""/>  
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label class="vis-label">Kabupaten/Kota <i class="fal fa-globe-asia"></i></label>
+                                                            <input type="text" placeholder="Kota" value=""/>  
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label class="vis-label">Kecamatan <i class="fal fa-globe-asia"></i></label>
+                                                            <input type="text" placeholder="Kecamatan" value=""/>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label class="vis-label">Kelurahan <i class="fal fa-globe-asia"></i></label>
+                                                            <input type="text" placeholder="Kelurahan" value=""/>
+                                                        </div>
+                                                            <div class="col-sm-8">
+                                                                <label class="vis-label">Alamat Lengkap <i class="fal fa-road"></i> </label>
+                                                                <input type="text" placeholder="Alamat Lengkap" value=""/>                                                  
+                                                            </div>
+                                                            <div class="col-sm-4">
+                                                                <label class="vis-label">Kode Pos<i class="fal fa-barcode"></i> </label>
+                                                                <input type="text" placeholder="123456" value=""/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="list-single-main-item-title fl-wrap">
+                                                        <h3>Foto Profil</h3> -->
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="list-single-main-item-title fl-wrap">
+                                                                <h3>Foto Sampul</h3>
+                                                            </div>
+                                                            <label class="vis-label"> <i class="far fa-user"></i></label>
+                                                            <div class="fuzone">
+                                                                <div class="fu-text">
+                                                                    <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
+                                                                    <div class="photoUpload-files fl-wrap"></div>
+                                                                </div>
+                                                                <input name="foto" type="file" class="upload" multiple>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list-single-main-item-title fl-wrap">
+                                                        <h3>Deskripsi</h3>
+                                                    </div>
+                                                    <textarea name="deskripsi_alumni" cols="40" rows="3" placeholder="Notes"></textarea>
                                                     <span class="fw-separator"></span>
-                                                    <div class="clearfix"></div>
-                                                    <a  href="#"  class="next-form action-button color-bg">Selanjutnya</a>
+                                                    </div>
+                                                    </div>
+                                                    <!-- <span class="fw-separator"></span>
+                                                    <div class="clearfix"></div> -->
+                                                    <button name="signup" value="Sign up" type="submit"  class="next-form action-button color-bg">Simpan</button>
+                                                    <!-- <button name="signup" value="Sign up" type="submit" id="" class="btn-shadow btn-wide float-right btn-pill btn-hover-shine btn btn-dark">Tambah</button> -->
                                                 </fieldset>
-                                                <fieldset class="fl-wrap">
+                                                <!-- <fieldset class="fl-wrap">
                                                     <div class="list-single-main-item-title fl-wrap">
                                                         <h3>Alamat Lengkap</h3>
                                                     </div>
@@ -171,13 +227,15 @@
                                                     <span class="fw-separator"></span>
                                                     <a  href="#"  class="previous-form action-button  back-form   color2-bg">Kembali</a>
                                                     <a href="invoice.html" class="previous-form action-button  back-form   color2-bg">Data Alumni</a>
-                                                </fieldset>
+                                                </fieldset> -->
                                             </form>
                                         </div>
                                     </div>
                                 </div>
                                 <!--   list-single-main-item end -->
                             </div>
+                        </div>
+                        <div class="col-md-2">
                         </div>
                         <!-- <div class="col-md-4">
                             <div class="cart-details-wrap fl-wrap">

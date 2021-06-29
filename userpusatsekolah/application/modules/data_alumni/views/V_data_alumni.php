@@ -117,6 +117,7 @@
                                 <div class="listsearch-input-item">
                                     <button class="header-search-button color-bg" onclick="window.location.href='<?php echo base_url('data_alumni/tambahview'); ?>'"> <!-- <i class="far fa-search"></i> <span> </span> --> Daftar Alumni</button>
                                 </div>
+                                <!-- <a href="<?php echo base_url('ppdb_panitia/tambahview'); ?>" class="header-search-button color-bg"> -->
                             </div>
                             <!-- listsearch-input-item end-->                                         
                         </div>
@@ -147,7 +148,7 @@
                                         </div>
                                     </div>
                                     <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text"><?php echo $rowP->status_alumni; ?></p>
+                                        <p class="small-text"><?php echo $rowP->deskripsi_alumni; ?></p>
                                     </div>
                                 </div>
                             </article>
