@@ -112,11 +112,11 @@
         <div class="container">
             <nav class="scroll-nav scroll-init">
                 <ul class="no-list-style">
-                    <li><a class="act-scrlink" href="#sec1"><i class="fal fa-images"></i> Poster</a></li>
-                    <li><a href="#sec2"><i class="fal fa-info"></i>Detail</a></li>
-                    <li><a href="#sec3"><i class="fal fa-calendar-check"></i>Jadwal</a></li>
-                    <li><a href="#sec4"><i class="fal fa-microphone"></i>Panitia</a></li>
-                    <!-- <li><a href="#sec5"><i class="fal fa-comments-alt"></i>Review</a></li> -->
+                    <li><a class="act-scrlink" href="#sec2"><i class="fal fa-images"></i> Detail</a></li>
+                    <li><a href="#sec3"><i class="fal fa-info"></i>Alur</a></li>
+                    <li><a href="#sec4"><i class="fal fa-calendar-check"></i>Panitia</a></li>
+                    <!-- <li><a href="#sec4"><i class="fal fa-microphone"></i>Panitia</a></li>
+                    <li><a href="#sec5"><i class="fal fa-comments-alt"></i>Review</a></li> -->
                 </ul>
             </nav>
             <div class="scroll-nav-wrapper-opt">
@@ -458,14 +458,14 @@
                 <!-- list-single-sidebar -->
                 <div class="col-md-4">
                     <!--box-widget-item -->
-                    <!-- <div class="box-widget-item fl-wrap block_box">
+                    <div class="box-widget-item fl-wrap block_box">
                         <div class="box-widget-item-header">
                             <h3>Daftar Sekarang!</h3>
                         </div>
                         <div class="box-widget">
                             <div class="box-widget-content">
                                 DAFTARKAN DIRIMU SEKARANG
-                                <form   class="add-comment custom-form"> -->
+                                <form class="add-comment custom-form">
                                     <!-- <fieldset>
                                         <label><i class="fal fa-user"></i></label>
                                         <input type="text" placeholder="Nama Lengkap *" value=""/>
@@ -476,11 +476,11 @@
                                         <label><i class="fal fa-phone"></i>  </label>
                                         <input type="text" placeholder="No. Telephone *" value=""/>
                                     </fieldset> -->
-                                    <!-- <button class="btn color2-bg url_btn float-btn" onclick="window.location.href='<?php echo base_url('ppdb_pendaftaran'); ?>'"> Daftar Sekarang <i class="fal fa-bookmark"></i></button>
+                                    <button class="btn color2-bg url_btn float-btn" onclick="window.location.href='<?php echo base_url('ppdb_pendaftaran'); ?>'"> Daftar Sekarang <i class="fal fa-bookmark"></i></button>
                                 </form> 
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!--box-widget-item end -->
                     <!--box-widget-item -->
                     <div class="box-widget-item fl-wrap block_box">

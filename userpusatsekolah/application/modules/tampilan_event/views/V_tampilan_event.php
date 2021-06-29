@@ -36,34 +36,34 @@
                                     <div class="col-md-4">
                                         <div class="search-widget">
                                             <form action="#" class="fl-wrap">
-                                                <input name="se" id="se" type="text" class="search" placeholder="Cari ..." value="" />
+                                                <?php echo form_open('data_guru/search') ?>
+                                                    <input type="text" name="Nama" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                                <?php echo form_close() ?>
                                                 <button class="search-submit color2-bg" id="submit_btn"><i class="fal fa-search"></i> </button>
                                             </form>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="listsearch-input-item">
-                                            <select data-placeholder="Location" class="chosen-select no-search-select">
-                                                <option>Semua Jenjang</option>
-                                                <option>PAUD</option>
-                                                <option>TK</option>
-                                                <option>SD</option>
-                                                <option>SMP</option>
-                                                <option>SMA</option>
-                                                <option>SMK</option>
+                                            <select name="jenjang" data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                                <option>- jenjang -</option>
+                                            <?php
+                                            foreach ($tampil_jenjang as $sekolah) {?>
+                                                <option value="<?php echo $sekolah->jjg_sekolah?>"><?php echo $sekolah->jjg_sekolah?></option>
+                                            <?php }?>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="listsearch-input-item">
-                                            <select data-placeholder="City/Location" class="chosen-select no-search-select">
-                                                <option>Jakarta</option>
-                                                <option>Surabaya</option>
-                                                <option>Balikpapan</option>
-                                                <option>Bandung</option>
-                                                <option>Jogja</option>
-                                                <option>Jepara</option>
+                                            <select name="sekolah" data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                                <option>- Nama Sekolah -</option>
+                                            <?php
+                                            foreach ($tampil_sekolah as $sekolah) {?>
+                                                <option value="<?php echo $sekolah->nama_sekolah?>"><?php echo $sekolah->nama_sekolah?></option>
+                                            <?php }?>
                                             </select>
+
                                         </div>
                                     </div>
                                 </div>
