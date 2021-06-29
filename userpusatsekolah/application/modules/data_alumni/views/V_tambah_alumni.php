@@ -46,7 +46,7 @@
                                                         </div>
                                                         <div class="col-sm-4">
                                                             <label class="vis-label"> Tempat Lahir <i class="fal fa-barcode"></i> </label>
-                                                            <input type="text" placeholder="Tempat Lahir" value=""/>
+                                                            <input type="text" placeholder="Tempat Lahir" name="tmplahir_alumni "value=""/>
                                                         </div>
                                                         <div class="col-sm-4">
                                                             <label class="vis-label"> Tanggal Lahir <i class="fal fa-calendar"></i> </label>
@@ -65,10 +65,6 @@
                                                                 <div class="nice-select-search-box">
                                                                     <input type="text" class="nice-select-search" placeholder="Search...">
                                                                 </div>
-                                                                <ul class="list">
-                                                                    <li data-value="Jenis Kelamin" class="option selected">Jenis Kelamin</li><li data-value="Perempuan" class="option">Perempuan</li>
-                                                                    <li data-value="Laki-laki" class="option">Laki-laki</li>
-                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
