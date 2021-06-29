@@ -3,9 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_event_su extends CI_Model {
 
-	function tampil()
+
+	function tampil($idsekolahx)
 	{
 		$this->db->order_by('id_event', 'DESC');
+		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('event_sekolah');
 		return $query->result();
 	}

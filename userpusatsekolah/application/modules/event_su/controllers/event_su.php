@@ -22,7 +22,7 @@ class Event_su extends MX_Controller {
 		$data = array(
 			'namamodule' 	=> "event_su",
 			'namafileview' 	=> "V_event_su",
-			'tampil'		=> $this->M_event_su->tampil(),
+			'tampil'		=> $this->M_event_su->tampil($idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 
