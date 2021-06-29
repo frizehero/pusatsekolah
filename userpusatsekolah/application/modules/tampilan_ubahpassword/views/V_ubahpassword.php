@@ -111,7 +111,7 @@
                             <input type="password" class="pass-input" placeholder="" value="" />
                             <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
                         </div>
-                        <button class="btn    color2-bg  float-btn">Simpan Perubahan<i class="fal fa-save"></i></button>
+                        <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
                     </div>
                 </div>
                 <!-- profile-edit-container end-->
