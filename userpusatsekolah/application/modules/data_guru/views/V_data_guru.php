@@ -77,8 +77,10 @@
                     <!-- listsearch-input-item-->
                     <div class="col-md-4">
                         <div class="listsearch-input-item">
+                            <?php echo form_open('data_guru/search') ?>
                             <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
-                            <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                            <input type="text" name="Nama" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                            <?php echo form_close() ?>
                         </div>
                     </div>
                     <!-- listsearch-input-item end-->

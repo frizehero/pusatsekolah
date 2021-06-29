@@ -25,6 +25,15 @@ class M_data_guru extends CI_Model
 		return $query->result();
 	}
 
+	function get_guru($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_guru',$st);
+		$query = $this->db->get('data_guru',$limit, $start);
+		return $query->result();
+	}
 	
 	function cari ($data_guru, $idsekolahx)
 	{
