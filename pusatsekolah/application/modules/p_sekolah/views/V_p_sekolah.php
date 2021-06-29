@@ -48,14 +48,14 @@
                                                                 <div class="form-group">
                                                                     <h5 class="card-title">Foto Profil</h5>
                                                                     <input name="fotoprofil" type="file" class="form-control-file">
-                                                                    </small>
+                                                                    <small class="form-text" style="color: Tomato;"><b>Ukuran : S x S</b></small><br>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
                                                                     <h5 class="card-title">Foto Sampul</h5>
                                                                     <input name="fotosampul" type="file" class="form-control-file">
-                                                                    </small>
+                                                                    <small class="form-text" style="color: Tomato;"><b>Ukuran : 1070 x 290</b></small><br>
                                                                 </div>
                                                             </div>
                                                         </div>
