@@ -22,6 +22,7 @@
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/style.css">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/dashboard-style.css">
     <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/color.css">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url() ?>css/shop.css">
     <!--=============== favicons ===============-->
     <link rel="shortcut icon" href="<?php echo base_url() ?>images/logo.ico">
 </head>
@@ -61,7 +62,7 @@
         <div class="header-user-menu">
             <div class="header-user-name">
                 <span><img src="<?php echo base_url() ?>images/avatar/4.jpg" alt=""></span>
-                Hai, <?php echo $nama ['nama']?>
+                Hai, <?php echo $nama['nama'] ?>
             </div>
             <ul>
                 <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"> Akun Saya</a></li>
@@ -304,47 +305,46 @@
     });
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwQIUGOL2hDmYztuBIyda_TXzK7S8OtRI&callback"></script>
-    <script>
-        // variabel global marker
-        var marker;
-        
-        function taruhMarker(peta, posisiTitik){
-            
-            if( marker ){
+<script>
+    // variabel global marker
+    var marker;
+
+    function taruhMarker(peta, posisiTitik) {
+
+        if (marker) {
             // pindahkan marker
             marker.setPosition(posisiTitik);
-            } else {
+        } else {
             // buat marker baru
             marker = new google.maps.Marker({
                 position: posisiTitik,
                 map: peta,
                 icon: "http://localhost/pusatsekolah/pusatsekolah/assets/images/logomaps.ico"
             });
-            }
-        
-            // isi nilai koordinat ke form
-            document.getElementById("lat").value = posisiTitik.lat();
-            document.getElementById("lng").value = posisiTitik.lng();
-            
         }
 
-        function initialize() {
+        // isi nilai koordinat ke form
+        document.getElementById("lat").value = posisiTitik.lat();
+        document.getElementById("lng").value = posisiTitik.lng();
+
+    }
+
+    function initialize() {
         var propertiPeta = {
-            center:new google.maps.LatLng(-7.900074,112.6046973),
-            zoom:11,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
+            center: new google.maps.LatLng(-7.900074, 112.6046973),
+            zoom: 11,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        
+
         var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
-        
+
         // even listner ketika peta diklik
         google.maps.event.addListener(peta, 'click', function(event) {
             taruhMarker(this, event.latLng);
         });
 
-        }
+    }
 
-        // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', initialize);
-        
-    </script>
+    // event jendela di-load  
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
