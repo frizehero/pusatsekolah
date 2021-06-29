@@ -24,8 +24,10 @@ class Data_guru extends MX_Controller
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
 			'tampil'		=> $this->M_data_guru->tampil($idsekolahx['id_sekolah']),
+			'tampil'		=> $this->M_data_guru->tampilguru($idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
+			'tampilkompetensi'	=> $this->M_data_guru->tampilkompetensi($idsekolahx['id_sekolah']),
 			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx['id_sekolah']),
 
 		);
