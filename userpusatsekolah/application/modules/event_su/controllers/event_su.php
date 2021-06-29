@@ -7,74 +7,29 @@ class Event_su extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_produk');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_event_su');
+		$this->load->model('login/m_session');
 	}
 
-	
+
 	// index
 	function index()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_event_su->ambilidsekolah($iduser);
+
+
 		$data = array(
 			'namamodule' 	=> "event_su",
 			'namafileview' 	=> "V_event_su",
-			'tampil'		=> $this->M_produk->tampil(),
+			'tampil'		=> $this->M_event_su->tampil(),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	function detailview()
-	{
-
-		$data = array(
-			'namamodule' 	=> "event_su",
-			'namafileview' 	=> "V_detail_event",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-		// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_tambah_produk",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-		// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_edit_produk",
-			'tampil'		=> $this->M_produk->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-
-	function tambah()
-	{
-
-		$this->M_produk->tambah();
-		redirect('produk');
-		
-	}
-
-	function edit()
-	{
-		$this->M_produk->edit();
-		redirect('produk');
-	}
-
-	function hapus()
-	{
-		$this->M_produk->hapus();
-		redirect('produk');
-	}
 	
 }
  
