@@ -85,12 +85,14 @@
                                     <!-- reviews-comments-item -->
                                         <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'></span><b><?php echo $rowP->nama_sekolah;?></b></div>
                                         <div class="fl-wrap">
-                                        <?php echo $rowO->post_sekolah;?><br><br>
+                                        <div style="text-align: left; margin-left: 67px;">
+                                            <?php echo $rowO->post_sekolah;?><br><br>
                                             <?php if ($rowO->post_foto_sekolah==""){?>
 
                                             <?php }else{ ?>
                                             <img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/postsekolah/<?php echo $rowO->post_foto_sekolah;?>" style="width: 240px; height: 160px;">
                                             <?php }?>
+                                        </div>
                                             <div class="reviews-comments-item-footer fl-wrap">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-xl-4" style="padding-right: 85px">
