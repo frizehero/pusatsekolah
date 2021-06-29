@@ -61,7 +61,7 @@
         <div class="header-user-menu">
             <div class="header-user-name">
                 <span><img src="<?php echo base_url() ?>images/avatar/4.jpg" alt=""></span>
-                Hai, Emak
+                Hai, <?php echo $nama ['nama']?>
             </div>
             <ul>
                 <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"> Akun Saya</a></li>

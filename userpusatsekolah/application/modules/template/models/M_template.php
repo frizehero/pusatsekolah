@@ -21,6 +21,15 @@ class M_template extends CI_Model {
 		return $nama;
 	}
 
+	function oke($id)
+	{
+		$this->db->select('*')
+		->from('tb_login')
+		->where('id_admin',$id);
+		$query = $this->db->get();
+		return $query->row_array();
+	}
+
 	function lastDates()
 	{
 		$query = $this->db->query("SELECT * FROM tb_agenda ORDER BY created_at DESC LIMIT 1");
