@@ -194,8 +194,8 @@
                                 <!--Tambah Komentar-->
 
                                 <form action="<?php echo base_url('beranda_as/tambahkomen') ?>" method="POST" enctype="multipart/form-data">
-                                <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="text" class="form-control">
-                                <input name="id" value="<?php echo $rowO->id_beranda_as?>" type="text" class="form-control">
+                                <input name="idu" value="<?php echo $idnya?>" type="hidden" class="form-control">
+                                <input name="idp" value="<?php echo $rowO->id_beranda_as?>" type="hidden" class="form-control">
                                     <div class="widget-content card-body">
                                         <div class="widget-content-wrapper">
                                             <div class="widget-content-left mr-3">
@@ -250,7 +250,7 @@
                                                         <i class="fa fa-fw"></i>
                                                     </button>
                                                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                                        <button class="dropdown-item" data-toggle="modal" data-target="#hapus<?php echo $noK ?>">
+                                                        <button class="dropdown-item" data-toggle="modal" data-target="#hapusq<?php echo $noK ?>">
                                                             <i class="pe-7s-trash"></i>&nbsp;<span>Hapus komentar</span>
                                                         </button>
                                                         <button type="button" tabindex="0" class="dropdown-item">
@@ -260,7 +260,7 @@
 
 
                                                     <!-- Modal HAPUS -->
-                                                    <div class="modal fade" id="hapus<?php echo $noK ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal fade" id="hapusq<?php echo $noK ?>"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog" role="document">
                                                             <div class="modal-content">
                                                             <div class="modal-header">
@@ -276,7 +276,7 @@
                                                                     <p class="text-semibold text-main"></p>
                                                                     <p>Anda Yakin Ingin Menghapus Komentar Ini? </p>
 
-                                                                    <input name="id"  type="text" value="<?php echo $rowK->id_komentar ?>" class="form-control">
+                                                                    <input name="id"  type="hidden" value="<?php echo $rowK->id_komentar ?>" class="form-control">
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batalkan</button>
