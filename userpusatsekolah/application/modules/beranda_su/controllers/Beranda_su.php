@@ -1,70 +1,129 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Beranda_su extends MX_Controller {
+class Beranda_su extends MX_Controller
+{
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_beranda_as');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_beranda_as');
+		$this->load->model('login/m_session');
 	}
 
-	
-	// index
-	function index()
+	/*function index()
 	{
 		$data = array(
-			'namamodule' 	=> "beranda_su",
-			'namafileview' 	=> "V_beranda_su",
+			'namamodule' 	=> "beranda_as",
+			'namafileview' 	=> "V_beranda_as",
 			'tampil'		=> $this->M_beranda_as->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
+	}*/
+
+	// index
+	function index()
+	{
+		//echo $this->session->userdata('session_id');
+		if (empty($this->session->userdata('session_id'))) {
+			redirect('login');
+		} else {
+			$iduser = $this->session->userdata('session_id');
+			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+
+			$data = array(
+				'namamodule' 		=> "beranda_su",
+				'namafileview' 		=> "V_beranda_su",
+				'tampil'			=> $this->M_beranda_as->tampil($idsekolahx['id_sekolah']),
+				'idnya' 			=> $iduser,
+				'idsekolah' 		=> $idsekolahx,
+				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
 	}
 
-		// halaman tambah
+	// halaman tambah
 	function tambahview()
 	{
 		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_tambah_produk",
+			'namamodule' 	=> "beranda_su",
+			'namafileview' 	=> "V_beranda",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-		// Halaman Edit
+	function tentangview()
+	{
+		//echo $this->session->userdata('session_id');
+		{
+			$iduser = $this->session->userdata('session_id');
+			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+			$idpostingx = $this->M_beranda_as->ambilidposting();
+
+			$data = array(
+				'namamodule' 		=> "beranda_su",
+				'namafileview' 		=> "V_tentang",
+				'idnya' 			=> $iduser,
+				'idsekolah' 		=> $idsekolahx,
+				'idposting'			=> $idpostingx,
+				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
+				'tampilsejarah' 	=> $idsekolahx['id_sekolah'],
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}
+
+	// Halaman Edit
 	function editview($id)
 	{
 
 		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_edit_produk",
-			'tampil'		=> $this->M_beranda_as->tampiledit($id),
+			'namamodule' 	=> "p_sekolah",
+			'namafileview' 	=> "V_p_sekolah",
+			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-
 	function tambah()
 	{
-
 		$this->M_beranda_as->tambah();
-		redirect('produk');
-		
+		redirect('beranda_as');
+	}
+
+	function tambahkomen()
+	{
+		$this->M_beranda_as->tambahkomen();
+		redirect('beranda_su');
 	}
 
 	function edit()
 	{
-		$this->M_beranda_as->edit();
-		redirect('produk');
+		$this->M_p_sekolah->edit();
+		redirect('p_sekolah');
 	}
 
 	function hapus()
 	{
 		$this->M_beranda_as->hapus();
-		redirect('produk');
+		redirect('beranda_su');
 	}
-	
+
+	function hapuskomen()
+	{
+		$this->M_beranda_as->hapuskomen();
+		redirect('beranda_su');
+	}
+
+	function cari()
+	{
+		$data = array(
+			'namamodule' 	=> "beranda_su",
+			'namafileview' 	=> "V_beranda_su",
+			'tampil'		=> $this->M_beranda_as->cari(),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
 }
- 

@@ -107,18 +107,6 @@ class M_beranda_as extends CI_Model
     	return $query->row_array();
 	}
 
-	function ambilidposting($id)
-	{
-	
-		$this->db->select('*');
-		$this->db->from('beranda_as');
-		$this->db->where('id_beranda_as',$id);
-		$query = $this->db->get();
-
-
-		
-    	return $query->row_array();
-	}
 
 	function ambilkomentar($id)
 	{

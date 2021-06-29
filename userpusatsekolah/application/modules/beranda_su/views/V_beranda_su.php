@@ -1,16 +1,17 @@
 <!-- content-->
+<?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
 <div class="content">
     <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
         <div class="bg-parallax-wrap">
-            <div class="bg par-elem "  data-bg="<?php echo base_url() ?>images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
         </div>
         <div class="container">
             <div class="list-single-header-item  fl-wrap">
                 <div class="row">
                     <div class="col-md-9">
-                        <h1>SMKN 1 Kota Probolinggo<span class="verified-badge"><i class="fal fa-check"></i></span></h1>
-                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
+                        <h1><?php echo $rowP->nama_sekolah;?><span class="verified-badge"><i class="fal fa-check"></i></span></h1>
+                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowP->almtlengkap_sekolah;?></a> <a href="#"> <i class="fal fa-phone"></i><?php echo $rowP->telphone;?></a> <a href="#"><i class="fal fa-envelope"></i><?php echo $rowP->email;?></a></div>
                     </div>
                     <div class="col-md-3">
                         <a class="fl-wrap list-single-header-column custom-scroll-link " href="<?php echo base_url('tampilan_inbox'); ?>">
@@ -27,9 +28,9 @@
             <div class="list-single-header_bottom fl-wrap">
                 <a class="listing-item-category-wrap" href="#">
                     <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
-                    <span>Negeri</span>
+                    <span><?php echo $rowP->stt_sekolah;?></span>
                 </a>
-                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'>  </span></a></div>
                 <div class="geodir_status_date gsd_open">Online</div>
                 <div class="list-single-stats">
                     <ul class="no-list-style">
@@ -74,6 +75,7 @@
             <div class="row">
                 <!-- list-single-main-wrapper-col -->
                 <div class="col-md-8">
+                        <?php $no=1; foreach ($tampil AS $rowO ) { ?>
                     <!-- list-single-main-wrapper -->
                     <div class="list-single-main-wrapper fl-wrap" id="sec2">
                         <!-- list-single-main-item -->
@@ -81,14 +83,14 @@
                             <div class="list-single-main-item_content fl-wrap">
                                 <div class="reviews-comments-wrap">
                                     <!-- reviews-comments-item -->
-                                        <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/5.jpg'></span><b>SMK Negeri 1 Kota Probolinggo</b></div>
+                                        <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'></span><b><?php echo $rowP->nama_sekolah;?></b></div>
                                         <div class="fl-wrap">
-                                            <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
-                                            <div class="review-images " style="padding-left: 70px">
-                                                <a href="<?php echo base_url() ?>images/all/18.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/18.jpg" alt=""></a>
-                                                <a href="<?php echo base_url() ?>images/all/24.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/24.jpg" alt=""></a>
-                                                <a href="<?php echo base_url() ?>images/all/24.jpg" class="image-popup"><img src="<?php echo base_url() ?>images/all/24.jpg" alt=""></a>
-                                            </div>
+                                        <?php echo $rowO->post_sekolah;?><br><br>
+                                            <?php if ($rowO->post_foto_sekolah==""){?>
+
+                                            <?php }else{ ?>
+                                            <img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/postsekolah/<?php echo $rowO->post_foto_sekolah;?>" style="width: 240px; height: 160px;">
+                                            <?php }?>
                                             <div class="reviews-comments-item-footer fl-wrap">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-xl-4" style="padding-right: 85px">
@@ -103,35 +105,36 @@
                                                 </div>
                                             </div>
                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/4.jpg'></span><b>Emak</b></div>
-                                                <div class="fl-wrap">
-                                                    <form class="custom-form">
-                                                        <fieldset>
-                                                            <div class="list-single-main-item_content">
-                                                                <textarea placeholder="Komentar...." style="height: 50px; padding: 10px; margin-left: 30px;"></textarea>
-                                                            </div>
-                                                        </fieldset>
-                                                    </form>
-                                                </div>
+                                                <form action="<?php echo base_url('beranda_su/tambahkomen') ?>" method="POST" enctype="multipart/form-data">
+                                                <input name="idu" value="<?php echo $idnya?>" type="hidden" class="custom-form">
+                                                <input name="idp" value="<?php echo $rowO->id_beranda_as?>" type="hidden" class="custom-form">
+                                                    <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'></span><b>Emak</b></div>
+                                                    <div class="fl-wrap">
+                                                            <fieldset>
+                                                                <div class="list-single-main-item_content">
+                                                                    <input name="koment" placeholder="Tulis komentar..." type="text" class="custom-form" style="height: 50px; padding: 10px; margin-left: 30px;">
+                                                                </div>
+                                                            </fieldset>
+                                                    </div>
+                                                </form>
                                             </div>
+                                            <?php $komentarnya = $this->M_beranda_as->ambilkomentar($rowO->id_beranda_as); ?>
+                                    
+                                            <?php if ($komentarnya==null){?>
+
+                                            <?php }else{ ?>
+                                            <?php $noK=1; foreach ($komentarnya AS $rowK ) { ?>
                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/4.jpg'></span><b>Emak</b></div>
+                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowK->foto_profil;?>'></span><b><?php echo $rowK->nama_sekolah;?></b></div>
                                                 <div class="fl-wrap">
-                                                    <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
+                                                    <p style="padding-left: 70px"><?php echo $rowK->isi_komentar;?></p>
                                                     <div style="padding-right: 585px">
                                                         <a href="#" class="rate-review"><i class="fal fa-thumbs-up"></i> Like  <span>2</span> </a>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="reviews-comments-item-footer fl-wrap">
-                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='<?php echo base_url() ?>images/avatar/3.jpg'></span><b>Rois Antono</b></div>
-                                                <div class="fl-wrap">
-                                                    <p style="padding-left: 70px">" Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. "</p>
-                                                    <div style="padding-right: 585px">
-                                                        <a href="#" class="rate-review"><i class="fal fa-thumbs-up"></i> Like  <span>2</span> </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <?php $noK++;}?>
+                                            <?php } ?>
                                         </div>
                                     <!--reviews-comments-item end-->
                                 </div>
@@ -139,6 +142,7 @@
                         </div>
                         <!-- list-single-main-item end -->
                     </div>
+                        <?php $no++;} ?>
                 </div>
                 <!-- list-single-main-wrapper-col end -->
                 <!-- list-single-sidebar -->
@@ -152,13 +156,13 @@
                             <div class="box-widget-author fl-wrap">
                                 <div class="box-widget-author-title">
                                     <div class="box-widget-author-title-img">
-                                        <img src="<?php echo base_url() ?>images/avatar/5.jpg" alt="">
+                                        <img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_kepsek;?>" alt="">
                                     </div>
                                     <div class="box-widget-author-title_content">
-                                        <a href="tampilan-edit-profiluser.html">Alisa Noory</a>
+                                        <a><?php echo $rowP->nama_kepalasekolah;?></a>
                                     </div>
                                     <div class="box-widget-author-title_opt">
-                                        <a href="tampilan-edit-profiluser.html" class="tolt green-bg" data-microtip-position="top" data-tooltip="View Profile"><i class="fas fa-user"></i></a>
+                                        <a href="<?php echo $rowP->link_akunkepsek;?>" class="tolt green-bg" data-microtip-position="top" data-tooltip="View Profile"><i class="fas fa-user"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -173,13 +177,12 @@
                         <div class="box-widget opening-hours fl-wrap">
                             <div class="box-widget-content">
                                 <ul class="no-list-style">
-                                    <li class="mon"><span class="opening-hours-day">Senin </span><span class="opening-hours-time">6.45 AM - 2.45 PM</span></li>
-                                    <li class="tue"><span class="opening-hours-day">Selasa </span><span class="opening-hours-time">6.45 AM - 2.45 PM</span></li>
-                                    <li class="wed"><span class="opening-hours-day">Rabu </span><span class="opening-hours-time">6.45 AM - 2.45 PM</span></li>
-                                    <li class="thu"><span class="opening-hours-day">Kamis </span><span class="opening-hours-time">6.45 AM - 2.45 PM</span></li>
-                                    <li class="fri"><span class="opening-hours-day">Jum'at </span><span class="opening-hours-time">6.45 AM - 2.45 PM</span></li>
-                                    <li class="sat"><span class="opening-hours-day">Sabtu </span><span class="opening-hours-time">Libur</span></li>
-                                    <li class="sun"><span class="opening-hours-day">Minggu </span><span class="opening-hours-time">Libur</span></li>
+                                    <li class="mon"><span class="opening-hours-day">Senin </span><span class="opening-hours-time"><?php echo $rowP->senin_m;?> - <?php echo $rowP->senin_p;?></span></li>
+                                    <li class="tue"><span class="opening-hours-day">Selasa </span><span class="opening-hours-time"><?php echo $rowP->selasa_m;?> - <?php echo $rowP->selasa_p;?></span></li>
+                                    <li class="wed"><span class="opening-hours-day">Rabu </span><span class="opening-hours-time"><?php echo $rowP->rabu_m;?> - <?php echo $rowP->rabu_p;?></span></li>
+                                    <li class="thu"><span class="opening-hours-day">Kamis </span><span class="opening-hours-time"><?php echo $rowP->kamis_m;?> - <?php echo $rowP->kamis_p;?></span></li>
+                                    <li class="fri"><span class="opening-hours-day">Jum'at </span><span class="opening-hours-time"><?php echo $rowP->jumat_m;?> - <?php echo $rowP->jumat_p;?></span></li>
+                                    <li class="sat"><span class="opening-hours-day">Sabtu </span><span class="opening-hours-time"><?php echo $rowP->sabtu_m;?> - <?php echo $rowP->sabtu_p;?></span></li>
                                 </ul>
                             </div>
                         </div>
@@ -194,11 +197,11 @@
                             <div class="box-widget-content bwc-nopad">
                                 <div class="list-author-widget-contacts list-item-widget-contacts bwc-padside">
                                     <ul class="no-list-style">
-                                        <li><p>Rekayasa Perangkat Lunak</p></li>
-                                        <li><p>Rekayasa Perangkat Lunak</p></li>
-                                        <li><p>Rekayasa Perangkat Lunak</p></li>
-                                        <li><p>Rekayasa Perangkat Lunak</p></li>
-                                        <li><p>Rekayasa Perangkat Lunak</p></li>
+                                        <li><p><?php echo $rowP->kompetensi1;?></p></li>
+                                        <li><p><?php echo $rowP->kompetensi2;?></p></li>
+                                        <li><p><?php echo $rowP->kompetensi3;?></p></li>
+                                        <li><p><?php echo $rowP->kompetensi4;?></p></li>
+                                        <li><p><?php echo $rowP->kompetensi5;?></p></li>
                                     </ul>
                                 </div>
                             </div>
@@ -208,21 +211,11 @@
                     <!--box-widget-item -->
                     <div class="box-widget-item fl-wrap block_box">
                         <div class="box-widget-item-header">
-                            <h3>Lokasi dan Kontak Sekolah</h3>
+                            <h3>Lokasi Sekolah</h3>
                         </div>
                         <div class="box-widget">
                             <div class="map-container">
-                                <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781" data-mapTitle="Our Location"></div>
-                            </div>
-                            <div class="box-widget-content bwc-nopad">
-                                <div class="list-author-widget-contacts list-item-widget-contacts bwc-padside">
-                                    <ul class="no-list-style">
-                                        <li><span><i class="fal fa-map-marker"></i> Adress :</span> <a href="#">USA 27TH Brooklyn NY</a></li>
-                                        <li><span><i class="fal fa-phone"></i> Phone :</span> <a href="#">+7(123)987654</a></li>
-                                        <li><span><i class="fal fa-envelope"></i> Mail :</span> <a href="#">AlisaNoory@domain.com</a></li>
-                                        <li><span><i class="fal fa-browser"></i> Website :</span> <a href="#">themeforest.net</a></li>
-                                    </ul>
-                                </div>
+                            <div id="googleMap" style="width:100%;height:380px;"></div>
                             </div>
                         </div>
                     </div>
@@ -310,4 +303,5 @@
     </section>
     <div class="limit-box fl-wrap"></div>
 </div>
+<?php $no++;} ?>
 <!--content end-->

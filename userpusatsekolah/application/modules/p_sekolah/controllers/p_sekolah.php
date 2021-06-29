@@ -23,6 +23,7 @@ class P_sekolah extends MX_Controller {
 			'namamodule' 		=> "p_sekolah",
 			'namafileview' 		=> "V_p_sekolah",
 			'tampilkompetensi'	=> $this->M_p_sekolah->tampilkompetensi($idsekolahx['id_sekolah']),
+			'idsekolah' 		=> $idsekolahx,	
 			'provinsi'			=> $this->M_p_sekolah->provinsi(),
 
 		);
