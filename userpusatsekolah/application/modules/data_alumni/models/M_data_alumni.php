@@ -9,7 +9,6 @@ class M_data_alumni extends CI_Model {
 		$query = $this->db->get();
 
 
-
 		return $query->result();
 	}
 
@@ -35,6 +34,8 @@ class M_data_alumni extends CI_Model {
 		$facebook_alumni		= $this->input->post('facebook_alumni');
 		$twitter_alumni			= $this->input->post('twitter_alumni');
 		$deskripsi_alumni		= $this->input->post('deskripsi_alumni');
+		$foto_alumni			= $this->input->post('foto_alumni');
+		$id_sekolah 			= $this->input->post('id_sekolah');
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
@@ -47,10 +48,11 @@ class M_data_alumni extends CI_Model {
 
 		$this->upload->initialize($config);
 
-		if ($_FILES['foto']['name']) {
-			if ($this->upload->do_upload('foto')) {
+		if ($_FILES['foto']['name']) 
+		{
+			if ($this->upload->do_upload('foto')) 
+			{
 				$gbr = $this->upload->data();
-
 				$data = array(
 					'nama_alumni'			=> $nama_alumni,
 					'thlulus_alumni'		=> $thlulus_alumni,
@@ -73,6 +75,7 @@ class M_data_alumni extends CI_Model {
 					'twitter_alumni'		=> $twitter_alumni,
 					'deskripsi_alumni'		=> $deskripsi_alumni,
 					'foto_alumni'		 	=> $gbr['file_name'],
+					'id_sekolah'			=> $id_sekolah,
 
 					);
 
@@ -102,9 +105,10 @@ class M_data_alumni extends CI_Model {
 				'twitter_alumni'		=> $twitter_alumni,
 				'deskripsi_alumni'		=> $deskripsi_alumni,
 				'foto_alumni'		 	=> 'kosong1.jpeg',
+				'id_sekolah'			=> $id_sekolah,
 				
 			);
-			$this->db->insert('ppdb_panitia', $data);
+			$this->db->insert('data_alumni', $data);
 			$this->session->set_flashdata('msg', 'suksestambah');
 		}
 			
