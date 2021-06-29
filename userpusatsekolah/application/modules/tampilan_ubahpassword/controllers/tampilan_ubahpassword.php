@@ -8,7 +8,7 @@ class Tampilan_ubahpassword extends MX_Controller
 	{
 		parent::__construct();
 		// model
-		$this->load->model('M_beranda_as');
+		$this->load->model('M_ubahpassword');
 		$this->load->model('login/m_session');
 	}
 
@@ -17,7 +17,7 @@ class Tampilan_ubahpassword extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "beranda_as",
 			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_beranda_as->tampil(),
+			'tampil'		=> $this->M_ubahpassword_as->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}*/
@@ -30,15 +30,14 @@ class Tampilan_ubahpassword extends MX_Controller
 			redirect('login');
 		} else {
 			$iduser = $this->session->userdata('session_id');
-			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+			$idsekolahx = $this->M_ubahpassword->ambilidsekolah($iduser);
 
 			$data = array(
 				'namamodule' 		=> "tampilan_ubahpassword",
 				'namafileview' 		=> "V_ubahpassword",
-				'tampil'			=> $this->M_beranda_as->tampil(),
+				'tampil'			=> $this->M_ubahpassword->tampil(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
-				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
@@ -77,28 +76,28 @@ class Tampilan_ubahpassword extends MX_Controller
 	{
 
 		$data = array(
-			'namamodule' 	=> "p_sekolah",
-			'namafileview' 	=> "V_p_sekolah",
-			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
+			'namamodule' 	=> "tampilan_ubahpassword",
+			'namafileview' 	=> "V_ubahpassword",
+			'tampil'		=> $this->M_ubahpassword->tampiledit($id),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
 
 	function tambah()
 	{
-		$this->M_beranda_as->tambah();
+		$this->M_ubahpassword->tambah();
 		redirect('beranda_as');
 	}
 
 	function edit()
 	{
-		$this->M_p_sekolah->edit();
-		redirect('p_sekolah');
+		$this->M_ubahpassword->edit();
+		redirect('tampilan_ubahpassword');
 	}
 
 	function hapus()
 	{
-		$this->M_beranda_as->hapus();
+		$this->M_ubahpassword->hapus();
 		redirect('beranda_as');
 	}
 
@@ -107,7 +106,7 @@ class Tampilan_ubahpassword extends MX_Controller
 		$data = array(
 			'namamodule' 	=> "beranda_as",
 			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_beranda_as->cari(),
+			'tampil'		=> $this->M_ubahpassword->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

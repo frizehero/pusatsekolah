@@ -34,7 +34,7 @@ class Ppdb_pendaftaran extends MX_Controller
 	{
 		$data = array(
 			'namamodule' 	=> "ppdb_pendaftaran",
-			'namafileview' 	=> "V_ppdb_tambah",
+			'namafileview' 	=> "V_ppdb",
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

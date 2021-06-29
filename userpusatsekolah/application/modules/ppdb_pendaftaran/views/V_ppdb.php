@@ -17,7 +17,7 @@
                             <div class="list-single-main-item fl-wrap hidden-section tr-sec">
                                 <div class="profile-edit-container">
                                     <div class="custom-form">
-                                        <form>
+                                        <form id="signupForm" action="<?php echo base_url('ppdb_pendaftaran/tambah') ?>" method="POST" enctype="multipart/form-data">
                                             <fieldset class="fl-wrap">
                                                 <div class="list-single-main-item-title fl-wrap">
                                                     <h3>Data Diri</h3>
@@ -264,7 +264,7 @@
                                                     </div>
                                                 </div>
                                                 <span class="fw-separator"></span>
-                                                <a  href="<?php echo base_url('ppdb_user'); ?>" type="submit" class="previous-form action-button  color-bg">Selesai</a>
+                                                <a  href="<?php echo base_url('ppdb_user'); ?>" name="signup" value="Sign up" type="submit" class="previous-form action-button  color-bg">Selesai</a>
                                             </fieldset>
                                         </form>
                                     </div>

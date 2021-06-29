@@ -1,14 +1,28 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_beranda_as extends CI_Model
+class M_ubahpassword extends CI_Model
 {
 
 	function tampil()
 	{
-		$this->db->order_by('id_beranda_as', 'DESC');
-		$query = $this->db->get('beranda_as');
-		return $query->result();
+		return $this->db->get('event_sekolah')->result();
+	}
+
+	function edit()
+	{
+		$level = 1;
+		$password = $this->input->post('password');
+		$password1 	=sha1($password);
+		$id = $this->input->post('id_admin');
+				
+
+				$data = array(
+					
+					'password'		=> $password1,
+				);
+				$this->db->where('id_admin',$id)->update('tb_login', $data);
+		
 	}
 
 	function tambah()
@@ -50,8 +64,8 @@ class M_beranda_as extends CI_Model
 	function tampiledit($id)
 	{
 		$idnya = decrypt_url($id);
-		$this->db->where('id_p_sekolah', $idnya);
-		return $this->db->get('p_sekolah')->row_array();
+		$this->db->where('id_admin', $idnya);
+		return $this->db->get('tampilan_ubahpassword')->row_array();
 	}
 
 	function hapus()
