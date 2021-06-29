@@ -75,52 +75,64 @@
 	                        <div class="row">
 	                            <div class="col-sm-6">
 	                                <label>Username <i class="fal fa-user"> </i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['nama_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['username_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Nama Lengkap <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['nama_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['nama_guru'] ?>" value=""/>
 	                            </div>
 
 	                            <div class="col-sm-6">
-	                                <label>NIP <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['nip_guru'] ?>" value=""/>
+	                                <label>NIP <i class="fal fa-credit-card-front"></i></label>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['nip_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Tempat, Tanggal Lahir <i class="fal fa-calendar"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['tmplahir_guru'] ?>, <?php echo $tampil['tgllahir_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['tmplahir_guru'] ?>, <?php echo $tampil['tgllahir_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Alamat <i class="fal fa-map-marker"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['alamat_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['alamat_guru'] ?>, <?php echo $tampil['kelurahan_guru'] ?>, <?php echo $tampil['kecamatan_guru'] ?>, <?php echo $tampil['kotakab_guru'] ?>, <?php echo $tampil['provinsi_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Status <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['status_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['status_guru'] ?>" value=""/>
+	                            </div>
+	                            <div class="col-sm-4">
+	                                <label>Riwayat Pendidikan <i class="fal fa-bookmark"></i></label>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['riwayat_pendidikan1'] ?>" value=""/>
+	                            </div>
+	                            <div class="col-sm-4">
+	                                <label> <br> <i class="fal fa-bookmark"></i></label>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['riwayat_pendidikan2'] ?>" value=""/>
+	                            </div>
+	                            <div class="col-sm-4">
+	                                <label> <br> <i class="fal fa-bookmark"></i></label>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['riwayat_pendidikan3'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
-	                                <label>Mata Pelajaran <i class="fal fa-user"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['mapel_guru'] ?>" value=""/>
+	                                <label>Mata Pelajaran <i class="fal fa-bookmark"></i></label>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['mapel_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Email <i class="far fa-envelope"></i>  </label>
-	                                <input type="text" placeholder="<?php echo $tampil['email_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['email_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Telephone<i class="far fa-phone"></i>  </label>
-	                                <input type="text" placeholder="<?php echo $tampil['telepon_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['telepon_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Facebook <i class="fab fa-facebook"></i></label>
-	                                <input type="text" placeholder="<?php echo $tampil['facebook_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['facebook_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label>Twitter<i class="fab fa-twitter"></i>  </label>
-	                                <input type="text" placeholder="<?php echo $tampil['twitter_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['twitter_guru'] ?>" value=""/>
 	                            </div>
 	                            <div class="col-sm-6">
 	                                <label> Instagram <i class="fab fa-instagram"></i>  </label>
-	                                <input type="text" placeholder="<?php echo $tampil['instagram_guru'] ?>" value=""/>
+	                                <input disabled="text" type="text" placeholder="<?php echo $tampil['instagram_guru'] ?>" value=""/>
 	                            </div>
 	                        </div>
 	                    </div>

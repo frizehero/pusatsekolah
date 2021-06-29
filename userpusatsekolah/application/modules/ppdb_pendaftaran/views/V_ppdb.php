@@ -25,24 +25,24 @@
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> Nama Lengkap <i class="far fa-user"></i></label>
-                                                        <input type="text" placeholder="Nama Lengkap" value=""/>
+                                                        <input name="nama_lengkap" type="text" placeholder="Nama Lengkap" value=""/>
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> NISN <i class="far fa-user"></i></label>
-                                                        <input type="text" placeholder="NISN" value=""/>
+                                                        <input name="nisn" type="text" placeholder="NISN" value=""/>
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <label class="vis-label"> Tempat Lahir <i class="fal fa-barcode"></i> </label>
-                                                        <input type="text" placeholder="Tempat Lahir" value=""/>
+                                                        <input name="tempat_lahir" type="text" placeholder="Tempat Lahir" value=""/>
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <label class="vis-label"> Tanggal Lahir <i class="fal fa-calendar"></i> </label>
-                                                        <input type="text" placeholder="Tanggal Lahir" value=""/>
+                                                        <input name="tanggal_lahir" type="text" placeholder="Tanggal Lahir" value=""/>
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <label class="vis-label"> Jenis Kelamin <i class="fal fa-barcode"></i> </label>
                                                         <div class="listsearch-input-item ">
-                                                            <select data-placeholder="Your Country" class="chosen-select no-search-select" >
+                                                            <select name="jenis_kelamin" data-placeholder="Your Country" class="chosen-select no-search-select" >
                                                                 <option>Jenis Kelamin</option>
                                                                 <option>Perempuan</option>
                                                                 <option>Laki-laki</option>
@@ -51,12 +51,12 @@
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> Asal Sekolah <i class="far fa-user"></i></label>
-                                                        <input type="text" placeholder="Asal Sekolah" value=""/> 
+                                                        <input name="asal_sekolah" type="text" placeholder="Asal Sekolah" value=""/> 
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Provinsi <i class="fal fa-globe-asia"></i></label>
                                                         <div class="listsearch-input-item ">
-                                                            <select data-placeholder="Your Country" class="chosen-select no-search-select" >
+                                                            <select name="provinsi" data-placeholder="Your Country" class="chosen-select no-search-select" >
                                                                 <option>Provinsi</option>
                                                                 <option>Asia</option>
                                                                 <option>Australia</option>
@@ -69,7 +69,7 @@
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Kabupaten/Kota </label>
                                                         <div class="listsearch-input-item ">
-                                                            <select data-placeholder="Your Country" class="chosen-select no-search-select" >
+                                                            <select name="kabupaten_kota" data-placeholder="Your Country" class="chosen-select no-search-select" >
                                                                 <option>Kabupaten/Kota</option>
                                                                 <option>Asia</option>
                                                                 <option>Australia</option>
@@ -82,7 +82,7 @@
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Kecamatan <i class="fal fa-globe-asia"></i></label>
                                                         <div class="listsearch-input-item ">
-                                                            <select data-placeholder="Your Country" class="chosen-select no-search-select" >
+                                                            <select name="kecamatan" data-placeholder="Your Country" class="chosen-select no-search-select" >
                                                                 <option>Kecamatan</option>
                                                                 <option>Asia</option>
                                                                 <option>Australia</option>
@@ -95,7 +95,7 @@
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Kelurahan </label>
                                                         <div class="listsearch-input-item ">
-                                                            <select data-placeholder="Your Country" class="chosen-select no-search-select" >
+                                                            <select name="kelurahan" data-placeholder="Your Country" class="chosen-select no-search-select" >
                                                                 <option>Kelurahan</option>
                                                                 <option>Asia</option>
                                                                 <option>Australia</option>
@@ -107,19 +107,19 @@
                                                     </div>
                                                     <div class="col-sm-8">
                                                         <label class="vis-label"> Alamat Lengkap <i class="fal fa-street-view"></i></label>
-                                                        <input type="text" placeholder="Alamat Lengkap" value=""/>
+                                                        <input name="alamat_lengkap" type="text" placeholder="Alamat Lengkap" value=""/>
                                                     </div>
                                                     <div class="col-sm-4">
                                                         <label class="vis-label"> Kode Pos<i class="fal fa-barcode"></i> </label>
-                                                        <input type="text" placeholder="123456" value=""/>
+                                                        <input name="kode_pos" type="text" placeholder="123456" value=""/>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Email <i class="far fa-envelope"></i>  </label>
-                                                        <input type="text" placeholder="yourmail@domain.com" value=""/>
+                                                        <input name="email" type="text" placeholder="yourmail@domain.com" value=""/>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> No. Telephone <i class="far fa-phone"></i>  </label>
-                                                        <input type="text" placeholder="87945612233" value=""/>
+                                                        <input name="no_telephone" type="text" placeholder="87945612233" value=""/>
                                                     </div>
                                                 </div>
                                                 <div class="filter-tags">
@@ -137,23 +137,23 @@
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> Nama Lengkap Wali <i class="far fa-user"></i></label>
-                                                        <input type="text" placeholder="Nama Lengkap" value=""/>
+                                                        <input name="namalengkap_wali" type="text" placeholder="Nama Lengkap" value=""/>
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> Pekerjaan Wali <i class="far fa-user"></i></label>
-                                                        <input type="text" placeholder="Pekerjaan Wali" value=""/>
+                                                        <input name="pekerjaan_wali" type="text" placeholder="Pekerjaan Wali" value=""/>
                                                     </div>
                                                     <div class="col-sm-12">
                                                         <label class="vis-label"> Alamat Lengkap Wali <i class="fal fa-street-view"></i></label>
-                                                        <input type="text" placeholder="Alamat Lengkap Wali" value=""/>
+                                                        <input name="alamatlengkap_wali" type="text" placeholder="Alamat Lengkap Wali" value=""/>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> Email Wali <i class="far fa-envelope"></i>  </label>
-                                                        <input type="text" placeholder="yourmail@domain.com" value=""/>
+                                                        <input name="email_wali" type="text" placeholder="yourmail@domain.com" value=""/>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <label class="vis-label"> No. Telephone Wali <i class="far fa-phone"></i>  </label>
-                                                        <input type="text" placeholder="87945612233" value=""/>
+                                                        <input name="telephone_wali" type="text" placeholder="87945612233" value=""/>
                                                     </div>
                                                 </div>
                                                 <span class="fw-separator"></span>
@@ -172,7 +172,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_kartupelajar" type="file" class="upload" multiple>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
@@ -182,7 +182,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_ktpwali" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -192,7 +192,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_kartukeluarga" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -202,7 +202,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_aktakelahiran" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -212,7 +212,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_nilairaport" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -222,7 +222,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_buktikelulusan" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -232,7 +232,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_ijazah" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                     <div class="col-sm-6">
@@ -242,7 +242,7 @@
                                                                 <span><i class="fal fa-images"></i> Upload File (.pdf) </span>
                                                                 <div class="photoUpload-files fl-wrap"></div>
                                                             </div>
-                                                            <input type="file" class="upload" multiple>
+                                                            <input name="foto_skhun" type="file" class="upload" multiple>
                                                         </div> 
                                                     </div>
                                                 </div>
@@ -252,7 +252,7 @@
                                             </fieldset>
                                             <fieldset class="fl-wrap">
                                                 <div class="list-single-main-item-title fl-wrap">
-                                                    <h3>Confirmation</h3>
+                                                    <h3>Konfirmasi</h3>
                                                 </div>
                                                 <div class="success-table-container">
                                                     <div class="success-table-header fl-wrap">
@@ -264,7 +264,7 @@
                                                     </div>
                                                 </div>
                                                 <span class="fw-separator"></span>
-                                                <a  href="<?php echo base_url('ppdb_user'); ?>"  class="previous-form action-button  color-bg">Selesai</a>
+                                                <a  href="<?php echo base_url('ppdb_user'); ?>" type="submit" class="previous-form action-button  color-bg">Selesai</a>
                                             </fieldset>
                                         </form>
                                     </div>
