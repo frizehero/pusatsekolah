@@ -97,10 +97,10 @@
                         <div class="search-widget">
                             <form action="#" class="fl-wrap">    
                                 <?php echo form_open('data_guru/search') ?>
-                                <input type="text" name="Nama" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
-                                <?php echo form_close() ?>
+                                <input type="text" name="cari" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
                             </form>                                                
-                            <button type="search-submit" class="search-submit color2-bg">cari </button>
+                            <button class="search-submit color2-bg">cari </button>
+                            <?php echo form_close() ?>
                         </div>
                     </div>  
                 </div>

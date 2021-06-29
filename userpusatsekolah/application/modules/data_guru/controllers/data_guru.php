@@ -57,6 +57,7 @@ class Data_guru extends MX_Controller
 		$iduser=$this->session->userdata('session_id');
 		$idsekolahx = $this->M_data_guru->ambilidsekolah($iduser);
 
+		$data_guru 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
