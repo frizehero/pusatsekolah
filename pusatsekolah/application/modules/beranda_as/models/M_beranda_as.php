@@ -54,9 +54,13 @@ class M_beranda_as extends CI_Model
 	function tambahkomen()
 	{
 		$koment 		= $this->input->post('koment');
+		$idu			= $this->input->post('idu');
+		$idp 			= $this->input->post('idp');
 
 				$data = array(
 					'isi_komentar'		=> $koment,
+					'id_user'			=> $idu,
+					'id_postingan'		=> $idp,
 				);
 				$this->db->insert('komentar', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
@@ -118,7 +122,7 @@ class M_beranda_as extends CI_Model
 
 	function ambilkomentar($id)
 	{
-
+		$this->db->order_by('id_komentar', 'DESC');
 		$this->db->select('*');
 		$this->db->from('komentar');
 		$this->db->join('tb_login', 'komentar.id_user = tb_login.id_admin','left');
