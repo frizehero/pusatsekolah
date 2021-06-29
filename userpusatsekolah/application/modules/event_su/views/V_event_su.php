@@ -78,151 +78,47 @@
                     <!-- blog content-->
                     <div class="col-md-8">
                         <!-- article> --> 
-                        <div class="list-single-main-item fl-wrap block_box" id="sec4">
-                            <div class="list-single-main-item_content fl-wrap">
-                                <!--   rooms-container -->
-                                <div class="rooms-container fl-wrap">
-                                    <!--  rooms-item -->
-                                    <div class="rooms-item fl-wrap">
-                                        <div class="rooms-media">
-                                            <img src="images/Sekolah/sd1.jpg" alt="">
-                                        </div>
-                                        <div class="rooms-details">
-                                            <div class="rooms-details-header fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <a href="tampilan-detail-event.html">
-                                                            <h3>Lomba memperingati hari ulang tahun SMKN 1 Probolinggo</h3>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
-                                                        <div class="show-more-snopt-tooltip">
-                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
-                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                        <?php $no = 1;
+                        foreach ($tampil as $rowP) { ?>
+                            <div class="list-single-main-item fl-wrap block_box" id="sec4">
+                                <div class="list-single-main-item_content fl-wrap">
+                                    <!--   rooms-container -->
+                                    <div class="rooms-container fl-wrap">
+                                        <!--  rooms-item -->
+                                        <div class="rooms-item fl-wrap">
+                                            <div class="rooms-media">
+                                                <img style="height: 150px;" src="http://localhost/pusatsekolah/pusatsekolah/assets/images/event/<?php echo $rowP->dokumentasi_event; ?>" alt="">
+                                            </div>
+                                            <div class="rooms-details">
+                                                <div class="rooms-details-header fl-wrap">
+                                                    <div class="row">
+                                                        <div class="col-md-10">
+                                                            <a href="tampilan-detail-event.html">
+                                                                <h3><?php echo $rowP->judul_event; ?></h3>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
+                                                            <div class="show-more-snopt-tooltip">
+                                                                <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
+                                                                <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-10">
+                                                            <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-10">
-                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
-                                                    </div>
                                                 </div>
+                                                <p><?php echo $rowP->text_event; ?> </p>
                                             </div>
-                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
                                         </div>
+                                        <!--  rooms-item end -->
                                     </div>
-                                    <div class="rooms-item fl-wrap">
-                                        <div class="rooms-media">
-                                            <img src="images/Sekolah/sd1.jpg" alt="">
-                                        </div>
-                                        <div class="rooms-details">
-                                            <div class="rooms-details-header fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <a href="tampilan-beranda-sekolah.html">
-                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
-                                                        <div class="show-more-snopt-tooltip">
-                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
-                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
-                                        </div>
-                                    </div>
-                                    <div class="rooms-item fl-wrap">
-                                        <div class="rooms-media">
-                                            <img src="images/Sekolah/sd1.jpg" alt="">
-                                        </div>
-                                        <div class="rooms-details">
-                                            <div class="rooms-details-header fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <a href="tampilan-beranda-sekolah.html">
-                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
-                                                        <div class="show-more-snopt-tooltip">
-                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
-                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
-                                        </div>
-                                    </div>
-                                    <div class="rooms-item fl-wrap">
-                                        <div class="rooms-media">
-                                            <img src="images/Sekolah/sd1.jpg" alt="">
-                                        </div>
-                                        <div class="rooms-details">
-                                            <div class="rooms-details-header fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <a href="tampilan-beranda-sekolah.html">
-                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
-                                                        <div class="show-more-snopt-tooltip">
-                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
-                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
-                                        </div>
-                                    </div>
-                                    <div class="rooms-item fl-wrap">
-                                        <div class="rooms-media">
-                                            <img src="images/Sekolah/sd1.jpg" alt="">
-                                        </div>
-                                        <div class="rooms-details">
-                                            <div class="rooms-details-header fl-wrap">
-                                                <div class="row">
-                                                    <div class="col-md-10">
-                                                        <a href="tampilan-beranda-sekolah.html">
-                                                            <h3>SMK Negeri 1 Probolinggo Rayakan Dies Natalis Ke-98</h3>
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <div class="show-more-snopt"><i class="fal fa-ellipsis-h"></i></div>
-                                                        <div class="show-more-snopt-tooltip">
-                                                            <a href="tampilan-beranda-sekolah.html"> <i class="fas fa-comment-alt"></i> Lihat Lengkap</a>
-                                                            <a href="#"> <i class="fas fa-flag-alt"></i> Report</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-10">
-                                                        <h5>20 Nov 2020<span> - 2 Hari Lagi</span></h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>Morbi varius, nulla sit amet rutrum elementum, est elit finibus tellus, ut tristique elit risus at metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae </p>
-                                        </div>
-                                    </div>
-                                    <!--  rooms-item end -->
+                                    <!--   rooms-container end -->
                                 </div>
-                                <!--   rooms-container end -->
                             </div>
-                        </div>
+                        <?php $no++;
+                        } ?>
                         <!-- article end -->                                         
                         <div class="pagination">
                             <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
