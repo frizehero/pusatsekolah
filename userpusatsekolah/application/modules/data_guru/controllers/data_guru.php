@@ -80,15 +80,6 @@ class Data_guru extends MX_Controller
 		echo Modules::run('template/tampilCore', $data);
 	}
 
-	// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_tambah_guru",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
 	
 	function detailprofil($id)
 		{
@@ -100,43 +91,4 @@ class Data_guru extends MX_Controller
 			echo Modules::run('template/tampilCore', $data);
 		}
 
-	// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_edit_guru",
-			'tampil'		=> $this->M_data_guru->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function tambah()
-	{
-		$this->M_data_guru->tambah();
-		redirect('data_guru');
-	}
-
-	function edit()
-	{
-		$this->M_data_guru->edit();
-		redirect('data_guru');
-	}
-
-	function hapus()
-	{
-		$this->M_data_guru->hapus();
-		redirect('data_guru');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
 }
