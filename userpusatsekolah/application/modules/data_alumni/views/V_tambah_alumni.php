@@ -53,15 +53,25 @@
                                                             <input type="text" placeholder="Tanggal Lahir" value=""/>
                                                         </div>
                                                         <div class="col-sm-4">
-                                                            <label class="vis-label"> Jenis Kelamin <i class="fal fa-barcode"></i> </label>
-                                                            <div class="listsearch-input-item ">
-                                                                <select data-placeholder="Your Country" class="chosen-select no-search-select" >
-                                                                    <option>Jenis Kelamin</option>
-                                                                    <option>Perempuan</option>
-                                                                    <option>Laki-laki</option>
-                                                                </select>
+                                                        <label class="vis-label"> Jenis Kelamin <i class="fal fa-barcode"></i> </label>
+                                                        <div class="listsearch-input-item ">
+                                                            <select name="jenis_kelamin" data-placeholder="Your Country" class="chosen-select no-search-select" style="display: none;">
+                                                                <option>Jenis Kelamin</option>
+                                                                <option>Perempuan</option>
+                                                                <option>Laki-laki</option>
+                                                            </select>
+                                                            <div class="nice-select chosen-select no-search-select" tabindex="0">
+                                                                <span class="current">Jenis Kelamin</span>
+                                                                <div class="nice-select-search-box">
+                                                                    <input type="text" class="nice-select-search" placeholder="Search...">
+                                                                </div>
+                                                                <ul class="list">
+                                                                    <li data-value="Jenis Kelamin" class="option selected">Jenis Kelamin</li><li data-value="Perempuan" class="option">Perempuan</li>
+                                                                    <li data-value="Laki-laki" class="option">Laki-laki</li>
+                                                                </ul>
                                                             </div>
                                                         </div>
+                                                    </div>
                                                         <div class="col-sm-6">
                                                             <label class="vis-label">Status Alumni <i class="far fa-user"></i></label>
                                                             <input name="status_alumni" type="text" placeholder="Status Alumni" value=""/>
