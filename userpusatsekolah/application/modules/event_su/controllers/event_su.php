@@ -23,8 +23,10 @@ class Event_su extends MX_Controller {
 			'namamodule' 	=> "event_su",
 			'namafileview' 	=> "V_event_su",
 			'tampil'		=> $this->M_event_su->tampil($idsekolahx['id_sekolah']),
+			'tampilberanda'		=> $this->M_event_su->tampilberanda($idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
+			'tampilkompetensi'	=> $this->M_event_su->tampilkompetensi($idsekolahx['id_sekolah']),
 
 		);
 		echo Modules::run('template/tampilCore', $data);
