@@ -77,8 +77,10 @@
                             <!-- listsearch-input-item-->
                             <div class="col-md-4">
                                 <div class="listsearch-input-item">
-                                    <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
-                                    <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                    <?php echo form_open('data_alumni/search') ?>
+                                        <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                        <input name="cari" type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                    <?php echo form_close() ?>
                                 </div>
                             </div>
                             <!-- listsearch-input-item end-->
