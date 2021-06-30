@@ -40,6 +40,26 @@ class Data_alumni extends MX_Controller {
 		echo Modules::run('template/tampilCore', $data);
 	}
 
+	function search()
+	{
+
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+
+		$data_alumni 	= $this->input->post('nama');
+		$data = array(
+			'namamodule' 	=> "data_alumni",
+			'namafileview' 	=> "V_data_alumni",
+			'tampil'		=> $this->M_data_alumni->cari(),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampil_tahun'	=> $this->M_data_alumni->tampil_tahun($idsekolahx['id_sekolah']),
+			'tampilkompetensi'	=> $this->M_data_alumni->tampilkompetensi($idsekolahx['id_sekolah']),
+		);
+		echo Modules::run('template/tampilCore', $data);
+	
+	}
+
 		// halaman tambah
 	function tambahview()
 	{

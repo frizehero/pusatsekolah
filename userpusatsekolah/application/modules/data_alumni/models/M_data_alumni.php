@@ -19,6 +19,18 @@ class M_data_alumni extends CI_Model {
 		return $query->result();
 	}
 
+	function tampil_tahun($idsekolahx)
+	{
+		$this->db->select('thlulus_alumni, COUNT(thlulus_alumni) as total');
+		$this->db->group_by('thlulus_alumni');
+		$this->db->order_by('total', 'dsc');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		
+		$query = $this->db->get();
+		return $query->result();
+	}
+
 	function tambah()
 	{
 		$nama_alumni 			= $this->input->post('nama_alumni');
@@ -182,6 +194,16 @@ class M_data_alumni extends CI_Model {
 		$idnya = decrypt_url($id);
 		$this->db->where('id_alumni', $idnya);
 		return $this->db->get('data_alumni')->row_array();
+	}
+
+	function get_alumni($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_alumni',$st);
+		$query = $this->db->get('data_alumni',$limit, $start);
+		return $query->result();
 	}
 
 	function hapus()
