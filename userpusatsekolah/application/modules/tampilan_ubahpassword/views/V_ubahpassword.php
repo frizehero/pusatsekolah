@@ -88,12 +88,60 @@
                 <div class="clearfix"></div>
             </div>
             <!-- dashboard-menu  end-->
-            <!-- dashboard content-->
+            <!--<div id="main">
+                <div id="login">
+                <?php echo @$error; ?>
+                <h2>Change Password</h2>
+                <br>
+                    <form method="post" action=''>
+                        <label>Old Password :</label>
+                        <input type="password" name="old_pass" id="name" placeholder="Old Pass"/><br /><br />
+                        <label>New Password :</label>
+                        <input type="password" name="new_pass" id="password" placeholder="New Password"/><br/><br />
+
+                        <label>Confirm Password :</label>
+                        <input type="password" name="confirm_pass" id="password" placeholder="Confirm Password"/><br/><br />
+                        <input type="submit" value="login" name="change_pass"/><br />
+                    </form>
+                </div>
+            </div>-->
             <div class="col-md-9">
                 <div class="dashboard-title   fl-wrap">
                     <h3>Ubah Password</h3>
                 </div>
                 <!-- profile-edit-container-->
+                <div class="profile-edit-container fl-wrap block_box">
+                    <div class="custom-form">
+                            <div id="admin">
+                                <?php echo @$error; ?>
+                                <form method="post" action=''>
+                                    <div class="pass-input-wrap fl-wrap">
+                                        <label>Password Sebelumnya</label>
+                                        <input type="password" name="old_pass" id="password" placeholder="Old Pass"/>
+                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    </div>
+                                    <div class="pass-input-wrap fl-wrap">
+                                        <label>Password Baru</label>
+                                        <input type="password" name="new_pass" id="password" placeholder="New Password"/>
+                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    </div>
+                                    <div class="pass-input-wrap fl-wrap">
+                                        <label>Ulangi Password</label>
+                                        <input type="password" name="confirm_pass" id="password" placeholder="Confirm Password"/>
+                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    </div>
+                                    <button class="btn color2-bg  float-btn" type="submit" value="admin" name="change_pass">Simpan Perubahan<i class="fal fa-save"></i></button>
+                                </form>
+                            </div>
+                    </div>                
+                </div>
+                <!-- profile-edit-container end-->
+            </div>
+            <!-- dashboard content-->
+            <!--<div class="col-md-9">
+                <div class="dashboard-title   fl-wrap">
+                    <h3>Ubah Password</h3>
+                </div>
                 <div class="profile-edit-container fl-wrap block_box">
                     <div class="custom-form">
                         <div class="pass-input-wrap fl-wrap">
@@ -113,7 +161,7 @@
                         </div>
                         <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
                     </div>
-                </div>
+                </div>-->
                 <!-- profile-edit-container end-->
             </div>
             <!-- dashboard content end-->

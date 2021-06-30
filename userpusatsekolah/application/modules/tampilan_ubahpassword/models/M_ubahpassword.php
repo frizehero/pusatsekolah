@@ -25,61 +25,16 @@ class M_ubahpassword extends CI_Model
 		
 	}
 
-	function tambah()
+	function fetch_pass($session_id)
 	{
-		$posts 		= $this->input->post('posts');
-
-		$this->load->library('upload');
-		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/images/postsekolah/';
-		$config['allowed_types']	= 'gif|jpg|png|jpeg';
-		$config['max_size']			= 5120;
-		$config['max_width']		= 4300;
-		$config['max_height']		= 4300;
-		$config['file_name'] 		= $nmfile;
-
-		$this->upload->initialize($config);
-
-		if ($_FILES['postfoto']['name']) {
-			if ($this->upload->do_upload('postfoto')) {
-				$gbr = $this->upload->data();
-				$data = array(
-					'post_sekolah'		=> $posts,
-					'post_foto_sekolah'	=> $gbr['file_name'],
-
-
-				);
-				$this->db->insert('beranda_as', $data);
-				$this->session->set_flashdata('msg', 'suksestambah');
-			}
-		} else {
-			$data = array(
-				'post_sekolah'		=> $posts,
-			);
-			$this->db->insert('beranda_as', $data);
-			$this->session->set_flashdata('msg', 'suksestambah');
+		$fetch_pass=$this->db->query("select * from tb_login where id_admin='$session_id'");
+		$res=$fetch_pass->result();
 		}
+		function change_pass($session_id,$new_pass)
+		{
+		$update_pass=$this->db->query("UPDATE tb_login set pass='$new_pass'  where id_admin='$session_id'");
 	}
 
-	function tampiledit($id)
-	{
-		$idnya = decrypt_url($id);
-		$this->db->where('id_admin', $idnya);
-		return $this->db->get('tampilan_ubahpassword')->row_array();
-	}
-
-	function hapus()
-	{
-		$id = $this->input->post('id');
-		$this->db->where('id_beranda_as', $id)->delete('beranda_as');
-		$this->session->set_flashdata('msg', 'sukseshapus');
-	}
-
-	function cari()
-	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_sekolah', $cari)->get('sekolah')->result();
-	}
 
 	function ambilidsekolah($id)
 	{

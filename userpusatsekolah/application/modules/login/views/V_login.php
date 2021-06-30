@@ -78,7 +78,7 @@
                                             <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
                                                 <label >Nama Lengkap <span>*</span> </label>
                                                 <input name="name" type="text"   onClick="this.select()" value="">
-                                                <label>Email <span>*</span></label>
+                                                <label>Username <span>*</span></label>
                                                 <input name="email" type="text"  onClick="this.select()" value="">
                                                 <label >Password <span>*</span></label>
                                                 <input name="password" type="password"   onClick="this.select()" value="" >
