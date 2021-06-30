@@ -5,7 +5,7 @@
             <!--<div class="dashboard-breadcrumbs breadcrumbs"><a href="#">Home</a><a href="#">Edit Profil</a><span>Main page</span></div>-->
             <!--Tariff Plan menu-->
             <div class="tfp-btn"><span>Beralih Ke : </span>
-                <a href="tampilan-beranda-user.html"><strong>Tampilan Sekolah</strong></a>
+                <a href="<?php echo base_url('beranda_su'); ?>"><strong>Tampilan Sekolah</strong></a>
             </div>
             <!--Tariff Plan menu end-->
             <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
@@ -100,7 +100,7 @@
                             <label>Kamu merasa bahwa Pusat Sekolah sangat membantu? mari bantu sebarkan Pusat Sekolah ke orang yang kamu kenal agar mereka juga terbantu dalam menentukn sekolahnya.</label>
 
                         </div>
-                        <button class="btn    color2-bg  float-btn">UNDANG<i class="fal fa-save"></i></button>
+                        <button onclick="copyTeks()" id="dataCopy" class="btn color2-bg  float-btn">UNDANG<i class="fal fa-save"></i></button>
                     </div>
                 </div>
                 <!-- profile-edit-container end-->
