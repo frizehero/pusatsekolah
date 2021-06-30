@@ -30,6 +30,7 @@ class M_beranda_as extends CI_Model
 	
 		$this->db->select('*');
 		$this->db->from('p_sekolah');
+		$this->db->where('jjg_sekolah','SMK');
 		$query = $this->db->get();
 
 

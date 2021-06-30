@@ -9,6 +9,16 @@
                 <span class="section-separator"></span>
                 <h4>Kami akan menampilkan seluruh daftar Sekolah Menengah Kejuruan sesuai dengan apa yang Anda pilih.</h4>
             </div>
+            <div class="hero-categories fl-wrap">
+                <ul class="no-list-style">
+                    <li><a href="<?php echo base_url('daftar_paud'); ?>"><i class="far fa-user"></i><span>PAUD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_tk'); ?>"><i class="far fa-user-friends"></i><span>TK</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sd'); ?>"><i class="far fa-user-plus"></i><span>SD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smp'); ?>"><i class="far fa-play"></i><span>SMP</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sma'); ?>"><i class="far fa-envelope"></i><span>SMA</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smk'); ?>"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
+                </ul>
+            </div>
         </div>
         <div class="header-sec-link">
             <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a>
@@ -55,7 +65,7 @@
                         <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic">
                             <?php $no=1; foreach ($semuasekolah AS $rowS ) { ?>
                             <!-- shop-item  -->
-                            <div class="gallery-item smk">
+                            <div class="gallery-item <?php echo $rowS->jjg_sekolah;?>">
                                 <!-- listing-item  -->
                                 <div class="listing-item">
                                     <article class="geodir-category-listing fl-wrap">
