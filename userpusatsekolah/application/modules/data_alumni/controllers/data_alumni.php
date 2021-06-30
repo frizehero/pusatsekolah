@@ -15,10 +15,17 @@ class Data_alumni extends MX_Controller {
 	// index
 	function index()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_data_alumni",
-			'tampil'		=> $this->M_data_alumni->tampil(),
+			'tampil'		=> $this->M_data_alumni->tampil($idsekolahx['id_sekolah']),
+			'tampilberanda'		=> $this->M_data_alumni->tampilberanda($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampilkompetensi'	=> $this->M_data_alumni->tampilkompetensi($idsekolahx['id_sekolah']),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
