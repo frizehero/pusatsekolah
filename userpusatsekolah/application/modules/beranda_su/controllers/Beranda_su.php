@@ -36,6 +36,7 @@ class Beranda_su extends MX_Controller
 				'namamodule' 		=> "beranda_su",
 				'namafileview' 		=> "V_beranda_su",
 				'tampil'			=> $this->M_beranda_as->tampil($idsekolahx['id_sekolah']),
+				'semuasekolah'		=> $this->M_beranda_as->semuasekolah(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
