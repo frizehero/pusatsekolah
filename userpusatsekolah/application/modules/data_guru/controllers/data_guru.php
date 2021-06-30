@@ -61,13 +61,15 @@ class Data_guru extends MX_Controller
 		$iduser=$this->session->userdata('session_id');
 		$idsekolahx = $this->M_data_guru->ambilidsekolah($iduser);
 
+		$data_guru 	= $this->input->post('nama');
 		$data = array(
 			'namamodule' 	=> "data_guru",
 			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->get_guru($search, $idsekolahx['id_sekolah']),
+			'tampil'		=> $this->M_data_guru->cari(),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel($idsekolahx['id_sekolah']),
+			'tampilkompetensi'	=> $this->M_data_guru->tampilkompetensi($idsekolahx['id_sekolah']),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	
@@ -83,6 +85,7 @@ class Data_guru extends MX_Controller
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
+
 
 	// halaman tambah
 	function tambahview()
