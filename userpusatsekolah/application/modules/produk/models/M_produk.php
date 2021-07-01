@@ -56,6 +56,13 @@ class M_produk extends CI_Model {
 			}
 	}
 
+	function tampildetail($id)
+	{
+		$idnya = decrypt_url($id);
+		$this->db->where('id_produk', $idnya);
+		return $this->db->get('produk')->row_array();
+	}
+
 	function tampiledit($id)
 	{
 		$idnya=decrypt_url($id);

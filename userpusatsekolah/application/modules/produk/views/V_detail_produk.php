@@ -1,5 +1,6 @@
 <!-- content-->
 <div class="content">
+<form action="<?php echo base_url('produk/tampildetail') ?>" method="POST" enctype="multipart/form-data">
 <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
     <div class="bg-parallax-wrap">
         <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
@@ -168,14 +169,15 @@
                     <div class="fl-wrap block_box product-header">
                         <div class="product-header-details">
                             <div class="row">
+                            <?php $no = 1; foreach ($tampil as $rowP) { ?>
                                 <div class="col-md-6">
                                     <div class="single-slider-wrap shop-media-img">
                                         <div class="single-slider fl-wrap">
                                             <div class="swiper-container">
                                                 <div class="swiper-wrapper lightgallery">
-                                                    <div class="swiper-slide hov_zoom"><img src="images/shop/10.jpg" alt=""><a href="images/shop/10.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
-                                                    <div class="swiper-slide hov_zoom"><img src="images/shop/15.jpg" alt=""><a href="images/shop/9.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
-                                                    <div class="swiper-slide hov_zoom"><img src="images/shop/11.jpg" alt=""><a href="images/shop/11.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                                    <div class="hov_zoom"><img src="images/shop/10.jpg" alt=""><a href="images/shop/10.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                                    <!-- <div class="swiper-slide hov_zoom"><img src="images/shop/15.jpg" alt=""><a href="images/shop/9.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div>
+                                                    <div class="swiper-slide hov_zoom"><img src="images/shop/11.jpg" alt=""><a href="images/shop/11.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a></div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -189,8 +191,8 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3>Batik Daun</h3>
-                                    <span class="product-header-details_price">Rp. 50.000</span>
+                                    <h3><?php echo $tampil['nama_produk'] ?></h3>
+                                    <span class="product-header-details_price">Rp. <?php echo $tampil['harga_produk'] ?></span>
                                     <div class="listing-rating-count-wrap">
                                         <div class="listing-rating card-popup-rainingvis" data-starrating2="5"></div>
                                         <div class="reviews-count">(12 reviews)</div>
@@ -205,6 +207,7 @@
                                         </a>
                                     </div>
                                 </div>
+                            <?php $no++;} ?>
                             </div>
                             <span class="fw-separator"></span>  
                             <div class="list-single-tags tags-stylwrap">
@@ -348,5 +351,6 @@
 </section>
 <!--section end-->
 <div class="limit-box fl-wrap"></div>
+</form>
 </div>
 <!--content end-->   
