@@ -48,6 +48,8 @@ class Edit_profil extends MX_Controller
 	// halaman tambah
 	function tambahview()
 	{
+		$data['path'] = base_url('assets');
+		$this->load->view('V_edit_profil_tambah', $data);
 		$data = array(
 			'namamodule' 	=> "edit_profil",
 			'namafileview' 	=> "V_edit_profil",
