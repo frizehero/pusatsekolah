@@ -150,7 +150,7 @@
                                                     <div id="filters-search" class="tab-content  first-tab " style="margin-bottom: 10px;">
                                                         <!-- listsearch-input-item-->
                                                         <div class="listsearch-input-item">
-                                                            <?php echo form_open('event_sekolah/search') ?>
+                                                            <?php echo form_open('event_su/search') ?>
                                                                 <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
                                                                 <input type="text" name="cari" placeholder="Apa yang sedang kamu cari?" value=""/>
                                                             <?php echo form_close() ?>

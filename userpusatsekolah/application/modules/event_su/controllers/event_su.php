@@ -43,6 +43,7 @@ class Event_su extends MX_Controller {
 			'namamodule' 	=> "event_su",
 			'namafileview' 	=> "V_event_su",
 			'tampil'		=> $this->M_event_su->cari(),
+			'tampilberanda'		=> $this->M_event_su->tampilberanda($idsekolahx['id_sekolah']),
 			'idnya' 		=> $iduser,
 			'idsekolah' 	=> $idsekolahx,
 			'tampilkompetensi'	=> $this->M_event_su->tampilkompetensi($idsekolahx['id_sekolah']),

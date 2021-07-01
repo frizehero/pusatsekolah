@@ -37,7 +37,7 @@ class M_event_su extends CI_Model {
 	{
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('judul_event',$cari)->get('event_sekolah')->result();
-	}
+	}	
 
 	function tampilkompetensi($id)
 	{
