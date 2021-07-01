@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="dashboard-header_conatiner fl-wrap">
                     <div class="dashboard-header-avatar">
-                        <img src="images/avatar/4.jpg" alt="">
+                        <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
                         <a href="tampilan-edit-profiluser.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
                     </div>
                     <br><br>
@@ -89,65 +89,48 @@
             </div>
             <!-- dashboard-menu  end-->
             <!-- dashboard content-->
+            <?php tampilnotif() ?>
             <div class="col-md-9">
                 <!-- dashboard-list-box-->
                 <div class="dashboard-list-box fl-wrap">
                     <div class="dashboard-header color-bg fl-wrap">
-                        <h3>Pusat Sekolah Care</h3>
+                        <h3><?php echo $nama_penerima; ?></h3>
                     </div>
                     <div class="chat-wrapper fl-wrap">
                         <div class="chat-box fl-wrap">
                             <!-- message-->
                             <div class="chat-message chat-message_guest fl-wrap">
                                 <div class="dashboard-message-avatar">
-                                    <img src="images/logo.ico" alt="" style="background: #ffffff;">
-                                    <span class="chat-message-user-name cmun_sm">Puska</span>
+                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                    <span class="chat-message-user-name cmun_sm"><?php echo $nama_penerima; ?></span>
                                 </div>
                                 <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
                                 <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
                             </div>
                             <!-- message end-->
                             <!-- message-->
-                            <div class="chat-message chat-message_user fl-wrap">
-                                <div class="dashboard-message-avatar">
-                                    <img src="images/avatar/4.jpg" alt="">
-                                    <span class="chat-message-user-name cmun_sm">Jessie</span>
+                            <?php $no = 1;
+                            foreach ($tampil as $rowP) { ?>
+                                <div class="chat-message chat-message_user fl-wrap">
+                                    <div class="dashboard-message-avatar">
+                                        <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
+                                        <span class="chat-message-user-name cmun_sm"><?php echo $nama['nama'] ?></span>
+                                    </div>
+                                    <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
+                                    <p style="width: fit-content; align: right;"><?php echo $rowP->pesan; ?></p>
                                 </div>
-                                <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
+                            <?php $no++;
+                            } ?>
+                            <div class="chat-widget_input fl-wrap">
+                                <textarea placeholder="Type Message"></textarea>
+                                <button type="submit"><i class="fal fa-paper-plane"></i></button>
                             </div>
-                            <!-- message end-->
-                            <!-- message-->
-                            <div class="chat-message chat-message_guest fl-wrap">
-                                <div class="dashboard-message-avatar">
-                                    <img src="images/logo.ico" alt="" style="background: #ffffff;">
-                                    <span class="chat-message-user-name cmun_sm">Puska</span>
-                                </div>
-                                <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                <p>Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus..</p>
-                            </div>
-                            <!-- message end-->
-                            <!-- message-->
-                            <div class="chat-message chat-message_user fl-wrap">
-                                <div class="dashboard-message-avatar">
-                                    <img src="images/avatar/4.jpg" alt="">
-                                    <span class="chat-message-user-name cmun_sm">Jessie</span>
-                                </div>
-                                <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                <p>Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat .</p>
-                            </div>
-                            <!-- message end-->
                         </div>
-                        <div class="chat-widget_input fl-wrap">
-                            <textarea placeholder="Type Message"></textarea>
-                            <button type="submit"><i class="fal fa-paper-plane"></i></button>
-                        </div>
+                        <!-- dashboard-list-box end-->
                     </div>
-                    <!-- dashboard-list-box end-->
                 </div>
+                <!-- dashboard content end-->
             </div>
-            <!-- dashboard content end-->
-        </div>
     </section>
     <!--  section  end-->
     <div class="limit-box fl-wrap"></div>

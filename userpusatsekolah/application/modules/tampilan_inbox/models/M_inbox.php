@@ -1,34 +1,15 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_pesan extends CI_Model
+class M_inbox extends CI_Model
 {
 
 	function tampil()
 	{
-		//$this->db->from('tb_pesan');
-		//$query = $this->db->get();
+		//$this->db->order_by('id_beranda_as', 'DESC');
+		//$query = $this->db->get('beranda_as');
+		//return $query->result();
 
-		//$this->db->select('id_penerima,nama_penerima,pesan');
-		//$this->db->distinct();
-		//$query = $this->db->get('tb_pesans');
-
-		//$this->db->select('id_penerima');
-		//$this->db->distinct();
-		//$this->db->get('tb_pesan');
-		//$this->db->select('DISTINCT(id_penerima)');
-
-		// $this->db->group_by('id_penerima');
-
-		// $this->load->database();
-		// $last = $this->db->order_by('id_pesan', "desc")
-		// 	->limit(1)
-		// 	->get('tb_pesan')
-		// 	->row();
-		// print_r($last);
-		// $query = $this->db->get('tb_pesan');
-
-		//$this->db->distinct('id_penerima');
 		$this->db->select('DISTINCT(id_penerima),id_pesan,id_user,pesan,time,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
 		$this->db->from('tb_pesan');
 		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
@@ -45,7 +26,6 @@ class M_pesan extends CI_Model
 		return $this->db->get('tb_pesan')->row_array();
 	}
 
-
 	function tampilpesan($iduser)
 	{
 		$this->db->from('tb_pesan');
@@ -57,16 +37,6 @@ class M_pesan extends CI_Model
 
 	function tampildetail($id_penerima)
 	{
-		//$idnya = decrypt_url($id);
-		//$this->db->select('*');
-		//$this->db->from('tb_pesan');
-		//$this->db->where('pesan', $id_penerima);
-
-		//$query = $this->db->row_array();;
-
-		//return $query;
-		//return $this->db->get('tb_pesan')->row_array();
-
 		$this->db->select('*,tb_login.nama AS nama_penerima');
 		$this->db->from('tb_pesan');
 		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
@@ -82,7 +52,7 @@ class M_pesan extends CI_Model
 		return $this->db->get('tb_pesan')->row_array();
 	}
 
-	function tambahdetail()
+	function tambah()
 	{
 		$pesan				= $this->input->post('pesan');
 		$id_user			= $this->input->post('id_user');
@@ -102,16 +72,24 @@ class M_pesan extends CI_Model
 		//$last_id = $this->db->insert_id();
 	}
 
-
-	function hapus($id)
+	function tampiledit($id)
 	{
-		$this->db->where('tb_pesan', $id)->delete('tb_pesan');
+		$idnya = decrypt_url($id);
+		$this->db->where('id_p_sekolah', $idnya);
+		return $this->db->get('p_sekolah')->row_array();
+	}
+
+	function hapus()
+	{
+		$id = $this->input->post('id');
+		$this->db->where('id_beranda_as', $id)->delete('beranda_as');
+		$this->session->set_flashdata('msg', 'sukseshapus');
 	}
 
 	function cari()
 	{
 		$cari 		= $this->input->post('cari');
-		return $this->db->like('isi_pesan', $cari)->get('pesan')->result();
+		return $this->db->like('nama_sekolah', $cari)->get('sekolah')->result();
 	}
 
 	function ambilidsekolah($id)
@@ -135,33 +113,15 @@ class M_pesan extends CI_Model
 		$this->db->where('id_penerima', $id);
 		$query = $this->db->get();
 
-
-
-		return $query->row_array();
-	}
-
-	function ambilnamapenerima($id)
-	{
-
-		$this->db->select('*, tb_login.nama AS nama_p');
-		$this->db->from('tb_login');
-		$this->db->where('nama', $id);
-		$query = $this->db->get();
-
-
-
 		return $query->row_array();
 	}
 
 	function tampilkompetensi($id)
 	{
 
-		$this->db->select('*,tb_login.id_admin AS id_user, tb_login.nama AS nama_user');
-		$this->db->from('tb_pesan');
-		$this->db->join('tb_login', 'tb_pesan.id_user = tb_login.id_admin');
-		/*$this->db->join('tb_login', 'tb_pesan.nama_user = tb_login.nama');
-		$this->db->join('tb_login', 'tb_pesan.nama_user = tb_login.nama');*/
-		$this->db->where('id_pesan', $id);
+		$this->db->select('*');
+		$this->db->from('p_sekolah');
+		$this->db->where('id_p_sekolah', $id);
 		$query = $this->db->get();
 		return $query->result();
 	}

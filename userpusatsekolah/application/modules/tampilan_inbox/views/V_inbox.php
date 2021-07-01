@@ -59,7 +59,7 @@
                         <div class="user-profile-menu">
                             <h3>AKUN SAYA</h3>
                             <ul class="no-list-style">
-                                <li><a href="<?php echo base_url('tampilan_inbox'); ?>"class="user-profile-act"><i class="fal fa-envelope"></i> Inbox<span>3</span></a></li>
+                                <li><a href="<?php echo base_url('tampilan_inbox'); ?>" class="user-profile-act"><i class="fal fa-envelope"></i> Inbox<span>3</span></a></li>
                                 <li><a href="<?php echo base_url('tampilan_favoritsaya'); ?>"><i class="fal fa-heart"></i>Favorit Saya</a></li>
                                 <li><a href="<?php echo base_url('tampilan_terakhirdilihat'); ?>"><i class="fal fa-dot-circle"></i>Terakhir Dilihat <span>7</span></a></li>
                                 <li><a href="<?php echo base_url('tampilan_hasilreport'); ?>"><i class="fal fa-times-circle"></i> Hasil Report</a></li>
@@ -100,144 +100,34 @@
                             <!-- chat-box-->
                             <div class="col-sm-8">
                                 <div class="chat-box fl-wrap">
-                                    <!-- message-->
-                                    <div class="chat-message chat-message_guest fl-wrap">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/1.jpg" alt="">
-                                            <span class="chat-message-user-name cmun_sm">Andy</span>
-                                        </div>
-                                        <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                        <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-6"><img src="<?php echo base_url() ?>assets/images/chat.jpg" style="width: 350px; padding-top: 80px; opacity: 50%;"></div>
+                                        <div class="col-md-3"></div>
                                     </div>
-                                    <!-- message end-->
-                                    <!-- message-->
-                                    <div class="chat-message chat-message_user fl-wrap">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/4.jpg" alt="">
-                                            <span class="chat-message-user-name cmun_sm">Jessie</span>
-                                        </div>
-                                        <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                        <p>Nulla eget erat consequat quam feugiat dapibus eget sed mauris.</p>
-                                    </div>
-                                    <!-- message end-->
-                                    <!-- message-->
-                                    <div class="chat-message chat-message_guest fl-wrap">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/1.jpg" alt="">
-                                            <span class="chat-message-user-name cmun_sm">Andy</span>
-                                        </div>
-                                        <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                        <p>Sed non neque faucibus, condimentum lectus at, accumsan enim. Fusce pretium egestas cursus..</p>
-                                    </div>
-                                    <!-- message end-->
-                                    <!-- message-->
-                                    <div class="chat-message chat-message_user fl-wrap">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/4.jpg" alt="">
-                                            <span class="chat-message-user-name cmun_sm">Jessie</span>
-                                        </div>
-                                        <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
-                                        <p>Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit, et pulvinar nisi tincidunt. Aliquam erat volutpat. Curabitur convallis fringilla diam sed aliquam. Sed tempor iaculis massa faucibus feugiat. In fermentum facilisis massa, a consequat .</p>
-                                    </div>
-                                    <!-- message end-->
-                                </div>
-                                <div class="chat-widget_input fl-wrap">
-                                    <textarea placeholder="Type Message"></textarea>
-                                    <button type="submit"><i class="fal fa-paper-plane"></i></button>
                                 </div>
                             </div>
                             <!-- chat-box end-->
                             <!-- chat-contacts-->
+                            <?php tampilnotif() ?>
                             <div class="col-sm-4">
                                 <div class="chat-contacts fl-wrap">
                                     <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/2.jpg" alt="">
-                                            <div class="message-counter">2</div>
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Mark Rose</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/avatar-bg.png" alt="">
-                                            <div class="message-counter">1</div>
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Adam Koncy</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item chat-contacts-item_active" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/1.jpg" alt="">
-                                            <div class="message-counter">3</div>
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Andy Smith</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/5.jpg" alt="">
-                                            <div class="message-counter">4</div>
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Joe Frick</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/avatar-bg.png" alt="">
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Alise Goovy</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/3.jpg" alt="">
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Freddy Kovalsky</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
-                                    <!-- chat-contacts-item-->
-                                    <a class="chat-contacts-item" href="#">
-                                        <div class="dashboard-message-avatar">
-                                            <img src="images/avatar/avatar-bg.png" alt="">
-                                        </div>
-                                        <div class="chat-contacts-item-text">
-                                            <h4>Cristiano Olando</h4>
-                                            <span>27 Dec 2018 </span>
-                                            <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>
-                                        </div>
-                                    </a>
-                                    <!-- chat-contacts-item -->
+                                    <?php $no = 1;
+                                    foreach ($tampil as $rowP) { ?>
+                                        <a class="chat-contacts-item" href="<?php echo base_url('tampilan_inbox/detailpesan/' . encrypt_url($rowP->id_penerima)); ?>">
+                                            <div class="dashboard-message-avatar">
+                                                <img src="images/avatar/2.jpg" alt="">
+                                                <div class="message-counter">2</div>
+                                            </div>
+                                            <div class="chat-contacts-item-text">
+                                                <h4><?php echo $rowP->nama_penerima; ?></h4>
+                                                <span>27 Dec 2018 </span>
+                                                <p><?php echo $rowP->pesan; ?></p>
+                                            </div>
+                                        </a>
+                                    <?php $no++;
+                                    } ?>
                                 </div>
                             </div>
                             <!-- chat-contacts end-->

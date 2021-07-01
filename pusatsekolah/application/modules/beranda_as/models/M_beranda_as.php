@@ -16,7 +16,7 @@ class M_beranda_as extends CI_Model
 	{
 		$posts 		= $this->input->post('posts');
 		$id 		= $this->input->post('id');
-		
+
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
 		$config['upload_path']		= 'assets/images/postsekolah/';
@@ -57,14 +57,13 @@ class M_beranda_as extends CI_Model
 		$idu			= $this->input->post('idu');
 		$idp 			= $this->input->post('idp');
 
-				$data = array(
-					'isi_komentar'		=> $koment,
-					'id_user'			=> $idu,
-					'id_postingan'		=> $idp,
-				);
-				$this->db->insert('komentar', $data);
-				$this->session->set_flashdata('msg', 'suksestambah');
-			
+		$data = array(
+			'isi_komentar'		=> $koment,
+			'id_user'			=> $idu,
+			'id_postingan'		=> $idp,
+		);
+		$this->db->insert('komentar', $data);
+		$this->session->set_flashdata('msg', 'suksestambah');
 	}
 
 	function tampiledit($id)
@@ -96,15 +95,15 @@ class M_beranda_as extends CI_Model
 
 	function ambilidsekolah($id)
 	{
-	
+
 		$this->db->select('*');
 		$this->db->from('tb_login');
-		$this->db->where('id_admin',$id);
+		$this->db->where('id_admin', $id);
 		$query = $this->db->get();
 
 
-		
-    	return $query->row_array();
+
+		return $query->row_array();
 	}
 
 
@@ -113,8 +112,8 @@ class M_beranda_as extends CI_Model
 		$this->db->order_by('id_komentar', 'DESC');
 		$this->db->select('*');
 		$this->db->from('komentar');
-		$this->db->join('tb_login', 'komentar.id_user = tb_login.id_admin','left');
-		$this->db->join('p_sekolah', 'tb_login.id_sekolah = p_sekolah.id_p_sekolah','left');
+		$this->db->join('tb_login', 'komentar.id_user = tb_login.id_admin', 'left');
+		$this->db->join('p_sekolah', 'tb_login.id_sekolah = p_sekolah.id_p_sekolah', 'left');
 		$this->db->where('id_postingan', $id);
 		$query = $this->db->get();
 
