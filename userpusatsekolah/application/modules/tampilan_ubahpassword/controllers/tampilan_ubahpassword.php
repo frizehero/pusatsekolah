@@ -12,15 +12,6 @@ class Tampilan_ubahpassword extends MX_Controller
 		$this->load->model('login/m_session');
 	}
 
-	/*function index()
-	{
-		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_ubahpassword_as->tampil(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}*/
 
 	// index
 	function index()
@@ -43,71 +34,25 @@ class Tampilan_ubahpassword extends MX_Controller
 		}
 	}
 
-	// halaman tambah
-	function tambahview()
+	function change_pass()
 	{
-		$data = array(
-			'namamodule' 	=> "daftar_sd",
-			'namafileview' 	=> "V_daftar_sd",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	/*function tentangview()
-	{
-		//echo $this->session->userdata('session_id');
+		if($this->input->post('change_pass'))
 		{
-			$iduser=$this->session->userdata('session_id');
-			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
-
-			$data = array(
-				'namamodule' 	=> "beranda_as",
-				'namafileview' 	=> "V_tentang",
-				'idnya' 		=> $iduser,
-				'idsekolah' 	=> $idsekolahx,
-				'tampilkompetensi'		=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
-			);
-			echo Modules::run('template/tampilCore', $data);
+			$old_pass=$this->input->post('old_pass');
+			$new_pass=$this->input->post('new_pass');
+			$confirm_pass=$this->input->post('confirm_pass');
+			$session_id=$this->session->userdata('id_admin');
+			$que=$this->db->query("select * from tb_login where id_admin='$session_id'");
+			$row=$que->row();
+			if((!strcmp($old_pass, $pass))&& (!strcmp($new_pass, $confirm_pass))){
+				$this->M_ubahpassword->change_pass($session_id,$new_pass);
+				echo "Password changed successfully !";
+				}
+			    else{
+					echo "Invalid";
+				}
 		}
-	}*/
-
-	// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "tampilan_ubahpassword",
-			'namafileview' 	=> "V_ubahpassword",
-			'tampil'		=> $this->M_ubahpassword->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
+		$this->load->view('V_ubahpassword');	
 	}
 
-	function tambah()
-	{
-		$this->M_ubahpassword->tambah();
-		redirect('beranda_as');
-	}
-
-	function edit()
-	{
-		$this->M_ubahpassword->edit();
-		redirect('tampilan_ubahpassword');
-	}
-
-	function hapus()
-	{
-		$this->M_ubahpassword->hapus();
-		redirect('beranda_as');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_ubahpassword->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
 }

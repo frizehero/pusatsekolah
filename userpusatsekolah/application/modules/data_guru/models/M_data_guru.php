@@ -43,15 +43,10 @@ class M_data_guru extends CI_Model
 		return $query->result();
 	}
 	
-	function cari ($data_guru, $idsekolahx)
+	function cari()
 	{
-		$this->db->select('*');
-		$this->db->from('data_guru');
-		$this->db->where('id_sekolah', $idsekolahx);
-		$this->db->like('nama_guru',$data_guru);
-	
-		$query = $this->db->get();
-		return $query->result();
+		$cari 		= $this->input->post('cari');
+		return $this->db->like('nama_guru',$cari)->get('data_guru')->result();
 	}
 	
 	

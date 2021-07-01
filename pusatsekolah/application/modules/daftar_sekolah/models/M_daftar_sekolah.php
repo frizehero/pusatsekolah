@@ -1,35 +1,71 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_data_alumni extends CI_Model {
+class M_daftar_sekolah extends CI_Model {
 
-	function tampil($idsekolahx)
+	function tampil()
 	{
-		$this->db->order_by('id_alumni', 'DESC');
+		return $this->db->get('p_sekolah')->result();
+	}
+    
+    function totaldata($idsekolahx)
+	{
 		$this->db->where('id_sekolah', $idsekolahx);
 		$query = $this->db->get('data_alumni');
-		return $query->result();
-	}
-
-	function tampilberanda($idsekolahx)
-	{
-		$this->db->order_by('id_beranda_as', 'DESC');
-		$this->db->where('id_sekolah', $idsekolahx);
-		$query = $this->db->get('beranda_as');
-		return $query->result();
-	}
-
-	function tampil_tahun($idsekolahx)
-	{
-		$this->db->select('thlulus_alumni, COUNT(thlulus_alumni) as total');
-		$this->db->group_by('thlulus_alumni');
-		$this->db->order_by('total', 'dsc');
-		$this->db->where('id_sekolah', $idsekolahx);
-		$this->db->from('data_alumni');
+		return $query->num_rows();
 		
-		$query = $this->db->get();
+	}
+
+	function tampilkan($idsekolahx,$limit, $start)
+	{
+		$this->db->where('id_sekolah', $idsekolahx);
+		$query = $this->db->get('data_alumni', $limit, $start);
+		return $query->result();
+		
+	}
+
+	function get_alumni($limit, $start, $st = NULL)
+	{
+		
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_alumni',$st);
+		$query = $this->db->get('data_alumni',$limit, $start);
 		return $query->result();
 	}
+
+	function get_alumni_count($st = NULL)
+	{
+
+		if ($st == "NIL") $st = "";
+		$this->db->select('*')
+		->like('nama_alumni',$st);
+		$query = $this->db->get('data_alumni');
+		return $query->num_rows();
+	}
+
+	function filter ($limit, $start, $st = NULL)
+	{
+		if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('nama_alumni',$st);
+	    
+		$query = $this->db->get('data_alumni',$limit, $start);
+		return $query->result();
+	}
+
+	function count_filter ($st = NULL)
+	{
+        if ($st == "NIL") $st = "";
+		 $this->db->select('*')
+		->from ('data_alumni')
+		->like('nama_alumni',$st);
+	    
+		$query = $this->db->get();
+		return $query->num_rows();
+	}
+
 
 	function tambah()
 	{
@@ -52,26 +88,8 @@ class M_data_alumni extends CI_Model {
 		$instagram_alumni		= $this->input->post('instagram_alumni');
 		$facebook_alumni		= $this->input->post('facebook_alumni');
 		$twitter_alumni			= $this->input->post('twitter_alumni');
-		$deskripsi_alumni		= $this->input->post('deskripsi_alumni');
-		$foto_alumni			= $this->input->post('foto_alumni');
-		$id_sekolah 			= $this->input->post('id_sekolah');
+		$id 					= $this->input->post('id');
 
-		$this->load->library('upload');
-		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/ppdb/';
-		$config['allowed_types']	= 'gif|jpg|png|jpeg';
-		$config['max_size']			= 5120;
-		$config['max_width']		= 4300;
-		$config['max_height']		= 4300;
-		$config['file_name'] 		= $nmfile;
-
-		$this->upload->initialize($config);
-
-		if ($_FILES['foto']['name']) 
-		{
-			if ($this->upload->do_upload('foto')) 
-			{
-				$gbr = $this->upload->data();
 				$data = array(
 					'nama_alumni'			=> $nama_alumni,
 					'thlulus_alumni'		=> $thlulus_alumni,
@@ -92,44 +110,11 @@ class M_data_alumni extends CI_Model {
 					'instagram_alumni'		=> $instagram_alumni,
 					'facebook_alumni'		=> $facebook_alumni,
 					'twitter_alumni'		=> $twitter_alumni,
-					'deskripsi_alumni'		=> $deskripsi_alumni,
-					'foto_alumni'		 	=> $gbr['file_name'],
-					'id_sekolah'			=> $id_sekolah,
-
-					);
+					'id_sekolah'			=> $id,
+				);
 
 				$this->db->insert('data_alumni', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
-			}
-		} else {
-			$data = array(
-				'nama_alumni'			=> $nama_alumni,
-				'thlulus_alumni'		=> $thlulus_alumni,
-				'nisn'					=> $nisn,
-				'tmplahir_alumni' 		=> $tmplahir_alumni,
-				'tgllahir_alumni' 		=> $tgllahir_alumni,
-				'jk_alumni'				=> $jk_alumni,
-				'status_alumni'			=> $status_alumni,
-				'sekolah_bekerja'		=> $sekolah_bekerja,
-				'alamatlengkap_alumni'	=> $alamatlengkap_alumni,
-				'provinsi_alumni'		=> $provinsi_alumni,
-				'kotakab_alumni'		=> $kotakab_alumni,
-				'kec_alumni'			=> $kec_alumni,
-				'kelurahan_alumni'		=> $kelurahan_alumni,
-				'kodepos_alumni'		=> $kodepos_alumni,
-				'email_alumni'			=> $email_alumni,
-				'telephone_alumni'		=> $telephone_alumni,
-				'instagram_alumni'		=> $instagram_alumni,
-				'facebook_alumni'		=> $facebook_alumni,
-				'twitter_alumni'		=> $twitter_alumni,
-				'deskripsi_alumni'		=> $deskripsi_alumni,
-				'foto_alumni'		 	=> 'kosong1.jpeg',
-				'id_sekolah'			=> $id_sekolah,
-				
-			);
-			$this->db->insert('data_alumni', $data);
-			$this->session->set_flashdata('msg', 'suksestambah');
-		}
 			
 	}
 
@@ -142,7 +127,7 @@ class M_data_alumni extends CI_Model {
 
     function edit()
 	{
-		$id_alumni				= $this->input->post('id_alumni');
+		$id 		= $this->input->post('id');
 		$nama_alumni 			= $this->input->post('nama_alumni');
 		$thlulus_alumni			= $this->input->post('thlulus_alumni');
 		$nisn					= $this->input->post('nisn');
@@ -196,16 +181,6 @@ class M_data_alumni extends CI_Model {
 		return $this->db->get('data_alumni')->row_array();
 	}
 
-	function get_alumni($limit, $start, $st = NULL)
-	{
-		
-		if ($st == "NIL") $st = "";
-		$this->db->select('*')
-		->like('nama_alumni',$st);
-		$query = $this->db->get('data_alumni',$limit, $start);
-		return $query->result();
-	}
-
 	function hapus()
 	{
 		$id = $this->input->post('id');
@@ -238,10 +213,38 @@ class M_data_alumni extends CI_Model {
     	return $query->num_rows();
 	}
 
-	function cari()
+	function folter ($data_alumni, $idsekolahx)
 	{
-		$cari 		= $this->input->post('cari');
-		return $this->db->like('nama_alumni',$cari)->get('data_alumni')->result();
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('thlulus_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function tampil_tahun($idsekolahx)
+	{
+		$this->db->select('thlulus_alumni, COUNT(thlulus_alumni) as total');
+		$this->db->group_by('thlulus_alumni');
+		$this->db->order_by('total', 'dsc');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->from('data_alumni');
+		
+		$query = $this->db->get();
+		return $query->result();
+	}
+
+	function cari ($data_alumni, $idsekolahx)
+	{
+		$this->db->select('*');
+		$this->db->from('data_alumni');
+		$this->db->where('id_sekolah', $idsekolahx);
+		$this->db->like('nama_alumni',$data_alumni);
+	
+		$query = $this->db->get();
+		return $query->result();
 	}
 
 	function ambilidsekolah($id)
@@ -255,19 +258,5 @@ class M_data_alumni extends CI_Model {
 
 		
     	return $query->row_array();
-	}
-
-	function tampilkompetensi($id)
-	{
-
-		$this->db->select('*,wilayah_provinsi.nama AS provinsi, wilayah_kabupaten.nama AS kota_kab, wilayah_kecamatan.nama AS kecamatan, wilayah_desa.nama AS kelurahan');
-		$this->db->from('p_sekolah');
-		$this->db->join('wilayah_provinsi', 'p_sekolah.provinsi_sekolah = wilayah_provinsi.id');
-		$this->db->join('wilayah_kabupaten', 'p_sekolah.kota_kab_sekolah = wilayah_kabupaten.id');
-		$this->db->join('wilayah_kecamatan', 'p_sekolah.kec_sekolah = wilayah_kecamatan.id');
-		$this->db->join('wilayah_desa', 'p_sekolah.kel_sekolah = wilayah_desa.id');
-		$this->db->where('id_p_sekolah', $id);
-		$query = $this->db->get();
-		return $query->result();
 	}
 }

@@ -9,6 +9,16 @@
                 <span class="section-separator"></span>
                 <h4>Kami akan menampilkan seluruh daftar Sekolah PAUD sesuai dengan apa yang Anda pilih.</h4>
             </div>
+            <div class="hero-categories fl-wrap">
+                <ul class="no-list-style">
+                    <li><a href="<?php echo base_url('daftar_paud'); ?>"><i class="far fa-user"></i><span>PAUD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_tk'); ?>"><i class="far fa-user-friends"></i><span>TK</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sd'); ?>"><i class="far fa-user-plus"></i><span>SD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smp'); ?>"><i class="far fa-play"></i><span>SMP</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sma'); ?>"><i class="far fa-envelope"></i><span>SMA</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smk'); ?>"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
+                </ul>
+            </div>
         </div>
         <div class="header-sec-link">
             <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a>
@@ -53,604 +63,64 @@
                         <!-- list-main-wrap-header end-->
                         <!-- listing-item-container -->
                         <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic">
+                            <?php $no=1; foreach ($semuasekolah AS $rowS ) { ?>
                             <!-- shop-item  -->
-                            <div class="grid-item-holder gallery-items fl-wrap" style="position: relative; height: 907.688px;">
-                                <!--  gallery-item-->
-                                <div class="gallery-item restaurant events" style="position: absolute; left: 0px; top: 0px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud1.jpg" alt="" style="height: 200px;">
+                            <div class="gallery-item <?php echo $rowS->jjg_sekolah;?>">
+                                <!-- listing-item  -->
+                                <div class="listing-item">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                            <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                                <img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowS->foto_sampul;?>" alt="" style="height: 185px;">
+                                            </a>
+                                            <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowS->foto_profil;?>" alt="" style="background: #ffffff"></a>
+                                            </div>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing-rating-count-wrap">
+                                                    <div class="review-score">4.1</div>
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                    <br>
+                                                    <div class="reviews-count">26 reviews</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="geodir-category-content fl-wrap title-sin_item">
+                                            <div class="geodir-category-content-title fl-wrap">
+                                                <div class="geodir-category-content-title-item">
+                                                    <br>
+                                                    <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>"><?php echo $rowS->nama_sekolah;?></a><!--<span class="verified-badge"><i class="fal fa-check"></i>--></span></h3>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowS->almtlengkap_sekolah;?></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-text fl-wrap">
+                                                <p class="small-text"><?php echo $rowS->desk_sekolah;?></p>
+                                            </div>
+                                            <div class="geodir-category-footer fl-wrap">
+                                                <a class="listing-item-category-wrap">
+                                                    <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
+                                                    <span><?php echo $rowS->stt_sekolah;?></span>
                                                 </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Alisa Noory</strong></span>
+                                                <div class="geodir-opt-list">
+                                                    <ul class="no-list-style">
+                                                        <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
+                                                    </ul>
                                                 </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">12 reviews</div>
-                                                    </div>
+                                                <div class="geodir-category_contacts">
+                                                    <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
+                                                    <ul class="no-list-style">
+                                                        <li><span><i class="fal fa-phone"></i> Telephone : </span><a href="#"><?php echo $rowS->telphone;?></a></li>
+                                                        <li><span><i class="fal fa-envelope"></i> Email : </span><a href="#"></i><?php echo $rowS->email;?></a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Happy Sunday</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Anggrek Utara No. 16</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
+                                        </div>
+                                    </article>
                                 </div>
-                                <!-- gallery-item  end-->
-                                <!--  gallery-item-->
-                                <div class="gallery-item events" style="position: absolute; left: 310px; top: 0px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud2.jpg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/2.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Mark Rose</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.2</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">6 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap ">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Sunnyside</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Southside 75 Prince St </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category purp-bg"><i class="fal fa-cocktail"></i></div>
-                                                        <span>Sekolah Swasta</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.88496706" data-newlongitude="-73.88191222"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>2</strong></span></a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/9.jpg'},{'src': 'images/all/32.jpg'}, {'src': 'images/all/23.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item fitness" style="position: absolute; left: 620px; top: 0px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud3.jpg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/4.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Permata Bunda</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Rose Garden No.29 </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category blue-bg"><i class="fal fa-dumbbell"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.94982541" data-newlongitude="-73.84357452"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>3</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/31.jpg'},{'src': 'images/all/10.jpg'}, {'src': 'images/all/15.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item hotels" style="position: absolute; left: 930px; top: 0px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud4.png" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/3.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Kliff Antony</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">5.0</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD International Lovely</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Bright St North Elm No. 08</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category  yellow-bg"><i class="fal fa-bed"></i></div>
-                                                        <span>Sekolah Swasta</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.72228267" data-newlongitude="-73.99246214"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>4</strong></span></a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/16.jpg'},{'src': 'images/all/27.jpg'}, {'src': 'images/all/20.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item hotels" style="position: absolute; left: 310px; top: 452px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud5.jpeg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/5.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Nasty Wood</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.7</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">9 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Forever After</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Jasmine Southside No.14 </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category green-bg"><i class="fal fa-cart-arrow-down"></i></div>
-                                                        <span>Sekolah Swasta</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.88496706" data-newlongitude="-73.88191222"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>5</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/28.jpg'},{'src': 'images/all/29.jpg'}, {'src': 'images/all/30.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item  restaurant hotels" style="position: absolute; left: 0px; top: 453px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud6.jpg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/1.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Alisa Noory</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.1</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">26 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Sunshine</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Lavender No. 29 </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.76221766" data-newlongitude="-73.96511769"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>6</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/18.jpg'},{'src': 'images/all/21.jpg'}, {'src': 'images/all/22.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item fitness" style="position: absolute; left: 620px; top: 453px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud7.jpg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/6.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.1</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">56 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Live Love</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Bougenville Timur No.21 </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category blue-bg"><i class="fal fa-dumbbell"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.94982541" data-newlongitude="-73.84357452"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>7</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/10.jpg'},{'src': 'images/all/14.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
-                                <!-- gallery-item  -->
-                                <div class="gallery-item hotels" style="position: absolute; left: 930px; top: 453px;">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item" style="height: 433px;">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                                <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/paud8.jpg" alt="" style="height: 200px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/4.jpg" alt=""></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Nasty Wood</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">4.7</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                                            <div class="card-popup-rainingvis_bg"><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span><span class="card-popup-rainingvis_bg_item"></span>
-                                                                <div></div>
-                                                            </div>
-                                                        </div>
-                                                        <br>
-                                                        <div class="reviews-count">9 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">PAUD Happy Forever</a></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Jl. Dahlia Barat No. 17 </a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category green-bg"><i class="fal fa-cart-arrow-down"></i></div>
-                                                        <span>Sekolah Swasta</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#" class="single-map-item" data-newlatitude="40.88496706" data-newlongitude="-73.88191222"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>5</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/28.jpg'},{'src': 'images/all/29.jpg'}, {'src': 'images/all/34.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <!-- gallery-item  end-->
+                                <!-- listing-item end -->
                             </div>
-
                             <!-- shop-item end -->
-                            <div class="pagination fwmpag">
-                                <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
-                                <a href="#">1</a>
-                                <a href="#" class="current-page">2</a>
-                                <a href="#">3</a>
-                                <a href="#">...</a>
-                                <a href="#">7</a>
-                                <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
-                            </div>
+                            <?php $no++;} ?>
                         </div>
                         <!-- listing-item-container end -->
                     </div>

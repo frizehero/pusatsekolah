@@ -1,19 +1,20 @@
 <!-- content-->
+<?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
 <div class="content">
     <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
         <div class="bg-parallax-wrap">
-            <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
         </div>
         <div class="container">
             <div class="list-single-header-item  fl-wrap">
                 <div class="row">
                     <div class="col-md-9">
-                        <h1>SMK Negeri 1 Kota Probolinggo<span class="verified-badge"><i class="fal fa-check"></i></span></h1>
-                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
+                        <h1><?php echo $rowP->nama_sekolah;?><span class="verified-badge"><i class="fal fa-check"></i></span></h1>
+                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowP->almtlengkap_sekolah;?></a> <a href="#"> <i class="fal fa-phone"></i><?php echo $rowP->telphone;?></a> <a href="#"><i class="fal fa-envelope"></i><?php echo $rowP->email;?></a></div>
                     </div>
                     <div class="col-md-3">
-                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="tampilan-inbox-user.html">
+                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="<?php echo base_url('tampilan_inbox'); ?>">
                             <div class="listing-rating-count-wrap single-list-count">
                                 <div class="review-score">4.1</div>
                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
@@ -27,9 +28,9 @@
             <div class="list-single-header_bottom fl-wrap">
                 <a class="listing-item-category-wrap" href="#">
                     <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
-                    <span>Negeri</span>
+                    <span><?php echo $rowP->stt_sekolah;?></span>
                 </a>
-                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'>  </span></a></div>
                 <div class="geodir_status_date gsd_open">Online</div>
                 <div class="list-single-stats">
                     <ul class="no-list-style">
@@ -149,8 +150,10 @@
                                                     <div id="filters-search" class="tab-content  first-tab " style="margin-bottom: 10px;">
                                                         <!-- listsearch-input-item-->
                                                         <div class="listsearch-input-item">
-                                                            <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
-                                                            <input type="text" placeholder="Apa yang sedang kamu cari?" value=""/>
+                                                            <?php echo form_open('event_su/search') ?>
+                                                                <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                                                <input type="text" name="cari" placeholder="Apa yang sedang kamu cari?" value=""/>
+                                                            <?php echo form_close() ?>
                                                         </div>
                                                         <!-- listsearch-input-item end-->
                                                         <!-- listsearch-input-item-->
@@ -255,4 +258,5 @@
     </section>
     <div class="limit-box fl-wrap"></div>
 </div>
+<?php $no++;} ?>
 <!--content end-->

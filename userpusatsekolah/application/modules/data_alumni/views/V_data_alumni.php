@@ -1,20 +1,20 @@
 <!-- content-->
+<?php $no=1; foreach ($tampilkompetensi AS $rowP ) { ?>
 <div class="content">
-    <!--section  -->
     <section class="listing-hero-section hidden-section" data-scrollax-parent="true" id="sec1">
         <div class="bg-parallax-wrap">
-            <div class="bg par-elem "  data-bg="images/bg/smkn1.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+            <div class="bg par-elem "  data-bg="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_sampul;?>" data-scrollax="properties: { translateY: '30%' }"></div>
             <div class="overlay"></div>
         </div>
         <div class="container">
             <div class="list-single-header-item  fl-wrap">
                 <div class="row">
                     <div class="col-md-9">
-                        <h1>SMK Negeri 1 Kota Probolinggo<span class="verified-badge"><i class="fal fa-check"></i></span></h1>
-                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i>  Probolingo, Jawa Timur, Indonesia</a> <a href="#"> <i class="fal fa-phone"></i>0335421121</a> <a href="#"><i class="fal fa-envelope"></i>admin@smkn1probolinggo.sch.id</a></div>
+                        <h1><?php echo $rowP->nama_sekolah;?><span class="verified-badge"><i class="fal fa-check"></i></span></h1>
+                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowP->almtlengkap_sekolah;?></a> <a href="#"> <i class="fal fa-phone"></i><?php echo $rowP->telphone;?></a> <a href="#"><i class="fal fa-envelope"></i><?php echo $rowP->email;?></a></div>
                     </div>
                     <div class="col-md-3">
-                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="tampilan-inbox-user.html">
+                        <a class="fl-wrap list-single-header-column custom-scroll-link " href="<?php echo base_url('tampilan_inbox'); ?>">
                             <div class="listing-rating-count-wrap single-list-count">
                                 <div class="review-score">4.1</div>
                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
@@ -28,9 +28,9 @@
             <div class="list-single-header_bottom fl-wrap">
                 <a class="listing-item-category-wrap" href="#">
                     <div class="listing-item-category  red-bg"><i class="fal fa-cheeseburger"></i></div>
-                    <span>Negeri</span>
+                    <span><?php echo $rowP->stt_sekolah;?></span>
                 </a>
-                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='images/avatar/5.jpg'>  </span>By  Rois Antono</a></div>
+                <div class="list-single-author"> <a href="author-single.html"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'>  </span></a></div>
                 <div class="geodir_status_date gsd_open">Online</div>
                 <div class="list-single-stats">
                     <ul class="no-list-style">
@@ -77,8 +77,10 @@
                             <!-- listsearch-input-item-->
                             <div class="col-md-4">
                                 <div class="listsearch-input-item">
-                                    <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
-                                    <input type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                    <?php echo form_open('data_alumni/search') ?>
+                                        <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                        <input name="cari" type="text" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
+                                    <?php echo form_close() ?>
                                 </div>
                             </div>
                             <!-- listsearch-input-item end-->
@@ -159,202 +161,6 @@
                     </div>
                 <?php $no++;
                 } ?>
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/22.jpg" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/23.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Mina El Hammani</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Mina El Hammani</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i>  <b>Alumni 2015</b></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->  
-                    <!-- </div> -->
-                    <!--<div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/8.png" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/9.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Danna Paola</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Danna Paola</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->                                   
-                    <!-- </div> -->
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="<?php echo base_url('profil_user'); ?>" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="<?php echo base_url('profil_user'); ?>">Álvaro Rico Ladera</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->                                                            
-                    <!-- </div> -->
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/16.png" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/17.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Álvaro Rico</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Álvaro Rico Ladera</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i> <b>Alumni 2018</b> </a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->                              
-                    <!-- </div> -->
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/22.jpg" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/23.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Mina El Hammani</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Mina El Hammani</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i>  <b>Alumni 2015</b></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->  
-                    <!-- </div> -->
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/8.png" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/9.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Danna Paola</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Danna Paola</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->                                   
-                    <!-- </div> -->
-                    <!-- <div class="gallery-item"> -->
-                        <!-- listing-item  -->
-                        <!-- <div class="listing-item" style="height: 433px;">
-                            <article class="geodir-category-listing fl-wrap">
-                                <div class="geodir-category-img">
-                                    <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
-                                    <a href="listing-single.html" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
-                                    </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
-                                        <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
-                                    </div>
-                                </div>
-                                <div class="geodir-category-content fl-wrap title-sin_item">
-                                    <div class="geodir-category-content-title fl-wrap ">
-                                        <div class="geodir-category-content-title-item">
-                                            <h3 class="title-sin_map"><a href="listing-single.html">Ester Expósito</a></h3>
-                                            <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-user-alt"></i><b>Alumni 2019</b></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="geodir-category-text fl-wrap">
-                                        <p class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit architecto ea, facilis nulla autem alias cumque est harum qui consequuntur ipsa voluptates molestiae! Laborum accusamus excepturi beatae ducimus, fugit provident.</p>
-                                    </div>
-                                </div>
-                            </article>
-                        </div> -->
-                        <!-- listing-item end -->                                                            
-                    <!-- </div> -->
                 <!-- listing-item-container -->
                 <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic three-columns-grid" style="padding-top: 0;">                                                      
                     <div class="pagination fwmpag">
@@ -372,4 +178,5 @@
         </div>
     <!--section end-->
 </div>
+<?php $no++;} ?>
 <!--content end-->

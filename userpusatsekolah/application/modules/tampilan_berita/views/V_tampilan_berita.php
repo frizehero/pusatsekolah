@@ -43,14 +43,12 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="listsearch-input-item">
-                                            <select data-placeholder="Location" class="chosen-select no-search-select">
-                                                <option>Semua Jenjang</option>
-                                                <option>PAUD</option>
-                                                <option>TK</option>
-                                                <option>SD</option>
-                                                <option>SMP</option>
-                                                <option>SMA</option>
-                                                <option>SMK</option>
+                                            <select name="jenjang" data-placeholder="City/Location" class="chosen-select no-search-select" >
+                                                <option>- jenjang -</option>
+                                            <?php
+                                            foreach ($tampil_jenjang as $sekolah) {?>
+                                                <option value="<?php echo $sekolah->jjg_sekolah?>"><?php echo $sekolah->jjg_sekolah?></option>
+                                            <?php }?>
                                             </select>
                                         </div>
                                     </div>

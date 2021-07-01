@@ -11,18 +11,7 @@ class Beranda_su extends MX_Controller
 		$this->load->model('M_beranda_as');
 		$this->load->model('login/m_session');
 	}
-
-	/*function index()
-	{
-		$data = array(
-			'namamodule' 	=> "beranda_as",
-			'namafileview' 	=> "V_beranda_as",
-			'tampil'		=> $this->M_beranda_as->tampil(),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}*/
-
-	// index
+	
 	function index()
 	{
 		//echo $this->session->userdata('session_id');
@@ -36,84 +25,18 @@ class Beranda_su extends MX_Controller
 				'namamodule' 		=> "beranda_su",
 				'namafileview' 		=> "V_beranda_su",
 				'tampil'			=> $this->M_beranda_as->tampil($idsekolahx['id_sekolah']),
+				'semuasekolah'		=> $this->M_beranda_as->semuasekolah(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}
-
-	// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "beranda_su",
-			'namafileview' 	=> "V_beranda",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function tentangview()
-	{
-		//echo $this->session->userdata('session_id');
-		{
-			$iduser = $this->session->userdata('session_id');
-			$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
-			$idpostingx = $this->M_beranda_as->ambilidposting();
-
-			$data = array(
-				'namamodule' 		=> "beranda_su",
-				'namafileview' 		=> "V_tentang",
-				'idnya' 			=> $iduser,
-				'idsekolah' 		=> $idsekolahx,
-				'idposting'			=> $idpostingx,
-				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($idsekolahx['id_sekolah']),
-				'tampilsejarah' 	=> $idsekolahx['id_sekolah'],
-			);
-			echo Modules::run('template/tampilCore', $data);
-		}
-	}
-
-	// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "p_sekolah",
-			'namafileview' 	=> "V_p_sekolah",
-			'tampil'		=> $this->M_p_sekolah->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function tambah()
-	{
-		$this->M_beranda_as->tambah();
-		redirect('beranda_as');
 	}
 
 	function tambahkomen()
 	{
 		$this->M_beranda_as->tambahkomen();
-		redirect('beranda_su');
-	}
-
-	function edit()
-	{
-		$this->M_p_sekolah->edit();
-		redirect('p_sekolah');
-	}
-
-	function hapus()
-	{
-		$this->M_beranda_as->hapus();
-		redirect('beranda_su');
-	}
-
-	function hapuskomen()
-	{
-		$this->M_beranda_as->hapuskomen();
 		redirect('beranda_su');
 	}
 

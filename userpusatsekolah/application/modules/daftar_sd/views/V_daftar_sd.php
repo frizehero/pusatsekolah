@@ -10,6 +10,16 @@
                     <span class="section-separator"></span>
                     <h4>Kami akan menampilkan seluruh daftar Sekolah Dasar sesuai dengan apa yang Anda pilih.</h4>
                 </div>
+                <div class="hero-categories fl-wrap">
+                <ul class="no-list-style">
+                    <li><a href="<?php echo base_url('daftar_paud'); ?>"><i class="far fa-user"></i><span>PAUD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_tk'); ?>"><i class="far fa-user-friends"></i><span>TK</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sd'); ?>"><i class="far fa-user-plus"></i><span>SD</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smp'); ?>"><i class="far fa-play"></i><span>SMP</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_sma'); ?>"><i class="far fa-envelope"></i><span>SMA</span></a></li>
+                    <li><a href="<?php echo base_url('daftar_smk'); ?>"><i class="far fa-handshake-alt"></i><span>SMK</span></a></li>
+                </ul>
+            </div>
             </div>
             <div class="header-sec-link">
                 <a href="#sec1" class="custom-scroll-link"><i class="fal fa-angle-double-down"></i></a>
@@ -54,566 +64,65 @@
                             <!-- list-main-wrap-header end-->
                             <!-- listing-item-container -->
                             <div class="listing-item-container init-grid-items fl-wrap nocolumn-lic">
-                                <!-- shop-item  -->
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
+                            <?php $no=1; foreach ($semuasekolah AS $rowS ) { ?>
+                            <!-- shop-item  -->
+                            <div class="gallery-item <?php echo $rowS->jjg_sekolah;?>">
+                                <!-- listing-item  -->
+                                <div class="listing-item">
+                                    <article class="geodir-category-listing fl-wrap">
+                                        <div class="geodir-category-img">
+                                            <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
+                                            <a href="<?php echo base_url('beranda_su'); ?>" class="geodir-category-img-wrap fl-wrap">
+                                                <img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowS->foto_sampul;?>" alt="" style="height: 185px;">
+                                            </a>
+                                            <div class="listing-avatar"><a href="<?php echo base_url('beranda_su'); ?>"><img src="http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowS->foto_profil;?>" alt="" style="background: #ffffff"></a>
+                                            </div>
+                                            <div class="geodir-category-opt">
+                                                <div class="listing-rating-count-wrap">
+                                                    <div class="review-score">4.1</div>
+                                                    <div class="listing-rating card-popup-rainingvis" data-starrating2="4"></div>
+                                                    <br>
+                                                    <div class="reviews-count">26 reviews</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="geodir-category-content fl-wrap title-sin_item">
+                                            <div class="geodir-category-content-title fl-wrap">
+                                                <div class="geodir-category-content-title-item">
+                                                    <br>
+                                                    <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>"><?php echo $rowS->nama_sekolah;?></a><!--<span class="verified-badge"><i class="fal fa-check"></i>--></span></h3>
+                                                    <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowS->almtlengkap_sekolah;?></a></div>
+                                                </div>
+                                            </div>
+                                            <div class="geodir-category-text fl-wrap">
+                                                <p class="small-text"><?php echo $rowS->desk_sekolah;?></p>
+                                            </div>
+                                            <div class="geodir-category-footer fl-wrap">
+                                                <a class="listing-item-category-wrap">
+                                                    <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
+                                                    <span><?php echo $rowS->stt_sekolah;?></span>
                                                 </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
+                                                <div class="geodir-opt-list">
+                                                    <ul class="no-list-style">
+                                                        <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
+                                                    </ul>
                                                 </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="geodir-category_contacts">
+                                                    <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
+                                                    <ul class="no-list-style">
+                                                        <li><span><i class="fal fa-phone"></i> Telephone : </span><a href="#"><?php echo $rowS->telphone;?></a></li>
+                                                        <li><span><i class="fal fa-envelope"></i> Email : </span><a href="#"></i><?php echo $rowS->email;?></a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
+                                        </div>
+                                    </article>
                                 </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-                                <div class="gallery-item sd">
-                                    <!-- listing-item  -->
-                                    <div class="listing-item">
-                                        <article class="geodir-category-listing fl-wrap">
-                                            <div class="geodir-category-img">
-                                                <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Save</span></div>
-                                                <a href="tampilan-beranda-sekolah.html" class="geodir-category-img-wrap fl-wrap">
-                                                    <img src="images/sekolah/sd2.jpg" alt="" style="height: 185px;">
-                                                </a>
-                                                <div class="listing-avatar"><a href="author-single.html"><img src="images/sekolah/logosd2.png" alt="" style="background: #ffffff"></a>
-                                                    <span class="avatar-tooltip">Added By <strong>Lisa Smith</strong></span>
-                                                </div>
-                                                <div class="geodir-category-opt">
-                                                    <div class="listing-rating-count-wrap">
-                                                        <div class="review-score">3.8</div>
-                                                        <div class="listing-rating card-popup-rainingvis" data-starrating2="3"></div>
-                                                        <br>
-                                                        <div class="reviews-count">4 reviews</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="geodir-category-content fl-wrap title-sin_item">
-                                                <div class="geodir-category-content-title fl-wrap">
-                                                    <div class="geodir-category-content-title-item">
-                                                        <br>
-                                                        <h3 class="title-sin_map"><a href="listing-single.html">SDN Ardimulyo 1</a><span class="verified-badge"><i class="fal fa-check"></i></span></h3>
-                                                        <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i> Malang, Jawa Timur, Probolinggo</a></div>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-text fl-wrap">
-                                                    <p class="small-text">Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
-                                                    <div class="facilities-list fl-wrap">
-                                                        <div class="facilities-list-title">Facilities : </div>
-                                                        <ul class="no-list-style">
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Free WiFi"><i class="fal fa-wifi"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Parking"><i class="fal fa-parking"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Non-smoking Rooms"><i class="fal fa-smoking-ban"></i></li>
-                                                            <li class="tolt" data-microtip-position="top" data-tooltip="Pets Friendly"><i class="fal fa-dog-leashed"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="geodir-category-footer fl-wrap">
-                                                    <a class="listing-item-category-wrap">
-                                                        <div class="listing-item-category red-bg"><i class="fal fa-cheeseburger"></i></div>
-                                                        <span>Sekolah Negeri</span>
-                                                    </a>
-                                                    <div class="geodir-opt-list">
-                                                        <ul class="no-list-style">
-                                                            <li><a href="#" class="show_gcc"><i class="fal fa-envelope"></i><span class="geodir-opt-tooltip">Contact Info</span></a></li>
-                                                            <li><a href="#1" class="single-map-item" data-newlatitude="40.72956781" data-newlongitude="-73.99726866"><i class="fal fa-map-marker-alt"></i><span class="geodir-opt-tooltip">On the map <strong>1</strong></span> </a></li>
-                                                            <li>
-                                                                <div class="dynamic-gal gdop-list-link" data-dynamicpath="[{'src': 'images/all/1.jpg'},{'src': 'images/all/24.jpg'}, {'src': 'images/all/12.jpg'}]"><i class="fal fa-search-plus"></i><span class="geodir-opt-tooltip">Gallery</span></div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="geodir-category_contacts">
-                                                        <div class="close_gcc"><i class="fal fa-times-circle"></i></div>
-                                                        <ul class="no-list-style">
-                                                            <li><span><i class="fal fa-phone"></i> Call : </span><a href="#">+38099231212</a></li>
-                                                            <li><span><i class="fal fa-envelope"></i> Write : </span><a href="#">yourmail@domain.com</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- listing-item end -->
-                                </div>
-
-
-
-
-                                <!-- shop-item end -->
-                                <div class="pagination fwmpag">
-                                    <a href="#" class="prevposts-link"><i class="fas fa-caret-left"></i><span>Prev</span></a>
-                                    <a href="#">1</a>
-                                    <a href="#" class="current-page">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">...</a>
-                                    <a href="#">7</a>
-                                    <a href="#" class="nextposts-link"><span>Next</span><i class="fas fa-caret-right"></i></a>
-                                </div>
+                                <!-- listing-item end -->
                             </div>
+                            <!-- shop-item end -->
+                            <?php $no++;} ?>
+                        </div>
                             <!-- listing-item-container end -->
                         </div>
                     </div>
