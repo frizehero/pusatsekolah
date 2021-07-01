@@ -89,8 +89,8 @@
             </div>
             <!-- dashboard-menu  end-->
             <!-- dashboard content-->
-            <?php tampilnotif() ?>
-            <form action="<?php echo base_url('tampilan_akunsaya/edit') ?>" method="POST" enctype="multipart/form-data">
+            
+            <form action="<?php echo base_url('tampilan_akunsaya') ?>" method="POST" enctype="multipart/form-data">
                 <input name="id" value="<?php echo $tampil['id_admin'] ?>" type="hidden" class="form-control">
                 <div class="col-md-9">
                     <div class="dashboard-title fl-wrap">
@@ -101,12 +101,12 @@
                         <div class="custom-form">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <label> Nama Depan <i class="fal fa-user"></i></label>
-                                    <input type="text" name="nama_depan" value="<?php echo $tampil['nama_depan'] ?>" />
+                                    <label> Nama Lengkap <i class="fal fa-user"></i></label>
+                                    <input type="text" name="nama" value="<?php echo $tampil['nama'] ?>" >
                                 </div>
                                 <div class="col-sm-6">
-                                    <label> Nama Belakang <i class="fal fa-user"></i></label>
-                                    <input type="text" name="nama_belakang" value="<?php echo $tampil['nama_belakang'] ?>" />
+                                    <label> Username <i class="fal fa-user"></i></label>
+                                    <input type="text" name="Username" value="<?php echo $tampil['username'] ?>" />
                                 </div>
                                 <div class="col-sm-6">
                                     <label> Email<i class="far fa-envelope"></i> </label>

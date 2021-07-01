@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class M_akunsaya extends CI_Model{
+class M_tb_login extends CI_Model{
 
 	function tampil()
 	{
@@ -12,8 +12,9 @@ class M_akunsaya extends CI_Model{
 
 	function tambah()
 	{
-		$nama_depan 		= $this->input->post('nama_depan');
-		$nama_belakang		= $this->input->post('nama_belakang');
+		$nama	         	= $this->input->post('nama');
+		$username			= $this->input->post('username');
+		$password			= $this->input->post('password');
 		$email_user 		= $this->input->post('email_user');
 		$telepon_user 		= $this->input->post('telepon_user');
 		$profesi_user 		= $this->input->post('profesi_user');
@@ -28,6 +29,8 @@ class M_akunsaya extends CI_Model{
 		$twitter_user 		= $this->input->post('twitter_user');
 		$whatsapp_user 		= $this->input->post('whatsapp_user');
 		$facebook_user 		= $this->input->post('facebook_user');
+		$id_sekolah 		= $this->input->post('id_sekolah');
+		$id_admin	 		= $this->input->post('id_admin');
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
@@ -47,7 +50,8 @@ class M_akunsaya extends CI_Model{
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_depan' 		=> $nama_depan,
-					'nama_belakang'		=> $nama_belakang,
+					'username'			=> $username,
+					'password'		    => $password,
 					'email_user' 		=> $email_user,
 					'telepon_user' 		=> $telepon_user,
 					'profesi_user' 		=> $profesi_user,
@@ -62,6 +66,8 @@ class M_akunsaya extends CI_Model{
 					'twitter_user' 		=> $twitter_user,
 					'whatsapp_user' 	=> $whatsapp_user,
 					'facebook_user' 	=> $facebook_user,
+					'id_sekolah'		=> $id_sekolah,
+					'id_admin'	 		=> $id_admin,
 					'fotop_user' 		=> $gbr['file_name'],
 
 
@@ -72,8 +78,9 @@ class M_akunsaya extends CI_Model{
 		}
 		else{
 				$data = array(
-					'nama_depan' 		=> $nama_depan,
-					'nama_belakang'		=> $nama_belakang,
+					'nama' 		        => $nama,
+					'username'			=> $username,
+					'password'			=> $password,
 					'email_user' 		=> $email_user,
 					'telepon_user' 		=> $telepon_user,
 					'profesi_user' 		=> $profesi_user,
@@ -88,6 +95,8 @@ class M_akunsaya extends CI_Model{
 					'twitter_user' 		=> $twitter_user,
 					'whatsapp_user' 	=> $whatsapp_user,
 					'facebook_user' 	=> $facebook_user,
+					'id_sekolah'		=> $id_sekolah,
+					'id_admin'	 		=> $id_admin,
 					'fotop_user' 		=> 'kosong1.jpeg',
 				);
 				$this->db->insert('tb_login', $data);
@@ -98,8 +107,9 @@ class M_akunsaya extends CI_Model{
 	function edit()
 	{
 		$id 				= $this->input->post('id');
-		$nama_depan 		= $this->input->post('nama_depan');
-		$nama_belakang		= $this->input->post('nama_belakang');
+		$nama 				= $this->input->post('nama');
+		$username			= $this->input->post('username');
+		$password			= $this->input->post('password');
 		$email_user 		= $this->input->post('email_user');
 		$telepon_user 		= $this->input->post('telepon_user');
 		$profesi_user 		= $this->input->post('profesi_user');
@@ -114,6 +124,8 @@ class M_akunsaya extends CI_Model{
 		$twitter_user 		= $this->input->post('twitter_user');
 		$whatsapp_user 		= $this->input->post('whatsapp_user');
 		$facebook_user 		= $this->input->post('facebook_user');
+		$id_sekolah 		= $this->input->post('id_sekolah');
+		$id_admin	 		= $this->input->post('id_admin');
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
@@ -133,7 +145,8 @@ class M_akunsaya extends CI_Model{
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_depan' 		=> $nama_depan,
-					'nama_belakang'		=> $nama_belakang,
+					'username'			=> $username,
+					'password'			=> $password,
 					'email_user' 		=> $email_user,
 					'telepon_user' 		=> $telepon_user,
 					'profesi_user' 		=> $profesi_user,
@@ -148,6 +161,8 @@ class M_akunsaya extends CI_Model{
 					'twitter_user' 		=> $twitter_user,
 					'whatsapp_user' 	=> $whatsapp_user,
 					'facebook_user' 	=> $facebook_user,
+					'id_sekolah'		=> $id_sekolah,
+					'id_admin'	 		=> $id_admin,
 					'fotop_user' 		=> $gbr['file_name'],
 				);
 				$this->db->where('id_admin',$id)->update('tb_login',$data);
@@ -157,7 +172,8 @@ class M_akunsaya extends CI_Model{
 		else{
 				$data = array(
 					'nama_depan' 		=> $nama_depan,
-					'nama_belakang'		=> $nama_belakang,
+					'username'			=> $username,
+					'password'			=> $password,
 					'email_user' 		=> $email_user,
 					'telepon_user' 		=> $telepon_user,
 					'profesi_user' 		=> $profesi_user,
@@ -172,6 +188,8 @@ class M_akunsaya extends CI_Model{
 					'twitter_user' 		=> $twitter_user,
 					'whatsapp_user' 	=> $whatsapp_user,
 					'facebook_user' 	=> $facebook_user,
+					'id_sekolah'		=> $id_sekolah,
+					'id_admin'	 		=> $id_admin,
 				);
 				$this->db->where('id_admin',$id)->update('tb_login',$data);
 				$this->session->set_flashdata('msg', 'suksesedit');
