@@ -22,7 +22,7 @@
 
 <body>
     <div class="app-container app-theme-white body-tabs-shadow">
-         <div class="app-container">
+        <div class="app-container">
             <div class="bg-plum-plate bg-animation">
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="mx-auto app-login-box col-md-8">
@@ -106,13 +106,13 @@
                                                             </div>
                                                             <div class="col-md-6">
                                                                 <h5 class="card-title">AKREDITASI SEKOLAH</h5>
-                                                                <select class="multiselect-dropdown form-control">
+                                                                <select class="multiselect-dropdown form-control select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
                                                                     <optgroup label="Pilih sesuai akreditasi sekolah">
-                                                                        <option value="A">A</option>
+                                                                        <option value="A" data-select2-id="3">A</option>
                                                                         <option value="B">B</option>
                                                                         <option value="C">C</option>
                                                                     </optgroup>
-                                                                </select>
+                                                                </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="2" style="width: 409.656px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-9qw5-container"><span class="select2-selection__rendered" id="select2-9qw5-container" role="textbox" aria-readonly="true" title="A">A</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                             </div>
                                                         </div>   
                                                         <br>
@@ -225,7 +225,7 @@
                                                         <div class="form-row">
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Provinsi</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
+                                                                <select multiple="" class="multiselect-dropdown form-control select2-hidden-accessible" data-select2-id="4" tabindex="-1" aria-hidden="true">
                                                                     <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                         <option value="AK">Alaska</option>
                                                                         <option value="HI">Hawaii</option>
@@ -286,11 +286,11 @@
                                                                         <option value="VA">Virginia</option>
                                                                         <option value="WV">West Virginia</option>
                                                                     </optgroup>
-                                                                </select>
+                                                                </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="5" style="width: 199.828px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="Select an option" style="width: 191.812px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kota / Kabupaten</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
+                                                                <select multiple="" class="multiselect-dropdown form-control select2-hidden-accessible" data-select2-id="6" tabindex="-1" aria-hidden="true">
                                                                     <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                         <option value="AK">Alaska</option>
                                                                         <option value="HI">Hawaii</option>
@@ -313,11 +313,11 @@
                                                                         <option value="IN">Indiana</option>
                                                                         <option value="ME">Maine</option>
                                                                     </optgroup>
-                                                                </select>
+                                                                </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="7" style="width: 199.828px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="Select an option" style="width: 191.812px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kelurahan</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
+                                                                <select multiple="" class="multiselect-dropdown form-control select2-hidden-accessible" data-select2-id="8" tabindex="-1" aria-hidden="true">
                                                                     <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                         <option value="AK">Alaska</option>
                                                                         <option value="HI">Hawaii</option>
@@ -340,11 +340,11 @@
                                                                         <option value="IN">Indiana</option>
                                                                         <option value="ME">Maine</option>
                                                                     </optgroup>
-                                                                </select>
+                                                                </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="9" style="width: 199.828px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="Select an option" style="width: 191.812px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                             </div>
                                                             <div class="col-md-3">
                                                                 <h5 class="card-title">Kecamatan</h5>
-                                                                <select multiple="multiple" class="multiselect-dropdown form-control">
+                                                                <select multiple="" class="multiselect-dropdown form-control select2-hidden-accessible" data-select2-id="10" tabindex="-1" aria-hidden="true">
                                                                     <optgroup label="Alaskan/Hawaiian Time Zone">
                                                                         <option value="AK">Alaska</option>
                                                                         <option value="HI">Hawaii</option>
@@ -367,7 +367,7 @@
                                                                         <option value="IN">Indiana</option>
                                                                         <option value="ME">Maine</option>
                                                                     </optgroup>
-                                                                </select>
+                                                                </select><span class="select2 select2-container select2-container--bootstrap4" dir="ltr" data-select2-id="11" style="width: 199.828px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="Select an option" style="width: 191.812px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                                             </div>
                                                         </div>
                                                         <br>
@@ -585,6 +585,49 @@
             </div>
         </div>
     </div>
+<script type="text/javascript" src="assets/scripts/main.d810cf0ae7f39f28f336.js"></script>
+
+<!--BUAT AKUN-->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="text-center" id="exampleModalLongTitle">Selamat !</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="no-results">
+                    <div class="swal2-icon swal2-success swal2-animate-success-icon">
+                        <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
+                        <span class="swal2-success-line-tip"></span>
+                        <span class="swal2-success-line-long"></span>
+                        <div class="swal2-success-ring"></div>
+                        <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
+                        <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
+                    </div>
+                    <div class="results-subtitle mt-4">Data sekolah kamu sudah kami terima</div>
+                    <div class="widget-subheading">Selanjutnya kamu bisa melihat sekolahmu untuk mengubah tampilan dan melengkapi data tambahan.</div>
+                    <div class="mt-3 mb-3"></div>
+                    <div class="text-center">
+                        <a href="tampilan-beranda-admin-sekolah.html">
+                            <button class="btn-shadow btn-wide btn btn-success btn-lg">Lihat Sekolahku</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Mirrored from demo.dashboardpack.com/architectui-html-pro/pages-login-boxed.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Feb 2021 08:03:41 GMT -->
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body>
 <script type="text/javascript" src="<?php echo base_url('assets/') ?>scripts/main.js"></script></body>
 
 
