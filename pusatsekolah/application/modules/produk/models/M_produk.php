@@ -72,11 +72,11 @@ class M_produk extends CI_Model {
 
 	function tambah()
 	{
-		$nama 			= $this->input->post('nama');
+		$nama 					= $this->input->post('nama');
 		$kategori_produk		= $this->input->post('kategori_produk');
-		$deskripsi 		= $this->input->post('deskripsi');
-		$harga			= $this->input->post('harga');
-		$id 			= $this->input->post('id');
+		$deskripsi_produk 		= $this->input->post('deskripsi_produk');
+		$harga					= $this->input->post('harga');
+		$id 					= $this->input->post('id');
 
 
 		$this->load->library('upload');
@@ -97,8 +97,8 @@ class M_produk extends CI_Model {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama_produk'		=> $nama,
-					'kategori_produk'		=> $kategori_produk,
-					'deskripsi_produk'	=> $deskripsi,
+					'kategori_produk'	=> $kategori_produk,
+					'deskripsi_produk'	=> $deskripsi_produk,
 					'harga_produk'		=> $harga,
 					'id_sekolah'		=> $id,
 					'foto_produk' 		=> $gbr['file_name'],
@@ -113,8 +113,8 @@ class M_produk extends CI_Model {
 		else{
 				$data = array(
 					'nama_produk'		=> $nama,
-					'kategori_produk'		=> $kategori_produk,
-					'deskripsi_produk'	=> $deskripsi,
+					'kategori_produk'	=> $kategori_produk,
+					'deskripsi_produk'	=> $deskripsi_produk,
 					'harga_produk'		=> $harga,
 					'id_sekolah'		=> $id,
 					'foto_produk' 		=> 'kosong1.jpeg',
@@ -134,11 +134,11 @@ class M_produk extends CI_Model {
 
 	function edit()
 	{
-		$id 			= $this->input->post('id');
-		$nama 			= $this->input->post('nama');
-		$kategori_produk= $this->input->post('kategori_produk');
-		$deskripsi 		= $this->input->post('deskripsi');
-		$harga			= $this->input->post('harga');
+		$id 				= $this->input->post('id');
+		$nama 				= $this->input->post('nama');
+		$kategori_produk	= $this->input->post('kategori_produk');
+		$deskripsi_produk	= $this->input->post('deskripsi_produk');
+		$harga				= $this->input->post('harga');
 
 
 		$this->load->library('upload');
@@ -160,7 +160,7 @@ class M_produk extends CI_Model {
 				$data = array(
 					'nama_produk'		=> $nama,
 					'kategori_produk'	=> $kategori_produk,
-					'deskripsi_produk'	=> $deskripsi,
+					'deskripsi_produk'	=> $deskripsi_produk,
 					'harga_produk'		=> $harga,
 					'foto_produk' 		=> $gbr['file_name'],
 				);
@@ -173,7 +173,7 @@ class M_produk extends CI_Model {
 				$data = array(
 					'nama_produk'		=> $nama,
 					'kategori_produk'	=> $kategori_produk,
-					'deskripsi_produk'	=> $deskripsi,
+					'deskripsi_produk'	=> $deskripsi_produk,
 					'harga_produk'		=> $harga,
 				);
 				$this->db->where('id_produk',$id)->update('produk', $data);

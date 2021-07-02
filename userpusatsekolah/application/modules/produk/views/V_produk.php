@@ -192,7 +192,7 @@
                                             </div>
                                         </div>
                                         <div class="shop-item_title">
-                                            <h4><a href="tampilan-detail-produk.html"><?php echo $rowP->nama_produk; ?></a></h4>
+                                            <h4><?php echo $rowP->nama_produk; ?></h4>
                                             <span class="shop-item_price">Rp. <?php echo $rowP->harga_produk; ?></span>
                                             <a href="<?php echo base_url('produk/detailproduk/' . encrypt_url($rowP->id_produk)); ?>" class="shop-item_link color-bg">Details</a>
                                         </div>
@@ -218,4 +218,5 @@
         <!--section end-->
         <div class="limit-box fl-wrap"></div>
     </form>
+
 </div>
