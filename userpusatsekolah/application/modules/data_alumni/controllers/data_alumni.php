@@ -60,12 +60,18 @@ class Data_alumni extends MX_Controller {
 	
 	}
 
-		// halaman tambah
+	// halaman tambah
 	function tambahview()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_data_alumni->ambilidsekolah($iduser);
+
 		$data = array(
 			'namamodule' 	=> "data_alumni",
 			'namafileview' 	=> "V_tambah_alumni",
+			'tampil'		=> $this->M_data_alumni->tampil($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}

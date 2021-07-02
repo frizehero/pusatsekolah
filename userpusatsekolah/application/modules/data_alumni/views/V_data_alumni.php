@@ -127,6 +127,7 @@
             <div class="limit-box fl-wrap"></div>
             <!--tab end-->
             <section style="padding-top: 20px; padding-bottom: 10px;">
+                <?php tampilnotif() ?>
                 <?php $no = 1;
                 foreach ($tampil as $rowP) { ?>
                     <div class="gallery-item">
@@ -142,8 +143,6 @@
                                         <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
                                     </div>
                                 </div>
-                                <?php tampilnotif() ?>
-                                <?php $no = 1; ?>
                                 <div class="geodir-category-content fl-wrap title-sin_item">
                                     <div class="geodir-category-content-title fl-wrap ">
                                         <div class="geodir-category-content-title-item">

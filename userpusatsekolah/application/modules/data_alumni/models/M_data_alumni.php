@@ -33,6 +33,7 @@ class M_data_alumni extends CI_Model {
 
 	function tambah()
 	{
+		$username_alumni 		= $this->input->post('username_alumni');
 		$nama_alumni 			= $this->input->post('nama_alumni');
 		$thlulus_alumni			= $this->input->post('thlulus_alumni');
 		$nisn					= $this->input->post('nisn');
@@ -40,6 +41,7 @@ class M_data_alumni extends CI_Model {
 		$tgllahir_alumni 		= $this->input->post('tgllahir_alumni');
 		$jk_alumni 				= $this->input->post('jk_alumni');
 		$status_alumni			= $this->input->post('status_alumni');
+		$pekerjaan_fakultas 	= $this->input->post('pekerjaan_fakultas');
 		$sekolah_bekerja		= $this->input->post('sekolah_bekerja');
 		$alamatlengkap_alumni	= $this->input->post('alamatlengkap_alumni');
 		$provinsi_alumni		= $this->input->post('provinsi_alumni');
@@ -56,23 +58,25 @@ class M_data_alumni extends CI_Model {
 		$foto_alumni			= $this->input->post('foto_alumni');
 		$id_sekolah 			= $this->input->post('id_sekolah');
 
+
 		$this->load->library('upload');
-		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/ppdb/';
+		$nmfile = "file_".time();
+		$config['upload_path']		= 'assets/images/fotoprofil/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
 		$config['max_height']		= 4300;
 		$config['file_name'] 		= $nmfile;
-
+		
 		$this->upload->initialize($config);
-
-		if ($_FILES['foto']['name']) 
-		{
-			if ($this->upload->do_upload('foto')) 
-			{
+		
+		if($_FILES['foto']['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
 				$gbr = $this->upload->data();
 				$data = array(
+					'username_alumni'		=> $username_alumni,
 					'nama_alumni'			=> $nama_alumni,
 					'thlulus_alumni'		=> $thlulus_alumni,
 					'nisn'					=> $nisn,
@@ -80,6 +84,7 @@ class M_data_alumni extends CI_Model {
 					'tgllahir_alumni' 		=> $tgllahir_alumni,
 					'jk_alumni'				=> $jk_alumni,
 					'status_alumni'			=> $status_alumni,
+					'pekerjaan_fakultas'	=> $pekerjaan_fakultas,
 					'sekolah_bekerja'		=> $sekolah_bekerja,
 					'alamatlengkap_alumni'	=> $alamatlengkap_alumni,
 					'provinsi_alumni'		=> $provinsi_alumni,
@@ -95,41 +100,44 @@ class M_data_alumni extends CI_Model {
 					'deskripsi_alumni'		=> $deskripsi_alumni,
 					'foto_alumni'		 	=> $gbr['file_name'],
 					'id_sekolah'			=> $id_sekolah,
-
-					);
-
+					'foto_alumni' 			=> $gbr['file_name'],
+					
+				);
+				$this->db->insert('data_alumni', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+			}	 
+		}
+		else{
+				$data = array(
+					'username_alumni'		=> $username_alumni,
+					'nama_alumni'			=> $nama_alumni,
+					'thlulus_alumni'		=> $thlulus_alumni,
+					'nisn'					=> $nisn,
+					'tmplahir_alumni' 		=> $tmplahir_alumni,
+					'tgllahir_alumni' 		=> $tgllahir_alumni,
+					'jk_alumni'				=> $jk_alumni,
+					'status_alumni'			=> $status_alumni,
+					'pekerjaan_fakultas'	=> $pekerjaan_fakultas,
+					'sekolah_bekerja'		=> $sekolah_bekerja,
+					'alamatlengkap_alumni'	=> $alamatlengkap_alumni,
+					'provinsi_alumni'		=> $provinsi_alumni,
+					'kotakab_alumni'		=> $kotakab_alumni,
+					'kec_alumni'			=> $kec_alumni,
+					'kelurahan_alumni'		=> $kelurahan_alumni,
+					'kodepos_alumni'		=> $kodepos_alumni,
+					'email_alumni'			=> $email_alumni,
+					'telephone_alumni'		=> $telephone_alumni,
+					'instagram_alumni'		=> $instagram_alumni,
+					'facebook_alumni'		=> $facebook_alumni,
+					'twitter_alumni'		=> $twitter_alumni,
+					'deskripsi_alumni'		=> $deskripsi_alumni,
+					'foto_alumni'		 	=> 'kosong1.jpeg',
+					'id_sekolah'			=> $id_sekolah,
+				);
 				$this->db->insert('data_alumni', $data);
 				$this->session->set_flashdata('msg', 'suksestambah');
 			}
-		} else {
-			$data = array(
-				'nama_alumni'			=> $nama_alumni,
-				'thlulus_alumni'		=> $thlulus_alumni,
-				'nisn'					=> $nisn,
-				'tmplahir_alumni' 		=> $tmplahir_alumni,
-				'tgllahir_alumni' 		=> $tgllahir_alumni,
-				'jk_alumni'				=> $jk_alumni,
-				'status_alumni'			=> $status_alumni,
-				'sekolah_bekerja'		=> $sekolah_bekerja,
-				'alamatlengkap_alumni'	=> $alamatlengkap_alumni,
-				'provinsi_alumni'		=> $provinsi_alumni,
-				'kotakab_alumni'		=> $kotakab_alumni,
-				'kec_alumni'			=> $kec_alumni,
-				'kelurahan_alumni'		=> $kelurahan_alumni,
-				'kodepos_alumni'		=> $kodepos_alumni,
-				'email_alumni'			=> $email_alumni,
-				'telephone_alumni'		=> $telephone_alumni,
-				'instagram_alumni'		=> $instagram_alumni,
-				'facebook_alumni'		=> $facebook_alumni,
-				'twitter_alumni'		=> $twitter_alumni,
-				'deskripsi_alumni'		=> $deskripsi_alumni,
-				'foto_alumni'		 	=> 'kosong1.jpeg',
-				'id_sekolah'			=> $id_sekolah,
-				
-			);
-			$this->db->insert('data_alumni', $data);
-			$this->session->set_flashdata('msg', 'suksestambah');
-		}
 			
 	}
 
