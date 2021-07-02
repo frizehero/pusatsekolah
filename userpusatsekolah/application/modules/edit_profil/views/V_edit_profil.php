@@ -125,20 +125,6 @@
                         </div>
                         <label> Deskripsi</label>
                         <textarea cols="40" rows="3" placeholder="Ceritakan sedikit tentangmu ..." style="margin-bottom:20px;"></textarea>
-                        <div class="clearfix"></div>
-                        <label>Ubah Foto Profil</label> 
-                        <div class="clearfix"></div>
-                        <div class="listsearch-input-item fl-wrap">
-                            <div class="fuzone">
-                                <form>
-                                    <div class="fu-text">
-                                        <span><i class="fal fa-images"></i> klik dan upload foto</span>
-                                        <div class="photoUpload-files fl-wrap"></div>
-                                    </div>
-                                    <input type="file" class="upload" multiple>
-                                </form>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
