@@ -11,6 +11,22 @@ class M_beranda_as extends CI_Model
 		$query = $this->db->get('beranda_as');
 		return $query->result();
 	}
+
+	function tambahkomen()
+	{
+		$koment 		= $this->input->post('koment');
+		$idu			= $this->input->post('idu');
+		$idp 			= $this->input->post('idp');
+
+				$data = array(
+					'isi_komentar'		=> $koment,
+					'id_user'			=> $idu,
+					'id_postingan'		=> $idp,
+				);
+				$this->db->insert('komentar', $data);
+				$this->session->set_flashdata('msg', 'suksestambah');
+			
+	}
 	
 	function ambilidsekolah($id)
 	{
@@ -25,6 +41,34 @@ class M_beranda_as extends CI_Model
     	return $query->row_array();
 	}
 
+	function ambilidposting($id)
+	{
+	
+		$this->db->select('*');
+		$this->db->from('beranda_as');
+		$this->db->where('id_sekolah',$id);
+		$query = $this->db->get();
+		
+
+		
+    	return $query->row_array();
+	}
+
+	function ambilkomentar($id)
+	{
+		$this->db->order_by('id_komentar', 'DESC');
+		$this->db->select('*');
+		$this->db->from('komentar');
+		$this->db->join('tb_login', 'komentar.id_user = tb_login.id_admin','left');
+		$this->db->join('p_sekolah', 'tb_login.id_sekolah = p_sekolah.id_p_sekolah','left');
+		$this->db->where('id_postingan', $id);
+		$query = $this->db->get();
+
+
+
+		return $query->result();
+	}
+
 	function semuasekolah()
 	{
 	
@@ -36,6 +80,13 @@ class M_beranda_as extends CI_Model
 
 		
     	return $query->result();
+	}
+
+	function tampilsekolah($id)
+	{
+		// $idnya = decrypt_url($id);
+		$this->db->where('id_p_sekolah', $id);
+		return $this->db->get('p_sekolah')->row_array();
 	}
 	
 	function tampilkompetensi($id)
@@ -51,10 +102,21 @@ class M_beranda_as extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	function tampilposting($id)
+	{
+		
+		$this->db->select('*');
+		$this->db->from('beranda_as');
+		$this->db->where('id_sekolah', $id);
+		$query = $this->db->get();
+		
+		return $query->result();
+	}
 	
-		function cari()
-		{
-			$cari 		= $this->input->post('cari');
-			return $this->db->like('nama_sekolah', $cari)->get('sekolah')->result();
-		}
+	function cari()
+	{
+		$cari 		= $this->input->post('cari');
+		return $this->db->like('nama_sekolah', $cari)->get('sekolah')->result();
+	}
 }
