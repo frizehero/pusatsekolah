@@ -43,11 +43,18 @@ class Tampilan_event extends MX_Controller
 	function search()
 	{
 
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_tampilan_event->ambilidsekolah($iduser);
+
+		$tampilan_event 	= $this->input->post('nama');
 		$data = array(
-			'namamodule' 	=> "data_guru",
-			'namafileview' 	=> "V_data_guru",
-			'tampil'		=> $this->M_data_guru->get_guru(),
-			'tampil_mapel'	=> $this->M_data_guru->tampil_mapel(),
+			'namamodule' 	=> "tampilan_event",
+			'namafileview' 	=> "V_tampilan_event",
+			'tampil'		=> $this->M_tampilan_event->cari(),
+			'tampilberanda'		=> $this->M_tampilan_event->tampilberanda($idsekolahx['id_sekolah']),
+			'idnya' 		=> $iduser,
+			'idsekolah' 	=> $idsekolahx,
+			'tampilkompetensi'	=> $this->M_tampilan_event->tampilkompetensi($idsekolahx['id_sekolah']),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	

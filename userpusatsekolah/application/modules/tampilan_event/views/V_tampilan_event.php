@@ -34,13 +34,11 @@
                             <div class="box-widget-content">
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <div class="search-widget">
-                                            <form action="#" class="fl-wrap">
-                                                <?php echo form_open('data_guru/search') ?>
-                                                    <input type="text" name="Nama" placeholder="Apa Yang Sedang Kamu Cari ?" value=""/>
-                                                <?php echo form_close() ?>
-                                                <button class="search-submit color2-bg" id="submit_btn"><i class="fal fa-search"></i> </button>
-                                            </form>
+                                        <div class="listsearch-input-item">
+                                            <?php echo form_open('tampilan_event/search') ?>
+                                                <span class="iconn-dec"><i class="far fa-bookmark"></i></span>
+                                                <input type="text" name="cari" placeholder="Apa yang sedang kamu cari?" value=""/>
+                                            <?php echo form_close() ?>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
