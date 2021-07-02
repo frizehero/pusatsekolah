@@ -65,7 +65,7 @@
                 Hai, <?php echo $nama['nama'] ?>
             </div>
             <ul>
-                <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"> Akun Saya</a></li>
+                <li><a href="<?php echo base_url('edit_profil'); ?>"> Akun Saya</a></li>
                 <li><a href="<?php echo base_url('tampilan_nilaikami'); ?>"> Nilai Kami! </a></li>
                 <li><a href="<?php echo base_url('login/logoutApp'); ?>">Log Out</a></li>
             </ul>

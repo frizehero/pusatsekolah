@@ -21,6 +21,8 @@ class Produk extends MX_Controller
 			redirect('login');
 		} else {
 
+			
+
 			$data = array(
 				'namamodule' 	=> "produk",
 				'namafileview' 	=> "V_produk",

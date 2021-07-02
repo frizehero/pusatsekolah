@@ -17,7 +17,7 @@ class Edit_profil extends MX_Controller
 	{
 		$data = array(
 			'namamodule' 	=> "edit_profil",
-			'namafileview' 	=> "V_edit_profil",
+			'namafileview' 	=> "V_edit_profil_tambah",
 			'tampil'		=> $this->M_tb_login->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
@@ -52,7 +52,7 @@ class Edit_profil extends MX_Controller
 		$this->load->view('V_edit_profil_tambah', $data);
 		$data = array(
 			'namamodule' 	=> "edit_profil",
-			'namafileview' 	=> "V_edit_profil",
+			'namafileview' 	=> "V_edit_profil_tambah",
 		);
 		echo Modules::run('template/tampilCore',$data);
 	}

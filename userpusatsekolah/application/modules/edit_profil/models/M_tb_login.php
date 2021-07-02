@@ -30,6 +30,7 @@ class M_tb_login extends CI_Model {
 		$kecamatan_user = $this->input->post('kecamatan_user');
 		$kelurahan_user	= $this->input->post('kelurahan_user');
 		$instagram_user	= $this->input->post('instagram_user');
+		$facebook_user	= $this->input->post('facebook_user');
 		$twitter_user	= $this->input->post('twitter_user');
 		$whatsapp_user	= $this->input->post('whatsapp_user');
 		$fotop_user		= $this->input->post('fotop_user');
