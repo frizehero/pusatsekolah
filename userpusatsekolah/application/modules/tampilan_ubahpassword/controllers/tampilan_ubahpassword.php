@@ -16,6 +16,71 @@ class Tampilan_ubahpassword extends MX_Controller
 	// index
 	function index()
 	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_ubahpassword->ambilidsekolah($iduser);
+
+		$data = array(
+			'namamodule' 		=> "tampilan_ubahpassword",
+			'namafileview' 		=> "V_ubahpassword",
+			'tampil'			=> $this->M_ubahpassword->tampil($idsekolahx['id_sekolah']),
+			'idnya' 			=> $iduser,
+			'idsekolah' 		=> $idsekolahx,	
+		);
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function editview($id)
+	{
+		$iduser=$this->session->userdata('session_id');
+		$idsekolahx = $this->M_ubahpassword->ambilidsekolah($iduser);
+
+		$data = array(
+			'namamodule' 	=> "tampilan_ubahpassword",
+			'namafileview' 	=> "V_ubahpassword",
+			'tampil'		=> $this->M_ubahpassword->tampiledit($id),
+			'idnya' 			=> $iduser,
+			'idsekolah' 		=> $idsekolahx,
+		);
+
+		echo Modules::run('template/tampilCore', $data);
+	}
+
+	function edit()
+	{
+		$this->M_ubahpassword->edit();
+		redirect('tampilan_ubahpassword');
+	}
+
+	/*public function save_password()
+	 { 
+	  	$this->form_validation->set_rules('new','New','required|alpha_numeric');
+	  	$this->form_validation->set_rules('re_new', 'Retype New', 'required|matches[new]');
+	    if($this->form_validation->run() == FALSE)
+	  {
+	   	$this->load->view('template/view_template_core');
+	   		$this->load->view('tampilan_ubahpassword/V_ubahpassword');
+	   	$this->load->view('template/view_template_core');
+	  	}else{
+	   	$cek_old = $this->M_ubahpassword->cek_old();
+	   	if ($cek_old == False){
+	    $this->session->set_flashdata('error','Old password not match!' );
+	    $this->load->view('template/view_template_core');
+	    $this->load->view('tampilan_ubahpassword/V_ubahpassword');
+	    $this->load->view('template/view_template_core');
+	   }else{
+	    $this->M_ubahpassword->save();
+	    $this->session->sess_destroy();
+	    $this->session->set_flashdata('error','Your password success to change, please relogin !' );
+	    $this->load->view('template/view_template_core');
+	    $this->load->view('tampilan_ubahpassword/V_ubahpassword');
+	    $this->load->view('template/view_template_core');
+	   }//end if valid_user
+	  }
+	  echo Modules::run('template/tampilCore', $data);
+	 }*/
+
+	/*function index()
+	{
 		//echo $this->session->userdata('session_id');
 		if (empty($this->session->userdata('session_id'))) {
 			redirect('login');
@@ -26,15 +91,15 @@ class Tampilan_ubahpassword extends MX_Controller
 			$data = array(
 				'namamodule' 		=> "tampilan_ubahpassword",
 				'namafileview' 		=> "V_ubahpassword",
-				'tampil'			=> $this->M_ubahpassword->tampil(),
+				'tampil'			=> $this->M_ubahpassword->editpassword(),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
-	}
+	}*/
 
-	function change_pass()
+	/*function change_pass()
 	{
 		if($this->input->post('change_pass'))
 		{
@@ -53,6 +118,6 @@ class Tampilan_ubahpassword extends MX_Controller
 				}
 		}
 		$this->load->view('V_ubahpassword');	
-	}
+	}*/
 
 }

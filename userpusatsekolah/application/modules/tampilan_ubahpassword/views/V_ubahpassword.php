@@ -66,7 +66,7 @@
                                 <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"><i class="fal fa-user-edit"></i> Edit profil</a></li>
                                 <li><a href="<?php echo base_url('tampilan_alumniuser'); ?>"><i class="fal fa-layer-plus"></i>Alumni</a></li>
                                 <li><a href="<?php echo base_url('tampilan_undangteman'); ?>"><i class="fal fa-user-plus"></i>Undang Teman</a></li>
-                                <li><a href="<?php echo base_url('tampilan_ubahpassword'); ?>" class="user-profile-act"><i class="fal fa-key"></i>Ubah Password</a></li>
+                                <li><a href="<?php echo base_url('tampilan_ubahpassword/editview/'. $idnya); ?>" class="user-profile-act"><i class="fal fa-key"></i>Ubah Password</a></li>
                             </ul>
                         </div>
                         <!-- user-profile-menu end-->
@@ -87,81 +87,38 @@
                 <a class="back-tofilters color2-bg custom-scroll-link fl-wrap" href="#dash_menu">Tampilan Profil<i class="fas fa-caret-up"></i></a>
                 <div class="clearfix"></div>
             </div>
-            <!-- dashboard-menu  end-->
-            <!--<div id="main">
-                <div id="login">
-                <?php echo @$error; ?>
-                <h2>Change Password</h2>
-                <br>
-                    <form method="post" action=''>
-                        <label>Old Password :</label>
-                        <input type="password" name="old_pass" id="name" placeholder="Old Pass"/><br /><br />
-                        <label>New Password :</label>
-                        <input type="password" name="new_pass" id="password" placeholder="New Password"/><br/><br />
-
-                        <label>Confirm Password :</label>
-                        <input type="password" name="confirm_pass" id="password" placeholder="Confirm Password"/><br/><br />
-                        <input type="submit" value="login" name="change_pass"/><br />
-                    </form>
-                </div>
-            </div>-->
+            <?php echo $idnya?>
             <div class="col-md-9">
-                <div class="dashboard-title   fl-wrap">
+                <div class="dashboard-title fl-wrap">
                     <h3>Ubah Password</h3>
                 </div>
                 <!-- profile-edit-container-->
                 <div class="profile-edit-container fl-wrap block_box">
-                    <div class="custom-form">
-                            <div id="admin">
-                                <?php echo @$error; ?>
-                                <form method="post" action=''>
-                                    <div class="pass-input-wrap fl-wrap">
-                                        <label>Password Sebelumnya</label>
-                                        <input type="password" name="old_pass" id="password" placeholder="Old Pass"/>
-                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                    </div>
-                                    <div class="pass-input-wrap fl-wrap">
-                                        <label>Password Baru</label>
-                                        <input type="password" name="new_pass" id="password" placeholder="New Password"/>
-                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                    </div>
-                                    <div class="pass-input-wrap fl-wrap">
-                                        <label>Ulangi Password</label>
-                                        <input type="password" name="confirm_pass" id="password" placeholder="Confirm Password"/>
-                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                    </div>
-                                    <button class="btn color2-bg  float-btn" type="submit" value="admin" name="change_pass">Simpan Perubahan<i class="fal fa-save"></i></button>
-                                </form>
-                            </div>
-                    </div>                
-                </div>
-                <!-- profile-edit-container end-->
-            </div>
-            <!-- dashboard content-->
-            <!--<div class="col-md-9">
-                <div class="dashboard-title   fl-wrap">
-                    <h3>Ubah Password</h3>
-                </div>
-                <div class="profile-edit-container fl-wrap block_box">
-                    <div class="custom-form">
-                        <div class="pass-input-wrap fl-wrap">
-                            <label>Password Sebelumnya</label>
-                            <input type="password" class="pass-input" placeholder="" value="" />
-                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                        </div>
-                        <div class="pass-input-wrap fl-wrap">
-                            <label>Password Baru</label>
-                            <input type="password" class="pass-input" placeholder="" value="" />
-                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                        </div>
-                        <div class="pass-input-wrap fl-wrap">
-                            <label>Ulangi Password</label>
-                            <input type="password" class="pass-input" placeholder="" value="" />
-                            <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                        </div>
-                        <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
+                    <div class="content">
+                        <?php tampilnotif()?>
+                        <form action="<?php echo base_url('tampilan_ubahpassword/edit') ?>" method="POST" enctype="multipart/form-data">
+                        <input name="id" value="<?php echo $tampil['id_admin'] ?>" type="text" class="form-control">
+                            <div class="custom-form">
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Password Sebelumnya</label>
+                                    <input name="password" value="<?php echo $tampil['password']?>" type="password"  class="form-control" placeholder="Password Lama"/>
+                                    <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                </div>
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Password Baru</label>
+                                    <input name="password" value="" type="text"  class="form-control" placeholder="Password Baru"/>
+                                    <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                </div>
+                                <div class="pass-input-wrap fl-wrap">
+                                    <label>Ulangi Password</label>
+                                    <input name="password" value="" type="password"  class="form-control" placeholder="Konfirmasi Password"/>
+                                    <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                </div>
+                                <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
+                            </div> 
+                        </form> 
                     </div>
-                </div>-->
+                </div>
                 <!-- profile-edit-container end-->
             </div>
             <!-- dashboard content end-->
@@ -170,3 +127,4 @@
     <!--  section  end-->
     <div class="limit-box fl-wrap"></div>
 </div>
+
