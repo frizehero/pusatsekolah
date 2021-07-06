@@ -27,6 +27,7 @@ class Produk extends MX_Controller
 				'namamodule' 	=> "produk",
 				'namafileview' 	=> "V_produk",
 				'tampil'		=> $this->M_produk->tampil(),
+
 				// 'tampilpanitia' => $this->M_ppdb_sekolah->tampilpanitia(),
 			);
 			echo Modules::run('template/tampilCore', $data);
@@ -39,6 +40,7 @@ class Produk extends MX_Controller
 			'namamodule' 	=> "produk",
 			'namafileview' 	=> "V_detail_produk",
 			'tampil'		=> $this->M_produk->tampildetail($id),
+			'totalproduk'	=> $this->M_produk->totalproduk(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
