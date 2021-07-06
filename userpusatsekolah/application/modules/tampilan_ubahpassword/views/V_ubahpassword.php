@@ -66,7 +66,7 @@
                                 <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"><i class="fal fa-user-edit"></i> Edit profil</a></li>
                                 <li><a href="<?php echo base_url('tampilan_alumniuser'); ?>"><i class="fal fa-layer-plus"></i>Alumni</a></li>
                                 <li><a href="<?php echo base_url('tampilan_undangteman'); ?>"><i class="fal fa-user-plus"></i>Undang Teman</a></li>
-                                <li><a href="<?php echo base_url('tampilan_ubahpassword/editview/'. $idnya); ?>" class="user-profile-act"><i class="fal fa-key"></i>Ubah Password</a></li>
+                                <li><a href="<?php echo base_url('tampilan_ubahpassword'); ?>" class="user-profile-act"><i class="fal fa-key"></i>Ubah Password</a></li>
                             </ul>
                         </div>
                         <!-- user-profile-menu end-->
@@ -87,7 +87,6 @@
                 <a class="back-tofilters color2-bg custom-scroll-link fl-wrap" href="#dash_menu">Tampilan Profil<i class="fas fa-caret-up"></i></a>
                 <div class="clearfix"></div>
             </div>
-            <?php echo $idnya?>
             <div class="col-md-9">
                 <div class="dashboard-title fl-wrap">
                     <h3>Ubah Password</h3>
@@ -97,21 +96,18 @@
                     <div class="content">
                         <?php tampilnotif()?>
                         <form action="<?php echo base_url('tampilan_ubahpassword/edit') ?>" method="POST" enctype="multipart/form-data">
-                        <input name="id" value="<?php echo $tampil['id_admin'] ?>" type="text" class="form-control">
                             <div class="custom-form">
                                 <div class="pass-input-wrap fl-wrap">
-                                    <label>Password Sebelumnya</label>
-                                    <input name="password" value="<?php echo $tampil['password']?>" type="password"  class="form-control" placeholder="Password Lama"/>
-                                    <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    <label>username</label>
+                                    <div>
+                                        <input name="username" value="<?php echo $tampil['username']?>" type="text" class="form-control" id="exampleInputEmail">
+                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                    </div>
+                                    <input type="hidden" value="<?php echo $tampil['id_admin']?>" name="id">
                                 </div>
                                 <div class="pass-input-wrap fl-wrap">
                                     <label>Password Baru</label>
-                                    <input name="password" value="" type="text"  class="form-control" placeholder="Password Baru"/>
-                                    <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
-                                </div>
-                                <div class="pass-input-wrap fl-wrap">
-                                    <label>Ulangi Password</label>
-                                    <input name="password" value="" type="password"  class="form-control" placeholder="Konfirmasi Password"/>
+                                    <input name="password" value="<?php echo $tampil['password']?>" type="password" class="form-control" id="exampleInputPassword1">
                                     <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
                                 </div>
                                 <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>

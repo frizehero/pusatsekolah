@@ -3,72 +3,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>404 Page Not Found</title>
-<style type="text/css">
-
-::selection { background-color: #E13300; color: white; }
-::-moz-selection { background-color: #E13300; color: white; }
-
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
-}
-
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
-
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
-
-h5 {
-	color: #444;
-	background-color: transparent;
-	font-size: 12px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
-
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
-
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
-}
-
-p {
-	margin: 12px 15px 12px 15px;
-}
-</style>
+    <!--=============== basic  ===============-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>404 Page Not Found</title>
+    <meta name="viewportx" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--=============== css  ===============-->
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href=">css/plugins.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/dashboard-style.css">
+    <link type="text/css" rel="stylesheet" href="css/color.css">
+    <link type="text/css" rel="stylesheet" href="css/shop.css">
+    <!--=============== favicons ===============-->
+    <link rel="shortcut icon" href="images/logo.ico">
 </head>
 <body>
-	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
-		<h5>awokawokawok KASIHAN ERROR yahahahaha HAYYUUUUK</h5>
-	</div>
-</body>
+        <!--loader-->
+        <div class="loader-wrap">
+            <div class="loader-inner">
+                <div class="loader-inner-cirle"></div>
+            </div>
+        </div>
+        <!--loader end-->
+        <!-- main start  -->
+        <div id="main">
+                <!-- content-->
+                <div class="content">
+                    <!--  section  -->
+                    <section class="parallax-section small-par" data-scrollax-parent="true">
+                        <div class="bg"  data-bg="images/bg/hero/5.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
+                        <div class="overlay op7"></div>
+                        <div class="container">
+                            <div class="error-wrap">
+                                <div class="bubbles">
+                                    <h2><?php echo $heading; ?></h2>
+                                </div>
+								<br><br>
+                                <p><?php echo $message; ?></p>
+								<br><br><br><br>
+                            </div>
+                        </div>
+                    </section>
+                    <!--  section  end-->
+                </div>
+                <!--content end-->
+            <a class="to-top"><i class="fas fa-caret-up"></i></a>     
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

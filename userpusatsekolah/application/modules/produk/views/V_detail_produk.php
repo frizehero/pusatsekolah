@@ -87,10 +87,10 @@
                                 <div class="box-widget fl-wrap">
                                     <div class="box-widget-content">
                                         <ul class="cat-item no-list-style">
-                                            <li><a href="#">Batik</a> <span>3</span></li>
-                                            <li><a href="#">Electronic</a> <span>6 </span></li>
-                                            <li><a href="#">Makanan</a> <span>12 </span></li>
-                                            <li><a href="#">Figura</a> <span>4</span></li>
+                                            <li><a href="#" value="">Makanan</a> <span><?php echo $totalproduk?></span></li>
+                                            <li><a href="#">Minuman</a> <span><?php echo $totalproduk?> </span></li>
+                                            <li><a href="#">Kerajinan</a> <span> <?php echo $totalproduk?> </span></li>
+                                            <li><a href="#">Dan lain-lain</a> <span> <?php echo $totalproduk?> </span></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -218,7 +218,7 @@
                         <div class="tabs-act fl-wrap">
                             <div class="shop-tabs-menu " id="st-menu">
                                 <ul class="tabs-menu fl-wrap no-list-style">
-                                    <li class="current"><a href="#shop-tab1"> Deskripsi</a></li>
+                                    <li class="current"><a href="#shop-tab1" id="tab-0"> Deskripsi</a></li>
                                     <li><a href="#shop-tab2">Info Produk</a></li>
                                     <li><a href="#shop-tab3">Reviews</a></li>
                                 </ul>
@@ -232,14 +232,14 @@
                                     <div class="tab">
                                         <div id="shop-tab1" class="tab-content  first-tab ">
                                             <div class="shop-tab-container">
-                                                <p><?php echo $tampil['deskripsi_produk'] ?></p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, impedit aliquid sapiente in fugiat voluptas cumque incidunt autem odio delectus consequatur qui laudantium magnam iusto nulla ullam saepe vel minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quo recusandae aut? Veritatis sit officia laboriosam tempore reiciendis expedita omnis alias? Praesentium odio nostrum vel repellendus tenetur sapiente debitis omnis.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--tab end-->
                                     <!--tab --> 
                                     <div class="tab">
-                                        <div id="shop-tab2" class="tab-content second-tab">
+                                        <div id="shop-tab2" class="tab-content">
                                             <div class="shop-tab-container">
                                                 <ul class="no-list-style shop-list fl-wrap">
                                                     <li><span>Nama Produk : </span>Batik SMEA</li>
@@ -336,7 +336,7 @@
                                 </div>
                                 <!--tab end-->                                                    
                             </div>
-                            <!--tabs end-->                                      	
+                            <!--tabs end-->                                         
                         </div>
                         <!-- shop-tabs end-->                                
                     </div>

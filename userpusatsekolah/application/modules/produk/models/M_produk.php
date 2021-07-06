@@ -128,4 +128,9 @@ class M_produk extends CI_Model {
 		$cari 		= $this->input->post('cari');
 		return $this->db->like('nama_produk',$cari)->get('produk')->result();
 	}
+
+	function totalproduk()
+	{
+		return $this->db->get('produk')->num_rows();
+	}
 }
