@@ -82,6 +82,17 @@ class M_beranda_as extends CI_Model
     	return $query->result();
 	}
 
+	function usersekolah($id)
+	{
+		
+		$this->db->select('*');
+		$this->db->from('p_sekolah');
+		$this->db->where('id_p_sekolah', $id);
+		$query = $this->db->get();
+		return $query->row_array();
+	}
+
+
 	function tampilsekolah($id)
 	{
 		// $idnya = decrypt_url($id);

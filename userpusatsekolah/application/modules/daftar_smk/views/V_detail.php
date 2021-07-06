@@ -109,7 +109,7 @@
                                             <div class="reviews-comments-item-footer fl-wrap">
                                                 <form action="<?php echo base_url('daftar_smk/tambahkomen') ?>" method="POST" enctype="multipart/form-data">
                                                 <input name="idu" value="<?php echo $idnya?>" type="hidden" class="custom-form">
-                                                <!-- <input name="tampungid" value="<?php echo $tampungid?>" type="text" class="custom-form"> -->
+                                                <input name="tampungid" value="<?php echo $tampungid?>" type="hidden" class="custom-form">
                                                 <input name="idp" value="<?php echo $rowO->id_beranda_as?>" type="hidden" class="custom-form">
                                                     <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowP->foto_profil;?>'></span><b>Emak</b></div>
                                                     <div class="fl-wrap">
