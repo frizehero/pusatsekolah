@@ -4,7 +4,33 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class M_ubahpassword extends CI_Model
 {
 
-	function tampil()
+	function tampil($data_siswa)
+  	{
+	    //$ee=1;
+	    $this->db->select('*');
+	    $this->db->from('tb_login');
+		$this->db->where('id_admin',$data_siswa);
+	    $query = $this->db->get();
+	    return $query->row_array();
+	}
+
+	function edit()
+  {
+    
+    $id = $this->input->post('id');
+    $username = $this->input->post('username');
+    $password = $this->input->post('password');
+    $password1          = sha1($password);
+    $data = array(
+          'username'    => $username,
+          'password'    => $password1,
+        );
+        $this->db->where('id_admin',$id)->update('tb_login', $data);
+    
+  }
+
+
+	/*function tampil()
 	{
 		$this->db->select('*');
 		$this->db->from('tb_login');
@@ -23,7 +49,7 @@ class M_ubahpassword extends CI_Model
 		$query = $this->db->get();
 
     	return $query->row_array();
-	}
+	}*/
 
 	/*function edit()
 	{
@@ -53,7 +79,7 @@ class M_ubahpassword extends CI_Model
 			}
 	}*/
 
-	function edit()
+	/*function edit()
 	{
 		$id = $this->input->post('id_admin');
 		$password = $this->input->post('password');
@@ -66,7 +92,7 @@ class M_ubahpassword extends CI_Model
 				);
 				$this->db->where('id_admin',$id)->update('tb_login', $data);
 		
-	}
+	}*/
 
 	/*public function save()
  	{
