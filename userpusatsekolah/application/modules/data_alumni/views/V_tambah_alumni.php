@@ -47,7 +47,7 @@
                                                             <label class="vis-label"> Tanggal Lahir <i class="fal fa-calendar"></i> </label>
                                                             <input name="tgllahir_alumni" type="text" placeholder="Tanggal Lahir"/>
                                                         </div>
-                                                        <!--<div class="col-sm-4">
+                                                        <div class="col-sm-4">
                                                             <div class="position-relative form-group">
                                                         <label class="vis-label"> Jenis Kelamin <i class="fal fa-barcode"></i> </label>
                                                         <div class="listsearch-input-item ">
@@ -65,7 +65,7 @@
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        </div>-->
+                                                        </div>
                                                         <div class="col-sm-6">
                                                             <label class="vis-label">Status Alumni <i class="far fa-user"></i></label>
                                                             <input name="status_alumni" type="text" placeholder="Status Alumni" value=""/>
