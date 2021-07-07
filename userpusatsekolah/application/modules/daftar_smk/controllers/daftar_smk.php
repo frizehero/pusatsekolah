@@ -44,9 +44,9 @@ class Daftar_smk extends MX_Controller
 			$data = array(
 				'namamodule' 		=> "daftar_smk",
 				'namafileview' 		=> "V_detail",
-				'tampil'			=> $this->M_beranda_as->tampilsekolah($id, $idsekolahx['id_sekolah']),
-				'semuasekolah'		=> $this->M_beranda_as->semuasekolah($id, $idsekolahy['id_sekolah']),
-				'usersekolah'		=> $this->M_beranda_as->usersekolah($id, $idsekolahy['id_sekolah']),
+				'tampil'			=> $this->M_beranda_as->tampilsekolah($id),
+				'semuasekolah'		=> $this->M_beranda_as->semuasekolah(),
+				'usersekolah'		=> $this->M_beranda_as->usersekolah($id),
 				'idnya' 			=> $iduser,
 				'idsekolah' 		=> $idsekolahx,
 				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($id),

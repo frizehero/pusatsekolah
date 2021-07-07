@@ -37,16 +37,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!-- content-->
                 <div class="content">
                     <!--  section  -->
-                    <section class="parallax-section small-par" data-scrollax-parent="true">
+                    <section class="parallax-section small-par" data-scrollax-parent="true" style="padding: 130px;">
                         <div class="bg"  data-bg="images/bg/hero/5.jpg" data-scrollax="properties: { translateY: '30%' }"></div>
                         <div class="overlay op7"></div>
                         <div class="container">
                             <div class="error-wrap">
                                 <div class="bubbles">
-                                    <h2><?php echo $heading; ?></h2>
+                                    <h2 style="font-size: 120px;">404</h2><br><h2 style="font-size: 72px;">Halaman Tidak Ditemukan</h2>
+                                    <!-- <h2><?php echo $heading; ?></h2> -->
                                 </div>
-								<br><br>
-                                <p><?php echo $message; ?></p>
+								<br><br><br><br><br>
+                                <p>Halaman Yang Kamu Cari Tidak Dapat Ditemukan</p>
+                                <!-- <p><?php echo $message; ?></p> -->
 								<br><br><br><br>
                             </div>
                         </div>
