@@ -87,7 +87,7 @@
                                 <div class="box-widget fl-wrap">
                                     <div class="box-widget-content">
                                         <ul class="cat-item no-list-style">
-                                            <li><a href="#" value="">Makanan</a> <span><?php echo $totalproduk?></span></li>
+                                            <li><a href="#">Makanan</a> <span><?php echo $totalproduk?></span></li>
                                             <li><a href="#">Minuman</a> <span><?php echo $totalproduk?> </span></li>
                                             <li><a href="#">Kerajinan</a> <span> <?php echo $totalproduk?> </span></li>
                                             <li><a href="#">Dan lain-lain</a> <span> <?php echo $totalproduk?> </span></li>
@@ -219,8 +219,8 @@
                             <div class="shop-tabs-menu " id="st-menu">
                                 <ul class="tabs-menu fl-wrap no-list-style">
                                     <li class="current"><a href="#shop-tab1" id="tab-0"> Deskripsi</a></li>
-                                    <li><a href="#shop-tab2">Info Produk</a></li>
-                                    <li><a href="#shop-tab3">Reviews</a></li>
+                                    <li><a href="#shop-tab2" id="tab-1">Info Produk</a></li>
+                                    <li><a href="#shop-tab3" id="tab-2">Reviews</a></li>
                                 </ul>
                             </div>
                             <!-- shop-tabs--> 
@@ -232,7 +232,7 @@
                                     <div class="tab">
                                         <div id="shop-tab1" class="tab-content  first-tab ">
                                             <div class="shop-tab-container">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, impedit aliquid sapiente in fugiat voluptas cumque incidunt autem odio delectus consequatur qui laudantium magnam iusto nulla ullam saepe vel minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quo recusandae aut? Veritatis sit officia laboriosam tempore reiciendis expedita omnis alias? Praesentium odio nostrum vel repellendus tenetur sapiente debitis omnis.</p>
+                                                <p><?php echo $tampil['deskripsi_produk'] ?></p>
                                             </div>
                                         </div>
                                     </div>

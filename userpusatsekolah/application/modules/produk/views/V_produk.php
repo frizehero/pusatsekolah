@@ -85,7 +85,7 @@
                                             <div class="search-widget">
                                                 <form action="#" class="fl-wrap">
                                                     <input name="se" id="se" type="text" class="search" placeholder="Cari..." value="" />
-                                                    <button class="search-submit color2-bg" id="submit_btn"><i class="fal fa-search"></i> </button>
+                                                    <button class="search-submit color2-bg" style="margin-top: 25px; margin-right: 30px;" id="submit_btn"><i class="fal fa-search"></i> </button>
                                                 </form>
                                             </div>
                                         </div>
@@ -117,10 +117,10 @@
                                     <div class="box-widget fl-wrap">
                                         <div class="box-widget-content">
                                             <ul class="cat-item no-list-style">
-                                                <li><a href="#">Batik</a> <span>3</span></li>
-                                                <li><a href="#">Electronic</a> <span>6 </span></li>
-                                                <li><a href="#">Makanan</a> <span>12 </span></li>
-                                                <li><a href="#">Figura</a> <span>4</span></li>
+                                                <li><a href="#">Makanan</a> <span><?php echo $totalproduk?></span></li>
+                                                <li><a href="#">Minuman</a> <span> </span></li>
+                                                <li><a href="#">Kerajinan</a> <span> </span></li>
+                                                <li><a href="#">dll</a> <span></span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -180,7 +180,7 @@
                                     <div class="shop-item">
                                         <div class="shop-item-media">
                                             <a href="tampilan-detail-produk.html">
-                                                <img src="<?php echo base_url() ?>assets/images/produk/<?php echo $rowP->foto_produk; ?>" style="width: 360px; height: 260px;">
+                                                <img src="<?php echo base_url() ?>assets/images/produk/<?php echo $rowP->foto_produk; ?>" style="width: 400px; height: 260px;">
                                                 <div class="overlay"></div>
                                             </a>
                                             <div class="geodir-category-opt">

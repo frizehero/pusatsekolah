@@ -27,6 +27,8 @@ class Produk extends MX_Controller
 				'namamodule' 	=> "produk",
 				'namafileview' 	=> "V_produk",
 				'tampil'		=> $this->M_produk->tampil(),
+				'totalproduk'	=> $this->M_produk->totalproduk(),
+
 
 				// 'tampilpanitia' => $this->M_ppdb_sekolah->tampilpanitia(),
 			);
