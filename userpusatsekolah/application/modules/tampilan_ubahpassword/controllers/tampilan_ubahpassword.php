@@ -10,6 +10,7 @@ class Tampilan_ubahpassword extends MX_Controller
 		// model
 		$this->load->model('M_ubahpassword');
 		$this->load->model('login/m_session');
+		
 	}
 
 
@@ -35,21 +36,7 @@ class Tampilan_ubahpassword extends MX_Controller
 		
 	}
 
-	function editview($id)
-	{
-		$iduser=$this->session->userdata('session_id');
-		$idsekolahx = $this->M_ubahpassword->ambilidsekolah($iduser);
-
-		$data = array(
-			'namamodule' 	=> "tampilan_ubahpassword",
-			'namafileview' 	=> "V_ubahpassword",
-			'tampil'		=> $this->M_ubahpassword->tampiledit($id),
-			'idnya' 			=> $iduser,
-			'idsekolah' 		=> $idsekolahx,
-		);
-
-		echo Modules::run('template/tampilCore', $data);
-	}
+	
 
 	/*function edit()
 	{

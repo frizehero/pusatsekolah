@@ -100,8 +100,7 @@
                                 <div class="pass-input-wrap fl-wrap">
                                     <label>username</label>
                                     <div>
-                                        <input name="username" value="<?php echo $tampil['username']?>" type="text" class="form-control" id="exampleInputEmail">
-                                        <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
+                                        <input name="username" value="<?php echo $tampil['username']?>" type="text" class="form-control" id="exampleInputEmail" disabled>
                                     </div>
                                     <input type="hidden" value="<?php echo $tampil['id_admin']?>" name="id">
                                 </div>
