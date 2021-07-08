@@ -116,7 +116,7 @@ class M_beranda_as extends CI_Model
 
 	function tampilposting($id)
 	{
-		
+		$this->db->order_by('id_beranda_as', 'DESC');
 		$this->db->select('*');
 		$this->db->from('beranda_as');
 		$this->db->where('id_sekolah', $id);

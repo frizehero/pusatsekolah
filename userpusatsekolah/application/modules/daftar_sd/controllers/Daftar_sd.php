@@ -11,7 +11,7 @@ class Daftar_sd extends MX_Controller
 		$this->load->model('M_beranda_as');
 		$this->load->model('login/m_session');
 	}
-	
+
 	function index()
 	{
 		//echo $this->session->userdata('session_id');
@@ -32,6 +32,40 @@ class Daftar_sd extends MX_Controller
 			);
 			echo Modules::run('template/tampilCore', $data);
 		}
+	}
+
+	function detailsekolah($id)
+	
+	{
+		$iduser = $this->session->userdata('session_id');
+		$idsekolahx = $this->M_beranda_as->ambilidsekolah($iduser);
+		$idsekolahy = $this->M_beranda_as->ambilidposting($iduser);
+		{
+			$data = array(
+				'namamodule' 		=> "daftar_sd",
+				'namafileview' 		=> "V_detail",
+				'tampil'			=> $this->M_beranda_as->tampilsekolah($id),
+				'semuasekolah'		=> $this->M_beranda_as->semuasekolah(),
+				'usersekolah'		=> $this->M_beranda_as->usersekolah($id),
+				'idnya' 			=> $iduser,
+				'idsekolah' 		=> $idsekolahx,
+				'tampilkompetensi'	=> $this->M_beranda_as->tampilkompetensi($id),
+				'tampilposting'		=> $this->M_beranda_as->tampilposting($id),
+				'tampungid' 		=> $id,
+
+
+
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}
+
+	function tambahkomen()
+	{
+		$this->M_beranda_as->tambahkomen();
+		$idtampung 	= $this->input->post('tampungid');
+
+		redirect('daftar_sd/detailsekolah/'. $idtampung);
 	}
 
 	function cari()

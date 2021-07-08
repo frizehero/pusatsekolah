@@ -89,7 +89,7 @@
                                             <div class="geodir-category-content-title fl-wrap">
                                                 <div class="geodir-category-content-title-item">
                                                     <br>
-                                                    <h3 class="title-sin_map"><a href="<?php echo base_url('beranda_su'); ?>"><?php echo $rowS->nama_sekolah;?></a><!--<span class="verified-badge"><i class="fal fa-check"></i>--></span></h3>
+                                                    <h3 class="title-sin_map"><a href="<?php echo base_url('daftar_paud/detailsekolah/'.$rowS->id_p_sekolah); ?>"><?php echo $rowS->nama_sekolah;?></a><!--<span class="verified-badge"><i class="fal fa-check"></i>--></span></h3>
                                                     <div class="geodir-category-location fl-wrap"><a href="#"><i class="fas fa-map-marker-alt"></i><?php echo $rowS->almtlengkap_sekolah;?></a></div>
                                                 </div>
                                             </div>
