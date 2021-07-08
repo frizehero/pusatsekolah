@@ -18,11 +18,9 @@ class M_ubahpassword extends CI_Model
   	{
     
 	    $id = $this->input->post('id');
-	    $username = $this->input->post('username');
 	    $password = $this->input->post('password');
 	    $password1          = sha1($password);
 	    $data = array(
-	          'username'    => $username,
 	          'password'    => $password1,
 	        );
 	        $this->db->where('id_admin',$id)->update('tb_login', $data);
