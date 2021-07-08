@@ -63,7 +63,7 @@
                                 <li><a href="<?php echo base_url('tampilan_favoritsaya'); ?>"><i class="fal fa-heart"></i>Favorit Saya</a></li>
                                 <li><a href="<?php echo base_url('tampilan_terakhirdilihat'); ?>"><i class="fal fa-dot-circle"></i>Terakhir Dilihat <span>7</span></a></li>
                                 <li><a href="<?php echo base_url('tampilan_hasilreport'); ?>"><i class="fal fa-times-circle"></i> Hasil Report</a></li>
-                                <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"  class="user-profile-act"><i class="fal fa-user-edit"></i> Edit profil</a></li>
+                                <li><a href="<?php echo base_url('edit_profil'); ?>"  class="user-profile-act"><i class="fal fa-user-edit"></i> Edit profil</a></li>
                                 <li><a href="<?php echo base_url('tampilan_alumniuser'); ?>"><i class="fal fa-layer-plus"></i>Alumni</a></li>
                                 <li><a href="<?php echo base_url('tampilan_undangteman'); ?>"><i class="fal fa-user-plus"></i>Undang Teman</a></li>
                                 <li><a href="<?php echo base_url('tampilan_ubahpassword'); ?>"><i class="fal fa-key"></i>Ubah Password</a></li>
@@ -96,35 +96,37 @@
                 </div>
                 <!-- profile-edit-container-->
                 <div class="profile-edit-container fl-wrap block_box">
+                    <?php tampilnotif()?>
+                    <form action="<?php echo base_url('edit_profil/edit') ?>" method="POST" enctype="multipart/form-data">
                     <div class="custom-form">
                         <div class="row">
                             <div class="col-sm-6">
-                                <label> Nama Depan <i class="fal fa-user"></i></label>
-                                <input type="text" placeholder="Jessie" value=""/>
+                                <label> Nama<i class="fal fa-user"></i></label>
+                                <input name="nama" value="<?php echo $tampil['nama']?>" type="text" class="form-control">
                             </div>
                             <div class="col-sm-6">
-                                <label> Nama Belakang <i class="fal fa-user"></i></label>
-                                <input type="text" placeholder="Manrty" value=""/>
+                                <label> Username <i class="fal fa-user"></i></label>
+                                <input name="username" value="<?php echo $tampil['username']?>" type="text" class="form-control">
                             </div>
                             <div class="col-sm-6">
                                 <label> Email<i class="far fa-envelope"></i>  </label>
-                                <input type="text" placeholder="JessieManrty@domain.com" value=""/>
+                                <input name="email_user" value="<?php echo $tampil['email_user']?>" type="text" class="form-control">
                             </div>
                             <div class="col-sm-6">
                                 <label> Nomor Telepon<i class="far fa-phone"></i>  </label>
-                                <input type="text" placeholder="(+62)8321178900" value=""/>
+                                <input name="telepon_user" value="<?php echo $tampil['telepon_user']?>" type="text" class="form-control">
                             </div>
                             <div class="col-sm-6">
                                 <label> Profesi <i class="far fa-globe"></i>  </label>
-                                <input type="text" placeholder="Guru" value=""/>
+                                <input name="profesi_user" value="<?php echo $tampil['profesi_user']?>" type="text" class="form-control">
                             </div>
                             <div class="col-sm-6">
                                 <label> Alamat <i class="fas fa-map-marker"></i>  </label>
-                                <input type="text" placeholder="Jl. Juanda, Surabaya, Jawa Timur, Indonesia" value=""/>
+                                <input name="alamat_user" value="<?php echo $tampil['alamat_user']?>" type="text" class="form-control">
                             </div>
                         </div>
                         <label> Deskripsi</label>
-                        <textarea cols="40" rows="3" placeholder="Ceritakan sedikit tentangmu ..." style="margin-bottom:20px;"></textarea>
+                        <textarea cols="40" rows="3" name="deskripsi_user" value="<?php echo $tampil['deskripsi_user']?>" style="margin-bottom:20px;"></textarea>
                     </div>
                 </div>
 
@@ -206,14 +208,14 @@
                 <div class="profile-edit-container fl-wrap block_box">
                     <div class="custom-form">
                         <label> Facebook <i class="fab fa-facebook"></i></label>
-                        <input type="text" placeholder="https://www.facebook.com/" value=""/>
+                        <input name="facebook_user" value="<?php echo $tampil['facebook_user']?>" type="text" class="form-control">
                         <label> Twitter<i class="fab fa-twitter"></i>  </label>
-                        <input type="text" placeholder="https://twitter.com/" value=""/>
+                        <input name="twitter_user" value="<?php echo $tampil['twitter_user']?>" type="text" class="form-control">
                         <label> Whatsapp<i class="fab fa-whatsapp"></i>  </label>
-                        <input type="text" placeholder="https://www.whatsapp.com" value=""/>
+                        <input name="whatsapp_user" value="<?php echo $tampil['whatsapp_user']?>" type="text" class="form-control">
                         <label> Instagram <i class="fab fa-instagram"></i>  </label>
-                        <input type="text" placeholder="https://www.instagram.com/" value=""/>
-                        <center><a href="<?php echo base_url('edit_profil/tambahview'); ?>" class="btn    color2-bg  float-btn" style="margin-bottom:30px; margin-left:50px;">Tambah Data<i class="fa fa-plus fa-w-20"></i></a></center> 
+                        <input name="instagram_user" value="<?php echo $tampil['instagram_user']?>" type="text" class="form-control">
+                        <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
                     </div>
                 </div>
                 <!-- profile-edit-container end-->
