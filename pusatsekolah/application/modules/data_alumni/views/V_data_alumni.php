@@ -84,7 +84,7 @@
                             <div class="menu-header-content">
                                 <div class="avatar-icon-wrapper mb-3 avatar-icon-xl">
                                     <div class="avatar-icon">
-                                        <img src="<?php echo base_url() ?>assets/images/avatars/18.png" alt="Avatar 5">
+                                        <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_alumni; ?>">
                                     </div>
                                 </div>
                                 <div>

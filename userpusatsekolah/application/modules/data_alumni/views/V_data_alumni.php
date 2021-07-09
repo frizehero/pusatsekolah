@@ -137,9 +137,9 @@
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
                                     <a href="<?php echo base_url('data_alumni/profilalumni/' . encrypt_url($rowP->id_alumni)); ?>" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="images/avatar/10.png" alt="" style="height: 250px;"> 
+                                    <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_alumni; ?>" alt="" style="height: 250px;"> 
                                     </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="images/avatar/11.png" alt=""></a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_alumni; ?>" alt=""></a>
                                         <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
                                     </div>
                                 </div>
