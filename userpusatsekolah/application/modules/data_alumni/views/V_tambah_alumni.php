@@ -6,7 +6,7 @@
                 <h2>Daftar Sebagai Alumni<span></span></h2>
             </div> -->
             <form action="<?php echo base_url('data_alumni/tambah') ?>" method="POST" enctype="multipart/form-data">
-                <input name="id" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
+                <input name="id_sekolah" value="<?php echo $idsekolah['id_sekolah']?>" type="hidden" class="form-control">
                 <div class="fl-wrap ">
                     <div class="row">
                         <div class="col-md-2">

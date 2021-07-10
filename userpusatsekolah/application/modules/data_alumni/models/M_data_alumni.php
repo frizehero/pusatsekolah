@@ -61,7 +61,7 @@ class M_data_alumni extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile = "file_".time();
-		$config['upload_path']		= 'assets/images/fotoprofil/';
+		$config['upload_path']		= 'assets/images/fotoalumni/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -100,7 +100,6 @@ class M_data_alumni extends CI_Model {
 					'deskripsi_alumni'		=> $deskripsi_alumni,
 					'foto_alumni'		 	=> $gbr['file_name'],
 					'id_sekolah'			=> $id_sekolah,
-					'foto_alumni' 			=> $gbr['file_name'],
 					
 				);
 				$this->db->insert('data_alumni', $data);

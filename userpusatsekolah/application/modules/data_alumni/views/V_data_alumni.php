@@ -137,9 +137,9 @@
                                 <div class="geodir-category-img">
                                     <div class="geodir-js-favorite_btn"><i class="fal fa-heart"></i><span>Favoritkan</span></div>
                                     <a href="<?php echo base_url('data_alumni/profilalumni/' . encrypt_url($rowP->id_alumni)); ?>" class="geodir-category-img-wrap fl-wrap">
-                                    <img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_alumni; ?>" alt="" style="height: 250px;"> 
+                                    <img style="height: 250px;" alt='' src='http://localhost/pusatsekolah/userpusatsekolah/assets/images/fotoalumni/<?php echo $rowP->foto_alumni;?>'> 
                                     </a>
-                                    <div class="listing-avatar"><a href="author-single.html"><img src="<?php echo base_url() ?>assets/images/fotoprofil/<?php echo $rowP->foto_alumni; ?>" alt=""></a>
+                                    <div class="listing-avatar"><a href="author-single.html"><img src="http://localhost/pusatsekolah/userpusatsekolah/assets/images/fotoalumni/<?php echo $rowP->foto_alumni;?>" alt=""></a>
                                         <span class="avatar-tooltip"><strong>Ester Expósito</strong></span>
                                     </div>
                                 </div>
