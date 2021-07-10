@@ -9,7 +9,7 @@
             </div>
             <!--Tariff Plan menu end-->
             <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
-                <h1><span>Emak Sukses</span></h1>
+                <h1><span><?php echo $nama['nama'] ?></span></h1>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="dashboard-header_conatiner fl-wrap">
                     <div class="dashboard-header-avatar">
-                        <img src="images/avatar/4.jpg" alt="">
+                        <img src="<?php echo base_url ()?>assets/images/fotouser/<?php echo $nama['fotop_user']?>" alt="">
                         <a href="tampilan-edit-profiluser.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
                     </div>
                     <br><br>

@@ -27,6 +27,8 @@ class M_ubahpassword extends CI_Model
     
   	}
 
+  	
+
 
 	/*function tampil()
 	{
