@@ -61,7 +61,7 @@
         <div class="cart-btn   show-header-modal" data-microtip-position="bottom" role="tooltip" aria-label="Your Wishlist"><i class="fal fa-heart"></i><span class="cart-counter green-bg"></span> </div>
         <div class="header-user-menu">
             <div class="header-user-name">
-                <span><img src="<?php echo base_url() ?>images/avatar/4.jpg" alt=""></span>
+                <span><img src="<?php echo base_url ()?>assets/images/fotouser/<?php echo $nama['fotop_user']?>" alt=""></span>
                 Hai, <?php echo $nama['nama'] ?>
             </div>
             <ul>

@@ -106,7 +106,7 @@
                                 </div>
                                 <div class="pass-input-wrap fl-wrap">
                                     <label>Password Baru</label>
-                                    <input name="password" value="<?php echo $tampil['password']?>" type="password" class="form-control" id="exampleInputPassword1">
+                                    <input name="password" value="" type="password" class="form-control" id="exampleInputPassword1">
                                     <span class="eye"><i class="far fa-eye" aria-hidden="true"></i> </span>
                                 </div>
                                 <button class="btn color2-bg  float-btn" type="submit">Simpan Perubahan<i class="fal fa-save"></i></button>
