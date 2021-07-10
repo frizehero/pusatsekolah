@@ -128,7 +128,7 @@
                                             <?php }else{ ?>
                                             <?php $noK=1; foreach ($komentarnya AS $rowK ) { ?>
                                             <div class="reviews-comments-item-footer fl-wrap">
-                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/pusatsekolah/assets/images/fotoprofil/<?php echo $rowK->foto_profil;?>'></span><b><?php echo $rowK->nama;?></b></div>
+                                                <div class="list-single-author"><span class="author_avatar"> <img alt='' src='http://localhost/pusatsekolah/userpusatsekolah/assets/images/fotouser/<?php echo $rowK->fotop_user;?>'></span><b><?php echo $rowK->nama;?></b></div>
                                                 <div class="fl-wrap">
                                                     <p style="padding-left: 70px"><?php echo $rowK->isi_komentar;?></p>
                                                     <div style="padding-right: 585px">
