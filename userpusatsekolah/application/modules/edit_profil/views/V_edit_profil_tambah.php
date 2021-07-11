@@ -60,11 +60,6 @@
                                 <label> Username <i class="fal fa-user"></i></label>
                                 <input name="username" placeholder="" type="text"class="form-control">
                             </div>
-
-                            <div class="col-sm-6">
-                                <label> Password <i class="fal fa-user"></i></label>
-                                <input name="password" placeholder="" type="text"class="form-control" disabled="">
-                            </div>
                             <div class="col-sm-6">
                                 <label> Email<i class="far fa-envelope"></i>  </label>
                                 <input name="email_user" placeholder="" type="text"class="form-control">

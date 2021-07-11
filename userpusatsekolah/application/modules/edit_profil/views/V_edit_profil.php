@@ -95,7 +95,8 @@
                     <h3>Data Profil</h3>
                 </div>
                 <!-- profile-edit-container-->
-                <div class="profile-edit-container fl-wrap block_box">
+            <div class="profile-edit-container fl-wrap block_box">
+                <div class="content">
                     <?php tampilnotif()?>
                     <form action="<?php echo base_url('edit_profil/edit') ?>" method="POST" enctype="multipart/form-data">
                     <div class="custom-form">

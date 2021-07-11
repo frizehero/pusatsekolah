@@ -45,12 +45,7 @@ class M_tb_login extends CI_Model {
 		$config['max_height']		= 4300;
 		$config['file_name'] 		= $nmfile;
 
-		$this->upload->initialize($config);
-
-		if($_FILES['foto']['name']) 
-		{
-			if($this->upload->do_upload('foto')) 
-			{
+		
 				$gbr = $this->upload->data();
 				$data = array(
 					'id_admin'			=> $id_admin,
@@ -66,6 +61,7 @@ class M_tb_login extends CI_Model {
 					'kota_user'			=> $kota_user,
 					'kecamatan_user'	=> $kecamatan_user,
 					'kelurahan_user'	=> $kelurahan_user,
+					'facebook_user'	    => $facebook_user,
 					'instagram_user'	=> $instagram_user,
 					'twitter_user'		=> $twitter_user,
 					'whatsapp_user'		=> $whatsapp_user,
@@ -75,34 +71,8 @@ class M_tb_login extends CI_Model {
 
 					);
 
-				$this->db->where('id_admin',$id)->update('tb_login', $data);
-			}
-		} else {
-			$data = array(
-				'id_admin'			=> $id_admin,
-					'nama'				=> $nama,
-					'username'			=> $username,
-					'email_user' 		=> $email_user,
-					'telepon_user'		=> $telepon_user,
-					'profesi_user'		=> $profesi_user,
-					'alamat_user'		=> $alamat_user,
-					'deskripsi_user'	=> $deskripsi_user,
-					'longitude_user'	=> $longitude_user,
-					'latitude_user'		=> $latitude_user,
-					'kota_user'			=> $kota_user,
-					'kecamatan_user'	=> $kecamatan_user,
-					'kelurahan_user'	=> $kelurahan_user,
-					'instagram_user'	=> $instagram_user,
-					'twitter_user'		=> $twitter_user,
-					'whatsapp_user'		=> $whatsapp_user,
-					'fotop_user'		=> $fotop_user,
-					'user_level'		=> $user_level,
-					'id_admin'			=> $id_admin,
-				
-			);
-			$this->db->where('id_admin',$id)->update('tb_login', $data);
-		}
-			
+				$this->db->where('id_admin',$id_admin)->update('tb_login', $data);
+				$this->session->set_flashdata('msg', 'suksesedit');
 	}
  
 /*function tampil()
