@@ -9,7 +9,7 @@
             </div>
             <!--Tariff Plan menu end-->
             <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
-                <h1><span>Emak Sukses</span></h1>
+                <h1><span>Hallo ! <?php echo $nama['nama'] ?> </span></h1>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -17,8 +17,8 @@
             <div class="container">
                 <div class="dashboard-header_conatiner fl-wrap">
                     <div class="dashboard-header-avatar">
-                        <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
-                        <a href="tampilan-edit-profiluser.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
+                        <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
+                        <a href="<?php echo base_url('edit_profil'); ?>" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
                     </div>
                     <br><br>
                 </div>
@@ -101,7 +101,7 @@
                             <!-- message-->
                             <div class="chat-message chat-message_guest fl-wrap">
                                 <div class="dashboard-message-avatar">
-                                    <img src="<?php echo base_url() ?>assets/images/avatars/3.jpg" alt="">
+                                    <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
                                     <span class="chat-message-user-name cmun_sm"><?php echo $nama_penerima; ?></span>
                                 </div>
                                 <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
@@ -113,7 +113,7 @@
                             foreach ($tampil as $rowP) { ?>
                                 <div class="chat-message chat-message_user fl-wrap">
                                     <div class="dashboard-message-avatar">
-                                        <img src="<?php echo base_url() ?>assets/images/avatars/4.jpg" alt="">
+                                        <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
                                         <span class="chat-message-user-name cmun_sm"><?php echo $nama['nama'] ?></span>
                                     </div>
                                     <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>

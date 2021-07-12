@@ -9,7 +9,7 @@
             </div>
             <!--Tariff Plan menu end-->
             <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
-                <h1><span>Emak Sukses</span></h1>
+                <h1><span>Hallo ! <?php echo $nama['nama'] ?> </span></h1>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -17,8 +17,8 @@
             <div class="container">
                 <div class="dashboard-header_conatiner fl-wrap">
                     <div class="dashboard-header-avatar">
-                        <img src="images/avatar/4.jpg" alt="">
-                        <a href="tampilan-edit-profiluser.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
+                        <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
+                        <a href="<?php echo base_url('edit_profil'); ?>" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
                     </div>
                     <br><br>
                 </div>
@@ -117,7 +117,7 @@
                                     foreach ($tampil as $rowP) { ?>
                                         <a class="chat-contacts-item" href="<?php echo base_url('tampilan_inbox/detailpesan/' . encrypt_url($rowP->id_penerima)); ?>">
                                             <div class="dashboard-message-avatar">
-                                                <img src="images/avatar/2.jpg" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
                                                 <div class="message-counter">2</div>
                                             </div>
                                             <div class="chat-contacts-item-text">
