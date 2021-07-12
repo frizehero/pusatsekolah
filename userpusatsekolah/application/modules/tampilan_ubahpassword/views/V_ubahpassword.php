@@ -9,7 +9,7 @@
             </div>
             <!--Tariff Plan menu end-->
             <div class="dashboard-header_conatiner fl-wrap dashboard-header_title">
-                <h1><span><?php echo $nama['nama'] ?></span></h1>
+                <h1><span>Hallo <?php echo $nama['nama'] ?> ini tampilan edit password</span></h1>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -18,7 +18,7 @@
                 <div class="dashboard-header_conatiner fl-wrap">
                     <div class="dashboard-header-avatar">
                         <img src="<?php echo base_url ()?>assets/images/fotouser/<?php echo $nama['fotop_user']?>" alt="">
-                        <a href="tampilan-edit-profiluser.html" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
+                        <a href="<?php echo base_url('edit_profil'); ?>" class="color-bg edit-prof_btn"><i class="fal fa-edit"></i></a>
                     </div>
                     <br><br>
                 </div>
@@ -63,7 +63,7 @@
                                 <li><a href="<?php echo base_url('tampilan_favoritsaya'); ?>"><i class="fal fa-heart"></i>Favorit Saya</a></li>
                                 <li><a href="<?php echo base_url('tampilan_terakhirdilihat'); ?>"><i class="fal fa-dot-circle"></i>Terakhir Dilihat <span>7</span></a></li>
                                 <li><a href="<?php echo base_url('tampilan_hasilreport'); ?>"><i class="fal fa-times-circle"></i> Hasil Report</a></li>
-                                <li><a href="<?php echo base_url('tampilan_akunsaya'); ?>"><i class="fal fa-user-edit"></i> Edit profil</a></li>
+                                <li><a href="<?php echo base_url('edit_profil'); ?>"><i class="fal fa-user-edit"></i> Edit profil</a></li>
                                 <li><a href="<?php echo base_url('tampilan_alumniuser'); ?>"><i class="fal fa-layer-plus"></i>Alumni</a></li>
                                 <li><a href="<?php echo base_url('tampilan_undangteman'); ?>"><i class="fal fa-user-plus"></i>Undang Teman</a></li>
                                 <li><a href="<?php echo base_url('tampilan_ubahpassword'); ?>" class="user-profile-act"><i class="fal fa-key"></i>Ubah Password</a></li>

@@ -33,6 +33,7 @@ class Edit_profil extends MX_Controller
 		
 	}
 
+
 	/*function edit()
 	{
 		$this->M_tb_login->edit();

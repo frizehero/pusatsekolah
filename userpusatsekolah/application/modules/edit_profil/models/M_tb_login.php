@@ -13,9 +13,10 @@ class M_tb_login extends CI_Model {
 	    return $query->row_array();
 	}
 
+
 	function edit()
 	{
-		$id_admin 		= $this->input->post('id_admin');
+		$id 	 		= $this->input->post('id');
 		$nama			= $this->input->post('nama');
 		$username		= $this->input->post('username');
 		$email_user 	= $this->input->post('email_user');
@@ -29,16 +30,14 @@ class M_tb_login extends CI_Model {
 		$kecamatan_user = $this->input->post('kecamatan_user');
 		$kelurahan_user	= $this->input->post('kelurahan_user');
 		$instagram_user	= $this->input->post('instagram_user');
-		$facebook_user	= $this->input->post('facebook_user');
 		$twitter_user	= $this->input->post('twitter_user');
+		$facebook_user	= $this->input->post('facebook_user');
 		$whatsapp_user	= $this->input->post('whatsapp_user');
 		$fotop_user		= $this->input->post('fotop_user');
-		$user_level		= $this->input->post('user_level');
-		$id_sekolah		= $this->input->post('id_sekolah');
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
-		$config['upload_path']		= 'assets/ppdb/';
+		$config['upload_path']		= 'assets/images/fotouser/';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;
@@ -48,7 +47,6 @@ class M_tb_login extends CI_Model {
 		
 				$gbr = $this->upload->data();
 				$data = array(
-					'id_admin'			=> $id_admin,
 					'nama'				=> $nama,
 					'username'			=> $username,
 					'email_user' 		=> $email_user,
@@ -61,18 +59,15 @@ class M_tb_login extends CI_Model {
 					'kota_user'			=> $kota_user,
 					'kecamatan_user'	=> $kecamatan_user,
 					'kelurahan_user'	=> $kelurahan_user,
-					'facebook_user'	    => $facebook_user,
 					'instagram_user'	=> $instagram_user,
 					'twitter_user'		=> $twitter_user,
+					'facebook_user'	    => $facebook_user,
 					'whatsapp_user'		=> $whatsapp_user,
 					'fotop_user'		=> $fotop_user,
-					'user_level'		=> $user_level,
-					'id_admin'			=> $id_admin,
 
 					);
 
-				$this->db->where('id_admin',$id_admin)->update('tb_login', $data);
-				$this->session->set_flashdata('msg', 'suksesedit');
+				$this->db->where('id_admin',$id)->update('tb_login', $data);
 	}
  
 /*function tampil()
