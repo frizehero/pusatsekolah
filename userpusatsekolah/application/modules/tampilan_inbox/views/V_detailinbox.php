@@ -121,10 +121,17 @@
                                 </div>
                             <?php $no++;
                             } ?>
-                            <div class="chat-widget_input fl-wrap">
-                                <textarea placeholder="Type Message"></textarea>
-                                <button type="submit"><i class="fal fa-paper-plane"></i></button>
-                            </div>
+                            <form action="<?php echo base_url('tampilan_inbox/tambah') ?>" method="POST" enctype="multipart/form-data">
+                                <div class="custom-form">
+                                    <input name="id_user" id="id_user" type="hidden" value="<?php echo $idnya; ?>" class="form-control">
+                                    <input name="id_penerima" id="id_user" type="hidden" value="<?php echo $idpenerima; ?>" class="form-control">
+                                    <input name="nama_penerima" id="nama_penerima" type="hidden" value="<?php echo $nama_penerima; ?>" class="form-control">
+                                    <input name="pesan" id="pesan" placeholder="Ketik pesan" type="text">
+                                </div>
+                                <!---<div class="chat-widget_input fl-wrap">
+                                <button name="signup" type="submit" id=""><i class="fal fa-paper-plane"></i></button>
+                            </div>--->
+                            </form>
                         </div>
                         <!-- dashboard-list-box end-->
                     </div>

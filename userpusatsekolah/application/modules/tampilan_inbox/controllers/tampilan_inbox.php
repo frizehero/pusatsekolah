@@ -98,8 +98,8 @@ class Tampilan_inbox extends MX_Controller
 
 	function tambah()
 	{
-		$this->M_pesan->tambahdetail();
-		redirect('tb_pesan');
+		$this->M_inbox->tambahdetail();
+		redirect('tampilan_inbox');
 	}
 
 	function edit()

@@ -10,10 +10,10 @@ class M_inbox extends CI_Model
 		//$query = $this->db->get('beranda_as');
 		//return $query->result();
 
-		$this->db->select('DISTINCT(id_penerima),id_pesan,id_user,pesan,time,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
+		$this->db->select('DISTINCT(tb_pesan.id_penerima),id_pesan,id_user,pesan,time,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
 		$this->db->from('tb_pesan');
 		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
-		$this->db->order_by('id_pesan', "desc")->limit(1);
+		$this->db->order_by('id_pesan', "desc");
 		$query = $this->db->get();
 
 		return $query->result();
@@ -23,7 +23,7 @@ class M_inbox extends CI_Model
 	{
 		$nama_penerima = decrypt_url($id);
 		$this->db->where('nama_penerima', $nama_penerima);
-		return $this->db->get('tb_pesan')->row_array();
+		return $this->db->get('tb_pesan')->result();
 	}
 
 	function tampilpesan($iduser)
@@ -49,7 +49,27 @@ class M_inbox extends CI_Model
 	{
 		$idpenerima = decrypt_url($id);
 		$this->db->where('id_penerima', $idpenerima);
-		return $this->db->get('tb_pesan')->row_array();
+		return $this->db->get('tb_pesan')->result();
+	}
+
+	function tambahdetail()
+	{
+		$pesan				= $this->input->post('pesan');
+		$id_user			= $this->input->post('id_user');
+		$id_penerima		= $this->input->post('id_penerima');
+		$nama_penerima		= $this->input->post('nama_penerima');
+		$id_sekolah			= $this->input->post('id_sekolah');
+
+
+		$data = array(
+			'id_user'			=> $id_user,
+			'pesan'				=> $pesan,
+			'id_penerima'		=> $id_penerima,
+			'nama_penerima'		=> $nama_penerima,
+			'id_sekolah'		=> $id_sekolah,
+		);
+		$this->db->insert('tb_pesan', $data);
+		//$last_id = $this->db->insert_id();
 	}
 
 	function tambah()
@@ -113,7 +133,7 @@ class M_inbox extends CI_Model
 		$this->db->where('id_penerima', $id);
 		$query = $this->db->get();
 
-		return $query->row_array();
+		return $query->result();
 	}
 
 	function tampilkompetensi($id)
