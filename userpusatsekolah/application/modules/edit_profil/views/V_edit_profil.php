@@ -102,6 +102,22 @@
                     <div class="content">
                         <div class="custom-form">
                             <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="dashboard-header-avatar" style="margin-top: 86px; margin-left: 370px;">
+                                        <img src="<?php echo base_url ()?>assets/images/fotouser/<?php echo $nama['fotop_user']?>" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-8" style="margin-left: 150px;">
+                                    <label style="text-align: center; margin-bottom: 20px;"> Foto Profil </label>
+                                    <div class="fuzone">
+                                        <div class="fu-text">
+                                            <span><i class="fal fa-images"></i> Upload File (Jpg. PNG. Doc) </span>
+                                            <div class="photoUpload-files fl-wrap"></div>
+                                        </div>
+                                        <input name="foto" value="<?php echo $tampil['fotop_user']?>" type="file">
+
+                                    </div>
+                                </div>
                                 <div class="col-sm-6">
                                     <label> Nama<i class="fal fa-user"></i></label>
                                     <input name="nama" value="<?php echo $tampil['nama']?>" type="text" class="form-control">

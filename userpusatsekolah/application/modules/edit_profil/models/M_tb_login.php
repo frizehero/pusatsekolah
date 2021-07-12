@@ -33,7 +33,6 @@ class M_tb_login extends CI_Model {
 		$twitter_user	= $this->input->post('twitter_user');
 		$facebook_user	= $this->input->post('facebook_user');
 		$whatsapp_user	= $this->input->post('whatsapp_user');
-		$fotop_user		= $this->input->post('fotop_user');
 
 		$this->load->library('upload');
 		$nmfile = "file_" . time();
@@ -44,7 +43,12 @@ class M_tb_login extends CI_Model {
 		$config['max_height']		= 4300;
 		$config['file_name'] 		= $nmfile;
 
+		$this->upload->initialize($config);
 		
+		if($_FILES['foto']['name'])
+        {
+            if ($this->upload->do_upload('foto'))
+            {
 				$gbr = $this->upload->data();
 				$data = array(
 					'nama'				=> $nama,
@@ -63,11 +67,36 @@ class M_tb_login extends CI_Model {
 					'twitter_user'		=> $twitter_user,
 					'facebook_user'	    => $facebook_user,
 					'whatsapp_user'		=> $whatsapp_user,
-					'fotop_user'		=> $fotop_user,
-
-					);
-
+					'fotop_user'		=> $gbr['file_name'],
+				);
 				$this->db->where('id_admin',$id)->update('tb_login', $data);
+			
+			}	 
+		}
+		else{
+				$data = array(
+					'nama'				=> $nama,
+					'username'			=> $username,
+					'email_user' 		=> $email_user,
+					'telepon_user'		=> $telepon_user,
+					'profesi_user'		=> $profesi_user,
+					'alamat_user'		=> $alamat_user,
+					'deskripsi_user'	=> $deskripsi_user,
+					'longitude_user'	=> $longitude_user,
+					'latitude_user'		=> $latitude_user,
+					'kota_user'			=> $kota_user,
+					'kecamatan_user'	=> $kecamatan_user,
+					'kelurahan_user'	=> $kelurahan_user,
+					'instagram_user'	=> $instagram_user,
+					'twitter_user'		=> $twitter_user,
+					'facebook_user'	    => $facebook_user,
+					'whatsapp_user'		=> $whatsapp_user,
+				);
+				$this->db->where('id_admin',$id)->update('tb_login', $data);
+			}
+
+			return "kosong.jpeg";
+				
 	}
  
 /*function tampil()
