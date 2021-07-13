@@ -87,14 +87,42 @@ class Login extends MX_Controller {
 	}
 
 	function register(){
-		$captcha = $this->input->post('captcha');
-		$captchasis = $this->input->post('captchasis');
+		// POST
+		$getUser = $this->input->post('username');
+		$getPassword = sha1($this->input->post('password'));
+		// Get Data
+		$getData = $this->M_master_userid->getCredential($getUser, $getPassword);
 
-		if ($captcha == $captchasis && $captcha!=null && $captchasis!=null) {
-			$this->M_register->insertDataregister();
+		// check
+		if ( ! empty($getData) )
+		{
+			// masukan ke  dalam session
+			$this->M_session->store_session( $getData->id_admin );
+
+			// flashdata
+			$this->session->set_flashdata('msg', 'greeting');
+
+			$iduser = $getData->id_admin;
+
+			//echo "cekuseraaaaaa".$iduser;
+
+			$tampunguserlevel = $this->M_master_userid->cekUser($iduser);
+
+			//echo "cekuser".$tampunguserlevel;
+
+			if($tampunguserlevel=='1'){
+				redirect('login', 'beranda_user');
+			}else{
+				redirect('beranda_user');
+			}
+			//redirect('beranda');
+		} else { // gagal login
+
+			$this->session->set_flashdata('msg', 'loginError');
 			redirect('login');
+
+			$this->load->view('login',$data);
 		}
-		$this->load->view('v_login');
 	}
 
 	function lupaPassword(){

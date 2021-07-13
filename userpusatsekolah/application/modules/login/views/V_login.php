@@ -75,13 +75,13 @@
                                 <div class="tab">
                                     <div id="tab-2" class="tab-content">
                                         <div class="custom-form">
-                                            <form method="post"   name="registerform" class="main-register-form" id="main-register-form2">
+                                            <form action="<?php echo base_url('login/register' ) ?>" class="login-form" method="post">
                                                 <label >Nama Lengkap <span>*</span> </label>
-                                                <input name="name" type="text"   onClick="this.select()" value="">
+                                                <input name="name" type="text">
                                                 <label>Username <span>*</span></label>
-                                                <input name="email" type="text"  onClick="this.select()" value="">
+                                                <input name="email" type="text">
                                                 <label >Password <span>*</span></label>
-                                                <input name="password" type="password"   onClick="this.select()" value="" >
+                                                <input name="password" id="examplePassword" type="password">
                                                 <div class="filter-tags ft-list">
                                                     <input id="check-a2" type="checkbox" name="check">
                                                     <label for="check-a2">I agree to the <a href="#">Privacy Policy</a></label>
