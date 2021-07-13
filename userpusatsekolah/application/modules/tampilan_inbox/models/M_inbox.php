@@ -10,10 +10,10 @@ class M_inbox extends CI_Model
 		//$query = $this->db->get('beranda_as');
 		//return $query->result();
 
-		$this->db->select('DISTINCT(tb_pesan.id_penerima),id_pesan,id_user,pesan,time,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
+		$this->db->select('id_pesan,fotop_user,id_user,pesan,time,id_penerima,nama_penerima, tb_login.nama AS nama_penerima');
 		$this->db->from('tb_pesan');
 		$this->db->join('tb_login', 'tb_pesan.id_penerima = tb_login.id_admin');
-		$this->db->order_by('id_pesan', "desc");
+		$this->db->group_by('id_penerima');
 		$query = $this->db->get();
 
 		return $query->result();

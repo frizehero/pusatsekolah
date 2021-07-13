@@ -117,7 +117,7 @@
                                     foreach ($tampil as $rowP) { ?>
                                         <a class="chat-contacts-item" href="<?php echo base_url('tampilan_inbox/detailpesan/' . encrypt_url($rowP->id_penerima)); ?>">
                                             <div class="dashboard-message-avatar">
-                                                <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
+                                                <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $rowP->fotop_user; ?>" alt="">
                                                 <div class="message-counter">2</div>
                                             </div>
                                             <div class="chat-contacts-item-text">

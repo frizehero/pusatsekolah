@@ -20,96 +20,44 @@ class Daftar_sekolah extends MX_Controller {
 			'namafileview' 	=> "V_daftar_sekolah",
 			'tampil'		=> $this->M_daftar_sekolah->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
+		$this->load->view('V_daftar_sekolah',$data);
 	}
 
-	//login proses
-	function proses_login()
+    function tambah()
 	{
-		// POST
-		$getUser = $this->input->post('username');
-		$getPassword = sha1($this->input->post('password'));
-		// Get Data
-		$getData = $this->M_master_userid->getCredential($getUser, $getPassword);
 
-		// check
-		if ( ! empty($getData) )
-		{
-			// masukan ke  dalam session
-			$this->M_session->store_session( $getData->id_admin );
-
-			// flashdata
-			$this->session->set_flashdata('msg', 'greeting');
-
-			$iduser = $getData->id_admin;
-
-			//echo "cekuseraaaaaa".$iduser;
-
-			$tampunguserlevel = $this->M_master_userid->cekUser($iduser);
-
-			//echo "cekuser".$tampunguserlevel;
-
-			if($tampunguserlevel=='1'){
-				redirect('beranda_ps');
-			}else{
-				redirect('beranda_as');
-			}
-			//redirect('beranda');
-		} else { // gagal login
-
-			$this->session->set_flashdata('msg', 'loginError');
-			redirect('login');
-		}
-
-	}
-
-	// function logout
-	function logoutApp()
-	{
+		$this->M_daftar_sekolah->tambah();
+		redirect('p_sekolah');
 		
-		$this->session->unset_userdata('session_id');
-
-		$this->session->set_flashdata('msg', 'logoutAplikasi');
-		// redirect
-		redirect('login');
 	}
-
-	function register(){
-		$captcha = $this->input->post('captcha');
-		$captchasis = $this->input->post('captchasis');
-
-		if ($captcha == $captchasis && $captcha!=null && $captchasis!=null) {
-			$this->M_register->insertDataregister();
-			redirect('login');
-		}
-		$this->load->view('v_register');
-	}
-
-	function lupaPassword(){
-		// POST
-		$getUser = $this->input->post('username');
-		$getEmail = $this->input->post('email');
-		$getTelp = $this->input->post('no_telp');
-		// Get Data
-		$getData = $this->M_master_userid->getUser($getUser, $getEmail, $getTelp);
-
-		if (!empty($getData))
-		{
-			$status = $getData->status;
-			$id 	= $getData->id_admin;
-
-			if ($status == 1 || $status == 2){
-				echo json_encode($id);
-			}
-		}
-	}
-
-	function passwordBaru()
+	function add_ajax_kab($id_prov)
 	{
-		$this->M_master_userid->passwordBaru();
-		
-		echo json_encode("berhasil");
+    	$query = $this->db->get_where('wilayah_kabupaten',array('provinsi_id'=>$id_prov));
+    	$data = "<option value=''>- Pilih Kabupaten -</option>";
+    	foreach ($query->result() as $value) {
+        	$data .= "<option value='".$value->id."'>".$value->nama."</option>";
+    	}
+    	echo $data;
 	}
 
-
+	
+	function add_ajax_kec($id_kab)
+	{
+    	$query = $this->db->get_where('wilayah_kecamatan',array('kabupaten_id'=>$id_kab));
+    	$data = "<option value=''> - Pilih Kecamatan - </option>";
+    	foreach ($query->result() as $value) {
+        	$data .= "<option value='".$value->id."'>".$value->nama."</option>";
+    	}
+    	echo $data;
+	}
+  
+	function add_ajax_des($id_kec)
+	{
+    	$query = $this->db->get_where('wilayah_desa',array('kecamatan_id'=>$id_kec));
+    	$data = "<option value=''> - Pilih Desa - </option>";
+    	foreach ($query->result() as $value) {
+        	$data .= "<option value='".$value->id."'>".$value->nama."</option>";
+    	}
+    	echo $data;
+	}
 }

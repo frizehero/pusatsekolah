@@ -102,7 +102,7 @@
                             <div class="chat-message chat-message_guest fl-wrap">
                                 <div class="dashboard-message-avatar">
                                     <img src="<?php echo base_url() ?>assets/images/fotouser/<?php echo $nama['fotop_user'] ?>" alt="">
-                                    <span class="chat-message-user-name cmun_sm"><?php echo $nama_penerima; ?></span>
+                                    <span class="chat-message-user-name cmun_sm"><?php echo $nama['fotop_user'] ?></span>
                                 </div>
                                 <span class="massage-date">25 may 2018 <span>7.51 PM</span></span>
                                 <p>Vivamus lobortis vel nibh nec maximus. Donec dolor erat, rutrum ut feugiat sed, ornare vitae nunc. Donec massa nisl, bibendum id ultrices sed, accumsan sed dolor.</p>

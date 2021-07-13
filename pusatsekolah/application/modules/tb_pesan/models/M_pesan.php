@@ -119,6 +119,19 @@ class M_pesan extends CI_Model
 
 		$this->db->select('*');
 		$this->db->from('tb_login');
+		$this->db->where('id_sekolah', $id);
+		$query = $this->db->get();
+
+
+
+		return $query->row_array();
+	}
+
+	function ambiliduser($id)
+	{
+
+		$this->db->select('*');
+		$this->db->from('tb_login');
 		$this->db->where('id_admin', $id);
 		$query = $this->db->get();
 
