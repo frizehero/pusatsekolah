@@ -74,12 +74,13 @@
                                 <!--tab -->
                                 <div class="tab">
                                     <div id="tab-2" class="tab-content">
-                                        <div class="custom-form">
-                                            <form action="<?php echo base_url('login/register' ) ?>" class="login-form" method="post">
+                                        <form action="<?php echo base_url('login/tambah') ?>" method="POST" enctype="multipart/form-data">
+                                            <input name="id_admin" value="" type="hidden" class="form-control">
+                                            <div class="custom-form">
                                                 <label >Nama Lengkap <span>*</span> </label>
-                                                <input name="name" type="text">
+                                                <input name="nama" type="text">
                                                 <label>Username <span>*</span></label>
-                                                <input name="email" type="text">
+                                                <input name="username" type="text">
                                                 <label >Password <span>*</span></label>
                                                 <input name="password" id="examplePassword" type="password">
                                                 <div class="filter-tags ft-list">
@@ -93,8 +94,8 @@
                                                 </div>
                                                 <div class="clearfix"></div>
                                                 <button type="submit" class="btn float-btn color2-bg"> Register  <i class="fas fa-caret-right"></i></button>
-                                            </form>
-                                        </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <!--tab end -->

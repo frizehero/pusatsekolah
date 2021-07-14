@@ -95,7 +95,7 @@ class M_tb_login extends CI_Model {
 				$this->db->where('id_admin',$id)->update('tb_login', $data);
 			}
 
-			return "kosong.jpeg";
+			return "kosong.jpg";
 				
 	}
  

@@ -19,12 +19,14 @@ class Login extends MX_Controller {
 
 	public function index()
 	{
+		$data_siswa=  $this->session->userdata('session_id');
 		// blm login
 		if ( empty( $this->session->userdata('session_id') ) )
 		{
 			$data = array (
 				'getCek' => $this->M_session->getCek(),
 				'cekAdmin' => $this->M_master_userid->cekAdmin(),
+				'tampil'	=> $this->M_master_userid->tampil($data_siswa),
 				
 			);
 			$this->load->view('v_login',$data);
@@ -33,6 +35,15 @@ class Login extends MX_Controller {
 			// sudah login
 			//redirect('beranda');
 		}
+	}
+
+
+	function tambah()
+	{
+		$data_siswa=  $this->session->userdata('session_id');
+		$this->M_master_userid->tambah();
+		redirect('login');
+		
 	}
 
 	//login proses

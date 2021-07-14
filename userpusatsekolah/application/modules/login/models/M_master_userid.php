@@ -6,6 +6,17 @@ Class M_master_userid extends CI_Model {
 		parent::__construct();
     }
 
+    function tampil($data_siswa)
+  	{
+	    //$ee=1;
+	    $this->db->select('*');
+	    $this->db->from('tb_login');
+		$this->db->where('id_admin',$data_siswa);
+	    $query = $this->db->get();
+	    return $query->row_array();
+	}
+
+
 	// for checking credential
 	function getCredential($varUser, $varPassword)
 	{
@@ -14,6 +25,23 @@ Class M_master_userid extends CI_Model {
 		$query = $this->db->get_where('tb_login', $getField);
 
 		return $query->row();
+	}
+
+
+	function tambah()
+	{
+		$nama 				= $this->input->post('nama');
+		$username 			= $this->input->post('username');
+		$password 			= $this->input->post('password');
+		$password1          = sha1($password);
+
+		$data = array(
+			'nama'			=> $nama,
+			'username'		=> $username,
+			'password'		=> $password1,
+		);
+		$this->db->insert('tb_login', $data);
+			
 	}
 
 	function cekAdmin()
