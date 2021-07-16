@@ -91,11 +91,12 @@ class M_tb_login extends CI_Model {
 					'twitter_user'		=> $twitter_user,
 					'facebook_user'	    => $facebook_user,
 					'whatsapp_user'		=> $whatsapp_user,
+					'fotop_user'		=> 'kosong1.png',
 				);
 				$this->db->where('id_admin',$id)->update('tb_login', $data);
 			}
 
-			return "kosong.jpg";
+			return "kosong1.png";
 				
 	}
  
