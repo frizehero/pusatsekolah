@@ -1,70 +1,55 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Kota_lainnya extends MX_Controller {
+class Kota_lainnya extends MX_Controller
+{
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('M_produk');
-		 $this->load->model('login/m_session');
+		$this->load->model('M_kota_lainnya');
+		$this->load->model('login/m_session');
 	}
 
-	
-	// index
 	function index()
 	{
+		//echo $this->session->userdata('session_id');
+		if (empty($this->session->userdata('session_id'))) {
+			redirect('login');
+		} else {
+			$iduser = $this->session->userdata('session_id');
+			$idsekolahx = $this->M_kota_lainnya->ambilidsekolah($iduser);
+
+			$data = array(
+				'namamodule' 		=> "kota_lainnya",
+				'namafileview' 		=> "V_kota_lainnya",
+				'tampil'			=> $this->M_kota_lainnya->tampil($idsekolahx['id_sekolah']),
+				'semuasekolah'		=> $this->M_kota_lainnya->semuasekolah(),
+				'idkotalainnya'		=> $this->M_kota_lainnya->idkotalainnya(),
+				'idnya' 			=> $iduser,
+				'idsekolah' 		=> $idsekolahx,
+				'tampilkompetensi'	=> $this->M_kota_lainnya->tampilkompetensi($idsekolahx['id_sekolah']),
+			);
+			echo Modules::run('template/tampilCore', $data);
+		}
+	}
+
+	function tambahkomen()
+	{
+		$this->M_beranda_as->tambahkomen();
+		$idtampung 	= $this->input->post('tampungid');
+
+		redirect('daftar_smk/detailsekolah/'. $idtampung);
+	}
+
+	function cari()
+	{
 		$data = array(
-			'namamodule' 	=> "kota_lainnya",
-			'namafileview' 	=> "V_kota_lainnya",
-			'tampil'		=> $this->M_produk->tampil(),
+			'namamodule' 	=> "beranda_su",
+			'namafileview' 	=> "V_beranda_su",
+			'tampil'		=> $this->M_beranda_as->cari(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
-
-		// halaman tambah
-	function tambahview()
-	{
-		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_tambah_produk",
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-		// Halaman Edit
-	function editview($id)
-	{
-
-		$data = array(
-			'namamodule' 	=> "produk",
-			'namafileview' 	=> "V_edit_produk",
-			'tampil'		=> $this->M_produk->tampiledit($id),
-		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-
-	function tambah()
-	{
-
-		$this->M_produk->tambah();
-		redirect('produk');
-		
-	}
-
-	function edit()
-	{
-		$this->M_produk->edit();
-		redirect('produk');
-	}
-
-	function hapus()
-	{
-		$this->M_produk->hapus();
-		redirect('produk');
-	}
-	
 }
- 
