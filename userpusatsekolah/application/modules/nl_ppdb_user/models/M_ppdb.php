@@ -6,7 +6,7 @@ class M_ppdb extends CI_Model
 
 	function tampil()
 	{
-		return $this->db->get('ppdb')->result();
+		return $this->db->get('ppdb_sekolah')->result();
 	}
 
 	function tambah()

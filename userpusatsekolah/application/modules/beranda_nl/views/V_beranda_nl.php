@@ -167,7 +167,7 @@
                                 <div class="listing-item listing_carditem">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img">
-                                            <a href="tampilan-produk-sekolah.html" class="geodir-category-img-wrap fl-wrap">
+                                            <a href="<?php echo base_url('nl_tampilan_produk'); ?>" class="geodir-category-img-wrap fl-wrap">
                                             <img src="images/sekolah/produk1.jpg" alt="" style="height: 270px;"> 
                                             </a>
                                             <div class="geodir-category-opt">
@@ -183,31 +183,7 @@
                                 <!-- listing-item end -->                                                   
                             </div>
                         </div>
-                        <!--  swiper-slide end  -->                                       
-                        <!--  swiper-slide  -->
-                        <div class="swiper-slide">
-                            <div class="listing-slider-item fl-wrap">
-                                <!-- listing-item  -->
-                                <div class="listing-item listing_carditem">
-                                    <article class="geodir-category-listing fl-wrap">
-                                        <div class="geodir-category-img">
-                                            <a href="<?php echo base_url('nl_tampilan_berita'); ?>" class="geodir-category-img-wrap fl-wrap">
-                                            <img src="images/sekolah/qurban1.jpg" alt="" style="height: 270px;"> 
-                                            </a>
-                                            <div class="geodir-category-opt">
-                                                <div class="listing_carditem fl-wrap">
-                                                    <div class="section-title">
-                                                        <h2 style="color: #ffffff;">BERITA SEKOLAH</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <!-- listing-item end -->                                                   
-                            </div>
-                        </div>
-                        <!--  swiper-slide end  -->                                        
+                        <!--  swiper-slide end  -->                                  
                     </div>
                 </div>
                 <div class="listing-carousel-button listing-carousel-button-next2"><i class="fas fa-caret-right"></i></div>
