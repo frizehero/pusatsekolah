@@ -47,25 +47,10 @@
                                                             <label class="vis-label"> Tanggal Lahir <i class="fal fa-calendar"></i> </label>
                                                             <input name="tgllahir_alumni" type="text" placeholder="Tanggal Lahir"/>
                                                         </div>
-                                                        <!--<div class="col-sm-4">
-                                                            <div class="position-relative form-group">
-                                                        <label class="vis-label"> Jenis Kelamin <i class="fal fa-barcode"></i> </label>
-                                                        <div class="listsearch-input-item ">
-                                                            <select name="jenis_kelamin" id="exampleSelect" class="form-control" data-placeholder="Your Country" class="chosen-select no-search-select" style="display: none;">
-                                                                <option>Jenis Kelamin</option>
-                                                                <option>Perempuan</option>
-                                                                <option>Laki-laki</option>
-                                                            </select>
-                                                            <div class="nice-select chosen-select no-search-select" tabindex="0">
-                                                                <span class="current">Jenis Kelamin</span>
-                                                                <select name="jenis_kelamin" id="exampleSelect" class="form-control" data-placeholder="Your Country" class="chosen-select no-search-select" style="display: none;">
-                                                                    <option>Jenis Kelamin</option>
-                                                                    <option>Perempuan</option>
-                                                                    <option>Laki-laki</option>
-                                                                </select>
-                                                            </div>
+                                                        <div class="col-sm-4">
+                                                            <label class="vis-label"> Jenis Kelamin <i class="fal fa-calendar"></i> </label>
+                                                            <input name="jk_alumni" type="text" placeholder="Jenis Kelamin"/>
                                                         </div>
-                                                        </div>-->
                                                         <div class="col-sm-6">
                                                             <label class="vis-label">Status Alumni <i class="far fa-user"></i></label>
                                                             <input name="status_alumni" type="text" placeholder="Status Alumni" value=""/>

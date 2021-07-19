@@ -90,7 +90,8 @@ class M_data_alumni extends CI_Model {
 		$instagram_alumni		= $this->input->post('instagram_alumni');
 		$facebook_alumni		= $this->input->post('facebook_alumni');
 		$twitter_alumni			= $this->input->post('twitter_alumni');
-		$id 					= $this->input->post('id');
+		$foto_alumni			= $this->input->post('foto_alumni');
+		$id_sekolah 			= $this->input->post('id_sekolah');
 
 				$data = array(
 					'nama_alumni'			=> $nama_alumni,
@@ -112,7 +113,8 @@ class M_data_alumni extends CI_Model {
 					'instagram_alumni'		=> $instagram_alumni,
 					'facebook_alumni'		=> $facebook_alumni,
 					'twitter_alumni'		=> $twitter_alumni,
-					'id_sekolah'			=> $id,
+					'foto_alumni'		 	=> $gbr['file_name'],
+					'id_sekolah'			=> $id_sekolah,
 				);
 
 				$this->db->insert('data_alumni', $data);
