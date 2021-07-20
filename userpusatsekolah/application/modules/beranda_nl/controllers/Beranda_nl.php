@@ -8,6 +8,7 @@ class Beranda_nl extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('M_beranda_nl');
+		 $this->load->model('login/m_session');
 	}
 
 	// index
@@ -16,6 +17,10 @@ class Beranda_nl extends MX_Controller {
 			$data = array(
 				'namamodule' 	=> "beranda_nl",
 				'namafileview' 	=> "V_beranda_nl",
+				'tampil'		=> $this->M_beranda_nl->tampil(),
+				'totalakun'		=> $this->M_beranda_nl->totalakun(),
+				'totalsekolah'	=> $this->M_beranda_nl->totalsekolah(),
+				'totalkomentar'	=> $this->M_beranda_nl->totalkomentar(),
 			);
 		{
 			echo Modules::run('template/tampilCore_nl',$data);
